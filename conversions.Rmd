@@ -1,0 +1,82 @@
+# Conversions, Inflation, Cost of Fuel, Exchange Rate {.unnumbered #conversions}
+
+
+## Inflation {.unnumbered #inflation}
+
+All values are given in euro (€) at December 2016 price levels (unless otherwise indicated). They
+have been inflated from values given in the source documents by means of the
+[EUROSTAT European Union][eu-enlargement]
+(EC6-1972, EC9-1980, EC10-1985, EC12-1994, EU15-2004, EU25-2006,
+EU27-2013, EU28) harmonised index of consumer prices (HICP 2015=100).
+
+The annual change in
+the index is shown below. The values of the index are available from [Eurostat][eurostat]
+data set in the [`prc_hicp_aind` table][prc_hicp_aind].
+
+[eurostat]: <http://ec.europa.eu/eurostat> 
+[prc_hicp_aind]: <https://ec.europa.eu/eurostat/data/database?node_code=prc_hicp_aind>
+[eu-enlargement]: <https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:EU_enlargements>
+
+(ref:inflation-table) Annual average inflation values.
+
+
+```{r inflation-table, , fig.cap='(ref:inflation-table)'}
+library(readr)
+library(dplyr)
+library(gt)
+
+# read from CSV (exported directly from Eurostat, see R/export_inflation.R)
+read_csv("data/inflation.csv") %>%
+  # format the table
+  gt() %>%
+  tab_source_note(
+    source_note = md("Source: Eurostat, [http://ec.europa.eu/eurostat](http://ec.europa.eu/eurostat)")
+  ) %>%
+  cols_label(
+    year  = "Year",
+    index = "Index",
+    rate  = "Rate of change"
+  ) %>%
+  fmt_percent(
+    columns = vars(rate),
+    decimals = 2
+  ) %>%
+  fmt_number(
+    columns = vars(index),
+    decimals = 2
+  )
+```
+
+
+## Exchange Rate Conversion {.unnumbered #exchange-rates}
+
+Values in pounds sterling (GB £) and US dollars (US $) have been converted to euros (€) using the
+2016 average euro foreign exchange rate.
+Currency Currency: € €: Currency
+
+```{r eurostat-exchange-rates}
+library(readr)
+library(dplyr)
+library(gt)
+
+read_csv("data/exchange_rate.csv") %>%
+  gt() %>%
+  cols_label(
+    currency  = "Currency",
+    to_eur    = "Currency: EUR",
+    from_eur  = "EUR: Currency"
+  )
+```
+
+
+## Cost of Fuel {.unnumbered #cost-of-fuel}
+
+
+## Conversion Values {.unnumbered #conversion-values}
+
+
+## Further Information {.unnumbered}
+
+
+
+

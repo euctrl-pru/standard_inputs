@@ -1,0 +1,29 @@
+# K-M (kint & merge) approach, see https://bookdown.org/yihui/bookdown/new-session.html
+new_session: yes
+
+
+book_filename: "standard_inputs"
+delete_merged_file: true
+output_dir: "_book"
+
+# language:
+#   ui:
+#     chapter_name: "Chapter "
+
+before_chapter_script: "_common.R"
+
+rmd_files: [
+  "index.Rmd",
+
+  "introduction.Rmd",
+  "conversions.Rmd",
+  "geographical_areas.Rmd",
+
+  "aircraft_operating_costs.Rmd",
+  "cancellation_costs.Rmd",
+  "passengers_per_movement.Rmd",
+
+  "references.Rmd",
+  "annexes.Rmd",
+  "data.Rmd"
+]

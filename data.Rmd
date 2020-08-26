@@ -1,0 +1,26 @@
+# Data
+
+```{r}
+library(gt)
+library(tibble)
+library(dplyr)
+```
+
+
+The various data sets introduced are available as CSV files as follows:
+
+
+(ref:csv-files-table) Data sets (at 2016 EUR price level).
+
+
+```{r csv-files-table, fig.cap='(ref:csv-files-table)'}
+tribble(
+  ~filename, ~description, ~url,
+  "inflation.csv", "Inflation", "https://example.com",
+  "exchange_rate.csv", "Exchange rate", "https://example.com"
+) %>%
+  gt()
+```
+
+
+All released versions of this website/document are available at GITHUB repo.

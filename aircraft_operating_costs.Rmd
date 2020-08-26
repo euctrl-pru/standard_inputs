@@ -1,0 +1,8 @@
+# Aircraft Operating Costs
+
+
+## Definition
+
+Flight and ground costs linked to the operation of an aircraft, such as
+fuel, crew, landing fees, ground handling, aircraft parking, air bridges
+and maintenance.

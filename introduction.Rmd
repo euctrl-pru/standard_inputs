@@ -1,0 +1,44 @@
+```{r}
+library(english)
+```
+
+# Introduction {-}
+
+This document provides a set of standard inputs for data commonly used in economic and financial
+ATM-related analyses and appraisals. The standard inputs will save time in the development of, for
+example, cost-benefit analyses (CBAs) and economic impact assessments and will also help achieve
+greater consistency and comparability between different CBAs.
+
+The current, `r ordinal(release_version)`, edition has been improved in these ways:
+
+* All prices have been updated to 2016 euros unless otherwise specified. The costs can be easily
+  adjusted with the indices table given in Section
+  [Conversions, Inflation, Cost of Fuel, Exchange Rate](#conversions);
+* Some values have been reviewed and replaced, namely the Cost of Delay;
+* Four new values have been added:
+  1. Airport Operating Environment,
+  1. Fleet CNS Capability,
+  1. PBN Instrument Approach Procedures,
+  1. Value of an ATFM Slot Swap.
+* One value was removed:
+  - Cost of Additional Distance Flown as the value can be derived from the Cost of Delay
+* Whenever values are contentious as single values, a range of low, base and high values are
+  given, allowing for sensitivity analyses.
+
+An online version has been created and will be made available shortly after the publication of this
+edition. Access can be requested at: https://ost.eurocontrol.int/sites/siws/
+
+As was the case in the previous version, the review was extended to a worldwide panel of ATM
+experts from organisations which included IATA, EASA, SESAR JU and EUROCONTROL, as well as
+representatives of Air Navigation Service Providers, Airspace Users, Airports, Industry and
+Universities.
+
+The standard inputs have been compiled from documents published by EUROCONTROL and those
+which are publicly available. They are average values and may not be appropriate in all
+circumstances. The document also gives details of the sources of information and a discussion of the
+applicability and use of the values.
+
+This document will remain a living document; therefore comments and suggestions are very
+welcome. Readers are invited to send these to:
+
+Economics.Business-Cases@eurocontrol.int
