@@ -1,0 +1,18 @@
+Package: standard_inputs
+Title: The Standand Inputs book from EUROCONTROL
+Version: 0.0.0.9000
+Authors@R: c(
+  person(given = "Désirée",
+         family = "Teunissen",
+         role = c("aut", "cre"),
+         email = "desiree.teunissen@eurocontrol.int"),
+  person(given = "Kirsteen",
+         family = "Purves",
+         role = c("aut", "cre"),
+         email = "kirsteen.purves@eurocontrol.int"),
+         person("EUROCONTROL", role = c("cph", "fnd"))
+   )
+Description: Web and pdf version of the book.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
