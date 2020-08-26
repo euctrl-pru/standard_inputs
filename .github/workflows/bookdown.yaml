@@ -18,7 +18,6 @@ jobs:
 
       - name: Install TinyTeX
         uses: r-lib/actions/setup-tinytex@v1
-        run: tlmgr --version
 
       - name: Install pandoc and pandoc citeproc
         run: |
