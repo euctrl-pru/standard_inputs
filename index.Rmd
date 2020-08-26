@@ -1,6 +1,9 @@
 ---
 title: "Standard Inputs for EUROCONTROL Cost-Benefit Analyses"
-author: "Désirée Teunissen"
+author:
+  - "Désirée Teunissen"
+  -  "Kirsteen Purves"
+
 description: "This document provides values for commonly used data items in cost-benefit analyses, together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
 github-repo: espinielli/standard_inputs
 site: bookdown::bookdown_site
@@ -9,6 +12,12 @@ output:
     df_print: paged
     md_extensions: +implicit_header_references
     toc_depth: 1
+# LaTeX stuff
+documentclass: book
+papersize: a4
+fontsize: 12pt
+links-as-notes: true
+# -----------
 bibliography: "bibliography.bib"
 biblio-style: "apalike"
 link-citations: true

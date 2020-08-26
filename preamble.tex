@@ -1,1 +1,33 @@
 \usepackage{booktabs}
+
+% header/footer customization
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Cucu}
+\fancyhead[RE,LO]{Standard Inputs for EUROCONTROL CBAs}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+% ----------------------------
+
+% Remove chapter name
+\usepackage{titlesec}
+
+\titleformat{\chapter}[display]
+  {\Huge\bfseries}
+  {}
+  {0pt}
+  {\thechapter\ }
+
+\titleformat{name=\chapter,numberless}[display]
+  {\Huge\bfseries}
+  {}
+  {0pt}
+  {}
+% -------------------
+
+\pagenumbering{roman}
