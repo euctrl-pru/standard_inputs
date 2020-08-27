@@ -38,7 +38,7 @@ rmd_files: [
   "amount_of_emissions.Rmd",
   
   # Part: Traffic and Capacity Related Values
-  "aircraft_operating_costs.Rmd"
+  "aircraft_operating_costs.Rmd",
 
   "references.Rmd",
   "annexes.Rmd",
