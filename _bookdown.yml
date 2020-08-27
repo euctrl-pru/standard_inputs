@@ -34,6 +34,9 @@ rmd_files: [
   # Part: Economic Values
   "ansps_employment_costs.Rmd",
   
+  # Part: Environmental Values
+  "amount_of_emissions.Rmd",
+  
   # Part: Traffic and Capacity Related Values
   "aircraft_operating_costs.Rmd"
 
