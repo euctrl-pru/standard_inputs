@@ -1,20 +1,21 @@
 \usepackage{booktabs}
 
-% header/footer customization
-\usepackage{fancyhdr}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[LE,RO]{Cucu}
-\fancyhead[RE,LO]{Standard Inputs for EUROCONTROL CBAs}
-\fancyfoot[CE,CO]{\leftmark}
-\fancyfoot[LE,RO]{\thepage}
-
-\renewcommand{\headrulewidth}{2pt}
-\renewcommand{\footrulewidth}{1pt}
+%%%%% header/footer customization
+% \usepackage{fancyhdr}
+% 
+% \pagestyle{fancy}
+% \fancyhf{}
+% \fancyhead[LE,RO]{Cucu}
+% \fancyhead[RE,LO]{Standard Inputs for EUROCONTROL CBAs}
+% \fancyfoot[CE,CO]{\leftmark}
+% \fancyfoot[LE,RO]{\thepage}
+% 
+% \renewcommand{\headrulewidth}{2pt}
+% \renewcommand{\footrulewidth}{1pt}
 % ----------------------------
 
-% Remove chapter name
+%%%%% Remove chapter name
+%% https://tex.stackexchange.com/a/284897/148507
 \usepackage{titlesec}
 
 \titleformat{\chapter}[display]
@@ -28,8 +29,8 @@
   {}
   {0pt}
   {}
-% -------------------
+%%%% -------------------
 
-\usepackage{pdfpages}
+% \usepackage{pdfpages}
 
 \pagenumbering{roman}

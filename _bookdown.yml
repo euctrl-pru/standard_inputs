@@ -14,14 +14,25 @@ before_chapter_script: "_common.R"
 
 rmd_files: [
   "index.Rmd",
-
+  
   "introduction.Rmd",
   "conversions.Rmd",
   "geographical_areas.Rmd",
 
+  #  Part: Operational Values
   "aircraft_operating_costs.Rmd",
-  "cancellation_costs.Rmd",
   "passengers_per_movement.Rmd",
+  "cancellation_cost.Rmd",
+  "operational_cancellation_rate.Rmd",
+  "cost_of_delay.Rmd",
+  "cost_of_diversion.Rmd",
+  "en_route_ans_costs.Rmd",
+
+  #  Part: Safety Related Values
+  "accident_incident_statistics.Rmd",
+  
+  # Part: Economic Values
+  "ansps_employment_costs.Rmd",
 
   "references.Rmd",
   "annexes.Rmd",

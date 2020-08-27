@@ -1,8 +1,28 @@
-# Aircraft Operating Costs
+# (PART) Operational Values {-} 
 \pagenumbering{arabic}
+
+
+# Aircraft Operating Costs
 
 ## Definition
 
 Flight and ground costs linked to the operation of an aircraft, such as
 fuel, crew, landing fees, ground handling, aircraft parking, air bridges
 and maintenance.
+
+[@iata:aoctf] refers to the 2013 Airline Cost Conference and provides an overview of the
+operating costs for 10 types of aircraft (B737 NG, A320 family, B737 Classic, B777, A330, B747,
+A340, B767, A380;
+the Regional Jet section represents a combined fleet of EMB-170, EMB-190 and CRJ).
+
+Figure \@ref(fig:airline-cost-structure) show the breakdown of the airline cost structure
+for the year 2015.
+
+(ref:airline-cost-structure) Airline cost structure.
+
+
+```{r airline-cost-structure, fig.cap='(ref:airline-cost-structure)', out.width="100%"}
+knitr::include_graphics(rep('figures/airline_cost_structure.png'))
+```
+
+
