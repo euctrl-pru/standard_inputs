@@ -16,12 +16,13 @@ The current, `r ordinal(release_version)`, edition has been improved in these wa
   [Conversions, Inflation, Cost of Fuel, Exchange Rate](#conversions);
 * Some values have been reviewed and replaced, namely the Cost of Delay;
 * Four new values have been added:
-  1. Airport Operating Environment,
+  1. [Airport Operating Environment](#apt-ops-env),
   1. Fleet CNS Capability,
   1. PBN Instrument Approach Procedures,
   1. Value of an ATFM Slot Swap.
 * One value was removed:
-  - Cost of Additional Distance Flown as the value can be derived from the Cost of Delay
+  - Cost of Additional Distance Flown as the value can be derived from
+    the [Cost of Delay](#cost-of-delay)
 * Whenever values are contentious as single values, a range of low, base and high values are
   given, allowing for sensitivity analyses.
 
