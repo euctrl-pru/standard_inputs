@@ -1,6 +1,15 @@
 This is a prototype for *Standard Inputs for EUROCONTROL Cost-Benefit Analyses*.
 It is based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown).
 
+## Setup
+
+**BEWARE**: this project uses `renv` so on a MS Windows machine its cache and
+the project folder have to be in a folder where cached packages can be written
+and executed.
+See instructions [here](https://github.com/euctrl-pru/portal/wiki/Tools-Installation-and-Setup#renv).
+
+
+
 ## TODO's
 
 * [ ] define a LaTeX book template, see 
