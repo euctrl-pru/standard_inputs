@@ -289,15 +289,10 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.3.2.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "ggplot2",
-      "RemoteUsername": "tidyverse",
-      "RemoteRef": "master",
-      "RemoteSha": "a11e0983f2bd3065f3aeb5cdc1b3bcf87fa3cc78",
-      "Hash": "7977c18c79113a6107531f3ed7a952b7"
+      "Version": "3.3.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "4ded8b439797f7b1693bd3d238d0106b"
     },
     "glue": {
       "Package": "glue",
