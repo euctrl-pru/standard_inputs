@@ -25,4 +25,6 @@ for the year 2015.
 knitr::include_graphics(rep('figures/airline_cost_structure.png'))
 ```
 
+## Ciao
 
+adaff
