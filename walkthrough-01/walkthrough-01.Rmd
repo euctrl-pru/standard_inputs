@@ -1,0 +1,372 @@
+---
+title: "A Standard Inputs Prototype Walk-through "
+author: "Enrico Spinielli"
+institute: "EUROCONTROL <img src='../images/eurocontrol-logo-noname.png' height='28px'>, Aviation Intelligence Unit"
+date: "2020-09-07 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "walkthrough-01.css", middlebury-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+layout: true
+background-image: url(../images/eurocontrol-logo-wide.svg)
+background-position: 2% 99%
+background-size: 18%
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+# library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+library(icon) # from github: https://github.com/ropenscilabs/icon
+library(ggwordcloud)
+library(magrittr)
+library(dplyr)
+
+data("thankyou_words_small")
+set.seed(1187)
+
+
+
+subchunkify <- function(g, fig_height=7, fig_width=5) {
+  g_deparsed <- paste0(deparse(
+    function() {g}
+  ), collapse = '')
+  
+  sub_chunk <- paste0("
+  `","``{r sub_chunk_", floor(runif(1) * 10000), ", fig.height=", fig_height, ", fig.width=", fig_width, ", echo=FALSE}",
+  "\n(", 
+    g_deparsed
+    , ")()",
+  "\n`","``
+  ")
+  
+  cat(knitr::knit(text = knitr::knit_expand(text = sub_chunk), quiet = TRUE))
+}
+
+
+```
+
+---
+
+
+# Outline
+
+
+* List the requirements (no debate `r emo::ji("wink")`)
+* Walk through, i.e. the practical steps to
+  - understand the organization of the project
+  - define/update/view the *doc*
+  - publishing (`r emo::ji("cloud")`)
+
+
+.bottom[
+
+<small>
+**Note**: unless you are really really really eager I would leave the `git`/`GitHub` nitty-gritty
+details for another time.
+*They are important* but they are sort of _technically shocking_ if you never went thru
+this kind of stuff...
+</small>
+
+]
+
+
+---
+# (Preliminary) Requirements - WebEx
+
+My understanding from WebEx w/ Désirée and Kirsteen
+
+1.	Possibility to publish the doc on the web publicly
+1.	Possibility to generate web and PDF version from (mainly) the same source
+1.	Possibility to publish on the web intermediate updates compared to the (bi-yearly?)
+    PDF/paper version
+1.	Traceability of changes in the various main/minor versions
+
+---
+
+# (Preliminary) Requirements - email feedback
+
+* Interactive graphs
+  - dashboard-like
+  - tooltip-ish, ...
+* Need for more of a Portal than a *bookdown*
+* Sharing underlying data: how (Excel, ...)?
+* site analytics
+* visual identity
+
+---
+
+# Walk-through
+
+This walk-through will show 
+
+1. structure of the project
+1. typical "editing" session
+1. how the *cloud* helps out
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+]
+
+.left-column[
+```{text , eval = FALSE, echo = TRUE}
++-- _bookdown.yml
++-- _output.yml
++-- _build.sh
++-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd
++-- ...
++-- <a bunch of .Rmd's>
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+]
+
+.left-column[
+```{text , highlight.output=c(1, 3), eval = FALSE, echo = TRUE}
++-- _bookdown.yml
++-- _output.yml
++-- _build.sh
++-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd
++-- ...
++-- <a bunch of .Rmd's>
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
++-- _book                  
++-- DESCRIPTION            #<<
++-- LICENSE.md             #<<
++-- README.md              #<<
++-- standard_inputs.Rproj  #<<
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+
+]
+
+
+---
+
+# Walk-through: project files
+
+--
+* `.Rproj` are for RStudio IDE projects
+
+--
+
+* `DESCRIPTION` with `bookdown` is
+  [used when you publish via TravisCI](https://bookdown.org/yihui/bookdown/github.html).
+  `LICENSE.md` is about `r fa(name = "copyright")`
+
+--
+
+* `README.md` is for the GitHub repo
+  ```{r, echo=FALSE}
+  knitr::include_graphics("readme-example.png")
+  ```
+
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+]
+
+.left-column[
+```{text , eval = FALSE, echo = TRUE}
++-- _bookdown.yml #<<
++-- _output.yml   #<<
++-- _build.sh     #<<
++-- _common.R     #<<
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd    #<<
++-- ...
++-- <a bunch of .Rmd's>
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
++-- _book           #<<
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+* style  & Co.
+]
+
+.left-column[
+```{text , eval = FALSE, echo = TRUE}
++-- _bookdown.yml 
++-- _output.yml   
++-- _build.sh
++-- _common.R     
++-- cover.pdf    
++-- cover.png    
++-- preamble.tex #<<
++-- prebody.tex  #<<
++-- style.css    #<<
++-- index.Rmd    
++-- ...
++-- <a bunch of .Rmd's>
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images                #<<
+|   +-- ...               #<<
+|   \-- euctrl-logo.png   #<<
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+* style  & Co.
+* content: the *real thing*
+]
+
+.left-column[
+```{text , eval = FALSE, echo = TRUE}
++-- _bookdown.yml 
++-- _output.yml   
++-- _build.sh
++-- _common.R     
++-- cover.pdf    
++-- cover.png    
++-- preamble.tex
++-- prebody.tex 
++-- style.css   
++-- index.Rmd                       #<<
++-- ...                             #<<
++-- <a bunch of .Rmd's>             #<<
++-- data                            #<<
+|   +-- ...                         #<<
+|   \-- inflation.csv               #<<
++-- figures                         #<<
+|   +-- ...                         #<<
+|   \-- airline_cost_structure.png  #<<
++-- images                
+|   +-- ...               
+|   \-- euctrl-logo.png   
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R                              #<< 
+    +-- ...                        #<< 
+    \-- export_inflation.R         #<<
+```
+]
+
+
+---
+
+# Editing session
+
+
+---
+
+# Automated preview / publishing 
+

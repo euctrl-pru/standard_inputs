@@ -1,0 +1,133 @@
+/* Title slide */
+.title-slide {
+  background-image: url(../images/eurocontrol-logo.svg), url(../images/sesar-nm.png);
+  background-size: 75px, 300px;
+  background-position: 5% 97%, 96% 98%;
+  background-color: #fff;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+
+  text-shadow: none;
+}
+
+.right-column {
+    width: 55%;
+    float: right;
+    padding-top: 1em;
+}
+
+
+.left-column {
+    width: 40%;
+}
+
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #515151;
+  padding-top: 0px;
+  font-weight: normal;
+  font-size: 55px;
+/*  line-height: 0.05;
+  text-align: left;*/
+  text-shadow: none;
+  padding-bottom: 9px;
+  margin-bottom: 28px;
+  margin-top: 0px;
+}
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #cc0033;
+  font-size: 40px;
+  text-align: left;
+  text-shadow: none;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 32px;
+  font-weight: normal;
+  color: #666666;
+  text-align: left;
+  text-shadow: none;
+  padding-left: 1em;
+  line-height: 1;
+}
+
+
+.title-slide #update-date {
+  font-size: 18px;
+}
+
+.title-slide h3 img {
+  color: #666666;
+}
+
+/* Remove slide count */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+
+/* Slides et al.*/
+
+
+
+/* from https://github.com/jvcasillas/ru_xaringan */
+.remark-slide-content {
+  font-size: 30px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.remark-slide h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.remark-slide h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.MathJax {
+  font-size: 7em;
+}
+
+.watermark {
+  opacity: 0.2;
+  position: fixed;
+  z-index: 99;
+  top: 40%;
+  left: 32%;
+  font-size: 700%;
+  color: black;
+}
+
+.pull-left {
+  float: left;
+  width: 45%;
+}
+
+.pull-right {
+  float: right;
+  width: 45%;
+}
+
+.pull-right ~ * {
+  clear: both;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 75%;
+}
+
+.highlight {
+  background-color: yellow;
+}

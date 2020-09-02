@@ -1,0 +1,33 @@
+.
++-- _bookdown.yml
++-- _output.yml
++-- _build.sh
++-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd
++-- accident_incident_statistics.Rmd
++-- aircraft_operating_costs.Rmd
++-- ...
++-- <a bunch of .Rmd's>
++-- data
+|   +-- exchange_rate.csv
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- euctrl-logo-noname.png
+|   \-- sesar-nm.png
++-- _book
++-- DESCRIPTION
++-- LICENSE.md
++-- README.md
++-- standard_inputs.Rproj
++-- R
+|   +-- ...
+|   \-- extract_cover.R

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>A Standard Inputs Prototype Walk-through</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Enrico Spinielli" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/middlebury-fonts.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="walkthrough-01.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# A Standard Inputs Prototype Walk-through
+### Enrico Spinielli
+### EUROCONTROL <img src='../images/eurocontrol-logo-noname.png' height='28px'>, Aviation Intelligence Unit
+### 2020-09-07 (updated: 2020-09-01)
+
+---
+
+
+layout: true
+background-image: url(../images/eurocontrol-logo-wide.svg)
+background-position: 2% 99%
+background-size: 18%
+
+
+
+
+---
+
+
+# Outline
+
+
+* List the requirements (no debate 😉)
+* Walk through, i.e. the practical steps to
+  - understand the organization of the project
+  - define/update/view the *doc*
+  - publishing (☁️)
+
+
+.bottom[
+
+&lt;small&gt;
+**Note**: unless you are really really really eager I would leave the `git`/`GitHub` nitty-gritty
+details for another time.
+*They are important* but they are sort of _technically shocking_ if you never went thru
+this kind of stuff...
+&lt;/small&gt;
+
+]
+
+
+---
+# (Preliminary) Requirements - WebEx
+
+My understanding from WebEx w/ Désirée and Kirsteen
+
+1.	Possibility to publish the doc on the web publicly
+1.	Possibility to generate web and PDF version from (mainly) the same source
+1.	Possibility to publish on the web intermediate updates compared to the (bi-yearly?)
+    PDF/paper version
+1.	Traceability of changes in the various main/minor versions
+
+---
+
+# (Preliminary) Requirements - email feedback
+
+* Interactive graphs
+  - dashboard-like
+  - tooltip-ish, ...
+* Need for more of a Portal than a *bookdown*
+* Sharing underlying data: how (Excel, ...)?
+* site analytics
+* visual identity
+
+---
+
+# Walk-through
+
+This walk-through will show 
+
+1. structure of the project
+1. typical "editing" session
+1. how the *cloud* helps out
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+]
+
+.left-column[
+
+```text
++-- _bookdown.yml
++-- _output.yml
++-- _build.sh
++-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd
++-- ...
++-- &lt;a bunch of .Rmd's&gt;
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+]
+
+.left-column[
+
+```text
++-- _bookdown.yml
++-- _output.yml
++-- _build.sh
++-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
++-- index.Rmd
++-- ...
++-- &lt;a bunch of .Rmd's&gt;
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
++-- _book                  
+*+-- DESCRIPTION
+*+-- LICENSE.md
+*+-- README.md
+*+-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+
+]
+
+
+---
+
+# Walk-through: project files
+
+--
+* `.Rproj` are for RStudio IDE projects
+
+--
+
+* `DESCRIPTION` with `bookdown` is
+  [used when you publish via TravisCI](https://bookdown.org/yihui/bookdown/github.html).
+  `LICENSE.md` is about <i class="fas  fa-copyright "></i>
+
+--
+
+* `README.md` is for the GitHub repo
+  &lt;img src="readme-example.png" width="1229" /&gt;
+
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+]
+
+.left-column[
+
+```text
+*+-- _bookdown.yml
+*+-- _output.yml
+*+-- _build.sh
+*+-- _common.R
++-- cover.pdf
++-- cover.png
++-- preamble.tex
++-- prebody.tex
++-- style.css
+*+-- index.Rmd
++-- ...
++-- &lt;a bunch of .Rmd's&gt;
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
++-- images
+|   +-- ...
+|   \-- euctrl-logo.png
+*+-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+* style  &amp; Co.
+]
+
+.left-column[
+
+```text
++-- _bookdown.yml 
++-- _output.yml   
++-- _build.sh
++-- _common.R     
++-- cover.pdf    
++-- cover.png    
+*+-- preamble.tex
+*+-- prebody.tex
+*+-- style.css
++-- index.Rmd    
++-- ...
++-- &lt;a bunch of .Rmd's&gt;
++-- data
+|   +-- ...
+|   \-- inflation.csv
++-- figures
+|   +-- ...
+|   \-- airline_cost_structure.png
+*+-- images
+*|   +-- ...
+*|   \-- euctrl-logo.png
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
++-- R
+    +-- ...
+    \-- export_inflation.R
+```
+]
+
+---
+background-image: none;
+
+
+.right-column[
+# Project organization
+
+* project files
+* YAML files and main Rmd
+* style  &amp; Co.
+* content: the *real thing*
+]
+
+.left-column[
+
+```text
++-- _bookdown.yml 
++-- _output.yml   
++-- _build.sh
++-- _common.R     
++-- cover.pdf    
++-- cover.png    
++-- preamble.tex
++-- prebody.tex 
++-- style.css   
+*+-- index.Rmd
+*+-- ...
+*+-- &lt;a bunch of .Rmd's&gt;
+*+-- data
+*|   +-- ...
+*|   \-- inflation.csv
+*+-- figures
+*|   +-- ...
+*|   \-- airline_cost_structure.png
++-- images                
+|   +-- ...               
+|   \-- euctrl-logo.png   
++-- _book
++-- DESCRIPTION         
++-- LICENSE.md          
++-- README.md           
++-- standard_inputs.Rproj
+*+-- R
+*   +-- ...
+*   \-- export_inflation.R
+```
+]
+
+
+---
+
+# Editing session
+
+
+---
+
+# Automated preview / publishing
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
