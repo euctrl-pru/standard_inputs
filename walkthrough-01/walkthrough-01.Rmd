@@ -443,6 +443,9 @@ rmd_files: [
 * project files
 * YAML files and main Rmd
 * style  & Co.
+  - [LaTeX](https://www.overleaf.com/learn/)
+  - [CSS](https://www.w3schools.com/css/default.asp)
+  - [Biblio style (LaTeX)](https://www.zotero.org/styles)
 * content: the *real thing*
 ]
 
@@ -489,8 +492,46 @@ rmd_files: [
 
 <span style="font-size:10pt">Image from <a href="https://ontheline.trincoll.edu/bookdown.html">https://ontheline.trincoll.edu/bookdown.html</a></span>
 ---
-# RMarkdown `r icon::fontawesome("markdown")`
+# RMarkdown `r icon::fontawesome("markdown")` 1
+
+```{r, echo=FALSE,out.width="75%"}
+knitr::include_graphics("quicktourexample.png")
+```
+
+
+<span style="font-size:10pt">Image from <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">https://rmarkdown.rstudio.com/authoring_quick_tour.html</a></span>
+
+---
+# RMarkdown `r icon::fontawesome("markdown")` 2
+
+```{r, echo=FALSE,out.width="60%"}
+knitr::include_graphics("markdownchunk.png")
+```
+
+<span style="font-size:10pt">Image from <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">https://rmarkdown.rstudio.com/authoring_quick_tour.html</a></span>
+
+
+---
+# RMarkdown `r icon::fontawesome("markdown")` 3
+
+![](quicktourinline.png)
+
+<span style="font-size:10pt">Image from <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">https://rmarkdown.rstudio.com/authoring_quick_tour.html</a></span>
+
+
 ---
 
-# Automated preview / publishing 
+# Automated (preview /) publishing 
+
+```{r, echo=FALSE}
+knitr::include_graphics("ci.png")
+```
+
+---
+
+# Release management
+
+```{r, echo=FALSE,out.width="80%"}
+knitr::include_graphics("workflows.png")
+```
 
