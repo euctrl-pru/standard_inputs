@@ -71,9 +71,9 @@ subchunkify <- function(g, fig_height=7, fig_width=5) {
 .bottom[
 
 <small>
-**Note**: unless you are really really really eager I would leave the `git`/`GitHub` nitty-gritty
+**Note**: unless you are really Really REALLY eager I would leave the `git`/`GitHub` nitty-gritty
 details for another time.
-*They are important* but they are sort of _technically shocking_ if you never went thru
+*They are important* but they are sort of _technically shocking_ if you never went through
 this kind of stuff...
 </small>
 
@@ -212,7 +212,7 @@ background-image: none;
 
 * `DESCRIPTION` with `bookdown` is
   [used when you publish via TravisCI](https://bookdown.org/yihui/bookdown/github.html).
-  `LICENSE.md` is about `r fa(name = "copyright")`
+  `LICENSE.md` is about `r fontawesome(name = "copyright")`
 
 --
 
@@ -223,9 +223,6 @@ background-image: none;
 
 
 ---
-background-image: none;
-
-
 .right-column[
 # Project organization
 
@@ -268,8 +265,130 @@ background-image: none;
 ]
 
 ---
-background-image: none;
+# YAML files and main Rmd
+## `_output.yml`
+```{yml}
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li>
+          <a href="./">Standard Inputs for EUROCONTROL Cost-Benefit Analyses</a>
+        </li>
+    download: ["pdf"]
 
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+    before_body: prebody.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+
+```
+
+---
+
+# YAML files and main Rmd
+## `_output.yml`
+```{yml}
+bookdown::gitbook:      #<<
+  css: style.css        #<<
+  config:               #<<
+    toc:                #<<
+      before: |         #<<
+        <li>            #<<
+          <a href="./">Standard Inputs for EUROCONTROL Cost-Benefit Analyses</a> #<<
+        </li>           #<<
+    download: ["pdf"]   #<<
+
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+    before_body: prebody.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+
+```
+
+<img src="main-link.png" alt="main link" style="position: absolute;left: 15%;top: 58%;">
+
+---
+
+# YAML files and main Rmd
+## `_output.yml`
+```{yml}
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      before: |
+        <li>
+          <a href="./">Standard Inputs for EUROCONTROL Cost-Benefit Analyses</a>
+        </li>
+    download: ["pdf"]
+
+bookdown::pdf_book:           #<<
+  includes:                   #<<
+    in_header: preamble.tex   #<<
+    before_body: prebody.tex  #<<
+  latex_engine: xelatex       #<<
+  citation_package: natbib    #<<
+  keep_tex: yes               #<<
+```
+
+<img src="page-layout.png" alt="page layout" style="height: 80%;position: absolute;left: 54%;top: 15%;">
+
+---
+
+# YAML files and main Rmd
+## `_bookdown.yml`
+```{yml}
+# K-M (kint & merge) approach, see https://bookdown.org/yihui/bookdown/new-session.html
+new_session: yes
+
+book_filename: "standard_inputs"
+delete_merged_file: true
+output_dir: "_book"
+
+# language:
+#   ui:
+#     chapter_name: "Chapter "
+
+before_chapter_script: "_common.R"
+
+rmd_files: [
+  "index.Rmd",
+  "introduction.Rmd",
+  "conversions.Rmd",
+  "geographical_areas.Rmd",
+  #  Part: Operational Values
+  "aircraft_operating_costs.Rmd",
+  "passengers_per_movement.Rmd",
+  "cancellation_cost.Rmd",
+  "operational_cancellation_rate.Rmd",
+  "cost_of_delay.Rmd",
+  "cost_of_diversion.Rmd",
+  "en_route_ans_costs.Rmd",
+  #  Part: Safety Related Values
+  "accident_incident_statistics.Rmd",
+  # Part: Economic Values
+  "ansps_employment_costs.Rmd",
+  # Part: Environmental Values
+  "amount_of_emissions.Rmd",
+  # Part: Traffic and Capacity Related Values
+  "aircraft_operating_costs.Rmd",
+  "references.Rmd",
+  "annexes.Rmd",
+  "data.Rmd"
+]```
+
+<img src="book-toc.png" alt="book ToC" style="height: 80%;position: absolute;left: 54%;top: 15%;">
+
+
+---
 
 .right-column[
 # Project organization
@@ -277,6 +396,9 @@ background-image: none;
 * project files
 * YAML files and main Rmd
 * style  & Co.
+  - [LaTeX](https://www.overleaf.com/learn/)
+  - [CSS](https://www.w3schools.com/css/default.asp)
+  - [Biblio style (LaTeX)](https://www.zotero.org/styles)
 ]
 
 .left-column[
@@ -314,8 +436,6 @@ background-image: none;
 ]
 
 ---
-background-image: none;
-
 
 .right-column[
 # Project organization
@@ -365,7 +485,11 @@ background-image: none;
 
 # Editing session
 
+![](compose-compile-publish.png)
 
+<span style="font-size:10pt">Image from <a href="https://ontheline.trincoll.edu/bookdown.html">https://ontheline.trincoll.edu/bookdown.html</a></span>
+---
+# RMarkdown `r icon::fontawesome("markdown")`
 ---
 
 # Automated preview / publishing 

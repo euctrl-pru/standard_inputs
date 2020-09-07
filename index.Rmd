@@ -18,7 +18,6 @@ link-citations: true
 cover-image: cover.png
 ---
 
-
 `r if (knitr:::is_html_output()) '
 # Welcome {-}
 
