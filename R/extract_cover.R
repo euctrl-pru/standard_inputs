@@ -4,8 +4,8 @@ library(dplyr)
 library(png)
 
 
-base_dir <- "C:/Users/spi/Downloads"
-filename <- "standard-input-for-eurocontrol-cost-benefit-analyses-2018-edition-8-version-2.6.pdf"
+base_dir <- "data"
+filename <- "eurocontrol-standard-inputs-economic-analysis-ed9.pdf"
 
 pdf_file <- fs::path_abs(filename, start = base_dir)
 # fs::file_exists(pdf_file)
