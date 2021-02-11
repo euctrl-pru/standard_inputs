@@ -14,33 +14,109 @@ before_chapter_script: "_common.R"
 
 rmd_files: [
   "index.Rmd",
-  
+
+  "foreword.Rmd",  
   "introduction.Rmd",
   "conversions.Rmd",
   "geographical_areas.Rmd",
+  
+  # Part: Traffic and capacity
+  "traffic_and_capacity_PART.Rmd",
+  "air_traffic_statistics_and_forecasts.Rmd",
+  "medium-term_capacity_planning.Rmd",
+  "number_of_ifr_flights.Rmd",
+  "air_traffic_delay.Rmd",
+  "flow_management_delay.Rmd",
 
-  #  Part: Operational Values
+  #  Part: Environment
+  "environment_PART.Rmd",
+  "rate_of_fuel_burn.Rmd",
+  "amount_of_emissions_released_by_fuel_burn.Rmd",
+  "cost_of_emissions.Rmd",
+  "cost_of_noise.Rmd",
+  
+  # Part: Airspace users
+  "airspace_users_PART.Rmd",
   "aircraft_operating_costs.Rmd",
+  "average_number_of_passengers_per_movement.Rmd",  
+  "cancellation_cost.Rmd",
+  "operational_cancellation_rate.Rmd",
+  "cost_of_delay.Rmd",
+  "cost_of_diversion.Rmd",
+  "turnaround_time.Rmd",
+  "ifr_average_flight_distance_and_flight_duration.Rmd",
+  "ifr_flight_information_per_market_segment.Rmd",
+  "distance_flown_by_charging_zone.Rmd",
+  "load_factor-cargo.Rmd",
+  "load_factor-passengers.Rmd",
+  "cost_of_aviation_fuel.Rmd",
+  "value_of_an_average_passenger_flight.Rmd",
+  "fleet_age.Rmd",
+  "fleet_size.Rmd",
+  "fleet_cns_capability.Rmd",
+  
+  # Part: ATM
+  "atm_PART.Rmd",
+  "en_route_ans_costs.Rmd",
+  "route_charge_share_per_market_segment.Rmd",
+  "ansps_employment_costs.Rmd",
+  "asset_life.Rmd",
+  "atm_cost-effectiveness_indicators.Rmd",
+  "atm_operational_units.Rmd",
+  "cns_infrastructure.Rmd",
+  "pbn_and_precision_approach_procedures.Rmd",
+  
+  # Part: Airport
+  "airport_PART.Rmd",
+  "airport_classification.Rmd",
+  "taxiing_times.Rmd",
+  
+  # Part: Drones
+  "drones_PART.Rmd",
+  "investment_in_u-space.Rmd",
+  "drone_fleet.Rmd",
+  
+  # Part: Passengers
+  "passengers_PART.Rmd",
+  "purpose_of_passenger_travel.Rmd",
+  "passenger_value_of_time.Rmd",
+  
+  # Part: Safety 
+  "safety_PART.Rmd",
+  "accident-incident_statistics.Rmd",
+  "value_of_a_statistical_life-vsl.Rmd",
+  "value_of_a_statistical_injury.Rmd",
+
+  # Part: Financial values
+  "financial_values_PART.Rmd",
+  "discount_rate.Rmd",
+  "exchange_rate.Rmd",
+  
+  # Part: General information
+  "abbreviations.Rmd",
+  
+  "references.Rmd",
+  "annexes.Rmd",
+  "data.Rmd",
+  
+
+
+
+  ##### OLD STUFF
   "passengers_per_movement.Rmd",
   "cancellation_cost.Rmd",
   "operational_cancellation_rate.Rmd",
   "cost_of_delay.Rmd",
   "cost_of_diversion.Rmd",
-  "en_route_ans_costs.Rmd",
 
   #  Part: Safety Related Values
-  "accident_incident_statistics.Rmd",
   
   # Part: Economic Values
-  "ansps_employment_costs.Rmd",
   
   # Part: Environmental Values
   "amount_of_emissions.Rmd",
   
   # Part: Traffic and Capacity Related Values
-  "aircraft_operating_costs.Rmd",
+  "aircraft_operating_costs.Rmd"
 
-  "references.Rmd",
-  "annexes.Rmd",
-  "data.Rmd"
 ]

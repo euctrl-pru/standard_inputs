@@ -16,4 +16,4 @@ knitr::opts_chunk$set(
 options(dplyr.print_min = 6, dplyr.print_max = 6)
 
 # TRICK for now
-release_version <- 8
+release_version <- 9

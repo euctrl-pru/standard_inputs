@@ -1,7 +1,3 @@
-# (PART) Operational Values {-} 
-\pagenumbering{arabic}
-
-
 # Aircraft Operating Costs
 
 ## Definition
