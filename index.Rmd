@@ -54,9 +54,9 @@ assume any legal liability or responsibility for the accuracy, completeness or u
 
 ## Publications {-}
 
-    EUROCONTROL Headquarters
-    96 Rue de la Fusée
-    B-1130 BRUSSELS
-    Tel: +32 (0)2 729 1152
-    Fax: +32 (0)2 729 5149
-    E-mail: publications@eurocontrol.int
+| EUROCONTROL Headquarters
+| 96 Rue de la Fusée
+| B-1130 BRUSSELS
+| Tel: +32 (0)2 729 1152
+| Fax: +32 (0)2 729 5149
+| E-mail: publications@eurocontrol.int

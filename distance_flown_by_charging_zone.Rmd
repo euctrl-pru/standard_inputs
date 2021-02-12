@@ -1,1 +1,12 @@
 # Distance flown by charging zone
+
+## Definition
+
+## EUROCONTROL recommended sources
+
+## Description
+
+## Related standard inputs
+
+## Comment
+

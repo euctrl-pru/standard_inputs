@@ -2,6 +2,18 @@
 
 ## Definition
 
+## EUROCONTROL recommended sources
+
+## Description
+
+## Related standard inputs
+
+## Comment
+
+
+
+## Definition
+
 Flight and ground costs linked to the operation of an aircraft, such as
 fuel, crew, landing fees, ground handling, aircraft parking, air bridges
 and maintenance.

@@ -1,1 +1,12 @@
 # Rate of fuel burn
+
+## Definition
+
+## EUROCONTROL recommended sources
+
+## Description
+
+## Related standard inputs
+
+## Comment
+

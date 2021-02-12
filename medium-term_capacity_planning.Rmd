@@ -1,1 +1,136 @@
 # Medium-term capacity planning
+
+## Definition
+ATM capacity forecasts and planning targets over a specific period.
+
+Capacity planning is the systematic determination of resource requirements for
+the projected output, over a specific period.
+
+## EUROCONTROL recommended sources
+
+```{r, conversion-values}
+library(gt)
+library(magrittr)
+library(tibble)
+
+tribble(
+  ~what, ~description,
+  "Source 1", "EUROCONTROL NMD, Network Operations Plan (NOP) 2019-2024<br>
+[https://www.eurocontrol.int/publication/european-network-operations-plan-2019- 2024](https://www.eurocontrol.int/publication/european-network-operations-plan-2019- 2024)",
+  "Source 2", "EUROCONTROL NMD, NOP (6-week) Rolling Seasonal Plan, a consolidated network view of traffic evolution<br> [https://www.eurocontrol.int/news/eurocontrol-nm-publishes-network-rolling-plan](https://www.eurocontrol.int/news/eurocontrol-nm-publishes-network-rolling-plan)",
+"Source 3", "European ATM Master Plan Level 3, Implementation Plan and European ATM Master Plan Level 3, Implementation Report<br> [https://www.eurocontrol.int/publication/european-atm-master-plan-implementation- plan-level-3](https://www.eurocontrol.int/publication/european-atm-master-plan-implementation- plan-level-3)",
+"Source 4", "Local Single Sky Implementation (LSSIP) documents prepared for each country including capacity forecasts.<br> [https://www.eurocontrol.int/service/local-single-sky-implementation-monitoring](https://www.eurocontrol.int/service/local-single-sky-implementation-monitoring)"
+) %>% 
+  gt() %>% 
+  fmt_markdown(columns = TRUE) %>% 
+  tab_options(column_labels.hidden = TRUE)
+
+```
+
+## Description
+
+Source 1
+
+:   The Network Operations Plan (NOP) provides a short- to medium-term outlook
+    of how the ATM network will operate. It gives details of capacity and flight
+    efficiency enhancement measures planned at network level and by each area
+    control centre (ACC), as well as a description of the airport performance
+    assessment and improvement measures which are planned at those airports
+    which generate a high level of delay.
+
+
+Source 2
+
+:   With the turmoil related to the pandemic, the next edition of the NOP is
+    temporally replaced by source 2, the NOP Rolling Seasonal Plan, a special
+    version of the NOP which focuses on the planning of the next six weeks and
+    in managing the execution and implementation of the 5-year NOP.
+    <br><br>
+    This Plan is currently playing a major role in helping European aviation
+    to recover by providing aviation’s key actors with the global view they
+    need in order to plan effectively.
+    The NM is coordinating with all partners to ensure that capacity is
+    available at ACCs, in the airspace they manage and on the ground at
+    airports, in order to meet the expected traffic demand from the airlines on
+    every day of the next six weeks.
+    The plan is updated every Friday and reviewed every Monday by operational
+    stakeholders in the Ad hoc Enlarged NDOP Recovery Cell, a body which brings
+    Europe’s Network ANSPs, airports, airlines and military directors of
+    operations together to enhance performance and tackle problems on a network
+    basis, as inputs for the next edition.
+    <br><br>
+    Note that the normal NOP planning processes will be reinstated as from
+    autumn 2021.
+    <br><br>
+    More information about network performance (and access to dashboards and
+    the archive) can be found at
+    https://www.eurocontrol.int/network-performance.
+
+Source 3
+
+:   The European ATM Master Plan Level 3 (MPL3) Implementation Plan provides
+    the framework for the commonly agreed actions to be taken by ECAC
+    stakeholders, in the context of the implementation of the SESAR Programme.
+    <br><br>
+    These actions are consolidated in implementation objectives, addressing
+    elements in SESAR which have reached the necessary operational and
+    technical maturity and for which stakeholders have expressed an interest
+    in their operational introduction.
+    They provide all civil and military implementing parties (ANSPs,
+    airport operators, airspace users and regulators) with a basis for
+    short- to medium- term implementation planning.
+    <br><br>
+    The 2020 edition of the implementation plan focuses on the results of
+    the SESAR 1 Programme.
+    It highlights the contribution of each SESAR solution and implementation
+    objective to capacity, operational efficiency, cost-efficiency, safety,
+    the environment and security.
+    <br><br>
+    The plan integrates implementation objectives covering 20 SESAR solutions
+    in order to ensure adequate coverage of the Pilot Common Project (PCP)
+    requirements in relation to the SESAR Deployment Manager’s (SDM) deployment
+    programme families.
+    <br><br>
+    It also fully addresses transition phase 1 of the Airspace Architecture
+    Strategy up to 2025 through implementation objectives addressing 15 SESAR
+    solutions.
+    <br><br>
+    The Master Level 3 Implementation Plan is produced annually.
+
+Source 4
+
+:   The Local Single Sky Implementation (LSSIP) documents give a comprehensive
+    overview of all ATM information for each State, hence they also show the
+    ATM capacity forecasts and planning targets from the NOP.
+    The documents reflect progress made and detail the plans for each ECAC State
+    for the next five to seven years.
+    <br><br>
+    LSSIP documents, one for each State, are derived from the European
+    Single Sky Implementation (ESSIP) (also known as Master Plan Level 3)
+    objectives, and stakeholder lines of action cascade down into the States.
+    <br><br>
+    The information from the LSSIP documents is put together in the MPL3
+    Implementation Report to show progress at pan-European level.
+    This report is also produced annually.
+
+
+## Related standard inputs
+
+[Air traffic statistics and forecast](#air-traffic-statistics-and-forecasts)
+and [flow management delay].
+
+## Comment
+
+The [European ATM Master Plan1][atm-master-plan] is the main planning tool for
+setting ATM priorities, ensuring that the SESAR target concept becomes
+a reality.
+It is an evolving roadmap and the result of collaboration between all ATM
+stakeholders.
+
+[atm-master-plan]: <https://www.eurocontrol.int/portal/european-atm-master-plan-portal>
+
+The Master Plan provides a high-level view of what needs to be done in order to
+deliver a high- performing ATM system, while also explaining why and by when.
+It sets the framework for the development activities carried out by the SESAR
+Joint Undertaking (SJU) and deployed by stakeholders in partnership with the
+SESAR Deployment Manager (SDM).

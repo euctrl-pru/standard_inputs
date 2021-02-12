@@ -1,1 +1,12 @@
 # Drone fleet
+
+## Definition
+
+## EUROCONTROL recommended sources
+
+## Description
+
+## Related standard inputs
+
+## Comment
+

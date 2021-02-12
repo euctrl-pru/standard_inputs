@@ -1,1 +1,12 @@
 # Air traffic delay
+
+## Definition
+
+## EUROCONTROL recommended sources
+
+## Description
+
+## Related standard inputs
+
+## Comment
+
