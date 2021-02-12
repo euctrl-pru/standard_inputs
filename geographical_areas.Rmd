@@ -14,7 +14,7 @@ knitr::include_graphics("figures/eurocontrol_ms.png")
 
 ## Airspace of the ECAC Member States
 
-```{r ecac-airspace}
+```{r ecac-airspace, eval=FALSE, echo=FALSE}
 knitr::include_graphics("figures/ecac_area.png")
 ```
 
