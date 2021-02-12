@@ -1,7 +1,7 @@
-# Conversions, Inflation, Cost of Fuel, Exchange Rate {.unnumbered #conversions}
+# Conversions, Inflation, Cost of Fuel, Exchange Rate {#conversions}
 
 
-## Inflation {.unnumbered #inflation}
+## Inflation {#inflation}
 
 All values are given in euro (€) at December 2019 price levels (unless otherwise indicated).
 They have been inflated from values given in the source documents by means of the
@@ -53,7 +53,7 @@ readxl::read_xlsx("data/Values 2019_Review.xlsx",
 ```
 
 
-## Exchange Rate Conversion {.unnumbered #exchange-rates}
+## Exchange Rate Conversion {#exchange-rates}
 
 Values in pounds sterling (GB £) and US dollars (US $) have been converted
 to euros (€) using the 2019 average euro foreign exchange rate.

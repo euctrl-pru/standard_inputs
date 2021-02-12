@@ -98,25 +98,5 @@ rmd_files: [
   "references.Rmd",
   "annexes.Rmd",
   "data.Rmd",
-  
-
-
-
-  ##### OLD STUFF
-  "passengers_per_movement.Rmd",
-  "cancellation_cost.Rmd",
-  "operational_cancellation_rate.Rmd",
-  "cost_of_delay.Rmd",
-  "cost_of_diversion.Rmd",
-
-  #  Part: Safety Related Values
-  
-  # Part: Economic Values
-  
-  # Part: Environmental Values
-  "amount_of_emissions.Rmd",
-  
-  # Part: Traffic and Capacity Related Values
-  "aircraft_operating_costs.Rmd"
 
 ]

@@ -1,2 +1,54 @@
-# Geographical Areas {.unnumbered #geographical-areas}
+# Geographical Areas {#geographical-areas}
 
+## Member States and geographical areas covered
+
+```{r member-states-set-diagram}
+knitr::include_graphics("figures/eu_orgs.png")
+```
+
+## EUROCONTROL Member States (status: November 2020)
+
+```{r eurocontrol-member-states}
+knitr::include_graphics("figures/eurocontrol_ms.png")
+```
+
+## Airspace of the ECAC Member States
+
+```{r ecac-airspace}
+knitr::include_graphics("figures/ecac_area.png")
+```
+
+
+```{r, ecac-airspace-fir}
+library(pruatlas)
+library(purrr)
+library(dplyr)
+ecac <- list(ecac_oceanic(),
+             ecac_northwest(),
+             ecac_southhwest(),
+             ecac_southeast(),
+             ecac_northeast()
+             ) %>% 
+  purrr::map_dfr(.f = bind_rows) %>% 
+    sf::st_as_sf() %>%
+    sf::st_union() %>%
+  sf::st_sf(geometry = .,
+            id = "ECAC",
+            name = "ECAC",
+            icao = "ECAC"
+            ) %>% 
+  mutate(min_fl = 0, max_fl = 999)
+plot_country_fir(icao_id = "ECAC", name = "ECAC", firs = ecac)
+```
+
+
+## Comment
+
+ECAC is an intergovernmental organisation which was established by ICAO
+and the Council of Europe.
+ECAC now has 44 Member States, including all 27 EU Member States,
+31 of the 32 European Aviation Safety Agency Member States, and
+all 41 EUROCONTROL Member States.
+Further information on traffic region definitions is available in
+the EUROCONTROL STATFOR 7-year IFR Flight Movements and Service
+Units Forecast, Annex 1. https://ansperformance.eu/traffic/statfor/
