@@ -121,13 +121,13 @@ and [flow management delay].
 
 ## Comment
 
-The [European ATM Master Plan1][atm-master-plan] is the main planning tool for
+The European ATM Master Plan[^1] is the main planning tool for
 setting ATM priorities, ensuring that the SESAR target concept becomes
 a reality.
 It is an evolving roadmap and the result of collaboration between all ATM
 stakeholders.
 
-[atm-master-plan]: <https://www.eurocontrol.int/portal/european-atm-master-plan-portal>
+[^1]: <https://www.eurocontrol.int/portal/european-atm-master-plan-portal>
 
 The Master Plan provides a high-level view of what needs to be done in order to
 deliver a high- performing ATM system, while also explaining why and by when.
