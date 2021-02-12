@@ -1,18 +1,18 @@
-# Geographical Areas {#geographical-areas}
+# Geographical Areas {#geographical-areas .unnumbered}
 
-## Member States and geographical areas covered
+## Member States and geographical areas covered {.unnumbered}
 
 ```{r member-states-set-diagram}
 knitr::include_graphics("figures/eu_orgs.png")
 ```
 
-## EUROCONTROL Member States (status: November 2020)
+## EUROCONTROL Member States (status: November 2020) {.unnumbered}
 
 ```{r eurocontrol-member-states}
 knitr::include_graphics("figures/eurocontrol_ms.png")
 ```
 
-## Airspace of the ECAC Member States
+## Airspace of the ECAC Member States {.unnumbered}
 
 ```{r ecac-airspace, eval=FALSE, echo=FALSE}
 knitr::include_graphics("figures/ecac_area.png")
@@ -42,7 +42,7 @@ plot_country_fir(icao_id = "ECAC", name = "ECAC", firs = ecac)
 ```
 
 
-## Comment
+## Comment {.unnumbered}
 
 ECAC is an intergovernmental organisation which was established by ICAO
 and the Council of Europe.

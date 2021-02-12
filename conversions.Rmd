@@ -1,7 +1,7 @@
-# Conversions, Inflation, Cost of Fuel, Exchange Rate {#conversions}
+# Conversions, Inflation, Cost of Fuel, Exchange Rate {#conversions .unnumbered}
 
 
-## Inflation {#inflation}
+## Inflation {#inflation .unnumbered}
 
 All values are given in euro (€) at December 2019 price levels (unless otherwise indicated).
 They have been inflated from values given in the source documents by means of the
@@ -53,7 +53,7 @@ readxl::read_xlsx("data/Values 2019_Review.xlsx",
 ```
 
 
-## Exchange Rate Conversion {#exchange-rates}
+## Exchange Rate Conversion {#exchange-rates .unnumbered}
 
 Values in pounds sterling (GB £) and US dollars (US $) have been converted
 to euros (€) using the 2019 average euro foreign exchange rate.
@@ -75,7 +75,7 @@ read_csv("data/exchange_rate.csv") %>%
 Further information can be found in the related standard input exchange rate (page 123).
 
 
-## Cost of fuel
+## Cost of fuel {.unnumbered}
 
 The cost of fuel used in this document is based on the 2019 average jet
 fuel price handled by IATA (unless otherwise specified).
@@ -99,7 +99,7 @@ Details can be found in the related standard input
 [cost of aviation fuel](#cost_of_aviation_fuel).
 
 
-## Conversion values
+## Conversion values {.unnumbered}
 
 ```{r, conversion-values}
 tribble(
@@ -128,6 +128,6 @@ tribble(
 
 ```
 
-## For Further Information
+## For Further Information {.unnumbered}
 
 For any questions relating to this document, please contact EUROCONTROL using the e-mail [aviation.intelligence@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int?subject=Standard%20inputs), naming the standard inputs in the subject line.
