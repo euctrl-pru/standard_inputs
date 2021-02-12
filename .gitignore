@@ -1,4 +1,5 @@
 standard_inputs.rds
+_bookdown_files
 
 ######## R project specific (R.gitignore)
 # from https://github.com/github/gitignore/
