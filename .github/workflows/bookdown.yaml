@@ -23,9 +23,6 @@ jobs:
         uses: r-lib/actions/setup-pandoc@v1
         with:
           pandoc-version: '2.11.2'
-       # run: |
-        #   brew install pandoc
-        #   brew install pandoc-citeproc
 
       - name: Cache Renv packages
         uses: actions/cache@v1
