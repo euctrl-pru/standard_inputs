@@ -59,7 +59,8 @@ to the full BADA model (see link above).
 
 ## Related standard inputs
 
-[Amount of emissions released by fuel burn], [cost of emissions] and
+[Amount of emissions released by fuel burn](#amount-of-emissions-released-by-fuel-burn),
+[cost of emissions] and
 [IFR flight information per market segment](#ifr-flight-information-per-market-segment).
 
 
