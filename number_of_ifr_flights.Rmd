@@ -70,7 +70,6 @@ Value 4
     ```
 
     ```{r, average-daily-ifr-flights-table}
-    library(readr)
     library(gt)
     library(magrittr)
     library(tibble)
