@@ -7,12 +7,35 @@ Flight and ground costs linked to the operation of an aircraft, such as fuel and
 ## EUROCONTROL recommended sources
 
 Value
-
-:   \`\`\`{r, flight-operating-cost} library(tibble) library(gt)
-
-    tribble( \~act, \~cost_yr, \~cost_fh, \~cost_cycle, \~cost_seat_km, \~cost_ton_km, "B737 NG" , 14.11, 4337, 9231, 3.76, 33.11, "A320 Family" , 12.84, 4829, 8851, 3.60, 36.92, "B737 Classic", 8.26, 2683, 5366, 2.96, 25.28, "B777" , 40.01, 9507, 60367, 3.53, 22.07, "A330" , 29.87, 7827, 35857, 3.61, 24.48, "B757" , 18.21, 5357, 18508, 3.73, 30.51, "B767" , 26.00, 6675, 40899, 3.61, 22.18, "B787" , 30.58, 7184, 50827, 3.11, 19.86, "EMB-190" , 10.87, 4097, 5770, 6.35, 54.00, "Dash 8" , 4.03, 1921, 1921, 6.12, 58.08 ) %\>% gt() %\>% tab_header( title = "Flight operating costs (in \$ 2019 prices)" ) %\>% cols_label( act = "Aircraft type", cost_yr = "per aircraft per year (M\$)", cost_fh = "per flight hour", cost_cycle = "per flight cycle", cost_seat_km = "per available seat Km (US cents)", cost_ton_km = "per available ton km (US cents)" ) %\>% opt_align_table_header(align = "left")
-
-    \`\`\`
+:   
+    ```{r, flight-operating-cost}
+    library(tibble)
+    library(gt)
+    tribble(
+    ~act, ~cost_yr, ~cost_fh, ~cost_cycle, ~cost_seat_km, ~cost_ton_km,
+    "B737 NG" , 14.11, 4337, 9231, 3.76, 33.11,
+    "A320 Family" , 12.84, 4829, 8851, 3.60, 36.92,
+    "B737 Classic", 8.26, 2683, 5366, 2.96, 25.28,
+    "B777" , 40.01, 9507, 60367, 3.53, 22.07,
+    "A330" , 29.87, 7827, 35857, 3.61, 24.48,
+    "B757" , 18.21, 5357, 18508, 3.73, 30.51,
+    "B767" , 26.00, 6675, 40899, 3.61, 22.18,
+    "B787" , 30.58, 7184, 50827, 3.11, 19.86,
+    "EMB-190" , 10.87, 4097, 5770, 6.35, 54.00,
+    "Dash 8" , 4.03, 1921, 1921, 6.12, 58.08 
+    ) %>% 
+      gt() %>%
+      tab_header(
+        title = "Flight operating costs (in $ 2019 prices)") %>% 
+      cols_label(
+        act = "Aircraft   type",
+        cost_yr = "per aircraft per year (M$)",
+        cost_fh = "per flight hour",
+        cost_cycle = "per flight   cycle",
+        cost_seat_km = "per available seat Km (US cents)",
+        cost_ton_km = "per available ton km (US   cents)") %>%
+      opt_align_table_header(align = "left")
+    ```
 
 Source
 
@@ -49,6 +72,3 @@ The values used for analysis are the result of aggregating the cost data provide
 [Note from IATA]{.ul} \
 In a number of jurisdictions, airport charges and taxes which are levied on a per-passenger basis are not accounted for in airline profit and loss accounts. As a result, the share of airport charges is likely to be significantly understated, as airports may levy more on a per-passenger or per-aircraft basis in some jurisdictions. To give an order of magnitude, in some regions the ACI (Airports Council International) estimates that over 50% of airport charges are collected on a per-passenger basis, reaching as much as 80% in some regions worldwide.
 
-## Related standard inputs
-
-## Comment
