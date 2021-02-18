@@ -7,17 +7,38 @@ different flight phases and with different load factors
 ## EUROCONTROL recommended sources
 
 Value
-:   Fuel burn rates (kg/minutes) in flight phases where delay can occur for
-    most representative aircraft types flying (with restriction in use[^4])
+:   
     ```{r, fuel-burn-rates}
     # see gt example for custom table
     library(readr)
     library(gt)
     library(magrittr)
-    
+
     read_csv("data/rate-of-fuel-burn.csv") %>% 
       gt() %>% 
-      fmt_markdown(columns = TRUE)
+    tab_header(title = md("Fuel burn rates (kg/minutes) in flight phases
+                          where delay can occur for most representative
+                          aircraft types flying (with restriction in use)")) %>%
+    tab_footnote(
+      footnote = "It is strictly prohibited to use the fuel burn values to
+                  compare fuel efficiency and emission data between aircraft
+                  types from the same or different manufactures.
+                  Data are provided here to allow the drafting of aggregate
+                  business cases.",
+      locations = cells_title(groups = c("title"))) %>%
+    tab_footnote(
+      footnote = "The useful load is the sum of the payload and the fuel.
+The maximum useful load is approximately the MTOW minus the empty aircraft
+weight. The '% of max useful load' referred to in the recommended value
+indicates how the aircraft is loaded, in terms of payload and fuel (combined).
+This must also not be confused with the load factor, which indicates how
+the aircraft is loaded in terms of payload only (i.e. not taking the fuel into
+account).",
+      locations = cells_body(
+        columns = 1:1,
+        rows = 1:1)
+    ) %>%
+      opt_align_table_header(align = "left")
 
     ```
 
@@ -25,18 +46,6 @@ Source
 :   EUROCONTROL BADA (Base of Aircraft Data)
     https://www.eurocontrol.int/model/bada
 
-[^4]: It is strictly prohibited to use the fuel burn values to compare fuel
-efficiency and emission data between aircraft types from the same or different
-manufactures.
-Data are provided here to allow the drafting of aggregate business cases.
-
-[^5]: The useful load is the sum of the payload and the fuel.
-The maximum useful load is approximately the MTOW minus the empty aircraft
-weight. The "% of max useful load" referred to in the recommended value
-indicates how the aircraft is loaded, in terms of payload and fuel (combined).
-This must also not be confused with the load factor, which indicates how
-the aircraft is loaded in terms of payload only (i.e. not taking the fuel into
-account).
 
 
 ## Description
