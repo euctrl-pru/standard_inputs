@@ -1,4 +1,4 @@
-# Operational Cancellation Level
+# Operational Cancellation Rate {#operational-cancellation-rate}
 
 ## Definition
 
