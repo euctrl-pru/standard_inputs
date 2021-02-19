@@ -126,13 +126,13 @@ Value 4
       dplyr::group_by(type) %>% 
       gt() %>%
       cols_label(
-      type = "Type of flight",
-      distance = "Distance [km]",
-      emission_class = "Emission class",
-      aircraft_type = "Example of aircraft type",
-      eur_lto = "€ per LTO",
-      eur_pax_km = "€-cent per pax km",
-      eur_pax = "€ per pax"
+        type = "Type of flight",
+        distance = "Distance [km]",
+        emission_class = "Emission class",
+        aircraft_type = "Example of aircraft type",
+        eur_lto = "€ per LTO",
+        eur_pax_km = "€-cent per pax km",
+        eur_pax = "€ per pax"
     ) %>% 
     tab_header(title = md("Marginal air pollution costs of aviation for selected cases")) %>%
     tab_footnote(
