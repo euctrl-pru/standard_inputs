@@ -5,21 +5,9 @@ Actual and forecast numbers of flights and service units.
 
 ## EUROCONTROL recommended source
 
-```{r, conversion-values}
-library(gt)
-library(magrittr)
-library(tibble)
-
-tribble(
-  ~what, ~description,
-  "Source", "EUROCONTROL Statistics and Forecasts Service (STATFOR)</br> [https://www.eurocontrol.int/forecasting](https://www.eurocontrol.int/forecasting)"
-) %>% 
-  gt() %>% 
-  fmt_markdown(columns = TRUE) %>% 
-  tab_options(column_labels.hidden = TRUE)
-
-```
-
+Source
+:   EUROCONTROL Statistics and Forecasts Service (STATFOR)  
+    https://www.eurocontrol.int/forecasting
 
 
 ## Description
