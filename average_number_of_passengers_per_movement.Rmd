@@ -1,7 +1,7 @@
 # Average number of passengers per movement
 
 ## Definition
-
+Average17 number of passengers per movement (take-off or landing) in Europe.
 ## EUROCONTROL recommended sources
 
 ## Description
