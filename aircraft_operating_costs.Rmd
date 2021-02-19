@@ -26,7 +26,8 @@ Value
     ) %>% 
       gt() %>%
       tab_header(
-        title = "Flight operating costs (in $ 2019 prices)") %>% 
+        title = "Flight operating costs",
+        subtitle = "(in $ 2019 prices)") %>% 
       cols_label(
         act = "Aircraft   type",
         cost_yr = "per aircraft per year (M$)",
