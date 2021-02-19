@@ -46,7 +46,7 @@ jobs:
       - name: Build site
         run: |
           Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
-          Rscript -e 'bookdown::render_book("index.rmd", output_format = "bookdown::pdf_book")'
+          # Rscript -e 'bookdown::render_book("index.rmd", output_format = "bookdown::pdf_book")'
 
       - name: Install npm
         uses: actions/setup-node@v1
