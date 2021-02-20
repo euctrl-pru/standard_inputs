@@ -44,6 +44,11 @@ Value 1
         locations = list(
           cells_title(groups = c("title")),
           cells_body(columns = vars(col1), rows = c(2, 3)))) %>% 
+      fmt_number(
+        columns = 2:7,
+        decimals = 0,
+        sep_mark = " "
+      ) %>% 
       opt_align_table_header(align = "left")
     
     ```
