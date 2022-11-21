@@ -20,6 +20,8 @@ The values of the index are available from [Eurostat][eurostat]
 (ref:inflation-table) Annual average inflation values.
 
 
+Maybe difficult.
+
 ```{r inflation-table, fig.cap='(ref:inflation-table)'}
 library(readxl)
 library(dplyr)
