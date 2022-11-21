@@ -1,11 +1,5 @@
----
-
----
-
 `r if (knitr:::is_html_output()) '
 # Welcome {-}
-
-<a href="http://www.eurocontrol.int"><img src="cover.png" width="250" height="354" alt="Cover image" align="right" style="margin: 0 1em 0 1em; border: 1px solid #555" /></a>
 
 This is the website for __"Standard Inputs for EUROCONTROL Cost-Benefit Analyses"__.
 
