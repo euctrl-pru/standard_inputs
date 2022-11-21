@@ -1,3 +1,7 @@
+---
+params:
+  release_version: 10.0.1
+---
 ```{r}
 library(english)
 ```
@@ -13,7 +17,7 @@ different CBAs.
 
 We are using whatever.   
 
-In this, the `r ordinal(release_version)` edition:
+In this, the `r ordinal(params$release_version)` edition:
 
 * the title has been changed to “EUROCONTROL standard inputs for economic analyses”,
   a more accurate description of its use;
