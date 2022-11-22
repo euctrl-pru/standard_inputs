@@ -1,5 +1,6 @@
 # Rate of fuel burn
 
+
 ## Definition
 Average number of kilogrammes per hour of fuel burnt by an aircraft in
 different flight phases and with different load factors

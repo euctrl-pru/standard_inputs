@@ -5,7 +5,7 @@ project:
 params:
   release_version: 10.0.1
 
-
+  
 bibliography: "bibliography.bib"
 biblio-style: "apalike"
 link-citations: true
@@ -28,6 +28,9 @@ format:
       - media/fontawesome.html
       # UNCOMMENT for activating GA
       - media/analytics.html
+    execute:
+      echo: false
+      warning: false
   pdf:
     toc: true
     number-sections: true
@@ -59,20 +62,20 @@ book:
     - "conversions.qmd"
     - "geographical_areas.qmd"
     
-    # Part: Traffic and capacity
-    - "traffic_and_capacity_PART.qmd"
-    - "air_traffic_statistics_and_forecasts.qmd"
-    - "medium-term_capacity_planning.qmd"
-    - "number_of_ifr_flights.qmd"
-    - "air_traffic_delay.qmd"
-    - "flow_management_delay.qmd"
+    - part: "Traffic and capacity"
+      chapters:
+        - "air_traffic_statistics_and_forecasts.qmd"
+        - "medium-term_capacity_planning.qmd"
+        - "number_of_ifr_flights.qmd"
+        - "air_traffic_delay.qmd"
+        - "flow_management_delay.qmd"
     
-    #  Part: Environment
-    - "environment_PART.qmd"
-    - "rate_of_fuel_burn.qmd"
-    - "amount_of_emissions_released_by_fuel_burn.qmd"
-    - "cost_of_emissions.qmd"
-    - "cost_of_noise.qmd"
+    - part: "Environment"
+      chapters:
+        - "rate_of_fuel_burn.qmd"
+        - "amount_of_emissions_released_by_fuel_burn.qmd"
+        - "cost_of_emissions.qmd"
+        - "cost_of_noise.qmd"
     
     # Part: Airspace users
     - "airspace_users_PART.qmd"
