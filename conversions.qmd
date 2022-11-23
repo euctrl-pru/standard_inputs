@@ -11,18 +11,17 @@ EU-28-2013, EU27-2020) harmonised index of consumer prices (HICP 2015=100).
 
 The annual change in the index is shown below.
 The values of the index are available from [Eurostat][eurostat]
-(table [`prc_hicp_aind` table][prc_hicp_aind].)
+(table @tbl-inflation-table.)
 
 [eurostat]: <http://ec.europa.eu/eurostat> 
 [prc_hicp_aind]: <https://ec.europa.eu/eurostat/data/database?node_code=prc_hicp_aind>
 [eu-enlargement]: <https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:EU_enlargements>
 
-(ref:inflation-table) Annual average inflation values.
 
+```{r}
+#| label: tbl-inflation-table
+#| tbl-cap: Annual average inflation values.
 
-Maybe difficult.
-
-```{r inflation-table, fig.cap='(ref:inflation-table)'}
 library(readxl)
 library(dplyr)
 library(gt)
@@ -60,7 +59,9 @@ readxl::read_xlsx("data/Values 2019_Review.xlsx",
 Values in pounds sterling (GB £) and US dollars (US $) have been converted
 to euros (€) using the 2019 average euro foreign exchange rate.
 
-```{r eurostat-exchange-rates}
+```{r }
+#| label: tbl-eurostat-exchange-rates
+#| tbl-cap: Average euro foreign exchange rate (2019).
 library(readr)
 library(dplyr)
 library(gt)
@@ -71,6 +72,9 @@ read_csv("data/exchange_rate.csv") %>%
     currency  = "Currency",
     to_eur    = "Currency-€",
     from_eur  = "€-Currency"
+  ) %>%
+    tab_source_note(
+    source_note = md("Source: ???")
   )
 ```
 
@@ -82,7 +86,9 @@ Further information can be found in the related standard input exchange rate (pa
 The cost of fuel used in this document is based on the 2019 average jet
 fuel price handled by IATA (unless otherwise specified).
 
-```{r cost-of-fuel}
+```{r}
+#| label: tab-cost-of-fuel
+#| tbl-cap: Average jet fuel price.
 library(dplyr)
 library(gt)
 
@@ -94,6 +100,9 @@ tribble(
   cols_label(
     usd_gallon = "US$/gallon",
     eur_kg     = "€/kg",
+  ) %>%
+    tab_source_note(
+    source_note = md("Source: IATA")
   )
 ```
 
@@ -103,7 +112,9 @@ Details can be found in the related standard input
 
 ## Conversion values {.unnumbered}
 
-```{r, conversion-values}
+```{r}
+#| label: conversion-values
+#| tbl-cap: Units conversion values.
 tribble(
   ~from, ~to,
   "1 nautical mile (NM)", "1.852 km",
