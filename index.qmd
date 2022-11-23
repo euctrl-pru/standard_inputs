@@ -10,8 +10,7 @@ in order to provide up to date information for the interested users.
 
 # Notice and Disclaimer {-}
 
-The EUROCONTROL Business Case Team has made every effort to ensure that the information and analysis
-contained in this document are as accurate as possible. Only information from quoted sources has been used
+The EUROCONTROL Business Case Team has made every effort to ensure that the information and analysis contained in this document are as accurate as possible. Only information from quoted sources has been used
 and information relating to named parties has been checked with the parties concerned. Despite these
 precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to
 the EUROCONTROL Business Case Team’s attention. Our email address is:
