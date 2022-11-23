@@ -1,4 +1,5 @@
 /* thin border around cover image */
-quarto-cover-image img-fluid {
+.quarto-cover-image {
   border-width: thin;
+  border-color: black;
 }
