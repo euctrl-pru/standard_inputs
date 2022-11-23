@@ -14,8 +14,11 @@ cover-image: cover.png
 
 format:
   html:
-    # css: 
-    #   - style.css
+    execute:
+      echo: false
+      warning: false
+    css:
+      - style.css
     # theme:
     #   - cosmo
     #   - custom.scss
@@ -29,6 +32,8 @@ format:
       # UNCOMMENT for activating GA
       - media/analytics.html
   pdf:
+    execute:
+      echo: false
     toc: true
     number-sections: true
     colorlinks: true
@@ -46,7 +51,6 @@ book:
   description: "This document provides values for commonly used data items in cost-benefit analyses, together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search: true
   repo-url: https://github.com/euctrl-pru/standard_inputs
-  repo-actions: [edit]
   downloads: [pdf]
   sharing: [twitter]
   output-file: "standard_inputs"
@@ -144,7 +148,6 @@ book:
     logo: "images/EUROCONTROL-logo-standard-rgb.svg"
     left:
       - text: "<i class='far fa-star fa-spin fa-fw'></i> Aviation Intelligence"
-        icon: "star"
         menu:
           - text: "**Home**"
             icon: "house-fill"
