@@ -31,9 +31,6 @@ format:
       - media/fontawesome.html
       # UNCOMMENT for activating GA
       - media/analytics.html
-    execute:
-      echo: false
-      warning: false
   pdf:
     execute:
       echo: false
