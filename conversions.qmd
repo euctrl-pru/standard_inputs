@@ -1,42 +1,49 @@
-# Conversions, Inflation, Cost of Fuel, Exchange Rate {#conversions .unnumbered}
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
+# General parameters {#conversions .unnumbered}
+
+Below are presented some key values used in the Standard Inputs and that can serve as a reference for other uses.
+
+For any questions relating to this document, please contact EUROCONTROL
+using the e-mail
+[aviation.intelligence\@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int?subject=Standard%20inputs),
+naming the Standard Inputs in the subject line.
 
 ## Inflation {#inflation .unnumbered}
 
-All values are given in euro (€) at December 2019 price levels (unless otherwise indicated).
-They have been inflated from values given in the source documents by means of the
-[EUROSTAT European Union][eu-enlargement]
-(EU6-1958, EU9-1973, EU10-1981, EU12-1986, EU15-1995, EU25-2004, EU27- 2007,
-EU-28-2013, EU27-2020) harmonised index of consumer prices (HICP 2015=100).
+The inflation levels have been calculated based on the Harmonised Index
+of Consumer Prices (HICP), as the yearly difference in the HICP. The
+HICP data was extracted from [Eurostat](http://ec.europa.eu/eurostat)
+HICP - annual data (average index and rate of change) database
+(prc_hicp_aind).
 
-The annual change in the index is shown below.
-The values of the index are available from [Eurostat][eurostat]
-(table @tbl-inflation-table.)
-
-[eurostat]: <http://ec.europa.eu/eurostat> 
-[prc_hicp_aind]: <https://ec.europa.eu/eurostat/data/database?node_code=prc_hicp_aind>
-[eu-enlargement]: <https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:EU_enlargements>
-
+The annual change in the index is shown below. The values of the index
+are available from [Eurostat](http://ec.europa.eu/eurostat) (table
+@tbl-inflation-table.)
 
 ```{r}
 #| label: tbl-inflation-table
-#| tbl-cap: Annual average inflation values.
+#| tbl-cap: Annual average inflation values
 
 library(readxl)
 library(dplyr)
 library(gt)
 
 # read from CSV (exported directly from Eurostat, see R/export_inflation.R)
-readxl::read_xlsx("data/Values 2019_Review.xlsx",
+readxl::read_xlsx("data/values_2022.xlsx",
                   sheet = "basic assumptions",
                   range = "C6:E33" 
                   ) %>%
-  filter(2000 <= Year, Year <= 2019) %>%
+  filter(2000 <= Year, Year <= 2021) %>%
   arrange(desc(Year)) %>% 
   # format the table
   gt() %>%
   tab_source_note(
-    source_note = md("Source: Eurostat, [http://ec.europa.eu/eurostat](http://ec.europa.eu/eurostat)")
+    source_note = md("Source: [Eurostat](http://ec.europa.eu/eurostat)")
   ) %>%
   cols_label(
     Year  = "Year",
@@ -53,15 +60,13 @@ readxl::read_xlsx("data/Values 2019_Review.xlsx",
   )
 ```
 
-
 ## Exchange Rate Conversion {#exchange-rates .unnumbered}
 
-Values in pounds sterling (GB £) and US dollars (US $) have been converted
-to euros (€) using the 2019 average euro foreign exchange rate.
+The currency exchange rates provided below are based on the European Central Bank (ECB) rates as are published daily. The rates exposed in the table below correspond to the average rate for the year 2021 as published by ECB.
 
 ```{r }
 #| label: tbl-eurostat-exchange-rates
-#| tbl-cap: Average euro foreign exchange rate (2019).
+#| tbl-cap: Average euro foreign exchange rate (2021)
 library(readr)
 library(dplyr)
 library(gt)
@@ -74,41 +79,37 @@ read_csv("data/exchange_rate.csv") %>%
     from_eur  = "€-Currency"
   ) %>%
     tab_source_note(
-    source_note = md("Source: ???")
+    source_note = md("Source: [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)")
   )
 ```
 
-Further information can be found in the related standard input exchange rate (page 123).
-
-
 ## Cost of fuel {.unnumbered}
 
-The cost of fuel used in this document is based on the 2019 average jet
-fuel price handled by IATA (unless otherwise specified).
+The cost of fuel used in this document is based on the 2021 average jet
+fuel price handled by [IATA](https://www.iata.org/en/publications/economics/fuel-monitor/), unless otherwise specified. All conversions are done using the values specified on this page.
 
 ```{r}
 #| label: tab-cost-of-fuel
-#| tbl-cap: Average jet fuel price.
+#| tbl-cap: Average jet fuel price
 library(dplyr)
 library(gt)
 
 tribble(
-  ~usd_gallon, ~eur_kg,
-  1.83, 0.43
+  ~currency, ~price_barrel, ~price_gallon, ~price_kg,
+  "USD", 141.7, 3.8, 1.1,
+  "EUR", 138.9, 3.31, 1.1,
 ) %>%
   gt() %>%
   cols_label(
-    usd_gallon = "US$/gallon",
-    eur_kg     = "€/kg",
+    currency = "Currency",
+    price_barrel = "Price per barrel",
+    price_gallon  = "Price per gallon",
+    price_kg = "Price per kg"
   ) %>%
     tab_source_note(
-    source_note = md("Source: IATA")
+    source_note = md("Source: [IATA](https://www.iata.org/en/publications/economics/fuel-monitor/)")
   )
 ```
-
-Details can be found in the related standard input
-[cost of aviation fuel](#cost_of_aviation_fuel).
-
 
 ## Conversion values {.unnumbered}
 
@@ -136,11 +137,6 @@ tribble(
   gt() %>%
   cols_label(
     from = "From",
-    to     = "To",
-  )
-
+    to = "To",
+    )
 ```
-
-## For Further Information {.unnumbered}
-
-For any questions relating to this document, please contact EUROCONTROL using the e-mail [aviation.intelligence@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int?subject=Standard%20inputs), naming the standard inputs in the subject line.
