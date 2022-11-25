@@ -45,8 +45,7 @@ format:
 book:
   title: "Standard Inputs for EUROCONTROL Cost-Benefit Analyses"
   author:
-    - "Désirée Teunissen"
-    - "Kirsteen Purves"
+    - "EUROCONTROL Business Cases Team"
   date: "2022-12-25"
   description: "This document provides values for commonly used data items in cost-benefit analyses, together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search: true
