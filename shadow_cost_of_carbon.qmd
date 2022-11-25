@@ -2,8 +2,7 @@
 
 ## Definition
 
-whatever
-
+The shadow price of carbon (SPC) is the cost of carbon required to drive the economy to meet the 1.5°C global temperature target set by the Intergovernmental Panel on Climate Change (IPCC).
 
 ```{r}
 #| label: tbl-inflation-table
@@ -39,3 +38,18 @@ readxl::read_xlsx("data/values_2022.xlsx",
     decimals = 2
   )
 ```
+
+## Description
+
+The input is an **adjustment** of the EIB recommended values to reflect the most realistic cost of meeting the UN Paris agreement to limit global warming well below 2 degrees Celsius, ideally 1.5 -- compared to pre-industrial levels . Please note this input does not refer to the traditional 'market price' but to the "shadow cost of carbon", i.e. considering externalities and future policies. The original EIB proposed inputs are expressed in 2016 prices and have been adjusted to 2021 price levels using the EUROSTAT Harmonised Index of Consumer Prices (HCIP) -- series (prc_hicp_aind).
+
+## Comments
+
+In Economic Analyses the concept of 'shadow price / cost' is often used when working with an abstract commodity or intangible assets. Typically, two elements are reflected in the 'shadow cost': - Firstly, the cost of negative externalities such as pollution in this case. - Secondly, the 'shadow' prices involves the consideration future policies.
+
+Shadow prices are inexact by definition -- they are based on assumptions -- but their usefulness resides in that they help to understand the full socio-economic merits of a project. Please note the SPC does not constitute in any way an optimal value for any policy instrument.
+
+The concept is clearly explained with the graph below produced by the EIB (page 116).
+
+## When to use the input?
+Possible to be deleted.
