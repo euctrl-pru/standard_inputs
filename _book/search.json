@@ -119,1549 +119,268 @@
     "text": "1.5 Comments\nThe following chart (status: November 2020) shows the traffic forecast taking account of the impact of COVID.\n\n\n\n\n\nSource: EUROCONTROL STATFOR 2020, https://www.eurocontrol.int/covid19"
   },
   {
-    "objectID": "medium-term_capacity_planning.html#definition",
-    "href": "medium-term_capacity_planning.html#definition",
-    "title": "\n2  Medium-term capacity planning\n",
-    "section": "\n2.1 Definition",
-    "text": "2.1 Definition\nATM capacity forecasts and planning targets over a specific period.\nCapacity planning is the systematic determination of resource requirements for the projected output, over a specific period."
-  },
-  {
-    "objectID": "medium-term_capacity_planning.html#eurocontrol-recommended-sources",
-    "href": "medium-term_capacity_planning.html#eurocontrol-recommended-sources",
-    "title": "\n2  Medium-term capacity planning\n",
-    "section": "\n2.2 EUROCONTROL recommended sources",
-    "text": "2.2 EUROCONTROL recommended sources\n\n\n\n\n\n\n\n\nSource 1\n\n\nEUROCONTROL NMD, Network Operations Plan (NOP) 2019-2024\n[https://www.eurocontrol.int/publication/european-network-operations-plan-2019- 2024](https://www.eurocontrol.int/publication/european-network-operations-plan-2019- 2024)\n\n\n\n\nSource 2\n\n\nEUROCONTROL NMD, NOP (6-week) Rolling Seasonal Plan, a consolidated network view of traffic evolutionhttps://www.eurocontrol.int/news/eurocontrol-nm-publishes-network-rolling-plan\n\n\n\n\nSource 3\n\n\nEuropean ATM Master Plan Level 3, Implementation Plan and European ATM Master Plan Level 3, Implementation Report [https://www.eurocontrol.int/publication/european-atm-master-plan-implementation- plan-level-3](https://www.eurocontrol.int/publication/european-atm-master-plan-implementation- plan-level-3)\n\n\n\n\nSource 4\n\n\nLocal Single Sky Implementation (LSSIP) documents prepared for each country including capacity forecasts.https://www.eurocontrol.int/service/local-single-sky-implementation-monitoring"
-  },
-  {
-    "objectID": "medium-term_capacity_planning.html#description",
-    "href": "medium-term_capacity_planning.html#description",
-    "title": "\n2  Medium-term capacity planning\n",
-    "section": "\n2.3 Description",
-    "text": "2.3 Description\n\nSource 1\n\nThe Network Operations Plan (NOP) provides a short- to medium-term outlook of how the ATM network will operate. It gives details of capacity and flight efficiency enhancement measures planned at network level and by each area control centre (ACC), as well as a description of the airport performance assessment and improvement measures which are planned at those airports which generate a high level of delay.\n\nSource 2\n\nWith the turmoil related to the pandemic, the next edition of the NOP is temporally replaced by source 2, the NOP Rolling Seasonal Plan, a special version of the NOP which focuses on the planning of the next six weeks and in managing the execution and implementation of the 5-year NOP.  This Plan is currently playing a major role in helping European aviation to recover by providing aviation’s key actors with the global view they need in order to plan effectively. The NM is coordinating with all partners to ensure that capacity is available at ACCs, in the airspace they manage and on the ground at airports, in order to meet the expected traffic demand from the airlines on every day of the next six weeks. The plan is updated every Friday and reviewed every Monday by operational stakeholders in the Ad hoc Enlarged NDOP Recovery Cell, a body which brings Europe’s Network ANSPs, airports, airlines and military directors of operations together to enhance performance and tackle problems on a network basis, as inputs for the next edition.  Note that the normal NOP planning processes will be reinstated as from autumn 2021.  More information about network performance (and access to dashboards and the archive) can be found at https://www.eurocontrol.int/network-performance.\n\nSource 3\n\nThe European ATM Master Plan Level 3 (MPL3) Implementation Plan provides the framework for the commonly agreed actions to be taken by ECAC stakeholders, in the context of the implementation of the SESAR Programme.  These actions are consolidated in implementation objectives, addressing elements in SESAR which have reached the necessary operational and technical maturity and for which stakeholders have expressed an interest in their operational introduction. They provide all civil and military implementing parties (ANSPs, airport operators, airspace users and regulators) with a basis for short- to medium- term implementation planning.  The 2020 edition of the implementation plan focuses on the results of the SESAR 1 Programme. It highlights the contribution of each SESAR solution and implementation objective to capacity, operational efficiency, cost-efficiency, safety, the environment and security.  The plan integrates implementation objectives covering 20 SESAR solutions in order to ensure adequate coverage of the Pilot Common Project (PCP) requirements in relation to the SESAR Deployment Manager’s (SDM) deployment programme families.  It also fully addresses transition phase 1 of the Airspace Architecture Strategy up to 2025 through implementation objectives addressing 15 SESAR solutions.  The Master Level 3 Implementation Plan is produced annually.\n\nSource 4\n\nThe Local Single Sky Implementation (LSSIP) documents give a comprehensive overview of all ATM information for each State, hence they also show the ATM capacity forecasts and planning targets from the NOP. The documents reflect progress made and detail the plans for each ECAC State for the next five to seven years.  LSSIP documents, one for each State, are derived from the European Single Sky Implementation (ESSIP) (also known as Master Plan Level 3) objectives, and stakeholder lines of action cascade down into the States.  The information from the LSSIP documents is put together in the MPL3 Implementation Report to show progress at pan-European level. This report is also produced annually."
-  },
-  {
-    "objectID": "medium-term_capacity_planning.html#related-standard-inputs",
-    "href": "medium-term_capacity_planning.html#related-standard-inputs",
-    "title": "\n2  Medium-term capacity planning\n",
-    "section": "\n2.4 Related standard inputs",
-    "text": "2.4 Related standard inputs\nAir traffic statistics and forecast and [flow management delay]."
-  },
-  {
-    "objectID": "medium-term_capacity_planning.html#comment",
-    "href": "medium-term_capacity_planning.html#comment",
-    "title": "\n2  Medium-term capacity planning\n",
-    "section": "\n2.5 Comment",
-    "text": "2.5 Comment\nThe European ATM Master Plan1 is the main planning tool for setting ATM priorities, ensuring that the SESAR target concept becomes a reality. It is an evolving roadmap and the result of collaboration between all ATM stakeholders.\nThe Master Plan provides a high-level view of what needs to be done in order to deliver a high- performing ATM system, while also explaining why and by when. It sets the framework for the development activities carried out by the SESAR Joint Undertaking (SJU) and deployed by stakeholders in partnership with the SESAR Deployment Manager (SDM)."
-  },
-  {
     "objectID": "number_of_ifr_flights.html#definition",
     "href": "number_of_ifr_flights.html#definition",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.1 Definition",
-    "text": "3.1 Definition\nThe number of IFR flights in Europe."
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.1 Definition",
+    "text": "2.1 Definition\nThe number of IFR flights in Europe."
   },
   {
     "objectID": "number_of_ifr_flights.html#eurocontrol-recommended-sources",
     "href": "number_of_ifr_flights.html#eurocontrol-recommended-sources",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.2 EUROCONTROL recommended sources",
-    "text": "3.2 EUROCONTROL recommended sources\n\nValue 1\n\nMonthly and yearly number of flights by flow category, ECAC, year 2019\n\n\n\n\n\n\n\nMonth\n      Arrivals\n      Departures\n      Internal\n      Overflights\n      Total\n    \n\n\nJanuary\n85052\n84909\n601427\n16115\n787503\n\n\nFebruary\n75500\n75447\n573216\n13600\n737763\n\n\nMarch\n87907\n87966\n653641\n16928\n846442\n\n\nApril\n91421\n91354\n706721\n17043\n906539\n\n\nMay\n94944\n94649\n780080\n16189\n985862\n\n\nJune\n105522\n105571\n810253\n16782\n1038128\n\n\nJuly\n113863\n114128\n846783\n17788\n1092562\n\n\nAugust\n115290\n115399\n831933\n17932\n1080554\n\n\nSeptember\n104350\n104260\n809520\n16192\n1034322\n\n\nOctober\n99236\n99824\n764457\n16532\n980049\n\n\nNovember\n85442\n85748\n615031\n15740\n801961\n\n\nDecember\n87339\n87539\n602431\n16308\n793617\n\n\nTotal\n1145866\n1146794\n8595493\n197149\n11085302\n\n\n\n\n\n\n\nSource 1\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\nValue 2\n\nFlights by market segment1 of operator, ECAC, year 2019\n\n\n\n\n\n\n\nOperator\n      Number of flights\n      Proportion\n      Evolution 2019 vs. 2018\n    \n\n\nTraditional scheduled\n5858759\n52.9%\n1.4%\n\n\nLow-cost\n3352186\n30.2%\n0.7%\n\n\nBusiness aviation\n704308\n6.4%\n-3.0%\n\n\nCharter\n441924\n4.0%\n2.7%\n\n\nAll-cargo\n323395\n2.9%\n-2.7%\n\n\nOther types\n294766\n2.7%\n0.7%\n\n\nMilitary\n109964\n1.0%\n-4.7%\n\n\nGrand total\n11085302\n100%\n0.8%\n\n\n\n\n\n\n\nSource 2\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\n\n\nValue 3\n\nTop 20 number of flights by civil aircraft operating in airspace in Europe controlled by the EUROCONTROL Network Manager, year 2019.\n\n\n\n\n\n\n\nFPL aircraft type\n      Flights\n      Proportion\n      Cumulative\n    \n\n\nB738\n2165864\n19.54%\n19.54%\n\n\nA320\n1896439\n17.11%\n36.65%\n\n\nA319\n870521\n7.85%\n44.50%\n\n\nA321\n664047\n5.99%\n50.49%\n\n\nDH8D\n311352\n2.81%\n53.30%\n\n\nE190\n278773\n2.51%\n55.81%\n\n\nA20N\n259032\n2.34%\n58.15%\n\n\nB77W\n189882\n1.71%\n59.86%\n\n\nCRJ9\n181291\n1.64%\n61.50%\n\n\nA332\n166619\n1.50%\n63.00%\n\n\nAT76\n162415\n1.47%\n64.47%\n\n\nB737\n161821\n1.46%\n65.93%\n\n\nAT75\n158337\n1.43%\n67.35%\n\n\nA333\n158229\n1.43%\n68.78%\n\n\nE195\n154665\n1.40%\n70.18%\n\n\nB789\n116394\n1.05%\n71.23%\n\n\nB763\n103803\n0.94%\n72.16%\n\n\nB772\n101232\n0.91%\n73.08%\n\n\nB752\n99583\n0.90%\n73.97%\n\n\nCRJX\n92270\n0.83%\n74.81%\n\n\nOther types\n2792733\n25%\n100%\n\n\nTotal\n11107046\n100%\n,\n\n\n\n\n\n\n\nSource 3\n\nEUROCONTROL (2019) –- Network Manager flight plans and PRISME fleet data (ECAC region)\n\nValue 4\n\nDaily average of IFR flights, 2015 to 2019, EU-wide area.\n\n\n\n\n\n\n\n\n\n\n\n\nyear\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n\nAverage daily IFR flights\n25321\n25972\n26980\n27987\n28313\n\n\n\n\n\n\nSource 4\n\nPerformance Review Board (PRB) – ANS performance monitoring (EU-wide) https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.2 EUROCONTROL recommended sources",
+    "text": "2.2 EUROCONTROL recommended sources\n\nValue 1\n\nMonthly and yearly number of flights by flow category, ECAC, year 2019\n\n\n\n\n\n\n\nMonth\n      Arrivals\n      Departures\n      Internal\n      Overflights\n      Total\n    \n\n\nJanuary\n85052\n84909\n601427\n16115\n787503\n\n\nFebruary\n75500\n75447\n573216\n13600\n737763\n\n\nMarch\n87907\n87966\n653641\n16928\n846442\n\n\nApril\n91421\n91354\n706721\n17043\n906539\n\n\nMay\n94944\n94649\n780080\n16189\n985862\n\n\nJune\n105522\n105571\n810253\n16782\n1038128\n\n\nJuly\n113863\n114128\n846783\n17788\n1092562\n\n\nAugust\n115290\n115399\n831933\n17932\n1080554\n\n\nSeptember\n104350\n104260\n809520\n16192\n1034322\n\n\nOctober\n99236\n99824\n764457\n16532\n980049\n\n\nNovember\n85442\n85748\n615031\n15740\n801961\n\n\nDecember\n87339\n87539\n602431\n16308\n793617\n\n\nTotal\n1145866\n1146794\n8595493\n197149\n11085302\n\n\n\n\n\n\n\nSource 1\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\nValue 2\n\nFlights by market segment1 of operator, ECAC, year 2019\n\n\n\n\n\n\n\nOperator\n      Number of flights\n      Proportion\n      Evolution 2019 vs. 2018\n    \n\n\nTraditional scheduled\n5858759\n52.9%\n1.4%\n\n\nLow-cost\n3352186\n30.2%\n0.7%\n\n\nBusiness aviation\n704308\n6.4%\n-3.0%\n\n\nCharter\n441924\n4.0%\n2.7%\n\n\nAll-cargo\n323395\n2.9%\n-2.7%\n\n\nOther types\n294766\n2.7%\n0.7%\n\n\nMilitary\n109964\n1.0%\n-4.7%\n\n\nGrand total\n11085302\n100%\n0.8%\n\n\n\n\n\n\n\nSource 2\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\n\n\nValue 3\n\nTop 20 number of flights by civil aircraft operating in airspace in Europe controlled by the EUROCONTROL Network Manager, year 2019.\n\n\n\n\n\n\n\nFPL aircraft type\n      Flights\n      Proportion\n      Cumulative\n    \n\n\nB738\n2165864\n19.54%\n19.54%\n\n\nA320\n1896439\n17.11%\n36.65%\n\n\nA319\n870521\n7.85%\n44.50%\n\n\nA321\n664047\n5.99%\n50.49%\n\n\nDH8D\n311352\n2.81%\n53.30%\n\n\nE190\n278773\n2.51%\n55.81%\n\n\nA20N\n259032\n2.34%\n58.15%\n\n\nB77W\n189882\n1.71%\n59.86%\n\n\nCRJ9\n181291\n1.64%\n61.50%\n\n\nA332\n166619\n1.50%\n63.00%\n\n\nAT76\n162415\n1.47%\n64.47%\n\n\nB737\n161821\n1.46%\n65.93%\n\n\nAT75\n158337\n1.43%\n67.35%\n\n\nA333\n158229\n1.43%\n68.78%\n\n\nE195\n154665\n1.40%\n70.18%\n\n\nB789\n116394\n1.05%\n71.23%\n\n\nB763\n103803\n0.94%\n72.16%\n\n\nB772\n101232\n0.91%\n73.08%\n\n\nB752\n99583\n0.90%\n73.97%\n\n\nCRJX\n92270\n0.83%\n74.81%\n\n\nOther types\n2792733\n25%\n100%\n\n\nTotal\n11107046\n100%\n,\n\n\n\n\n\n\n\nSource 3\n\nEUROCONTROL (2019) –- Network Manager flight plans and PRISME fleet data (ECAC region)\n\nValue 4\n\nDaily average of IFR flights, 2015 to 2019, EU-wide area.\n\n\n\n\n\n\n\n\n\n\n\n\nyear\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n\nAverage daily IFR flights\n25321\n25972\n26980\n27987\n28313\n\n\n\n\n\n\nSource 4\n\nPerformance Review Board (PRB) – ANS performance monitoring (EU-wide) https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
   },
   {
     "objectID": "number_of_ifr_flights.html#description",
     "href": "number_of_ifr_flights.html#description",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.3 Description",
-    "text": "3.3 Description\nValue 1 shows the typical fluctuation in traffic during the year, peaking in July and August. The lowest level usually occurs in February.\nValue 2 indicates an overall increase in flights of 0.8% in 2019 compared with 2018. Traditional scheduled traffic increased by 1.4% and charter traffic by 2.7%, whilst business aviation decreased by 3% and cargo by 2.7%. Military traffic covering only those flights operating as general air traffic (GAT) and excluding operational air traffic (OAT) decreased by 4.7%.\nValue 3 Of those aircraft which flew IFR in 2019, four hundred and thirty-six (436) different civil aircraft types operated in Europe in 2019. Some 75% of the flights were carried out by the 20 aircraft types displayed."
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.3 Description",
+    "text": "2.3 Description\nValue 1 shows the typical fluctuation in traffic during the year, peaking in July and August. The lowest level usually occurs in February.\nValue 2 indicates an overall increase in flights of 0.8% in 2019 compared with 2018. Traditional scheduled traffic increased by 1.4% and charter traffic by 2.7%, whilst business aviation decreased by 3% and cargo by 2.7%. Military traffic covering only those flights operating as general air traffic (GAT) and excluding operational air traffic (OAT) decreased by 4.7%.\nValue 3 Of those aircraft which flew IFR in 2019, four hundred and thirty-six (436) different civil aircraft types operated in Europe in 2019. Some 75% of the flights were carried out by the 20 aircraft types displayed."
   },
   {
     "objectID": "number_of_ifr_flights.html#related-standard-inputs",
     "href": "number_of_ifr_flights.html#related-standard-inputs",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.4 Related standard inputs",
-    "text": "3.4 Related standard inputs\nIFR flight information per operator segment, [fleet age], [fleet size] and [fleet CNS capability]."
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.4 Related standard inputs",
+    "text": "2.4 Related standard inputs\nIFR flight information per operator segment, [fleet age], [fleet size] and [fleet CNS capability]."
   },
   {
     "objectID": "number_of_ifr_flights.html#further-reading",
     "href": "number_of_ifr_flights.html#further-reading",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.5 Further reading",
-    "text": "3.5 Further reading\nEUROCONTROL Performance Review Commission The Performance Review Commission publishes traffic analyses in the annual Performance Review reports (https://www.eurocontrol.int/prc/publications)."
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.5 Further reading",
+    "text": "2.5 Further reading\nEUROCONTROL Performance Review Commission The Performance Review Commission publishes traffic analyses in the annual Performance Review reports (https://www.eurocontrol.int/prc/publications)."
   },
   {
     "objectID": "number_of_ifr_flights.html#comment",
     "href": "number_of_ifr_flights.html#comment",
-    "title": "\n3  Number of IFR flights\n",
-    "section": "\n3.6 Comment",
-    "text": "3.6 Comment\nThese traffic figures are from 2019 and do not yet reflect the impact of COVID. Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL five year forecast https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024."
+    "title": "\n2  Number of IFR flights\n",
+    "section": "\n2.6 Comment",
+    "text": "2.6 Comment\nThese traffic figures are from 2019 and do not yet reflect the impact of COVID. Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL five year forecast https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024."
   },
   {
     "objectID": "air_traffic_delay.html#definition",
     "href": "air_traffic_delay.html#definition",
-    "title": "\n4  Air traffic delay\n",
-    "section": "\n4.1 Definition",
-    "text": "4.1 Definition\nStatistical reports on all causes of delay."
+    "title": "\n3  Air traffic delay\n",
+    "section": "\n3.1 Definition",
+    "text": "3.1 Definition\nStatistical reports on all causes of delay."
   },
   {
     "objectID": "air_traffic_delay.html#eurocontrol-recommended-sources",
     "href": "air_traffic_delay.html#eurocontrol-recommended-sources",
-    "title": "\n4  Air traffic delay\n",
-    "section": "\n4.2 EUROCONTROL recommended sources",
-    "text": "4.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\nSource\n\nEUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf"
+    "title": "\n3  Air traffic delay\n",
+    "section": "\n3.2 EUROCONTROL recommended sources",
+    "text": "3.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\nSource\n\nEUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf"
   },
   {
     "objectID": "air_traffic_delay.html#description",
     "href": "air_traffic_delay.html#description",
-    "title": "\n4  Air traffic delay\n",
-    "section": "\n4.3 Description",
-    "text": "4.3 Description\nThe report identified in the source value gives an overview of the delay situation in the European Civil Aviation Conference area. It has been prepared by the Central Office for Delay Analysis (CODA), a EUROCONTROL service. It is based on delay data provided directly by airlines. This data on all causes of delay is derived by airlines, comparing actual timings with their published schedules.\nStatistics on all causes of delay can be obtained directly from the CODA Interactive Dashboard (CID) (a request for access is required). This dashboard aims to provide the user with an enhanced understanding of the causes of delay to flights, both that relating to air traffic flow management (ATFM) and non-ATFM-related delay. ATFM delay constitutes only a fraction of primary delays from all causes, and around half of all delay is reactionary rather than primary. Analyses within the dashboard are based on flight-by-flight data provided by airspace users as well as the Network Manager.\nMore information about CODA can be found at https://www.eurocontrol.int/network-performance (go to CID)."
+    "title": "\n3  Air traffic delay\n",
+    "section": "\n3.3 Description",
+    "text": "3.3 Description\nThe report identified in the source value gives an overview of the delay situation in the European Civil Aviation Conference area. It has been prepared by the Central Office for Delay Analysis (CODA), a EUROCONTROL service. It is based on delay data provided directly by airlines. This data on all causes of delay is derived by airlines, comparing actual timings with their published schedules.\nStatistics on all causes of delay can be obtained directly from the CODA Interactive Dashboard (CID) (a request for access is required). This dashboard aims to provide the user with an enhanced understanding of the causes of delay to flights, both that relating to air traffic flow management (ATFM) and non-ATFM-related delay. ATFM delay constitutes only a fraction of primary delays from all causes, and around half of all delay is reactionary rather than primary. Analyses within the dashboard are based on flight-by-flight data provided by airspace users as well as the Network Manager.\nMore information about CODA can be found at https://www.eurocontrol.int/network-performance (go to CID)."
   },
   {
     "objectID": "air_traffic_delay.html#related-standard-inputs",
     "href": "air_traffic_delay.html#related-standard-inputs",
-    "title": "\n4  Air traffic delay\n",
-    "section": "\n4.4 Related standard inputs",
-    "text": "4.4 Related standard inputs\nAir traffic statistics and forecast, [flow management delay] and [cost of delay]."
-  },
-  {
-    "objectID": "flow_management_delay.html#definition",
-    "href": "flow_management_delay.html#definition",
-    "title": "\n5  Flow management delay\n",
-    "section": "\n5.1 Definition",
-    "text": "5.1 Definition\nStatistical reports on European ATM network performance in terms of the number of flights and levels of air traffic flow management (ATFM) delay1."
-  },
-  {
-    "objectID": "flow_management_delay.html#eurocontrol-recommended-sources",
-    "href": "flow_management_delay.html#eurocontrol-recommended-sources",
-    "title": "\n5  Flow management delay\n",
-    "section": "\n5.2 EUROCONTROL recommended sources",
-    "text": "5.2 EUROCONTROL recommended sources\n\nValue\n\nDaily traffic and ATFM delay per flight (en route and airport) 2009-2019\n\n\n\n\n\n\nSource\n\nEUROCONTROL NMD, Network Operations Report 2019 https://www.eurocontrol.int/sites/default/files/2020-04/nm-annual-network-operations-report-2019-main-report.pdf  Reports from previous years are available in the EUROCONTROL library: https://www.eurocontrol.int/library."
-  },
-  {
-    "objectID": "flow_management_delay.html#description",
-    "href": "flow_management_delay.html#description",
-    "title": "\n5  Flow management delay\n",
-    "section": "\n5.3 Description",
-    "text": "5.3 Description\nThe EUROCONTROL Network Manager produces regular reports on the overall performance of the network. These help the Network Manager to monitor and understand how the network is performing and to take action when a problem occurs.\nThe value above is extracted from a report providing an overview of the European ATM network’s performance in the areas of traffic evolution, capacity offered by the air navigation service providers and airports, delays and flight efficiency. The report analyses the annual results in light of the main events which took place in the course of the year. Airspace users’ opinions on network performance are also included. This report is updated annually.\nInformation can be accessed and downloaded from the EUROCONTROL Network Operations Monitoring and Reporting web page, https://www.eurocontrol.int/network-performance, together with access criteria for non-public reports or applications, and source/third party use. The page also gives access to historical data."
-  },
-  {
-    "objectID": "flow_management_delay.html#related-standard-inputs",
-    "href": "flow_management_delay.html#related-standard-inputs",
-    "title": "\n5  Flow management delay\n",
-    "section": "\n5.4 Related standard inputs",
-    "text": "5.4 Related standard inputs\nAir traffic statistics and forecast, [air traffic delay] and [cost of delay]."
-  },
-  {
-    "objectID": "flow_management_delay.html#comments",
-    "href": "flow_management_delay.html#comments",
-    "title": "\n5  Flow management delay\n",
-    "section": "\n5.5 Comments",
-    "text": "5.5 Comments\nFlow management delay differs from air traffic delay in that the latter relates to both ATFM-related delay and non-ATFM-related delay. Flow management delay, i.e. ATFM delay, constitutes only a fraction of primary delay from all causes, and around half of all delay is reactionary rather than primary.\nDelay statistics for ECAC are also presented on a regular basis in the Performance Review reports (PRRs), published annually by the Performance Review Commission. These publications can be found in the EUROCONTROL library: https://www.eurocontrol.int/library."
-  },
-  {
-    "objectID": "rate_of_fuel_burn.html#definition",
-    "href": "rate_of_fuel_burn.html#definition",
-    "title": "\n6  Rate of fuel burn\n",
-    "section": "\n6.1 Definition",
-    "text": "6.1 Definition\nAverage number of kilogrammes per hour of fuel burnt by an aircraft in different flight phases and with different load factors"
-  },
-  {
-    "objectID": "rate_of_fuel_burn.html#eurocontrol-recommended-sources",
-    "href": "rate_of_fuel_burn.html#eurocontrol-recommended-sources",
-    "title": "\n6  Rate of fuel burn\n",
-    "section": "\n6.2 EUROCONTROL recommended sources",
-    "text": "6.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\nFuel burn rates (kg/minutes) in flight phases\nwhere delay can occur for most representative\naircraft types flying (with restriction in use)1\n\n    \n\nFlight phase\n      Taxi\n      En route\n      Arrival management\n    \n\nWeight (% of max. useful load)2\n\n65\n80\n50, 65\n\n\n\n\n1 It is strictly prohibited to use the fuel burn values to\n              compare fuel efficiency and emission data between aircraft\n              types from the same or different manufactures.\n              Data are provided here to allow the drafting of aggregate\n              business cases.\n    \n\n\n2 The useful load is the sum of the payload and the fuel.\nThe maximum useful load is approximately the MTOW minus the empty aircraft\nweight. The '% of max useful load' referred to in the recommended value\nindicates how the aircraft is loaded, in terms of payload and fuel (combined).\nThis must also not be confused with the load factor, which indicates how\nthe aircraft is loaded in terms of payload only (i.e. not taking the fuel into\naccount).\n    \n\n\n\n\n\n\nSource\n\nEUROCONTROL BADA (Base of Aircraft Data) https://www.eurocontrol.int/model/bada"
-  },
-  {
-    "objectID": "rate_of_fuel_burn.html#description",
-    "href": "rate_of_fuel_burn.html#description",
-    "title": "\n6  Rate of fuel burn\n",
-    "section": "\n6.3 Description",
-    "text": "6.3 Description\nThe above data originate from the Base of Aircraft Data (BADA), which is an aircraft performance model (APM) developed and maintained by EUROCONTROL, with the active cooperation of aircraft manufacturers and operating airlines. The data extracted make use of three different families of the BADA model (BADA 3, BADA 4 and BADA Helicopters).\nThe data are to be treated as approximations, which give an indication of the average fuel burn per flight phase. These data do not, however, take weather and atmospheric influences into account, nor the impact of specific flight conditions (speed, altitude, etc.), and they are therefore to be used with a correction factor when applied in a specific context.\nOrganisations which are interested in more aircraft types can request access to the full BADA model (see link above)."
-  },
-  {
-    "objectID": "rate_of_fuel_burn.html#related-standard-inputs",
-    "href": "rate_of_fuel_burn.html#related-standard-inputs",
-    "title": "\n6  Rate of fuel burn\n",
-    "section": "\n6.4 Related standard inputs",
-    "text": "6.4 Related standard inputs\nAmount of emissions released by fuel burn, [cost of emissions] and IFR flight information per market segment."
-  },
-  {
-    "objectID": "rate_of_fuel_burn.html#other-possible-sources",
-    "href": "rate_of_fuel_burn.html#other-possible-sources",
-    "title": "\n6  Rate of fuel burn\n",
-    "section": "\n6.5 Other possible sources",
-    "text": "6.5 Other possible sources\n\nSource 1\n\nICAO (2018) – ICAO Carbon Emissions Calculator Methodology, Version 11, June 2018 https://www.icao.int/environmental-protection/CarbonOffset/Documents/Methodology%20ICAO%20Carbon%20Calc ulator_v11-2018.pdf\n\nDescription 1\n\nICAO has developed a methodology to calculate the carbon dioxide emissions from air travel for use in offset programmes. The ICAO Carbon Emissions Calculator allows passengers to estimate the emissions attributed to their air travel. One of the inputs is the fuel burn for 312 equivalent aircraft types, Appendix C: ICAO Fuel Consumption Table, page 17.\n\nSource 2\n\nEUROCONTROL Advanced Emission Model (AEM) https://www.eurocontrol.int/model/advanced-emission-model\n\nDescription 2\n\nThe advanced emission model (AEM) is a standalone application, developed and maintained by the EUROCONTROL Experimental Centre, which estimates aircraft emissions and fuel burn. The AEM can estimate:\n\n\n\nthe mass of fuel burned by the main engines of a specified type of aircraft with a specified type of engine flying a specified 4D trajectory;\nthe corresponding masses of certain gaseous and particulate emissions which are produced by the burning of that fuel. Access to the tool requires an AEM user license.\n\n\nSource 3\n\nICAO Engine Emissions Databank https://easa.europa.eu/document-library/icao-aircraft-engine-emissions-databank\n\nDescription 3\n\nRates of fuel burn for different phases of flight for individual engine types may be found in the manufacturers’ datasheets in the ICAO Engine Emissions Databank."
-  },
-  {
-    "objectID": "amount_of_emissions_released_by_fuel_burn.html#definition",
-    "href": "amount_of_emissions_released_by_fuel_burn.html#definition",
-    "title": "\n7  Amount of emissions released by fuel burn\n",
-    "section": "\n7.1 Definition",
-    "text": "7.1 Definition\nAmount (mass) of emissions released by the combustion of aviation fuel."
-  },
-  {
-    "objectID": "amount_of_emissions_released_by_fuel_burn.html#eurocontrol-recommended-sources",
-    "href": "amount_of_emissions_released_by_fuel_burn.html#eurocontrol-recommended-sources",
-    "title": "\n7  Amount of emissions released by fuel burn\n",
-    "section": "\n7.2 EUROCONTROL recommended sources",
-    "text": "7.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\nEmissions\n      Amount emitted(per kg of fuel burned)\n    \n\n\n\nCO2\n\n\n3.15 kg\n\n\n\n\nH2O\n\n\n1.237 kg\n\n\n\n\nSO2\n\n\n0.00084 kg\n\n\n\n\n\n\n\n\nSource\n\nEUROCONTROL (2018) – “European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency”\nhttps://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment"
-  },
-  {
-    "objectID": "amount_of_emissions_released_by_fuel_burn.html#other-possible-sources",
-    "href": "amount_of_emissions_released_by_fuel_burn.html#other-possible-sources",
-    "title": "\n7  Amount of emissions released by fuel burn\n",
-    "section": "\n7.3 Other possible sources",
-    "text": "7.3 Other possible sources\n\nSource 1\n\nEuropean Environment Agency (2017) “EMEP/EEA air pollutant emission inventory guidebook – 2019”  https://www.eea.europa.eu/publications/emep-eea-guidebook-2019  Values specific to aviation are available in Part B: sectoral guidance chapters/1. Energy/1.A. Combustion/1.A.3.a Aviation  https://www.eea.europa.eu/publications/emep-eea-guidebook-2019/part-b-sectoral-guidance-chapters/1-energy/1-a-combustion/1-a-3-a-aviation/view\n\nDescription 1\n\nThe Emission Inventory Guidebook gives values for emission factors (for \\(CO_2\\), \\(CH_4\\), \\(N_2O\\), \\(NO_x\\), \\(CO\\), NMVOC, \\(SO_2\\) and PM2.5) and fuel consumption in different phases of flight – including taxiing – for different aircraft types, using three different levels of accuracy and complexity. In the table, the emission factors for the “Very Simple” (called Tier 1) methodology are given on a representative aircraft basis, using jet kerosene as fuel.\n\nSource 2\n\nICAO Aircraft Engine Emissions Databank (for turbojet and turbofan Aircraft with a static thrust greater than 26.7 kilonewtons), August 2020 https://www.easa.europa.eu/domains/environment/icao-aircraft-engine-emissions-databank\n\nDescription 2\n\nThis Databank contains information on exhaust emissions only for those aircraft engines which have entered production. The information was provided by engine manufacturers and collected by the International Civil Aviation Organization (ICAO). The European Aviation Safety Agency (EASA) hosts this Databank on behalf of ICAO.\n\nSource 3\n\nFOI, Swedish Defence Research Agency (for turboprop aircraft) https://www.foi.se/en/our-knowledge/aeronautics-and-air-combat-simulation/fois-confidential-database-for-turboprop-engine-emissions.html\n\nDescription 3\n\nFOI is the keeper of a confidential database of emission indices (EI) of \\(NO_x\\), \\(HC\\) and \\(CO\\), with corresponding fuel flows for turboprop engines. Datasheets have been supplied by the turboprop engine manufacturers, originally for the purposes of calculating emissions-related landing charges.  The data are presented in the same format as in the ICAO (International Civil Aviation Organization) Engine Emissions Database for jet engines, but have not been endorsed by ICAO in a certification process. It should be noted that the data contain many inaccuracies, resulting primarily from the unregulated test methodologies. The data is, however, considered to be the best available, and may be used for emissions inventories, emissions-related landing charges, etc.  The data are available on request.\n\nSource 4\n\nSwiss Federal Office of Civil Aviation, FOCA – Aircraft Engine Emissions (for piston engine aircraft, helicopters) https://www.bazl.admin.ch/bazl/en/home/specialists/regulations-and-guidelines/environment/pollutant-emissions/aircraft-engine-emissions.html\n\nDescription 4\n\nThe Swiss FOCA has developed a measurement and calculation methodology for aircraft piston engine emissions in order to improve aviation emission inventories."
-  },
-  {
-    "objectID": "amount_of_emissions_released_by_fuel_burn.html#related-standard-inputs",
-    "href": "amount_of_emissions_released_by_fuel_burn.html#related-standard-inputs",
-    "title": "\n7  Amount of emissions released by fuel burn\n",
-    "section": "\n7.4 Related standard inputs",
-    "text": "7.4 Related standard inputs\n[Rate of fuel burn], [cost of emissions] and [IFR flight information per market segment]."
-  },
-  {
-    "objectID": "amount_of_emissions_released_by_fuel_burn.html#comments",
-    "href": "amount_of_emissions_released_by_fuel_burn.html#comments",
-    "title": "\n7  Amount of emissions released by fuel burn\n",
-    "section": "\n7.5 Comments",
-    "text": "7.5 Comments\nThe Committee on Aviation Environmental Protection (CAEP), a technical committee of the ICAO Council, recommends the use a conversion factor of 3.16 g of \\(CO_2\\) per g of Jet A. The 3.16 value can be found in ICAO Doc 9889, 1st edition, 2011, and other documents.\nHowever, in Europe, as early as 2009, Commission Decision 2009/339/EC indicated an emission factor of 3.15 for the mass conversion from Jet A to CO2. Commission Implementing Regulation (EU) 2018/2066 of 19 December 2018 (on the monitoring and reporting of greenhouse gas emissions), which integrates the Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) in the Emission Trading Scheme (ETS), applicable since 1 January 2019, for the period after January 2021, now recommends, for the time being, that factor 3.15 for Jet A fuel is still to be used in Europe for the ETS and also for CORSIA.\nIn view of the above, emission factor 3.15 should continue to be used in SESAR 2020, for the sake of internal consistency within the programme, and at least unless the EU ETS decides to move to 3.16. Nevertheless, factor 3.16 should be used when the evaluation concerns comparisons with studies carried out within the ICAO framework or using the factor recommended by ICAO, in order to ensure external consistency. [Extracted from SESAR 2020 – Environment Impact Assessment Guidance Guidance Del: 4.0.080]"
+    "title": "\n3  Air traffic delay\n",
+    "section": "\n3.4 Related standard inputs",
+    "text": "3.4 Related standard inputs\nAir traffic statistics and forecast, [flow management delay] and [cost of delay]."
   },
   {
     "objectID": "cost_of_emissions.html#definition",
     "href": "cost_of_emissions.html#definition",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.1 Definition",
-    "text": "8.1 Definition\nEstimate of the cost of CO2 and other aircraft emissions released by the combustion of aviation fuel."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.1 Definition",
+    "text": "4.1 Definition\nEstimate of the cost of CO2 and other aircraft emissions released by the combustion of aviation fuel."
   },
   {
     "objectID": "cost_of_emissions.html#eurocontrol-recommended-sources-and-values",
     "href": "cost_of_emissions.html#eurocontrol-recommended-sources-and-values",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.2 EUROCONTROL recommended sources and values",
-    "text": "8.2 EUROCONTROL recommended sources and values\n\nValue 1\n\n\n\n\n\n\n\n\n\nPrice of CO2\n    \n\nClimate change avoidance costs in € per tonne of CO2 equivalent\n    \n\n\nForecast\n      Low1,2\n\n      Medium1\n\n      High1\n\n    \n\n\nShort and medium run (up to 2030)\n63\n105\n199\n\n\nLong run (from 2040 to 2060)\n164\n283\n524\n\n\n\n\n\n1 adjusted from € 2016 to € 2019 prices\n    \n\n\n2 These values were derived by calculating the average of\n              the low, central and high estimates for the relevant time\n              periods of the values from the literature, but excluding the\n              lowest and highest values in order to eliminate outliers.\n    \n\n\n\n\n\n\nValue 2\n\n\n\n\n\n\n\n\n\nWell-to-tank air pollution costs: damage cost estimates\n          in €/kg emission\n    \n\n(emissions in the year 2016, EU-27+UK values)\n    \n\n\nCosts in € per kg\n      NOx1\n\n      NMVOC1\n\n      SO21\n\n      High1\n\n    \n\n\nEU-27+UK\n\n\n11.5\n\n\n1.3\n\n\n11.5\n\n\n20.4\n\n\n\n\n1 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\nValue 3\n\n\n\n\n\n\n\n\nTotal and average air pollution costs for aviation\nfor 33 selected EU airports1\n\n    \n\nDistance group\n      Range\n      M€/year2\n\n      €-cent/km2\n\n      €-cent/ pax(complete flight)2\n\n    \n\n\nShort-haul\n< 1 500 km\n284\n0.32\n171\n\n\nMedium-haul\n< 1 500-5 000 km\n400\n0.14\n243\n\n\nLong-haul\n> 5 000 km\n379\n0.06\n467\n\n\n\n\n\n1 The largest airports in each EU country (including the UK)\n    \n\n\n2 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\n\nValue 4\n\n\n\n\n\n\n\n\nMarginal air pollution costs of aviation for selected cases1,2\n\n    \n\nDistance [km]\n      Emission class\n      Example of aircraft type\n      € per LTO3\n\n      €-cent per pax km3\n\n      € per pax3\n\n    \n\n\nShort-haul\n    \n\n500\nLow\nBombardier CRJ900\n106.00\n0.29\n1.49\n\n\n500\nHigh\nEmbraer 170\n144.00\n0.32\n1.60\n\n\nMedium- haul\n    \n\n1500\nLow\nAirbus 320\n174.00\n0.07\n1.17\n\n\n1500\nHigh\nBoeing 737\n195.00\n0.12\n1.66\n\n\n3000\nLow\nAirbus 320\n230.00\n0.05\n1.55\n\n\n3000\nHigh\nBoeing 737\n258.00\n0.07\n2.20\n\n\nLong-haul\n    \n\n5000\nLow\nAirbus 340\n528.00\n0.03\n1.79\n\n\n5000\nHigh\nBoeing 777\n876.00\n0.04\n2.02\n\n\n15000\nLow\nAirbus 340\n748.00\n0.02\n2.53\n\n\n15000\nHigh\nBoeing 777\n1.24\n0.02\n2.86\n\n\n\n\n\n1 For the following emissions: NH_3, NMVOC, SO2, NOx, PM2.5 and PM10\n    \n\n\n2 For the cost factors for air pollution costs, the emissions\n              during the LTO cycle are mainly relevant, as the cruise\n              emissions lead to almost no damage costs.\n    \n\n\n3 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\n\nSources 1 to 4\n\n“Handbook on the external costs of transport”, CE Delft, January 2019 (commissioned by European Union DG Move), tables 24, 49, 17 and 23 https://www.cedelft.eu/en/publications/2311/handbook-on-the-external-costs-of-transport-version-2019 Also available from the Publications Office of the EU."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.2 EUROCONTROL recommended sources and values",
+    "text": "4.2 EUROCONTROL recommended sources and values\n\nValue 1\n\n\n\n\n\n\n\n\n\nPrice of CO2\n    \n\nClimate change avoidance costs in € per tonne of CO2 equivalent\n    \n\n\nForecast\n      Low1,2\n\n      Medium1\n\n      High1\n\n    \n\n\nShort and medium run (up to 2030)\n63\n105\n199\n\n\nLong run (from 2040 to 2060)\n164\n283\n524\n\n\n\n\n\n1 adjusted from € 2016 to € 2019 prices\n    \n\n\n2 These values were derived by calculating the average of\n              the low, central and high estimates for the relevant time\n              periods of the values from the literature, but excluding the\n              lowest and highest values in order to eliminate outliers.\n    \n\n\n\n\n\n\nValue 2\n\n\n\n\n\n\n\n\n\nWell-to-tank air pollution costs: damage cost estimates\n          in €/kg emission\n    \n\n(emissions in the year 2016, EU-27+UK values)\n    \n\n\nCosts in € per kg\n      NOx1\n\n      NMVOC1\n\n      SO21\n\n      High1\n\n    \n\n\nEU-27+UK\n\n\n11.5\n\n\n1.3\n\n\n11.5\n\n\n20.4\n\n\n\n\n1 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\nValue 3\n\n\n\n\n\n\n\n\nTotal and average air pollution costs for aviation\nfor 33 selected EU airports1\n\n    \n\nDistance group\n      Range\n      M€/year2\n\n      €-cent/km2\n\n      €-cent/ pax(complete flight)2\n\n    \n\n\nShort-haul\n< 1 500 km\n284\n0.32\n171\n\n\nMedium-haul\n< 1 500-5 000 km\n400\n0.14\n243\n\n\nLong-haul\n> 5 000 km\n379\n0.06\n467\n\n\n\n\n\n1 The largest airports in each EU country (including the UK)\n    \n\n\n2 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\n\nValue 4\n\n\n\n\n\n\n\n\nMarginal air pollution costs of aviation for selected cases1,2\n\n    \n\nDistance [km]\n      Emission class\n      Example of aircraft type\n      € per LTO3\n\n      €-cent per pax km3\n\n      € per pax3\n\n    \n\n\nShort-haul\n    \n\n500\nLow\nBombardier CRJ900\n106.00\n0.29\n1.49\n\n\n500\nHigh\nEmbraer 170\n144.00\n0.32\n1.60\n\n\nMedium- haul\n    \n\n1500\nLow\nAirbus 320\n174.00\n0.07\n1.17\n\n\n1500\nHigh\nBoeing 737\n195.00\n0.12\n1.66\n\n\n3000\nLow\nAirbus 320\n230.00\n0.05\n1.55\n\n\n3000\nHigh\nBoeing 737\n258.00\n0.07\n2.20\n\n\nLong-haul\n    \n\n5000\nLow\nAirbus 340\n528.00\n0.03\n1.79\n\n\n5000\nHigh\nBoeing 777\n876.00\n0.04\n2.02\n\n\n15000\nLow\nAirbus 340\n748.00\n0.02\n2.53\n\n\n15000\nHigh\nBoeing 777\n1.24\n0.02\n2.86\n\n\n\n\n\n1 For the following emissions: NH_3, NMVOC, SO2, NOx, PM2.5 and PM10\n    \n\n\n2 For the cost factors for air pollution costs, the emissions\n              during the LTO cycle are mainly relevant, as the cruise\n              emissions lead to almost no damage costs.\n    \n\n\n3 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\n\nSources 1 to 4\n\n“Handbook on the external costs of transport”, CE Delft, January 2019 (commissioned by European Union DG Move), tables 24, 49, 17 and 23 https://www.cedelft.eu/en/publications/2311/handbook-on-the-external-costs-of-transport-version-2019 Also available from the Publications Office of the EU."
   },
   {
     "objectID": "cost_of_emissions.html#description",
     "href": "cost_of_emissions.html#description",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.3 Description",
-    "text": "8.3 Description\nThe CO2 price used to calculate the external costs of climate change in Value 1 is based on the cost avoidance approach. Extract from the “Handbook on the external costs of transport”: It determines external cost valuation factors (i.e. shadow prices) by determining the cost to achieve a particular policy target (e.g. EU CO2 reduction targets). This is done by estimating an avoidance cost function, which provides a proxy for the supply of environmental quality. It determines how much it would cost to supply an additional level of environmental quality (e.g. reduction of one additional tonne of CO2). Based on this cost curve, the minimal cost required to meet the policy target is estimated. The assumption is that this policy target reflects collective preferences with respect to the externality concerned and hence, that the minimum cost to reach this target is a good proxy of the (collective) willingness-to-pay (WTP) to avoid the damage caused by the externality.\nThe calculations for Value 2 and 3 have been made on the basis of the cost factor of €100 per tonne of \\(CO_2\\) equivalent, the central value for short- and medium-run estimates given in value 1. As was the case in the 2008 Handbook, it is further assumed that the aviation emissions relevant for air quality are restricted to the emissions in the landing and take-off (LTO) phases. The total emissions have been cross-checked with the total emission database from the European Monitoring and Evaluation Programme under the auspices of the European Environmental Agency (EMEP/EEA). The values are for passenger flights."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.3 Description",
+    "text": "4.3 Description\nThe CO2 price used to calculate the external costs of climate change in Value 1 is based on the cost avoidance approach. Extract from the “Handbook on the external costs of transport”: It determines external cost valuation factors (i.e. shadow prices) by determining the cost to achieve a particular policy target (e.g. EU CO2 reduction targets). This is done by estimating an avoidance cost function, which provides a proxy for the supply of environmental quality. It determines how much it would cost to supply an additional level of environmental quality (e.g. reduction of one additional tonne of CO2). Based on this cost curve, the minimal cost required to meet the policy target is estimated. The assumption is that this policy target reflects collective preferences with respect to the externality concerned and hence, that the minimum cost to reach this target is a good proxy of the (collective) willingness-to-pay (WTP) to avoid the damage caused by the externality.\nThe calculations for Value 2 and 3 have been made on the basis of the cost factor of €100 per tonne of \\(CO_2\\) equivalent, the central value for short- and medium-run estimates given in value 1. As was the case in the 2008 Handbook, it is further assumed that the aviation emissions relevant for air quality are restricted to the emissions in the landing and take-off (LTO) phases. The total emissions have been cross-checked with the total emission database from the European Monitoring and Evaluation Programme under the auspices of the European Environmental Agency (EMEP/EEA). The values are for passenger flights."
   },
   {
     "objectID": "cost_of_emissions.html#further-reading",
     "href": "cost_of_emissions.html#further-reading",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.4 Further reading",
-    "text": "8.4 Further reading\n\n8.4.1 EASA/EEA/EUROCONTROL\n\n\nEuropean Environmental Report, 2019 https://www.eurocontrol.int/publication/european-aviation-environmental-report-2019  The document provides an updated assessment of the environmental performance of the aviation sector published in the first report of 2016. The continued growth of the sector has produced economic benefits and connectivity within Europe and is stimulating investment in novel technology. This draws on a wider pool of expertise and innovative approaches from other sectors, thereby creating potential new opportunities to address the environmental impacts of aviation. However, it is recognised that the contribution of aviation activities to climate change, noise and air quality impacts is increasing, thereby affecting the health and quality of life of European citizens.\nPara. 5.3 touches on environmental charges levied by some airports.\n\n\nEuropean Commission  https://ec.europa.eu/clima/policies/ets/auctioning_en  https://www.eex.com/en/\nExtracted from the EC website: “Twenty-eight countries (25 EU Member States and 3 EEA/EFTA countries) auction their allowances on the common auction platform. The common auction platform is nominated for up to five years by a joint procurement between the Commission and the participating countries, in accordance to the rules laid down by the joint procurement agreement. Currently, the European Energy Exchange (EEX) in Leipzig is the common auction platform. Some countries participating in the EU ETS have opted out of the common auctioning platform: Germany has nominated EEX as its opt-out platform. Poland is making use of the common auction platform to auction its share of allowances until the appointment of its opt-out platform. ICE Futures Europe (ICE) in London acts as the United Kingdom’s platform. The Withdrawal Agreement between the EU and the United Kingdom ensures that UK operators remain subject to compliance obligations for the years 2019 and 2020.”\n\nECAC (2011) NOx emission classification scheme, ECAC recommendation ECAC27/4, 11 September 2011  https://www.ecac-ceac.org/documents/\n\nUK Department for Environment, Food and Rural Affairs (DEFRA) Air quality damage cost update 2019, prepared by Ricardo Energy & Environment (Ricardo-AEA Ltd) https://uk-air.defra.gov.uk/assets/documents/reports/cat09/1902271109_Damage_cost_update_2018_FINAL_Issue_2_publication.pdf\n\n\n\n\n\n\n\n\nRevised sector PM and NOx damage cost estimates and sensitivity boundaries\n    \n\n(2017 prices, impacts discounted to 2017, average exchange rate 2017)\n    \n\n\n\nEmission emitted by aircraft1\n\n      Central damage cost£(€)/kg\n      \n        damage cost sensitivity range\n      \n    \n\nLow£(€)/kg\n      High£(€)/kg\n    \n\n\n\nPM2.5\n194 (222)\n41 (46)\n560 (639)\n\n\nNOx\n12 (13)\n1.1 (1.2)\n45 (51)\n\n\n\nExtract from tables 20-21 of the 'Air quality damage cost update 2019'\n    \n\n\n1 PM2.5 is the preferred metric for the change in PM emissions."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.4 Further reading",
+    "text": "4.4 Further reading\n\n4.4.1 EASA/EEA/EUROCONTROL\n\n\nEuropean Environmental Report, 2019 https://www.eurocontrol.int/publication/european-aviation-environmental-report-2019  The document provides an updated assessment of the environmental performance of the aviation sector published in the first report of 2016. The continued growth of the sector has produced economic benefits and connectivity within Europe and is stimulating investment in novel technology. This draws on a wider pool of expertise and innovative approaches from other sectors, thereby creating potential new opportunities to address the environmental impacts of aviation. However, it is recognised that the contribution of aviation activities to climate change, noise and air quality impacts is increasing, thereby affecting the health and quality of life of European citizens.\nPara. 5.3 touches on environmental charges levied by some airports.\n\n\nEuropean Commission  https://ec.europa.eu/clima/policies/ets/auctioning_en  https://www.eex.com/en/\nExtracted from the EC website: “Twenty-eight countries (25 EU Member States and 3 EEA/EFTA countries) auction their allowances on the common auction platform. The common auction platform is nominated for up to five years by a joint procurement between the Commission and the participating countries, in accordance to the rules laid down by the joint procurement agreement. Currently, the European Energy Exchange (EEX) in Leipzig is the common auction platform. Some countries participating in the EU ETS have opted out of the common auctioning platform: Germany has nominated EEX as its opt-out platform. Poland is making use of the common auction platform to auction its share of allowances until the appointment of its opt-out platform. ICE Futures Europe (ICE) in London acts as the United Kingdom’s platform. The Withdrawal Agreement between the EU and the United Kingdom ensures that UK operators remain subject to compliance obligations for the years 2019 and 2020.”\n\nECAC (2011) NOx emission classification scheme, ECAC recommendation ECAC27/4, 11 September 2011  https://www.ecac-ceac.org/documents/\n\nUK Department for Environment, Food and Rural Affairs (DEFRA) Air quality damage cost update 2019, prepared by Ricardo Energy & Environment (Ricardo-AEA Ltd) https://uk-air.defra.gov.uk/assets/documents/reports/cat09/1902271109_Damage_cost_update_2018_FINAL_Issue_2_publication.pdf\n\n\n\n\n\n\n\n\nRevised sector PM and NOx damage cost estimates and sensitivity boundaries\n    \n\n(2017 prices, impacts discounted to 2017, average exchange rate 2017)\n    \n\n\n\nEmission emitted by aircraft1\n\n      Central damage cost£(€)/kg\n      \n        damage cost sensitivity range\n      \n    \n\nLow£(€)/kg\n      High£(€)/kg\n    \n\n\n\nPM2.5\n194 (222)\n41 (46)\n560 (639)\n\n\nNOx\n12 (13)\n1.1 (1.2)\n45 (51)\n\n\n\nExtract from tables 20-21 of the 'Air quality damage cost update 2019'\n    \n\n\n1 PM2.5 is the preferred metric for the change in PM emissions."
   },
   {
     "objectID": "cost_of_emissions.html#related-standard-inputs",
     "href": "cost_of_emissions.html#related-standard-inputs",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.5 Related standard inputs",
-    "text": "8.5 Related standard inputs\n[Amount of emissions released by fuel burn] and [rate of fuel burn]."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.5 Related standard inputs",
+    "text": "4.5 Related standard inputs\n[Amount of emissions released by fuel burn] and [rate of fuel burn]."
   },
   {
     "objectID": "cost_of_emissions.html#comments",
     "href": "cost_of_emissions.html#comments",
-    "title": "\n8  Cost of emissions\n",
-    "section": "\n8.6 Comments",
-    "text": "8.6 Comments\nWith regard to NOx charges, a LTO NOx charge is currently applied at several European airports. The level of the charge per kg of NOx is set according to the cost of damage caused by NOx to local air quality (LAQ), at or near airports. The charge is levied in several countries, namely Sweden, the UK, Germany, Demark and Switzerland. Two examples are provided below.\n\n8.6.1 London Heathrow\nAt London Heathrow, a NOx emission charge is payable on each movement (per LTO cycle) by a fixed-wing aircraft over 8 618 kg. The charge per kg of NOx is calculated on the aircraft’s ascertained NOx emission[^An aircraft’s ascertained NOx emission means the product of the engine NOx emission as set out in the ICAO Emission Database and based on the number of engines on the aircraft.]. https://www.heathrow.com/content/dam/heathrow/web/common/documents/company/doing- business-with-heathrow/flights-condition-of-use/structure-of-charges- decision/Airport_Charges_Decision-5-August-2015.pdf\nThe Emissions Airport Charges for 2020 per kg of NOx is £16.84 (€20.5 at the 2019 exchange rate) “Decision – 2020 Airport Charges” https://www.heathrow.com/content/dam/heathrow/web/common/documents/company/doing-business-with-heathrow/flights-condition-of-use/conditions-of-use-documents/Heathrow_Airport_Charges_and_Conditions_of_Use_2020.pdf\n\n8.6.2 Copenhagen Airports\nCopenhagen Airports support, through financial incentives, the use of engine types which emit the lowest emissions. The model used for calculating emissions and charges is based on the models currently found in Sweden and Switzerland. The model works with absolute NOx emissions of a specific aircraft engine during a standardised landing and take-off cycle (LTO). NOx emissions per aircraft engine are based on the ICAO specifications and guidelines. The published emissions charge (November 2020) is kr.16.50 per kg NOx (€2.2 at the 2019 exchange rate). https://www.cph.dk/en/cph-business/aviation/charges-and-slot/calculation-of-emission-charges"
-  },
-  {
-    "objectID": "cost_of_noise.html#definition",
-    "href": "cost_of_noise.html#definition",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.1 Definition",
-    "text": "9.1 Definition\nEstimate of the cost of noise per person affected, taking into account both the cost of annoyance and health costs due to exposure to traffic noise."
-  },
-  {
-    "objectID": "cost_of_noise.html#eurocontrol-recommended-sources",
-    "href": "cost_of_noise.html#eurocontrol-recommended-sources",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.2 EUROCONTROL recommended sources",
-    "text": "9.2 EUROCONTROL recommended sources\n\nValue 1\n\n\n\n\n\n\n\n\n\nEnvironmental price of aviation traffic noise for the EU-27+UK\n    \n\nfor different noise levels, per person per dB (€2019/dB/person/year)\n    \n\n\nNoise levels Lden in dB(A)1,2\n\n      Annoyance3\n\n      Health3\n\n      Total3\n\n    \n\n\n50-54\n36\n5\n41\n\n\n55-59\n72\n6\n78\n\n\n60-64\n72\n9\n81\n\n\n65-69\n136\n13\n148\n\n\n70-74\n136\n17\n152\n\n\n≥ 75\n136\n22\n158\n\n\n\n\n\n1 Lden is the common EU indicator which corresponds to the\n              average noise level throughout the day, evening and night to\n              which a citizen is exposed over the period of a year.\n              One fundamental feature of Lden is that it assumes that evening\n              and night-time noise is more of a nuisance than daytime noise.\n              (Evening noise is given a penalty of 5 dB(A).\n              Night-time noise is given a penalty of 10 dB(A).)\n    \n\n\n2 The basic measurement index for noise is the decibel (dB).\n              It is indexed logarithmically, reflecting the logarithmic\n              manner in which the human ear responds to sound pressure.\n              Within the human range of hearing, deep and very high tones\n              at the same sound intensity are experienced as less noisy.\n              To correct for this sensitivity, a frequency weighting is\n              applied to measurements and calculations.\n              The most common frequency weighting is the\n              ‘A weighting’, dB(A).\n              Source: “Handbook on the external costs of transport”,\n              CE Delft, January 2019\n    \n\n\n3 adjusted from € 2016 to € 2019 prices\n    \n\n\n\n\n\n\nValue 2\n\n\n\n\n\n\n\n\nTotal and average noise cost for aviation for 33 selected EU airports\n    \n\n\n\n      Total cost€ billions1\n\n      \n        Average cost\n      \n    \n\n€/LTO1,2\n\n      €/pax1\n\n      €/tonne1\n\n      €-cent/km1\n\n    \n\n\n\nShort-haul\n\n\n\n\n0.48\n\n\nMedium-haul\n0.88\n270\n2.16\n9.51\n0.12\n\n\nLong-haul\n\n\n\n\n0.01\n\n\n\n\n\n1 adjusted from € 2016 to € 2019 prices\n    \n\n\n2 Costs per pax include the complete flight\n              (not only the half-way principle).\n    \n\n\n\n\n\n\nSource 1 and 2\n\n“Handbook on the external costs of transport”, CE Delft, January 2019 (commissioned by European Union DG Move) https://www.cedelft.eu/en/publications/2311/handbook-on-the-external-costs-of-transport-version-2019  Also available from the Publications Office of the EU: https://op.europa.eu/fr/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1"
-  },
-  {
-    "objectID": "cost_of_noise.html#description",
-    "href": "cost_of_noise.html#description",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.3 Description",
-    "text": "9.3 Description\nThe table above was extracted from a study carried out by CE Delft (an independent research and consultancy organisation) on the external costs of different types of transport in Europe (tables 33 and 36). It gives an overview of the noise-related costs associated with people exposed to different noise level bands due to aviation. Two major aspects are considered in the study when assessing noise impact and cost:\n\nAnnoyance: This refers to the disturbance which individuals experience when they are exposed to noise (traffic noise in this case), e.g. discomfort, inconvenience.\nHealth impacts caused by long-term exposure to noise. The most common symptoms are stress- related health problems. Evidence has not been strong for all noise-related health impacts, and consequently in the European Handbook on External Costs of Transport, only the following health impacts are considered: hypertension, ischaemic heart disease, stroke and dementia. Insomnia is not included in order to avoid double-counting with the costs of annoyance.\n\nThe environmental price of noise reflects the welfare loss which occurs with one extra decibel (dB) of noise (CE Delft, 2018). The environmental price of noise needs to be determined implicitly, as there is no market for noise prevention. Previous editions of the European Handbook on External Costs of Transport have recommended using environmental prices based on HEATCO (2006), both for annoyance and health endpoints. HEATCO assumes a constant valuation per dB of noise for annoyance costs, which has recently been disputed. The new version of the Handbook therefore uses increasing prices per dB based on the most recent insights provided by Bristow et al. (2015) for annoyance costs. As for health costs, the prices according to Defra (2014) match the WHO’s recommendations in its latest systematic reviews, and are therefore used in the European Handbook on External Costs of Transport.\nComparable values for road and rail noise costs are also presented in the same study.\nHere is an example to show how the environmental price of noise should be applied in calculations: the annual cost for a person exposed to 57dB(A) of aviation noise would be equal to €439 (5dB x €41 + 3dB x €78)."
-  },
-  {
-    "objectID": "cost_of_noise.html#other-possible-value",
-    "href": "cost_of_noise.html#other-possible-value",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.4 Other possible value",
-    "text": "9.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n\nAviation noise marginal cost (€/household/year)\n    \n\nIncrease in daytime noise metric by one decibel (dB)\n      Aviation noise marginal cost (excluding sleep disturbance)1\n\n      Sleep disturbance1\n\n    \n\n\n45–46\n19\n47\n\n\n50–51\n48\n64\n\n\n55–56\n60\n82\n\n\n60–61\n78\n99\n\n\n65–66\n98\n117\n\n\n70–71\n119\n117\n\n\n75–76\n141\n117\n\n\n80–81\n153\n117\n\n\n\n\n1 adjusted from £ 2014 to € 2019 prices at the 2019 exchange rate\n    \n\n\n\n\n\nSource\n\nUK Department for Environment, Food and Rural Affairs Environmental Noise “Valuing impacts on: sleep disturbance, annoyance, hypertension, productivity and quiet”, November 2014 (Annex I: Noise marginal values in 2014 prices Table A1.3 & Table A1.4 p.42-43) https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/380852/environmental-noise-valuing-imapcts-PB14227.pdf\n\nDescription\n\nThe value presents the results of an economic valuation tool developed by the UK Department for Environment, Food and Rural Affairs. It converts changes in noise exposure to estimated monetary values, in order to support the assessment of the effects of environmental noise. The report details the current understanding of the links between environmental noise and various effects, including sleep disturbance, annoyance, hypertension and related diseases. A range of sensitivities is available around these values from the Noise Modelling Tool (see report and excel file for more details https://www.gov.uk/guidance/noise- pollution-economic-analysis)."
-  },
-  {
-    "objectID": "cost_of_noise.html#further-reading",
-    "href": "cost_of_noise.html#further-reading",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.5 Further reading",
-    "text": "9.5 Further reading\n\n9.5.1 WHO (2018)\n“Environmental Noise Guidelines for the European Region”, World Health Organisation (2018)\nThe World Health Organisation Regional Office for Europe has developed environmental noise guidelines for the European region. The main purpose of these guidelines is to provide recommendations for protecting human health from exposure to environmental noise originating from various sources, such as transportation (road traffic, railway and aircraft) noise, wind turbine noise and leisure noise.\nThe guidelines focus on the WHO European region and provide policy guidance to Member States which is compatible with the noise indicators used in the European Union’s Directive 2002/49/EC. For average noise exposure, the Guideline Development Group (GDG) strongly recommends reducing noise levels produced by aircraft below 45 dB Lden and for night noise exposure, below 40 dB Lnight. https://www.euro.who.int/__data/assets/pdf_file/0008/383921/noise-guidelines-eng.pdf\n\n9.5.2 WHO (2009)\n“Night noise guidelines for Europe”,\nThe World Health Organization (WHO) set the European target limit for outdoor night noise levels at an annual average of 40 decibels (dB) in these guidelines. This would protect the public, including the most vulnerable, such as children and the elderly. http://www.euro.who.int/__data/assets/pdf_file/0017/43316/E92845.pdf\nThe reading suggested below broadens the scope of the cost of noise values with documents related to the overall noise levels and related rules and regulations.\n\n9.5.3 EASA/EEA/EUROCONTROL (2019)\n“European Environmental Report”\nThis second European Aviation Environmental Report (EAER) provides an updated assessment of the environmental performance of the aviation sector published in the first report of 2016. The continued growth of the sector has produced economic benefits and connectivity within Europe, and is stimulating investment in novel technology. This draws on a wider pool of expertise and innovative approaches from other sectors, thereby creating potential new opportunities to address the environmental impacts of aviation. It is, however, recognised that the contribution of aviation activities to climate change, noise and air quality impacts is increasing, thereby affecting the health and quality of life of European citizens. https://www.eurocontrol.int/publication/european-aviation-environmental-report-2019\n\n9.5.4 EASA/EEA/EUROCONTROL (2019)\n“Noise country fact sheets”\nThese country fact sheets summarise information on noise pollution for selected EEA member countries. The fact sheets are based on the latest official noise data reported every five years by EEA member countries under the Environmental Noise Directive (END). https://www.eea.europa.eu/themes/human/noise/noise-fact-sheets\n\n9.5.5 EC (2002)\nEnvironmental Noise Directive (END) 2002/49/EC\nDirective 2002/49/EC relating to the assessment and management of environmental noise (the Environmental Noise Directive – END) is the main EU instrument to identify noise pollution levels and to trigger the necessary action both at Member State and at EU level. The introduction of the END in 2002 sought to monitor the effectiveness of EU emission controls by requiring the assessment of environmental noise at Member State level. The Directive introduced two key indicators for annoyance and sleep disturbance, which, if exceeded, require action plans to be drawn up which are designed to reduce exposure and protect areas not yet polluted by noise. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32002L0049\n\n9.5.6 EC (2014), Regulation (EU) No 598/2014\nRegulation (EU) No 598/2014 establishes rules and procedures with regard to the introduction of noise-related operating restrictions at EU airports. It follows the guidelines of the ICAO Balanced Approach to Aircraft Noise Management and the rules defined to be applied to airports with more than 50 000 movements per year of civil aircraft. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32014R0598\n\n9.5.7 European Parliament’s Committee on Petitions (2020)\n“Impact of aircraft noise pollution on residents of large cities”, ENVISA/ Study requested by the EU Parliament\nThis study, provided by the Policy Department for Citizens’ Rights and Constitutional Affairs at the request of the Committee on Petitions, aims to provide a clear and simple overview, for the non-expert reader, of the impact of aircraft noise pollution on residents of large cities, and to make recommendations addressed to the most relevant actors. https://www.europarl.europa.eu/RegData/etudes/STUD/2020/650787/IPOL_STU(2020)650787_EN.pdf\n\n9.5.8 ACI and CANSO (2015)\n“Managing the Impacts of Aviation Noise: A Guide for Airport Operators and Air Navigation Service Providers”\n“Managing the Impacts of Aviation Noise” examines the problem of aviation noise and describes methods which airport operators and ANSPs can use to manage and reduce its impact. It reviews four current approaches to managing noise, namely reducing noise at the source, land use planning, noise-reducing operational procedures, and operating restrictions. https://aci.aero/news/2015/09/23/aci-and-canso-launch-new-initiative-on-reducing-aviation-noise/"
-  },
-  {
-    "objectID": "cost_of_noise.html#example-of-estimating-a-noise-reduction-benefit",
-    "href": "cost_of_noise.html#example-of-estimating-a-noise-reduction-benefit",
-    "title": "\n9  Cost of noise\n",
-    "section": "\n9.6 Example of estimating a noise reduction benefit",
-    "text": "9.6 Example of estimating a noise reduction benefit\nThe “cost of noise” values can be used to calculate potential benefits in research project CBAs (cost- benefit analyses) in order to measure the monetary gain of a noise improvement. An example is the SESAR 2020 project Enhanced Arrival Procedures (EAPs). In this case, noise benefits were calculated as the reduction in the noise contour around the airport area when a different EAP concept was applied. The change in the noise contour area results were calculated per decibel band. This value was then multiplied by the number of people affected around the airport within a radius of 10 km, and the value of the cost of noise per person. The cost of noise (see table 1) is also calculated per decibel band. For noise contour results, scenarios were tested and compared using EUROCONTROL IMPACT tool[^ https://www.eurocontrol.int/platform/integrated-aircraft-noise-and-emissions-modelling-platform].\nAs mentioned in the further reading section, the EU in 2002 published Directive 2002/49/EC relating to the assessment and management of environmental noise (the Environmental Noise Directive – END). The END, which is the main EU instrument to identify noise pollution levels, requires Member States to prepare and publish noise maps and noise management action plans every five years for major airports (more than 50 000 movements a year, including small aircraft and helicopters). https://ec.europa.eu/environment/noise/directive_en.htm\nThe NOISE Observation & Information Service for Europe of the EEA provides an interactive map displaying the exposure to NOISE levels from roads, railways, airports and industry. The map for airports illustrates the exposure to noise from airports in Europe during the average day and average night period. The example below is Brussels Airport. https://noise.eea.europa.eu/\n(ref:noise-at-bru) Exposure to noise from Brussels airport.\n\n\n\n\n(ref:noise-at-bru)"
-  },
-  {
-    "objectID": "aircraft_operating_costs.html#definition",
-    "href": "aircraft_operating_costs.html#definition",
-    "title": "\n10  Aircraft Operating Costs\n",
-    "section": "\n10.1 Definition",
-    "text": "10.1 Definition\nFlight and ground costs linked to the operation of an aircraft, such as fuel and oil, flight deck crew, flight equipment depreciation and amortisation, aircraft rentals, landing fees, ground handling, aircraft parking, air bridges and maintenance."
-  },
-  {
-    "objectID": "aircraft_operating_costs.html#eurocontrol-recommended-sources",
-    "href": "aircraft_operating_costs.html#eurocontrol-recommended-sources",
-    "title": "\n10  Aircraft Operating Costs\n",
-    "section": "\n10.2 EUROCONTROL recommended sources",
-    "text": "10.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\n\nFlight operating costs\n    \n\n(in $ 2019 prices)\n    \n\n\nAircraft   type\n      per aircraft per year (M$)\n      per flight hour\n      per flight   cycle\n      per available seat Km (US cents)\n      per available ton km (US   cents)\n    \n\n\nB737 NG\n14.11\n4337\n9231\n3.76\n33.11\n\n\nA320 Family\n12.84\n4829\n8851\n3.60\n36.92\n\n\nB737 Classic\n8.26\n2683\n5366\n2.96\n25.28\n\n\nB777\n40.01\n9507\n60367\n3.53\n22.07\n\n\nA330\n29.87\n7827\n35857\n3.61\n24.48\n\n\nB757\n18.21\n5357\n18508\n3.73\n30.51\n\n\nB767\n26.00\n6675\n40899\n3.61\n22.18\n\n\nB787\n30.58\n7184\n50827\n3.11\n19.86\n\n\nEMB-190\n10.87\n4097\n5770\n6.35\n54.00\n\n\nDash 8\n4.03\n1921\n1921\n6.12\n58.08\n\n\n\n\n\n\n\nSource\n\nValues provided by IATA Airline Cost Management Group (ACMG1)https://www.iata.org/en/programs/workgroups/airline-cost-mgmt/"
-  },
-  {
-    "objectID": "aircraft_operating_costs.html#description",
-    "href": "aircraft_operating_costs.html#description",
-    "title": "\n10  Aircraft Operating Costs\n",
-    "section": "\n10.3 Description",
-    "text": "10.3 Description\nThe above values, provided by IATA, refer to the 2020 ACMG data collection (fiscal year 2019) and provide an overview of the operating costs for 10 types of aircraft (B737 NG, A320 family, B737 Classic, B777, A330, B757, B767, B787, EMB-190 and Dash 8).\nThe IATA Airline Cost Management Group (ACMG) collects operating costs classified into three categories, which are defined as follows:\n\n\nFlight operating expenses are direct operating expenses. They are directly related to the aircraft and the flight activities of an airline, such as flight crews, fuel, flight equipment and navigation. The biggest component of flight operating expenses is fuel and oil at 48%.\n\nGround operating expenses are also direct operating expenses. They are directly related to the ground activities of an airline, such as maintenance and overhaul, airport charges, station and ground. Maintenance and overhaul is the biggest cost component at 46%.\n\nSystem operating expenses are overheads and indirect operating expenses. They are not directly related to flight or ground operating expenses. They include costs for cabin attendants, passenger service, load insurance, reservations, ticketing, sales and promotion, IT and communications, and general and administrative costs, with the latter representing 34% of total system operating expenses.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe airline cost structure for 2019:\n\n\n\n\n\nThe values used for analysis are the result of aggregating the cost data provided by 51 airlines worldwide, covering over 35% of the industry in terms of revenue passenger kilometres (RPKs), with European airlines representing 16% of the share and 12% in terms of passengers carried.\nNote from IATA\nIn a number of jurisdictions, airport charges and taxes which are levied on a per-passenger basis are not accounted for in airline profit and loss accounts. As a result, the share of airport charges is likely to be significantly understated, as airports may levy more on a per-passenger or per-aircraft basis in some jurisdictions. To give an order of magnitude, in some regions the ACI (Airports Council International) estimates that over 50% of airport charges are collected on a per-passenger basis, reaching as much as 80% in some regions worldwide."
+    "title": "\n4  Cost of emissions\n",
+    "section": "\n4.6 Comments",
+    "text": "4.6 Comments\nWith regard to NOx charges, a LTO NOx charge is currently applied at several European airports. The level of the charge per kg of NOx is set according to the cost of damage caused by NOx to local air quality (LAQ), at or near airports. The charge is levied in several countries, namely Sweden, the UK, Germany, Demark and Switzerland. Two examples are provided below.\n\n4.6.1 London Heathrow\nAt London Heathrow, a NOx emission charge is payable on each movement (per LTO cycle) by a fixed-wing aircraft over 8 618 kg. The charge per kg of NOx is calculated on the aircraft’s ascertained NOx emission[^An aircraft’s ascertained NOx emission means the product of the engine NOx emission as set out in the ICAO Emission Database and based on the number of engines on the aircraft.]. https://www.heathrow.com/content/dam/heathrow/web/common/documents/company/doing- business-with-heathrow/flights-condition-of-use/structure-of-charges- decision/Airport_Charges_Decision-5-August-2015.pdf\nThe Emissions Airport Charges for 2020 per kg of NOx is £16.84 (€20.5 at the 2019 exchange rate) “Decision – 2020 Airport Charges” https://www.heathrow.com/content/dam/heathrow/web/common/documents/company/doing-business-with-heathrow/flights-condition-of-use/conditions-of-use-documents/Heathrow_Airport_Charges_and_Conditions_of_Use_2020.pdf\n\n4.6.2 Copenhagen Airports\nCopenhagen Airports support, through financial incentives, the use of engine types which emit the lowest emissions. The model used for calculating emissions and charges is based on the models currently found in Sweden and Switzerland. The model works with absolute NOx emissions of a specific aircraft engine during a standardised landing and take-off cycle (LTO). NOx emissions per aircraft engine are based on the ICAO specifications and guidelines. The published emissions charge (November 2020) is kr.16.50 per kg NOx (€2.2 at the 2019 exchange rate). https://www.cph.dk/en/cph-business/aviation/charges-and-slot/calculation-of-emission-charges"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#definition",
     "href": "average_number_of_passengers_per_movement.html#definition",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.1 Definition",
-    "text": "11.1 Definition\nAverage1 number of passengers per movement (take-off or landing) in Europe."
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.1 Definition",
+    "text": "5.1 Definition\nAverage1 number of passengers per movement (take-off or landing) in Europe."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#eurocontrol-recommended-sources",
     "href": "average_number_of_passengers_per_movement.html#eurocontrol-recommended-sources",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.2 EUROCONTROL recommended sources",
-    "text": "11.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\n\nAverage number of passengers per departing flight\n    \n\nEU-27+UK and EFTA1\n\n    \n\n\n2013\n      2014\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n\n109\n113\n117\n119\n124\n126\n129\n\n\n\n1 European Free Trade Association: Iceland, Liechtenstein, Norway and Switzerland\n    \n\n\n\n\n\n\n\n\n\n\nSource\n\nEurostat: air passenger transport by reporting country (extract: avia_paoc)\nhttp://ec.europa.eu/eurostat/web/transport/data/database\nEUROCONTROL STATFOR Interactive Dashboard (SID)19 (goto PAX+)\nhttps://www.eurocontrol.int/dashboard/statfor-interactive-dashboard\n\nDescription\n\nThe average number of passengers per movement2 for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’."
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.2 EUROCONTROL recommended sources",
+    "text": "5.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\n\nAverage number of passengers per departing flight\n    \n\nEU-27+UK and EFTA1\n\n    \n\n\n2013\n      2014\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n\n109\n113\n117\n119\n124\n126\n129\n\n\n\n1 European Free Trade Association: Iceland, Liechtenstein, Norway and Switzerland\n    \n\n\n\n\n\n\n\n\n\n\nSource\n\nEurostat: air passenger transport by reporting country (extract: avia_paoc)\nhttp://ec.europa.eu/eurostat/web/transport/data/database\nEUROCONTROL STATFOR Interactive Dashboard (SID)19 (goto PAX+)\nhttps://www.eurocontrol.int/dashboard/statfor-interactive-dashboard\n\nDescription\n\nThe average number of passengers per movement2 for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#description",
     "href": "average_number_of_passengers_per_movement.html#description",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.3 Description",
-    "text": "11.3 Description\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes) as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports."
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.3 Description",
+    "text": "5.3 Description\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes) as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#other-possible-value",
     "href": "average_number_of_passengers_per_movement.html#other-possible-value",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.4 Other possible value",
-    "text": "11.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n\n\nPassengers per IFR movement\n    \n\nValues for the main 34 European airports (all operations)\n    \n\n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n96\n102\n108\n111\n118\n125\n\n\n\n\n\n\nSource\n\nPRC and FAA, “2017 Comparison of ATM-related operational performance: US – Europe”, March 2019 (page 25):\nhttps://www.eurocontrol.int/publication/useurope-comparison-air-traffic-management-related-operational-performance-2017\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library.\n\nDescription\n\nThe table below provides high-level indicators for the main 34 airports21 in Europe using data reported by the airports.\nThe number of passengers per IFR movement is calculated by dividing the ‘average number of annual passengers per airport’\n\n\n\n\n\n\n\nAverage number of annual passengers per airport (million)\n    \n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n25\n24\n25\n25\n28\n31\n\n\n\n\n\nby the ‘average number of annual IFR movements per airport’.\n\n\n\n\n\n\n\nAverage number of annual IFR movements per airport (‘000)\n    \n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n260\n237\n233\n228\n223\n248"
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.4 Other possible value",
+    "text": "5.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n\n\nPassengers per IFR movement\n    \n\nValues for the main 34 European airports (all operations)\n    \n\n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n96\n102\n108\n111\n118\n125\n\n\n\n\n\n\nSource\n\nPRC and FAA, “2017 Comparison of ATM-related operational performance: US – Europe”, March 2019 (page 25):\nhttps://www.eurocontrol.int/publication/useurope-comparison-air-traffic-management-related-operational-performance-2017\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library.\n\nDescription\n\nThe table below provides high-level indicators for the main 34 airports21 in Europe using data reported by the airports.\nThe number of passengers per IFR movement is calculated by dividing the ‘average number of annual passengers per airport’\n\n\n\n\n\n\n\nAverage number of annual passengers per airport (million)\n    \n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n25\n24\n25\n25\n28\n31\n\n\n\n\n\nby the ‘average number of annual IFR movements per airport’.\n\n\n\n\n\n\n\nAverage number of annual IFR movements per airport (‘000)\n    \n\n2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n\n260\n237\n233\n228\n223\n248"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#related-standard-inputs",
     "href": "average_number_of_passengers_per_movement.html#related-standard-inputs",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.5 Related standard inputs",
-    "text": "11.5 Related standard inputs"
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.5 Related standard inputs",
+    "text": "5.5 Related standard inputs"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#comment",
     "href": "average_number_of_passengers_per_movement.html#comment",
-    "title": "\n11  Average number of passengers per movement\n",
-    "section": "\n11.6 Comment",
-    "text": "11.6 Comment"
-  },
-  {
-    "objectID": "cancellation_cost.html#definition",
-    "href": "cancellation_cost.html#definition",
-    "title": "\n12  Cancellation Cost\n",
-    "section": "\n12.1 Definition",
-    "text": "12.1 Definition\nThe average cost of cancelling a commercial scheduled flight on the day of operation."
-  },
-  {
-    "objectID": "cancellation_cost.html#eurocontrol-recommended-sources",
-    "href": "cancellation_cost.html#eurocontrol-recommended-sources",
-    "title": "\n12  Cancellation Cost\n",
-    "section": "\n12.2 EUROCONTROL recommended sources",
-    "text": "12.2 EUROCONTROL recommended sources\n\nValue 1\n\n\n\n\n\n\n\n\nCost of cancellation (€)1\n\n    \n\n\n\n      \n        Narrow body\n      \n      \n        Wide-body\n      \n    \n\nTraditional network carrier\n      Traditional network carrier\n      Traditional network carrier\n      Low- cost carrier\n      Traditional network carrier\n      Traditional network carrier\n    \n\n\n\nSeats\n50\n120\n180\n189\n250\n400\n\n\nValue (€)1\n\n6 540\n16 040\n24 900\n19 420\n82 730\n120 830\n\n\nOf which passenger care and compensation (€)1\n\n3 280\n8 020\n13 090\n18 470\n42 740\n68 390\n\n\n\n\n1 adjusted from 2014 prices\n    \n\n\n\n\n\nValue 2\n\nSystem-wide average cancellation cost (adjusted from 2014 prices): € 18570\n\nSource\n\nData supplied by the airline members of the SESAR CBA team Expert judgment derived from an analysis of 2012 total flights carried out in Europe"
-  },
-  {
-    "objectID": "cancellation_cost.html#description",
-    "href": "cancellation_cost.html#description",
-    "title": "\n12  Cancellation Cost\n",
-    "section": "\n12.3 Description",
-    "text": "12.3 Description\nThe values refer to cancellation on the day of operation and include the following:\n\nService recovery costs, i.e. passenger care and compensation costs (passenger vouchers, drinks, telephone calls, hotels)\nLoss of revenue\nInterlining costs\nLoss of future value, i.e. passenger opportunity costs (individual passenger delay expressed in value)\nCrew and catering costs\nPassenger compensation for denied boarding and missed connections (estimated on the application of the Regulation (EC) No 261/2004)\nLuggage delivery costs\nOperational savings (fuel, airport and navigation fees, maintenance, handling outstations, lounge outstations)\n\nGround handling costs, e.g. ramp services, passenger services and field operation services, are not included."
-  },
-  {
-    "objectID": "cancellation_cost.html#related-standard-inputs",
-    "href": "cancellation_cost.html#related-standard-inputs",
-    "title": "\n12  Cancellation Cost\n",
-    "section": "\n12.4 Related standard inputs",
-    "text": "12.4 Related standard inputs\nOperational cancellation rate."
-  },
-  {
-    "objectID": "cancellation_cost.html#comments",
-    "href": "cancellation_cost.html#comments",
-    "title": "\n12  Cancellation Cost\n",
-    "section": "\n12.5 Comments",
-    "text": "12.5 Comments\nWhen a flight is carried out, the airline incurs out-of-pocket expenses (i.e. variable costs) but receives revenues which are 60-100% greater than the out-of-pocket expenses. Cancelling a flight means that the airline forgoes a substantial operating profit. Also, in addition to the loss, costs are incurred for the care and compensation of passengers.\nCancellation costs vary as a function of the time of cancellation, as illustrated below.\nTimely cancellation will enable the airline to take the necessary measures to mitigate the cost impact, for example by rebooking passengers on another flight and allocating crew and aircraft to a different destination. The cancellation costs will thus be minimal and more in the region of the incurred opportunity cost and passenger value of time. If the cancellation is nearer the flight time, i.e. on the day of operation (D), the cost of cancellation increases, to cover expenses such as fuel, maintenance and crew and catering."
-  },
-  {
-    "objectID": "operational_cancellation_rate.html#definition",
-    "href": "operational_cancellation_rate.html#definition",
-    "title": "13  Operational Cancellation Rate",
-    "section": "\n13.1 Definition",
-    "text": "13.1 Definition\nIFR flight cancellation rate in Europe."
-  },
-  {
-    "objectID": "operational_cancellation_rate.html#eurocontrol-recommended-sources",
-    "href": "operational_cancellation_rate.html#eurocontrol-recommended-sources",
-    "title": "13  Operational Cancellation Rate",
-    "section": "\n13.2 EUROCONTROL recommended sources",
-    "text": "13.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n\n\n\n\nOperational cancellation rate\n    \n\n2013\n      2014\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n\n1.5%\n1.6%\n1.5%\n1.6%\n1.5%\n2.0%\n1.7%\n\n\n\n\n\n\nSource\n\nEUROCONTROL (2019) – Based on operational cancellation data supplied by 30 European coordinated airports reporting to CODA under EC Regulation No 390/2013.\nhttps://www.eurocontrol.int/publication/all-causes-delay-and-cancellations-air-transport-europe-2019\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library."
-  },
-  {
-    "objectID": "operational_cancellation_rate.html#description",
-    "href": "operational_cancellation_rate.html#description",
-    "title": "13  Operational Cancellation Rate",
-    "section": "\n13.3 Description",
-    "text": "13.3 Description\nAccording to Annex IV of Commission Implementing Regulation (EU No 390/2013), an ‘operational cancellation’ means an arrival or departure of a scheduled flight to which the following conditions apply:\n\nthe flight received an airport slot; and\nthe flight was confirmed by the air carrier the day before operations and/or it featured in the daily list of flight schedules produced by the airport operator the day before of operations; but\nthe actual landing or take-off did not occur.\n\nFor 2019, airlines providing operational cancellation data to CODA reported operational cancellations of 1.7% (this includes daily peaks of up to 9.4% due to ATC industrial action or large-scale weather events).\nSection 9 of the referenced document contains a detailed analysis of the cancellations."
-  },
-  {
-    "objectID": "operational_cancellation_rate.html#related-standard-inputs",
-    "href": "operational_cancellation_rate.html#related-standard-inputs",
-    "title": "13  Operational Cancellation Rate",
-    "section": "\n13.4 Related standard inputs",
-    "text": "13.4 Related standard inputs\n[Cancellation cost]."
-  },
-  {
-    "objectID": "cost_of_delay.html#definition",
-    "href": "cost_of_delay.html#definition",
-    "title": "14  Cost of Delay",
-    "section": "14.1 Definition",
-    "text": "14.1 Definition"
-  },
-  {
-    "objectID": "cost_of_delay.html#eurocontrol-recommended-sources",
-    "href": "cost_of_delay.html#eurocontrol-recommended-sources",
-    "title": "14  Cost of Delay",
-    "section": "14.2 EUROCONTROL recommended sources",
-    "text": "14.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "cost_of_delay.html#description",
-    "href": "cost_of_delay.html#description",
-    "title": "14  Cost of Delay",
-    "section": "14.3 Description",
-    "text": "14.3 Description"
-  },
-  {
-    "objectID": "cost_of_delay.html#related-standard-inputs",
-    "href": "cost_of_delay.html#related-standard-inputs",
-    "title": "14  Cost of Delay",
-    "section": "14.4 Related standard inputs",
-    "text": "14.4 Related standard inputs"
-  },
-  {
-    "objectID": "cost_of_delay.html#comment",
-    "href": "cost_of_delay.html#comment",
-    "title": "14  Cost of Delay",
-    "section": "14.5 Comment",
-    "text": "14.5 Comment"
-  },
-  {
-    "objectID": "cost_of_diversion.html#definition",
-    "href": "cost_of_diversion.html#definition",
-    "title": "15  Cost of diversion",
-    "section": "15.1 Definition",
-    "text": "15.1 Definition"
-  },
-  {
-    "objectID": "cost_of_diversion.html#eurocontrol-recommended-sources",
-    "href": "cost_of_diversion.html#eurocontrol-recommended-sources",
-    "title": "15  Cost of diversion",
-    "section": "15.2 EUROCONTROL recommended sources",
-    "text": "15.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "cost_of_diversion.html#description",
-    "href": "cost_of_diversion.html#description",
-    "title": "15  Cost of diversion",
-    "section": "15.3 Description",
-    "text": "15.3 Description"
-  },
-  {
-    "objectID": "cost_of_diversion.html#related-standard-inputs",
-    "href": "cost_of_diversion.html#related-standard-inputs",
-    "title": "15  Cost of diversion",
-    "section": "15.4 Related standard inputs",
-    "text": "15.4 Related standard inputs"
-  },
-  {
-    "objectID": "cost_of_diversion.html#comment",
-    "href": "cost_of_diversion.html#comment",
-    "title": "15  Cost of diversion",
-    "section": "15.5 Comment",
-    "text": "15.5 Comment"
+    "title": "\n5  Average number of passengers per movement\n",
+    "section": "\n5.6 Comment",
+    "text": "5.6 Comment"
   },
   {
     "objectID": "turnaround_time.html#definition",
     "href": "turnaround_time.html#definition",
-    "title": "16  Turnaround time",
-    "section": "16.1 Definition",
-    "text": "16.1 Definition"
+    "title": "6  Turnaround time",
+    "section": "6.1 Definition",
+    "text": "6.1 Definition"
   },
   {
     "objectID": "turnaround_time.html#eurocontrol-recommended-sources",
     "href": "turnaround_time.html#eurocontrol-recommended-sources",
-    "title": "16  Turnaround time",
-    "section": "16.2 EUROCONTROL recommended sources",
-    "text": "16.2 EUROCONTROL recommended sources"
+    "title": "6  Turnaround time",
+    "section": "6.2 EUROCONTROL recommended sources",
+    "text": "6.2 EUROCONTROL recommended sources"
   },
   {
     "objectID": "turnaround_time.html#description",
     "href": "turnaround_time.html#description",
-    "title": "16  Turnaround time",
-    "section": "16.3 Description",
-    "text": "16.3 Description"
+    "title": "6  Turnaround time",
+    "section": "6.3 Description",
+    "text": "6.3 Description"
   },
   {
     "objectID": "turnaround_time.html#related-standard-inputs",
     "href": "turnaround_time.html#related-standard-inputs",
-    "title": "16  Turnaround time",
-    "section": "16.4 Related standard inputs",
-    "text": "16.4 Related standard inputs"
+    "title": "6  Turnaround time",
+    "section": "6.4 Related standard inputs",
+    "text": "6.4 Related standard inputs"
   },
   {
     "objectID": "turnaround_time.html#comment",
     "href": "turnaround_time.html#comment",
-    "title": "16  Turnaround time",
-    "section": "16.5 Comment",
-    "text": "16.5 Comment"
-  },
-  {
-    "objectID": "ifr_average_flight_distance_and_flight_duration.html#definition",
-    "href": "ifr_average_flight_distance_and_flight_duration.html#definition",
-    "title": "17  IFR average flight distance and flight duration",
-    "section": "17.1 Definition",
-    "text": "17.1 Definition"
-  },
-  {
-    "objectID": "ifr_average_flight_distance_and_flight_duration.html#eurocontrol-recommended-sources",
-    "href": "ifr_average_flight_distance_and_flight_duration.html#eurocontrol-recommended-sources",
-    "title": "17  IFR average flight distance and flight duration",
-    "section": "17.2 EUROCONTROL recommended sources",
-    "text": "17.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "ifr_average_flight_distance_and_flight_duration.html#description",
-    "href": "ifr_average_flight_distance_and_flight_duration.html#description",
-    "title": "17  IFR average flight distance and flight duration",
-    "section": "17.3 Description",
-    "text": "17.3 Description"
-  },
-  {
-    "objectID": "ifr_average_flight_distance_and_flight_duration.html#related-standard-inputs",
-    "href": "ifr_average_flight_distance_and_flight_duration.html#related-standard-inputs",
-    "title": "17  IFR average flight distance and flight duration",
-    "section": "17.4 Related standard inputs",
-    "text": "17.4 Related standard inputs"
-  },
-  {
-    "objectID": "ifr_average_flight_distance_and_flight_duration.html#comment",
-    "href": "ifr_average_flight_distance_and_flight_duration.html#comment",
-    "title": "17  IFR average flight distance and flight duration",
-    "section": "17.5 Comment",
-    "text": "17.5 Comment"
-  },
-  {
-    "objectID": "ifr_flight_information_per_market_segment.html#definition",
-    "href": "ifr_flight_information_per_market_segment.html#definition",
-    "title": "18  IFR flight information per market segment",
-    "section": "18.1 Definition",
-    "text": "18.1 Definition"
-  },
-  {
-    "objectID": "ifr_flight_information_per_market_segment.html#eurocontrol-recommended-sources",
-    "href": "ifr_flight_information_per_market_segment.html#eurocontrol-recommended-sources",
-    "title": "18  IFR flight information per market segment",
-    "section": "18.2 EUROCONTROL recommended sources",
-    "text": "18.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "ifr_flight_information_per_market_segment.html#description",
-    "href": "ifr_flight_information_per_market_segment.html#description",
-    "title": "18  IFR flight information per market segment",
-    "section": "18.3 Description",
-    "text": "18.3 Description"
-  },
-  {
-    "objectID": "ifr_flight_information_per_market_segment.html#related-standard-inputs",
-    "href": "ifr_flight_information_per_market_segment.html#related-standard-inputs",
-    "title": "18  IFR flight information per market segment",
-    "section": "18.4 Related standard inputs",
-    "text": "18.4 Related standard inputs"
-  },
-  {
-    "objectID": "ifr_flight_information_per_market_segment.html#comment",
-    "href": "ifr_flight_information_per_market_segment.html#comment",
-    "title": "18  IFR flight information per market segment",
-    "section": "18.5 Comment",
-    "text": "18.5 Comment"
-  },
-  {
-    "objectID": "distance_flown_by_charging_zone.html#definition",
-    "href": "distance_flown_by_charging_zone.html#definition",
-    "title": "19  Distance flown by charging zone",
-    "section": "19.1 Definition",
-    "text": "19.1 Definition"
-  },
-  {
-    "objectID": "distance_flown_by_charging_zone.html#eurocontrol-recommended-sources",
-    "href": "distance_flown_by_charging_zone.html#eurocontrol-recommended-sources",
-    "title": "19  Distance flown by charging zone",
-    "section": "19.2 EUROCONTROL recommended sources",
-    "text": "19.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "distance_flown_by_charging_zone.html#description",
-    "href": "distance_flown_by_charging_zone.html#description",
-    "title": "19  Distance flown by charging zone",
-    "section": "19.3 Description",
-    "text": "19.3 Description"
-  },
-  {
-    "objectID": "distance_flown_by_charging_zone.html#related-standard-inputs",
-    "href": "distance_flown_by_charging_zone.html#related-standard-inputs",
-    "title": "19  Distance flown by charging zone",
-    "section": "19.4 Related standard inputs",
-    "text": "19.4 Related standard inputs"
-  },
-  {
-    "objectID": "distance_flown_by_charging_zone.html#comment",
-    "href": "distance_flown_by_charging_zone.html#comment",
-    "title": "19  Distance flown by charging zone",
-    "section": "19.5 Comment",
-    "text": "19.5 Comment"
-  },
-  {
-    "objectID": "load_factor-cargo.html#definition",
-    "href": "load_factor-cargo.html#definition",
-    "title": "20  Load factor – cargo",
-    "section": "20.1 Definition",
-    "text": "20.1 Definition"
-  },
-  {
-    "objectID": "load_factor-cargo.html#eurocontrol-recommended-sources",
-    "href": "load_factor-cargo.html#eurocontrol-recommended-sources",
-    "title": "20  Load factor – cargo",
-    "section": "20.2 EUROCONTROL recommended sources",
-    "text": "20.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "load_factor-cargo.html#description",
-    "href": "load_factor-cargo.html#description",
-    "title": "20  Load factor – cargo",
-    "section": "20.3 Description",
-    "text": "20.3 Description"
-  },
-  {
-    "objectID": "load_factor-cargo.html#related-standard-inputs",
-    "href": "load_factor-cargo.html#related-standard-inputs",
-    "title": "20  Load factor – cargo",
-    "section": "20.4 Related standard inputs",
-    "text": "20.4 Related standard inputs"
-  },
-  {
-    "objectID": "load_factor-cargo.html#comment",
-    "href": "load_factor-cargo.html#comment",
-    "title": "20  Load factor – cargo",
-    "section": "20.5 Comment",
-    "text": "20.5 Comment"
-  },
-  {
-    "objectID": "load_factor-passengers.html#definition",
-    "href": "load_factor-passengers.html#definition",
-    "title": "21  Load factor – passengers",
-    "section": "21.1 Definition",
-    "text": "21.1 Definition"
-  },
-  {
-    "objectID": "load_factor-passengers.html#eurocontrol-recommended-sources",
-    "href": "load_factor-passengers.html#eurocontrol-recommended-sources",
-    "title": "21  Load factor – passengers",
-    "section": "21.2 EUROCONTROL recommended sources",
-    "text": "21.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "load_factor-passengers.html#description",
-    "href": "load_factor-passengers.html#description",
-    "title": "21  Load factor – passengers",
-    "section": "21.3 Description",
-    "text": "21.3 Description"
-  },
-  {
-    "objectID": "load_factor-passengers.html#related-standard-inputs",
-    "href": "load_factor-passengers.html#related-standard-inputs",
-    "title": "21  Load factor – passengers",
-    "section": "21.4 Related standard inputs",
-    "text": "21.4 Related standard inputs"
-  },
-  {
-    "objectID": "load_factor-passengers.html#comment",
-    "href": "load_factor-passengers.html#comment",
-    "title": "21  Load factor – passengers",
-    "section": "21.5 Comment",
-    "text": "21.5 Comment"
-  },
-  {
-    "objectID": "cost_of_aviation_fuel.html#definition",
-    "href": "cost_of_aviation_fuel.html#definition",
-    "title": "22  Cost of aviation fuel",
-    "section": "22.1 Definition",
-    "text": "22.1 Definition"
-  },
-  {
-    "objectID": "cost_of_aviation_fuel.html#eurocontrol-recommended-sources",
-    "href": "cost_of_aviation_fuel.html#eurocontrol-recommended-sources",
-    "title": "22  Cost of aviation fuel",
-    "section": "22.2 EUROCONTROL recommended sources",
-    "text": "22.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "cost_of_aviation_fuel.html#description",
-    "href": "cost_of_aviation_fuel.html#description",
-    "title": "22  Cost of aviation fuel",
-    "section": "22.3 Description",
-    "text": "22.3 Description"
-  },
-  {
-    "objectID": "cost_of_aviation_fuel.html#related-standard-inputs",
-    "href": "cost_of_aviation_fuel.html#related-standard-inputs",
-    "title": "22  Cost of aviation fuel",
-    "section": "22.4 Related standard inputs",
-    "text": "22.4 Related standard inputs"
-  },
-  {
-    "objectID": "cost_of_aviation_fuel.html#comment",
-    "href": "cost_of_aviation_fuel.html#comment",
-    "title": "22  Cost of aviation fuel",
-    "section": "22.5 Comment",
-    "text": "22.5 Comment"
-  },
-  {
-    "objectID": "value_of_an_average_passenger_flight.html#definition",
-    "href": "value_of_an_average_passenger_flight.html#definition",
-    "title": "23  Value of an average passenger flight",
-    "section": "23.1 Definition",
-    "text": "23.1 Definition"
-  },
-  {
-    "objectID": "value_of_an_average_passenger_flight.html#eurocontrol-recommended-sources",
-    "href": "value_of_an_average_passenger_flight.html#eurocontrol-recommended-sources",
-    "title": "23  Value of an average passenger flight",
-    "section": "23.2 EUROCONTROL recommended sources",
-    "text": "23.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "value_of_an_average_passenger_flight.html#description",
-    "href": "value_of_an_average_passenger_flight.html#description",
-    "title": "23  Value of an average passenger flight",
-    "section": "23.3 Description",
-    "text": "23.3 Description"
-  },
-  {
-    "objectID": "value_of_an_average_passenger_flight.html#related-standard-inputs",
-    "href": "value_of_an_average_passenger_flight.html#related-standard-inputs",
-    "title": "23  Value of an average passenger flight",
-    "section": "23.4 Related standard inputs",
-    "text": "23.4 Related standard inputs"
-  },
-  {
-    "objectID": "value_of_an_average_passenger_flight.html#comment",
-    "href": "value_of_an_average_passenger_flight.html#comment",
-    "title": "23  Value of an average passenger flight",
-    "section": "23.5 Comment",
-    "text": "23.5 Comment"
-  },
-  {
-    "objectID": "fleet_age.html#definition",
-    "href": "fleet_age.html#definition",
-    "title": "24  Fleet age",
-    "section": "24.1 Definition",
-    "text": "24.1 Definition"
-  },
-  {
-    "objectID": "fleet_age.html#eurocontrol-recommended-sources",
-    "href": "fleet_age.html#eurocontrol-recommended-sources",
-    "title": "24  Fleet age",
-    "section": "24.2 EUROCONTROL recommended sources",
-    "text": "24.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "fleet_age.html#description",
-    "href": "fleet_age.html#description",
-    "title": "24  Fleet age",
-    "section": "24.3 Description",
-    "text": "24.3 Description"
-  },
-  {
-    "objectID": "fleet_age.html#related-standard-inputs",
-    "href": "fleet_age.html#related-standard-inputs",
-    "title": "24  Fleet age",
-    "section": "24.4 Related standard inputs",
-    "text": "24.4 Related standard inputs"
-  },
-  {
-    "objectID": "fleet_age.html#comment",
-    "href": "fleet_age.html#comment",
-    "title": "24  Fleet age",
-    "section": "24.5 Comment",
-    "text": "24.5 Comment"
-  },
-  {
-    "objectID": "fleet_size.html#definition",
-    "href": "fleet_size.html#definition",
-    "title": "25  Fleet size",
-    "section": "25.1 Definition",
-    "text": "25.1 Definition"
-  },
-  {
-    "objectID": "fleet_size.html#eurocontrol-recommended-sources",
-    "href": "fleet_size.html#eurocontrol-recommended-sources",
-    "title": "25  Fleet size",
-    "section": "25.2 EUROCONTROL recommended sources",
-    "text": "25.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "fleet_size.html#description",
-    "href": "fleet_size.html#description",
-    "title": "25  Fleet size",
-    "section": "25.3 Description",
-    "text": "25.3 Description"
-  },
-  {
-    "objectID": "fleet_size.html#related-standard-inputs",
-    "href": "fleet_size.html#related-standard-inputs",
-    "title": "25  Fleet size",
-    "section": "25.4 Related standard inputs",
-    "text": "25.4 Related standard inputs"
-  },
-  {
-    "objectID": "fleet_size.html#comment",
-    "href": "fleet_size.html#comment",
-    "title": "25  Fleet size",
-    "section": "25.5 Comment",
-    "text": "25.5 Comment"
-  },
-  {
-    "objectID": "fleet_cns_capability.html#definition",
-    "href": "fleet_cns_capability.html#definition",
-    "title": "26  Fleet CNS capability",
-    "section": "26.1 Definition",
-    "text": "26.1 Definition"
-  },
-  {
-    "objectID": "fleet_cns_capability.html#eurocontrol-recommended-sources",
-    "href": "fleet_cns_capability.html#eurocontrol-recommended-sources",
-    "title": "26  Fleet CNS capability",
-    "section": "26.2 EUROCONTROL recommended sources",
-    "text": "26.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "fleet_cns_capability.html#description",
-    "href": "fleet_cns_capability.html#description",
-    "title": "26  Fleet CNS capability",
-    "section": "26.3 Description",
-    "text": "26.3 Description"
-  },
-  {
-    "objectID": "fleet_cns_capability.html#related-standard-inputs",
-    "href": "fleet_cns_capability.html#related-standard-inputs",
-    "title": "26  Fleet CNS capability",
-    "section": "26.4 Related standard inputs",
-    "text": "26.4 Related standard inputs"
-  },
-  {
-    "objectID": "fleet_cns_capability.html#comment",
-    "href": "fleet_cns_capability.html#comment",
-    "title": "26  Fleet CNS capability",
-    "section": "26.5 Comment",
-    "text": "26.5 Comment"
-  },
-  {
-    "objectID": "en_route_ans_costs.html#definition",
-    "href": "en_route_ans_costs.html#definition",
-    "title": "27  En-route ANS Costs",
-    "section": "27.1 Definition",
-    "text": "27.1 Definition"
-  },
-  {
-    "objectID": "en_route_ans_costs.html#eurocontrol-recommended-sources",
-    "href": "en_route_ans_costs.html#eurocontrol-recommended-sources",
-    "title": "27  En-route ANS Costs",
-    "section": "27.2 EUROCONTROL recommended sources",
-    "text": "27.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "en_route_ans_costs.html#description",
-    "href": "en_route_ans_costs.html#description",
-    "title": "27  En-route ANS Costs",
-    "section": "27.3 Description",
-    "text": "27.3 Description"
-  },
-  {
-    "objectID": "en_route_ans_costs.html#related-standard-inputs",
-    "href": "en_route_ans_costs.html#related-standard-inputs",
-    "title": "27  En-route ANS Costs",
-    "section": "27.4 Related standard inputs",
-    "text": "27.4 Related standard inputs"
-  },
-  {
-    "objectID": "en_route_ans_costs.html#comment",
-    "href": "en_route_ans_costs.html#comment",
-    "title": "27  En-route ANS Costs",
-    "section": "27.5 Comment",
-    "text": "27.5 Comment"
-  },
-  {
-    "objectID": "route_charge_share_per_market_segment.html#definition",
-    "href": "route_charge_share_per_market_segment.html#definition",
-    "title": "28  Route charge share per market segment",
-    "section": "28.1 Definition",
-    "text": "28.1 Definition"
-  },
-  {
-    "objectID": "route_charge_share_per_market_segment.html#eurocontrol-recommended-sources",
-    "href": "route_charge_share_per_market_segment.html#eurocontrol-recommended-sources",
-    "title": "28  Route charge share per market segment",
-    "section": "28.2 EUROCONTROL recommended sources",
-    "text": "28.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "route_charge_share_per_market_segment.html#description",
-    "href": "route_charge_share_per_market_segment.html#description",
-    "title": "28  Route charge share per market segment",
-    "section": "28.3 Description",
-    "text": "28.3 Description"
-  },
-  {
-    "objectID": "route_charge_share_per_market_segment.html#related-standard-inputs",
-    "href": "route_charge_share_per_market_segment.html#related-standard-inputs",
-    "title": "28  Route charge share per market segment",
-    "section": "28.4 Related standard inputs",
-    "text": "28.4 Related standard inputs"
-  },
-  {
-    "objectID": "route_charge_share_per_market_segment.html#comment",
-    "href": "route_charge_share_per_market_segment.html#comment",
-    "title": "28  Route charge share per market segment",
-    "section": "28.5 Comment",
-    "text": "28.5 Comment"
-  },
-  {
-    "objectID": "ansps_employment_costs.html#definition",
-    "href": "ansps_employment_costs.html#definition",
-    "title": "29  ANSPs’ Employment Costs",
-    "section": "29.1 Definition",
-    "text": "29.1 Definition"
-  },
-  {
-    "objectID": "ansps_employment_costs.html#eurocontrol-recommended-sources",
-    "href": "ansps_employment_costs.html#eurocontrol-recommended-sources",
-    "title": "29  ANSPs’ Employment Costs",
-    "section": "29.2 EUROCONTROL recommended sources",
-    "text": "29.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "ansps_employment_costs.html#description",
-    "href": "ansps_employment_costs.html#description",
-    "title": "29  ANSPs’ Employment Costs",
-    "section": "29.3 Description",
-    "text": "29.3 Description"
-  },
-  {
-    "objectID": "ansps_employment_costs.html#related-standard-inputs",
-    "href": "ansps_employment_costs.html#related-standard-inputs",
-    "title": "29  ANSPs’ Employment Costs",
-    "section": "29.4 Related standard inputs",
-    "text": "29.4 Related standard inputs"
-  },
-  {
-    "objectID": "ansps_employment_costs.html#comment",
-    "href": "ansps_employment_costs.html#comment",
-    "title": "29  ANSPs’ Employment Costs",
-    "section": "29.5 Comment",
-    "text": "29.5 Comment"
-  },
-  {
-    "objectID": "asset_life.html#definition",
-    "href": "asset_life.html#definition",
-    "title": "30  Asset life",
-    "section": "30.1 Definition",
-    "text": "30.1 Definition"
-  },
-  {
-    "objectID": "asset_life.html#eurocontrol-recommended-sources",
-    "href": "asset_life.html#eurocontrol-recommended-sources",
-    "title": "30  Asset life",
-    "section": "30.2 EUROCONTROL recommended sources",
-    "text": "30.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "asset_life.html#description",
-    "href": "asset_life.html#description",
-    "title": "30  Asset life",
-    "section": "30.3 Description",
-    "text": "30.3 Description"
-  },
-  {
-    "objectID": "asset_life.html#related-standard-inputs",
-    "href": "asset_life.html#related-standard-inputs",
-    "title": "30  Asset life",
-    "section": "30.4 Related standard inputs",
-    "text": "30.4 Related standard inputs"
-  },
-  {
-    "objectID": "asset_life.html#comment",
-    "href": "asset_life.html#comment",
-    "title": "30  Asset life",
-    "section": "30.5 Comment",
-    "text": "30.5 Comment"
-  },
-  {
-    "objectID": "atm_cost-effectiveness_indicators.html#definition",
-    "href": "atm_cost-effectiveness_indicators.html#definition",
-    "title": "31  ATM cost-effectiveness indicators",
-    "section": "31.1 Definition",
-    "text": "31.1 Definition"
-  },
-  {
-    "objectID": "atm_cost-effectiveness_indicators.html#eurocontrol-recommended-sources",
-    "href": "atm_cost-effectiveness_indicators.html#eurocontrol-recommended-sources",
-    "title": "31  ATM cost-effectiveness indicators",
-    "section": "31.2 EUROCONTROL recommended sources",
-    "text": "31.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "atm_cost-effectiveness_indicators.html#description",
-    "href": "atm_cost-effectiveness_indicators.html#description",
-    "title": "31  ATM cost-effectiveness indicators",
-    "section": "31.3 Description",
-    "text": "31.3 Description"
-  },
-  {
-    "objectID": "atm_cost-effectiveness_indicators.html#related-standard-inputs",
-    "href": "atm_cost-effectiveness_indicators.html#related-standard-inputs",
-    "title": "31  ATM cost-effectiveness indicators",
-    "section": "31.4 Related standard inputs",
-    "text": "31.4 Related standard inputs"
-  },
-  {
-    "objectID": "atm_cost-effectiveness_indicators.html#comment",
-    "href": "atm_cost-effectiveness_indicators.html#comment",
-    "title": "31  ATM cost-effectiveness indicators",
-    "section": "31.5 Comment",
-    "text": "31.5 Comment"
-  },
-  {
-    "objectID": "atm_operational_units.html#definition",
-    "href": "atm_operational_units.html#definition",
-    "title": "32  ATM operational units",
-    "section": "32.1 Definition",
-    "text": "32.1 Definition"
-  },
-  {
-    "objectID": "atm_operational_units.html#eurocontrol-recommended-sources",
-    "href": "atm_operational_units.html#eurocontrol-recommended-sources",
-    "title": "32  ATM operational units",
-    "section": "32.2 EUROCONTROL recommended sources",
-    "text": "32.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "atm_operational_units.html#description",
-    "href": "atm_operational_units.html#description",
-    "title": "32  ATM operational units",
-    "section": "32.3 Description",
-    "text": "32.3 Description"
-  },
-  {
-    "objectID": "atm_operational_units.html#related-standard-inputs",
-    "href": "atm_operational_units.html#related-standard-inputs",
-    "title": "32  ATM operational units",
-    "section": "32.4 Related standard inputs",
-    "text": "32.4 Related standard inputs"
-  },
-  {
-    "objectID": "atm_operational_units.html#comment",
-    "href": "atm_operational_units.html#comment",
-    "title": "32  ATM operational units",
-    "section": "32.5 Comment",
-    "text": "32.5 Comment"
-  },
-  {
-    "objectID": "cns_infrastructure.html#definition",
-    "href": "cns_infrastructure.html#definition",
-    "title": "33  CNS infrastructure",
-    "section": "33.1 Definition",
-    "text": "33.1 Definition"
-  },
-  {
-    "objectID": "cns_infrastructure.html#eurocontrol-recommended-sources",
-    "href": "cns_infrastructure.html#eurocontrol-recommended-sources",
-    "title": "33  CNS infrastructure",
-    "section": "33.2 EUROCONTROL recommended sources",
-    "text": "33.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "cns_infrastructure.html#description",
-    "href": "cns_infrastructure.html#description",
-    "title": "33  CNS infrastructure",
-    "section": "33.3 Description",
-    "text": "33.3 Description"
-  },
-  {
-    "objectID": "cns_infrastructure.html#related-standard-inputs",
-    "href": "cns_infrastructure.html#related-standard-inputs",
-    "title": "33  CNS infrastructure",
-    "section": "33.4 Related standard inputs",
-    "text": "33.4 Related standard inputs"
-  },
-  {
-    "objectID": "cns_infrastructure.html#comment",
-    "href": "cns_infrastructure.html#comment",
-    "title": "33  CNS infrastructure",
-    "section": "33.5 Comment",
-    "text": "33.5 Comment"
-  },
-  {
-    "objectID": "pbn_and_precision_approach_procedures.html#definition",
-    "href": "pbn_and_precision_approach_procedures.html#definition",
-    "title": "34  PBN and precision approach procedures",
-    "section": "34.1 Definition",
-    "text": "34.1 Definition"
-  },
-  {
-    "objectID": "pbn_and_precision_approach_procedures.html#eurocontrol-recommended-sources",
-    "href": "pbn_and_precision_approach_procedures.html#eurocontrol-recommended-sources",
-    "title": "34  PBN and precision approach procedures",
-    "section": "34.2 EUROCONTROL recommended sources",
-    "text": "34.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "pbn_and_precision_approach_procedures.html#description",
-    "href": "pbn_and_precision_approach_procedures.html#description",
-    "title": "34  PBN and precision approach procedures",
-    "section": "34.3 Description",
-    "text": "34.3 Description"
-  },
-  {
-    "objectID": "pbn_and_precision_approach_procedures.html#related-standard-inputs",
-    "href": "pbn_and_precision_approach_procedures.html#related-standard-inputs",
-    "title": "34  PBN and precision approach procedures",
-    "section": "34.4 Related standard inputs",
-    "text": "34.4 Related standard inputs"
-  },
-  {
-    "objectID": "pbn_and_precision_approach_procedures.html#comment",
-    "href": "pbn_and_precision_approach_procedures.html#comment",
-    "title": "34  PBN and precision approach procedures",
-    "section": "34.5 Comment",
-    "text": "34.5 Comment"
-  },
-  {
-    "objectID": "airport_classification.html#definition",
-    "href": "airport_classification.html#definition",
-    "title": "35  Airport classification",
-    "section": "35.1 Definition",
-    "text": "35.1 Definition"
-  },
-  {
-    "objectID": "airport_classification.html#eurocontrol-recommended-sources",
-    "href": "airport_classification.html#eurocontrol-recommended-sources",
-    "title": "35  Airport classification",
-    "section": "35.2 EUROCONTROL recommended sources",
-    "text": "35.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "airport_classification.html#description",
-    "href": "airport_classification.html#description",
-    "title": "35  Airport classification",
-    "section": "35.3 Description",
-    "text": "35.3 Description"
-  },
-  {
-    "objectID": "airport_classification.html#related-standard-inputs",
-    "href": "airport_classification.html#related-standard-inputs",
-    "title": "35  Airport classification",
-    "section": "35.4 Related standard inputs",
-    "text": "35.4 Related standard inputs"
-  },
-  {
-    "objectID": "airport_classification.html#comment",
-    "href": "airport_classification.html#comment",
-    "title": "35  Airport classification",
-    "section": "35.5 Comment",
-    "text": "35.5 Comment"
-  },
-  {
-    "objectID": "taxiing_times.html#definition",
-    "href": "taxiing_times.html#definition",
-    "title": "36  Taxiing times",
-    "section": "36.1 Definition",
-    "text": "36.1 Definition"
-  },
-  {
-    "objectID": "taxiing_times.html#eurocontrol-recommended-sources",
-    "href": "taxiing_times.html#eurocontrol-recommended-sources",
-    "title": "36  Taxiing times",
-    "section": "36.2 EUROCONTROL recommended sources",
-    "text": "36.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "taxiing_times.html#description",
-    "href": "taxiing_times.html#description",
-    "title": "36  Taxiing times",
-    "section": "36.3 Description",
-    "text": "36.3 Description"
-  },
-  {
-    "objectID": "taxiing_times.html#related-standard-inputs",
-    "href": "taxiing_times.html#related-standard-inputs",
-    "title": "36  Taxiing times",
-    "section": "36.4 Related standard inputs",
-    "text": "36.4 Related standard inputs"
-  },
-  {
-    "objectID": "taxiing_times.html#comment",
-    "href": "taxiing_times.html#comment",
-    "title": "36  Taxiing times",
-    "section": "36.5 Comment",
-    "text": "36.5 Comment"
-  },
-  {
-    "objectID": "investment_in_u-space.html#definition",
-    "href": "investment_in_u-space.html#definition",
-    "title": "37  Investment in U-space",
-    "section": "37.1 Definition",
-    "text": "37.1 Definition"
-  },
-  {
-    "objectID": "investment_in_u-space.html#eurocontrol-recommended-sources",
-    "href": "investment_in_u-space.html#eurocontrol-recommended-sources",
-    "title": "37  Investment in U-space",
-    "section": "37.2 EUROCONTROL recommended sources",
-    "text": "37.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "investment_in_u-space.html#description",
-    "href": "investment_in_u-space.html#description",
-    "title": "37  Investment in U-space",
-    "section": "37.3 Description",
-    "text": "37.3 Description"
-  },
-  {
-    "objectID": "investment_in_u-space.html#related-standard-inputs",
-    "href": "investment_in_u-space.html#related-standard-inputs",
-    "title": "37  Investment in U-space",
-    "section": "37.4 Related standard inputs",
-    "text": "37.4 Related standard inputs"
-  },
-  {
-    "objectID": "investment_in_u-space.html#comment",
-    "href": "investment_in_u-space.html#comment",
-    "title": "37  Investment in U-space",
-    "section": "37.5 Comment",
-    "text": "37.5 Comment"
-  },
-  {
-    "objectID": "drone_fleet.html#definition",
-    "href": "drone_fleet.html#definition",
-    "title": "38  Drone fleet",
-    "section": "38.1 Definition",
-    "text": "38.1 Definition"
-  },
-  {
-    "objectID": "drone_fleet.html#eurocontrol-recommended-sources",
-    "href": "drone_fleet.html#eurocontrol-recommended-sources",
-    "title": "38  Drone fleet",
-    "section": "38.2 EUROCONTROL recommended sources",
-    "text": "38.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "drone_fleet.html#description",
-    "href": "drone_fleet.html#description",
-    "title": "38  Drone fleet",
-    "section": "38.3 Description",
-    "text": "38.3 Description"
-  },
-  {
-    "objectID": "drone_fleet.html#related-standard-inputs",
-    "href": "drone_fleet.html#related-standard-inputs",
-    "title": "38  Drone fleet",
-    "section": "38.4 Related standard inputs",
-    "text": "38.4 Related standard inputs"
-  },
-  {
-    "objectID": "drone_fleet.html#comment",
-    "href": "drone_fleet.html#comment",
-    "title": "38  Drone fleet",
-    "section": "38.5 Comment",
-    "text": "38.5 Comment"
-  },
-  {
-    "objectID": "purpose_of_passenger_travel.html#definition",
-    "href": "purpose_of_passenger_travel.html#definition",
-    "title": "39  Purpose of passenger travel",
-    "section": "39.1 Definition",
-    "text": "39.1 Definition"
-  },
-  {
-    "objectID": "purpose_of_passenger_travel.html#eurocontrol-recommended-sources",
-    "href": "purpose_of_passenger_travel.html#eurocontrol-recommended-sources",
-    "title": "39  Purpose of passenger travel",
-    "section": "39.2 EUROCONTROL recommended sources",
-    "text": "39.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "purpose_of_passenger_travel.html#description",
-    "href": "purpose_of_passenger_travel.html#description",
-    "title": "39  Purpose of passenger travel",
-    "section": "39.3 Description",
-    "text": "39.3 Description"
-  },
-  {
-    "objectID": "purpose_of_passenger_travel.html#related-standard-inputs",
-    "href": "purpose_of_passenger_travel.html#related-standard-inputs",
-    "title": "39  Purpose of passenger travel",
-    "section": "39.4 Related standard inputs",
-    "text": "39.4 Related standard inputs"
-  },
-  {
-    "objectID": "purpose_of_passenger_travel.html#comment",
-    "href": "purpose_of_passenger_travel.html#comment",
-    "title": "39  Purpose of passenger travel",
-    "section": "39.5 Comment",
-    "text": "39.5 Comment"
-  },
-  {
-    "objectID": "passenger_value_of_time.html#definition",
-    "href": "passenger_value_of_time.html#definition",
-    "title": "40  Passenger value of time",
-    "section": "40.1 Definition",
-    "text": "40.1 Definition"
-  },
-  {
-    "objectID": "passenger_value_of_time.html#eurocontrol-recommended-sources",
-    "href": "passenger_value_of_time.html#eurocontrol-recommended-sources",
-    "title": "40  Passenger value of time",
-    "section": "40.2 EUROCONTROL recommended sources",
-    "text": "40.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "passenger_value_of_time.html#description",
-    "href": "passenger_value_of_time.html#description",
-    "title": "40  Passenger value of time",
-    "section": "40.3 Description",
-    "text": "40.3 Description"
-  },
-  {
-    "objectID": "passenger_value_of_time.html#related-standard-inputs",
-    "href": "passenger_value_of_time.html#related-standard-inputs",
-    "title": "40  Passenger value of time",
-    "section": "40.4 Related standard inputs",
-    "text": "40.4 Related standard inputs"
-  },
-  {
-    "objectID": "passenger_value_of_time.html#comment",
-    "href": "passenger_value_of_time.html#comment",
-    "title": "40  Passenger value of time",
-    "section": "40.5 Comment",
-    "text": "40.5 Comment"
-  },
-  {
-    "objectID": "accident-incident_statistics.html#definition",
-    "href": "accident-incident_statistics.html#definition",
-    "title": "41  Accident/Incident Statistics",
-    "section": "41.1 Definition",
-    "text": "41.1 Definition"
-  },
-  {
-    "objectID": "accident-incident_statistics.html#eurocontrol-recommended-sources",
-    "href": "accident-incident_statistics.html#eurocontrol-recommended-sources",
-    "title": "41  Accident/Incident Statistics",
-    "section": "41.2 EUROCONTROL recommended sources",
-    "text": "41.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "accident-incident_statistics.html#description",
-    "href": "accident-incident_statistics.html#description",
-    "title": "41  Accident/Incident Statistics",
-    "section": "41.3 Description",
-    "text": "41.3 Description"
-  },
-  {
-    "objectID": "accident-incident_statistics.html#related-standard-inputs",
-    "href": "accident-incident_statistics.html#related-standard-inputs",
-    "title": "41  Accident/Incident Statistics",
-    "section": "41.4 Related standard inputs",
-    "text": "41.4 Related standard inputs"
-  },
-  {
-    "objectID": "accident-incident_statistics.html#comment",
-    "href": "accident-incident_statistics.html#comment",
-    "title": "41  Accident/Incident Statistics",
-    "section": "41.5 Comment",
-    "text": "41.5 Comment"
-  },
-  {
-    "objectID": "value_of_a_statistical_life-vsl.html#definition",
-    "href": "value_of_a_statistical_life-vsl.html#definition",
-    "title": "42  Value of a statistical life (VSL)",
-    "section": "42.1 Definition",
-    "text": "42.1 Definition"
-  },
-  {
-    "objectID": "value_of_a_statistical_life-vsl.html#eurocontrol-recommended-sources",
-    "href": "value_of_a_statistical_life-vsl.html#eurocontrol-recommended-sources",
-    "title": "42  Value of a statistical life (VSL)",
-    "section": "42.2 EUROCONTROL recommended sources",
-    "text": "42.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "value_of_a_statistical_life-vsl.html#description",
-    "href": "value_of_a_statistical_life-vsl.html#description",
-    "title": "42  Value of a statistical life (VSL)",
-    "section": "42.3 Description",
-    "text": "42.3 Description"
-  },
-  {
-    "objectID": "value_of_a_statistical_life-vsl.html#related-standard-inputs",
-    "href": "value_of_a_statistical_life-vsl.html#related-standard-inputs",
-    "title": "42  Value of a statistical life (VSL)",
-    "section": "42.4 Related standard inputs",
-    "text": "42.4 Related standard inputs"
-  },
-  {
-    "objectID": "value_of_a_statistical_life-vsl.html#comment",
-    "href": "value_of_a_statistical_life-vsl.html#comment",
-    "title": "42  Value of a statistical life (VSL)",
-    "section": "42.5 Comment",
-    "text": "42.5 Comment"
-  },
-  {
-    "objectID": "value_of_a_statistical_injury.html#definition",
-    "href": "value_of_a_statistical_injury.html#definition",
-    "title": "43  Value of a statistical injury",
-    "section": "43.1 Definition",
-    "text": "43.1 Definition"
-  },
-  {
-    "objectID": "value_of_a_statistical_injury.html#eurocontrol-recommended-sources",
-    "href": "value_of_a_statistical_injury.html#eurocontrol-recommended-sources",
-    "title": "43  Value of a statistical injury",
-    "section": "43.2 EUROCONTROL recommended sources",
-    "text": "43.2 EUROCONTROL recommended sources"
-  },
-  {
-    "objectID": "value_of_a_statistical_injury.html#description",
-    "href": "value_of_a_statistical_injury.html#description",
-    "title": "43  Value of a statistical injury",
-    "section": "43.3 Description",
-    "text": "43.3 Description"
-  },
-  {
-    "objectID": "value_of_a_statistical_injury.html#related-standard-inputs",
-    "href": "value_of_a_statistical_injury.html#related-standard-inputs",
-    "title": "43  Value of a statistical injury",
-    "section": "43.4 Related standard inputs",
-    "text": "43.4 Related standard inputs"
-  },
-  {
-    "objectID": "value_of_a_statistical_injury.html#comment",
-    "href": "value_of_a_statistical_injury.html#comment",
-    "title": "43  Value of a statistical injury",
-    "section": "43.5 Comment",
-    "text": "43.5 Comment"
+    "title": "6  Turnaround time",
+    "section": "6.5 Comment",
+    "text": "6.5 Comment"
   },
   {
     "objectID": "discount_rate.html#definition",
     "href": "discount_rate.html#definition",
-    "title": "44  Discount rate",
-    "section": "44.1 Definition",
-    "text": "44.1 Definition"
+    "title": "7  Discount rate",
+    "section": "7.1 Definition",
+    "text": "7.1 Definition"
   },
   {
     "objectID": "discount_rate.html#eurocontrol-recommended-sources",
     "href": "discount_rate.html#eurocontrol-recommended-sources",
-    "title": "44  Discount rate",
-    "section": "44.2 EUROCONTROL recommended sources",
-    "text": "44.2 EUROCONTROL recommended sources"
+    "title": "7  Discount rate",
+    "section": "7.2 EUROCONTROL recommended sources",
+    "text": "7.2 EUROCONTROL recommended sources"
   },
   {
     "objectID": "discount_rate.html#description",
     "href": "discount_rate.html#description",
-    "title": "44  Discount rate",
-    "section": "44.3 Description",
-    "text": "44.3 Description"
+    "title": "7  Discount rate",
+    "section": "7.3 Description",
+    "text": "7.3 Description"
   },
   {
     "objectID": "discount_rate.html#related-standard-inputs",
     "href": "discount_rate.html#related-standard-inputs",
-    "title": "44  Discount rate",
-    "section": "44.4 Related standard inputs",
-    "text": "44.4 Related standard inputs"
+    "title": "7  Discount rate",
+    "section": "7.4 Related standard inputs",
+    "text": "7.4 Related standard inputs"
   },
   {
     "objectID": "discount_rate.html#comment",
     "href": "discount_rate.html#comment",
-    "title": "44  Discount rate",
-    "section": "44.5 Comment",
-    "text": "44.5 Comment"
+    "title": "7  Discount rate",
+    "section": "7.5 Comment",
+    "text": "7.5 Comment"
   },
   {
     "objectID": "exchange_rate.html#definition",
     "href": "exchange_rate.html#definition",
-    "title": "45  Exchange rate",
-    "section": "45.1 Definition",
-    "text": "45.1 Definition"
+    "title": "8  Exchange rate",
+    "section": "8.1 Definition",
+    "text": "8.1 Definition"
   },
   {
     "objectID": "exchange_rate.html#eurocontrol-recommended-sources",
     "href": "exchange_rate.html#eurocontrol-recommended-sources",
-    "title": "45  Exchange rate",
-    "section": "45.2 EUROCONTROL recommended sources",
-    "text": "45.2 EUROCONTROL recommended sources"
+    "title": "8  Exchange rate",
+    "section": "8.2 EUROCONTROL recommended sources",
+    "text": "8.2 EUROCONTROL recommended sources"
   },
   {
     "objectID": "exchange_rate.html#description",
     "href": "exchange_rate.html#description",
-    "title": "45  Exchange rate",
-    "section": "45.3 Description",
-    "text": "45.3 Description"
+    "title": "8  Exchange rate",
+    "section": "8.3 Description",
+    "text": "8.3 Description"
   },
   {
     "objectID": "exchange_rate.html#related-standard-inputs",
     "href": "exchange_rate.html#related-standard-inputs",
-    "title": "45  Exchange rate",
-    "section": "45.4 Related standard inputs",
-    "text": "45.4 Related standard inputs"
+    "title": "8  Exchange rate",
+    "section": "8.4 Related standard inputs",
+    "text": "8.4 Related standard inputs"
   },
   {
     "objectID": "exchange_rate.html#comment",
     "href": "exchange_rate.html#comment",
-    "title": "45  Exchange rate",
-    "section": "45.5 Comment",
-    "text": "45.5 Comment"
+    "title": "8  Exchange rate",
+    "section": "8.5 Comment",
+    "text": "8.5 Comment"
   },
   {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "\n46  Data\n",
+    "title": "\n9  Data\n",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n\nfilename\n      description\n      url\n    \n\n\ninflation.csv\nInflation\nhttps://example.com\n\n\nexchange_rate.csv\nExchange rate\nhttps://example.com\n\n\n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
   }
