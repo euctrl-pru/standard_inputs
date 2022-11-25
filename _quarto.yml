@@ -2,21 +2,24 @@ project:
   type: book
   output-dir: _book
 
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+
+
 params:
   release_version: 10.0.1
 
   
 bibliography: "bibliography.bib"
-biblio-style: "apalike"
+csl: media/ieee-with-url.csl
 link-citations: true
 cover-image: cover.png
 
 
 format:
   html:
-    execute:
-      echo: false
-      warning: false
     css:
       - style.css
     # theme:
@@ -45,8 +48,7 @@ format:
 book:
   title: "Standard Inputs for EUROCONTROL Cost-Benefit Analyses"
   author:
-    - "Désirée Teunissen"
-    - "Kirsteen Purves"
+    - "EUROCONTROL Business Cases Team"
   date: "2022-12-25"
   description: "This document provides values for commonly used data items in cost-benefit analyses, together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search: true
@@ -78,7 +80,7 @@ book:
         - "amount_of_emissions_released_by_fuel_burn.qmd"
         - "cost_of_emissions.qmd"
         - "cost_of_noise.qmd"
-        - "cost_of_carbon.qmd"
+        - "shadow_cost_of_carbon.qmd"
     
     - part: "Airspace Users"
       chapters:
@@ -149,7 +151,7 @@ book:
     background: light
     search: false
     title: false
-    logo: "images/EUROCONTROL-logo-standard-rgb.svg"
+    logo: "media/EUROCONTROL-logo-standard-rgb.svg"
     left:
       - text: "<i class='far fa-star fa-spin fa-fw'></i> Aviation Intelligence"
         menu:

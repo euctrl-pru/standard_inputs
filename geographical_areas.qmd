@@ -1,6 +1,14 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Geographical Areas {#geographical-areas .unnumbered}
 
 ## Member States and geographical areas covered {.unnumbered}
+
+Sky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs.
 
 ```{r member-states-set-diagram}
 knitr::include_graphics("figures/eu_orgs.png")
@@ -14,10 +22,11 @@ knitr::include_graphics("figures/eurocontrol_ms.png")
 
 ## Airspace of the ECAC Member States {.unnumbered}
 
+ECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states.
+
 ```{r ecac-airspace, eval=FALSE, echo=FALSE}
 knitr::include_graphics("figures/ecac_area.png")
 ```
-
 
 ```{r, ecac-airspace-fir}
 library(pruatlas)
@@ -40,15 +49,3 @@ ecac <- list(ecac_oceanic(),
   mutate(min_fl = 0, max_fl = 999)
 plot_country_fir(icao_id = "ECAC", name = "ECAC", firs = ecac)
 ```
-
-
-## Comment {.unnumbered}
-
-ECAC is an intergovernmental organisation which was established by ICAO
-and the Council of Europe.
-ECAC now has 44 Member States, including all 27 EU Member States,
-31 of the 32 European Aviation Safety Agency Member States, and
-all 41 EUROCONTROL Member States.
-Further information on traffic region definitions is available in
-the EUROCONTROL STATFOR 7-year IFR Flight Movements and Service
-Units Forecast, Annex 1. https://ansperformance.eu/traffic/statfor/

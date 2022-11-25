@@ -794,7 +794,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#definition" id="toc-definition" class="nav-link active" data-scroll-target="#definition"><span class="toc-section-number">4.1</span>  Definition</a></li>
-  <li><a href="#eurocontrol-recommended-sources" id="toc-eurocontrol-recommended-sources" class="nav-link" data-scroll-target="#eurocontrol-recommended-sources"><span class="toc-section-number">4.2</span>  EUROCONTROL recommended sources</a></li>
+  <li><a href="#eurocontrol-recommended-values" id="toc-eurocontrol-recommended-values" class="nav-link" data-scroll-target="#eurocontrol-recommended-values"><span class="toc-section-number">4.2</span>  EUROCONTROL recommended values</a>
+  <ul class="collapse">
+  <li><a href="#all-causes-of-delay" id="toc-all-causes-of-delay" class="nav-link" data-scroll-target="#all-causes-of-delay"><span class="toc-section-number">4.2.1</span>  All causes of delay</a></li>
+  <li><a href="#atfm-delay" id="toc-atfm-delay" class="nav-link" data-scroll-target="#atfm-delay"><span class="toc-section-number">4.2.2</span>  ATFM delay</a></li>
+  </ul></li>
   <li><a href="#description" id="toc-description" class="nav-link" data-scroll-target="#description"><span class="toc-section-number">4.3</span>  Description</a></li>
   <li><a href="#related-standard-inputs" id="toc-related-standard-inputs" class="nav-link" data-scroll-target="#related-standard-inputs"><span class="toc-section-number">4.4</span>  Related standard inputs</a></li>
   </ul>
@@ -822,24 +826,34 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="definition" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="definition"><span class="header-section-number">4.1</span> Definition</h2>
-<p>Statistical reports on all causes of delay.</p>
+<p>Evolution in reported delays taking two perspectives:</p>
+<ol type="1">
+<li><p>The view of airlines and passengers considering all causes of delay</p></li>
+<li><p>The view of the Network Manager focusing on Air Traffic Flow Management delays</p></li>
+</ol>
 </section>
-<section id="eurocontrol-recommended-sources" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="eurocontrol-recommended-sources"><span class="header-section-number">4.2</span> EUROCONTROL recommended sources</h2>
+<section id="eurocontrol-recommended-values" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="eurocontrol-recommended-values"><span class="header-section-number">4.2</span> EUROCONTROL recommended values</h2>
+<p>Below two different views are provided: first, the values recommended for Airspace Users and Passengers, followed by a zoom-in to the purely ATFM-related delays.</p>
+<section id="all-causes-of-delay" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="all-causes-of-delay"><span class="header-section-number">4.2.1</span> All causes of delay</h3>
 <dl>
-<dt>Value</dt>
+<dt>The figure below presents an <strong>overview of all causes of delay</strong> reported by the airlines in 2020 and 2021. These figures are estimated by EUROCONTROL Central Office of Delay Analysis (CODA), and they are calculated based on the comparison of the scheduled and actual flight timings and can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.</dt>
 <dd>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="figures/delay-causes.png" class="img-fluid"></p>
-</div>
-</div>
-</dd>
-<dt>Source</dt>
-<dd>
-EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf
+<p><code>{r, all-causes-airline-reported-delay-plot} knitr::include_graphics("figures/delay_causes.png")</code></p>
 </dd>
 </dl>
+<p><em>Source: <a href="https://www.eurocontrol.int/sites/default/files/2022-04/eurocontrol-coda-digest-annual-report-2021.pdf">EUROCONTROL CODA (2022) All-Causes Delays to Air Transport in Europe. Annual 2021</a></em></p>
+</section>
+<section id="atfm-delay" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="atfm-delay"><span class="header-section-number">4.2.2</span> ATFM delay</h3>
+<dl>
+<dt>Looking specifically into ATFM delay, the figure below shows the daily traffic and traffic flow delay per flight (en-route and at airport) for the period 2012-2021. These figures are calculated by the Network Manager based on the flight plans and include the planned ATFM delays due to the restrictions that may be applied in the airspace.</dt>
+<dd>
+<p><code>{r, atfm-delay-evolution} knitr::include_graphics("figures/atfm_delay.png")</code></p>
+</dd>
+</dl>
+</section>
 </section>
 <section id="description" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="description"><span class="header-section-number">4.3</span> Description</h2>

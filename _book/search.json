@@ -60,7 +60,7 @@
     "href": "geographical_areas.html#member-states-and-geographical-areas-covered",
     "title": "Geographical Areas",
     "section": "Member States and geographical areas covered",
-    "text": "Member States and geographical areas covered"
+    "text": "Member States and geographical areas covered\nSky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs."
   },
   {
     "objectID": "geographical_areas.html#eurocontrol-member-states-status-november-2020",
@@ -74,7 +74,7 @@
     "href": "geographical_areas.html#airspace-of-the-ecac-member-states",
     "title": "Geographical Areas",
     "section": "Airspace of the ECAC Member States",
-    "text": "Airspace of the ECAC Member States"
+    "text": "Airspace of the ECAC Member States\nECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states."
   },
   {
     "objectID": "geographical_areas.html#comment",
@@ -172,7 +172,7 @@
     "href": "air_traffic_delay.html#definition",
     "title": "4  Air traffic delay",
     "section": "4.1 Definition",
-    "text": "4.1 Definition\nStatistical reports on all causes of delay."
+    "text": "4.1 Definition\nEvolution in reported delays taking two perspectives:\n\nThe view of airlines and passengers considering all causes of delay\nThe view of the Network Manager focusing on Air Traffic Flow Management delays"
   },
   {
     "objectID": "air_traffic_delay.html#eurocontrol-recommended-sources",
@@ -586,5 +586,12 @@
     "title": "48  Data",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n  \n  \n    \n      filename\n      description\n      url\n    \n  \n  \n    inflation.csv\nInflation\nhttps://example.com\n    exchange_rate.csv\nExchange rate\nhttps://example.com\n  \n  \n  \n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
+  },
+  {
+    "objectID": "air_traffic_delay.html#eurocontrol-recommended-values",
+    "href": "air_traffic_delay.html#eurocontrol-recommended-values",
+    "title": "4  Air traffic delay",
+    "section": "4.2 EUROCONTROL recommended values",
+    "text": "4.2 EUROCONTROL recommended values\nBelow two different views are provided: first, the values recommended for Airspace Users and Passengers, followed by a zoom-in to the purely ATFM-related delays.\n\n4.2.1 All causes of delay\n\nThe figure below presents an overview of all causes of delay reported by the airlines in 2020 and 2021. These figures are estimated by EUROCONTROL Central Office of Delay Analysis (CODA), and they are calculated based on the comparison of the scheduled and actual flight timings and can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.\n\n{r, all-causes-airline-reported-delay-plot} knitr::include_graphics(\"figures/delay_causes.png\")\n\n\nSource: EUROCONTROL CODA (2022) All-Causes Delays to Air Transport in Europe. Annual 2021\n\n\n4.2.2 ATFM delay\n\nLooking specifically into ATFM delay, the figure below shows the daily traffic and traffic flow delay per flight (en-route and at airport) for the period 2012-2021. These figures are calculated by the Network Manager based on the flight plans and include the planned ATFM delays due to the restrictions that may be applied in the airspace.\n\n{r, atfm-delay-evolution} knitr::include_graphics(\"figures/atfm_delay.png\")"
   }
 ]
