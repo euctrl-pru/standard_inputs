@@ -383,5 +383,12 @@
     "title": "\n9  Data\n",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n\nfilename\n      description\n      url\n    \n\n\ninflation.csv\nInflation\nhttps://example.com\n\n\nexchange_rate.csv\nExchange rate\nhttps://example.com\n\n\n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
+  },
+  {
+    "objectID": "medium-term_capacity_planning.html",
+    "href": "medium-term_capacity_planning.html",
+    "title": "2  Medium-term capacity planning",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
   }
 ]

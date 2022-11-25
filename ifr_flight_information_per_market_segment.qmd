@@ -1,12 +1,3 @@
 # IFR flight information per market segment {#ifr-flight-information-per-market-segment}
 
-## Definition
-
-## EUROCONTROL recommended sources
-
-## Description
-
-## Related standard inputs
-
-## Comment
-
+{{< include _under_work.qmd >}}

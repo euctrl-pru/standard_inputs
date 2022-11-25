@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://eurocontrol.int/introduction.html</loc>
-    <lastmod>2022-11-25T09:31:58.901Z</lastmod>
+    <lastmod>2022-11-25T10:54:53.551Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/conversions.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://eurocontrol.int/air_traffic_statistics_and_forecasts.html</loc>
-    <lastmod>2022-11-25T09:33:38.063Z</lastmod>
+    <lastmod>2022-11-25T10:55:05.239Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/number_of_ifr_flights.html</loc>
@@ -75,5 +75,9 @@
   <url>
     <loc>https://eurocontrol.int/transit_time.html</loc>
     <lastmod>2022-11-25T09:38:21.813Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eurocontrol.int/medium-term_capacity_planning.html</loc>
+    <lastmod>2022-11-25T10:55:16.483Z</lastmod>
   </url>
 </urlset>
