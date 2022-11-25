@@ -114,34 +114,29 @@ book:
     
     - part: "Airports"
       # chapters:
-      # - "airport_PART.qmd"
       # - "airport_classification.qmd"
       # - "taxiing_times.qmd"
      
     - part: "Drones"
       # chapters:
-      # - "drones_PART.qmd"
       # - "investment_in_u-space.qmd"
       # - "drone_fleet.qmd"
      
     - part: "Passengers"
       # chapters:
-      # - "passengers_PART.qmd"
       # - "purpose_of_passenger_travel.qmd"
       # - "passenger_value_of_time.qmd"
      
     - part: "Safety"
       # chapters:
-      # - "safety_PART.qmd"
       # - "accident-incident_statistics.qmd"
       # - "value_of_a_statistical_life-vsl.qmd"
       # - "value_of_a_statistical_injury.qmd"
      
     - part: "Financial values"
-      chapters:
-      - "financial_values_PART.qmd"
-      - "discount_rate.qmd"
-      - "exchange_rate.qmd"
+      # chapters:
+      # - "discount_rate.qmd"
+      # - "exchange_rate.qmd"
      
     - part: "General information"
       # chapters:
