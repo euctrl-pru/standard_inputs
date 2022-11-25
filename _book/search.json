@@ -14,11 +14,53 @@
     "text": "Publications\nEUROCONTROL Headquarters\n96 Rue de la Fusée\nB-1130 BRUSSELS\nTel: +32 (0)2 729 1152\nFax: +32 (0)2 729 5149\nE-mail: publications@eurocontrol.int"
   },
   {
-    "objectID": "foreword.html",
-    "href": "foreword.html",
+    "objectID": "foreword.html#acknowledgements",
+    "href": "foreword.html#acknowledgements",
     "title": "Foreword",
-    "section": "",
-    "text": "Although we cannot foresee when, or even if, the world will return to what it was prior to the COVID-19 pandemic, we have decided to publish this new edition of the standard inputs as a valuable source of inputs for economic and cost-benefit analyses in aviation. The recommended values are often based on 2019 statistics and data which do not yet take account of the impact of the pandemic.\nFor this edition, the focus is on environmental values, a new value for airports, turn-around time, and the introduction of two values related to drones. Drones represent a highly complex and fast-moving market, which makes forecasting more difficult than legacy aviation sectors. Suggestions for improvement and collaboration are welcome. Please send them to aviation.intelligence@eurocontrol.int.\nWe would like to make a special mention of the launch of the EUROCONTROL Aviation Intelligence Portal, which provides valuable and up-to-date information for economic analyses (https://ansperformance.eu/). The Portal will soon include the standard inputs (2021) and more information of use for cost-benefit analyses."
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to show our gratitude to the many different colleagues that have contributed to this endeavour. Trying to name them would be mission impossible. We would for sure forgot someone and this would be quite unfair.\nWe have received valuable remarks and suggestions from all stakeholders in the aviation value chain. In particular we have benefited from stakeholders involve in the entire development life cycle, from ideas to a working system. We strongly believe that this collaboration makes the Standard Inputs for EUROCONTROL Economic Analyses a robust and authoritative product.\nThank you all for making us learn every day!\nFinally, please allow us to make one only two exceptions.\n\nWe can only recognise the work of two colleagues in particular – Paula and Desirée – under who the initiative was born and developed for the past years.\nAnd our patient code teachers at PRU - Enrico and Oscar."
+  },
+  {
+    "objectID": "foreword.html#about-us",
+    "href": "foreword.html#about-us",
+    "title": "Foreword",
+    "section": "About us",
+    "text": "About us\nWe are the ECTTL Business Case team.\nExplain further."
+  },
+  {
+    "objectID": "foreword.html#history",
+    "href": "foreword.html#history",
+    "title": "Foreword",
+    "section": "History",
+    "text": "History\nIt looks long time ago that we launched the Standard Inputs for EUROCONTROL Economic Analyses series. Our first edition dates back into XXXX. The document was born as the Business Cases Team own internal need to have a common reference of economic inputs to use in our multiple ATM economic analyses."
+  },
+  {
+    "objectID": "foreword.html#this-year",
+    "href": "foreword.html#this-year",
+    "title": "Foreword",
+    "section": "This year",
+    "text": "This year\nFor this special edition we will be using an incremental approach. We are publishing inputs at the time we finished them."
+  },
+  {
+    "objectID": "foreword.html#new",
+    "href": "foreword.html#new",
+    "title": "Foreword",
+    "section": "New",
+    "text": "New\nFurther focus on work from other EU Aviation public bodies. Notably EC, SJU, SDM and EIB. Digitalisation. We will be using the advantages of digitalisation. Will be a live document with more frequent updates. You will be able to download most of the data we propose for your own purposes."
+  },
+  {
+    "objectID": "foreword.html#coming-soon",
+    "href": "foreword.html#coming-soon",
+    "title": "Foreword",
+    "section": "Coming soon",
+    "text": "Coming soon\nWe are working to integrate the newcomers, RPAs. Specific focus on environmental considerations. Comparison with other equivalent initiatives, notably FAA and CAA Australia. Inclusion or Rotorcraft. A fleet projection.\nWe are happy to receive any comment or suggestion you might have. The easiest way to reach us is using email.here@eurocontrol.int."
+  },
+  {
+    "objectID": "foreword.html#other",
+    "href": "foreword.html#other",
+    "title": "Foreword",
+    "section": "Other",
+    "text": "Other\nAlthough we cannot foresee when, or even if, the world will return to what it was prior to the COVID-19 pandemic, we have decided to publish this new edition of the standard inputs as a valuable source of inputs for economic and cost-benefit analyses in aviation. The recommended values are often based on 2019 statistics and data which do not yet take account of the impact of the pandemic.\nFor this edition, the focus is on environmental values, a new value for airports, turn-around time, and the introduction of two values related to drones. Drones represent a highly complex and fast-moving market, which makes forecasting more difficult than legacy aviation sectors. Suggestions for improvement and collaboration are welcome. Please send them to aviation.intelligence@eurocontrol.int.\nWe would like to make a special mention of the launch of the EUROCONTROL Aviation Intelligence Portal, which provides valuable and up-to-date information for economic analyses (https://ansperformance.eu/). The Portal will soon include the standard inputs (2021) and more information of use for cost-benefit analyses."
   },
   {
     "objectID": "introduction.html#details-per-data-item",
@@ -32,7 +74,7 @@
     "href": "conversions.html#inflation",
     "title": "General parameters",
     "section": "Inflation",
-    "text": "Inflation\nThe inflation levels have been calculated based on the Harmonised Index of Consumer Prices (HICP), as the yearly difference in the HICP. The HICP data was extracted from Eurostat HICP - annual data (average index and rate of change) database (prc_hicp_aind).\nThe annual change in the index is shown below. The values of the index are available from Eurostat (table Table 1.)\n\n\n\n\n\n\nTable 1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\nNA\nNA\n    2020\nNA\nNA\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
+    "text": "Inflation\nThe inflation levels have been calculated based on the Harmonised Index of Consumer Prices (HICP), as the yearly difference in the HICP. The HICP data was extracted from Eurostat HICP - annual data (average index and rate of change) database (prc_hicp_aind).\nThe annual change in the index is shown below. The values of the index are available from Eurostat (table Table 11.1.)\n\n\n\n\n\n\nTable 1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\n108.80\n2.84%\n    2020\n105.80\n0.36%\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
   },
   {
     "objectID": "conversions.html#exchange-rates",
@@ -60,7 +102,7 @@
     "href": "geographical_areas.html#member-states-and-geographical-areas-covered",
     "title": "Geographical Areas",
     "section": "Member States and geographical areas covered",
-    "text": "Member States and geographical areas covered"
+    "text": "Member States and geographical areas covered\nSky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs."
   },
   {
     "objectID": "geographical_areas.html#eurocontrol-member-states-status-november-2020",
@@ -74,14 +116,7 @@
     "href": "geographical_areas.html#airspace-of-the-ecac-member-states",
     "title": "Geographical Areas",
     "section": "Airspace of the ECAC Member States",
-    "text": "Airspace of the ECAC Member States"
-  },
-  {
-    "objectID": "geographical_areas.html#comment",
-    "href": "geographical_areas.html#comment",
-    "title": "Geographical Areas",
-    "section": "Comment",
-    "text": "Comment\nECAC is an intergovernmental organisation which was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. Further information on traffic region definitions is available in the EUROCONTROL STATFOR 7-year IFR Flight Movements and Service Units Forecast, Annex 1. https://ansperformance.eu/traffic/statfor/"
+    "text": "Airspace of the ECAC Member States\nECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states."
   },
   {
     "objectID": "air_traffic_statistics_and_forecasts.html#definition",
@@ -119,156 +154,478 @@
     "text": "1.5 Comments\nThe following chart (status: November 2020) shows the traffic forecast taking account of the impact of COVID.\n\n\n\n\n\nSource: EUROCONTROL STATFOR 2020, https://www.eurocontrol.int/covid19"
   },
   {
+    "objectID": "medium-term_capacity_planning.html",
+    "href": "medium-term_capacity_planning.html",
+    "title": "2  Medium-term capacity planning",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
     "objectID": "number_of_ifr_flights.html#definition",
     "href": "number_of_ifr_flights.html#definition",
-    "title": "2  Number of IFR flights",
-    "section": "2.1 Definition",
-    "text": "2.1 Definition\nThe number of IFR flights in Europe."
+    "title": "3  Number of IFR flights",
+    "section": "3.1 Definition",
+    "text": "3.1 Definition\nThe number of IFR flights in Europe."
   },
   {
     "objectID": "number_of_ifr_flights.html#eurocontrol-recommended-values",
     "href": "number_of_ifr_flights.html#eurocontrol-recommended-values",
-    "title": "2  Number of IFR flights",
-    "section": "2.2 EUROCONTROL recommended values",
-    "text": "2.2 EUROCONTROL recommended values\n\n\n\n\n\nEvolution of IFR flights in Europe (ECAC) 2019-2021\n  \n  \n    \n      Month\n      Arrival\n      Departure\n      Internal\n      Overflight\n      Total 2021\n      Total 2019\n      vs 2019 flight level\n    \n  \n  \n    January\n35,151\n34,972\n206,217\n8,984\n285324\n787503\n36%\n    February\n30,871\n30,885\n180,689\n7,469\n249914\n737763\n34%\n    March\n37,174\n37,184\n223,117\n9,606\n307081\n846442\n36%\n    April\n37,729\n37,685\n241,842\n10,136\n327392\n906539\n36%\n    May\n38,847\n38,615\n291,508\n11,444\n380414\n985862\n39%\n    June\n45,437\n45,275\n415,450\n12,667\n518829\n1038128\n50%\n    July\n62,118\n62,163\n574,282\n13,735\n712298\n1092562\n65%\n    August\n64,778\n64,666\n619,233\n14,469\n763146\n1080554\n71%\n    September\n61,777\n61,857\n591,118\n13,570\n728322\n1034322\n70%\n    October\n64,142\n64,303\n575,242\n15,193\n718880\n980049\n73%\n    November\n59,498\n59,573\n483,850\n15,986\n618907\n801961\n77%\n    December\n59,552\n59,797\n485,033\n15,863\n620245\n793617\n78%\n    Grand Total\n597,074\n596,975\n4,887,581\n149,122\n6230752\n11085302\n56%\n  \n  \n    \n      Source: EUROCONTROL STATFOR\n    \n  \n  \n\n\n\n\n\nSource 1\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\nValue 2\n\nFlights by market segment1 in Europe (ECAC) 2019-2021\n\n\n\n\n\n\n\n  \n    \n      Operator\n      Number of flights\n      Proportion\n      Evolution 2019 vs. 2018\n    \n  \n  \n    Traditional scheduled\n5858759\n52.9%\n1.4%\n    Low-cost\n3352186\n30.2%\n0.7%\n    Business aviation\n704308\n6.4%\n-3.0%\n    Charter\n441924\n4.0%\n2.7%\n    All-cargo\n323395\n2.9%\n-2.7%\n    Other types\n294766\n2.7%\n0.7%\n    Military\n109964\n1.0%\n-4.7%\n    Grand total\n11085302\n100%\n0.8%\n  \n\n\n\n\n\n\n\nSource 2\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\n\n\nValue 3\n\nTop 20 number of flights by civil aircraft operating in airspace in Europe controlled by the EUROCONTROL Network Manager, year 2019.\n\n\n\n\n\n\n\n  \n    \n      FPL aircraft type\n      Flights\n      Proportion\n      Cumulative\n    \n  \n  \n    B738\n2165864\n19.54%\n19.54%\n    A320\n1896439\n17.11%\n36.65%\n    A319\n870521\n7.85%\n44.50%\n    A321\n664047\n5.99%\n50.49%\n    DH8D\n311352\n2.81%\n53.30%\n    E190\n278773\n2.51%\n55.81%\n    A20N\n259032\n2.34%\n58.15%\n    B77W\n189882\n1.71%\n59.86%\n    CRJ9\n181291\n1.64%\n61.50%\n    A332\n166619\n1.50%\n63.00%\n    AT76\n162415\n1.47%\n64.47%\n    B737\n161821\n1.46%\n65.93%\n    AT75\n158337\n1.43%\n67.35%\n    A333\n158229\n1.43%\n68.78%\n    E195\n154665\n1.40%\n70.18%\n    B789\n116394\n1.05%\n71.23%\n    B763\n103803\n0.94%\n72.16%\n    B772\n101232\n0.91%\n73.08%\n    B752\n99583\n0.90%\n73.97%\n    CRJX\n92270\n0.83%\n74.81%\n    Other types\n2792733\n25%\n100%\n    Total\n11107046\n100%\n,\n  \n\n\n\n\n\n\n\nSource 3\n\nEUROCONTROL (2019) –- Network Manager flight plans and PRISME fleet data (ECAC region)\n\nValue 4\n\nDaily average of IFR flights, 2015 to 2019, EU-wide area.\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n      year\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n  \n  \n    Average daily IFR flights\n25321\n25972\n26980\n27987\n28313\n  \n\n\n\n\n\n\n\nSource 4\n\nPerformance Review Board (PRB) – ANS performance monitoring (EU-wide) https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
+    "title": "3  Number of IFR flights",
+    "section": "3.2 EUROCONTROL recommended values",
+    "text": "3.2 EUROCONTROL recommended values\n\n\n\n\n\nEvolution of IFR flights in Europe (ECAC) 2019-2021\n  \n  \n    \n      Month\n      Arrival\n      Departure\n      Internal\n      Overflight\n      Total 2021\n      Total 2019\n      vs 2019 flight level\n    \n  \n  \n    January\n35,151\n34,972\n206,217\n8,984\n285324\n787503\n36%\n    February\n30,871\n30,885\n180,689\n7,469\n249914\n737763\n34%\n    March\n37,174\n37,184\n223,117\n9,606\n307081\n846442\n36%\n    April\n37,729\n37,685\n241,842\n10,136\n327392\n906539\n36%\n    May\n38,847\n38,615\n291,508\n11,444\n380414\n985862\n39%\n    June\n45,437\n45,275\n415,450\n12,667\n518829\n1038128\n50%\n    July\n62,118\n62,163\n574,282\n13,735\n712298\n1092562\n65%\n    August\n64,778\n64,666\n619,233\n14,469\n763146\n1080554\n71%\n    September\n61,777\n61,857\n591,118\n13,570\n728322\n1034322\n70%\n    October\n64,142\n64,303\n575,242\n15,193\n718880\n980049\n73%\n    November\n59,498\n59,573\n483,850\n15,986\n618907\n801961\n77%\n    December\n59,552\n59,797\n485,033\n15,863\n620245\n793617\n78%\n    Grand Total\n597,074\n596,975\n4,887,581\n149,122\n6230752\n11085302\n56%\n  \n  \n    \n      Source: EUROCONTROL STATFOR\n    \n  \n  \n\n\n\n\n\nSource 1\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\nValue 2\n\nFlights by market segment1 in Europe (ECAC) 2019-2021\n\n\n\n\n\n\n\n  \n    \n      Operator\n      Number of flights\n      Proportion\n      Evolution 2019 vs. 2018\n    \n  \n  \n    Traditional scheduled\n5858759\n52.9%\n1.4%\n    Low-cost\n3352186\n30.2%\n0.7%\n    Business aviation\n704308\n6.4%\n-3.0%\n    Charter\n441924\n4.0%\n2.7%\n    All-cargo\n323395\n2.9%\n-2.7%\n    Other types\n294766\n2.7%\n0.7%\n    Military\n109964\n1.0%\n-4.7%\n    Grand total\n11085302\n100%\n0.8%\n  \n\n\n\n\n\n\n\nSource 2\n\nEUROCONTROL (2020) – STATFOR statistics  Traffic statistics and forecasts can be obtained from the STATFOR Interactive Dashboard (SID). http://www.eurocontrol.int/statfor\n\n\n\nValue 3\n\nTop 20 number of flights by civil aircraft operating in airspace in Europe controlled by the EUROCONTROL Network Manager, year 2019.\n\n\n\n\n\n\n\n  \n    \n      FPL aircraft type\n      Flights\n      Proportion\n      Cumulative\n    \n  \n  \n    B738\n2165864\n19.54%\n19.54%\n    A320\n1896439\n17.11%\n36.65%\n    A319\n870521\n7.85%\n44.50%\n    A321\n664047\n5.99%\n50.49%\n    DH8D\n311352\n2.81%\n53.30%\n    E190\n278773\n2.51%\n55.81%\n    A20N\n259032\n2.34%\n58.15%\n    B77W\n189882\n1.71%\n59.86%\n    CRJ9\n181291\n1.64%\n61.50%\n    A332\n166619\n1.50%\n63.00%\n    AT76\n162415\n1.47%\n64.47%\n    B737\n161821\n1.46%\n65.93%\n    AT75\n158337\n1.43%\n67.35%\n    A333\n158229\n1.43%\n68.78%\n    E195\n154665\n1.40%\n70.18%\n    B789\n116394\n1.05%\n71.23%\n    B763\n103803\n0.94%\n72.16%\n    B772\n101232\n0.91%\n73.08%\n    B752\n99583\n0.90%\n73.97%\n    CRJX\n92270\n0.83%\n74.81%\n    Other types\n2792733\n25%\n100%\n    Total\n11107046\n100%\n,\n  \n\n\n\n\n\n\n\nSource 3\n\nEUROCONTROL (2019) –- Network Manager flight plans and PRISME fleet data (ECAC region)\n\nValue 4\n\nDaily average of IFR flights, 2015 to 2019, EU-wide area.\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n      year\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n  \n  \n    Average daily IFR flights\n25321\n25972\n26980\n27987\n28313\n  \n\n\n\n\n\n\n\nSource 4\n\nPerformance Review Board (PRB) – ANS performance monitoring (EU-wide) https://www.eurocontrol.int/prudata/dashboard/vis/2019/"
   },
   {
     "objectID": "number_of_ifr_flights.html#description",
     "href": "number_of_ifr_flights.html#description",
-    "title": "2  Number of IFR flights",
-    "section": "2.3 Description",
-    "text": "2.3 Description\nValue 1 shows the typical fluctuation in traffic during the year, peaking in July and August. The lowest level usually occurs in February.\nValue 2 indicates an overall increase in flights of 0.8% in 2019 compared with 2018. Traditional scheduled traffic increased by 1.4% and charter traffic by 2.7%, whilst business aviation decreased by 3% and cargo by 2.7%. Military traffic covering only those flights operating as general air traffic (GAT) and excluding operational air traffic (OAT) decreased by 4.7%.\nValue 3 Of those aircraft which flew IFR in 2019, four hundred and thirty-six (436) different civil aircraft types operated in Europe in 2019. Some 75% of the flights were carried out by the 20 aircraft types displayed."
+    "title": "3  Number of IFR flights",
+    "section": "3.3 Description",
+    "text": "3.3 Description\nValue 1 shows the typical fluctuation in traffic during the year, peaking in July and August. The lowest level usually occurs in February.\nValue 2 indicates an overall increase in flights of 0.8% in 2019 compared with 2018. Traditional scheduled traffic increased by 1.4% and charter traffic by 2.7%, whilst business aviation decreased by 3% and cargo by 2.7%. Military traffic covering only those flights operating as general air traffic (GAT) and excluding operational air traffic (OAT) decreased by 4.7%.\nValue 3 Of those aircraft which flew IFR in 2019, four hundred and thirty-six (436) different civil aircraft types operated in Europe in 2019. Some 75% of the flights were carried out by the 20 aircraft types displayed."
   },
   {
     "objectID": "number_of_ifr_flights.html#related-standard-inputs",
     "href": "number_of_ifr_flights.html#related-standard-inputs",
-    "title": "2  Number of IFR flights",
-    "section": "2.4 Related standard inputs",
-    "text": "2.4 Related standard inputs\nIFR flight information per operator segment, [fleet age], [fleet size] and [fleet CNS capability]."
+    "title": "3  Number of IFR flights",
+    "section": "3.4 Related standard inputs",
+    "text": "3.4 Related standard inputs\nIFR flight information per operator segment, [fleet age], [fleet size] and [fleet CNS capability]."
   },
   {
     "objectID": "number_of_ifr_flights.html#further-reading",
     "href": "number_of_ifr_flights.html#further-reading",
-    "title": "2  Number of IFR flights",
-    "section": "2.5 Further reading",
-    "text": "2.5 Further reading\nEUROCONTROL Performance Review Commission The Performance Review Commission publishes traffic analyses in the annual Performance Review reports (https://www.eurocontrol.int/prc/publications)."
+    "title": "3  Number of IFR flights",
+    "section": "3.5 Further reading",
+    "text": "3.5 Further reading\nEUROCONTROL Performance Review Commission The Performance Review Commission publishes traffic analyses in the annual Performance Review reports (https://www.eurocontrol.int/prc/publications)."
   },
   {
     "objectID": "number_of_ifr_flights.html#comment",
     "href": "number_of_ifr_flights.html#comment",
-    "title": "2  Number of IFR flights",
-    "section": "2.6 Comment",
-    "text": "2.6 Comment\nThese traffic figures are from 2019 and do not yet reflect the impact of COVID. Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL five year forecast https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024."
+    "title": "3  Number of IFR flights",
+    "section": "3.6 Comment",
+    "text": "3.6 Comment\nThese traffic figures are from 2019 and do not yet reflect the impact of COVID. Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL five year forecast https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024."
   },
   {
     "objectID": "air_traffic_delay.html#definition",
     "href": "air_traffic_delay.html#definition",
-    "title": "3  Air traffic delay",
-    "section": "3.1 Definition",
-    "text": "3.1 Definition\nStatistical reports on all causes of delay."
+    "title": "4  Air traffic delay",
+    "section": "4.1 Definition",
+    "text": "4.1 Definition\nStatistical reports on all causes of delay."
   },
   {
     "objectID": "air_traffic_delay.html#eurocontrol-recommended-sources",
     "href": "air_traffic_delay.html#eurocontrol-recommended-sources",
-    "title": "3  Air traffic delay",
-    "section": "3.2 EUROCONTROL recommended sources",
-    "text": "3.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\nSource\n\nEUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf"
+    "title": "4  Air traffic delay",
+    "section": "4.2 EUROCONTROL recommended sources",
+    "text": "4.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\nSource\n\nEUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf"
   },
   {
     "objectID": "air_traffic_delay.html#description",
     "href": "air_traffic_delay.html#description",
-    "title": "3  Air traffic delay",
-    "section": "3.3 Description",
-    "text": "3.3 Description\nThe report identified in the source value gives an overview of the delay situation in the European Civil Aviation Conference area. It has been prepared by the Central Office for Delay Analysis (CODA), a EUROCONTROL service. It is based on delay data provided directly by airlines. This data on all causes of delay is derived by airlines, comparing actual timings with their published schedules.\nStatistics on all causes of delay can be obtained directly from the CODA Interactive Dashboard (CID) (a request for access is required). This dashboard aims to provide the user with an enhanced understanding of the causes of delay to flights, both that relating to air traffic flow management (ATFM) and non-ATFM-related delay. ATFM delay constitutes only a fraction of primary delays from all causes, and around half of all delay is reactionary rather than primary. Analyses within the dashboard are based on flight-by-flight data provided by airspace users as well as the Network Manager.\nMore information about CODA can be found at https://www.eurocontrol.int/network-performance (go to CID)."
+    "title": "4  Air traffic delay",
+    "section": "4.3 Description",
+    "text": "4.3 Description\nThe report identified in the source value gives an overview of the delay situation in the European Civil Aviation Conference area. It has been prepared by the Central Office for Delay Analysis (CODA), a EUROCONTROL service. It is based on delay data provided directly by airlines. This data on all causes of delay is derived by airlines, comparing actual timings with their published schedules.\nStatistics on all causes of delay can be obtained directly from the CODA Interactive Dashboard (CID) (a request for access is required). This dashboard aims to provide the user with an enhanced understanding of the causes of delay to flights, both that relating to air traffic flow management (ATFM) and non-ATFM-related delay. ATFM delay constitutes only a fraction of primary delays from all causes, and around half of all delay is reactionary rather than primary. Analyses within the dashboard are based on flight-by-flight data provided by airspace users as well as the Network Manager.\nMore information about CODA can be found at https://www.eurocontrol.int/network-performance (go to CID)."
   },
   {
     "objectID": "air_traffic_delay.html#related-standard-inputs",
     "href": "air_traffic_delay.html#related-standard-inputs",
-    "title": "3  Air traffic delay",
-    "section": "3.4 Related standard inputs",
-    "text": "3.4 Related standard inputs\nAir traffic statistics and forecast, [flow management delay] and [cost of delay]."
+    "title": "4  Air traffic delay",
+    "section": "4.4 Related standard inputs",
+    "text": "4.4 Related standard inputs\nAir traffic statistics and forecast, [flow management delay] and [cost of delay]."
+  },
+  {
+    "objectID": "flow_management_delay.html",
+    "href": "flow_management_delay.html",
+    "title": "5  Flow management delay",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "rate_of_fuel_burn.html",
+    "href": "rate_of_fuel_burn.html",
+    "title": "7  Rate of fuel burn",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "amount_of_emissions_released_by_fuel_burn.html",
+    "href": "amount_of_emissions_released_by_fuel_burn.html",
+    "title": "8  Amount of emissions released by fuel burn",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cost_of_emissions.html",
+    "href": "cost_of_emissions.html",
+    "title": "9  Cost of emissions",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cost_of_noise.html",
+    "href": "cost_of_noise.html",
+    "title": "10  Cost of noise",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "shadow_cost_of_carbon.html#definition",
+    "href": "shadow_cost_of_carbon.html#definition",
+    "title": "11  Shadow cost of carbon",
+    "section": "11.1 Definition",
+    "text": "11.1 Definition\nwhatever\n\n\n\n\n\n\nTable 11.1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\n108.80\n2.84%\n    2020\n105.80\n0.36%\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
+  },
+  {
+    "objectID": "aircraft_operating_costs.html",
+    "href": "aircraft_operating_costs.html",
+    "title": "12  Aircraft Operating Costs",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#definition",
     "href": "average_number_of_passengers_per_movement.html#definition",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.1 Definition",
-    "text": "6.1 Definition\nAverage1 number of passengers per movement (take-off or landing) in Europe."
+    "title": "13  Average number of passengers per movement",
+    "section": "13.1 Definition",
+    "text": "13.1 Definition\nAverage1 number of passengers per movement (take-off or landing) in Europe."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#eurocontrol-recommended-sources",
     "href": "average_number_of_passengers_per_movement.html#eurocontrol-recommended-sources",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.2 EUROCONTROL recommended sources",
-    "text": "6.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n  \n    \n      Average number of passengers per departing flight\n    \n    \n      EU-27+UK and EFTA1\n    \n  \n  \n    \n      2013\n      2014\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n  \n  \n    109\n113\n117\n119\n124\n126\n129\n  \n\n  \n    \n      1 European Free Trade Association: Iceland, Liechtenstein, Norway and Switzerland\n    \n  \n\n\n\n\n\n\n\n\n\n\nSource\n\nEurostat: air passenger transport by reporting country (extract: avia_paoc)\nhttp://ec.europa.eu/eurostat/web/transport/data/database\nEUROCONTROL STATFOR Interactive Dashboard (SID)19 (goto PAX+)\nhttps://www.eurocontrol.int/dashboard/statfor-interactive-dashboard\n\nDescription\n\nThe average number of passengers per movement2 for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’."
+    "title": "13  Average number of passengers per movement",
+    "section": "13.2 EUROCONTROL recommended sources",
+    "text": "13.2 EUROCONTROL recommended sources\n\nValue\n\n\n\n\n\n\n\n  \n    \n      Average number of passengers per departing flight\n    \n    \n      EU-27+UK and EFTA1\n    \n  \n  \n    \n      2013\n      2014\n      2015\n      2016\n      2017\n      2018\n      2019\n    \n  \n  \n    109\n113\n117\n119\n124\n126\n129\n  \n\n  \n    \n      1 European Free Trade Association: Iceland, Liechtenstein, Norway and Switzerland\n    \n  \n\n\n\n\n\n\n\n\n\n\nSource\n\nEurostat: air passenger transport by reporting country (extract: avia_paoc)\nhttp://ec.europa.eu/eurostat/web/transport/data/database\nEUROCONTROL STATFOR Interactive Dashboard (SID)19 (goto PAX+)\nhttps://www.eurocontrol.int/dashboard/statfor-interactive-dashboard\n\nDescription\n\nThe average number of passengers per movement2 for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#description",
     "href": "average_number_of_passengers_per_movement.html#description",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.3 Description",
-    "text": "6.3 Description\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes) as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports."
+    "title": "13  Average number of passengers per movement",
+    "section": "13.3 Description",
+    "text": "13.3 Description\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes) as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports."
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#other-possible-value",
     "href": "average_number_of_passengers_per_movement.html#other-possible-value",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.4 Other possible value",
-    "text": "6.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n  \n    \n      Passengers per IFR movement\n    \n    \n      Values for the main 34 European airports (all operations)\n    \n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    96\n102\n108\n111\n118\n125\n  \n\n\n\n\n\n\n\nSource\n\nPRC and FAA, “2017 Comparison of ATM-related operational performance: US – Europe”, March 2019 (page 25):\nhttps://www.eurocontrol.int/publication/useurope-comparison-air-traffic-management-related-operational-performance-2017\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library.\n\nDescription\n\nThe table below provides high-level indicators for the main 34 airports21 in Europe using data reported by the airports.\nThe number of passengers per IFR movement is calculated by dividing the ‘average number of annual passengers per airport’\n\n\n\n\n\n\n  \n    \n      Average number of annual passengers per airport (million)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    25\n24\n25\n25\n28\n31\n  \n\n\n\n\n\n\nby the ‘average number of annual IFR movements per airport’.\n\n\n\n\n\n\n  \n    \n      Average number of annual IFR movements per airport (‘000)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    260\n237\n233\n228\n223\n248"
+    "title": "13  Average number of passengers per movement",
+    "section": "13.4 Other possible value",
+    "text": "13.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n  \n    \n      Passengers per IFR movement\n    \n    \n      Values for the main 34 European airports (all operations)\n    \n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    96\n102\n108\n111\n118\n125\n  \n\n\n\n\n\n\n\nSource\n\nPRC and FAA, “2017 Comparison of ATM-related operational performance: US – Europe”, March 2019 (page 25):\nhttps://www.eurocontrol.int/publication/useurope-comparison-air-traffic-management-related-operational-performance-2017\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library.\n\nDescription\n\nThe table below provides high-level indicators for the main 34 airports21 in Europe using data reported by the airports.\nThe number of passengers per IFR movement is calculated by dividing the ‘average number of annual passengers per airport’\n\n\n\n\n\n\n  \n    \n      Average number of annual passengers per airport (million)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    25\n24\n25\n25\n28\n31\n  \n\n\n\n\n\n\nby the ‘average number of annual IFR movements per airport’.\n\n\n\n\n\n\n  \n    \n      Average number of annual IFR movements per airport (‘000)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    260\n237\n233\n228\n223\n248"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#related-standard-inputs",
     "href": "average_number_of_passengers_per_movement.html#related-standard-inputs",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.5 Related standard inputs",
-    "text": "6.5 Related standard inputs"
+    "title": "13  Average number of passengers per movement",
+    "section": "13.5 Related standard inputs",
+    "text": "13.5 Related standard inputs"
   },
   {
     "objectID": "average_number_of_passengers_per_movement.html#comment",
     "href": "average_number_of_passengers_per_movement.html#comment",
-    "title": "6  Average number of passengers per movement",
-    "section": "6.6 Comment",
-    "text": "6.6 Comment"
+    "title": "13  Average number of passengers per movement",
+    "section": "13.6 Comment",
+    "text": "13.6 Comment"
+  },
+  {
+    "objectID": "cancellation_cost.html",
+    "href": "cancellation_cost.html",
+    "title": "14  Cancellation Cost",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "operational_cancellation_rate.html",
+    "href": "operational_cancellation_rate.html",
+    "title": "15  Operational Cancellation Rate",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cost_of_delay.html",
+    "href": "cost_of_delay.html",
+    "title": "16  Cost of Delay",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cost_of_diversion.html",
+    "href": "cost_of_diversion.html",
+    "title": "17  Cost of diversion",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
   },
   {
     "objectID": "turnaround_time.html#definition",
     "href": "turnaround_time.html#definition",
-    "title": "7  Turnaround time",
-    "section": "7.1 Definition",
-    "text": "7.1 Definition"
+    "title": "18  Turnaround time",
+    "section": "18.1 Definition",
+    "text": "18.1 Definition"
   },
   {
     "objectID": "turnaround_time.html#eurocontrol-recommended-sources",
     "href": "turnaround_time.html#eurocontrol-recommended-sources",
-    "title": "7  Turnaround time",
-    "section": "7.2 EUROCONTROL recommended sources",
-    "text": "7.2 EUROCONTROL recommended sources"
+    "title": "18  Turnaround time",
+    "section": "18.2 EUROCONTROL recommended sources",
+    "text": "18.2 EUROCONTROL recommended sources"
   },
   {
     "objectID": "turnaround_time.html#description",
     "href": "turnaround_time.html#description",
-    "title": "7  Turnaround time",
-    "section": "7.3 Description",
-    "text": "7.3 Description"
+    "title": "18  Turnaround time",
+    "section": "18.3 Description",
+    "text": "18.3 Description"
   },
   {
     "objectID": "turnaround_time.html#related-standard-inputs",
     "href": "turnaround_time.html#related-standard-inputs",
-    "title": "7  Turnaround time",
-    "section": "7.4 Related standard inputs",
-    "text": "7.4 Related standard inputs"
+    "title": "18  Turnaround time",
+    "section": "18.4 Related standard inputs",
+    "text": "18.4 Related standard inputs"
   },
   {
     "objectID": "turnaround_time.html#comment",
     "href": "turnaround_time.html#comment",
-    "title": "7  Turnaround time",
-    "section": "7.5 Comment",
-    "text": "7.5 Comment"
+    "title": "18  Turnaround time",
+    "section": "18.5 Comment",
+    "text": "18.5 Comment"
+  },
+  {
+    "objectID": "ifr_average_flight_distance_and_flight_duration.html",
+    "href": "ifr_average_flight_distance_and_flight_duration.html",
+    "title": "19  IFR average flight distance and flight duration",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "ifr_flight_information_per_market_segment.html",
+    "href": "ifr_flight_information_per_market_segment.html",
+    "title": "20  IFR flight information per market segment",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "distance_flown_by_charging_zone.html",
+    "href": "distance_flown_by_charging_zone.html",
+    "title": "21  Distance flown by charging zone",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "load_factor-cargo.html",
+    "href": "load_factor-cargo.html",
+    "title": "22  Load factor – cargo",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "load_factor-passengers.html",
+    "href": "load_factor-passengers.html",
+    "title": "23  Load factor – passengers",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cost_of_aviation_fuel.html",
+    "href": "cost_of_aviation_fuel.html",
+    "title": "24  Cost of aviation fuel",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "value_of_an_average_passenger_flight.html",
+    "href": "value_of_an_average_passenger_flight.html",
+    "title": "25  Value of an average passenger flight",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "fleet_age.html",
+    "href": "fleet_age.html",
+    "title": "26  Fleet age",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "fleet_size.html",
+    "href": "fleet_size.html",
+    "title": "27  Fleet size",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "fleet_cns_capability.html",
+    "href": "fleet_cns_capability.html",
+    "title": "28  Fleet CNS capability",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "en_route_ans_costs.html",
+    "href": "en_route_ans_costs.html",
+    "title": "29  En-route ANS Costs",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "route_charge_share_per_market_segment.html",
+    "href": "route_charge_share_per_market_segment.html",
+    "title": "30  Route charge share per market segment",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "ansps_employment_costs.html",
+    "href": "ansps_employment_costs.html",
+    "title": "31  ANSPs’ Employment Costs",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "asset_life.html",
+    "href": "asset_life.html",
+    "title": "32  Asset life",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "atm_cost-effectiveness_indicators.html",
+    "href": "atm_cost-effectiveness_indicators.html",
+    "title": "33  ATM cost-effectiveness indicators",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "atm_operational_units.html",
+    "href": "atm_operational_units.html",
+    "title": "34  ATM operational units",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "cns_infrastructure.html",
+    "href": "cns_infrastructure.html",
+    "title": "35  CNS infrastructure",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "pbn_and_precision_approach_procedures.html",
+    "href": "pbn_and_precision_approach_procedures.html",
+    "title": "36  PBN and precision approach procedures",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "airport_classification.html",
+    "href": "airport_classification.html",
+    "title": "37  Airport classification",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "taxiing_times.html",
+    "href": "taxiing_times.html",
+    "title": "38  Taxiing times",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "investment_in_u-space.html",
+    "href": "investment_in_u-space.html",
+    "title": "39  Investment in U-space",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "drone_fleet.html",
+    "href": "drone_fleet.html",
+    "title": "40  Drone fleet",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "purpose_of_passenger_travel.html",
+    "href": "purpose_of_passenger_travel.html",
+    "title": "41  Purpose of passenger travel",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "passenger_value_of_time.html",
+    "href": "passenger_value_of_time.html",
+    "title": "42  Passenger value of time",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "accident-incident_statistics.html",
+    "href": "accident-incident_statistics.html",
+    "title": "43  Accident/Incident Statistics",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "value_of_a_statistical_life-vsl.html#definition",
+    "href": "value_of_a_statistical_life-vsl.html#definition",
+    "title": "44  Value of a statistical life (VSL)",
+    "section": "44.1 Definition",
+    "text": "44.1 Definition"
+  },
+  {
+    "objectID": "value_of_a_statistical_life-vsl.html#eurocontrol-recommended-sources",
+    "href": "value_of_a_statistical_life-vsl.html#eurocontrol-recommended-sources",
+    "title": "44  Value of a statistical life (VSL)",
+    "section": "44.2 EUROCONTROL recommended sources",
+    "text": "44.2 EUROCONTROL recommended sources"
+  },
+  {
+    "objectID": "value_of_a_statistical_life-vsl.html#description",
+    "href": "value_of_a_statistical_life-vsl.html#description",
+    "title": "44  Value of a statistical life (VSL)",
+    "section": "44.3 Description",
+    "text": "44.3 Description"
+  },
+  {
+    "objectID": "value_of_a_statistical_life-vsl.html#related-standard-inputs",
+    "href": "value_of_a_statistical_life-vsl.html#related-standard-inputs",
+    "title": "44  Value of a statistical life (VSL)",
+    "section": "44.4 Related standard inputs",
+    "text": "44.4 Related standard inputs"
+  },
+  {
+    "objectID": "value_of_a_statistical_life-vsl.html#comment",
+    "href": "value_of_a_statistical_life-vsl.html#comment",
+    "title": "44  Value of a statistical life (VSL)",
+    "section": "44.5 Comment",
+    "text": "44.5 Comment"
+  },
+  {
+    "objectID": "value_of_a_statistical_injury.html",
+    "href": "value_of_a_statistical_injury.html",
+    "title": "45  Value of a statistical injury",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "discount_rate.html",
+    "href": "discount_rate.html",
+    "title": "46  Discount rate",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "exchange_rate.html",
+    "href": "exchange_rate.html",
+    "title": "47  Exchange rate",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
+  },
+  {
+    "objectID": "abbreviations.html",
+    "href": "abbreviations.html",
+    "title": "Abbreviations",
+    "section": "",
+    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
   },
   {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "8  Data",
+    "title": "48  Data",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n  \n  \n    \n      filename\n      description\n      url\n    \n  \n  \n    inflation.csv\nInflation\nhttps://example.com\n    exchange_rate.csv\nExchange rate\nhttps://example.com\n  \n  \n  \n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
   }

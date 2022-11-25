@@ -8,11 +8,6 @@ editor_options:
 
 Below are presented some key values used in the Standard Inputs and that can serve as a reference for other uses.
 
-For any questions relating to this document, please contact EUROCONTROL
-using the e-mail
-[aviation.intelligence\@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int?subject=Standard%20inputs),
-naming the Standard Inputs in the subject line.
-
 ## Inflation {#inflation .unnumbered}
 
 The inflation levels have been calculated based on the Harmonised Index
