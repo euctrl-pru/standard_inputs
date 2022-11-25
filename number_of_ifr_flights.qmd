@@ -4,20 +4,41 @@
 
 The number of IFR flights in Europe.
 
-## EUROCONTROL recommended sources
+## EUROCONTROL recommended values
 
-Value 1
-:   Monthly and yearly number of flights by flow category, ECAC, year 2019
+```{r }
+#| label: ifr-flights-month
+#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019-2021
+library(readxl)
+library(dplyr)
+library(gt)
 
-    ```{r, ifr-flights}
-    library(readr)
-    library(gt)
-    library(magrittr)
-    
-    read_csv("data/ifr_flights.csv") %>% 
-      gt()
-    ```
+read_xlsx("data/ifr_flights_ecac.xlsx") %>%
+  gt() %>%
+  cols_label(
+    month  = "Month",
+    arrival    = "Arrival",
+    departure  = "Departure",
+    internal = "Internal",
+    overflight = "Overflight",
+    total_2021 = "Total 2021",
+    total_2019 = "Total 2019",
+    vs_2019_flight_level = "vs 2019 flight level"
+  ) %>%
+  fmt_percent(
+    columns = vars(vs_2019_flight_level),
+    decimals = 0
+  ) %>%
+  fmt_number(
+    columns = c(arrival, departure, internal, overflight),
+    use_seps = TRUE,
+    decimals = 0
+  ) %>%
+  tab_source_note(
+    source_note = md("Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting)")
+  )
 
+```
 
 Source 1
 :   EUROCONTROL (2020) – STATFOR statistics
@@ -26,7 +47,7 @@ Source 1
     Interactive Dashboard (SID). http://www.eurocontrol.int/statfor
 
 Value 2
-:   Flights by market segment[^2] of operator, ECAC, year 2019
+:   Flights by market segment[^2] in Europe (ECAC) 2019-2021
     ```{r, flights-per-market-segment}
     library(readr)
     library(gt)
