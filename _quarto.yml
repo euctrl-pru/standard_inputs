@@ -78,7 +78,7 @@ book:
         - "amount_of_emissions_released_by_fuel_burn.qmd"
         - "cost_of_emissions.qmd"
         - "cost_of_noise.qmd"
-        - "cost_of_carbon.qmd"
+        - "shadow_cost_of_carbon.qmd"
     
     - part: "Airspace Users"
       chapters:

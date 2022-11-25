@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Standard Inputs for EUROCONTROL Cost-Benefit Analyses",
     "section": "",
-    "text": "Welcome\nThis is the website for “Standard Inputs for EUROCONTROL Cost-Benefit Analyses”.\nThe EUROCONTROL Business Case Team regularly refreshes the content and the underlying data in order to provide up to date information for the interested users.\nThe EUROCONTROL Business Case Team has made every effort to ensure that the information and analysis contained in this document are as accurate as possible. Only information from quoted sources has been used and information relating to named parties has been checked with the parties concerned. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the EUROCONTROL Business Case Team’s attention. Our email address is:\nEconomics.Business-Cases@eurocontrol.int\nThis document is published by the EUROCONTROL Business Case Team in the interest of the exchange of information\ninformation contained in this document may not be modified without prior written permission from the EUROCONTROL Business Case Team. The views expressed herein do not necessarily respect the official views or policy of EUROCONTROL, which makes no warranty, either implied or express, for the information contained in this document, neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness of this information."
+    "text": "This is the website for “Standard Inputs for EUROCONTROL Cost-Benefit Analyses”.\nThe EUROCONTROL Business Case Team regularly refreshes the content and the underlying data in order to provide up to date information for the interested users.\nThe EUROCONTROL Business Case Team has made every effort to ensure that the information and analysis contained in this document are as accurate as possible. Only information from quoted sources has been used and information relating to named parties has been checked with the parties concerned. Despite these precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to the EUROCONTROL Business Case Team’s attention. Our email address is:\nEconomics.Business-Cases@eurocontrol.int\nThis document is published by the EUROCONTROL Business Case Team in the interest of the exchange of information\ninformation contained in this document may not be modified without prior written permission from the EUROCONTROL Business Case Team. The views expressed herein do not necessarily respect the official views or policy of EUROCONTROL, which makes no warranty, either implied or express, for the information contained in this document, neither does it assume any legal liability or responsibility for the accuracy, completeness or usefulness of this information."
   },
   {
     "objectID": "index.html#publications",
@@ -25,35 +25,35 @@
     "href": "introduction.html#details-per-data-item",
     "title": "Introduction",
     "section": "Details per data item",
-    "text": "Details per data item\nFor each standard input, the following information is provided, where relevant.\n\n\n\n\n\n\nSection\nDescription\n\n\n\nDefinition\nA statement which describes the concept.\n\n\nEUROCONTROL recommended value or source\nOne or a set of recommended values or sources put forward by EUROCONTROL for the specific indicator.\n\n\nSource and date\nThe source documents and their publication dates.\n\n\nDescription\nAny relevant information or details regarding the standard input. Information can be found here on how the value is computed, the specific use of the indicator, etc. Information regarding the limitations on using the values may also be included.\n\n\nOther possible values\nOther values found in different sources, which are included for the purpose of information or discussion.\n\n\nRelated standard inputs\nA link to other related standard inputs included in the document in order to increase its consistency.\n\n\nFurther reading\nReferences to other interesting sources.\n\n\nComments\nAny questions or further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited."
+    "text": "Details per data item\nFor each standard input, the following information is provided, where relevant.\n\n\n\n\n\n\n\nSection\nDescription\n\n\n\n\nDefinition\nA statement which describes the concept.\n\n\nEUROCONTROL recommended value or source\nOne or a set of recommended values or sources put forward by EUROCONTROL for the specific indicator.\n\n\nSource and date\nThe source documents and their publication dates.\n\n\nDescription\nAny relevant information or details regarding the standard input. Information can be found here on how the value is computed, the specific use of the indicator, etc. Information regarding the limitations on using the values may also be included.\n\n\nOther possible values\nOther values found in different sources, which are included for the purpose of information or discussion.\n\n\nRelated standard inputs\nA link to other related standard inputs included in the document in order to increase its consistency.\n\n\nFurther reading\nReferences to other interesting sources.\n\n\nComments\nAny questions or further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited."
   },
   {
     "objectID": "conversions.html#inflation",
     "href": "conversions.html#inflation",
     "title": "General parameters",
     "section": "Inflation",
-    "text": "Inflation\nThe inflation levels have been calculated based on the Harmonised Index of Consumer Prices (HICP), as the yearly difference in the HICP. The HICP data was extracted from Eurostat HICP - annual data (average index and rate of change) database (prc_hicp_aind).\nThe annual change in the index is shown below. The values of the index are available from Eurostat (table Table 1.)\n\n\n\n\n\n\n\nTable 1:  Annual average inflation values \n  \n  \nYear\n      Index\n      Rate of change\n    \n\n\n2021\n108.80\n2.84%\n\n\n2020\n105.80\n0.36%\n\n\n2019\n105.42\n1.47%\n\n\n2018\n103.89\n1.89%\n\n\n2017\n101.96\n1.71%\n\n\n2016\n100.25\n0.25%\n\n\n2015\n100.00\n0.10%\n\n\n2014\n99.90\n0.55%\n\n\n2013\n99.35\n1.50%\n\n\n2012\n97.88\n2.64%\n\n\n2011\n95.36\n3.10%\n\n\n2010\n92.49\n2.09%\n\n\n2009\n90.60\n0.98%\n\n\n2008\n89.72\n3.54%\n\n\n2007\n86.65\n2.34%\n\n\n2006\n84.67\n2.20%\n\n\n2005\n82.85\n2.17%\n\n\n2004\n81.09\n2.01%\n\n\n2003\n79.49\n1.96%\n\n\n2002\n77.96\n2.08%\n\n\n2001\n76.37\n2.19%\n\n\n2000\n74.73\n1.90%\n\n\n\nSource: Eurostat"
+    "text": "Inflation\nThe inflation levels have been calculated based on the Harmonised Index of Consumer Prices (HICP), as the yearly difference in the HICP. The HICP data was extracted from Eurostat HICP - annual data (average index and rate of change) database (prc_hicp_aind).\nThe annual change in the index is shown below. The values of the index are available from Eurostat (table Table 1.)\n\n\n\n\n\n\nTable 1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\n108.80\n2.84%\n    2020\n105.80\n0.36%\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
   },
   {
     "objectID": "conversions.html#exchange-rates",
     "href": "conversions.html#exchange-rates",
     "title": "General parameters",
     "section": "Exchange Rate Conversion",
-    "text": "Exchange Rate Conversion\nThe currency exchange rates provided below are based on the European Central Bank (ECB) rates as are published daily. The rates exposed in the table below correspond to the average rate for the year 2021 as published by ECB.\n\n\n\n\n\n\n\nTable 2:  Average euro foreign exchange rate (2021) \n  \n  \nCurrency\n      Currency-€\n      €-Currency\n    \n\n\nUSD\n0.89\n1.12\n\n\nGBP\n1.22\n0.82\n\n\n\nSource: European Central Bank"
+    "text": "Exchange Rate Conversion\nThe currency exchange rates provided below are based on the European Central Bank (ECB) rates as are published daily. The rates exposed in the table below correspond to the average rate for the year 2021 as published by ECB.\n\n\n\n\n\n\nTable 2:  Average euro foreign exchange rate (2021) \n  \n  \n    \n      Currency\n      Currency-€\n      €-Currency\n    \n  \n  \n    USD\n0.89\n1.12\n    GBP\n1.22\n0.82\n  \n  \n    \n      Source: European Central Bank"
   },
   {
     "objectID": "conversions.html#cost-of-fuel",
     "href": "conversions.html#cost-of-fuel",
     "title": "General parameters",
     "section": "Cost of fuel",
-    "text": "Cost of fuel\nThe cost of fuel used in this document is based on the 2021 average jet fuel price handled by IATA, unless otherwise specified. All conversions are done using the values specified on this page.\n\n\n\n\n\n\nAverage jet fuel price\n  \n  \nCurrency\n      Price per barrel\n      Price per gallon\n      Price per kg\n    \n\n\nUSD\n141.7\n3.80\n1.1\n\n\nEUR\n138.9\n3.31\n1.1\n\n\n\nSource: IATA"
+    "text": "Cost of fuel\nThe cost of fuel used in this document is based on the 2021 average jet fuel price handled by IATA, unless otherwise specified. All conversions are done using the values specified on this page.\n\n\n\n\n\nAverage jet fuel price\n  \n  \n    \n      Currency\n      Price per barrel\n      Price per gallon\n      Price per kg\n    \n  \n  \n    USD\n141.7\n3.80\n1.1\n    EUR\n138.9\n3.31\n1.1\n  \n  \n    \n      Source: IATA"
   },
   {
     "objectID": "conversions.html#conversion-values",
     "href": "conversions.html#conversion-values",
     "title": "General parameters",
     "section": "Conversion values",
-    "text": "Conversion values\n\n\n\n\n\n\nUnits conversion values.\n  \n  \nFrom\n      To\n    \n\n\n1 nautical mile (NM)\n1.852 km\n\n\n1 kilometre (km)\n0.53996 NM\n\n\n1 tonne (metric = 1 000 kg) of jet fuel\n325.33 US gallons\n\n\n\n1 235 litres\n\n\n\n7.8 barrels\n\n\n1 barrel (bbl) of jet fuel\n42 US gallons\n\n\n\n158.99 litres\n\n\n\n0.1291 ton = 129.10 kg\n\n\n1 US gallon of jet fuel (US gal)\n3.7854 litres\n\n\n\n3.073 kg\n\n\n\n6.7764 lb\n\n\nDensity of kerosene\n0.812 kg/litre\n\n\n1 litre of fuel (l)\n0.26417 US gallons\n\n\n1 kilogramme of fuel (kg)\n2.2046 lb\n\n\n1 pound of fuel (lb)\n0.45359 kg"
+    "text": "Conversion values\n\n\n\n\n\nUnits conversion values.\n  \n  \n    \n      From\n      To\n    \n  \n  \n    1 nautical mile (NM)\n1.852 km\n    1 kilometre (km)\n0.53996 NM\n    1 tonne (metric = 1 000 kg) of jet fuel\n325.33 US gallons\n    \n1 235 litres\n    \n7.8 barrels\n    1 barrel (bbl) of jet fuel\n42 US gallons\n    \n158.99 litres\n    \n0.1291 ton = 129.10 kg\n    1 US gallon of jet fuel (US gal)\n3.7854 litres\n    \n3.073 kg\n    \n6.7764 lb\n    Density of kerosene\n0.812 kg/litre\n    1 litre of fuel (l)\n0.26417 US gallons\n    1 kilogramme of fuel (kg)\n2.2046 lb\n    1 pound of fuel (lb)\n0.45359 kg"
   },
   {
     "objectID": "geographical_areas.html#member-states-and-geographical-areas-covered",
@@ -75,13 +75,6 @@
     "title": "Geographical Areas",
     "section": "Airspace of the ECAC Member States",
     "text": "Airspace of the ECAC Member States\nECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states."
-  },
-  {
-    "objectID": "geographical_areas.html#comment",
-    "href": "geographical_areas.html#comment",
-    "title": "Geographical Areas",
-    "section": "Comment",
-    "text": "Comment\nECAC is an intergovernmental organisation which was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. Further information on traffic region definitions is available in the EUROCONTROL STATFOR 7-year IFR Flight Movements and Service Units Forecast, Annex 1. https://ansperformance.eu/traffic/statfor/"
   },
   {
     "objectID": "air_traffic_statistics_and_forecasts.html#definition",
@@ -586,5 +579,12 @@
     "title": "48  Data",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n  \n  \n    \n      filename\n      description\n      url\n    \n  \n  \n    inflation.csv\nInflation\nhttps://example.com\n    exchange_rate.csv\nExchange rate\nhttps://example.com\n  \n  \n  \n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
+  },
+  {
+    "objectID": "shadow_cost_of_carbon.html#definition",
+    "href": "shadow_cost_of_carbon.html#definition",
+    "title": "11  Shadow cost of carbon",
+    "section": "11.1 Definition",
+    "text": "11.1 Definition\nwhatever\n\n\n\n\n\n\nTable 11.1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\n108.80\n2.84%\n    2020\n105.80\n0.36%\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
   }
 ]
