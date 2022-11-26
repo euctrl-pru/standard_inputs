@@ -85,6 +85,6 @@ them to aviation.intelligence\@eurocontrol.int.
 
 We would like to make a special mention of the launch of the EUROCONTROL
 Aviation Intelligence Portal, which provides valuable and up-to-date
-information for economic analyses (https://ansperformance.eu/). The
+information for economic analyses (<https://ansperformance.eu/>). The
 Portal will soon include the standard inputs (2021) and more information
 of use for cost-benefit analyses.
