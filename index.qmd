@@ -15,12 +15,12 @@ and information relating to named parties has been checked with the parties conc
 precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to
 the EUROCONTROL Business Case Team’s attention. Our email address is:
 
-{{< var email.info >}}
+[{{< var email.info >}}](mailto:{{< var email.info >}})
 
 This document is published by the EUROCONTROL Business Case Team in the interest of the exchange of
 information
 
-information contained in this document may not be modified without prior written permission from the
+Information contained in this document may not be modified without prior written permission from the
 EUROCONTROL Business Case Team.
 The views expressed herein do not necessarily respect the official views or policy of EUROCONTROL, which
 makes no warranty, either implied or express, for the information contained in this document, neither does it
