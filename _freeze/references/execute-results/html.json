@@ -1,0 +1,14 @@
+{
+  "hash": "d3dc64bef8edaf6edea807d12b8a07f2",
+  "result": {
+    "markdown": "\n# References {-}\n<div id=\"refs\"></div>\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
