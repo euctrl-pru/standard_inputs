@@ -13,7 +13,7 @@ params:
 
   
 bibliography: "bibliography.bib"
-biblio-style: "apalike"
+csl: media/ieee-with-url.csl
 link-citations: true
 cover-image: cover.png
 
@@ -154,7 +154,7 @@ book:
     background: light
     search: false
     title: false
-    logo: "images/EUROCONTROL-logo-standard-rgb.svg"
+    logo: "media/EUROCONTROL-logo-standard-rgb.svg"
     left:
       - text: "<i class='far fa-star fa-spin fa-fw'></i> Aviation Intelligence"
         menu:
