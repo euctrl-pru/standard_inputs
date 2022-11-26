@@ -17,8 +17,7 @@ HICP - annual data (average index and rate of change) database
 (prc_hicp_aind).
 
 The annual change in the index is shown below. The values of the index
-are available from [Eurostat](http://ec.europa.eu/eurostat) (table
-@tbl-inflation-table.)
+are available from [Eurostat](http://ec.europa.eu/eurostat) (@tbl-inflation-table.)
 
 ```{r}
 #| label: tbl-inflation-table
