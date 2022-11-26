@@ -12,8 +12,7 @@ Value
     ```
 
 Source
-:   EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe
-  https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf
+:   EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe [@coda2019]
 
 ## Description
 
@@ -35,11 +34,14 @@ Analyses within the dashboard are based on flight-by-flight data provided by
 airspace users as well as the Network Manager.
 
 More information about CODA can be found at
-https://www.eurocontrol.int/network-performance (go to CID).
+<https://www.eurocontrol.int/network-performance> (go to CID).
+
 
 
 ## Related standard inputs
 
 [Air traffic statistics and forecast](#air-traffic-statistics-and-forecasts),
 [flow management delay] and [cost of delay].
+
+## References
 

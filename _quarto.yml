@@ -20,9 +20,6 @@ cover-image: cover.png
 
 format:
   html:
-    # execute:
-    #   echo: false
-    #   warning: false
     css:
       - style.css
     # theme:
