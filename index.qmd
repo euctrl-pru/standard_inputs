@@ -1,7 +1,7 @@
 `r if (knitr:::is_html_output()) '
 # Welcome {-}
 
-This is the website for __"Standard Inputs for EUROCONTROL Cost-Benefit Analyses"__.
+This is the website for __"{{< meta title  >}}"__.
 
 
 The EUROCONTROL Business Case Team regularly refreshes the content and the underlying data
@@ -15,12 +15,12 @@ and information relating to named parties has been checked with the parties conc
 precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to
 the EUROCONTROL Business Case Team’s attention. Our email address is:
 
-Economics.Business-Cases@eurocontrol.int
+[{{< var email.info >}}](mailto:{{< var email.info >}})
 
 This document is published by the EUROCONTROL Business Case Team in the interest of the exchange of
 information
 
-information contained in this document may not be modified without prior written permission from the
+Information contained in this document may not be modified without prior written permission from the
 EUROCONTROL Business Case Team.
 The views expressed herein do not necessarily respect the official views or policy of EUROCONTROL, which
 makes no warranty, either implied or express, for the information contained in this document, neither does it

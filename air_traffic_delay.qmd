@@ -30,6 +30,7 @@ The figure below presents an **overview of all causes of delay** reported by the
     
     ```
 
+<<<<<<< HEAD
 *Source: [EUROCONTROL CODA (2022) All-Causes Delays to Air Transport in
 Europe. Annual
 2021](https://www.eurocontrol.int/sites/default/files/2022-04/eurocontrol-coda-digest-annual-report-2021.pdf)*
@@ -41,6 +42,10 @@ Looking specifically into **ATFM delay**, the figure below shows the daily traff
 :   `{r, atfm-delay-evolution} knitr::include_graphics("figures/atfm_delay.png")`
 
 *Source: [EUROCONTROL (2022) Network Operations Report 2021](https://www.eurocontrol.int/publication/annual-network-operations-report-2021)*
+=======
+Source
+:   EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe [@coda2019]
+>>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
 
 ## Description
 
@@ -62,10 +67,19 @@ dashboard are based on flight-by-flight data provided by airspace users
 as well as the Network Manager.
 
 More information about CODA can be found at
-https://www.eurocontrol.int/network-performance (go to CID).
+<https://www.eurocontrol.int/network-performance> (go to CID).
+
 
 ## Related standard inputs
 
+<<<<<<< HEAD
 [Air traffic statistics and
 forecast](#air-traffic-statistics-and-forecasts), \[flow management
 delay\] and \[cost of delay\].
+=======
+[Air traffic statistics and forecast](#air-traffic-statistics-and-forecasts),
+[flow management delay] and [cost of delay].
+
+## References
+
+>>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5

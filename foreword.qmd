@@ -1,22 +1,91 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
-# Foreword {-}
+# Foreword {.unnumbered}
 
-Although we cannot foresee when, or even if, the world will return to what it was
-prior to the COVID-19 pandemic, we have decided to publish this new edition of
-the standard inputs as a valuable source of inputs for economic and 
-cost-benefit analyses in aviation.
-The recommended values are often based on 2019 statistics and data which do not
-yet take account of the impact of the pandemic.
+## Acknowledgements
 
-For this edition, the focus is on environmental values, a new value for airports,
-turn-around time, and the introduction of two values related to drones.
-Drones represent a highly complex and fast-moving market, which makes forecasting
-more difficult than legacy aviation sectors.
-Suggestions for improvement and collaboration are welcome.
-Please send them to aviation.intelligence@eurocontrol.int.
+We would like to show our gratitude to the many different colleagues
+that have contributed to this endeavour. Trying to name them would be
+mission impossible. We would for sure forgot someone and this would be
+quite unfair.
+
+We have received valuable remarks and suggestions from all stakeholders
+in the aviation value chain. In particular we have benefited from
+stakeholders involve in the entire development life cycle, from ideas to
+a working system. We strongly believe that this collaboration makes the
+Standard Inputs for EUROCONTROL Economic Analyses a robust and
+authoritative product.
+
+Thank you all for making us learn every day!
+
+Finally, please allow us to make one only two exceptions.
+
+-   We can only recognise the work of two colleagues in particular --
+    Paula and Desirée -- under who the initiative was born and developed
+    for the past years.
+
+-   And our patient *code teachers* at PRU - Enrico and Oscar.
+
+## About us
+
+We are the ECTTL Business Case team.
+
+Explain further.
+
+## History
+
+It looks long time ago that we launched the Standard Inputs for
+EUROCONTROL Economic Analyses series. Our first edition dates back into
+XXXX. The document was born as the Business Cases Team own internal need
+to have a common reference of economic inputs to use in our multiple ATM
+economic analyses.
+
+## This year
+
+For this special edition we will be using an incremental approach. We
+are publishing inputs at the time we finished them.
+
+## New
+
+Further focus on work from other EU Aviation public bodies. Notably EC,
+SJU, SDM and EIB. Digitalisation. We will be using the advantages of
+digitalisation. Will be a live document with more frequent updates. You
+will be able to download most of the data we propose for your own
+purposes.
+
+## Coming soon
+
+We are working to integrate the newcomers, RPAs. Specific focus on
+environmental considerations. Comparison with other equivalent
+initiatives, notably FAA and CAA Australia. Inclusion or Rotorcraft. A
+fleet projection.
+
+We are happy to receive any comment or suggestion you might have. The
+easiest way to reach us is using
+[{{< var email.info >}}](mailto:{{< var email.info >}}).
+
+## Other
+
+Although we cannot foresee when, or even if, the world will return to
+what it was prior to the COVID-19 pandemic, we have decided to publish
+this new edition of the standard inputs as a valuable source of inputs
+for economic and cost-benefit analyses in aviation. The recommended
+values are often based on 2019 statistics and data which do not yet take
+account of the impact of the pandemic.
+
+For this edition, the focus is on environmental values, a new value for
+airports, turn-around time, and the introduction of two values related
+to drones. Drones represent a highly complex and fast-moving market,
+which makes forecasting more difficult than legacy aviation sectors.
+Suggestions for improvement and collaboration are welcome. Please send
+them to [{{< var email.aiu >}}](mailto:{{< var email.aiu >}}).
 
 We would like to make a special mention of the launch of the EUROCONTROL
-Aviation Intelligence Portal, which provides valuable and up-to-date information
-for economic analyses (https://ansperformance.eu/).
-The Portal will soon include the standard inputs (2021) and more information 
+Aviation Intelligence Portal, which provides valuable and up-to-date
+information for economic analyses (<https://ansperformance.eu/>). The
+Portal will soon include the standard inputs (2021) and more information
 of use for cost-benefit analyses.
