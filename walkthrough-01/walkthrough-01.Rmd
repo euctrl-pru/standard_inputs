@@ -1,7 +1,7 @@
 ---
 title: "A Standard Inputs Prototype Walk-through "
 author: "Enrico Spinielli"
-institute: "EUROCONTROL <img src='../images/eurocontrol-logo-noname.png' height='28px'>, Aviation Intelligence Unit"
+institute: "EUROCONTROL <img src='images/eurocontrol-logo-noname.png' height='28px'>, Aviation Intelligence Unit"
 date: "2020-09-07 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
@@ -14,7 +14,7 @@ output:
 ---
 
 layout: true
-background-image: url(../images/eurocontrol-logo-wide.svg)
+background-image: url(images/eurocontrol-logo-wide.svg)
 background-position: 2% 99%
 background-size: 18%
 
