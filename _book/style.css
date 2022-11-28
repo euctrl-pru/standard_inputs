@@ -1,5 +1,0 @@
-/* thin border around cover image */
-.quarto-cover-image {
-  border-width: thin;
-  border-color: black;
-}
