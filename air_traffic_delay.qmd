@@ -45,6 +45,9 @@ Looking specifically into **ATFM delay**, the figure below shows the daily traff
 =======
 Source
 :   EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe [@coda2019]
+<<<<<<< HEAD
+>>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
+=======
 >>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
 
 ## Description
@@ -68,6 +71,10 @@ as well as the Network Manager.
 
 More information about CODA can be found at
 <https://www.eurocontrol.int/network-performance> (go to CID).
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
 
 
 ## Related standard inputs
@@ -82,4 +89,7 @@ delay\] and \[cost of delay\].
 
 ## References
 
+<<<<<<< HEAD
+>>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
+=======
 >>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5
