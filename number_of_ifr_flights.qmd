@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Number of IFR flights
 
 ## Definition
@@ -41,55 +47,58 @@ read_xlsx("data/ifr_flights_ecac.xlsx") %>%
 ```
 
 Source 1
-:   EUROCONTROL (2020) – STATFOR statistics
-    <br>
-    Traffic statistics and forecasts can be obtained from the STATFOR
-    Interactive Dashboard (SID). http://www.eurocontrol.int/statfor
+
+:   EUROCONTROL (2020) -- STATFOR statistics <br> Traffic statistics and
+    forecasts can be obtained from the STATFOR Interactive Dashboard
+    (SID). http://www.eurocontrol.int/statfor
 
 Value 2
-:   Flights by market segment[^2] in Europe (ECAC) 2019-2021
+
+:   Flights by market segment[^number_of_ifr_flights-1] in Europe (ECAC)
+    2019-2021
+
     ```{r, flights-per-market-segment}
     library(readr)
     library(gt)
     library(magrittr)
-    
+
     read_csv("data/flight_per_market_segment.csv") %>% 
       gt()
     ```
 
 Source 2
-:   EUROCONTROL (2020) – STATFOR statistics
-    <br>
-    Traffic statistics and forecasts can be obtained from the STATFOR
-    Interactive Dashboard (SID). http://www.eurocontrol.int/statfor
 
-[^2]: Rules for EUROCONTROL classification of low-cost,
-      all-cargo and business aviation types of flights: 
-      https://www.eurocontrol.int/publication/market-segment-rules] 
-
+:   EUROCONTROL (2020) -- STATFOR statistics <br> Traffic statistics and
+    forecasts can be obtained from the STATFOR Interactive Dashboard
+    (SID). http://www.eurocontrol.int/statfor
 
 Value 3
-:   Top 20 number of flights by civil aircraft operating in airspace
-    in Europe controlled by the EUROCONTROL Network Manager, year 2019.
-    
+
+:   Top 20 number of flights by civil aircraft operating in airspace in
+    Europe controlled by the EUROCONTROL Network Manager, year 2019.
+
     ```{r, flights-per-aircraft-type}
     library(readr)
     library(gt)
     library(magrittr)
-    
+
     read_csv("data/flights_per_aircraft_type.csv") %>% 
       gt()
     ```
 
 Source 3
-:   EUROCONTROL (2019) –- Network Manager flight plans and
-    PRISME fleet data (ECAC region)
+
+:   EUROCONTROL (2019) --- Network Manager flight plans and PRISME fleet
+    data (ECAC region)
 
 Value 4
+
 :   Daily average of IFR flights, 2015 to 2019, EU-wide area.
-    ![](figures/average_daily_flights_2015-2019.png){#average-daily-ifr-flights-plot}
-    
-    
+
+    ```{r, average-daily-ifr-flights-plot}
+    knitr::include_graphics("figures/average_daily_flights_2015-2019.png")
+    ```
+
     ```{r, average-daily-ifr-flights-table}
     library(gt)
     library(magrittr)
@@ -102,10 +111,14 @@ Value 4
     ```
 
 Source 4
-:   Performance Review Board (PRB) – ANS performance monitoring (EU-wide)<br>
+
+:   Performance Review Board (PRB) -- ANS performance monitoring
+    (EU-wide)<br>
     https://www.eurocontrol.int/prudata/dashboard/vis/2019/
 
-
+[^number_of_ifr_flights-1]: Rules for EUROCONTROL classification of
+    low-cost, all-cargo and business aviation types of flights:
+    https://www.eurocontrol.int/publication/market-segment-rules\]
 
 ## Description
 
@@ -113,30 +126,32 @@ Source 4
 peaking in July and August. The lowest level usually occurs in February.
 
 **Value 2** indicates an overall increase in flights of 0.8% in 2019
-compared with 2018.
-Traditional scheduled traffic increased by 1.4% and charter traffic by 2.7%,
-whilst business aviation decreased by 3% and cargo by 2.7%.
-Military traffic covering only those flights operating as general air
-traffic (GAT) and excluding operational air traffic (OAT) decreased by 4.7%.
+compared with 2018. Traditional scheduled traffic increased by 1.4% and
+charter traffic by 2.7%, whilst business aviation decreased by 3% and
+cargo by 2.7%. Military traffic covering only those flights operating as
+general air traffic (GAT) and excluding operational air traffic (OAT)
+decreased by 4.7%.
 
 **Value 3** Of those aircraft which flew IFR in 2019, four hundred and
-thirty-six (436) different civil aircraft types operated in Europe in 2019.
-Some 75% of the flights were carried out by the 20 aircraft types displayed.
-
+thirty-six (436) different civil aircraft types operated in Europe in
+2019. Some 75% of the flights were carried out by the 20 aircraft types
+displayed.
 
 ## Related standard inputs
 
-[IFR flight information per operator segment](#ifr-flight-information-per-market-segment),
-[fleet age], [fleet size] and [fleet CNS capability].
+[IFR flight information per operator
+segment](#ifr-flight-information-per-market-segment), \[fleet age\],
+\[fleet size\] and \[fleet CNS capability\].
 
 ## Further reading
 
-__EUROCONTROL Performance Review Commission__<br>
-The Performance Review Commission publishes traffic analyses in the annual Performance Review reports (https://www.eurocontrol.int/prc/publications).
+**EUROCONTROL Performance Review Commission**<br> The Performance Review
+Commission publishes traffic analyses in the annual Performance Review
+reports (https://www.eurocontrol.int/prc/publications).
 
 ## Comment
 
-These traffic figures are from 2019 and do not yet reflect the impact of COVID.
-Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL
-five year forecast
+These traffic figures are from 2019 and do not yet reflect the impact of
+COVID. Estimated traffic figures for 2020 and beyond can be found in the
+EUROCONTROL five year forecast
 <https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024>.

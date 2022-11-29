@@ -4,6 +4,7 @@
 
 The shadow price of carbon (SPC) is the cost of carbon required to drive the economy to meet the 1.5°C global temperature target set by the Intergovernmental Panel on Climate Change (IPCC).
 
+
 ```{r}
 #| label: tbl-inflation-table
 #| tbl-cap: Shadow Cost of Carbon for EU27 in €2021 prices

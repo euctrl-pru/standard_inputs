@@ -1,8 +1,8 @@
 # Average number of passengers per movement
 
 ## Definition
-Average number of passengers per movement (take-off or landing) in Europe.
 
+Average number of passengers per movement (take-off or landing) in Europe.
 
 ## EUROCONTROL recommended sources
 
@@ -14,8 +14,11 @@ The figure below presents an overview of the total and average number of passeng
 *Source: [Eurostat: air passenger transport by reporting country (avia_paoc)](http://ec.europa.eu/eurostat/web/transport/data/database) and EUROCONTROL STATFOR 
 Interactive Dashboard [@ectrl:statfor:sid]
 
+
 ## Description
 
 The Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes), as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports.
 
-The average number of passengers per movement^[A movement is either a take-off or a landing at an airport.] for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’.
+The average number of passengers per movement[^average_number_of_passengers_per_movement-1] for a given year is obtained by dividing the number of 'departing passengers on board' by the number of 'departing flights for that year'.
+
+[^average_number_of_passengers_per_movement-1]: A movement is either a take-off or a landing at an airport.
