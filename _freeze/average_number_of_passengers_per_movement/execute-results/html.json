@@ -1,17 +1,10 @@
 {
-<<<<<<< HEAD
-  "hash": "6b4732a1fe2d0076976802b71a3311f6",
-  "result": {
-    "markdown": "# Average number of passengers per movement\n\n## Definition\n\nAverage number of passengers per movement (take-off or landing) in Europe.\n\n## EUROCONTROL recommended sources\n\nThe figure below presents an overview of the total and average number of passengers per flight in ECAC.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](figures/number_passengers.png)\n:::\n:::\n\n\n\\*Source: [Eurostat: air passenger transport by reporting country (avia_paoc)](http://ec.europa.eu/eurostat/web/transport/data/database) and EUROCONTROL STATFOR Interactive Dashboard[@sid]\n\n## Description\n\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes), as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports.\n\nThe average number of passengers per movement[^average_number_of_passengers_per_movement-1] for a given year is obtained by dividing the number of 'departing passengers on board' by the number of 'departing flights for that year'.\n\n[^average_number_of_passengers_per_movement-1]: A movement is either a take-off or a landing at an airport.\n",
-    "supporting": [],
-=======
   "hash": "d7994336575e97990b4556644b1f29f8",
   "result": {
     "markdown": "# Average number of passengers per movement\n\n## Definition\nAverage number of passengers per movement (take-off or landing) in Europe.\n\n\n## EUROCONTROL recommended sources\n\nThe figure below presents an overview of the total and average number of passengers per flight in ECAC.\n\n\n::: {.cell}\n\n:::\n\n\n*Source: [Eurostat: air passenger transport by reporting country (avia_paoc)](http://ec.europa.eu/eurostat/web/transport/data/database) and EUROCONTROL STATFOR \nInteractive Dashboard [@ectrl:statfor:sid]\n\n## Description\n\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes), as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports.\n\nThe average number of passengers per movement^[A movement is either a take-off or a landing at an airport.] for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’.",
     "supporting": [
       "average_number_of_passengers_per_movement_files"
     ],
->>>>>>> 328c4b337665a20f074b268f6ea57b362aca1ca9
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
