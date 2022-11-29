@@ -1,0 +1,16 @@
+{
+  "hash": "78f5116a896662c75ea48d42d67d1f43",
+  "result": {
+    "markdown": "---\neditor_options: \n  markdown: \n    wrap: 72\n---\n\n\n# Geographical Areas {#geographical-areas .unnumbered}\n\n## Member States and geographical areas covered {.unnumbered}\n\nSky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](figures/eu_orgs.png)\n:::\n:::\n\n\n## EUROCONTROL Member States (status: November 2020) {.unnumbered}\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](figures/eurocontrol_ms.png)\n:::\n:::\n\n\n## Airspace of the ECAC Member States {.unnumbered}\n\nECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states.\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](geographical_areas_files/figure-html/ecac-airspace-fir-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "geographical_areas_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

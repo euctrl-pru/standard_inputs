@@ -2,21 +2,20 @@ project:
   type: book
   output-dir: _book
 
-params:
-  release_version: 10.0.1
+execute:
+  freeze: auto
+  echo: false
+  warning: false
 
-  
+
 bibliography: "bibliography.bib"
-biblio-style: "apalike"
+csl: media/ieee-with-url.csl
 link-citations: true
 cover-image: cover.png
 
 
 format:
   html:
-    execute:
-      echo: false
-      warning: false
     css:
       - style.css
     # theme:
@@ -32,8 +31,6 @@ format:
       # UNCOMMENT for activating GA
       - media/analytics.html
   pdf:
-    execute:
-      echo: false
     toc: true
     number-sections: true
     colorlinks: true
@@ -148,7 +145,7 @@ book:
     background: light
     search: false
     title: false
-    logo: "images/EUROCONTROL-logo-standard-rgb.svg"
+    logo: "media/EUROCONTROL-logo-standard-rgb.svg"
     left:
       - text: "<i class='far fa-star fa-spin fa-fw'></i> Aviation Intelligence"
         menu:

@@ -1,45 +1,102 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # Air traffic delay
 
 ## Definition
-Statistical reports on all causes of delay.
 
-## EUROCONTROL recommended sources
+Evolution in reported delays taking two perspectives:
 
-Value
-:   
-    ```{r, all-causes-airline-reported-delay-plot}
-    knitr::include_graphics("figures/delay-causes.png")
-    ```
+1.  The view of airlines and passengers considering all causes of delay
 
-Source
-:   EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe
-  https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf
+2.  The view of the Network Manager focusing on Air Traffic Flow
+    Management delays
 
-## Description
+## EUROCONTROL recommended values
 
-The report identified in the source value gives an overview of the delay
-situation in the European Civil Aviation Conference area.
-It has been prepared by the Central Office for Delay Analysis (CODA),
-a EUROCONTROL service. It is based on delay data provided directly by airlines.
-This data on all causes of delay is derived by airlines, comparing actual
-timings with their published schedules.
+Below two different views are provided: first, the values recommended
+for Airspace Users and Passengers, followed by a zoom-in to the purely
+ATFM-related delays.
 
-Statistics on all causes of delay can be obtained directly from the
-CODA Interactive Dashboard (CID) (a request for access is required).
-This dashboard aims to provide the user with an enhanced understanding of
-the causes of delay to flights, both that relating to air traffic flow
-management (ATFM) and non-ATFM-related delay.
-ATFM delay constitutes only a fraction of primary delays from all causes, and
-around half of all delay is reactionary rather than primary.
-Analyses within the dashboard are based on flight-by-flight data provided by
-airspace users as well as the Network Manager.
+### All causes of delay
 
-More information about CODA can be found at
-https://www.eurocontrol.int/network-performance (go to CID).
+The figure below presents an **overview of all causes of delay**
+reported by the airlines in 2020 and 2021. These figures are estimated
+by EUROCONTROL Central Office of Delay Analysis (CODA), and they are
+calculated based on the comparison of the scheduled and actual flight
+timings and can be used in studies that look into the different causes
+of flight delay experienced by passengers and airlines.
 
+
+![](figures/delay_causes.png){#all-causes-delay}
+
+*Source: EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in
+Europe*[@coda2021]
+
+### ATFM delay
+
+Looking specifically into **ATFM delay**, the figure below shows the
+daily traffic and traffic flow delay per flight (en-route and at
+airport) for the period 2012-2021. These figures are calculated by the
+Network Manager based on the flight plans and include the planned ATFM
+delays due to the restrictions that may be applied in the airspace.
+
+
+![](figures/atfm_delay.png){#atfm-delay}
+
+
+*Source: EUROCONTROL (2022) Network Operations Report 2021*[@nm2022]
+
+The flow management delay constitutes only a fraction of primary delay
+from all causes, and around half of all delay is reactionary (i.e.,
+delay caused by late arrival of aircraft, crew, passengers or baggage
+from previous journeys) rather than primary (i.e., delay other than
+reactionary).
+
+## When to use the input?
+
+We recommend using all causes of delay provided by CODA when analysing
+the impacts on airlines or on passengers/society (e.g., an airline
+upgrading the avionics in their aircraft; airport expansion, etc.). On
+the other hand, ATFM delay is recommended to be used when analysing
+projects aiming at improving Flow Management.
+
+## Comment
+
+Looking at both figures above, it can be observed that the ATFM delay,
+both at the airport and en-route, is higher when looking at the numbers
+provided by the airlines rather than that observed by the Network
+Manager. This occurs because the delay numbers provided by the Network
+Manager account for the so-called planned delay due to restrictions in
+the airspace, while the numbers provided by the airlines cover the total
+delay they attribute to ATFM, irrespective from the restrictions or any
+planned ATFM delays.
+
+Another important point to take into consideration
+when analysing the recommended values is the impact of the COVID-19
+pandemic. Both, the all-causes delay and the ATFM delay were impacted by
+the significant reduction in air traffic in 2020 and 2021, resulting
+into a strong drop in the total delay duration. Thus, when looking into
+these numbers it is equally important to consider the situation prior to
+2020. For the All-causes delay this information can be found in the
+previous editions of CODA Digest, available in [EUROCONTROL
+library](https://www.eurocontrol.int/library/search?f%5B0%5D=product%3A805&f%5B1%5D=product%3A805).
 
 ## Related standard inputs
 
-[Air traffic statistics and forecast](#air-traffic-statistics-and-forecasts),
-[flow management delay] and [cost of delay].
+[Air traffic statistics and
+forecast](#air-traffic-statistics-and-forecasts)
+
+[Cost of delay](#cost_of_delay)
+
+## Recommended sources
+
+More information on the work performed by CODA, as well as the corresponding publications can be found at [All-causes delay analysis interactive dashboard](https://www.eurocontrol.int/dashboard/all-causes-delay-analysis-interactive-dashboard).
+
+Historical data and other information published by the Network Manager can be accessed and downloaded from the [EUROCONTROL Network Operations Monitoring and Reporting web page](https://www.eurocontrol.int/network-performance).
+
+Reports containing the same data from previous years are available in the [EUROCONTROL library](https://www.eurocontrol.int/library).
 
