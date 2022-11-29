@@ -6,7 +6,7 @@ The number of IFR flights in Europe.
 
 ## EUROCONTROL recommended values
 
-```{r }
+```{r}
 #| label: ifr-flights-month
 #| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019-2021
 library(readxl)
