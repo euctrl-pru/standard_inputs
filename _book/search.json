@@ -1,138 +1,5 @@
 [
   {
-    "objectID": "air_traffic_delay.html",
-    "href": "air_traffic_delay.html",
-    "title": "4  Air traffic delay",
-    "section": "",
-    "text": "5 Source: EUROCONTROL (2022) Network Operations Report 2021"
-  },
-  {
-    "objectID": "air_traffic_delay.html#definition",
-    "href": "air_traffic_delay.html#definition",
-    "title": "4  Air traffic delay",
-    "section": "4.1 Definition",
-    "text": "4.1 Definition\nEvolution in reported delays taking two perspectives:\n\nThe view of airlines and passengers considering all causes of delay\nThe view of the Network Manager focusing on Air Traffic Flow Management delays"
-  },
-  {
-    "objectID": "air_traffic_delay.html#eurocontrol-recommended-values",
-    "href": "air_traffic_delay.html#eurocontrol-recommended-values",
-    "title": "4  Air traffic delay",
-    "section": "4.2 EUROCONTROL recommended values",
-    "text": "4.2 EUROCONTROL recommended values\nBelow two different views are provided: first, the values recommended for Airspace Users and Passengers, followed by a zoom-in to the purely ATFM-related delays.\n\n4.2.1 All causes of delay\nThe figure below presents an overview of all causes of delay reported by the airlines in 2020 and 2021. These figures are estimated by EUROCONTROL Central Office of Delay Analysis (CODA), and they are calculated based on the comparison of the scheduled and actual flight timings and can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.\n\n\n\n\n\nSource: EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe[1]\n\n\n4.2.2 ATFM delay\nLooking specifically into ATFM delay, the figure below shows the daily traffic and traffic flow delay per flight (en-route and at airport) for the period 2012-2021. These figures are calculated by the Network Manager based on the flight plans and include the planned ATFM delays due to the restrictions that may be applied in the airspace.\n\n\n\n\n\nSource: EUROCONTROL (2022) Network Operations Report 2021[2]\nThe flow management delay constitutes only a fraction of primary delay from all causes, and around half of all delay is reactionary (i.e., delay caused by late arrival of aircraft, crew, passengers or baggage from previous journeys) rather than primary (i.e., delay other than reactionary)."
-  },
-  {
-    "objectID": "air_traffic_delay.html#description",
-    "href": "air_traffic_delay.html#description",
-    "title": "4  Air traffic delay",
-    "section": "4.3 Description",
-    "text": "4.3 Description\nThe report identified in the source value gives an overview of the delay situation in the European Civil Aviation Conference area. It has been prepared by the Central Office for Delay Analysis (CODA), a EUROCONTROL service. It is based on delay data provided directly by airlines. This data on all causes of delay is derived by airlines, comparing actual timings with their published schedules.\nStatistics on all causes of delay can be obtained directly from the CODA Interactive Dashboard (CID) (a request for access is required). This dashboard aims to provide the user with an enhanced understanding of the causes of delay to flights, both that relating to air traffic flow management (ATFM) and non-ATFM-related delay. ATFM delay constitutes only a fraction of primary delays from all causes, and around half of all delay is reactionary rather than primary. Analyses within the dashboard are based on flight-by-flight data provided by airspace users as well as the Network Manager.\nMore information about CODA can be found at https://www.eurocontrol.int/network-performance (go to CID)."
-  },
-  {
-    "objectID": "air_traffic_delay.html#related-standard-inputs",
-    "href": "air_traffic_delay.html#related-standard-inputs",
-    "title": "4  Air traffic delay",
-    "section": "4.5 Related standard inputs",
-    "text": "4.5 Related standard inputs\nAir traffic statistics and forecast\nCost of delay"
-  },
-  {
-    "objectID": "air_traffic_delay.html#references",
-    "href": "air_traffic_delay.html#references",
-    "title": "4  Air traffic delay",
-    "section": "5.3 References",
-    "text": "5.3 References\n<<<<<<< HEAD >>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5 ======= >>>>>>> 2da6bacc855b4faec66794bcb2ac08a20dde4bb5\n\n\n\n\n[1] C. Walker, “All-causes delay and cancellations to air transport in Europe – Annual report for 2019,” EUROCONTROL CODA, Apr. 2020 [Online]. Available: https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf. [Accessed: Nov. 26, 2022]"
-  },
-  {
-    "objectID": "conversions.html#inflation",
-    "href": "conversions.html#inflation",
-    "title": "General parameters",
-    "section": "Inflation",
-    "text": "Inflation\nThe inflation levels have been calculated based on the Harmonised Index of Consumer Prices (HICP), as the yearly difference in the HICP. The HICP data was extracted from Eurostat HICP - annual data (average index and rate of change) database (prc_hicp_aind).\nThe annual change in the index is shown below. The values of the index are available from Eurostat (Table 11.1.)\n\n\n\n\n\n\nTable 1:  Annual average inflation values \n  \n  \n    \n      Year\n      Index\n      Rate of change\n    \n  \n  \n    2021\n108.80\n2.84%\n    2020\n105.80\n0.36%\n    2019\n105.42\n1.47%\n    2018\n103.89\n1.89%\n    2017\n101.96\n1.71%\n    2016\n100.25\n0.25%\n    2015\n100.00\n0.10%\n    2014\n99.90\n0.55%\n    2013\n99.35\n1.50%\n    2012\n97.88\n2.64%\n    2011\n95.36\n3.10%\n    2010\n92.49\n2.09%\n    2009\n90.60\n0.98%\n    2008\n89.72\n3.54%\n    2007\n86.65\n2.34%\n    2006\n84.67\n2.20%\n    2005\n82.85\n2.17%\n    2004\n81.09\n2.01%\n    2003\n79.49\n1.96%\n    2002\n77.96\n2.08%\n    2001\n76.37\n2.19%\n    2000\n74.73\n1.90%\n  \n  \n    \n      Source: Eurostat"
-  },
-  {
-    "objectID": "conversions.html#exchange-rates",
-    "href": "conversions.html#exchange-rates",
-    "title": "General parameters",
-    "section": "Exchange Rate Conversion",
-    "text": "Exchange Rate Conversion\nThe currency exchange rates provided below are based on the European Central Bank (ECB) rates as are published daily. The rates exposed in the table below correspond to the average rate for the year 2021 as published by ECB.\n\n\n\n\n\n\nTable 2:  Average euro foreign exchange rate (2021) \n  \n  \n    \n      Currency\n      Currency-€\n      €-Currency\n    \n  \n  \n    USD\n0.89\n1.12\n    GBP\n1.22\n0.82\n  \n  \n    \n      Source: European Central Bank"
-  },
-  {
-    "objectID": "conversions.html#cost-of-fuel",
-    "href": "conversions.html#cost-of-fuel",
-    "title": "General parameters",
-    "section": "Cost of fuel",
-    "text": "Cost of fuel\nThe cost of fuel used in this document is based on the 2021 average jet fuel price handled by IATA, unless otherwise specified. All conversions are done using the values specified on this page.\n\n\n\n\n\nAverage jet fuel price\n  \n  \n    \n      Currency\n      Price per barrel\n      Price per gallon\n      Price per kg\n    \n  \n  \n    USD\n141.7\n3.80\n1.1\n    EUR\n138.9\n3.31\n1.1\n  \n  \n    \n      Source: IATA"
-  },
-  {
-    "objectID": "conversions.html#conversion-values",
-    "href": "conversions.html#conversion-values",
-    "title": "General parameters",
-    "section": "Conversion values",
-    "text": "Conversion values\n\n\n\n\n\nUnits conversion values.\n  \n  \n    \n      From\n      To\n    \n  \n  \n    1 nautical mile (NM)\n1.852 km\n    1 kilometre (km)\n0.53996 NM\n    1 tonne (metric = 1 000 kg) of jet fuel\n325.33 US gallons\n    \n1 235 litres\n    \n7.8 barrels\n    1 barrel (bbl) of jet fuel\n42 US gallons\n    \n158.99 litres\n    \n0.1291 ton = 129.10 kg\n    1 US gallon of jet fuel (US gal)\n3.7854 litres\n    \n3.073 kg\n    \n6.7764 lb\n    Density of kerosene\n0.812 kg/litre\n    1 litre of fuel (l)\n0.26417 US gallons\n    1 kilogramme of fuel (kg)\n2.2046 lb\n    1 pound of fuel (lb)\n0.45359 kg"
-  },
-  {
-    "objectID": "geographical_areas.html#member-states-and-geographical-areas-covered",
-    "href": "geographical_areas.html#member-states-and-geographical-areas-covered",
-    "title": "Geographical Areas",
-    "section": "Member States and geographical areas covered",
-    "text": "Member States and geographical areas covered\nSky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs."
-  },
-  {
-    "objectID": "geographical_areas.html#eurocontrol-member-states-status-november-2020",
-    "href": "geographical_areas.html#eurocontrol-member-states-status-november-2020",
-    "title": "Geographical Areas",
-    "section": "EUROCONTROL Member States (status: November 2020)",
-    "text": "EUROCONTROL Member States (status: November 2020)"
-  },
-  {
-    "objectID": "geographical_areas.html#airspace-of-the-ecac-member-states",
-    "href": "geographical_areas.html#airspace-of-the-ecac-member-states",
-    "title": "Geographical Areas",
-    "section": "Airspace of the ECAC Member States",
-    "text": "Airspace of the ECAC Member States\nECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states."
-  },
-  {
-    "objectID": "air_traffic_statistics_and_forecasts.html#definition",
-    "href": "air_traffic_statistics_and_forecasts.html#definition",
-    "title": "1  Air traffic statistics and forecasts",
-    "section": "1.1 Definition",
-    "text": "1.1 Definition\nActual and forecast numbers of flights and service units."
-  },
-  {
-    "objectID": "air_traffic_statistics_and_forecasts.html#eurocontrol-recommended-source",
-    "href": "air_traffic_statistics_and_forecasts.html#eurocontrol-recommended-source",
-    "title": "1  Air traffic statistics and forecasts",
-    "section": "1.2 EUROCONTROL recommended source",
-    "text": "1.2 EUROCONTROL recommended source\n\nSource\n\nEUROCONTROL Statistics and Forecasts Service (STATFOR)\nhttps://www.eurocontrol.int/forecasting"
-  },
-  {
-    "objectID": "air_traffic_statistics_and_forecasts.html#description",
-    "href": "air_traffic_statistics_and_forecasts.html#description",
-    "title": "1  Air traffic statistics and forecasts",
-    "section": "1.3 Description",
-    "text": "1.3 Description\nThe objective of the Statistics and Forecast (STATFOR) service is to provide statistics and forecasts on air traffic in Europe and to monitor and analyse the evolution of the air transport Industry.\nIt produces the following:\n\nSeven-year forecasts The 7-year forecasts give a comprehensive picture of anticipated air traffic development in Europe for the next seven years. They combine flight statistics with economic growth and models of other industry drivers, including costs, airport capacity, passenger numbers, load factors and aircraft size. Using high- and low-growth scenarios, they present a likely range for growth, to help planners manage risks. We publish them biannually, in spring and autumn, covering flights, and en route and terminal service units every year.\nTwenty-year forecasts The 20-year forecasts look at a range of distinct possible scenarios for how the air traffic industry might look in 20 years’ time. This allows a range of ‘what if?’ questions to be explored, for factors inside the industry (e.g. the growth of small business jets, or of point-to-point traffic) or outside the industry (e.g. the price of oil or environmental constraints). Twenty-year forecasts are usually published every two to three years.\nAd-hoc publications, such as the Challenges to Growth reports, trends in air traffic studies and other analyses can be found in the EUROCONTROL library: https://www.eurocontrol.int/library\n\nTraffic statistics and forecasts can be obtained directly from the STATFOR Interactive Dashboard (SID): https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard."
-  },
-  {
-    "objectID": "air_traffic_statistics_and_forecasts.html#related-standard-inputs",
-    "href": "air_traffic_statistics_and_forecasts.html#related-standard-inputs",
-    "title": "1  Air traffic statistics and forecasts",
-    "section": "1.4 Related standard inputs",
-    "text": "1.4 Related standard inputs\n[Medium-term capacity planning], [air traffic delay], [flow management delay] and [cost of delay]."
-  },
-  {
-    "objectID": "air_traffic_statistics_and_forecasts.html#comments",
-    "href": "air_traffic_statistics_and_forecasts.html#comments",
-    "title": "1  Air traffic statistics and forecasts",
-    "section": "1.5 Comments",
-    "text": "1.5 Comments\nThe following chart (status: November 2020) shows the traffic forecast taking account of the impact of COVID.\n\n\n\n\n\nSource: EUROCONTROL STATFOR 2020, https://www.eurocontrol.int/covid19"
-  },
-  {
-    "objectID": "medium-term_capacity_planning.html",
-    "href": "medium-term_capacity_planning.html",
-    "title": "2  Medium-term capacity planning",
-    "section": "",
-    "text": "This chapter is being updated.\nFor the latest officially published version, please refere to EUROCONTROL Standard Inputs for Economic Analyses - Edition 9"
-  },
-  {
     "objectID": "number_of_ifr_flights.html#definition",
     "href": "number_of_ifr_flights.html#definition",
     "title": "3  Number of IFR flights",
@@ -173,6 +40,48 @@
     "title": "3  Number of IFR flights",
     "section": "3.6 Comment",
     "text": "3.6 Comment\nThese traffic figures are from 2019 and do not yet reflect the impact of COVID. Estimated traffic figures for 2020 and beyond can be found in the EUROCONTROL five year forecast https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024."
+  },
+  {
+    "objectID": "air_traffic_delay.html#definition",
+    "href": "air_traffic_delay.html#definition",
+    "title": "4  Air traffic delay",
+    "section": "4.1 Definition",
+    "text": "4.1 Definition\nEvolution in reported delays taking two perspectives:\n\nThe view of airlines and passengers considering all causes of delay\nThe view of the Network Manager focusing on Air Traffic Flow Management delays"
+  },
+  {
+    "objectID": "air_traffic_delay.html#eurocontrol-recommended-values",
+    "href": "air_traffic_delay.html#eurocontrol-recommended-values",
+    "title": "4  Air traffic delay",
+    "section": "4.2 EUROCONTROL recommended values",
+    "text": "4.2 EUROCONTROL recommended values\nBelow two different views are provided: first, the values recommended for Airspace Users and Passengers, followed by a zoom-in to the purely ATFM-related delays.\n\n4.2.1 All causes of delay\nThe figure below presents an overview of all causes of delay reported by the airlines in 2020 and 2021. These figures are estimated by EUROCONTROL Central Office of Delay Analysis (CODA), and they are calculated based on the comparison of the scheduled and actual flight timings and can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.\n\nSource: EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in Europe[1]\n\n\n4.2.2 ATFM delay\nLooking specifically into ATFM delay, the figure below shows the daily traffic and traffic flow delay per flight (en-route and at airport) for the period 2012-2021. These figures are calculated by the Network Manager based on the flight plans and include the planned ATFM delays due to the restrictions that may be applied in the airspace.\n\nSource: EUROCONTROL (2022) Network Operations Report 2021[2]\nThe flow management delay constitutes only a fraction of primary delay from all causes, and around half of all delay is reactionary (i.e., delay caused by late arrival of aircraft, crew, passengers or baggage from previous journeys) rather than primary (i.e., delay other than reactionary)."
+  },
+  {
+    "objectID": "air_traffic_delay.html#when-to-use-the-input",
+    "href": "air_traffic_delay.html#when-to-use-the-input",
+    "title": "4  Air traffic delay",
+    "section": "4.3 When to use the input?",
+    "text": "4.3 When to use the input?\nWe recommend using all causes of delay provided by CODA when analysing the impacts on airlines or on passengers/society (e.g., an airline upgrading the avionics in their aircraft; airport expansion, etc.). On the other hand, ATFM delay is recommended to be used when analysing projects aiming at improving Flow Management."
+  },
+  {
+    "objectID": "air_traffic_delay.html#comment",
+    "href": "air_traffic_delay.html#comment",
+    "title": "4  Air traffic delay",
+    "section": "4.4 Comment",
+    "text": "4.4 Comment\nLooking at both figures above, it can be observed that the ATFM delay, both at the airport and en-route, is higher when looking at the numbers provided by the airlines rather than that observed by the Network Manager. This occurs because the delay numbers provided by the Network Manager account for the so-called planned delay due to restrictions in the airspace, while the numbers provided by the airlines cover the total delay they attribute to ATFM, irrespective from the restrictions or any planned ATFM delays.\nAnother important point to take into consideration when analysing the recommended values is the impact of the COVID-19 pandemic. Both, the all-causes delay and the ATFM delay were impacted by the significant reduction in air traffic in 2020 and 2021, resulting into a strong drop in the total delay duration. Thus, when looking into these numbers it is equally important to consider the situation prior to 2020. For the All-causes delay this information can be found in the previous editions of CODA Digest, available in EUROCONTROL library."
+  },
+  {
+    "objectID": "air_traffic_delay.html#related-standard-inputs",
+    "href": "air_traffic_delay.html#related-standard-inputs",
+    "title": "4  Air traffic delay",
+    "section": "4.5 Related standard inputs",
+    "text": "4.5 Related standard inputs\nAir traffic statistics and forecast\nCost of delay"
+  },
+  {
+    "objectID": "air_traffic_delay.html#recommended-sources",
+    "href": "air_traffic_delay.html#recommended-sources",
+    "title": "4  Air traffic delay",
+    "section": "4.6 Recommended sources",
+    "text": "4.6 Recommended sources\nMore information on the work performed by CODA, as well as the corresponding publications can be found at All-causes delay analysis interactive dashboard.\nHistorical data and other information published by the Network Manager can be accessed and downloaded from the EUROCONTROL Network Operations Monitoring and Reporting web page.\nReports containing the same data from previous years are available in the EUROCONTROL library.\n\n\n\n\n[1] C. Walker, “All-causes delay and cancellations to air transport in Europe – Annual report for 2021,” EUROCONTROL CODA, Mar. 2022 [Online]. Available: https://www.eurocontrol.int/sites/default/files/2022-04/eurocontrol-coda-digest-annual-report-2021.pdf. [Accessed: Nov. 26, 2022]\n\n\n[2] “Network operations report 2021,” EUROCONTROL, May 2022 [Online]. Available: https://www.eurocontrol.int/sites/default/files/2022-05/eurocontrol-annual-nor-2021-main-report.pdf. [Accessed: Nov. 28, 2022]"
   },
   {
     "objectID": "flow_management_delay.html",
@@ -264,27 +173,6 @@
     "title": "13  Average number of passengers per movement",
     "section": "13.3 Description",
     "text": "13.3 Description\nThe Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes), as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports.\nThe average number of passengers per movement1 for a given year is obtained by dividing the number of ‘departing passengers on board’ by the number of ‘departing flights for that year’.\n\n\n\n\n[1] EUROCONTROL STATFOR, “STATFOR Interactive Dashboard.” [Online]. Available: https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard"
-  },
-  {
-    "objectID": "average_number_of_passengers_per_movement.html#other-possible-value",
-    "href": "average_number_of_passengers_per_movement.html#other-possible-value",
-    "title": "13  Average number of passengers per movement",
-    "section": "13.4 Other possible value",
-    "text": "13.4 Other possible value\n\nValue\n\n\n\n\n\n\n\n  \n    \n      Passengers per IFR movement\n    \n    \n      Values for the main 34 European airports (all operations)\n    \n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    96\n102\n108\n111\n118\n125\n  \n\n\n\n\n\n\n\nSource\n\nPRC and FAA, “2017 Comparison of ATM-related operational performance: US – Europe”, March 2019 (page 25):\nhttps://www.eurocontrol.int/publication/useurope-comparison-air-traffic-management-related-operational-performance-2017\nReports from previous years are available in the EUROCONTROL library:\nhttps://www.eurocontrol.int/library.\n\nDescription\n\nThe table below provides high-level indicators for the main 34 airports21 in Europe using data reported by the airports.\nThe number of passengers per IFR movement is calculated by dividing the ‘average number of annual passengers per airport’\n\n\n\n\n\n\n  \n    \n      Average number of annual passengers per airport (million)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    25\n24\n25\n25\n28\n31\n  \n\n\n\n\n\n\nby the ‘average number of annual IFR movements per airport’.\n\n\n\n\n\n\n  \n    \n      Average number of annual IFR movements per airport (‘000)\n    \n\n  \n  \n    \n      2008\n      2010\n      2012\n      2013\n      2015\n      2017\n    \n  \n  \n    260\n237\n233\n228\n223\n248"
-  },
-  {
-    "objectID": "average_number_of_passengers_per_movement.html#related-standard-inputs",
-    "href": "average_number_of_passengers_per_movement.html#related-standard-inputs",
-    "title": "13  Average number of passengers per movement",
-    "section": "13.5 Related standard inputs",
-    "text": "13.5 Related standard inputs"
-  },
-  {
-    "objectID": "average_number_of_passengers_per_movement.html#comment",
-    "href": "average_number_of_passengers_per_movement.html#comment",
-    "title": "13  Average number of passengers per movement",
-    "section": "13.6 Comment",
-    "text": "13.6 Comment"
   },
   {
     "objectID": "cancellation_cost.html",
@@ -593,26 +481,5 @@
     "title": "48  Data",
     "section": "",
     "text": "The various data sets introduced are available as CSV files as follows:\n(ref:csv-files-table) Data sets (at 2016 EUR price level).\n\n\n\n\n\n\n  \n  \n    \n      filename\n      description\n      url\n    \n  \n  \n    inflation.csv\nInflation\nhttps://example.com\n    exchange_rate.csv\nExchange rate\nhttps://example.com\n  \n  \n  \n\n\n(ref:csv-files-table)\n\n\nAll released versions of this website/document are available at GITHUB repo."
-  },
-  {
-    "objectID": "air_traffic_delay.html#when-to-use-the-input",
-    "href": "air_traffic_delay.html#when-to-use-the-input",
-    "title": "4  Air traffic delay",
-    "section": "4.3 When to use the input?",
-    "text": "4.3 When to use the input?\nWe recommend using all causes of delay provided by CODA when analysing the impacts on airlines or on passengers/society (e.g., an airline upgrading the avionics in their aircraft; airport expansion, etc.). On the other hand, ATFM delay is recommended to be used when analysing projects aiming at improving Flow Management."
-  },
-  {
-    "objectID": "air_traffic_delay.html#comment",
-    "href": "air_traffic_delay.html#comment",
-    "title": "4  Air traffic delay",
-    "section": "4.4 Comment",
-    "text": "4.4 Comment\nLooking at both figures above, it can be observed that the ATFM delay, both at the airport and en-route, is higher when looking at the numbers provided by the airlines rather than that observed by the Network Manager. This occurs because the delay numbers provided by the Network Manager account for the so-called planned delay due to restrictions in the airspace, while the numbers provided by the airlines cover the total delay they attribute to ATFM, irrespective from the restrictions or any planned ATFM delays.\nAnother important point to take into consideration when analysing the recommended values is the impact of the COVID-19 pandemic. Both, the all-causes delay and the ATFM delay were impacted by the significant reduction in air traffic in 2020 and 2021, resulting into a strong drop in the total delay duration. Thus, when looking into these numbers it is equally important to consider the situation prior to 2020. For the All-causes delay this information can be found in the previous editions of CODA Digest, available in EUROCONTROL library."
-  },
-  {
-    "objectID": "air_traffic_delay.html#recommended-sources",
-    "href": "air_traffic_delay.html#recommended-sources",
-    "title": "4  Air traffic delay",
-    "section": "4.6 Recommended sources",
-    "text": "4.6 Recommended sources\nMore information on the work performed by CODA, as well as the corresponding publications can be found at All-causes delay analysis interactive dashboard.\nHistorical data and other information published by the Network Manager can be accessed and downloaded from the EUROCONTROL Network Operations Monitoring and Reporting web page.\nReports containing the same data from previous years are available in the EUROCONTROL library.\n\n\n\n\n[1] C. Walker, “All-causes delay and cancellations to air transport in Europe – Annual report for 2021,” EUROCONTROL CODA, Mar. 2022 [Online]. Available: https://www.eurocontrol.int/sites/default/files/2022-04/eurocontrol-coda-digest-annual-report-2021.pdf. [Accessed: Nov. 28, 2022]\n\n\n[2] “Network operations report 2021,” EUROCONTROL, May 2022 [Online]. Available: https://www.eurocontrol.int/sites/default/files/2022-05/eurocontrol-annual-nor-2021-main-report.pdf"
   }
 ]
