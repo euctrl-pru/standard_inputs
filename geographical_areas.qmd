@@ -15,9 +15,8 @@ Sky initiative and the European Civil Aviation Conference (ECAC). These are the 
 
 ## EUROCONTROL Member States (status: November 2020) {.unnumbered}
 
-```{r eurocontrol-member-states}
-knitr::include_graphics("figures/eurocontrol_ms.png")
-```
+![](figures/eurocontrol_ms.png){#eurocontrol-member-states}
+
 
 ## Airspace of the ECAC Member States {.unnumbered}
 
