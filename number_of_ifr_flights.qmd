@@ -86,9 +86,8 @@ Source 3
 
 Value 4
 :   Daily average of IFR flights, 2015 to 2019, EU-wide area.
-    ```{r, average-daily-ifr-flights-plot}
-    knitr::include_graphics("figures/average_daily_flights_2015-2019.png")
-    ```
+    ![](figures/average_daily_flights_2015-2019.png){#average-daily-ifr-flights-plot}
+
 
     ```{r, average-daily-ifr-flights-table}
     library(gt)
