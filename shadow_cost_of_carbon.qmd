@@ -6,42 +6,38 @@ The shadow price of carbon (SPC) is the cost of carbon required to drive the eco
 
 ```{r}
 #| label: tbl-inflation-table
-#| tbl-cap: Annual average inflation values
+#| tbl-cap: Shadow Cost of Carbon for EU27 in €2021 prices
 
 library(readxl)
 library(dplyr)
 library(gt)
 
 # read from CSV (exported directly from Eurostat, see R/export_inflation.R)
-readxl::read_xlsx("data/values_2022.xlsx",
-                  sheet = "basic assumptions",
-                  range = "C6:E33" 
+readxl::read_xlsx("data/Shadow_Cost_of_Carbon_v10.xlsx",
+                  sheet = "Tidy_Data",
+                  range = "A1:B31" 
                   ) %>%
-  filter(2000 <= Year, Year <= 2021) %>%
-  arrange(desc(Year)) %>% 
+
   # format the table
   gt() %>%
   tab_source_note(
-    source_note = md("Source: [Eurostat](http://ec.europa.eu/eurostat)")
+    source_note = md("Source: [European Investment Bank - The EIB Group Climate Bank Roadmap 2021-2025](https://www.eib.org/en/publications/the-eib-group-climate-bank-roadmap)")
   ) %>%
   cols_label(
     Year  = "Year",
-    Index = "Index",
-    Rate  = "Rate of change"
-  ) %>%
-  fmt_percent(
-    columns = vars(Rate),
-    decimals = 2
-  ) %>%
+    Cost = "Carbon cost",
+   ) %>%
   fmt_number(
-    columns = vars(Index),
-    decimals = 2
+    columns = vars(Cost),
+    decimals = 0
+   
   )
 ```
 
 ## Description
 
-The input is an **adjustment** of the EIB recommended values to reflect the most realistic cost of meeting the UN Paris agreement to limit global warming well below 2 degrees Celsius, ideally 1.5 -- compared to pre-industrial levels . Please note this input does not refer to the traditional 'market price' but to the "shadow cost of carbon", i.e. considering externalities and future policies. The original EIB proposed inputs are expressed in 2016 prices and have been adjusted to 2021 price levels using the EUROSTAT Harmonised Index of Consumer Prices (HCIP) -- series (prc_hicp_aind).
+The input is an adjustment of the EIB recommended values to reflect the most realistic cost of meeting the [UN Paris agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) to limit global warming well below 2 degrees Celsius, ideally 1.5 -- compared to pre-industrial levels^[IPCC, 2018: Global warming of 1.5°C. An IPCC Special Report on the impacts of global warming of 1.5°C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty [V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy, T. Maycock, M. Tignor, T. Waterfield (eds.)]. In Press.].
+Please note this input does not refer to the traditional 'market price' but to the "shadow cost of carbon", i.e. considering externalities and future policies. The original EIB proposed inputs are expressed in 2016 prices and have been adjusted to 2021 price levels using the [EUROSTAT Harmonised Index of Consumer Prices (HCIP)](https://ec.europa.eu/eurostat/databrowser/view/PRC_HICP_AIND/default/table?lang=en) -- series (prc_hicp_aind) .
 
 ## Comments
 
@@ -49,8 +45,7 @@ In Economic Analyses the concept of 'shadow price / cost' is often used when wor
 
 Shadow prices are inexact by definition -- they are based on assumptions -- but their usefulness resides in that they help to understand the full socio-economic merits of a project. Please note the SPC does not constitute in any way an optimal value for any policy instrument.
 
-The concept is clearly explained with the graph below produced by the EIB (page 116).
 
 ## When to use the input?
 
-Possible to be deleted.
+This input is recommended for projects where the full socio-economic value of the initiative is studied.
