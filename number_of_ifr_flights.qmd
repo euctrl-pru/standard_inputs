@@ -22,17 +22,17 @@ library(gt)
 read_xlsx("data/ifr_flights_ecac.xlsx") %>%
   gt() %>%
   cols_label(
-    month  = "Month",
+    month      = "Month",
     arrival    = "Arrival",
     departure  = "Departure",
-    internal = "Internal",
+    internal   = "Internal",
     overflight = "Overflight",
     total_2021 = "Total 2021",
     total_2019 = "Total 2019",
     vs_2019_flight_level = "vs 2019 flight level"
   ) %>%
   fmt_percent(
-    columns = vars(vs_2019_flight_level),
+    columns = c(vs_2019_flight_level),
     decimals = 0
   ) %>%
   fmt_number(
@@ -140,8 +140,8 @@ displayed.
 ## Related standard inputs
 
 [IFR flight information per operator
-segment](#ifr-flight-information-per-market-segment), \[fleet age\],
-\[fleet size\] and \[fleet CNS capability\].
+segment](#ifr-flight-information-per-market-segment), [fleet age],
+[fleet size] and [fleet CNS capability].
 
 ## Further reading
 

@@ -24,7 +24,7 @@ are available from [Eurostat](http://ec.europa.eu/eurostat) (@tbl-inflation-tabl
 #| tbl-cap: Annual average inflation values
 
 library(readxl)
-library(dplyr)
+library(dplyr, quietly = TRUE)
 library(gt)
 
 # read from CSV (exported directly from Eurostat, see R/export_inflation.R)
@@ -45,11 +45,11 @@ readxl::read_xlsx("data/values_2022.xlsx",
     Rate  = "Rate of change"
   ) %>%
   fmt_percent(
-    columns = vars(Rate),
+    columns = c(Rate),
     decimals = 2
   ) %>%
   fmt_number(
-    columns = vars(Index),
+    columns = c(Index),
     decimals = 2
   )
 ```
@@ -65,7 +65,7 @@ library(readr)
 library(dplyr)
 library(gt)
 
-read_csv("data/exchange_rate.csv") %>%
+read_csv("data/exchange_rate.csv", show_col_types = FALSE) %>%
   gt() %>%
   cols_label(
     currency  = "Currency",
