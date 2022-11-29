@@ -29,13 +29,14 @@ readxl::read_xlsx("data/Shadow_Cost_of_Carbon_v10.xlsx",
     Cost = "Carbon cost",
    ) %>%
   fmt_number(
-    columns = vars(Cost),
+    columns = c(Cost),
     decimals = 0
    
   )
 ```
 
 ## Description
+
 
 The input is an adjustment of the EIB recommended values to reflect the most realistic cost of meeting the [UN Paris agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) to limit global warming well below 2 degrees Celsius, ideally 1.5 -- compared to pre-industrial levels^[IPCC, 2018: Global warming of 1.5°C. An IPCC Special Report on the impacts of global warming of 1.5°C above pre-industrial levels and related global greenhouse gas emission pathways, in the context of strengthening the global response to the threat of climate change, sustainable development, and efforts to eradicate poverty [V. Masson-Delmotte, P. Zhai, H. O. Pörtner, D. Roberts, J. Skea, P.R. Shukla, A. Pirani, W. Moufouma-Okia, C. Péan, R. Pidcock, S. Connors, J. B. R. Matthews, Y. Chen, X. Zhou, M. I. Gomis, E. Lonnoy, T. Maycock, M. Tignor, T. Waterfield (eds.)]. In Press.].
 Please note this input does not refer to the traditional 'market price' but to the "shadow cost of carbon", i.e. considering externalities and future policies. The original EIB proposed inputs are expressed in 2016 prices and have been adjusted to 2021 price levels using the [EUROSTAT Harmonised Index of Consumer Prices (HCIP)](https://ec.europa.eu/eurostat/databrowser/view/PRC_HICP_AIND/default/table?lang=en) -- series (prc_hicp_aind) .
