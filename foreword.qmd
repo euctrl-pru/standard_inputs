@@ -65,7 +65,8 @@ initiatives, notably FAA and CAA Australia. Inclusion or Rotorcraft. A
 fleet projection.
 
 We are happy to receive any comment or suggestion you might have. The
-easiest way to reach us is using email.here\@eurocontrol.int.
+easiest way to reach us is using
+[{{< var email.info >}}](mailto:{{< var email.info >}}).
 
 ## Other
 
@@ -81,10 +82,10 @@ airports, turn-around time, and the introduction of two values related
 to drones. Drones represent a highly complex and fast-moving market,
 which makes forecasting more difficult than legacy aviation sectors.
 Suggestions for improvement and collaboration are welcome. Please send
-them to aviation.intelligence\@eurocontrol.int.
+them to [{{< var email.aiu >}}](mailto:{{< var email.aiu >}}).
 
 We would like to make a special mention of the launch of the EUROCONTROL
 Aviation Intelligence Portal, which provides valuable and up-to-date
-information for economic analyses (https://ansperformance.eu/). The
+information for economic analyses (<https://ansperformance.eu/>). The
 Portal will soon include the standard inputs (2021) and more information
 of use for cost-benefit analyses.

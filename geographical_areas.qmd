@@ -10,42 +10,18 @@ editor_options:
 
 Sky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs.
 
-```{r member-states-set-diagram}
-knitr::include_graphics("figures/eu_orgs.png")
-```
+
+![](figures/eu_orgs.png){#member-states-set-diagram}
 
 ## EUROCONTROL Member States (status: November 2020) {.unnumbered}
 
-```{r eurocontrol-member-states}
-knitr::include_graphics("figures/eurocontrol_ms.png")
-```
+![](figures/eurocontrol_ms.png){#eurocontrol-member-states}
+
 
 ## Airspace of the ECAC Member States {.unnumbered}
 
 ECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states.
 
-```{r ecac-airspace, eval=FALSE, echo=FALSE}
-knitr::include_graphics("figures/ecac_area.png")
-```
+![](figures/ecac_area.png){#ecac-airspace}
 
-```{r, ecac-airspace-fir}
-library(pruatlas)
-library(purrr)
-library(dplyr)
-ecac <- list(ecac_oceanic(),
-             ecac_northwest(),
-             ecac_southwest(),
-             ecac_southeast(),
-             ecac_northeast()
-             ) %>% 
-  purrr::map_dfr(.f = bind_rows) %>% 
-    sf::st_as_sf() %>%
-    sf::st_union() %>%
-  sf::st_sf(geometry = .,
-            id = "ECAC",
-            name = "ECAC",
-            icao = "ECAC"
-            ) %>% 
-  mutate(min_fl = 0, max_fl = 999)
-plot_country_fir(icao_id = "ECAC", name = "ECAC", firs = ecac)
-```
+![](figures/ecac_airspace_fir.png){#ecac-airspace-fir}
