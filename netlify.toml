@@ -2,4 +2,4 @@
 package = "@quarto/netlify-plugin-quarto"
 
   [plugins.inputs]
-    cmd = "render --to html"
+    cmd = "render"
