@@ -12,7 +12,7 @@ The number of IFR flights in Europe.
 
 ## EUROCONTROL recommended values
 
-```{r }
+```{r}
 #| label: ifr-flights-month
 #| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019-2021
 library(readxl)
@@ -73,10 +73,16 @@ Source 2
     (SID). http://www.eurocontrol.int/statfor
 
 Value 3
+<<<<<<< HEAD
 
 :   Top 20 number of flights by civil aircraft operating in airspace in
     Europe controlled by the EUROCONTROL Network Manager, year 2019.
 
+=======
+:   Top 20 number of flights by civil aircraft operating in airspace
+    in Europe controlled by the EUROCONTROL Network Manager, year 2019.
+    
+>>>>>>> 328c4b337665a20f074b268f6ea57b362aca1ca9
     ```{r, flights-per-aircraft-type}
     library(readr)
     library(gt)
@@ -94,11 +100,17 @@ Source 3
 Value 4
 
 :   Daily average of IFR flights, 2015 to 2019, EU-wide area.
+<<<<<<< HEAD
 
     ```{r, average-daily-ifr-flights-plot}
     knitr::include_graphics("figures/average_daily_flights_2015-2019.png")
     ```
 
+=======
+    ![](figures/average_daily_flights_2015-2019.png){#average-daily-ifr-flights-plot}
+    
+    
+>>>>>>> 328c4b337665a20f074b268f6ea57b362aca1ca9
     ```{r, average-daily-ifr-flights-table}
     library(gt)
     library(magrittr)

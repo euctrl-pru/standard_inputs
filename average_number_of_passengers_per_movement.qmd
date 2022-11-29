@@ -8,11 +8,15 @@ Average number of passengers per movement (take-off or landing) in Europe.
 
 The figure below presents an overview of the total and average number of passengers per flight in ECAC.
 
-```{r, number-of-passengers}
-  knitr::include_graphics("figures/number_passengers.png")
-```
 
+<<<<<<< HEAD
 \*Source: [Eurostat: air passenger transport by reporting country (avia_paoc)](http://ec.europa.eu/eurostat/web/transport/data/database) and EUROCONTROL STATFOR Interactive Dashboard[@sid]
+=======
+![](figures/number_passengers.png){#number-of-passengers}
+
+*Source: [Eurostat: air passenger transport by reporting country (avia_paoc)](http://ec.europa.eu/eurostat/web/transport/data/database) and EUROCONTROL STATFOR 
+Interactive Dashboard [@ectrl:statfor:sid]
+>>>>>>> 328c4b337665a20f074b268f6ea57b362aca1ca9
 
 ## Description
 

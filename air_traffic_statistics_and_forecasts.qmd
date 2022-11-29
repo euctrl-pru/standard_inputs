@@ -53,8 +53,7 @@ and [cost of delay].
 
 The following chart (status: November 2020) shows the traffic forecast taking account of the impact of COVID.
 
-```{r, traffic-forecast-covid}
-knitr::include_graphics("figures/forecast_2020-2024.png")
-```
+![](figures/forecast_2020-2024.png){#traffic-forecast-covid}
+
 
 Source: EUROCONTROL STATFOR 2020, https://www.eurocontrol.int/covid19
