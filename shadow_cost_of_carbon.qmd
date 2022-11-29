@@ -52,4 +52,5 @@ Shadow prices are inexact by definition -- they are based on assumptions -- but 
 The concept is clearly explained with the graph below produced by the EIB (page 116).
 
 ## When to use the input?
+
 Possible to be deleted.
