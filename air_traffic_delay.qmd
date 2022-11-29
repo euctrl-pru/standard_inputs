@@ -35,7 +35,7 @@ knitr::include_graphics("figures/delay_causes.png")
 ```
 
 *Source: EUROCONTROL CODA (2019) All-Causes Delay to Air Transport in
-Europe*[@coda2022]
+Europe*[@coda2021]
 
 ### ATFM delay
 
