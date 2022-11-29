@@ -71,6 +71,7 @@ Source 2
 Value 3
 :   Top 20 number of flights by civil aircraft operating in airspace
     in Europe controlled by the EUROCONTROL Network Manager, year 2019.
+    
     ```{r, flights-per-aircraft-type}
     library(readr)
     library(gt)
@@ -87,8 +88,8 @@ Source 3
 Value 4
 :   Daily average of IFR flights, 2015 to 2019, EU-wide area.
     ![](figures/average_daily_flights_2015-2019.png){#average-daily-ifr-flights-plot}
-
-
+    
+    
     ```{r, average-daily-ifr-flights-table}
     library(gt)
     library(magrittr)
