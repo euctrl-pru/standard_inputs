@@ -56,4 +56,4 @@ The following chart (status: November 2020) shows the traffic forecast taking ac
 ![](figures/forecast_2020-2024.png){#traffic-forecast-covid}
 
 
-Source: EUROCONTROL STATFOR 2020, https://www.eurocontrol.int/covid19
+Source: EUROCONTROL STATFOR 2020, <https://www.eurocontrol.int/covid19>
