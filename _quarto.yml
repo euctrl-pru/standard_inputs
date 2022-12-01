@@ -79,7 +79,7 @@ book:
     - part: "Airspace Users"
       chapters:
         - "aircraft_operating_costs.qmd"
-        - "average_number_of_passengers_per_movement.qmd"  
+        - "average_number_of_passengers.qmd"  
         - "cancellation_cost.qmd"
         - "operational_cancellation_rate.qmd"
         - "cost_of_delay.qmd"
