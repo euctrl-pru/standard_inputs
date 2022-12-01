@@ -44,4 +44,8 @@ This input is recommended for those projects where the flying time in a giver co
 
 The data was recorded by the Network Manager (NM) for the 38 ANSPs that were part of the ACE Report in 2019. [@ace2019] For a few ANSPs, the data reported show slight differences with the NM records, as ANSPs tend to communicate their own traffic data. The differences are explained by the different counting methodology in IFR airport movements for training flights.
 
+## Related inputs
+
+[**Medium-term capacity planning**](#medium-term_capacity_planning)
+
 ## References
