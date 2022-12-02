@@ -1,0 +1,46 @@
+# Proportion of SAF
+
+## EUROCONTROL recommended values
+
+This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and up to 2050. The evolution is estimated according to three scenarios:
+
+* **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with [ReFuelEU Aviation](https://www.easa.europa.eu/en/light/topics/fit-55-and-refueleu-aviation) obligations.
+
+* **High scenario**, assumed that the high availability of SAF will foster the quicker adoption of these fuels than outlined in the current regulatory requirements.
+
+* **Low scenario**, which assumes an uptake of SAF being slower that outlined by existing regulation.
+
+```{r}
+#| label: tbl-saf-blend
+#| tbl-cap: Forecasted evolution of SAF blend 2023-2050
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx("data/saf_blend.xlsx") %>%
+  gt() %>%
+  cols_label(
+    year      = "Year",
+    high    = "High scenario",
+    base  = "Base scenario",
+    low   = "Low scenario"
+  ) %>%
+  fmt_percent(
+    columns = c(high, base, low),
+    decimals = 1
+  ) %>%
+  fmt_number(
+    columns = c(year),
+    use_seps = FALSE,
+    decimals = 0
+  )
+```
+*Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards te 2030 Green Deal milestone* [@skygreen2022]
+
+## Description
+
+The table shows the forecast SAF blending percentage over total jet fuel for years 2022 to 2030. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook. [@aviation:outlook2022]
+
+The percentages of SAF provided are based on the following:
+
+* The series start with a projection of the 2022 actual SAF blending
