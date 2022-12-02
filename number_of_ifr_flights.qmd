@@ -8,13 +8,14 @@ editor_options:
 
 ## EUROCONTROL recommended values
 
-Below is the evolution of flight movements in Europe (ECAC area) by market segment and aircraft type.
+This section presents the evolution of flight movements in Europe (ECAC
+area) by flight flow, market segment and aircraft type.
 
-### Evolution of flights per flow (Departure, Arrival, Internal, Overflight) in 2021 compared to 2019 
+### Evolution of flights per flow (Departure, Arrival, Internal, Overflight) in 2021 compared to 2019
 
 ```{r}
 #| label: tbl-ifr-flights-month
-#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019-2021
+#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019 vs 2021
 library(readxl)
 library(dplyr)
 library(gt)
@@ -43,12 +44,9 @@ read_xlsx("data/ifr_flights.xlsx") %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   )
-
 ```
 
 ### Flights by market segment in Europe (ECAC) in 2021 compared to 2019
-
-
 
 ```{r}
 #| label: tbl-flights-per-market-segment
@@ -83,11 +81,18 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
 
 ```
 
-EUROCONTROL market segments were updated in 2022 and saw the “Traditional Scheduled” segment split into “Mainline” and “Regional”. EUROCONTROL [Market Segment Rules](https://www.eurocontrol.int/publication/market-segment-rules).  
+EUROCONTROL market segments were updated in 2022 and saw the
+"Traditional Scheduled" segment split into "Mainline" and "Regional".
+EUROCONTROL Market Segment Rules. [@ectl:market:seg:2022]
 
-In 2021 the total number of flights went up 25.1% compared to 2020,but was at 56% of 2019 flight levels (pre-COVID-19)., Compared with 2019, only two segments increased in 2021 and they were All-Cargo (+14%) and Business Aviation (+3.8%). The Mainline (-54.5%), Low-Cost (-53.9%) and Regional (-47.6%) segments were the most affected along with the Charter segments which went down -20.6% in 2021 (vs 2019). 
+In 2021 the total number of flights went up 25.1% compared to 2020, but
+was at 56.2% of 2019 flight levels (pre-COVID-19). Compared with 2019,
+only two segments increased in 2021 and they were All-Cargo (+13.9%) and
+Business Aviation (+3.8%). The Mainline (-54.5%), Low-Cost (-53.9%) and
+Regional (-47.6%) segments were the most affected, along with the Charter
+segment which went down by -20.6% in 2021 (vs 2019).
 
-### Top 20 number of flights by civil aviation aircraft in Europe (ECAC) in 2021.
+### Top 20 number of flights by civil aviation aircraft in Europe (ECAC) in 2021
 
 ```{r}
 #| label: tbl-flights-per-aircraft-type
@@ -110,58 +115,32 @@ read_xlsx("data/flights_per_aircraft_type.xlsx") %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting)*")
   )
-
 ```
-In 2021 there were 301 different civil aircraft types operating IFR flights in Europe. 70% of the flights were carried out by the 20 aircraft types listed in the table.
 
-### Daily average of IFR flights, 2016 to 2021.
+In 2021 there were 301 different civil aircraft types operating IFR
+flights in Europe. 70% of the flights were carried out by the 20
+aircraft types listed in @tbl-flights-per-aircraft-type.
 
+### Daily average of IFR flights, 2016 to 2021
+
+The graph below shows the daily average number of IFR flights EU-wide between 2016 and 2021.
 
 ![Daily average numbers of IFR flights](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
-    
 
-Source 4
+*Source: Performance Review Board (PRB) - ANS performance monitoring (EU-wide)* [@prb:dashboard:2022]
 
-:   Performance Review Board (PRB) -- ANS performance monitoring
-    (EU-wide)<br>
-    https://www.eurocontrol.int/prudata/dashboard/vis/2019/
+## When to use the input?
 
-[^number_of_ifr_flights-1]: Rules for EUROCONTROL classification of
-    low-cost, all-cargo and business aviation types of flights:
-    https://www.eurocontrol.int/publication/market-segment-rules\]
-
-## Description
-
-**Value 1** shows the typical fluctuation in traffic during the year,
-peaking in July and August. The lowest level usually occurs in February.
-
-**Value 2** indicates an overall increase in flights of 0.8% in 2019
-compared with 2018. Traditional scheduled traffic increased by 1.4% and
-charter traffic by 2.7%, whilst business aviation decreased by 3% and
-cargo by 2.7%. Military traffic covering only those flights operating as
-general air traffic (GAT) and excluding operational air traffic (OAT)
-decreased by 4.7%.
-
-**Value 3** Of those aircraft which flew IFR in 2019, four hundred and
-thirty-six (436) different civil aircraft types operated in Europe in
-2019. Some 75% of the flights were carried out by the 20 aircraft types
-displayed.
+This input is recommended to be used in situations where an overview of the historical evolution in the number of flights is required, namely grouped according to different criteria.
 
 ## Related standard inputs
 
-[IFR flight information per operator
-segment](#ifr-flight-information-per-market-segment), [fleet age],
-[fleet size] and [fleet CNS capability].
+[**IFR flight information per operator segment**](#ifr_flight_information_per_market_segment)
 
-## Further reading
+[**Fleet age**](#fleet_age)
 
-**EUROCONTROL Performance Review Commission**<br> The Performance Review
-Commission publishes traffic analyses in the annual Performance Review
-reports (https://www.eurocontrol.int/prc/publications).
+[**Fleet size**](#fleet_size)
 
-## Comment
+[**Fleet CNS capability**](#fleet_cns_capability)
 
-These traffic figures are from 2019 and do not yet reflect the impact of
-COVID. Estimated traffic figures for 2020 and beyond can be found in the
-EUROCONTROL five year forecast
-<https://www.eurocontrol.int/publication/eurocontrol-five-year-forecast-2020-2024>.
+## References

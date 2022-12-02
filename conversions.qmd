@@ -80,7 +80,7 @@ The cost of fuel used in this document is based on the 2021 average jet
 fuel price handled by [IATA](https://www.iata.org/en/publications/economics/fuel-monitor/), unless otherwise specified. All conversions are done using the values specified on this page.
 
 ```{r}
-#| label: tab-cost-of-fuel
+#| label: tbl-cost-of-fuel
 #| tbl-cap: Average jet fuel price
 library(dplyr)
 library(gt)
@@ -105,7 +105,7 @@ tribble(
 ## Conversion values {.unnumbered}
 
 ```{r}
-#| label: conversion-values
+#| label: tbl-conversion-values
 #| tbl-cap: Units conversion values
 tribble(
   ~from, ~to,

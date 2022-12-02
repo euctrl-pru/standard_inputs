@@ -30,7 +30,7 @@ This metric is the ratio between the IFR ACC movements controlled and the total 
 * IFR ACC movements controlled is the number of flights that have been controlled over the year by the ACC in the specified country
 * Total ACC flight-hours controlled is the sum of the flight-hours controlled over the year by the ACC. For a given flight the flight-hours controlled are computed using information available in the Network Manager database as the difference between the exit time and the entry time in the controlled airspace
 
-In @tbl-transit-time the range of transit time values for the vast majority of ANSPs in Europe can be observed (*Note: the scope is limited to the 38 ANSPs reporting to the [Performance Review Commission](https://ansperformance.eu/about/prc/)*). The weighted average in terms of flight time is 22 minutes per ACC. A difference of 31 minutes between the highest (Portugal) and the lowest (Belgium) transit time can also be observed – this represents a ratio of almost 5 or a Standard Deviation of around 8.
+In the figure below the range of transit time values for the vast majority of ANSPs in Europe can be observed (*Note: the scope is limited to the 38 ANSPs reporting to the [Performance Review Commission](https://ansperformance.eu/about/prc/)*). The weighted average in terms of flight time is 22 minutes per ACC. A difference of 31 minutes between the highest (Portugal) and the lowest (Belgium) transit time can also be observed – this represents a ratio of almost 5 or a Standard Deviation of around 8.
 
 ![**Average transit time per country in 2019**](figures/transit_time.png){#transit-time fig-align=center}
 
