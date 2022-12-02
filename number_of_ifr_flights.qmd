@@ -6,20 +6,20 @@ editor_options:
 
 # Number of IFR flights
 
-## Definition
-
-The number of IFR flights in Europe.
-
 ## EUROCONTROL recommended values
 
+Below is the evolution of flight movements in Europe (ECAC area) by market segment and aircraft type.
+
+### Evolution of flights per flow (Departure, Arrival, Internal, Overflight) in 2021 compared to 2019 
+
 ```{r}
-#| label: ifr-flights-month
+#| label: tbl-ifr-flights-month
 #| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019-2021
 library(readxl)
 library(dplyr)
 library(gt)
 
-read_xlsx("data/ifr_flights_ecac.xlsx") %>%
+read_xlsx("data/ifr_flights.xlsx") %>%
   gt() %>%
   cols_label(
     month      = "Month",
@@ -36,78 +36,89 @@ read_xlsx("data/ifr_flights_ecac.xlsx") %>%
     decimals = 0
   ) %>%
   fmt_number(
-    columns = c(arrival, departure, internal, overflight),
+    columns = c(arrival, departure, internal, overflight, total_2021, total_2019),
     use_seps = TRUE,
     decimals = 0
   ) %>%
   tab_source_note(
-    source_note = md("Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting)")
+    source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   )
 
 ```
 
-Source 1
+### Flights by market segment in Europe (ECAC) in 2021 compared to 2019
 
-:   EUROCONTROL (2020) -- STATFOR statistics <br> Traffic statistics and
-    forecasts can be obtained from the STATFOR Interactive Dashboard
-    (SID). http://www.eurocontrol.int/statfor
 
-Value 2
 
-:   Flights by market segment[^number_of_ifr_flights-1] in Europe (ECAC)
-    2019-2021
+```{r}
+#| label: tbl-flights-per-market-segment
+#| tbl-cap: Flights by market segment in Europe (ECAC) 2019-2021
+library(readxl)
+library(dplyr)
+library(gt)
 
-    ```{r, flights-per-market-segment}
-    library(readr)
-    library(gt)
-    library(magrittr)
+read_xlsx("data/flight_per_market_segment.xlsx") %>%
+  gt() %>%
+  cols_label(
+    segment = "Market segment",
+    share_of_total_2019 = "Share of Total 2019",
+    share_of_total_2020 = "Share of Total 2020",
+    share_of_total_2021 = "Share of Total 2021",
+    y2019 = "2019",
+    y2020 = "2020",
+    y2021 = "2021"
+  ) %>%
+  fmt_percent(
+    columns = c(share_of_total_2019, share_of_total_2020, share_of_total_2021),
+    decimals = 0
+  ) %>%
+  fmt_number(
+    columns = c(y2019, y2020, y2021),
+    use_seps = TRUE,
+    decimals = 0
+  ) %>%
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+  )
 
-    read_csv("data/flight_per_market_segment.csv") %>% 
-      gt()
-    ```
+```
 
-Source 2
+EUROCONTROL market segments were updated in 2022 and saw the “Traditional Scheduled” segment split into “Mainline” and “Regional”. EUROCONTROL [Market Segment Rules](https://www.eurocontrol.int/publication/market-segment-rules).  
 
-:   EUROCONTROL (2020) -- STATFOR statistics <br> Traffic statistics and
-    forecasts can be obtained from the STATFOR Interactive Dashboard
-    (SID). http://www.eurocontrol.int/statfor
+In 2021 the total number of flights went up 25.1% compared to 2020,but was at 56% of 2019 flight levels (pre-COVID-19)., Compared with 2019, only two segments increased in 2021 and they were All-Cargo (+14%) and Business Aviation (+3.8%). The Mainline (-54.5%), Low-Cost (-53.9%) and Regional (-47.6%) segments were the most affected along with the Charter segments which went down -20.6% in 2021 (vs 2019). 
 
-Value 3
+### Top 20 number of flights by civil aviation aircraft in Europe (ECAC) in 2021.
 
-:   Top 20 number of flights by civil aircraft operating in airspace in
-    Europe controlled by the EUROCONTROL Network Manager, year 2019.
+```{r}
+#| label: tbl-flights-per-aircraft-type
+#| tbl-cap: Top 20 flights by aircraft type in Europe (ECAC) in 2021
+library(readxl)
+library(dplyr)
+library(gt)
 
-    ```{r, flights-per-aircraft-type}
-    library(readr)
-    library(gt)
-    library(magrittr)
+read_xlsx("data/flights_per_aircraft_type.xlsx") %>%
+  gt() %>%
+  fmt_percent(
+    columns = c(Proportion, Cumulative),
+    decimals = 0
+  ) %>%
+  fmt_number(
+    columns = c(Flights),
+    use_seps = TRUE,
+    decimals = 0
+  ) %>%
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting)*")
+  )
 
-    read_csv("data/flights_per_aircraft_type.csv") %>% 
-      gt()
-    ```
+```
+In 2021 there were 301 different civil aircraft types operating IFR flights in Europe. 70% of the flights were carried out by the 20 aircraft types listed in the table.
 
-Source 3
+### Daily average of IFR flights, 2016 to 2021.
 
-:   EUROCONTROL (2019) --- Network Manager flight plans and PRISME fleet
-    data (ECAC region)
 
-Value 4
-
-:   Daily average of IFR flights, 2015 to 2019, EU-wide area. See @fig-average-daily-ifr-flights-plot.
-
-    ![My nice caption](figures/average_daily_flights_2015-2019.png){#fig-average-daily-ifr-flights-plot width="110%"}
+![Daily average numbers of IFR flights](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
     
-
-    ```{r, average-daily-ifr-flights-table}
-    library(gt)
-    library(magrittr)
-    library(tibble)
-    tribble(
-      ~year,~`2015`,~`2016`,~`2017`,~`2018`,~`2019`,
-      "Average daily IFR flights",25321,25972,26980,27987,28313
-    ) %>% 
-      gt()
-    ```
 
 Source 4
 
