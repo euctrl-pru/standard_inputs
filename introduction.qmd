@@ -1,54 +1,29 @@
-# Introduction {-}
+# Introduction {.unnumbered}
 
-This document provides a set of standard inputs for data commonly used in
-economic and financial ATM-related analyses and appraisals.
-The standard inputs will save time in the development, for example,
-of cost-benefit analyses (CBAs) and economic impact assessments and
-will also help achieve greater consistency and comparability between
-different CBAs.
+This document provides a set of data commonly used in economic and financial analyses and appraisals, particulary in the field of ATM.
 
+The aim of this document is to standardise the data used in the different ATM-related assessments, facilitate the data access for the different stakeholders involved and contribute to the comparaility of different analyses through relying on the same data.
 
 In this edition ({{< var version >}}):
 
-* the title has been changed to “EUROCONTROL standard inputs for economic analyses”,
-  a more accurate description of its use;
-* the values have been regrouped by stakeholder and key topic of interest;
-* all prices have been updated to 2019 euro values unless otherwise specified.
-  The costs can be    easily adjusted using the table of indices contained in
-  the section [Conversions, Inflation, Cost of Fuel, Exchange Rate](#conversions);
-* some values have been reviewed and replaced, namely turn-around time,
-  all causes of delay, and statistics;
-* comparable historical data have been added;
-* two new values have been introduced, namely drone fleet and U-space related
-  investments;
-* the value “cost of an ATFM slot swap” was removed because the UDPP concept
-  has evolved and makes reference to “measures” (which involves multiple swaps).
-  The value of a measure has a big range and is still being worked on;
-* a link to the EUROCONTROL Aviation Intelligence Portal providing latest
-  information was added when and where appropriate;
-* whenever single values are contentious, a range of low, base and high values
-  is given, allowing users of the data to conduct sensitivity analyses.
+-   a selection of values have been updated according to the latest data available and published on the web
+-   two new values have been introduced: transit time and shadow cost of carbon
 
-
-The standard inputs have been compiled from EUROCONTROL data and intelligence, from values provided by airspace users, ANSPs, airports, IATA, EASA and other organisations, and from other relevant documents which are publicly available.
+Please note that the standard inputs have been compiled from EUROCONTROL data and intelligence, from values provided by airspace users, ANSPs, airports, IATA, EASA and other organisations, and from other relevant documents which are publicly available.
 
 They are average values and may not be appropriate in all circumstances. The document also gives details of the sources of information, and discusses the applicability and use of the values.
 
-This document will remain a living document, and so comments and suggestions are very welcome. Readers are invited to send these to aviation.intelligence@eurocontrol.int.
-
+This document will remain a living document, and so comments and suggestions are very welcome. Readers are invited to send these to [aviation.intelligence@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int).
 
 ## Details per data item {.unlisted .unnumbered}
 
 For each standard input, the following information is provided, where relevant.
 
-|      Section     |  Description |
-|:-----------------|:-------------|
-| Definition       | A statement which describes the concept. |
-| EUROCONTROL recommended value or source | One or a set of recommended values or sources put forward by EUROCONTROL for the specific indicator. |
-| Source and date | The source documents and their publication dates. |
-| Description     | Any relevant information or details regarding the standard input. Information can be found here on how the value is computed, the specific use of the indicator, etc. Information regarding the limitations on using the values may also be included. |
-| Other possible values | Other values found in different sources, which are included for the purpose of information or discussion. |
-| Related standard inputs | A link to other related standard inputs included in the document in order to increase its consistency. |
-| Further reading | References to other interesting sources. |
-| Comments | Any questions or further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited. |
-
+| Section                        | Description                                                                                                                                                                 |
+|:----------------------|:------------------------------------------------|
+| EUROCONTROL recommended values | One or a set of recommended values put forward by EUROCONTROL for the specific indicator.                                                                                   |
+| Description                    | Any relevant information or details regarding the recommended value (e.g. information on how the value was computed, the limitations on using the value, or other remarks). |
+| When to use the input?         | A recommendation on where the specific input can be beneficial is provided here.                                                                                            |
+| Comments                       | Any questions or further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited.                    |
+| Related inputs                 | A link to other related standard inputs included in the document.                                                                                                           |
+| References                     | A list of sources used for the specific input.                                                                                                                              |
