@@ -10,10 +10,6 @@ It looks long time ago that we launched the Standard Inputs for EUROCONTROL Econ
 
 Our first launch counts with a selection of 6 values, complemented with some general information and the remaining inputs will be updated continuously. You can access the previous edition of the remaining values through a link in each of the value sections.
 
-We are happy to receive any comment or suggestion you might have. The
-easiest way to reach us is using
-[{{< var email.info >}}](mailto:{{< var email.info >}}).
-
 ## Acknowledgements
 
 We would like to show our gratitude to the many different colleagues
