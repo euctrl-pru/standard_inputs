@@ -14,15 +14,16 @@ In this edition ({{< var version >}}):
   + Air traffic delay
   + Average number of passengers
   
-* Two new values have been introduced:
+* Three new values have been introduced:
   + Transit time
   + Shadow cost of carbon
+  + Proportion of SAF
 
 Please note that the standard inputs have been compiled from EUROCONTROL data and intelligence, from values provided by airspace users, ANSPs, airports, IATA, EASA and other organisations, and from other relevant documents which are publicly available.
 
 They are average values and may not be appropriate in all circumstances. The document also gives details of the sources of information, and discusses the applicability and use of the values.
 
-This document will remain a living document, and so comments and suggestions are very welcome. Readers are invited to send these to [aviation.intelligence@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int).
+This document will remain a living document, and so comments and suggestions are very welcome. Readers are invited to send these to [economics.business-cases@eurocontrol.int](mailto:economics.business-cases@eurocontrol.int).
 
 ## Details per data item {.unlisted .unnumbered}
 

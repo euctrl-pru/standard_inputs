@@ -23,4 +23,14 @@ In Economic Analyses the concept of 'shadow price/cost' is often used when worki
 
 Shadow prices are inexact by definition, as they are based on assumptions, but their usefulness resides in that they help to understand the full socio-economic merits of a project. Please note that the shadow cost of carbon does not constitute in any way an optimal value for any policy instrument.
 
+## Related inputs
+
+[**Cost of emissions**](#cost_of_emissions)
+
+[**Rate of fuel burn**](#rate_of_fuel_burn)
+
+[**Amount of emissions released by fuel burn**](#amount_of_emissions_released_by_fuel_burn)
+
+[**Proportion of SAF**](#proportion_of_saf)
+
 ## References
