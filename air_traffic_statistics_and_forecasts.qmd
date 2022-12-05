@@ -1,16 +1,11 @@
 # Air traffic statistics and forecasts {#air-traffic-statistics-and-forecasts}
 
-## Definition
+## EUROCONTROL recommended value
+
 Actual and forecast numbers of flights and service units.
 
-## EUROCONTROL recommended source
+## When to use the inputs?
 
-Source
-:   EUROCONTROL Statistics and Forecasts Service (STATFOR)  
-    https://www.eurocontrol.int/forecasting
-
-
-## Description
 
 The objective of the Statistics and Forecast (STATFOR) service is to provide statistics and forecasts on air traffic in Europe and to monitor and analyse the evolution of the air transport Industry.
 
@@ -34,19 +29,19 @@ It produces the following:
   or of point-to-point traffic) or outside the industry (e.g. the price
   of oil or environmental constraints).
   Twenty-year forecasts are usually published every two to three years.
-* Ad-hoc publications, such as the Challenges to Growth reports,
-  trends in air traffic studies and other analyses can be found
-  in the EUROCONTROL library: https://www.eurocontrol.int/library
 
 Traffic statistics and forecasts can be obtained directly from the 
-**STATFOR Interactive Dashboard (SID)**: 
-https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard.
+**STATFOR Interactive Dashboard (SID)**[@ectrl:statfor:sid] 
+
 
 
 ## Related standard inputs
 
-[Medium-term capacity planning], [air traffic delay], [flow management delay]
-and [cost of delay].
+[**Medium-term capacity planning**](#medium-term_capacity_planning) 
+
+[**Air traffic delay**](#air_traffic_delay)
+
+[**Cost of delay**](#cost_of_delay)
 
 
 ## Comments
@@ -57,3 +52,5 @@ The following chart (status: November 2020) shows the traffic forecast taking ac
 
 
 Source: EUROCONTROL STATFOR 2020, <https://www.eurocontrol.int/covid19>
+
+## References
