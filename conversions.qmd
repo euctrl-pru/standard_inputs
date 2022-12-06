@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# General parameters {#conversions .unnumbered}
+# General parameters {#sec-conversions .unnumbered}
 
 Below are presented some key values used in the Standard Inputs and that can serve as a reference for other uses.
 
@@ -14,7 +14,7 @@ The inflation levels have been calculated based on the Harmonised Index
 of Consumer Prices (HICP), as the yearly difference in the HICP. The
 HICP data was extracted from [Eurostat](http://ec.europa.eu/eurostat)
 HICP - annual data (average index and rate of change) database
-(prc_hicp_aind).The annual change in the index is shown below.(@tbl-inflation-table)
+(prc_hicp_aind).The annual change in the index is shown in @tbl-inflation-table.
 
 ```{r}
 #| label: tbl-inflation-table

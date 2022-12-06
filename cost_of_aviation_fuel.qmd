@@ -1,3 +1,3 @@
-# Cost of aviation fuel
+# Cost of aviation fuel {#sec-cost-of-aviation-fuel}
 
 {{< include _under_work.qmd >}}

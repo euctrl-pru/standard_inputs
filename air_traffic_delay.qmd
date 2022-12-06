@@ -68,12 +68,12 @@ the significant reduction in air traffic in 2020 and 2021, resulting
 into a strong drop in the total delay duration. Thus, when looking into
 these numbers it is equally important to consider the situation prior to
 2020. For the All-causes delay this information can be found in the
-previous editions of CODA Digest, available in EUROCONTROL library. [@ectllibrary]
+previous editions of CODA Digest, available in EUROCONTROL library[@ectllibrary].
 
 ## Related inputs
 
-[**Air traffic statistics and forecast**](#air_traffic_statistics_and_forecasts)
+[Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
 
-[**Cost of delay**](#cost_of_delay)
+[Cost of delay](#sec-cost-of-delay)
 
 ## References

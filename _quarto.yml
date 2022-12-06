@@ -65,7 +65,7 @@ book:
         - "medium-term_capacity_planning.qmd"
         - "number_of_ifr_flights.qmd"
         - "air_traffic_delay.qmd"
-        - "transit_time.qmd"
+        # - "transit_time.qmd"
     
     - part: "Environment"
       chapters:

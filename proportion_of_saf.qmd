@@ -1,4 +1,4 @@
-# Proportion of SAF
+# Proportion of Sustainable Aviation Fuel {#sec-proportion-of-saf}
 
 ## EUROCONTROL recommended values
 
@@ -35,11 +35,11 @@ read_xlsx("data/saf_blend.xlsx") %>%
     decimals = 0
   )
 ```
-*Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone* [@skygreen2022]
+*Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone*[@skygreen2022]
 
 ## Description
 
-The table shows the forecast SAF blending percentage over total jet fuel for years 2022 to 2030. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook. [@aviation:outlook2022]
+The table shows the forecast SAF blending percentage over total jet fuel for years 2022 to 2030. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook[@aviation:outlook2022].
 
 The percentages of SAF provided are based on the following:
 
@@ -49,17 +49,17 @@ The percentages of SAF provided are based on the following:
 Other underlying assumptions worth mentioning are:
 
 * The regulation imposes obligations only on the fuel suppliers, not on the airlines.
-* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see #fig-ecac-airspace-fir).
+* Objective Skygreen 2022-2030[@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see #fig-ecac-airspace-fir).
 
-The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trendline adjustment.
+The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
 ![Forecasted evolution of SAF proportion 2023-2050](figures/saf_blend.png){#fig-saf-blend}
 
-*Source: EUROCONTROL based on Objective Skygreen 2022-2030* [@skygreen2022]
+*Source: EUROCONTROL based on Objective Skygreen 2022-2030*[@skygreen2022]
 
 ## When to use the input?
 
-This input is recommended to be used when dealing with environmentally related assessments. At EUROCONTROL, we have used this data for the traffic forecast in EUROCONTROL Aviation Outlook 2050 [@aviation:outlook2022] and for the Objective Skygreen study, [@skygreen2022] guiding on log-term aviation sustainability.
+This input is recommended to be used when dealing with environmentally related assessments. At EUROCONTROL, we have used this data for the traffic forecast in EUROCONTROL Aviation Outlook 2050[@aviation:outlook2022] and for the Objective Skygreen study[@skygreen2022], guiding on log-term aviation sustainability.
 
 ## Comments
 
@@ -68,16 +68,16 @@ Non-conventional fuels – SAF are non-fossil derived – can be used in aviatio
 The ReFuelEU Aviation initiative – put forward by the European Commission in the Fit for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel available in EU airports.
 The proposal defines a series of percentages of SAF blending that will have to be met at specific years. 
 
-For further research, we invite you to visit the work of the EUROCONTROL Aviation Sustainability Unit. [@ectl:asu]
+For further research, we invite you to visit the work of the EUROCONTROL Aviation Sustainability Unit[@ectl:asu].
 
 ## Relaed inputs
 
-[**Rate of fuel burn**](#rate_of_fuel_burn)
+[Rate of fuel burn](#sec-rate-of-fuel-burn)
 
-[**Amount of emissions released by fuel burn**](#amount_of_emissions_released_by_fuel_burn)
+[Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
 
-[**Cost of emissions**](#cost_of_emissions)
+[Cost of emissions](#sec-cost-of-emissions)
 
-[**Shadow cost of carbon**](#shadow_cost_of_carbon)
+[Shadow cost of carbon](#sec-shadow-cost-of-carbon)
 
 ## References

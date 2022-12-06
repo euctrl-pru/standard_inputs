@@ -1,12 +1,4 @@
-# Value of a statistical life (VSL)
+# Value of a statistical life (VSL) {#sec-value-of-a-statistical-life}
 
-## Definition
-
-## EUROCONTROL recommended sources
-
-## Description
-
-## Related standard inputs
-
-## Comment
+{{< include _under_work.qmd >}}
 
