@@ -21,6 +21,7 @@ library(dplyr)
 library(gt)
 
 read_xlsx("data/ifr_flights.xlsx") %>%
+  relocate(departure, .before = arrival) %>%
   gt() %>%
   cols_label(
     month      = "Month",
@@ -28,9 +29,17 @@ read_xlsx("data/ifr_flights.xlsx") %>%
     departure  = "Departure",
     internal   = "Internal",
     overflight = "Overflight",
-    total_2021 = "Total 2021",
-    total_2019 = "Total 2019",
-    vs_2019_flight_level = "vs 2019 flight level"
+    total_2021 = "2021",
+    total_2019 = "2019",
+    vs_2019_flight_level = "vs 2019"
+  ) %>%
+  tab_spanner(
+    label = "DAIO",
+    columns = c(departure, arrival, internal, overflight)
+  ) %>%
+  tab_spanner(
+    label = "Total",
+    columns = c(total_2021, total_2019)
   ) %>%
   fmt_percent(
     columns = c(vs_2019_flight_level),
