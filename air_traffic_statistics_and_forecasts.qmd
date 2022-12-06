@@ -37,11 +37,9 @@ Traffic statistics and forecasts can be obtained directly from the
 
 ## Related standard inputs
 
-[**Medium-term capacity planning**](#medium-term_capacity_planning) 
-
-[**Air traffic delay**](#air_traffic_delay)
-
-[**Cost of delay**](#cost_of_delay)
+@sec-medium-term-capacity-planning [**Medium-term capacity planning**](#sec-medium-term-capacity-planning),
+@sec-air-traffic-delay [**Air traffic delay**](#sec-air-traffic-delay),
+@sec-cost-of-delay [**Cost of delay**](#sec-cost-of-delay)
 
 
 ## Comments
