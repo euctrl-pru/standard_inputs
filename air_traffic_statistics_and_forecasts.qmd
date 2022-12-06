@@ -2,16 +2,13 @@
 
 ## EUROCONTROL recommended value
 
-Actual and forecast numbers of flights and service units.
+The Statistics and Forecasts (STATFOR) service produces flights and service units forecasts of future network traffic with a view to help planners understand and manage risks, identify bottlenecks and anticipate the needs of airspace users.
 
 ## When to use the inputs?
 
+The objective of STATFOR is to provide statistics and forecasts on IFR flight movements and service units in Europe (ECAC) and to monitor and analyse the evolution of the air transport industry.
 
-The objective of the Statistics and Forecast (STATFOR) service is to provide statistics and forecasts on air traffic in Europe and to monitor and analyse the evolution of the air transport Industry.
-
-It produces the following:
-
-* Seven-year forecasts
+* Medium-term forecasts (7-year timespan):
   The 7-year forecasts give a comprehensive picture of anticipated
   air traffic development in Europe for the next seven years.
   They combine flight statistics with economic growth and models of
@@ -19,16 +16,24 @@ It produces the following:
   passenger numbers, load factors and aircraft size.
   Using high- and low-growth scenarios, they present a likely range
   for growth, to help planners manage risks.
-  We publish them biannually, in spring and autumn, covering flights,
-  and en route and terminal service units every year.
-* Twenty-year forecasts
-  The 20-year forecasts look at a range of distinct possible scenarios
-  for how the air traffic industry might look in 20 years’ time.
+  They are published biannually, in spring and autumn, covering flights,
+  en route and terminal service units.
+  
+![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release)](figures/forecast_2022-2028){#fig-forecast-2022-2028-plot}
+
+The above graph shows the traffic forecast taking account of the impact of the COVID-19 pandemic. In the base scenario, IFR flights are expected to get back to 2019 levels by 2025.
+
+
+* Long-term forecasts (between 20 and 30 timespan):
+  The 2030-year forecasts look at a range of distinct possible scenarios
+  for how the air traffic industry might look in 20-30 years’ time.
   This allows a range of ‘what if?’ questions to be explored, for factors
   inside the industry (e.g. the growth of small business jets,
   or of point-to-point traffic) or outside the industry (e.g. the price
   of oil or environmental constraints).
-  Twenty-year forecasts are usually published every two to three years.
+  20-30-year forecasts are usually published every two to three years.
+
+Flight Forecast for Europe, with total growth between 2019 and 2050
 
 Traffic statistics and forecasts can be obtained directly from the 
 **STATFOR Interactive Dashboard (SID)**[@ectrl:statfor:sid] 
@@ -44,13 +49,5 @@ Traffic statistics and forecasts can be obtained directly from the
 [**Cost of delay**](#cost_of_delay)
 
 
-## Comments
-
-The following chart (status: November 2020) shows the traffic forecast taking account of the impact of COVID.
-
-![](figures/forecast_2020-2024.png){#traffic-forecast-covid}
-
-
-Source: EUROCONTROL STATFOR 2020, <https://www.eurocontrol.int/covid19>
 
 ## References
