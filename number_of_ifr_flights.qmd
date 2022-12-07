@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Number of IFR flights
+# Number of IFR flights {#sec-number-of-ifr-flights}
 
 ## EUROCONTROL recommended values
 
@@ -21,6 +21,7 @@ library(dplyr)
 library(gt)
 
 read_xlsx("data/ifr_flights.xlsx") %>%
+  relocate(departure, .before = arrival) %>%
   gt() %>%
   cols_label(
     month      = "Month",
@@ -28,9 +29,17 @@ read_xlsx("data/ifr_flights.xlsx") %>%
     departure  = "Departure",
     internal   = "Internal",
     overflight = "Overflight",
-    total_2021 = "Total 2021",
-    total_2019 = "Total 2019",
-    vs_2019_flight_level = "vs 2019 flight level"
+    total_2021 = "2021",
+    total_2019 = "2019",
+    vs_2019_flight_level = "vs 2019"
+  ) %>%
+  tab_spanner(
+    label = "DAIO",
+    columns = c(departure, arrival, internal, overflight)
+  ) %>%
+  tab_spanner(
+    label = "Total",
+    columns = c(total_2021, total_2019)
   ) %>%
   fmt_percent(
     columns = c(vs_2019_flight_level),
@@ -83,7 +92,7 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
 
 EUROCONTROL market segments were updated in 2022 and saw the
 "Traditional Scheduled" segment split into "Mainline" and "Regional".
-EUROCONTROL Market Segment Rules. [@ectl:market:seg:2022]
+EUROCONTROL Market Segment Rules [@ectl:market:seg:2022].
 
 In 2021 the total number of flights went up 25.1% compared to 2020, but
 was at 56.2% of 2019 flight levels (pre-COVID-19). Compared with 2019,
@@ -135,12 +144,12 @@ This input is recommended to be used in situations where an overview of the hist
 
 ## Related standard inputs
 
-[**IFR flight information per operator segment**](#ifr_flight_information_per_market_segment)
+[IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
 
-[**Fleet age**](#fleet_age)
+[Fleet age](#sec-fleet-age)
 
-[**Fleet size**](#fleet_size)
+[Fleet size](#sec-fleet-size)
 
-[**Fleet CNS capability**](#fleet_cns_capability)
+[Fleet CNS capability](#sec-fleet-cns-capability)
 
 ## References

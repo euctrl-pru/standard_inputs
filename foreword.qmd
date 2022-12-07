@@ -8,7 +8,7 @@ editor_options:
 
 It looks long time ago that we launched the Standard Inputs for EUROCONTROL Economic Analyses series. Our first edition dates back to 2003 and today we take it a step further, launching it for the first time on an online platform to allow for timely and continuous update of the file, following the pace of changes in the aviation world.
 
-Our first launch counts with a selection of 6 values, complemented with some general information and the remaining inputs will be updated continuously. You can access the previous edition of the remaining values through a link in each of the value sections.
+Our first launch counts with a selection of values, complemented with some general information and the remaining inputs will be updated continuously. You can access the previous edition of the remaining values through a link in each of the value sections.
 
 ## Acknowledgements
 

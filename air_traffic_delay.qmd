@@ -4,7 +4,7 @@ editor_options:
     wrap: 72
 ---
 
-# Air traffic delay
+# Air traffic delay {#sec-air-traffic-delay}
 
 ## EUROCONTROL recommended values
 
@@ -22,7 +22,7 @@ by EUROCONTROL [Central Office of Delay Analysis (CODA)](https://www.eurocontrol
 ![Breakdown of the network average delay per flight on departure: 2021 vs 2020](figures/delay_causes.png){#fig-all-causes-delay}
 
 *Source: EUROCONTROL CODA (2022) All-Causes Delay to Air Transport in
-Europe*[@coda2021]
+Europe* [@coda2021]
 
 ### ATFM delay
 
@@ -34,7 +34,7 @@ delays due to the restrictions that may be applied in the airspace.
 
 ![Average daily traffic and ATFM delay per flight 2012-2022](figures/atfm_delay.png){#fig-atfm-delay}
 
-*Source: EUROCONTROL (2022) Network Operations Report 2021*[@nm2022]
+*Source: EUROCONTROL (2022) Network Operations Report 2021* [@nm2022]
 
 The flow management delay constitutes only a fraction of primary delay
 from all causes, and around half of all delay is reactionary (i.e.,
@@ -68,12 +68,12 @@ the significant reduction in air traffic in 2020 and 2021, resulting
 into a strong drop in the total delay duration. Thus, when looking into
 these numbers it is equally important to consider the situation prior to
 2020. For the All-causes delay this information can be found in the
-previous editions of CODA Digest, available in EUROCONTROL library. [@ectllibrary]
+previous editions of CODA Digest, available in EUROCONTROL library [@ectllibrary].
 
 ## Related inputs
 
-[**Air traffic statistics and forecast**](#air_traffic_statistics_and_forecasts)
+[Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
 
-[**Cost of delay**](#cost_of_delay)
+[Cost of delay](#sec-cost-of-delay)
 
 ## References

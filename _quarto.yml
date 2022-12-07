@@ -25,7 +25,7 @@ format:
     cover-image: cover.png
     link-external-newwindow: true
     link-external-icon: true
-    link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*ace-handbook\.netlify\.app\/'
+    link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*standard-inputs\.netlify\.app\/'
     include-in-header:
       - media/fontawesome.html
       # UNCOMMENT for activating GA
@@ -65,7 +65,7 @@ book:
         - "medium-term_capacity_planning.qmd"
         - "number_of_ifr_flights.qmd"
         - "air_traffic_delay.qmd"
-        - "transit_time.qmd"
+        # - "transit_time.qmd"
     
     - part: "Environment"
       chapters:

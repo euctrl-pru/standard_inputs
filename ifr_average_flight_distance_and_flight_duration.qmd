@@ -1,3 +1,3 @@
-# IFR average flight distance and flight duration
+# IFR average flight distance and flight duration {#sec-if-average-flight-distance-and-flight-duration}
 
 {{< include _under_work.qmd >}}

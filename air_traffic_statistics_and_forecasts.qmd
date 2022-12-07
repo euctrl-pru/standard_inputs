@@ -1,4 +1,4 @@
-# Air traffic statistics and forecasts {#air-traffic-statistics-and-forecasts}
+# Air traffic statistics and forecasts {#sec-air-traffic-statistics-and-forecasts}
 
 ## EUROCONTROL recommended value
 
@@ -36,17 +36,15 @@ The above graph shows the traffic forecast taking account of the impact of the C
 Flight Forecast for Europe, with total growth between 2019 and 2050
 
 Traffic statistics and forecasts can be obtained directly from the 
-**STATFOR Interactive Dashboard (SID)**[@ectrl:statfor:sid] 
+**STATFOR Interactive Dashboard (SID)** [@ectrl:statfor:sid] 
 
 
 
 ## Related standard inputs
 
-[**Medium-term capacity planning**](#medium-term_capacity_planning) 
-
-[**Air traffic delay**](#air_traffic_delay)
-
-[**Cost of delay**](#cost_of_delay)
+@sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning),
+@sec-air-traffic-delay [**Air traffic delay**](#sec-air-traffic-delay),
+@sec-cost-of-delay [**Cost of delay**](#sec-cost-of-delay)
 
 
 

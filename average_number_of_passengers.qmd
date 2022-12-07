@@ -1,4 +1,4 @@
-# Average number of passengers
+# Average number of passengers {#sec-average-number-of-passengers}
 
 ## EUROCONTROL recommended values
 
@@ -21,7 +21,7 @@ The average number of passengers per movement[^1] for a given year is obtained b
 
 ## Related inputs
 
-[**Number of IFR flights**](#number_of_ifr_flights)
+[Number of IFR flights](#sec-number-of-ifr-flights)
 
 ## References
 
