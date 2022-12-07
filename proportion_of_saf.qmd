@@ -49,7 +49,7 @@ The percentages of SAF are based on:
 Other underlying assumptions worth mentioning are:
 
 * The regulation imposes obligations only on the fuel suppliers, not on the airlines.
-* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see #fig-ecac-airspace-fir).
+* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
 
 The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
