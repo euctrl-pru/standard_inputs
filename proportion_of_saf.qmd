@@ -2,17 +2,17 @@
 
 ## EUROCONTROL recommended values
 
-This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and up to 2050. The evolution is estimated according to three scenarios:
+This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and 2050. The evolution is estimated according to three scenarios:
 
 * **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with [ReFuelEU Aviation](https://www.easa.europa.eu/en/light/topics/fit-55-and-refueleu-aviation) obligations.
 
 * **High scenario**, assumed that the high availability of SAF will foster the quicker adoption of these fuels than outlined in the current regulatory requirements.
 
-* **Low scenario**, which assumes an uptake of SAF being slower that outlined by existing regulation.
+* **Low scenario**, which assumes an uptake of SAF slower that outlined by existing regulation.
 
 ```{r}
 #| label: tbl-saf-blend
-#| tbl-cap: Forecasted evolution of SAF blend 2023-2050
+#| tbl-cap: Forecast evolution of SAF blend 2023-2050
 library(readxl)
 library(dplyr)
 library(gt)
@@ -39,17 +39,17 @@ read_xlsx("data/saf_blend.xlsx") %>%
 
 ## Description
 
-The table shows the forecast SAF blending percentage over total jet fuel for years 2022 to 2030. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook [@aviation:outlook2022].
+@tbl-saf-blend shows the forecast SAF blending percentage over total jet fuel for years 2023 to 2050. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook [@aviation:outlook2022].
 
-The percentages of SAF provided are based on the following:
+The percentages of SAF are based on:
 
-* The series start with a projection of the 2022 actual SAF blending.
-* Linear interpolation, until in 2030 the required 5% of the ReFuelEU Aviation proposal is met.
+* The series starting with a projection of the 2022 actual SAF blending.
+* A linear interpolation, until in 2030 the required 5% of the ReFuelEU Aviation proposal is met, followed by the same linear growth until 2050.
 
 Other underlying assumptions worth mentioning are:
 
 * The regulation imposes obligations only on the fuel suppliers, not on the airlines.
-* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see #fig-ecac-airspace-fir).
+* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
 
 The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
@@ -59,7 +59,7 @@ The figure below depicts the expected SAF blending percentages. Points are the y
 
 ## When to use the input?
 
-This input is recommended to be used when dealing with environmentally related assessments. At EUROCONTROL, we have used this data for the traffic forecast in EUROCONTROL Aviation Outlook 2050 [@aviation:outlook2022] and for the Objective Skygreen study [@skygreen2022], guiding on log-term aviation sustainability.
+This input is recommended to be used when dealing with environmentally related assessments. This data has previously been used for the traffic forecast in EUROCONTROL Aviation Outlook 2050 [@aviation:outlook2022] and for the Objective Skygreen study [@skygreen2022], guiding on long-term aviation sustainability.
 
 ## Comments
 
@@ -68,7 +68,7 @@ Non-conventional fuels – SAF are non-fossil derived – can be used in aviatio
 The ReFuelEU Aviation initiative – put forward by the European Commission in the Fit for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel available in EU airports.
 The proposal defines a series of percentages of SAF blending that will have to be met at specific years. 
 
-For further research, we invite you to visit the work of the EUROCONTROL Aviation Sustainability Unit [@ectl:asu].
+For further research, please visit the work of the EUROCONTROL Aviation Sustainability Unit [@ectl:asu].
 
 ## Relaed inputs
 
