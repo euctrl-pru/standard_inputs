@@ -5,12 +5,12 @@ This is the website for __"{{< meta title  >}}"__.
 
 
 The EUROCONTROL Business Cases team regularly refreshes the content and the underlying data
-in order to provide up-to-date information for the interested users.
+in order to provide up-to-date information for interested readers.
 '`
 
 # About us
 
-EUROCONTROL Business Cases team is a dedicated team of experts supporting stakeholders to choose among different solutions and alternatives making use of the best available data. For more than 15 years, EUROCONTROL has been providing ATM decision makers with a wide range of  information enabling them to take rational long-term investment decisions.
+The EUROCONTROL Business Cases team is a dedicated team of experts that support stakeholders who need to choose between different solutions and alternatives, using the best available data. For 20 years, EUROCONTROL has been providing ATM decision makers with a wide range of regularly updated Standard Inputs to help them to take rational long-term investment decision.
 
 # Notice and Disclaimer {-}
 

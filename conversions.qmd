@@ -48,12 +48,16 @@ readxl::read_xlsx("data/values_2022.xlsx",
   fmt_number(
     columns = c(Index),
     decimals = 2
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(Year, Index, Rate)
   )
 ```
 
 ## Exchange Rate Conversion {#exchange-rates .unnumbered}
 
-The currency exchange rates provided below are based on the European Central Bank (ECB) rates as are published daily. The rates exposed in the table below correspond to the average rate for the year 2021 as published by ECB.
+The currency exchange rates provided below are based on the European Central Bank (ECB) rates that are published daily. The rates shown in the table below correspond to the average rate for the year 2021 as published by ECB.
 
 ```{r }
 #| label: tbl-eurostat-exchange-rates
@@ -71,6 +75,10 @@ read_csv("data/exchange_rate.csv", show_col_types = FALSE) %>%
   ) %>%
     tab_source_note(
     source_note = md("*Source: [European Central Bank](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)*")
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(to_eur, from_eur)
   )
 ```
 
@@ -88,7 +96,7 @@ library(gt)
 tribble(
   ~currency, ~price_barrel, ~price_gallon, ~price_kg,
   "USD", 141.7, 3.8, 1.1,
-  "EUR", 138.9, 3.31, 1.1,
+  "EUR", 138.9, 3.3, 1.1,
 ) %>%
   gt() %>%
   cols_label(
@@ -99,6 +107,10 @@ tribble(
   ) %>%
     tab_source_note(
     source_note = md("*Source: [IATA](https://www.iata.org/en/publications/economics/fuel-monitor/)*")
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(price_barrel, price_gallon, price_kg)
   )
 ```
 
@@ -116,7 +128,7 @@ tribble(
   ""                                       , "7.8 barrels",
   "1 barrel (bbl) of jet fuel", "42 US gallons",
   ""                          , "158.99 litres",
-  ""                          , "0.1291 ton = 129.10 kg",
+  ""                          , "0.1291 tonne = 129.10 kg",
   "1 US gallon of jet fuel (US gal)", "3.7854 litres",
   ""                                , "3.073 kg",
   "", "6.7764 lb",

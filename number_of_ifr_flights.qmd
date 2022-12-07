@@ -31,7 +31,7 @@ read_xlsx("data/ifr_flights.xlsx") %>%
     overflight = "Overflight",
     total_2021 = "2021",
     total_2019 = "2019",
-    vs_2019_flight_level = "vs 2019"
+    vs_2019_flight_level = "2021 traffic as % of 2019"
   ) %>%
   tab_spanner(
     label = "DAIO",
@@ -52,8 +52,18 @@ read_xlsx("data/ifr_flights.xlsx") %>%
   ) %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(month, arrival, departure, internal, overflight, total_2021)
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(vs_2019_flight_level)
   )
 ```
+
+Please note that the comparison between 2021 and 2019 in @tbl-ifr-flights-month is due to the fact that 2019 is the last year where the traffic levels were not affected by the COVID-19 pandemic, allowing for a more realistic comparison of the flight levels.
 
 ### Flights by market segment in Europe (ECAC) in 2021 compared to 2019
 
@@ -86,6 +96,14 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
   ) %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(y2019, y2020, y2021)
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(share_of_total_2019, share_of_total_2020, share_of_total_2021)
   )
 
 ```
@@ -123,6 +141,14 @@ read_xlsx("data/flights_per_aircraft_type.xlsx") %>%
   ) %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting)*")
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(Flights)
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = c(Proportion, Cumulative)
   )
 ```
 
@@ -142,7 +168,7 @@ The graph below shows the daily average number of IFR flights EU-wide between 20
 
 This input is recommended to be used in situations where an overview of the historical evolution in the number of flights is required, namely grouped according to different criteria.
 
-## Related standard inputs
+## Related inputs
 
 [IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
 
