@@ -6,29 +6,20 @@ editor_options:
 
 # Foreword {.unnumbered}
 
-It looks long time ago that we launched the Standard Inputs for EUROCONTROL Economic Analyses series. Our first edition dates back to 2003 and today we take it a step further, launching it for the first time on an online platform to allow for timely and continuous update of the file, following the pace of changes in the aviation world.
+The first version of the Standard Inputs for EUROCONTROL Economic Analyses series was launched 20 years ago in 2002. Today we take a new step and are launching the latest edition on an online platform to allow for timely and continuous updates of the values, following the pace of change in the aviation world.
 
-Our first launch counts with a selection of values, complemented with some general information and the remaining inputs will be updated continuously. You can access the previous edition of the remaining values through a link in each of the value sections.
+Our first launch includes a selection of six values, complemented with some general information and the remaining inputs will be updated over the coming months. You can access the previous edition for the values that are not yet updated through a link in each of the value sections.
 
 ## Acknowledgements
 
 We would like to show our gratitude to the many different colleagues
-that have contributed to this endeavour. Trying to name them would be
-mission impossible. We would certainly forgot someone and this would be unfair.
+that have contributed to this endeavour by helping us develop the values and get them online. Trying to name them would be impossible.
 
 We have received valuable remarks and suggestions from all stakeholders
 in the aviation value chain. In particular we have benefited from
 stakeholders involve in the entire development life cycle, from ideas to
-a working system. We strongly believe that this collaboration makes the
-Standard Inputs for EUROCONTROL Economic Analyses a robust and
+a working system. We strongly believe that this collaboration makes the EUROCONTROL
+Standard Inputs for Economic Analyses a robust and
 authoritative product.
 
 Thank you all for making us learn every day!
-
-Finally, please allow us to make one only two exceptions.
-
--   We can only recognise the work of two colleagues in particular --
-    Paula and Desirée -- under whom the initiative was born and developed
-    for the past years.
-
--   And our patient *code teachers* at PRU - Enrico and Oscar.

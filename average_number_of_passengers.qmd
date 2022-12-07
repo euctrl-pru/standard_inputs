@@ -5,9 +5,9 @@
 The figure below presents an overview of the total and average number of passengers per flight in ECAC.
 
 
-![**Number of passengers per flight in ECAC 2012-2022**](figures/number_passengers.png){#number-of-passengers}
+![Number of passengers per flight in ECAC 2012-2021](figures/number_passengers.png){#fig-number-of-passengers}
 
-*Source: Eurostat [@avia:paoc] and EUROCONTROL STATFOR Interactive Dashboard* [@ectrl:statfor:sid]
+*Source: EUROCONTROL STATFOR Interactive Dashboard* [@ectrl:statfor:sid]
 
 ## When to use the input?
 
