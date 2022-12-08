@@ -4,9 +4,6 @@
 
 The Statistics and Forecasts (STATFOR) service produces flights and service units forecasts of future network traffic with a view to help planners understand and manage risks, identify bottlenecks and anticipate the needs of airspace users.
 
-## When to use the inputs?
-
-The objective of STATFOR is to provide statistics and forecasts on IFR flight movements and service units in Europe (ECAC) and to monitor and analyse the evolution of the air transport industry.
 
 ### Medium-term forecasts (7-year timespan):
   The 7-year forecasts give a comprehensive picture of anticipated
@@ -54,7 +51,11 @@ EUROCONTROL produces a 7-year forecast of Service Units that builds on the 7-yea
 
 The above graph (status: October 2022) shows the en-route service units forecast taking account of the impact of the COVID-19 pandemic.
 
-## Related standard inputs
+## When to use the inputs?
+
+The objective of STATFOR is to provide statistics and forecasts on IFR flight movements and service units in Europe (ECAC) and to monitor and analyse the evolution of the air transport industry.
+
+## Related inputs
 
 [Medium-term capacity planning](#sec-medium-term-capacity-planning)
 
