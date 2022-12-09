@@ -57,7 +57,7 @@ The objective of STATFOR is to provide statistics and forecasts on IFR flight mo
 
 ## Related inputs
 
-[Medium-term capacity planning](#sec-medium-term-capacity-planning)
+* @sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning)
 
 [Air traffic delay](#sec-air-traffic-delay)
 
