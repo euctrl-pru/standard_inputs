@@ -18,8 +18,8 @@ format:
   html:
     css:
       - style.css
-    # theme:
-    #   - cosmo
+    theme:
+      - default
     #   - custom.scss
     code-link: true
     cover-image: media/cover.png
