@@ -8,7 +8,7 @@ editor_options:
 
 ## Member States and geographical areas covered {.unnumbered}
 
-Single European Sky initiative and the European Civil Aviation Conference (ECAC). These are the different areas that are covered in Standard Inputs.
+Single European Sky initiative and the European Civil Aviation Conference (ECAC) are the different scopes that are covered in Standard Inputs document.
 
 ![State grouping](figures/eu_orgs.png){#fig-member-states-set-diagram}
 

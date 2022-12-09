@@ -4,14 +4,13 @@
 
 The Statistics and Forecasts (STATFOR) service produces flights and service units forecasts of future network traffic with a view to help planners understand and manage risks, identify bottlenecks and anticipate the needs of airspace users.
 
-
 ### Medium-term forecasts (7-year timespan):
   The 7-year forecasts give a comprehensive picture of anticipated
   air traffic development in Europe for the next seven years.
   They combine flight statistics with economic growth and models of
   other industry drivers, including costs, airport capacity,
   passenger numbers, load factors and aircraft size.
-  Using high- and low-growth scenarios, they present a likely range
+  Using high and low growth scenarios, they present a likely range
   for growth, to help planners manage risks.
   They are published biannually, in spring and autumn, covering flights,
   en route and terminal service units.

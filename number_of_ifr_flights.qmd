@@ -109,7 +109,7 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
 ```
 
 EUROCONTROL market segments were updated in 2022 and saw the
-"Traditional Scheduled" segment split into "Mainline" and "Regional".
+"Traditional Scheduled" segment split into "Mainline" and "Regional" according to
 EUROCONTROL Market Segment Rules [@ectl:market:seg:2022].
 
 In 2021 the total number of flights went up 25.1% compared to 2020, but

@@ -3,10 +3,8 @@
 
 This is the website for __"{{< meta title  >}}"__.
 
-
 The EUROCONTROL Business Cases team regularly refreshes the content and the underlying data
 in order to provide up-to-date information for interested readers.
-'`
 
 # About us
 
