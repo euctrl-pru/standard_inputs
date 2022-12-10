@@ -53,9 +53,8 @@ Other underlying assumptions worth mentioning are:
 
 The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
-![Forecasted evolution of SAF proportion 2023-2050](figures/saf_blend.png){#fig-saf-blend}
+![Forecasted evolution of SAF proportion 2023-2050 [@skygreen2022]](figures/saf_blend.png){#fig-saf-blend}
 
-*Source: EUROCONTROL based on Objective Skygreen 2022-2030* [@skygreen2022]
 
 ## When to use the input?
 
@@ -72,12 +71,9 @@ For further research, please visit the work of the EUROCONTROL Aviation Sustaina
 
 ## Relaed inputs
 
-[Rate of fuel burn](#sec-rate-of-fuel-burn)
-
-[Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
-
-[Cost of emissions](#sec-cost-of-emissions)
-
-[Shadow cost of carbon](#sec-shadow-cost-of-carbon)
+* @sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+* @sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+* @sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+* @sec-shadow-cost-of-carbon [Shadow cost of carbon](#sec-shadow-cost-of-carbon)
 
 ## References
