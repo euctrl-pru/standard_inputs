@@ -158,11 +158,11 @@ aircraft types listed in @tbl-flights-per-aircraft-type.
 
 ### Daily average of IFR flights, 2016 to 2021
 
-The graph below shows the daily average number of IFR flights EU-wide between 2016 and 2021.
+@fig-average-daily-ifr-flights-plot shows the daily average number of IFR flights EU-wide
+between 2016 and 2021.
 
-![Daily average numbers of IFR flights](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
+![Daily average numbers of IFR flights @prb:dashboard:2022](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
 
-*Source: Performance Review Board (PRB) - ANS performance monitoring (EU-wide)* [@prb:dashboard:2022]
 
 ## When to use the input?
 
@@ -170,12 +170,9 @@ This input is recommended to be used in situations where an overview of the hist
 
 ## Related inputs
 
-[IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
-
-[Fleet age](#sec-fleet-age)
-
-[Fleet size](#sec-fleet-size)
-
-[Fleet CNS capability](#sec-fleet-cns-capability)
+* @sec-ifr-flight-information-per-market-segment [IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
+* @sec-fleet-age [Fleet age](#sec-fleet-age)
+* @sec-fleet-size [Fleet size](#sec-fleet-size)
+* @sec-fleet-cns-capability [Fleet CNS capability](#sec-fleet-cns-capability)
 
 ## References
