@@ -15,11 +15,7 @@ for growth, to help planners manage risks.
 They are published biannually, in spring and autumn, covering flights,
 en route and terminal service units.
   
-<<<<<<< HEAD
-![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @ectrl:statfor:sid](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
-=======
-![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) [@statfor:7year_forecast:2022-2028]](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
->>>>>>> 1519a0d340ac7d5ff9338cdbc12bc7480c88f0c5
+![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @statfor:7year_forecast:2022-2028](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
 
 The above graph shows the traffic forecast taking account of the impact of the COVID-19 pandemic. In the base scenario, IFR flights are expected to get back to 2019 levels by 2025.
 
@@ -28,19 +24,15 @@ STATFOR Interactive Dashboard (SID)[@ectrl:statfor:sid].
 
 ### Long-term forecasts (20 to 30-year timespan)
 
-Twenty/thirty-year forecasts: These forecasts look at a range of distinct possible scenarios for how the air traffic industry might look in 20-30 years’ time. This allows a range of ‘what if?’ questions to be explored, for factors inside the industry (e.g. the growth of small business jets, or of point-to-point traffic) or outside the industry (e.g. the price of oil or environmental constraints). Twenty/thirty-year forecasts are usually published every two to three years.
+Twenty/thirty-year forecasts: These forecasts look at a range of distinct possible scenarios for how the air traffic industry might look in 20-30 years’ time. This allows a range of _what if?_ questions to be explored, for factors inside the industry (e.g. the growth of small business jets, or of point-to-point traffic) or outside the industry (e.g. the price of oil or environmental constraints). Twenty/thirty-year forecasts are usually published every two to three years.
 In April 2022, EUROCONTROL published its first EUROCONTROL Aviation Outlook (EAO) looking out to 2050, much further than previous forecasts. This forecast estimates a future number of flights and CO2 emissions per scenario, in line with aviation’s objective of achieving net-zero CO2 emissions by that date. 
 
 ![Flight forecast for Europe, with total growth between 2019 and 2050](figures/eao_2050_flights_base_scenario.png){#fig-Forecast-2050-plot}
 
 In the most-likely Base scenario, the forecast is for 16 million flights in Europe in 2050, 44% more than in 2019 – average growth of 1.2% per year.
 
-<<<<<<< HEAD
-![Estimated CO2 emissions between 2005 and 2050 @aviation:outlook2022](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
-=======
-![Estimated CO2 emissions between 2005 and 2050 [@aviation:outlook2022]](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
 
->>>>>>> 1519a0d340ac7d5ff9338cdbc12bc7480c88f0c5
+![Estimated CO2 emissions between 2005 and 2050 [@aviation:outlook2022]](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
 
 The graph in @fig-co2-emissions-plot estimates that by 2050, CO2 emissions, net of SAF, fleet and operational improvements, are reduced by about 41% compared to 2005 in the Base scenario.
 
