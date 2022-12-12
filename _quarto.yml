@@ -136,8 +136,7 @@ book:
     - part: "General information"
       chapters:
         - "abbreviations.qmd"
-    
-    # - "references.qmd"
+        # - "references.qmd"
     # - "annexes.qmd"
     # - "data.qmd"
 

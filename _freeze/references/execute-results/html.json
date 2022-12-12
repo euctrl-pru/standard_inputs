@@ -1,8 +1,10 @@
 {
-  "hash": "479c42d27f085735ca8e9b84c5638148",
+  "hash": "2457ced23f87477a18f7ddd171219eca",
   "result": {
-    "markdown": "\n# References {-}\n<div id=\"refs\"></div>\n\n\n\n\n",
-    "supporting": [],
+    "markdown": "---\nnocite: |\n  @*\n---\n\n\n# References {-}\n<div id=\"refs\"></div>\n\n\n\n\n",
+    "supporting": [
+      "references_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
