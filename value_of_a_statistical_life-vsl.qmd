@@ -1,0 +1,4 @@
+# Value of a statistical life (VSL) {#sec-value-of-a-statistical-life}
+
+{{< include _under_work.qmd >}}
+

@@ -1,3 +1,7 @@
+
+/.quarto/
+/_book/
+
 standard_inputs.rds
 _bookdown_files
 
@@ -118,9 +122,6 @@ $RECYCLE.BIN/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-
-#######---- other ----########
-_book
 
 ######----- LaTeX ----#######
 ## Core latex/pdflatex auxiliary files:
@@ -407,5 +408,4 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
-
 

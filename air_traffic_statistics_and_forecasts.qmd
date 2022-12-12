@@ -1,0 +1,63 @@
+# Air traffic statistics and forecasts {#sec-air-traffic-statistics-and-forecasts}
+
+## EUROCONTROL recommended value
+
+The Statistics and Forecasts (STATFOR) service produces flights and service units forecasts of future network traffic with a view to help planners understand and manage risks, identify bottlenecks and anticipate the needs of airspace users.
+
+### Medium-term forecasts (7-year timespan)
+
+The 7-year forecasts give a comprehensive picture of anticipated air traffic development in Europe for the next seven years.
+They combine flight statistics with economic growth and models of
+other industry drivers, including costs, airport capacity,
+passenger numbers, load factors and aircraft size.
+Using high and low growth scenarios, they present a likely range
+for growth, to help planners manage risks.
+They are published biannually, in spring and autumn, covering flights,
+en route and terminal service units.
+  
+![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @statfor:7year_forecast:2022-2028](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
+
+The above graph shows the traffic forecast taking account of the impact of the COVID-19 pandemic. In the base scenario, IFR flights are expected to get back to 2019 levels by 2025.
+
+Traffic statistics and forecasts can be obtained directly from the 
+STATFOR Interactive Dashboard (SID)[@ectrl:statfor:sid].
+
+### Long-term forecasts (20 to 30-year timespan)
+
+Twenty/thirty-year forecasts: These forecasts look at a range of distinct possible scenarios for how the air traffic industry might look in 20-30 years’ time. This allows a range of _what if?_ questions to be explored, for factors inside the industry (e.g. the growth of small business jets, or of point-to-point traffic) or outside the industry (e.g. the price of oil or environmental constraints). Twenty/thirty-year forecasts are usually published every two to three years.
+In April 2022, EUROCONTROL published its first EUROCONTROL Aviation Outlook (EAO) looking out to 2050, much further than previous forecasts. This forecast estimates a future number of flights and CO2 emissions per scenario, in line with aviation’s objective of achieving net-zero CO2 emissions by that date. 
+
+![Flight forecast for Europe, with total growth between 2019 and 2050](figures/eao_2050_flights_base_scenario.png){#fig-Forecast-2050-plot}
+
+In the most-likely Base scenario, the forecast is for 16 million flights in Europe in 2050, 44% more than in 2019 – average growth of 1.2% per year.
+
+
+![Estimated CO2 emissions between 2005 and 2050 [@aviation:outlook2022]](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
+
+The graph in @fig-co2-emissions-plot estimates that by 2050, CO2 emissions, net of SAF, fleet and operational improvements, are reduced by about 41% compared to 2005 in the Base scenario.
+
+### Service units forecasts
+
+Service Units are billed to airlines for the provision of air-traffic services. They are of two types:
+
+* En-route service units (TSU) that are taxed for the provision of en-route air traffic control and are a function of the weight and the distance flown within each state over which the concerned aircraft flies.
+
+* Terminal Navigation Service Units (TNSU) are taxed for the provision of ground services to the airlines for each departure at a given airport. They are a function of the weight of the considered aircraft.
+
+EUROCONTROL produces a 7-year forecast of Service Units that builds on the 7-year IFR movements forecast, to which forecasts of the aircraft weights and distances are added. This Service Units forecast is provided as a service to states that are part of the Central Route Charges Office (CRCO) to help them set-up their en-route units rates, if needed. The Forecast of Service Units in general serves also as a benchmark for the European Commission to assess the financial aspects of the performance plans of the states that are bound by the performance and Charging Scheme according to EU regulations (EU) N°390/201, N°391/2013.
+
+![En-route Service Units 7-year Forecast 2022-2028 [@statfor:7year_forecast:2022-2028]](figures/forecast_service_units.png){#fig-forecast-service-units-plot}
+
+The above graph (status: October 2022) shows the en-route service units forecast taking account of the impact of the COVID-19 pandemic.
+
+## When to use the inputs?
+
+The objective of STATFOR is to provide statistics and forecasts on IFR flight movements and service units in Europe (ECAC) and to monitor and analyse the evolution of the air transport industry.
+
+## Related inputs
+
+* @sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning)
+* @sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
+* @sec-cost-of-delay [Cost of delay](#sec-cost-of-delay)
+
+## References

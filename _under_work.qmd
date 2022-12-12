@@ -1,0 +1,6 @@
+This chapter is being updated.
+
+For the latest officially published version, please refer to
+[EUROCONTROL Standard Inputs for Economic Analyses - Edition 9][std_ins]
+
+[std_ins]: <https://www.eurocontrol.int/sites/default/files/2021-03/eurocontrol-standard-inputs-economic-analysis-ed-9.pdf> "Standard Inputs version 9"

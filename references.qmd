@@ -1,0 +1,16 @@
+---
+nocite: |
+  @*
+---
+`r if (knitr:::is_html_output()) '
+# References {-}
+<div id="refs"></div>
+
+'`
+
+`r if (knitr:::is_latex_output()) '
+# References
+
+<div id="refs"></div>
+
+'`
