@@ -17,15 +17,15 @@ cover-image: cover.png
 format:
   html:
     css:
-      - style.css
-    # theme:
-    #   - cosmo
+      - media/style.css
+    theme:
+      - default
     #   - custom.scss
     code-link: true
-    cover-image: cover.png
+    cover-image: media/cover.png
     link-external-newwindow: true
     link-external-icon: true
-    link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*ace-handbook\.netlify\.app\/'
+    link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*standard-inputs\.netlify\.app\/'
     include-in-header:
       - media/fontawesome.html
       # UNCOMMENT for activating GA
@@ -40,11 +40,11 @@ format:
     links-as-notes: true
 
 book:
-  title: "Standard Inputs for EUROCONTROL Cost-Benefit Analyses"
+  title: "EUROCONTROL Standard Inputs for Economic Analyses"
   author:
-    - "EUROCONTROL Business Cases Team"
+    - "EUROCONTROL Business Cases team"
   date: "2022-12-25"
-  description: "This document provides values for commonly used data items in cost-benefit analyses, together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
+  description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search: true
   repo-url: https://github.com/euctrl-pru/standard_inputs
   downloads: [pdf]
@@ -65,8 +65,7 @@ book:
         - "medium-term_capacity_planning.qmd"
         - "number_of_ifr_flights.qmd"
         - "air_traffic_delay.qmd"
-        - "flow_management_delay.qmd"
-        - "transit_time.qmd"
+        # - "transit_time.qmd"
     
     - part: "Environment"
       chapters:
@@ -75,11 +74,12 @@ book:
         - "cost_of_emissions.qmd"
         - "cost_of_noise.qmd"
         - "shadow_cost_of_carbon.qmd"
+        - "proportion_of_saf.qmd"
     
     - part: "Airspace Users"
       chapters:
         - "aircraft_operating_costs.qmd"
-        - "average_number_of_passengers_per_movement.qmd"  
+        - "average_number_of_passengers.qmd"  
         - "cancellation_cost.qmd"
         - "operational_cancellation_rate.qmd"
         - "cost_of_delay.qmd"
@@ -137,9 +137,9 @@ book:
       chapters:
         - "abbreviations.qmd"
     
-    - "references.qmd"
-    - "annexes.qmd"
-    - "data.qmd"
+    # - "references.qmd"
+    # - "annexes.qmd"
+    # - "data.qmd"
 
   navbar:
     background: light

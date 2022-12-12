@@ -1,3 +1,3 @@
-# Fleet size
+# Fleet size {#sec-fleet-size}
 
 {{< include _under_work.qmd >}}
