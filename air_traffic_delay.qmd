@@ -19,7 +19,7 @@ The sections below present the evolution in reported delays taking two perspecti
 @fig-all-causes-delay presents an **overview of all causes of delay reported by the airlines** in 2020 and 2021. 
 The figures presented are estimated by the EUROCONTROL 
 [Central Office of Delay Analysis (CODA)](https://www.eurocontrol.int/network-performance), and
-are calculated based on the comparison of the scheduled and actual flight timings.
+are calculated based on the comparison of the scheduled and actual flight timings [@coda2021].
 They can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.
 
 ![Breakdown of the network average delay per flight on departure: 2021 vs 2020 [@coda2021]](figures/delay_causes.png){#fig-all-causes-delay}
@@ -37,7 +37,7 @@ Looking specifically into **ATFM delay**, @fig-atfm-delay shows the
 daily traffic and traffic flow delay per flight (en-route and at
 airport) for the period 2012-2021. The figures presented are calculated by the
 Network Manager based on the flight plans and include the planned ATFM
-delays due to the restrictions that may be applied in the airspace.
+delays due to the restrictions that may be applied in the airspace [@nm2022].
 
 ![Average daily traffic and ATFM delay per flight 2012-2022 [@nm2022]](figures/atfm_delay.png){#fig-atfm-delay}
 
