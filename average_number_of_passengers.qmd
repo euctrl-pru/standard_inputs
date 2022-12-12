@@ -2,7 +2,7 @@
 
 ## EUROCONTROL recommended values
 
-@fig-number-of-passengers presents an overview of the total and average number of passengers per flight in ECAC.
+@fig-number-of-passengers presents an overview of the total and average number of passengers per flight in ECAC [@ectrl:statfor:sid].
 
 
 ![Number of passengers per flight in ECAC 2012-2021 [@ectrl:statfor:sid]](figures/number_passengers.png){#fig-number-of-passengers}
