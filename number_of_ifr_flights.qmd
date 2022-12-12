@@ -153,16 +153,15 @@ read_xlsx("data/flights_per_aircraft_type.xlsx") %>%
 ```
 
 In 2021 there were 301 different civil aircraft types operating IFR
-flights in Europe. 70% of the flights were carried out by the 20
-aircraft types listed in @tbl-flights-per-aircraft-type.
+flights in Europe. About 70% of the flights were carried out by the 20
+aircraft types listed in @tbl-flights-per-aircraft-type. Please note that the values presented in @tbl-flights-per-aircraft-type focuses on the civil aviation flights (i.e. excluding the military and other categories), resulting in a difference in the total flights as compared with @tbl-flights-per-market-segment and @tbl-ifr-flights-month.
 
 ### Daily average of IFR flights, 2016 to 2021
 
-@fig-average-daily-ifr-flights-plot shows the daily average number of IFR flights EU-wide
+@fig-average-daily-ifr-flights-plot shows the daily average number of IFR flights **EU-wide**
 between 2016 and 2021.
 
 ![Daily average numbers of IFR flights @prb:dashboard:2022](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
-
 
 ## When to use the input?
 

@@ -22,7 +22,7 @@ The figures presented are estimated by the EUROCONTROL
 are calculated based on the comparison of the scheduled and actual flight timings.
 They can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.
 
-![Breakdown of the network average delay per flight on departure: 2021 vs 2020 [@coda2021]](figures/delay_causes.png){#fig-all-causes-delay}
+![Breakdown of the network average delay per flight on departure: 2021 vs 2020 @coda2021](figures/delay_causes.png){#fig-all-causes-delay}
 
 
 The ATFM delay constitutes only a fraction of primary delay
@@ -39,7 +39,7 @@ airport) for the period 2012-2021. The figures presented are calculated by the
 Network Manager based on the flight plans and include the planned ATFM
 delays due to the restrictions that may be applied in the airspace.
 
-![Average daily traffic and ATFM delay per flight 2012-2022 [@nm2022]](figures/atfm_delay.png){#fig-atfm-delay}
+![Average daily traffic and ATFM delay per flight 2012-2022 @nm2022](figures/atfm_delay.png){#fig-atfm-delay}
 
 
 ## When to use the input?

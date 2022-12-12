@@ -8,7 +8,6 @@ The input is an adjustment of the EIB recommended values to reflect the most rea
 
 ![Forecast shadow cost of carbon for EU27 in 2021 prices](figures/cost_of_carbon.png){#fig-cost-of-carbon}
 
-
 ## When to use the input?
 
 This input is recommended for projects where the full socio-economic value of the initiative is studied, particularly involving the environmental assessment.
