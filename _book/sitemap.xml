@@ -1,223 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eurocontrol.int/shadow_cost_of_carbon.html</loc>
-    <lastmod>2022-11-29T16:18:55.312Z</lastmod>
+    <loc>https://eurocontrol.int/index.html</loc>
+    <lastmod>2022-12-12T09:49:43.453Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/foreword.html</loc>
-    <lastmod>2022-11-29T14:49:19.785Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.456Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/introduction.html</loc>
-    <lastmod>2022-11-29T14:49:19.790Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.458Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/conversions.html</loc>
-    <lastmod>2022-11-29T14:49:19.795Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.461Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/geographical_areas.html</loc>
-    <lastmod>2022-11-29T14:49:19.799Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.463Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/air_traffic_statistics_and_forecasts.html</loc>
-    <lastmod>2022-11-29T14:49:19.804Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.465Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/medium-term_capacity_planning.html</loc>
-    <lastmod>2022-11-29T14:49:19.807Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.467Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/number_of_ifr_flights.html</loc>
-    <lastmod>2022-11-29T14:49:19.810Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.473Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/air_traffic_delay.html</loc>
-    <lastmod>2022-11-29T14:49:19.813Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.477Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/flow_management_delay.html</loc>
-    <lastmod>2022-11-29T14:49:19.815Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.480Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/transit_time.html</loc>
-    <lastmod>2022-11-29T14:49:19.817Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.482Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/rate_of_fuel_burn.html</loc>
-    <lastmod>2022-11-29T14:49:19.820Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.484Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/amount_of_emissions_released_by_fuel_burn.html</loc>
-    <lastmod>2022-11-29T14:49:19.822Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.488Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cost_of_emissions.html</loc>
-    <lastmod>2022-11-29T14:49:19.824Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.492Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cost_of_noise.html</loc>
-    <lastmod>2022-11-29T14:49:19.826Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eurocontrol.int/shadow_cost_of_carbon.html</loc>
+    <lastmod>2022-12-12T09:49:43.500Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/aircraft_operating_costs.html</loc>
-    <lastmod>2022-11-29T14:49:19.828Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.503Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/average_number_of_passengers_per_movement.html</loc>
-    <lastmod>2022-11-29T14:49:19.831Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.507Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cancellation_cost.html</loc>
-    <lastmod>2022-11-29T14:49:19.834Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.511Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/operational_cancellation_rate.html</loc>
-    <lastmod>2022-11-29T14:49:19.837Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.515Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cost_of_delay.html</loc>
-    <lastmod>2022-11-29T14:49:19.841Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.518Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cost_of_diversion.html</loc>
-    <lastmod>2022-11-29T14:49:19.843Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.521Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/turnaround_time.html</loc>
-    <lastmod>2022-11-29T14:49:19.846Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.524Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/ifr_average_flight_distance_and_flight_duration.html</loc>
-    <lastmod>2022-11-29T14:49:19.848Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.528Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/ifr_flight_information_per_market_segment.html</loc>
-    <lastmod>2022-11-29T14:49:19.851Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.530Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/distance_flown_by_charging_zone.html</loc>
-    <lastmod>2022-11-29T14:49:19.853Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.533Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/load_factor-cargo.html</loc>
-    <lastmod>2022-11-29T14:49:19.856Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.538Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/load_factor-passengers.html</loc>
-    <lastmod>2022-11-29T14:49:19.860Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.541Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cost_of_aviation_fuel.html</loc>
-    <lastmod>2022-11-29T14:49:19.863Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.544Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/value_of_an_average_passenger_flight.html</loc>
-    <lastmod>2022-11-29T14:49:19.865Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.546Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/fleet_age.html</loc>
-    <lastmod>2022-11-29T14:49:19.867Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.549Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/fleet_size.html</loc>
-    <lastmod>2022-11-29T14:49:19.871Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.552Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/fleet_cns_capability.html</loc>
-    <lastmod>2022-11-29T14:49:19.873Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.556Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/en_route_ans_costs.html</loc>
-    <lastmod>2022-11-29T14:49:19.876Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.558Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/route_charge_share_per_market_segment.html</loc>
-    <lastmod>2022-11-29T14:49:19.878Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.560Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/ansps_employment_costs.html</loc>
-    <lastmod>2022-11-29T14:49:19.882Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.564Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/asset_life.html</loc>
-    <lastmod>2022-11-29T14:49:19.885Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.566Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/atm_cost-effectiveness_indicators.html</loc>
-    <lastmod>2022-11-29T14:49:19.889Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.568Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/atm_operational_units.html</loc>
-    <lastmod>2022-11-29T14:49:19.894Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.572Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/cns_infrastructure.html</loc>
-    <lastmod>2022-11-29T14:49:19.896Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.575Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/pbn_and_precision_approach_procedures.html</loc>
-    <lastmod>2022-11-29T14:49:19.898Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.577Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/airport_classification.html</loc>
-    <lastmod>2022-11-29T14:49:19.901Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.581Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/taxiing_times.html</loc>
-    <lastmod>2022-11-29T14:49:19.903Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.584Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/investment_in_u-space.html</loc>
-    <lastmod>2022-11-29T14:49:19.905Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.588Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/drone_fleet.html</loc>
-    <lastmod>2022-11-29T14:49:19.907Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.591Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/purpose_of_passenger_travel.html</loc>
-    <lastmod>2022-11-29T14:49:19.909Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.596Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/passenger_value_of_time.html</loc>
-    <lastmod>2022-11-29T14:49:19.911Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.600Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/accident-incident_statistics.html</loc>
-    <lastmod>2022-11-29T14:49:19.914Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.604Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/value_of_a_statistical_life-vsl.html</loc>
-    <lastmod>2022-11-29T14:49:19.917Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.609Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/value_of_a_statistical_injury.html</loc>
-    <lastmod>2022-11-29T14:49:19.919Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.613Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/discount_rate.html</loc>
-    <lastmod>2022-11-29T14:49:19.921Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.617Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/exchange_rate.html</loc>
-    <lastmod>2022-11-29T14:49:19.923Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.621Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/abbreviations.html</loc>
-    <lastmod>2022-11-29T14:49:19.925Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.625Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/references.html</loc>
-    <lastmod>2022-11-29T14:49:19.927Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.630Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/annexes.html</loc>
-    <lastmod>2022-11-29T14:49:19.929Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.634Z</lastmod>
   </url>
   <url>
     <loc>https://eurocontrol.int/data.html</loc>
-    <lastmod>2022-11-29T14:49:19.932Z</lastmod>
+    <lastmod>2022-12-12T09:49:43.637Z</lastmod>
   </url>
 </urlset>
