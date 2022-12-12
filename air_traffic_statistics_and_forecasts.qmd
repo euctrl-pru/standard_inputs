@@ -15,7 +15,11 @@ for growth, to help planners manage risks.
 They are published biannually, in spring and autumn, covering flights,
 en route and terminal service units.
   
+<<<<<<< HEAD
 ![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @ectrl:statfor:sid](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
+=======
+![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) [@statfor:7year_forecast:2022-2028]](figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
+>>>>>>> 1519a0d340ac7d5ff9338cdbc12bc7480c88f0c5
 
 The above graph shows the traffic forecast taking account of the impact of the COVID-19 pandemic. In the base scenario, IFR flights are expected to get back to 2019 levels by 2025.
 
@@ -31,9 +35,14 @@ In April 2022, EUROCONTROL published its first EUROCONTROL Aviation Outlook (EAO
 
 In the most-likely Base scenario, the forecast is for 16 million flights in Europe in 2050, 44% more than in 2019 – average growth of 1.2% per year.
 
+<<<<<<< HEAD
 ![Estimated CO2 emissions between 2005 and 2050 @aviation:outlook2022](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
+=======
+![Estimated CO2 emissions between 2005 and 2050 [@aviation:outlook2022]](figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
 
-The above graph estimates that by 2050, CO2 emissions, net of SAF, fleet and operational improvements, are reduced by about 41% compared to 2005 in the Base scenario.
+>>>>>>> 1519a0d340ac7d5ff9338cdbc12bc7480c88f0c5
+
+The graph in @fig-co2-emissions-plot estimates that by 2050, CO2 emissions, net of SAF, fleet and operational improvements, are reduced by about 41% compared to 2005 in the Base scenario.
 
 ### Service units forecasts
 
@@ -45,7 +54,7 @@ Service Units are billed to airlines for the provision of air-traffic services. 
 
 EUROCONTROL produces a 7-year forecast of Service Units that builds on the 7-year IFR movements forecast, to which forecasts of the aircraft weights and distances are added. This Service Units forecast is provided as a service to states that are part of the Central Route Charges Office (CRCO) to help them set-up their en-route units rates, if needed. The Forecast of Service Units in general serves also as a benchmark for the European Commission to assess the financial aspects of the performance plans of the states that are bound by the performance and Charging Scheme according to EU regulations (EU) N°390/201, N°391/2013.
 
-![En-route Service Units 7-year Forecast 2022-2028](figures/forecast_service_units.png){#fig-forecast-service-units-plot}
+![En-route Service Units 7-year Forecast 2022-2028 [@statfor:7year_forecast:2022-2028]](figures/forecast_service_units.png){#fig-forecast-service-units-plot}
 
 The above graph (status: October 2022) shows the en-route service units forecast taking account of the impact of the COVID-19 pandemic.
 

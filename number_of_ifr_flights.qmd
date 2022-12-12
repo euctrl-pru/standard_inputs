@@ -11,7 +11,7 @@ editor_options:
 This section presents the evolution of flight movements in Europe (ECAC
 area) by flight flow, market segment and aircraft type.
 
-### Evolution of flights per flow (Departure, Arrival, Internal, Overflight) in 2021 compared to 2019
+### Evolution of flights per flow in 2021 compared to 2019
 
 ```{r}
 #| label: tbl-ifr-flights-month
@@ -51,7 +51,7 @@ read_xlsx("data/ifr_flights.xlsx") %>%
     decimals = 0
   ) %>%
   tab_source_note(
-    source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   ) %>%
   cols_align(
     align = "left",
@@ -95,7 +95,7 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
     decimals = 0
   ) %>%
   tab_source_note(
-    source_note = md("*Source: [EUROCONTROL STATFOR](https://www.eurocontrol.int/forecasting) and [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   ) %>%
   cols_align(
     align = "left",

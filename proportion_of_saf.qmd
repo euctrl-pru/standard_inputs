@@ -4,7 +4,7 @@
 
 This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and 2050. The evolution is estimated according to three scenarios:
 
-* **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with [ReFuelEU Aviation](https://www.easa.europa.eu/en/light/topics/fit-55-and-refueleu-aviation) obligations.
+* **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with _ReFuelEU Aviation_ [@easa:Fit55ReFuelEU] obligations .
 
 * **High scenario**, assumed that the high availability of SAF will foster the quicker adoption of these fuels than outlined in the current regulatory requirements.
 
