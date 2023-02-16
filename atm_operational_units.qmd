@@ -1,3 +1,43 @@
 # ATM operational units {#sec-atm-operational-units}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+This value represents the number of ATC units (air traffic centers) providing ATC services across Europe for the purpose of preventing collisions between aircraft and on the maneuvering area between aircraft and obstructions, and expediting and maintaining an orderly flow of air traffic.
+
+```{r}
+#| label: tbl-atm-op-units
+#| tbl-cap: Number of ATM operational units in Europe
+
+read_xlsx("data/atm_operational_units.xlsx")%>% 
+  gt() %>% 
+  cols_label(
+    year = "Year",
+    ansp = "ANSPs",
+    acc = "Area Control Centres (ACC)",
+    app = "Approach units (APP)",
+    twr = "Towers (TWR)",
+    afis = "Airport/Aerodrome Flight Information Service (AFIS) units",
+    atc = "Air Traffic Control (ATC) sectors"
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) %>% 
+  cols_align(
+    align = "center",
+    columns = c(ansp:atc)
+  )
+```
+## Description
+
+Please note that the analysis presented in ACE Benchmarking reports, based on which this input was elaborated, excludes elements related to services provided to military operational air traffic (OAT), oceanic ANS, and landside airport management operations. It presents a review and comparison of ATM cost effectiveness for the 38 air navigation service providers (ANSPs) in Europe, which provide coverage for EUROCONTROL 41 Member States and 2 Comprehensive Agreement States.
+
+## When to use this input?
+
+The values presented above can be used in analyses where the level of granularity of information per type of provider or per provider is important. This is typically interesting for studies looking into costs or benefits per ANSP/ACC/Tower/other.
+
+
