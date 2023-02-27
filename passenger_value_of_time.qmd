@@ -1,3 +1,121 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
 # Passenger value of time {#sec-passenger-value-of-time}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+This input provides an estimation of the average value of passenger time
+spent travelling, which might alternatively be spent on other activities
+(e.g. working or leisure). It is essentially the **opportunity cost which corresponds to the monetary value associated with a passenger during a journey.** It shows how much a passenger would be willing to pay in order
+to save time during a journey (e.g. by travelling on a quicker service
+or using a faster transport mode), or how much 'compensation' they would
+accept, directly or indirectly, for lost time lost.
+
+In [@tbl-pas-value-of-time] is presented a collection of the different values that can be used
+for this purpose. It is to be noted that, in this section, the value of
+time is not cited as a function of delay duration. This is an important
+consideration when using the value. In this case, the longer the delay
+duration, the higher the value.
+
+```{r}
+#| label: tbl-pas-value-of-time
+#| tbl-cap: Estimated value of travel time
+
+read_xlsx("data/passenger_time_value.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    purpose = "Travel purpose",
+    value = "Time value (€/hour)"
+  ) %>% 
+  fmt_currency(
+   columns = c(value),
+   currency = "EUR"
+  ) %>% 
+  tab_row_group(
+    group = "EU25 average",
+    rows = 1:2
+  ) %>% 
+  tab_row_group(
+    group = "France",
+    rows = 3:6
+  ) %>% 
+  tab_row_group(
+    group = "United Kingdom",
+    rows = 7:9
+  ) %>% 
+  cols_align(
+    align = c("center"),
+    columns = "value"
+  ) %>% 
+  tab_options(
+    row_group.background.color = "snow1",
+    row_group.font.weight = "bold"
+  )
+  
+```
+*Sources: United Kingdom[@aptcom2014]; France[@frminecotra2019]; EU25 average[@heatco2006]*
+
+Please note that the **values above are adjusted to 2022 prices based on inflation**, as follows:
+
+* For United Kingdom: adjusted from 2014 prices
+
+* For France: adjusted from 2015 prices
+
+* For EU25 average: adjusted from 2002 prices
+
+## When to use the input?
+
+This input is expected to become useful in any study that looks at the 
+opportunity cost of the use of air transport, delays, cancellations, etc. 
+It provides a perspective on the impact that a change in the air transport
+can have on the passenger.
+
+## Comments
+
+When looking into the values in the table, a few points regarding the sources 
+should be taken into consideration:
+
+* The source used for the UK values sets out a methodology for analysis which 
+has been undertaken to estimate benefits from reduced delay time to airlines 
+and passengers from changes in aviation capacity constraints in the UK for 11 
+airports. 
+
+* The values for France rely on a working paper on recommended values for
+calculating the components of a socio-economic net present value, which include 
+travel time. The assessment therefore covers social, environmental and economic 
+effects.
+
+* Regarding the numbers for EU25, they remain a reference if a European value is
+sought. The objective of the study from which they were derived is to propose 
+harmonised guidelines for project assessment for transnational projects in
+Europe. It provides monetary estimates for the values of time saved for 
+employer’s business and for passenger non-work trips (e.g. commuting, shopping
+and leisure).
+
+## Other values to consider
+
+Some additional values are available to EUROCONTROL, which, although not 
+constituting the perceived key inputs, may be useful for specific purposes of 
+the user of these inputs. These values are presented below.
+
+***Value of time of a business aviation passenger***
+
+**€153 per hour.** This value was provided to EUROCONTROL by airline members of 
+the SESAR CBA team in 2012. This value is, therefore adjusted form 2011 prices. 
+Rationale: given that typical business jet passengers are high level
+executives/CEOs, the passenger cost for lost time adapted from Eurostat was 
+estimated as being three times the value of a regular flyer.
+
+[@itf:2019] [@passtimevalue2015] [@leedsuniversity2016] [@leedsuniversity2012]
+
+## References
