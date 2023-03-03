@@ -18,25 +18,48 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
   gt() %>% 
   cols_label(
     year = "Year",
-    ansp = "ANSPs",
-    acc = "Area Control Centres (ACC)",
-    app = "Approach units (APP)",
-    twr = "Towers (TWR)",
-    afis = "Airport/Aerodrome Flight Information Service (AFIS) units",
-    atc = "Air Traffic Control (ATC) sectors"
+    ansp = "ANSP",
+    acc = "ACC",
+    app = "APP",
+    twr = "TWR",
+    afis = "AFIS units",
+    atc = "ATC sectors"
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) %>% 
   cols_align(
     align = "center",
     columns = c(ansp:atc)
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold"),
+      cell_fill(color = "#FFFAFA")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
   )
-```
+    ```
 
-## Description
+**Legend:**
 
-Please note that the analysis presented in ACE Benchmarking reports, based on which this input was elaborated, excludes elements related to services provided to military operational air traffic (OAT), oceanic ANS, and landside airport management operations. It presents a review and comparison of ATM cost effectiveness for the 38 air navigation service providers (ANSPs) in Europe, which provide coverage for EUROCONTROL 41 Member States and 2 Comprehensive Agreement States.
+* **ANSP** - Air Navigation Service Provider
+
+* **ACC** - Area Control Centre
+
+* **APP** - Approach Units
+
+* **TWR** - Tower
+
+* **AFIS** - Airport/Aerodrome Flight Information Service
+
+* **ATC** - Air Traffic Control
 
 ## When to use this input?
 
 The values presented above can be used in analyses where the level of granularity of information per type of provider or per provider is important. This is typically interesting for studies looking into costs or benefits per ANSP/ACC/Tower/other.
+
+## Comment
+
+Please note that the analysis presented in ACE Benchmarking reports, based on which this input was elaborated, excludes elements related to services provided to military operational air traffic (OAT), oceanic ANS, and landside airport management operations. It presents a review and comparison of ATM cost effectiveness for the 38 air navigation service providers (ANSPs) in Europe, which provide coverage for EUROCONTROL 41 Member States and 2 Comprehensive Agreement States.

@@ -1,3 +1,46 @@
 # Value of an average passenger flight {#sec-value-of-an-average-passenger-flight}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+This value represents the monetised benefits of an average passenger flight in
+the EU27. The values were adjusted to 2022 price levels based on inflation.
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+
+#| label: tbl-value-of-passenger-flight
+#| tbl-cap: Value of an average passenger flight
+
+read_xlsx("data/value_of_passenger_flight.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    name = " ",
+    international = "International flight",
+    domestic = "Domestic flight"
+  ) %>% 
+  fmt_currency(
+    columns = c("international","domestic"),
+    currency = "euro",
+    decimals = 0
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [IATA (2013). Economic Briefing - The value of an average passenger flight in the EU27](https://www.iata.org/en/iata-repository/publications/economic-reports/value-of-an-average-passenger-flight-in-eu-27/)*")
+  )
+```
+
+**Consumer benefits** are the benefits for passengers, calculated based on the difference between the consumer’s willingness to pay (or the gross consumer benefit) and the price paid.
+
+**Producer benefits** are assessed from the investors’ perspective, relying on profitability measures such as return on invested capital (ROIC). ROIC is calculated before payments of debt interest and shows the earnings available to pay both debt and equity investors. Furthermore, the calculation excludes fuel and labour related benefits. The estimated profits of the fuel supply chain round € 11-35 billion per year globally. The vast majority of these profits are allocated with the crude oil suppliers.
+
+**Wider economic benefits** represent those that go beyond the direct impact on the users, such as any spillover effects from in increased competition and more efficient movement of capital and labour. 
+
+One of the largest economic benefits of increased connectivity comes from its impact on the long term productivity of the wider economy. There are several approaches which may be used to quantify this benefit. One conservative approach which has been developed, on the basis of the statistical relationship between air connectivity and labour productivity, yields an estimate that a **10% rise in connectivity, relative to a country’s GDP, will boost labour productivity levels by 0.07%.**
+
+## When to use the input?
+
+The use of these values depends on the scope and the viewpoint of the analysis. For example, an assessment from the point of view of airlines will focus on the benefits that an additional flight brings to airlines, whereas an analysis from the perspective of a government or the European Commission should also include an assessment of benefits for consumers and the wider economy.
+
+Note also that these values reflect the market conditions and the passenger demand at the time of the study. For example, changes in passengers’ income, changes in their preferences for air transport or changes in airlines’ market structure can affect these values.
+

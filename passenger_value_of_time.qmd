@@ -116,6 +116,6 @@ Rationale: given that typical business jet passengers are high level
 executives/CEOs, the passenger cost for lost time adapted from Eurostat was 
 estimated as being three times the value of a regular flyer.
 
-[@itf:2019] [@passtimevalue2015] [@leedsuniversity2016] [@leedsuniversity2012]
-
 ## References
+
+[@itf:2019] [@passtimevalue2015] [@leedsuniversity2016] [@leedsuniversity2012]

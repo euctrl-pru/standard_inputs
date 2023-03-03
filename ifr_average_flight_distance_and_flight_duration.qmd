@@ -6,7 +6,6 @@ library(dplyr)
 library(gt)
 ```
 
-
 ## EUROCONTROL recommended values
 
 The table below presents an overview of the average flight distance in ECAC region,
@@ -40,9 +39,12 @@ read_xlsx("data/flight_distance_duration.xlsx") %>%
     decimals = 0
   )
 ```
-## Description
 
-TBC
+With regard to flight distance, @fig-traffic-demand-distribution illustrates that nearly 90% of
+IFR flight distances for flights arriving or departing within the Network Manager 
+area (excl. overflights) are less than 1,000NM long.
+
+![Distribution of traffic demand per distance band in 2022 within the EUROCONTROL Network Manager area](figures/traffic_demand_distribution.svg){#fig-traffic-demand-distribution}
 
 ## Related inputs
 
