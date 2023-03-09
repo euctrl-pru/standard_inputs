@@ -60,18 +60,16 @@ read_xlsx("data/passenger_time_value.xlsx") %>%
   tab_options(
     row_group.background.color = "snow1",
     row_group.font.weight = "bold"
-  )
+  ) %>%
+tab_footnote(
+  footnote = "Please note that the values above are adjusted to 2022 prices based on inflation as follows: for United Kingdom adjusted from 2014 prices; for France adjusted from 2015 prices; for EU25 average adjusted from 2002 prices",
+locations = cells_column_labels(
+  columns = value
+)
+)
   
 ```
 *Sources: United Kingdom[@aptcom2014]; France[@frminecotra2019]; EU25 average[@heatco2006]*
-
-Please note that the **values above are adjusted to 2022 prices based on inflation**, as follows:
-
-* For United Kingdom: adjusted from 2014 prices
-
-* For France: adjusted from 2015 prices
-
-* For EU25 average: adjusted from 2002 prices
 
 ## When to use the input?
 

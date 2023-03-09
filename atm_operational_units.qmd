@@ -39,22 +39,44 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
     locations = cells_body(
       columns = "year"
     )
+  ) %>% 
+  tab_footnote(
+    footnote = "ANSP - Air Navigation Service Provider",
+    locations = cells_column_labels(
+      column = ansp
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "ACC - Area Control Centre",
+    locations = cells_column_labels(
+      column = acc
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "APP - Approach Units",
+    locations = cells_column_labels(
+      column = app
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "TWR - Tower",
+    locations = cells_column_labels(
+      column = twr
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "AFIS - Airport/Aerodrome Flight Information Service",
+    locations = cells_column_labels(
+      column = afis
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "ATC - Air Traffic Control",
+    locations = cells_column_labels(
+      column = atc
+    )
   )
     ```
-
-**Legend:**
-
-* **ANSP** - Air Navigation Service Provider
-
-* **ACC** - Area Control Centre
-
-* **APP** - Approach Units
-
-* **TWR** - Tower
-
-* **AFIS** - Airport/Aerodrome Flight Information Service
-
-* **ATC** - Air Traffic Control
 
 ## When to use this input?
 

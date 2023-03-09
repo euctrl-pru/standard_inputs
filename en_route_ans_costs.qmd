@@ -1,3 +1,175 @@
 # En-route ANS costs {#sec-en-route-ans-costs}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+This input represents the costs of Air Navigation Services (ANS) in en-route 
+airspace that is under the control of States/ANSPs.
+
+[@tbl-ans-costs] shows the **real en-route ANS cost per TSU for EUROCONTROL area.** 
+The values refer to 2020 and are presented **in million euros**.
+
+```{r}
+#| label: tbl-ans-costs
+#| tbl-cap: En-route ANS costs
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx("data/er_ans_costs.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    type = " ",
+    y2015 = "2015",
+    y2016 = "2016",
+    y2017 = "2017",
+    y2018 = "2018",
+    y2019 = "2019",
+    y2020 = "2020"
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = y2015:y2020,
+    rows = 1:3,
+    decimals = 0
+  ) %>%  fmt_currency(
+    currency = "EUR",
+    columns = y2015:y2020,
+    rows = 7:9,
+    decimals = 0
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(
+        weight = "bold")
+      ),
+      locations = cells_body(
+        columns = type:y2020,
+        rows = 3
+      )
+      ) %>% 
+    tab_style(
+    style = list(
+      cell_text(
+        weight = "bold")
+      ),
+      locations = cells_body(
+        columns = type:y2020,
+        rows = 6
+      )
+      ) %>% 
+    tab_style(
+    style = list(
+      cell_text(
+        weight = "bold")
+      ),
+      locations = cells_body(
+        columns = type:y2020,
+        rows = 9
+      )
+      ) %>% 
+  tab_style(
+    style = list(
+      cell_fill(
+        color = "snow1")
+    ),
+    locations = cells_body(
+      columns = type:y2020,
+      rows = 3
+    )
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_fill(
+        color = "snow1")
+    ),
+    locations = cells_body(
+      columns = type:y2020,
+      rows = 6
+    )
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_fill(
+        color = "snow1")
+    ),
+    locations = cells_body(
+      columns = type:y2020,
+      rows = 9
+    )
+  ) %>% 
+  
+  tab_footnote(
+    footnote = "SES States refer  to  EU27  plus  Switzerland and Norway",
+    locations = cells_body(
+      columns = type,
+      rows = 1
+    )
+  ) %>% 
+ tab_footnote(
+    footnote = "The 10 States refer to those that are not bound by SES regulation, but which were part of the EUROCONTROL Multilateral Route Charges System in 2020 (i.e. Albania, Armenia, Bosnia‐Herzegovina, Georgia, Moldova, North Macedonia, Serbia, Montenegro, United Kingdom and Türkiye)",
+    locations = cells_body(
+      columns = type,
+      rows = 2
+    )
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL (2022), Perofrmance Review Report](https://www.eurocontrol.int/publication/performance-review-report-prr-202)*")
+  )
+```
+
+## Description
+
+ANS en-route costs per Service Unit (TSU)  in the above Value are measured on the
+basis of the total actual and determined en-route ANS costs (in real terms) 
+divided by the number of en-route Service Units. A Service Unit, used for the 
+calculation of route charges, multiplies the Aircraft Weight factor by the 
+Distance factor.
+
+:::{.callout-note}
+Please note the difference between [Total Service Units (TSU)](https://ansperformance.eu/acronym/su/) and [Terminal Service Units (TNSU)](https://ansperformance.eu/acronym/tnsu/).
+:::
+
+:::{.callout-note}
+The unit rate of charge is the charge in euros applied by a Charging Zone to a 
+flight operated by an aircraft of 50 metric tonnes (weight factor of 1.00) and 
+flying 100 kilometres (distance factor of 1.00) in the charge area of that State. 
+
+Further information on calculating unit rates can be found on [customer guide to charges website](https://www.eurocontrol.int/publication/customer-guide-route-charges)
+:::
+
+The en-route ANS determined costs for a reference period of five years are costs 
+pre determined by the SES States as referred to in Article 15(2)(a) of [Regulation
+(EC) No 550/2004](http://eur lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2004R0550:20091204:EN:PDF)  
+for providing air navigation services. These include amounts 
+for interests on debt, return on equity, depreciation of assets, as well as staff 
+costs and non staff operating costs for maintenance, operations, management and
+administration. These costs are determined on a national level and comprise the 
+costs of several entities (the National Supervisory Authority, Air Navigation 
+Service Provider(s), the MET service provider and the State’s contribution to EUROCONTROL budget).
+
+## Other sources
+
+Other source could be the EUROCONTROL Central Route Charges Office. At the time
+of writing this update of the EUROCONTROL Standard Inputs for Economic Analyses, 
+the most recent published version is the  [2021 Report on the Operation of the
+Route Charges System](https://www.eurocontrol.int/publication/report-operation-route-charges-system-2021).
+Please, check regularly the [CRCO full list of reports on the operation of the route charges system](https://www.eurocontrol.int/library/search?f%5B0%5D=activity%3A768&f%5B1%5D=topic%3A1159&f%5B2%5D=activity%3A768&f%5B3%5D=topic%3A1159) for the latest information.
+
+The CRCO calculates route charges using flight messages sent by the Contracting 
+States’ Route Charges Offices (CRCOs) and additional flight information made 
+available via the EUROCONTROL Network Management Directorate (NMD). The CRCO bills 
+aircraft operators on a monthly basis, collects charges and disburses the amounts 
+collected to the States every week. 
+
+## Comment
+
+Terminal ANS costs and ANSP gate to gate economic performance are described 
+separately in chapter 6 of the EUROCONTROL Performance Review Report [@ectrlprr2022].
+
+## Related inputs
+
+* @sec-distance-flown-by-charging-zone [Distance flown by charging zone](#sec-distance-flown-by-charging-zone)
+
+## References
+

@@ -1,3 +1,45 @@
 # Asset life {#sec-asset-life}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+The table below presents the accounting period, in years, for a given asset used
+to derive the amortisation of investment expenditure.
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+
+#| label: tbl-asset-life
+#| tbl-cap: Estimated asset life
+
+read_xlsx("data/asset_life.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    asset = "Asset type",
+    min = "Expected life (years)",
+    max = "Maximum expected life"
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = min:max
+  ) %>% 
+  cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
+  tab_source_note(
+    source = md("*Source: EUROCONTROL (2011), Principles for Establishing the Cost-Base for Route Charges and the Calculation of the Unit Rates*")
+  )
+```
+
+Asset life as used in cost-benefit analyses reflects the expected operating life 
+of the specific equipment concerned, which is also the basis for calculating 
+depreciation costs which are taken into account to determine route charges.
+
+The above data provide indicative parameters for classes of equipment for 
+economic analyses. The actual percentages to be applied in calculating the 
+depreciation of fixed assets must be determined in accordance with the expected
+operating life and the pertinent [International Financial Reporting Standards](https://www.ifrs.org/) 
+issued by the [International Accounting Standards Board](https://www.ifrs.org/groups/international-accounting-standards-board/).
+
+## References
+
+[@icao2013] [@ecdgregio2014] [@ecdgregiovademecum2022] 

@@ -6,12 +6,12 @@ This value represents the monetised benefits of an average passenger flight in
 the EU27. The values were adjusted to 2022 price levels based on inflation.
 
 ```{r}
+#| label: tbl-value-of-passenger-flight
+#| tbl-cap: Value of an average passenger flight
+
 library(readxl)
 library(dplyr)
 library(gt)
-
-#| label: tbl-value-of-passenger-flight
-#| tbl-cap: Value of an average passenger flight
 
 read_xlsx("data/value_of_passenger_flight.xlsx") %>% 
   gt() %>% 
@@ -22,7 +22,7 @@ read_xlsx("data/value_of_passenger_flight.xlsx") %>%
   ) %>% 
   fmt_currency(
     columns = c("international","domestic"),
-    currency = "euro",
+    currency = "EUR",
     decimals = 0
   ) %>% 
   tab_source_note(
