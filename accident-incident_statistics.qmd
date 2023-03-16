@@ -6,7 +6,7 @@ library(dplyr)
 library(gt)
 ```
 
-## EUROCONTROL recommended values
+## EUROCONTROL recommended values 
 
 On this page is presented an overview of the **main statistics on accidents and incidents occurring in the aviation domain**, 
 as well as the related fatalities 
