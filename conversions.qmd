@@ -67,11 +67,12 @@ read_csv("data/exchange_rate.csv", show_col_types = FALSE) %>%
   gt() %>%
   cols_label(
     currency  = "Currency",
-    to_eur    = "Currency-€"
+    to_eur    = "Currency-€",
+    from_eur  = "€-Currency"
   ) %>%
   cols_align(
     align = "center",
-    columns = c(to_eur)
+    columns = c(to_eur, from_eur)
   )
 ```
 

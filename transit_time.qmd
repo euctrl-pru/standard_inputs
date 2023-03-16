@@ -2,13 +2,12 @@
 
 ## EUROCONTROL Recommended Values
 
-The transit time reflects the **average flying time of an aircraft in the airspace of the ANSP over a year**.
+The transit time in an ANSP represents the **average time flown by aircraft controlled in this airspace over a year**. 
+@tbl-transit-time provides an overview of the average transit 
+time (expressed in minutes) per ANSP in 2019.
 
-@tbl-transit-time provides an overview of the average transit time (expressed 
-in minutes) per ANSP in 2019.
-
-The data used to build this table can be accessed on [AIU portal](https://ansperformance.eu/data/), 
-where data for more recent years cal also be found.
+The data that was used to build this table can be accessed on [AIU portal](https://ansperformance.eu/data/).
+You can find there data for more recent years.
 
 ```{r}
 #| label: tbl-transit-time
@@ -29,19 +28,10 @@ read_xlsx("data/transit_time.xlsx") %>%
     align = "center",
     columns = minutes
   ) %>% 
-  fmt_number(
-    columns = minutes,
-    decimals = 2
-  ) %>% 
-  tab_footnote(
-    footnote = "The Maastricht Upper Area Control Centre (MUAC) manages the upper airspace (from 24,500 to 66,000 feet) over Belgium, the Netherlands, Luxembourg and north-west Germany.",
-    locations = cells_body(
-      columns = ansp,
-      rows = 26
-    )
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL Aviation Intelligence Unit](https://ansperformance.eu/data/)*")
   )
 ```
-*Source: EUROCONTROL Aviation Intelligence Unit[@aiuportal]*
 
 ## Description
 
@@ -53,7 +43,7 @@ over the year by the ANSP. For a given flight the flight-hours controlled are
 computed using information available in the Network Manager database as the 
 difference between the exit time and the entry time in the controlled airspace
 
-* IFR movements controlled is the number of flights that have been controlled
+* •	IFR movements controlled is the number of flights that have been controlled
 over the year by the ANSP
 
 In @fig-transit-time, the range of transit time values for the vast majority of 
@@ -65,10 +55,8 @@ highest (DHMI Türkiye) and the lowest (M-NAV North Macedonia) transit time can
 also be observed – this represents a ratio of almost 6 or a Standard Deviation 
 of around 12.
 
-
-![Average transit time per country in 2019. *Source*: EUROCONTROL](figures/transit_time.svg){#fig-transit-time fig-alt="A drawing of transit times."}
-
-
+![**Average transit time per country in 2019**](figures/transit_time.svg){#fig-transit-time fig-align=center}
+*Source: EUROCONTROL*
 
 ## When to use the input?
 

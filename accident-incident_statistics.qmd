@@ -180,10 +180,8 @@ read_xlsx("data/accident_statistics.xlsx",
 This input is recommended to be used in the instances where the safety is an
 important factor, namely in terms of accident reduction.
 
+## References
+
 [@ectrl:incident:report] 
 
 [@iata:safety:report]
-
-
-## References
-

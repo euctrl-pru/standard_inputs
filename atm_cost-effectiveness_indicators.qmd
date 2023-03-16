@@ -2,10 +2,10 @@
 
 ## EUROCONTROL recommended values
 
-This section considers some key performance indicators of cost-effectiveness and
-productivity for the Air Navigation Services Providers (ANSPs) in the EUROCONTROL Area.
+This section considers some key performance indicators of cost-effectiveness and 
+productivity for the Air Navigation Services Providers (ANSP) in the EUROCONTROL area.
 
-The table below shows the trends in European system averages since 2015.
+The table below shows the trends in European system averages for the years 2015 through 2020.
 
 ```{r}
 #| label: tbl-atm-cost-effectiveness
@@ -27,10 +27,6 @@ cols_align(
   align = "center",
   columns = productivity:ratio
 ) %>% 
-  fmt_number(
-    decimals = 2,
-    columns = ratio
-  ) %>% 
   fmt_currency(
     currency = "EUR",
     columns = empl_cost,
@@ -53,13 +49,11 @@ cols_align(
     locations = cells_column_labels(
       column = ratio
     )
-  )
+  ) %>% 
+tab_source_note(
+  source_note = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+)
 ```
-*Source: EUROCONTROL PRU, “Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook,” 2022 [@ace2020]*
-
-:::{.callout-note}
-The pandemic reduced drastically the flight-hours in 2020, hence the change in the trend.
-:::
 
 ## Description
 
@@ -80,12 +74,12 @@ in each of the components:
 
 * ATCO productivity ranges from 0.08 to 1.29 (figure 2.8 of the source document)
 
-* Employment costs per ATCO-hour vary from a minimum of €43 to a maximum of €298 
-per ATCO-hour in purchasing power parity terms (Figure 2.11 of the source) 
+* Employment costs per ATCO-hour vary from a minimum of €16 to a maximum of €345 
+per ATCO-hour in purchasing power parity terms (figure 2.10 of the source document)
 
-* Support staff ratios   as a component driver of gate-to-gate cost-effectiveness
-vary from 1.9 to 7.9 in 2020 (ratio columns “Total staff”G2G ANS staff/”ATCOs 
-in OPS” in Annex 5; Table 0.5   of the source)
+* Support cost ratios as a component of gate-to-gate cost-effectiveness vary 
+from 1.9 to 7.9 in 2020 (ratio G2G ANS staff/ATCOs in OPS in Annex 5; Table 0.5 
+of the source document
 
 :::{.callout-note}
 The employment costs above refer to gate-to-gate cost, i.e. en route and terminal
