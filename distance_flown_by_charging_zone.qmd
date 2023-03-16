@@ -81,7 +81,7 @@ States for which the CRCO collects en route and terminal charges.
 recorded in the airspace of the Contracting States from 2014 to 2022 for the 
 calculation of route charges (great circle distance after deduction of 20 km for
 departing and arriving flights) as well as the average annual variation observed
-during the same period.
+during the same period. 
 
 Information on the various different charges levied by the CRCO, in particular 
 the charge calculation methods, the basic billing documents, the methods of payment
