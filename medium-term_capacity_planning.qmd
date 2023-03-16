@@ -1,6 +1,6 @@
 # Medium-term capacity planning {#sec-medium-term-capacity-planning}
 
-## EUROCONTROL recommended sources
+## EUROCONTROL recommended sources 
 
 In this document, capacity planning represents the systematic determination of
 resource requirements for the projected output over a specific period of time. 
