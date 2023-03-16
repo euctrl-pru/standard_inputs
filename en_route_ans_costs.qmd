@@ -144,7 +144,7 @@ for interests on debt, return on equity, depreciation of assets, as well as staf
 costs and non staff operating costs for maintenance, operations, management and
 administration. These costs are determined on a national level and comprise the 
 costs of several entities (the National Supervisory Authority, Air Navigation 
-Service Provider(s), the MET service provider and the State’s contribution to EUROCONTROL budget).
+Service Provider(s), the MET service provider and the State’s contribution to EUROCONTROL budget). 
 
 ## Other sources
 
