@@ -3,7 +3,7 @@
 This value presents the number of kilometers flown by charging zone.
 
 ```{r}
-#| label: tbl-distance-per-charging-zone
+#| label: tbl-distance-charging-zone
 #| tbl-cap: Distance flown per charging zone in million km
 
 library(readxl)
@@ -32,10 +32,40 @@ read_xlsx("data/distance_by_charging_zone.xlsx") %>%
   tab_options(
     table.font.size = "smaller"
   ) %>% 
-  tab_source_note(
-    source = md("*Source:EUROCONTROL Central Route Charges Office – Draft Internal data for 2022 and [Report on the Operation of the Route Charges System in 2021](https://www.eurocontrol.int/publication/report-operation-route-charges-system-2021)*")
-  )
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = zone:y2022,
+      rows = 39
+    )
+   ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = zone:y2022,
+      rows = 43
+    )
+   ) %>% 
+  tab_footnote(
+    footnote = "Estonia integrated as of April 2017",
+    locations = cells_body(
+      columns = zone,
+      rows = 40
+    )
+    ) %>% 
+  tab_footnote(
+    footnote = "Ukraine integrated as of November 2021",
+    locations = cells_body(
+      columns = zone,
+      rows = 41
+    )
+    ) 
 ```
+*Source:EUROCONTROL Central Route Charges Office – Draft Internal data for 2022 and Report on the Operation of the Route Charges System in 2021[@ReportOperationRoute2022]*
 
 Please note that data for Estonia and Ukraine is not available from the beginning because these countries integrated in April 2017 and November 2021 respectively.
 
@@ -43,19 +73,19 @@ For the most updated information, the [Aviation Intelligence En Route Dashboard]
 
 ## Description
 
-The Report on the Operation of the Route Charges System is published by the CRCO 
+The Report on the Operation of the Route Charges System is published by the CRCO
 on an annual basis and provides data on traffic volumes and ATM costs for the 
 States for which the CRCO collects en route and terminal charges.
 
-[@tbl-distance-per-charging-zone] sets out the number of millions of kilometers
+[@tbl-distance-charging-zone] sets out the number of millions of kilometres
 recorded in the airspace of the Contracting States from 2014 to 2022 for the 
 calculation of route charges (great circle distance after deduction of 20 km for
-departing and arriving flights) as well as the average annual variation observed 
+departing and arriving flights) as well as the average annual variation observed
 during the same period.
 
 Information on the various different charges levied by the CRCO, in particular 
-the charge calculation methods, the basic billing documents, the methods of
-payment and the submission of claims is described in [Customer Guide to Charges](https://www.eurocontrol.int/publication/customer-guide-route-charges).
+the charge calculation methods, the basic billing documents, the methods of payment
+and the submission of claims is described in [Customer Guide to Charges](https://www.eurocontrol.int/publication/customer-guide-route-charges).
 
 ## Related inputs
 
@@ -65,4 +95,4 @@ payment and the submission of claims is described in [Customer Guide to Charges]
 
 * @sec-route-charge-share-per-market-segment [Route charge share per market segment](#sec-route-charge-share-per-market-segment)
 
-
+## References

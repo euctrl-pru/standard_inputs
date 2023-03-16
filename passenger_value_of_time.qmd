@@ -21,17 +21,18 @@ to save time during a journey (e.g. by travelling on a quicker service
 or using a faster transport mode), or how much 'compensation' they would
 accept, directly or indirectly, for lost time lost.
 
-In [@tbl-pas-value-of-time] is presented a collection of the different values that can be used
+In tables hereafter is presented a collection of the different values that can be used
 for this purpose. It is to be noted that, in this section, the value of
 time is not cited as a function of delay duration. This is an important
 consideration when using the value. In this case, the longer the delay
 duration, the higher the value.
 
 ```{r}
-#| label: tbl-pas-value-of-time
-#| tbl-cap: Estimated value of travel time
+#| label: tbl-pas-time-value-eu
+#| tbl-cap: Estimated value of travel time - EU25
 
-read_xlsx("data/passenger_time_value.xlsx") %>% 
+read_xlsx("data/passenger_time_value.xlsx",
+          sheet = "eu25") %>% 
   gt() %>% 
   cols_label(
     purpose = "Travel purpose",
@@ -39,37 +40,71 @@ read_xlsx("data/passenger_time_value.xlsx") %>%
   ) %>% 
   fmt_currency(
    columns = c(value),
-   currency = "EUR"
+   currency = "EUR",
+   decimals = 1
   ) %>% 
-  tab_row_group(
-    group = "EU25 average",
-    rows = 1:2
+  tab_footnote(
+  footnote = "Please note that the values above are adjusted to 2022 prices from 2002 based on inflation",
+locations = cells_column_labels(
+  columns = value
+)
+)
+```
+*Source: European Commission,  “HEATCO, Developing Harmonised European Approaches for Transport Costing and Project Assessment – Deliverable 5 Proposal for Harmonised Guidelines”, 2006 [@heatco2006]*
+
+```{r}
+#| label: tbl-pas-time-value-fr
+#| tbl-cap: Estimated value of travel time - France
+
+read_xlsx("data/passenger_time_value.xlsx",
+          sheet = "france") %>% 
+  gt() %>% 
+  cols_label(
+    purpose = "Travel purpose",
+    value = "Time value (€/hour)"
   ) %>% 
-  tab_row_group(
-    group = "France",
-    rows = 3:6
+  fmt_currency(
+   columns = c(value),
+   currency = "EUR",
+   decimals = 1
   ) %>% 
-  tab_row_group(
-    group = "United Kingdom",
-    rows = 7:9
-  ) %>% 
-  cols_align(
-    align = c("center"),
-    columns = "value"
-  ) %>% 
-  tab_options(
-    row_group.background.color = "snow1",
-    row_group.font.weight = "bold"
-  ) %>%
+  
 tab_footnote(
-  footnote = "Please note that the values above are adjusted to 2022 prices based on inflation as follows: for United Kingdom adjusted from 2014 prices; for France adjusted from 2015 prices; for EU25 average adjusted from 2002 prices",
+  footnote = "Please note that the values above are adjusted to 2022 prices from 2015 based on inflation",
 locations = cells_column_labels(
   columns = value
 )
 )
   
 ```
-*Sources: United Kingdom[@aptcom2014]; France[@frminecotra2019]; EU25 average[@heatco2006]*
+*Source: Ministère de la Transition Écologique, Gouvernement Français, “Recommended values for calculating average long-distance travel”, 2019 [@frminecotra2019]*
+
+```{r}
+#| label: tbl-pas-time-value-uk
+#| tbl-cap: Estimated value of travel time - United Kingdom
+
+read_xlsx("data/passenger_time_value.xlsx",
+          sheet = "uk") %>% 
+  gt() %>% 
+  cols_label(
+    purpose = "Travel purpose",
+    value = "Time value (€/hour)"
+  ) %>% 
+  fmt_currency(
+   columns = c(value),
+   currency = "EUR",
+   decimals = 1
+  ) %>% 
+  
+tab_footnote(
+  footnote = "Please note that the values above are adjusted to 2022 prices from 2014 based on inflation and using the exchange rate shown in general parameters",
+locations = cells_column_labels(
+  columns = value
+)
+)
+  
+```
+*Source: Airports Commission, “Values of time used to estimate passenger delay costs in the UK airport system”, 2014 [@aptcom2014]*
 
 ## When to use the input?
 
@@ -109,11 +144,24 @@ the user of these inputs. These values are presented below.
 ***Value of time of a business aviation passenger***
 
 **€153 per hour.** This value was provided to EUROCONTROL by airline members of 
-the SESAR CBA team in 2012. This value is, therefore adjusted form 2011 prices. 
-Rationale: given that typical business jet passengers are high level
-executives/CEOs, the passenger cost for lost time adapted from Eurostat was 
-estimated as being three times the value of a regular flyer.
+the SESAR CBA team in 2012 and is, therefore, adjusted from 2011 prices. 
+
+***Value of passenger time in the US for high-speed rail passengers***
+
+Based on US DOT guidance on passenger value of time for air and high-speed rail 
+travel by purpose of trip. The numbers are adjusted to inflation from 2015 prices
+and using the exchange rate presented in @tbl-eurostat-exchange-rates.
+
+## Further reading
+
+Below are listed some additional sources recommended for consultation:
+
+* International Transport Forum (ITF), “What is the Value of Saving Travel Time?” Feb. 2019[@itf:2019]
+
+* Economic Development Research Group Inc., “Passenger Value of Time, Benefit-Cost Analysis and Airport Capital Investment Decisions,” 2015[@passtimevalue2015]
+
+* University of Leeds, “Values of travel time in Europe: Review and meta-analysis,” 2016[@leedsuniversity2016]
+
+* University of Leeds, “European Wide-Meta Analysis of Values of Travel Time,” May 2012[@leedsuniversity2012]
 
 ## References
-
-[@itf:2019] [@passtimevalue2015] [@leedsuniversity2016] [@leedsuniversity2012]
