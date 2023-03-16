@@ -36,35 +36,35 @@ read_xlsx("data/ansp_employment.xlsx",
       columns = funct:ses_area,
       rows = 3
     )
-   )%>%
-  tab_source_note(
-    source = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
-  )
+   )
 ```
+*Source: EUROCONTROL, "ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook", 2022 [@acereports]*
+
 
 ## Description
 
-One full-time equivalent (FTE) is the equivalent of a single person carrying out
-a particular job or activity working on a full-time basis during a year. 
-A part-time employee working half-time would be counted as 0.5 FTEs. A full-time 
-ATCO working two thirds of her time on duty in ops and one third of her time on
-teaching at a training academy would be counted as a 0.67 FTE ATCO in ops and a 
-0.33 FTE ATCO on other duties.
+One full-time equivalent (FTE) is a single person carrying out a particular job 
+or activity working on a full-time basis during a year. A part-time employee
+working half-time would be counted as 0.5 FTEs. A full-time ATCO working two 
+thirds of their time on duty in OPS and one third of their time on teaching at 
+a training academy would be counted as 0.67 FTE under ‘ATCOs in OPS’ and a 0.33 
+FTE under other categories as relevant.
 
-Employment costs comprise gross wages and salaries, payment for overtime, employer
-contributions to social security schemes and taxes, pension contributions and other 
-benefits. For a study on employment costs, the categories of staff working in an 
-ANSP have been divided into two:
+Employment costs comprise gross wages and salaries, payment for overtime, employer 
+contributions to social security schemes and taxes, pension contributions and
+other benefits. For a study on employment costs, the categories of staff working
+in an ANSP have been divided into two:
+
 
 * **ATCOs in ops:** ATCOs participating in an activity which is either directly 
 related to the control of traffic or where there is a necessary requirement for 
 ATCOs to be able to control traffic
 
-* **Support staff or non-ATCO in ops:** this category includes all other staff. 
-It includes ATCOs on other duties (participating in an activity outside ops, 
-such as special projects, teaching at a training academy, providing instruction 
-in a simulator, working in a full-time management position, etc.), trainees, ATC
-assistants, technical and operational support staff, administration staff, and others
+* **Support staff or non-ATCO in ops:** this category includes all other staff.
+It includes ATCOs on other duties (participating in an activity outside OPS, such
+as special projects, teaching at a training academy, providing instruction in a 
+simulator, working in a full-time management position, etc.), trainees, ATC 
+assistants, technical and operational support staff, administration staff, and others.
 
 The following table gives an overview of individual ANSPs and average European 
 system FTE costs for the two categories. The values were calculated based on 
@@ -79,7 +79,6 @@ read_xlsx("data/ansp_employment.xlsx",
   gt()%>%
   cols_label(
     ansp = "ANSP",
-    state = "State",
     atco_ops = "ATCO in ops",
     support = "Support staff",
     all = "All staff"
@@ -99,6 +98,10 @@ read_xlsx("data/ansp_employment.xlsx",
     )
   )
 ```
+*Source: EUROCONTROL, "ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook", 2022 [@acereports]*
+
+The values in the table above were calculated using values provided in Annex 5 – 
+Tables 0.3 and 0.5 of the source document[@acereports].
 
 :::{.callout-note}
 The employment costs above refer to gate-to-gate cost (i.e. en route and terminal 

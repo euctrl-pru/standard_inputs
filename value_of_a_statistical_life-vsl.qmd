@@ -6,13 +6,30 @@ Value of a Statistical Life (VSL) represents the monetary willingness to pay for
 a lower risk of instantaneous premature death. It is often used as a proxy to 
 monetise the value of a fatality occurring form transport accidents.
 
-In Europe, based on a study published by the European Commission [@ecdgmove2019] the **average statistical value of life for EU27+UK is estimated at € 4.3 million.** 
+In Europe, based on a study published by the European Commission[@ecdgmove2019] 
+the **average statistical value of life for EU27+UK is estimated at € 4.3 million.** 
 This value is adjusted to 2022 prices from 2016, based on inflation.
 
-It is to note that the value of life differs based on the country, circumstances, 
-age, profession, education and a number of other parameters. It also differs for 
-different modes of transport. Thus, different sources [@easa2013][@ecdgregio2014][@ecbr2021] propose different values 
-and ways to estimate them, depending on specific circumstances.
+## Description
+
+The above value is extracted from a recent study carried out by CE Delft on behalf 
+of EU DG Move (2019). The proposed VSL is the estimated average human cost per 
+fatality for all modes of transport as set out in paragraph 3.3.2 “Input values” 
+of the source document. The human costs are valued on the basis of the VSL 
+principle based on the Mortality Risk Valuation in Environment[@oecd2012].The 
+value is based on the willingness to pay (WTP)^“The VSL is the amount of money 
+which a community of people is willing to pay to lower the risk of an anonymous
+instantaneous premature death within that community. It can be calculated by 
+dividing the amount people are willing to payby the change in mortality risk”
+[@ecdgmove2019] principle. The EU27+UK VSL used in the handbook is € 3.6 million,
+from which the consumption loss is deducted. The consumption loss is calculated
+by combining data on the consumption expenditure per capita per annum with the number
+of years of life lost owing to an accident (on average 42 years – OECD). This results
+in an EU27+UK average consumption loss for a fatality of €668,000 (2016 prices). 
+
+It should be noted that the European Aviation Safety Agency (EASA) uses a mean 
+value of €2 million (2013 prices)[@easa2013].
+
 
 ## When to use the input?
 
@@ -25,7 +42,35 @@ solution focuses on safety improvement.
 
 * @sec-value-of-statistical-injury [Value of a statistical injury](#sec-value-of-statistical-injury)
 
-* @sec-accident-incident-statistics [Accident/incident statistics](#sec-accident-incident-statistics)
+## Comments
+
+Worthwhile mentioning are the special drawing rights for air carriers under the 
+ICAO Montreal Convention. The Montreal Convention is a multilateral treaty which 
+among other things sets limitations on liability for proven damages in the event
+of passenger death or injury and for damage (baggage or cargo). The air carriers 
+are strictly liable for damages up to 128 821 special drawing rights [(SDR 2019 
+value)](https://www.icao.int/secretariat/legal/Pages/2019_Revised_Limits_of_Liability_Under_the_Montreal_Convention_1999.aspx) 
+a mix of currency values established by the [International Monetary Fund (IMF)](http://www.imf.org/external/np/fin/data/sdr_ir.aspx).
+
+With the aim of introducing uniform legal rules to govern air carrier liability 
+in the event of damage caused to passengers, baggage or goods during international 
+journeys, the EU (previously the European Commission) ratified the [Montreal
+Convention](https://www.eumonitor.eu/9353000/1/j9vvik7m1c3gyxp/vj6ipaqagjyx) by 
+EC Council Decision 2001/539/EC of 5 April 2001.
+
+## Further reading
+
+Below are proposed some sources that can be consulted in the frame of this input.
+
+* [European Commission DG REGIO, “Guide to Cost Benefit Analysis of Investment Projects – Economic appraisal tool for Cohesion Policy 2014 2020”, 2014](http://ec.europa.eu/regional_policy/sources/docgener/studies/pdf/cba_guide.pdf) 
+
+* [European Commission DG TREN, “Cost benefit analysis (for assessment of the impacts of road safety measures)”, 2009](https://ec.europa.eu/transport/road_safety/sites/roadsafety/files/specialist/knowledge/pdf/cost_benefit_analysis.pdf)
+
+* [US DOT, “Guidance on Treatment of the Economic Value of a Statistical Life (VSL) in US Department of Transportation Analyses – 2016 Adjustments”, 2016](https://www.transportation.gov/office-policy/transportation-policy/revised-departmental-guidance-on-valuation-of-a-statistical-life-in-economic-analysis)
+
+* [European Commission, “Part III: Annexes to Impact Assessment Guidelines”, 2009](http://ec.europa.eu/governance/impact/commission_guidelines/docs/iag_2009_annex_en.pdf)
+
+* [European Commission, “‘Better regulation’ toolbox”, 2021](https://commission.europa.eu/system/files/2023-02/br_toolbox-nov_2021_en.pdf)
 
 ## References
 

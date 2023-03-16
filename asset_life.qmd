@@ -24,11 +24,10 @@ read_xlsx("data/asset_life.xlsx") %>%
     align = "center",
     columns = min:max
   ) %>% 
-  cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
-  tab_source_note(
-    source = md("*Source: EUROCONTROL (2011), Principles for Establishing the Cost-Base for Route Charges and the Calculation of the Unit Rates*")
-  )
+  cols_merge_range(min, max, sep = "--", autohide = TRUE)
 ```
+*Source: EUROCONTROL Central Route Charges Office, “Principles for Establishing the Cost-Base for Route Charges and the Calculation of the Unit Rates”, 2011^[The latest version of the document approved by the enlarged Committee on 28 November 2019 is available at https://www.eurocontrol.int/sites/default/files/2019-12/doc-20.60.01-eurocontrol-principles-january-2020-en.pdf. It does not,
+however, list the asset life as in the recommended source]*
 
 Asset life as used in cost-benefit analyses reflects the expected operating life 
 of the specific equipment concerned, which is also the basis for calculating 
@@ -40,6 +39,21 @@ depreciation of fixed assets must be determined in accordance with the expected
 operating life and the pertinent [International Financial Reporting Standards](https://www.ifrs.org/) 
 issued by the [International Accounting Standards Board](https://www.ifrs.org/groups/international-accounting-standards-board/).
 
-## References
+## Other possible sources
 
-[@icao2013] [@ecdgregio2014] [@ecdgregiovademecum2022] 
+Other comparable source could be Table 5-3 of the [ICAO Manual on Air Navigation 
+Services Economics](https://data.icao.int/icads/Product/View/120). Fifth edition of 2013.
+
+The European Commission has proposed two different approaches for the Economic
+Assessment of cohesion policy funded investments:
+
+* In the previous programming period, the 2014 [Guide to Cost-Benefit Analysis 
+of Investment Projects – Economic appraisal tool for Cohesion Policy 2014-2020](https://op.europa.eu/en/publication-detail/-/publication/120c6fcc-3841-4596-9256-4fd709c49ae4) 
+provided a mandatory list of reference periods per sector in alignment with
+Commission Delegated Regulation (EU) No 480/2014).^[[Commission Delegated Regulation (EU) No 480/2014 of 3 March 2014](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:02014R0480-20150511&from=EN) supplementing Regulation (EU) No 1303/2013 of the European Parliament and of the Council laying down common provisions on the European Regional Development Fund, the European Social Fund, the Cohesion Fund, the European Agricultural Fund for Rural Development and the European Maritime and Fisheries Fund and laying down general provisions on the European Regional Development Fund, the European Social Fund, the Cohesion Fund and the European Maritime and Fisheries Fund.]
+
+* Now for the funding period 2021-2027, the Commission recommends in their latest 
+guidelines an ‘indicative guidance’ leaving project promoters/managing authorities
+to adjust based on the project’s economically useful life. See Table 1 in Section 
+1 and Annexes in Part II of the [European Commission Economic appraisal Vademecum 2021-2027.](https://data.europa.eu/doi/10.2776/182302)
+ 
