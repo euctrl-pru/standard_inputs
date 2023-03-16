@@ -111,7 +111,9 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
   tab_caption(caption = md("Average fuel burn rates (kg/minute)")
   ) %>% 
   # Hiding columns
-  cols_hide(columns = c(C, G)) 
+  cols_hide(columns = c(C, G)
+  ) %>%
+  tab_source_note(source_note = "Based on EUROCONTROL BADA and PRISME data")
 ```
 
 ## Description
