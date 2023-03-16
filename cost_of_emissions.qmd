@@ -6,4 +6,164 @@ editor:
 
 # Cost of emissions {#sec-cost-of-emissions}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+The data provided in the following sub-sections shows an estimation of the cost 
+of CO~2~ and other aircraft pollutants released by the combustion of aviation fuel.
+
+### Air pollution
+
+According to the Handbook on the external costs of transport [@ecdgmove2019], for air pollution 
+costs, the marginal costs are virtually equal to the average costs. This is due 
+to the fact that the dose-response relationships between the emissions of air
+pollutants and health effects are nearly linear.
+
+```{r}
+#| label: tbl-marginal-pollution-cost
+#| tbl-cap: Marginal air pollution costs of aviation
+read_xlsx("data/emissions_cost.xlsx",
+          sheet = "marginal") %>% 
+  gt() %>% 
+  cols_label(
+    type = "Type of flight",
+    distance = "Distance (km)",
+    class = "Emissions class",
+    aircraft = "Example of aircraft type",
+    lto_cost = "Cost per LTO",
+    paxkm_cost = "Cost per pax km (€-cent)",
+    pax_cost = "Cost per pax"
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = c(distance, class, lto_cost, paxkm_cost, pax_cost)
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = c(lto_cost:pax_cost)
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
+  )
+```
+
+### Climate change
+
+One of the approaches to monetise the climate change costs is to estimate the CO~2~
+cost avoidance, in compliance with the provisions of Paris Climate Agreement. 
+The table below provides an estimate of CO2 equivalent cost avoidance for short 
+and medium term. It shows a low, medium and high estimate of these values. 
+The values were adjusted to 2022 prices based on inflation.
+
+```{r}
+#| label: tbl-climate-change-cost
+#| tbl-cap: Climate change avoidance costs in € per tonne of CO~2~ equivalent
+read_xlsx("data/emissions_cost.xlsx",
+          sheet = "climate") %>% 
+  gt() %>% 
+  cols_label(
+    forecast = " ",
+    low = "Low",
+    medium = "Medium",
+    high = "High"
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = low:high
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = low:high
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
+  )
+```
+
+### Other possible values
+
+The well-to-tank emissions costs represent the costs linked to the production of
+all different type of energy sources, which leads to emissions and other externalities.
+It includes the extraction of energy, processing, transport and transmission,
+building of energy plants, etc. These emissions are part of the most relevant 
+emissions when it comes to transportation.
+
+@tbl-wtt-costs presents the estimated cost of well-to-tank emissions from 
+aviation based on an analysis of 33 selected EU airports. They are expressed in 
+2022 prices, adjusted from 2019 according to the indexation.
+
+```{r}
+#| label: tbl-wtt-costs
+#| tbl-cap: Total and average well-to-tank costs for aviation for 33 selected EU airports
+read_xlsx("data/emissions_cost.xlsx",
+          sheet = "other1") %>% 
+  gt() %>% 
+  cols_label(
+    distance = " ",
+    total = "Total cost (bn €)",
+    km = "€-cents per pkm",
+    pax = "€-cents per pax"
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = c(total, km, pax),
+    decimals = 1
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = c(total, km, pax)
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
+  )
+```
+
+@tbl-wtt-pullution-costs presents the damage cost factors used for calculation of the emissions
+impacts. The prices are expressed in € per kg and were adjusted to 2022 prices from 2016.
+
+```{r}
+#| label: tbl-wtt-pollution-costs
+#| tbl-cap: Well-to-tank air pollution costs. Damage cost estimates for EU27+UK
+read_xlsx("data/emissions_cost.xlsx",
+          sheet = "other2") %>% 
+  gt() %>% 
+  cols_label(
+    cost = " ",
+    no = "NOx",
+    nmvoc = "NMVOC",
+    so = "SO2",
+    pm = "PM2.5 (exhaust)"
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = no:pm
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = no:pm,
+    decimals = 1
+  )
+```
+
+## Further reading
+
+Below are listed some sources that may be interesting to consult in the frame of this topic:
+
+* [EUROCONTROL (2022), European Environmental Report](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)
+
+* [European Commission Climate Action](https://ec.europa.eu/clima/policies/ets/auctioning_en)
+
+* [UK Department for Environment, Food and Rural Affairs (DEFRA) (2020), Air quality damage cost update 2020](https://uk-air.defra.gov.uk/library/reports?report_id=1006)
+
+## Related inputs
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+
+@sec-rate-of-fuel-burn [Rate of fuel burn](#ec-rate-of-fuel-burn)
+
+## References

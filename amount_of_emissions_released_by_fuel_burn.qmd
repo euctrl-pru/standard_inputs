@@ -29,7 +29,7 @@ gt() %>%
 
 *Source: [EUROCONTROL (2018). European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency](https://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment)*
 
-## When to use the input?
+## When to use the input? 
 
 This input is recommended for a wide use in assessments that focus on the 
 assessment of environmental impact from the burning of fuel at any stage of the 
