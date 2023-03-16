@@ -11,10 +11,6 @@ library(gt)
 The table below presents an overview of the average flight distance in ECAC region,
 as well as the average flight time in the same region for the period 2017-2021.
 
-The data below was obtained by dividing the total distance actually flown and 
-the total yearly IFR flight hours respectively by the yearly number of IFR
-flights in the ECAC airspace.
-
 ```{r}
 #| label: tbl-avg-flight-distance-duration
 #| tbl-cap: Average IFR flight distance and duration in ECAC
