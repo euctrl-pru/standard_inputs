@@ -118,9 +118,9 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
 
 ## Description
 
-The @tbl-rate-fuel-burn originates from the Base of Aircraft Data (BADA), an Aircraft Performance Model (APM) developed and maintained by EUROCONTROL, with the active cooperation of aircraft manufacturers and operating airlines. The data extracted use three different families of the BADA model (BADA 3, BADA 4, and BADA Helicopters).
+@tbl-rate-fuel-burn originates from the Base of Aircraft Data (BADA), an Aircraft Performance Model (APM) developed and maintained by EUROCONTROL, with the active cooperation of aircraft manufacturers and operating airlines. The data extracted use three different families of the BADA model (BADA 3, BADA 4, and BADA Helicopters).
 
-The operating segment values are weighted averages calculated based on (i) the number of flights per aircraft type (taxi and arrival phases) or (ii) the number of flight hours per aircraft type (en-route phase). The analysis covers the most-flying aircraft models in Europe, as per the flight plans submitted to the NM in 2022 (EUROCONTROL PRISME):
+The operating segment values are weighted averages calculated based on (i) the number of flights per aircraft type (taxi and arrival phases) or (ii) the number of flight hours per aircraft type (en-route phase). The analysis covers the most-flying aircraft models in Europe, as per the flight plans submitted to the Network Manager (NM) in 2022 (EUROCONTROL PRISME):
 
 -   **Scheduled aviation**: Grouping three (3) categories from the EUROCONTROL Market Segment Rules [@ectl:market:seg:2022]:
 
@@ -132,7 +132,7 @@ The operating segment values are weighted averages calculated based on (i) the n
 
 -   **Rotorcraft (top 5):** S92, A139, EC75, AS32, and EC35.
 
-The above selection of aircraft covers (i) 76% of the IFR flights and (ii) 79% of the IFR flight hours registered by the NM in 2022.
+The above selection of aircraft covers (i) 76% of the IFR flights and (ii) 79% of the IFR flight hours registered by the NM in 2022. 
 
 ## When to use the values?
 
@@ -148,7 +148,7 @@ Organisations interested in more aircraft types can request access to the full B
 
 ## Other sources
 
-Below, a list of other applicable sources in the frame of this topic:
+Below, a list of other applicable sources that consider fuel burn rates:
 
 -   [ICAO Carbon Emissions Calculator](https://www.icao.int/environmental-protection/Carbonoffset/Pages/default.aspx): ICAO has developed a methodology to calculate the carbon dioxide emissions from air travel for use in offset programmes. The methodology applies the best publicly available industry data to account for various factors such as aircraft types, route-specific data, passenger load factors and cargo carried.
 
