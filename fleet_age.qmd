@@ -29,9 +29,9 @@ read_xlsx("data/fleet_age_build_year.xlsx") %>%
     source = md("*Source: EUROCONTROL Network Manager flight plans and PRISME fleet data, March 2023.*")
   )
 ```
-The information presented in @tbl-build-year-fleet-age is derived from flight plans submitted to the EUROCONTROL Network Manager (NM) for flights in 2022. These aircraft were therefore active in European airspace at some point during that year. The information was analysed using the EUROCONTROL PRISME fleet database to derive the aircraft ages. These are an approximation, as the month of entry into service is not taken into account. Since the numbers are based on flight plans, they exclude aircraft which do not fly in controlled airspace and therefore do not submit flight plans to the NM. The 301 aircraft whose age was unknown were aircraft which are not recorded in the PRISME database. These are mostly privately owned aircraft or aircraft based outside Europe, together with some smaller aircraft not flying regularly in controlled airspace and some new aircraft which do not feature in the database.
+The information presented in @tbl-build-year-fleet-age is derived from flight plans submitted to the EUROCONTROL Network Manager (NM) for flights in 2022. These aircraft were therefore active in European airspace at some point during that year. The information was analysed using the EUROCONTROL PRISME fleet database to derive the aircraft ages. Since the numbers are based on flight plans, they exclude aircraft which do not fly in controlled airspace and therefore do not submit flight plans to the NM. The 301 aircraft whose age was unknown were aircraft which are not recorded in the PRISME database. These are mostly privately owned aircraft or aircraft based outside Europe, together with some smaller aircraft not flying regularly in controlled airspace and some new aircraft which do not feature in the database.
 
-### Average aircraft age per flight (EU-27+EFTA) 
+### Average aircraft age per flight (EU27+EFTA^[European Free Trade Association whose Member States comprise Iceland, Liechtenstein, Norway and Switzerland]) 
 
 @fig-average-aircraft-age shows the average aircraft age in years by EUROCONTROL market segment.
  
@@ -44,7 +44,7 @@ EUROCONTROL market segments were updated in 2022 and saw the “Traditional Sche
 
 Low-cost carriers have the youngest fleet on average, at 9.1 years in 2022, while charter and all-cargo have much older fleets, at 22 years for all-cargo and 15.4 years for charter flights in 2022. The increase in market share of all-cargo and business aviation in the aftermath of the COVID-19 pandemic, has pushed the average age of the overall fleet up to 11.6 years in 2022.
 
-### Commercial aircraft fleet by age of aircraft (EU-27+EFTA+UK) 
+### Commercial aircraft fleet by age of aircraft (EU27+EFTA+UK) 
 
 @fig-com-aircraft-fleet shows commercial aircraft fleet by age of aircraft.
 
