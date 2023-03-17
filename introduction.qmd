@@ -6,16 +6,24 @@ The aim of this document is to standardise the data used in the different ATM-re
 
 In this edition ({{< var version >}}):
 
--   A selection of values has been updated according to the latest data available and published on the web:
-    -   [General parameters](#sec-conversions)
-    -   [Geographical areas](#sec-geographical-areas)
-    -   @sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
-    -   @sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
-    -   @sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
-    -   @sec-average-number-of-passengers [Average number of passengers](#sec-average-number-of-passengers)
--   Two new values have been introduced:
-    -   @sec-shadow-cost-of-carbon [Shadow cost of carbon](#sec-shadow-cost-of-carbon)
-    -   @sec-proportion-of-saf [Proportion of Sustainable Aviation Fuel](#sec-proportion-of-saf)
+- Several values have been updated to reflect the latest data available
+
+- The monetary values have been adjusted for inflation
+
+- The values that have been updated are:
+    -   @sec-transit-time [Transit time](#sec-transit-time)
+    -   @sec-rate of-fuel-burn [Rate of fuel burn](#sec-rate of-fuel-burn)
+    -   @sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](sec-if-average-flight-distance-and-flight-duration)
+    -   @sec-cost-of-aviation-fuel [Cost of aviation fuel](#sec-cost-of-aviation-fuel)
+    -   @sec-value-of-an-average-passenger-flight [Value of an average passenger flight](#sec-value-of-an-average-passenger-flight)
+    -   @sec-fleet-age [Fleet age](#sec-fleet-age)
+    -   @sec-ansp-employment-cost [ANSP employment cost](#sec-ansp-employment-cost)
+    -   @sec-asset-life [Asset life](#sec-asset-life)
+    -   @sec-atm-cost-effectiveness-indicators [ATM cost effectiveness indicators](#sec-atm-cost-effectiveness-indicators)
+    -   @sec-atm-operational-units [ATM operational units](#sec-atm-operational-units)
+    -   @sec-passenger-value-of-time [Passenger value of time](#sec-passenger-value-of-time)
+    -   @sec-value-of-statistical-injury [Value of a statistical injury](sec-value-of-statistical-injury)
+    -   @sec-value-of-statistical-life [Value of a statistical life](sec-value-of-statistical-life)
 
 Please note that the standard inputs have been compiled from EUROCONTROL data and intelligence, from values provided by airspace users, ANSPs, airports, IATA, EASA and other organisations, and from other relevant documents which are publicly available.
 
