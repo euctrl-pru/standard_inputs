@@ -6,14 +6,10 @@ editor_options:
 
 # Foreword {.unnumbered}
 
-The first version of the Standard Inputs for EUROCONTROL Economic Analyses series was launched in 2002 and has been kept alive for 20 years now, with the dedication of several colleagues, in particular Paula and Desirée who put a lot of effort to this document. Today we take a new step and are launching the latest edition on an online platform to allow for timely and continuous updates of the values, following the pace of change in the aviation world.
-
-Our first launch includes a selection of six values, complemented with some general information and the remaining inputs will be updated over the coming months. You can access the previous edition for the values that are not yet updated through a link in each of the value sections.
-
-## Acknowledgements
+The first version of the Standard Inputs for EUROCONTROL Economic Analyses series was launched in 2002 and has been kept alive for 20 years now, with the dedication of several colleagues, in particular Paula and Desirée who put a lot of effort to this document. Now we took a new step and launched the latest edition on an online platform to allow for timely and continuous updates of the values, following the pace of change in the aviation world.
 
 We would like to show our gratitude to the many different colleagues
-that have contributed to this endeavour by helping us develop the values and get them online. Trying to name them would be impossible.
+that have contributed to this endeavor by helping us develop the values and get them online. Trying to name them would be impossible.
 
 We have received valuable remarks and suggestions from all stakeholders
 in the aviation value chain. In particular we have benefited from

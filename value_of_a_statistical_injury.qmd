@@ -1,3 +1,60 @@
 # Value of a statistical injury {#sec-value-of-statistical-injury}
 
-{{< include _under_work.qmd >}}
+The value of a statistical injury represents the **monetary value of an improvement in safety to achieve a risk reduction which would prevent one statistical injury.** 
+It can be used as a proxy to monetise the impact of an injury resulting from 
+transport accidents.
+
+[@tbl-value-of-injury] shows the estimation of the value of an injury as a fraction of
+the value of statistical life, following the approach and numbers presented in 
+the Handbook on the external costs of transport . This approach assumes six
+levels of injury, where MAIS 1 and MAIS 2 represent slight injury, MAIS 3 through
+MAIS 5 represent serious injury and MAIS 6 represents fatality.
+
+Thus, in the table are presented the levels of injury, the share that the value 
+of injury represents from the value of life and the calculated cost of injury in
+euros, based on these percentages and the estimated value of statistical life as 
+presented in [@sec-value-of-a-statistical-life].
+
+```{r}
+#| label: tbl-value-of-injury
+#| tbl-cap: Estimated value of statistical injury
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx("data/value_statistical_injury.xlsx",
+          range = "A1:C7") %>% 
+  gt() %>% 
+  cols_label(
+    category = "Injury category",
+    share = "Share of VSL",
+    absolute = "Value of injury"
+  ) %>% 
+  fmt_currency(
+    columns = "absolute",
+    currency = "EUR",
+    decimals = 0
+  ) %>% 
+  fmt_percent(
+    columns = "share",
+    decimals = 0
+  ) %>% 
+  tab_source_note(
+    source = md("*[Source: European Commission DG MOVE (2019), Handbook on the external costs of transport](https://op.europa.eu/en/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1)*")
+  )
+```
+
+## Comments
+
+The above data should be treated with caution as there may be legal implications.
+
+## Related inputs
+
+* @sec-value-of-a-statistical-life [Value of a statistical life](#sec-value-of-a-statistical-life)
+
+* @sec-accident-incident-statistics [Accident/incident statistics](#sec-accident-incident-statistics)
+
+## References
+
+[@ecdgregio2014] [@ecdgmove2019]

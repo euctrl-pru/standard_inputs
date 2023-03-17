@@ -1,3 +1,53 @@
 # IFR average flight distance and flight duration {#sec-if-average-flight-distance-and-flight-duration}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+The table below presents an overview of the average flight distance in ECAC region,
+as well as the average flight time in the same region for the period 2017-2021.
+
+The data below was obtained by dividing the total distance actually flown and 
+the total yearly IFR flight hours respectively by the yearly number of IFR
+flights in the ECAC airspace.
+
+Please note that the numbers for 2020 and 2021 are considerably lower 
+due to the effect of pandemic.
+
+```{r}
+#| label: tbl-avg-flight-distance-duration
+#| tbl-cap: Average IFR flight distance and duration in ECAC
+
+read_xlsx("data/flight_distance_duration.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    year = "Year",
+    distancekm = "Distance in km",
+    distancenm = "Distance in NM",
+    time = "Flight time in min"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL (2022) Performance Review Report (PRR) 2021](https://www.eurocontrol.int/publication/performance-review-report-prr-2021); [EUROCONTROL (2022) Performance Review Report (PRR) 2020](https://www.eurocontrol.int/publication/performance-review-report-prr-2020); [STATFOR Interactive Dashboard](https://ext.eurocontrol.int/analytics/saw.dll?Dashboard)*")
+  ) %>% 
+  fmt_number(
+    columns = c(distancekm),
+    use_seps = TRUE,
+    decimals = 0
+  )
+```
+
+With regard to flight distance, @fig-traffic-demand-distribution illustrates that nearly 90% of
+IFR flight distances for flights arriving or departing within the Network Manager 
+area (excl. overflights) are less than 1,000NM long.
+
+![Distribution of traffic demand per distance band in 2022 within the EUROCONTROL Network Manager area](figures/traffic_demand_distribution.svg){#fig-traffic-demand-distribution}
+
+## Related inputs
+
+* @sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
+* @sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
+* @sec-taxiing-times [Taxiing times](#sec-taxiing-times)

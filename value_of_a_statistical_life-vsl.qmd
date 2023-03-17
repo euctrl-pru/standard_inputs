@@ -1,4 +1,31 @@
-# Value of a statistical life (VSL) {#sec-value-of-a-statistical-life}
+# Value of a statistical life {#sec-value-of-a-statistical-life}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+Value of a Statistical Life (VSL) represents the monetary willingness to pay for 
+a lower risk of instantaneous premature death. It is often used as a proxy to 
+monetise the value of a fatality occurring form transport accidents.
+
+In Europe, based on a study published by the European Commission [@ecdgmove2019] the **average statistical value of life for EU27+UK is estimated at € 4.3 million.** 
+This value is adjusted to 2022 prices from 2016, based on inflation.
+
+It is to note that the value of life differs based on the country, circumstances, 
+age, profession, education and a number of other parameters. It also differs for 
+different modes of transport. Thus, different sources [@easa2013][@ecdgregio2014][@ecbr2021] propose different values 
+and ways to estimate them, depending on specific circumstances.
+
+## When to use the input?
+
+This input is recommended to be used in studies where the cost of fatalities 
+resulting from safety accidents in aviation needs to be monetised. This is a 
+significant part of an economic impact of a solution, particularly when the 
+solution focuses on safety improvement.
+
+## Related inputs
+
+* @sec-value-of-statistical-injury [Value of a statistical injury](#sec-value-of-statistical-injury)
+
+* @sec-accident-incident-statistics [Accident/incident statistics](#sec-accident-incident-statistics)
+
+## References
 

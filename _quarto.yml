@@ -1,3 +1,6 @@
+release-version: 10.0.2
+
+
 project:
   type: book
   output-dir: _book
@@ -12,7 +15,6 @@ bibliography: "bibliography.bib"
 csl: media/ieee-with-url.csl
 link-citations: true
 cover-image: cover.png
-
 
 format:
   html:
@@ -30,6 +32,10 @@ format:
       - media/fontawesome.html
       # UNCOMMENT for activating GA
       - media/analytics.html
+    template-partials: 
+      # - media/title-block.html
+      - media/title-metadata.html
+
   pdf:
     toc: true
     number-sections: true
@@ -43,7 +49,7 @@ book:
   title: "EUROCONTROL Standard Inputs for Economic Analyses"
   author:
     - "EUROCONTROL Business Cases team"
-  date: "2022-12-13"
+  date: "2023-03-17"
   description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search:
     location: sidebar
@@ -66,7 +72,7 @@ book:
         - "medium-term_capacity_planning.qmd"
         - "number_of_ifr_flights.qmd"
         - "air_traffic_delay.qmd"
-        # - "transit_time.qmd"
+        - "transit_time.qmd"
     
     - part: "Environment"
       chapters:

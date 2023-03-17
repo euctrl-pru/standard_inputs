@@ -29,7 +29,7 @@ readxl::read_xlsx("data/values_2022.xlsx",
                   sheet = "basic assumptions",
                   range = "C6:E33" 
                   ) %>%
-  filter(2000 <= Year, Year <= 2021) %>%
+  filter(2000 <= Year, Year <= 2022) %>%
   arrange(desc(Year)) %>% 
   # format the table
   gt() %>%
