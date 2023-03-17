@@ -4,7 +4,7 @@ This document provides a set of data commonly used in economic and financial ana
 
 The aim of this document is to standardise the data used in the different ATM-related assessments, facilitate the data access for the different stakeholders involved and contribute to the comparability of different analyses through relying on the same data.
 
-In this edition ({{< var version >}}):
+In this edition ({{< meta release-version >}}):
 
 - The monetary values have been adjusted for inflation
 
