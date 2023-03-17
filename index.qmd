@@ -41,4 +41,4 @@ assume any legal liability or responsibility for the accuracy, completeness or u
 | B-1130 BRUSSELS
 | Tel: +32 (0)2 729 1152
 | Fax: +32 (0)2 729 5149
-| E-mail: publications@eurocontrol.int
+| E-mail: [{{< var email.pub >}}](mailto:{{< var email.pub >}})t
