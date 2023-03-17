@@ -19,7 +19,7 @@ The EUROCONTROL Business Cases team is a dedicated team of experts that support 
 The EUROCONTROL Business Cases team has made every effort to ensure that the information and analysis contained in this document are as accurate as possible. Only information from quoted sources has been used
 and information relating to named parties has been checked with the parties concerned. Despite these
 precautions, should you find any errors or inconsistencies we would be grateful if you could please bring them to
-our attention. Our email address is [aviation.intelligence@eurocontrol.int](mailto:aviation.intelligence@eurocontrol.int)
+our attention. Our email address is [{{< var email.aiu >}}](mailto:{{< var email.aiu >}})
 
 This document is published by the EUROCONTROL Business Cases team in the interest of the exchange of
 information.
