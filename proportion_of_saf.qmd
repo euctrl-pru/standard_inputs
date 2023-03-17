@@ -33,9 +33,10 @@ read_xlsx("data/saf_blend.xlsx") %>%
     columns = c(year),
     use_seps = FALSE,
     decimals = 0
-  )
+  ) %>%
+   tab_source_note(source_note = "Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone")
 ```
-*Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone* [@skygreen2022]
+
 
 ## Description
 
