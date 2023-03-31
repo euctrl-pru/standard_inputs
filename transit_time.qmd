@@ -25,9 +25,20 @@ read_xlsx("data/transit_time.xlsx") %>%
     minutes = "Transit time (minutes)"
   ) %>%
   cols_align(
-    align = "center",
+    align = "right",
     columns = minutes
   ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    ansp ~ pct(60),
+    country ~ pct(20),
+    minutes ~ pct(20)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL Aviation Intelligence Unit](https://ansperformance.eu/data/)*")
   )

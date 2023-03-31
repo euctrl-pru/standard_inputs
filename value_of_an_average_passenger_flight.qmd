@@ -6,7 +6,7 @@ This value represents the monetised benefits of an average passenger flight in
 the EU27. The values were adjusted to 2022 price levels based on inflation.
 
 ```{r}
-#| label: tbl-value-of-passenger-flight
+#| label: tbl-value-passenger-flight
 #| tbl-cap: Value of an average passenger flight
 
 library(readxl)
@@ -24,6 +24,17 @@ read_xlsx("data/value_of_passenger_flight.xlsx") %>%
     columns = c("international","domestic"),
     currency = "EUR",
     decimals = 0
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+    name ~ pct(60),
+    international ~ pct(20),
+    domestic ~ pct(20)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
     source = md("*Source: [IATA (2013). Economic Briefing - The value of an average passenger flight in the EU27](https://www.iata.org/en/iata-repository/publications/economic-reports/value-of-an-average-passenger-flight-in-eu-27/)*")

@@ -25,6 +25,15 @@ read_xlsx("data/asset_life.xlsx") %>%
     columns = min:max
   ) %>% 
   cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
+   tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
   tab_source_note(
     source = md("*Source: EUROCONTROL (2011), Principles for Establishing the Cost-Base for Route Charges and the Calculation of the Unit Rates*")
   )
@@ -40,6 +49,10 @@ depreciation of fixed assets must be determined in accordance with the expected
 operating life and the pertinent [International Financial Reporting Standards](https://www.ifrs.org/) 
 issued by the [International Accounting Standards Board](https://www.ifrs.org/groups/international-accounting-standards-board/).
 
-## References
+## Other recommended sources
 
-[@icao2013] [@ecdgregio2014] [@ecdgregiovademecum2022] 
+[ICAO, "Manual on Air Navigation Services Economics (Doc 9161)", 2013](https://data.icao.int/icads/Product/View/120)
+
+[European Commission DG REGIO, "Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020", 2014](https://ec.europa.eu/regional_policy/en/information/publications/guides/2014/guide-to-cost-benefit-analysis-of-investment-projects-for-cohesion-policy-2014-2020)
+
+[European Commission DG REGIO, "Economic appraisal vademecum 2021-2027 General principles and sector applications", 2022](https://op.europa.eu/en/publication-detail/-/publication/cf2c28fe-484e-11ed-92ed-01aa75ed71a1/language-en)

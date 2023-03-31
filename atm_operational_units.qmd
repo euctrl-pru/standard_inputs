@@ -28,13 +28,16 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
   tab_source_note(
     source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) %>% 
   cols_align(
-    align = "center",
+    align = "left",
+    columns = c(year)
+  ) %>% 
+  cols_align(
+    align = "right",
     columns = c(ansp:atc)
   ) %>% 
   tab_style(
     style = list(
-      cell_text(weight = "bold"),
-      cell_fill(color = "#FFFAFA")
+      cell_text(weight = "bold")
     ),
     locations = cells_body(
       columns = "year"
@@ -75,6 +78,15 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
     locations = cells_column_labels(
       column = atc
     )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(14)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
   )
     ```
 

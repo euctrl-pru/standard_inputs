@@ -19,7 +19,7 @@ Please note that the numbers for 2020 and 2021 are considerably lower
 due to the effect of pandemic.
 
 ```{r}
-#| label: tbl-avg-flight-distance-duration
+#| label: tbl-flight-distance
 #| tbl-cap: Average IFR flight distance and duration in ECAC
 
 read_xlsx("data/flight_distance_duration.xlsx") %>% 
@@ -29,6 +29,31 @@ read_xlsx("data/flight_distance_duration.xlsx") %>%
     distancekm = "Distance in km",
     distancenm = "Distance in NM",
     time = "Flight time in min"
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = year
+  ) %>% 
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+  fmt_number(
+    columns = distancekm:time,
+    decimals = 2
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+    everything() ~ pct(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
     source = md("*Source: [EUROCONTROL (2022) Performance Review Report (PRR) 2021](https://www.eurocontrol.int/publication/performance-review-report-prr-2021); [EUROCONTROL (2022) Performance Review Report (PRR) 2020](https://www.eurocontrol.int/publication/performance-review-report-prr-2020); [STATFOR Interactive Dashboard](https://ext.eurocontrol.int/analytics/saw.dll?Dashboard)*")

@@ -37,6 +37,17 @@ read_xlsx("data/ansp_employment.xlsx",
       rows = 3
     )
    )%>%
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    funct ~ px(50),
+    ectrl_area ~ px(25),
+    ses_area ~ px(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
   tab_source_note(
     source = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
   )
@@ -68,10 +79,10 @@ assistants, technical and operational support staff, administration staff, and o
 
 The following table gives an overview of individual ANSPs and average European 
 system FTE costs for the two categories. The values were calculated based on 
-information extracted from EUROCONTROL ACE Report[@ace2020].
+information extracted from EUROCONTROL ACE Report.[@ace2020]
 
 ```{r}
-#| label: tbl-ansp-employment-cost-detailed
+#| label: tbl-ansp-empl-cost
 #| tbl-cap: Individual ANSP and average European system FTE costs
 
 read_xlsx("data/ansp_employment.xlsx",
@@ -79,7 +90,6 @@ read_xlsx("data/ansp_employment.xlsx",
   gt()%>%
   cols_label(
     ansp = "ANSP",
-    state = "State",
     atco_ops = "ATCO in ops",
     support = "Support staff",
     all = "All staff"
@@ -97,8 +107,23 @@ read_xlsx("data/ansp_employment.xlsx",
       columns = ansp:all,
       rows = 39
     )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL PRU (2022), Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
   )
 ```
+
+The values in @tbl-ansp-empl-cost were calculated using values provided in 
+Annex 5, Tables 0.3 and 0.5 of the source document.[@ace2020]
 
 :::{.callout-note}
 The employment costs above refer to gate-to-gate cost (i.e. en route and terminal 

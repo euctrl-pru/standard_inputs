@@ -24,13 +24,29 @@ read_xlsx("data/atm_cost_effectiveness.xlsx") %>%
     ratio = "Support staff ratio"
   ) %>% 
 cols_align(
-  align = "center",
+  align = "right",
   columns = productivity:ratio
+) %>% 
+  cols_align(
+  align = "left",
+  columns = year
 ) %>% 
   fmt_currency(
     currency = "EUR",
     columns = empl_cost,
-    decimals = 0
+    decimals = 2
+  ) %>% 
+  fmt_number(
+    columns = ratio,
+    decimals = 2
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
   ) %>% 
    tab_footnote(
     footnote = "Unit: composite flight-hours per ATCO-hour",
@@ -49,6 +65,18 @@ cols_align(
     locations = cells_column_labels(
       column = ratio
     )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    year ~ px(40),
+    productivity ~ px(120),
+    empl_cost ~ px(120),
+    ratio ~ px(120)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
   ) %>% 
 tab_source_note(
   source_note = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")

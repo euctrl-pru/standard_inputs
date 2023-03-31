@@ -29,18 +29,43 @@ read_xlsx("data/saf_blend.xlsx") %>%
     columns = c(high, base, low),
     decimals = 1
   ) %>%
+  cols_align(
+    align = "center",
+    columns = high:low
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = year
+  ) %>% 
   fmt_number(
     columns = c(year),
     use_seps = FALSE,
     decimals = 0
   ) %>%
-   tab_source_note(source_note = "Source: EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone")
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+   tab_source_note(
+     source_note = md("*Source: [EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone](https://www.eurocontrol.int/publication/objective-skygreen-2022-2030)*"))
 ```
-
 
 ## Description
 
-@tbl-saf-blend shows the forecast SAF blending percentage over total jet fuel for years 2023 to 2050. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook [@aviation:outlook2022].
+@tbl-saf-blend shows the forecast SAF blending percentage over total jet fuel for years 2023 to 2050. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook[@aviation:outlook2022].
 
 The percentages of SAF are based on:
 
@@ -50,11 +75,11 @@ The percentages of SAF are based on:
 Other underlying assumptions worth mentioning are:
 
 * The regulation imposes obligations only on the fuel suppliers, not on the airlines.
-* Objective Skygreen 2022-2030 [@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
+* Objective Skygreen 2022-2030[@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
 
 The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
-![Forecast evolution of SAF proportion 2023-2050 [@skygreen2022]](figures/saf_blend.png){#fig-saf-blend}
+![Forecast evolution of SAF proportion 2023-2050[@skygreen2022]](figures/saf_blend.png){#fig-saf-blend}
 
 ## When to use the input?
 
@@ -67,7 +92,7 @@ Non-conventional fuels – SAF are non-fossil derived – can be used in aviatio
 The ReFuelEU Aviation initiative – put forward by the European Commission in the Fit for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel available in EU airports.
 The proposal defines a series of percentages of SAF blending that will have to be met at specific years. 
 
-For further research, please visit the work of the EUROCONTROL Aviation Sustainability Unit [@ectl:asu].
+For further research, please visit the work of the EUROCONTROL Aviation Sustainability Unit[@ectl:asu].
 
 ## Related inputs
 

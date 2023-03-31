@@ -142,7 +142,7 @@ book:
      
     - part: "General information"
       chapters:
-        - "abbreviations.qmd"
+       - "abbreviations.qmd"
         # - "references.qmd"
     # - "annexes.qmd"
     # - "data.qmd"

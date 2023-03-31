@@ -58,8 +58,30 @@ read_xlsx("data/ifr_flights.xlsx") %>%
     columns = c(month, arrival, departure, internal, overflight, total_2021)
   ) %>%
   cols_align(
+    align = "right",
+    columns = c(departure:total_2019)
+  ) %>% 
+  cols_align(
     align = "center",
     columns = c(vs_2019_flight_level)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(13)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = month:vs_2019_flight_level,
+      rows = 13
+    )
   )
 ```
 
@@ -98,12 +120,30 @@ read_xlsx("data/flight_per_market_segment.xlsx") %>%
     source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   ) %>%
   cols_align(
-    align = "left",
+    align = "right",
     columns = c(y2019, y2020, y2021)
   ) %>%
   cols_align(
     align = "center",
     columns = c(share_of_total_2019, share_of_total_2020, share_of_total_2021)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(15)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = segment:y2021,
+      rows = 9
+    )
   )
 
 ```
@@ -149,6 +189,27 @@ read_xlsx("data/flights_per_aircraft_type.xlsx") %>%
   cols_align(
     align = "center",
     columns = c(Proportion, Cumulative)
+  ) %>% 
+  cols_align(
+    align = "right",
+    columns = c(Flights)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+       rows = 22
+    )
   )
 ```
 
