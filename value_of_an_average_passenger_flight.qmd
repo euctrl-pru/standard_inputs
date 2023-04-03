@@ -2,8 +2,8 @@
 
 ## EUROCONTROL recommended values
 
-This value represents the monetised benefits of an average passenger flight in
-the EU27. The values were adjusted to 2022 price levels based on inflation.
+This value represents the monetised benefits of an average passenger flight in EU27.^[[EU27 in 2013](https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:EU_enlargements)]
+The values were adjusted to 2022 price levels based on inflation.
 
 ```{r}
 #| label: tbl-value-passenger-flight
@@ -36,18 +36,34 @@ read_xlsx("data/value_of_passenger_flight.xlsx") %>%
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+  tab_footnote(
+  footnote = "Other producers along the air transport value chain are airports, ANSPs, manufacturers, lessors, GDS/CRSs, travel agents, ground services, catering and maintenance",
+locations = cells_body(
+  columns = name,
+  rows = 3
+)
+) %>% 
   tab_source_note(
-    source = md("*Source: [IATA (2013). Economic Briefing - The value of an average passenger flight in the EU27](https://www.iata.org/en/iata-repository/publications/economic-reports/value-of-an-average-passenger-flight-in-eu-27/)*")
+    source = md("*Source: [IATA (2013), Economic Briefing - The value of an average passenger flight in the EU27](https://www.iata.org/en/iata-repository/publications/economic-reports/value-of-an-average-passenger-flight-in-eu-27/)*")
   )
 ```
+There is no commonly accepted standard for the value of a flight. The value will vary over time and between routes and whether it is an additional frequency on an existing route or a new connection. The COVID-19 pandemic will most probably change the overall picture. This should be taken into account when the above values are used.
 
-**Consumer benefits** are the benefits for passengers, calculated based on the difference between the consumer’s willingness to pay (or the gross consumer benefit) and the price paid.
+The values quoted above are the result of a study on the benefits in monetary value of an average passenger flight in the EU27. 
 
-**Producer benefits** are assessed from the investors’ perspective, relying on profitability measures such as return on invested capital (ROIC). ROIC is calculated before payments of debt interest and shows the earnings available to pay both debt and equity investors. Furthermore, the calculation excludes fuel and labour related benefits. The estimated profits of the fuel supply chain round € 11-35 billion per year globally. The vast majority of these profits are allocated with the crude oil suppliers.
+IATA, in its briefing note, assesses the economic benefits of an average scheduled passenger flight from the perspective of the consumer, producers and the economy as a whole. Its approach to the various benefits is outlined below.
 
-**Wider economic benefits** represent those that go beyond the direct impact on the users, such as any spillover effects from in increased competition and more efficient movement of capital and labour. 
+**Consumer benefits** are the benefits to passengers in the EU market. Most passengers value air services more than their expenditure. The difference between the consumer’s willingness to pay (or the gross consumer benefit) and the price paid constitutes the net consumer benefit.
 
-One of the largest economic benefits of increased connectivity comes from its impact on the long term productivity of the wider economy. There are several approaches which may be used to quantify this benefit. One conservative approach which has been developed, on the basis of the statistical relationship between air connectivity and labour productivity, yields an estimate that a **10% rise in connectivity, relative to a country’s GDP, will boost labour productivity levels by 0.07%.**
+**Producer benefits** are assessed from an investor perspective. Investors will measure profitability by what that profit represents as a return on invested capital (ROIC). That return is calculated before payments of debt interest and shows the earnings available to pay both debt and equity investors.
+
+This analysis draws on earlier work undertaken by McKinsey & Company for IATA on profitability and the air transport value chain, which calculates the global return on invested capital over the last business cycle 2004 2011 . The calculated global return on invested capital for each sector in the value chain is based on sample data and represents actual returns earned rather than required and/or desired returns.^[IATA does not endorse the use of the estimated rates of return on invested capital for purposes of economic regulation or for determining the appropriate or desirable rate of return on invested capital. The figures used are based on a global assessment of the actual prevailing returns on invested capital in the air transport value chain]
+
+On the basis of these figures, the share of producer net benefits accrued in the EU27 is estimated.^[The allocation of producer benefits for airports, GDS/CRS, and travel agents is based on the share of global passengers flown either domestically (6%) or internationally (18%) from and within the EU-27. This approach treats domestic and international passengers equally in their contribution to the producer benefit. The allocation of producer benefits for airlines, ANSPs, manufactures, lessors, ground services, catering, and maintenance is based on the share of global available seat kilometres flown either domestically (2%) or internationally (19%) from and within the EU27. These approaches do not account for structural differences which may exist between the EU and other regions. Nevertheless, these approaches provide a relevant estimation, because they are less prone to short- and medium-term shocks such as natural disasters and macroeconomic crises, which can create temporary distortions in the value chain.]
+
+On top of this, there are also some **wider economic benefits**, which are the benefits to the wider economy, which go beyond the direct users of air transport. They may include spill over impacts in and across economies as a result of increased competition and more efficient movement of capital and labour.
+
+One of the largest economic benefits of increased connectivity comes from its impact on the long term productivity of the wider economy. There are several approaches which may be used to quantify this benefit. One conservative approach which has been developed, on the basis of the statistical relationship between air connectivity and labour productivity, yields an estimate that **a 10% rise in connectivity, relative to a country’s GDP, will boost labour productivity levels by 0.07%.** The methodology for the analysis is detailed in [IATA’s 2007 “Aviation Economic Benefits” study](https://www.iata.org/en/iata-repository/publications/economic-reports/aviation-economic-benefits/).
 
 ## When to use the input?
 

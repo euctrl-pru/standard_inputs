@@ -13,7 +13,7 @@ of CO~2~ and other aircraft pollutants released by the combustion of aviation fu
 
 ### Air pollution
 
-According to the Handbook on the external costs of transport[@ecdgmove2019], for air pollution 
+According to the Handbook on the external costs of transport,[@ecdgmove2019] for air pollution 
 costs, the marginal costs are virtually equal to the average costs. This is due 
 to the fact that the dose-response relationships between the emissions of air
 pollutants and health effects are nearly linear.
@@ -25,7 +25,6 @@ read_xlsx("data/emissions_cost.xlsx",
           sheet = "marginal") %>% 
   gt() %>% 
   cols_label(
-    type = "Type of flight",
     distance = "Distance (km)",
     class = "Emissions class",
     aircraft = "Example of aircraft type",
@@ -36,11 +35,35 @@ read_xlsx("data/emissions_cost.xlsx",
   cols_align(
     align = "right",
     columns = c(lto_cost, paxkm_cost, pax_cost)
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(distance)
+  ) %>% 
+  fmt_number(
+    columns = "distance",
+    decimals = 0
   ) %>% 
   fmt_currency(
     currency = "EUR",
     columns = c(lto_cost:pax_cost),
     decimals = 2
+  ) %>% 
+  tab_row_group(
+    group = "Long-haul",
+    rows = 7:10
+  ) %>% 
+  tab_row_group(
+    group = "Medium-haul",
+    rows = 3:6
+  ) %>% 
+    tab_row_group(
+    group = "Short-haul",
+    rows = 1:2
+  ) %>% 
+  tab_options(
+    row_group.background.color = "#F5F7F9",
+    row_group.font.weight = "bold"
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
@@ -58,7 +81,8 @@ read_xlsx("data/emissions_cost.xlsx",
     everything() ~ pct(15),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold"
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   )
 ```
 
@@ -108,7 +132,8 @@ read_xlsx("data/emissions_cost.xlsx",
     high ~ px(150)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold"
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   )
 ```
 
@@ -138,7 +163,7 @@ read_xlsx("data/emissions_cost.xlsx",
   fmt_currency(
     currency = "EUR",
     columns = c(total, km, pax),
-    decimals = 1
+    decimals = 2
   ) %>% 
   cols_align(
     align = "right",
@@ -163,7 +188,8 @@ read_xlsx("data/emissions_cost.xlsx",
      pax ~ pct(20)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold"
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   )
 ```
 
@@ -190,7 +216,7 @@ read_xlsx("data/emissions_cost.xlsx",
   fmt_currency(
     currency = "EUR",
     columns = no:pm,
-    decimals = 1
+    decimals = 2
   ) %>% 
    tab_options(
     table.width = pct(100)
@@ -199,7 +225,8 @@ read_xlsx("data/emissions_cost.xlsx",
     everything() ~ px(140)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold"
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
