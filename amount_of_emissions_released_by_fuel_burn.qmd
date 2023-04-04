@@ -71,7 +71,8 @@ tribble(
     placement = "right"
   ) %>% 
   tab_options(
-    table.width = pct(70)
+    table.width = pct(70),
+    footnotes.marks = c(letters[1:10])
    )
 ```
 *Sources:*
