@@ -17,59 +17,59 @@ fuel, focusing on the main types of pollutants.
 #| label: tbl-emissions-per-kg-fuel
 #| tbl-cap: Estimated amount of emissions released per kg of fuel burnt
 
-  tribble(
+tribble(
   ~type, ~emissions,
-  "CO2"      , "3.15 kg Kérosène",
-  "H2O"      , "1.237 kg",
-  "SOx"      , "0.00084 kg - assuming 440 ppm",
-  ""           , "0.000114 kg – assuming 600 ppm",
-  "NOx"      , "0.0148 kg",
+  "CO2"        , "3.15 kg Kerosene",
+  "H2O"        , "1.237 kg",
+  "SOx"        , "0.00084 kg",
+  ""           , "0.000114 kg",
+  "NOx"        , "0.0148 kg",
   "HC"         , "0.00032 kg",
   "CO"         , "0.00325 kg",
   "PM volatile", "0.000092 kg"
 ) %>% 
   gt() %>% 
-  cols_label(
-    type = " ",
-    emissions = " "
-  ) %>% 
+  tab_header(title = "Emissions per kg of fuel burnt") %>%
   cols_align(
     align = "right",
     columns = "emissions"
   ) %>% 
-  tab_style(
-    style = list(
-      cell_text(weight = "bold")
-    ),
-    locations = cells_body(
-      columns = "type"
-    )
+  cols_label(
+    type = md("**Emission type**"),
+    emissions = md("**Emission**")
+  ) %>%
+  # tab_style(
+  #   style = list(
+  #     cell_text(weight = "bold")
+  #   ),
+  #   locations = cells_body(
+  #     columns = "type"
+  #   )
+  # ) %>% 
+  # tab_spanner(
+  #   "Emissions per kg of fuel burnt",
+  #   1:2
+  # ) %>% 
+  tab_footnote(
+    footnote = "Source (1)",
+    locations = cells_body(columns = emissions, rows = 1:2),
+    placement = "right"
   ) %>% 
-  tab_spanner(
-    "Emissions per kg of fuel burnt",
-    1:2
+  tab_footnote(
+    footnote = "assuming 440 ppm, Source (2)",
+    locations = cells_body(columns = emissions, rows = 3),
+      placement = "right"
   ) %>% 
   tab_footnote(
-  footnote = "Source (1)",
-locations = cells_body(
-  columns = emissions,
-  rows = 1:2
-)
-) %>% 
+    footnote = "assuming 600 ppm, Source (2)",
+    locations = cells_body(columns = emissions, rows = 4),
+      placement = "right"
+  ) %>% 
   tab_footnote(
-  footnote = "Source (2)",
-locations = cells_body(
-  columns = emissions,
-  rows = 3:4
-)
-) %>% 
-  tab_footnote(
-  footnote = "Source (3)",
-locations = cells_body(
-  columns = emissions,
-  rows = 5:8
-)
-) %>% 
+    footnote = "Source (3)",
+    locations = cells_body(columns = emissions, rows = 5:8),
+    placement = "right"
+  ) %>% 
   tab_options(
     table.width = pct(70)
    )
