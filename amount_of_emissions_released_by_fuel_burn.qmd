@@ -19,7 +19,7 @@ fuel, focusing on the main types of pollutants.
 
 tribble(
   ~type, ~emissions,
-  "CO2"        , "3.15 kg Kerosene",
+  "CO2"        , "3.15 kg",
   "H2O"        , "1.237 kg",
   "SOx"        , "0.00084 kg",
   ""           , "0.000114 kg",
@@ -29,7 +29,8 @@ tribble(
   "PM volatile", "0.000092 kg"
 ) %>% 
   gt() %>% 
-  tab_header(title = "Emissions per kg of fuel burnt") %>%
+  tab_header(title = "Emissions per kg of fuel burnt",
+             subtitle = "fuel = Kerosene") %>%
   cols_align(
     align = "right",
     columns = "emissions"
