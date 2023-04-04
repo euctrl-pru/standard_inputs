@@ -1,3 +1,333 @@
-# Cost of Delay {#sec-cost-of-delay}
+# Cost of delay {#sec-cost-of-delay}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+
+## EUROCONTROL recommended values
+
+The tables below present an overview of the **average cost per minute to the airline of ground or airborne delay of a commercial passenger flight**. Please note that all
+the numbers are based on studies performed by the University of Westminster and 
+are adjusted to 2022 prices based on [inflation](#tbl-inflation-table).
+
+The figures presented in this section constitute high-level averages and are
+valid as indicative estimates. **It is strongly recommended that they are used as indicators or for general insights into delay costs and not for specific analyses or operational planning.** 
+Different values may be obtained for other contexts 
+(e.g. other airspace areas or airports (hub or non-hub), etc.), with different 
+aircraft and delay distributions.
+
+```{r}
+#| label: tbl-delay-cost-tact
+#| tbl-cap: Tactical delay cost with network effect per minute
+
+read_xlsx("data/cost_delay.xlsx",
+          sheet = "tactical") %>% 
+  
+  gt() %>% 
+  cols_label(
+    phase = "Flight phase",
+    all = "All delays (0 to >300 min)",
+    short = "Short delays (<30 min)"
+  ) %>% 
+  cols_align(
+    align = "right",
+    columns = all:short
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = all:short,
+    decimals = 2
+  ) %>% 
+  tab_row_group(
+    group = "Airborne",
+    rows = 3:4
+  ) %>% 
+  tab_row_group(
+    group = "Ground",
+    rows = 1:2
+  ) %>% 
+  tab_options(
+    row_group.background.color = "#F5F7F9",
+    row_group.font.weight = "bold"
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(33),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
+  )
+```
+
+```{r}
+#| label: tbl-delay-cost-strat
+#| tbl-cap: Strategic delay cost
+
+read_xlsx("data/cost_delay.xlsx",
+          sheet = "strategic") %>% 
+  gt() %>% 
+  cols_label(
+    name = md("**Flight phase**"),
+    value = md("**Cost per minute**") 
+    )%>% 
+  cols_align(
+    align = "right",
+    columns = 2
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = 2,
+    decimals = 2
+  ) %>% 
+  tab_row_group(
+    group = "Airborne",
+    rows = 3
+  ) %>% 
+  tab_row_group(
+    group = "Ground",
+    rows = 1:2
+  ) %>%
+   tab_options(
+    row_group.background.color = "#F5F7F9",
+    row_group.font.weight = "bold"
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
+  )
+```
+
+
+On top of the above, the **network average cost of ATFM delay^[ATFM delay is defined as the duration between the last take-off time requested by the aircraft operator and the take-off slot allocated by the Network Manager following a regulation communicated by the flow management position (FMP), in relation to an airport (airport ATFM delay) or sector location (en route ATFM delay)] amounts €100 per minute.**
+
+The values presented above are high-level averages and are valid as indicators. 
+**It is strongly recommended that they are used as indicators or for general insights 
+into delay costs and not for specific analyses or operational planning.** Different
+values may be obtained for other contexts (e.g. other airspace areas or airports 
+(hub or non-hub)), with different aircraft and delay distributions. 
+
+The University of Westminster (UoW) report, published in 2004 and updated in 2011 
+and 2015, represents the most recent and comprehensive appraisal of the cost of 
+delay in the air traffic management system in Europe. The report is designed as 
+a reference document for European delay direct costs incurred by airlines, both 
+at strategic (planning) and tactical stages. 
+
+It contains a detailed assessment of the delay cost for 15 specific aircraft types 
+(extended from 12 in the previous report versions), taking into account crew, 
+fuel, fleet, maintenance and passenger additional costs due to delay. Note that 
+the list of aircraft used for this report does not include some recent types such 
+as Airbus NEO Series, A220, A350 or B787. 
+
+In the study, costs are assigned under three cost scenarios: low, base and high. 
+These scenarios are designed to cover the probable range of costs for European 
+operators. The base cost scenario is, to the greatest extent possible, designed 
+to reflect the typical case and is, therefore, the one used in this value.
+
+The University of Westminster report presents costs of delay in four flight 
+phases: at gate, taxiing, en-route (cruise extension) and arrival management. 
+For accuracy reasons, the definitions used by the University of Westminster are
+presented as such. They are extracted from the UoW 2004 and 2011 reports.
+
+## Flight phases, types of delay costs and calculation method used
+
+A description of the flight phases, types of delay costs and the calculation 
+method used in the study are given hereafter.
+
+![Overview of the different flight phases](figures/flight_phases.svg){#fig-flight-phases}
+
+***Types of delay costs***
+
+* Tactical delay costs are incurred on the day of operations. In most cases, it 
+is anticipated that the user will find it appropriate to use the full tactical 
+costs in order to calculate these costs of delay. These include the reactionary 
+costs of ‘knock-on’ delay in the rest of the network, which it is usually pertinent to include.
+
+* Strategic delay costs are accounted for in advance. Strategic costs are typically 
+used to assess the cost of adding buffers to schedules. This could be by airline 
+choice or imposed by scheduling constraints at an airport (and thus considered a
+cost of congestion, albeit one which offsets tactical delay costs). Strategic 
+costs may also be incurred as a consequence of factors which contribute to an 
+increase in flight time in a predictable way, such as delay due to route design. 
+
+***Calculation method***
+
+The tactical and strategic delay costs referred to in @tbl-delay-cost-tact and @tbl-delay-cost-strat are 
+calculated based on the results extracted from the University of Westminster (UoW) 
+study report “European airline delay cost reference values – Updated and extended 
+values Version 4.1” – December 2015. Explicit cost tables for analytical use 
+(up to 30 minutes of delay) are presented at the end of this section. The extended
+tables can be found in the UoW report mentioned above.
+
+As regards tactical delay costs, these are given for 5, 15, 30, 60, 90, 120, 180,
+240 and 300 minutes in the UoW report. These are scaled up to network level, 
+because on the day of operations, original delays caused by one aircraft cause 
+‘knock-on’ effects in the rest of the network (reactionary delays). 
+
+Based on at-gate data provided by the Central Office for Delay Analysis (CODA) 
+on ranges of departure delays  by aircraft type for year 2014, assumptions have 
+been made for the remaining three flight phases (i.e. taxi, en-route and arrival 
+management). The same delay distribution has been used as an assumption applicable 
+to all flight phases.
+
+The UoW results have been averaged by minute of delay per type of aircraft 
+(15 in total) and further weighted by the distribution of the number of delayed 
+flights per delay range, at departure, carried out by these aircraft in 2014.
+
+Consequently, for each flight phase, two types of values have been calculated: 
+
+1.	one taking into account long delays (i.e. 0 to more than 300 minutes)
+
+2.	one taking into account short delays (i.e. up to 30 minutes), which represent about 90% of all delays
+
+As regards strategic delay, since costs at the strategic level are incorporated
+into the aircraft operator’s schedule in advance, they are associated with average 
+costs and, therefore, only a distribution of the number of flights was applied 
+in order to calculate the strategic high-level averages.
+
+::: {.callout-tip}
+## Use of costs in business cases
+
+When comparing two scenarios, it is not correct to calculate the delay avoided as a benefit without taking into account the corresponding marginal cost of capacity. In other words, there is a delay threshold below which the marginal cost of capacity outweighs the delay avoidance benefit.
+
+Every CBA should carefully consider whether the improvements envisaged by the project are of a tactical or strategic nature. For the correct use and precise understanding of the tactical and strategic delay concepts, see section 4 of and Annex I to the 2004 University of Westminster delay study.
+:::
+
+### Delay cost details by aircraft type and duration
+
+In the tables below are presented the explicit cost data as extracted from University of Westminster study and adjusted to 2022 prices.
+
+```{r}
+#| label: tbl-delay-cost-total-tact
+#| tbl-cap: Total tactical delay costs with network effect - base scenario
+
+read_xlsx("data/cost_delay.xlsx",
+          sheet = "tactical_total") %>% 
+  gt() %>% 
+  cols_label(
+    aircraft = "Aircraft type",
+    g5 = "5'",
+    g15 = "15'",
+    g30 = "30'",
+    t5 = "5'",
+    t15 = "15'",
+    t30 = "30'",
+    r5 = "5'",
+    r15 = "15'",
+    r30 = "30'",
+    a5 = "5'",
+    a15 = "15'",
+    a30 = "30'"
+    )%>% 
+  cols_align(
+    align = "right",
+    columns = g5:a30
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = g5:a30,
+    decimals = 0
+  ) %>% 
+  tab_spanner(
+     "At gate",
+     columns = 2:4
+   ) %>% 
+  tab_spanner(
+     "Taxiing",
+     columns = 5:7
+   ) %>% 
+  tab_spanner(
+     "En-route",
+     columns = 8:10
+   ) %>% 
+  tab_spanner(
+     "Arrival management",
+     columns = 11:13
+   ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(8),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "aircraft"
+    )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values)*")
+  )
+```
+
+```{r}
+#| label: tbl-delay-cost-hour
+#| tbl-cap: Strategic delay costs per hour - base scenario
+
+read_xlsx("data/cost_delay.xlsx",
+          sheet = "hourly") %>% 
+  gt() %>% 
+  cols_label(
+    aircraft = "Aircraft type",
+    gate = "At gate",
+    taxi = "Taxiing",
+    enroute = "En-route"
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = gate:enroute,
+    decimals = 2
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(25),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "aircraft"
+    )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values)*")
+  )
+```
+
+## Related inputs
+
+@sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
+
+@sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecasts](#sec-air-traffic-statistics-and-forecasts)
+

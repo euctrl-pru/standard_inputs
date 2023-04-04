@@ -1,3 +1,115 @@
 # Cancellation Cost {#sec-cancellation-cost}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+In @tbl-cancel-cost is presented the average cost of cancellation of a commercial
+flight on the day of operation, adjusted from 2014 to 2022 prices. The values 
+are provided for different types of aircraft, based on the number of seats.
+
+```{r}
+#| label: tbl-cancel-cost
+#| tbl-cap: Average cost of cancellation of a commercial flight on the day of operation
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx("data/cancellation_cost.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    seats = "Seats",
+    s50 = "50",
+    s120 = "120",
+    s180 = "180",
+    s189 = "189",
+    s250 = "250",
+    s400 = "400"
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = 2:7,
+    decimals = 0
+  ) %>% 
+   tab_spanner(
+     "Traditional network carrier",
+     columns = 2:4
+   ) %>% 
+  tab_spanner(
+     "Low-cost carrier",
+     columns = 5
+   ) %>% 
+  tab_spanner(
+     "Traditional network carrier ",
+     columns = 6:7
+   ) %>% 
+  tab_spanner(
+     "Narrow-body",
+     columns = 2:5
+   ) %>% 
+  tab_spanner(
+     "Wide-body",
+     columns = 6:7
+   ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    seats ~ pct(30),
+    s50:s400 ~ pct(12)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#F5F7F9"
+  ) %>% 
+  tab_style(
+    style = cell_text(style = "italic"),
+    locations = cells_body(
+      row = c(2)
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: Data supplied by the airline members of the SESAR CBA team and expert judgment derived from an analysis of 2012 total flights carried out in Europe*")
+  )
+```
+
+:::{.callout-note}
+Traditional carrier estimates can be used for regional carriers
+:::
+
+An **alternative value** encompassing the **system-wide average cancellation cost**
+was also estimated by the experts, amounting approximately **€20,930**
+(adjusted from 2014 to 2022 prices).
+
+## Description
+
+The values presented above refer to cancellation on the day of operation and include the following:
+
+* Service recovery costs (i.e. passenger care and compensation costs (passenger vouchers, drinks, telephone calls, hotels))
+
+* Loss of revenue
+
+* Interlining costs
+
+* Loss of future value (i.e. passenger opportunity cost (individual passenger delay expressed in value))
+
+* Crew and catering costs
+
+* Passenger compensation for denied boarding and missed connections (estimated on the application of the [Regulation (EC) No 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261#:~:text=Regulation%20%28EC%29%20No%20261%2F2004%20of%20the%20European%20Parliament,of%20flights%2C%20and%20repealing%20Regulation%20%28EEC%29%20No%20295%2F91))
+
+* Luggage delivery costs
+
+* Operational savings (e.g. fuel, airport and navigation fees, maintenance, handling outstations, lounge outstations)
+
+Ground handling costs (e.g. ramp services, passenger services and field operation services) are not included in the estimation.
+
+## Comment
+
+When a flight is carried out, the airline incurs out-of-pocket expenses (i.e. variable costs) but receives revenues which are 60 100% greater than the out-of-pocket expenses. Cancelling a flight means that the airline forgoes a substantial operating profit. Also, in addition to the loss, costs are incurred for the care and compensation of passengers. 
+
+![Cancellation costs as a function of time](figures/cancellation_function.svg){#fig-cancel-function}
+
+Timely cancellation will enable the airline to take the necessary measures to mitigate the cost impact, for example by rebooking passengers on another flight and allocating crew and aircraft to a different destination. The cancellation costs will thus be minimal and more in the region of the incurred opportunity cost and passenger value of time. If the cancellation is nearer the flight time (i.e. on the day of operation (D)), the cost of cancellation increases, to cover expenses such as fuel, maintenance, and crew and catering.
+
+## Related inputs
+
+* @sec-operational-cancellation-rate [Operational cancellation rate](#sec-operational-cancellation-rate)

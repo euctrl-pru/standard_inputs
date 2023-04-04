@@ -24,7 +24,7 @@ read_xlsx("data/asset_life.xlsx") %>%
     align = "center",
     columns = min:max
   ) %>% 
-  cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
+  cols_merge_range(min,max, sep = "--", autohide = TRUE) %>% 
    tab_options(
     table.width = pct(100)
    ) %>% 
@@ -32,7 +32,8 @@ read_xlsx("data/asset_life.xlsx") %>%
     everything() ~ pct(50)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold"
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   ) %>% 
   tab_source_note(
     source = md("*Source: EUROCONTROL (2011), Principles for Establishing the Cost-Base for Route Charges and the Calculation of the Unit Rates*")
