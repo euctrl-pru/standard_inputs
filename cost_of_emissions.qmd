@@ -50,15 +50,15 @@ read_xlsx("data/emissions_cost.xlsx",
     decimals = 2
   ) %>% 
   tab_row_group(
-    group = "Long-haul",
+    label = "Long-haul",
     rows = 7:10
   ) %>% 
   tab_row_group(
-    group = "Medium-haul",
+    label = "Medium-haul",
     rows = 3:6
   ) %>% 
     tab_row_group(
-    group = "Short-haul",
+    label = "Short-haul",
     rows = 1:2
   ) %>% 
   tab_options(
