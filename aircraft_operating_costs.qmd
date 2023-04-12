@@ -87,7 +87,7 @@ p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) +
 ggsave(path = "figures" , filename = "Airline_cost_structure.png")
 ```
 
-![Airline Cost Structure (2019). Source [IATA ACMG](https://www.iata.org/en/services/finance/airline-cost-mgmt/))](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
+![Airline Cost Structure (2019). Source [IATA ACMG](https://www.iata.org/en/services/finance/airline-cost-mgmt/)](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
  
 ## Description 
 
