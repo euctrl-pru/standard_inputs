@@ -111,18 +111,12 @@ read_xlsx("data/cost_delay.xlsx",
     column_labels.background.color = "#003366"
   ) %>% 
    tab_source_note(
-    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
+    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay) and 2011 iterations*")
   )
 ```
 
 
 On top of the above, the **network average cost of ATFM delay^[ATFM delay is defined as the duration between the last take-off time requested by the aircraft operator and the take-off slot allocated by the Network Manager following a regulation communicated by the flow management position (FMP), in relation to an airport (airport ATFM delay) or sector location (en route ATFM delay)] amounts €100 per minute.**
-
-The values presented above are high-level averages and are valid as indicators. 
-**It is strongly recommended that they are used as indicators or for general insights 
-into delay costs and not for specific analyses or operational planning.** Different
-values may be obtained for other contexts (e.g. other airspace areas or airports 
-(hub or non-hub)), with different aircraft and delay distributions. 
 
 The University of Westminster (UoW) report, published in 2004 and updated in 2011 
 and 2015, represents the most recent and comprehensive appraisal of the cost of 

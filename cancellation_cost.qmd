@@ -59,7 +59,7 @@ read_xlsx("data/cancellation_cost.xlsx") %>%
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold",
-    column_labels.background.color = "#F5F7F9"
+    column_labels.background.color = "#003366"
   ) %>% 
   tab_style(
     style = cell_text(style = "italic"),
@@ -112,4 +112,4 @@ Timely cancellation will enable the airline to take the necessary measures to mi
 
 ## Related inputs
 
-* @sec-operational-cancellation-rate [Operational cancellation rate](#sec-operational-cancellation-rate)
+@sec-operational-cancellation-rate [Operational cancellation rate](#sec-operational-cancellation-rate)

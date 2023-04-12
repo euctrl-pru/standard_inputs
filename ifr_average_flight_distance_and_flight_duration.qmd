@@ -73,6 +73,8 @@ area (excl. overflights) are less than 1,000NM long.
 
 ## Related inputs
 
-* @sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
-* @sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
-* @sec-taxiing-times [Taxiing times](#sec-taxiing-times)
+@sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
+
+@sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
+
+@sec-taxiing-times [Taxiing times](#sec-taxiing-times)

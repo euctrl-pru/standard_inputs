@@ -1,3 +1,109 @@
 # Distance flown by charging zone {#sec-distance-flown-by-charging-zone}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+@tbl-distance-flown below shows the million of kilometers flown by charging zone.
+
+```{r}
+#| label: tbl-distance-flown
+#| tbl-cap: Distance flown by charging zone in M km
+
+read_xlsx("data/distance_by_charging_zone.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    State = "State",
+    y2014 = "2014",
+    y2015 = "2015",
+    y2016 = "2016",
+    y2017 = "2017",
+    y2018 = "2018",
+    y2019 = "2019",
+    y2020 = "2020",
+    y2021 = "2021",
+    y2022 = "2022"
+  ) %>% 
+  fmt_number(
+    columns = y2014:y2022,
+    decimals = 0
+  ) %>% 
+  cols_align(
+    align = "right",
+    columns = y2014:y2022
+  ) %>% 
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = State:y2022,
+      rows = 39
+    )
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = State:y2022,
+      rows = 43
+    )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>%  
+   cols_width(
+    y2014:y2022 ~ pct(8),
+    State ~ pct(20),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL PRU (2022), Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+  ) %>% 
+  tab_footnote(
+    footnote = "Estonia integrated as of April 2017",
+    locations = cells_body(
+      columns = State,
+      rows = 40
+    )
+    ) %>%  
+  tab_footnote(
+    footnote = "Ukraine integrated as of November 2021",
+    locations = cells_body(
+      columns = State,
+      rows = 41
+    )
+    ) 
+```
+
+For the most updated information, please refer to the [Aviation Intelligence En-Route Dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html).
+
+## Description
+
+The Report on the Operation of the Route Charges System is published by the CRCO
+on an annual basis and provides data on traffic volumes and ATM costs for the 
+States for which the CRCO collects en route and terminal charges.
+
+The table above sets out the number of millions of kilometres recorded in the 
+airspace of the Contracting States from 2014 to 2022 for the calculation of route 
+charges (great circle distance after deduction of 20 km for departing and arriving
+flights) .
+
+Information on the various different charges levied by the CRCO, in particular 
+the charge calculation methods, the basic billing documents, the methods of 
+payment and the submission of claims is described in [“Customer Guide to Charges”](https://www.eurocontrol.int/publication/customer-guide-route-charges).
+
+## Related inputs
+
+@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](#sec-if-average-flight-distance-and-flight-duration)
+
+@sec-en-route-ans-costs [En-route ANS costs](#sec-en-route-ans-costs)
+
+@sec-route-charge-share-per-market-segment [Route charge share per market segment](sec-route-charge-share-per-market-segment)

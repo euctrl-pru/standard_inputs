@@ -78,6 +78,10 @@ cols_align(
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
 tab_source_note(
   source_note = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
 )

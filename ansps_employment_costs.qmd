@@ -50,6 +50,16 @@ read_xlsx("data/ansp_employment.xlsx",
   ) %>% 
   tab_source_note(
     source = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(33),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
   )
 ```
 

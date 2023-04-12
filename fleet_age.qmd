@@ -94,7 +94,8 @@ Depending on the market, an aircraft can remain in service for about 30 years. W
 
 ## Related inputs
 
-  * @sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
-  * @sec-fleet-size [Fleet size](#sec-fleet-size)
+@sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
+
+@sec-fleet-size [Fleet size](#sec-fleet-size)
 
 ## References

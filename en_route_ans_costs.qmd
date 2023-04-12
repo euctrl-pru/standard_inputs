@@ -2,7 +2,7 @@
 
 ## EUROCONTROL recommended values
 
-The costs of Air Navigation Services (ANS) in en-route airspace that is under
+The costs of Air Navigation Services (ANS) in en-route airspace that is under 
 the control of States/ANSPs.
 
 @tbl-ans-costs shows the real en-route ANS cost per and the Total en-route 
@@ -32,7 +32,7 @@ read_xlsx("data/er_ans_costs.xlsx") %>%
     currency = "EUR",
     columns = y2015:y2020,
     rows = 1:3,
-    decimals = 2
+    decimals = 0
   ) %>%  fmt_currency(
     currency = "EUR",
     columns = y2015:y2020,
@@ -107,8 +107,7 @@ read_xlsx("data/er_ans_costs.xlsx") %>%
     y2015:y2020 ~ pct(12)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
     footnote = "SES States refer  to  the  27  Member  States  of  the European  Union  (EU),  plus  Switzerland and Norway",
@@ -131,11 +130,8 @@ read_xlsx("data/er_ans_costs.xlsx") %>%
 
 ## Description
 
-ANS en-route costs per Service Unit (TSU) in the above table are measured on the
-basis of the total actual and determined en-route ANS costs (in real terms)
-divided by the number of en-route Service Units. A Service Unit, used for the
-calculation of route charges, multiplies the Aircraft Weight factor by the 
-distance factor.
+The **En-route ANS costs per TSU**  in @tbl-ans-costs are calculated as the ratio 
+between the **Total en-route ANS costs** and **Total en-route service units**.
 
 :::{.callout-note}
 Please note the difference between [Total Service Units (TSU)](https://ansperformance.eu/acronym/su/) and [Terminal Service Units (TNSU)](https://ansperformance.eu/acronym/tnsu/).
@@ -145,19 +141,26 @@ Please note the difference between [Total Service Units (TSU)](https://ansperfor
 The Unit Rate of Charge is the charge in euro applied by a Charging Zone to a 
 flight operated by an aircraft of 50 metric tonnes (weight factor of 1.00) and 
 flying 100 kilometres (distance factor of 1.00) in the charge area of that State.  
+:::
 
+The **Total en-route ANS costs** values in @tbl-ans-costs are actual values. 
+Often these can also be presented as ‘determined’ (a projection in the future) 
+costs. This is typically the case when en-route ANS costs are forecasted for 
+a reference period of five years are costs pre determined by the SES States as
+referred to in [Article 15(2)(a) of Regulation (EC) No 550/2004](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2004R0550:20091204:EN:PDF) 
+for providing air navigation services.
+
+The **Total en-route Service Units**, which are used for the calculation of route 
+charges that airspace users are billed for the costs of air navigation services 
+received. En-route service units of a specific flight are equal to the product of
+the Distance Factor (the distance flown expressed in 100 kilometres) by the 
+Aircraft Weight Factor square root of the Maximum Take Off Weight of the aircraft
+which performed the flight (expressed in 50 tonnes).
+
+:::{.callout-note}
 Further information on calculating unit rates can be found on [customer guide to charges website](https://www.eurocontrol.int/publication/customer-guide-route-charges)
 :::
 
-The en-route ANS determined costs for a reference period of five years are costs 
-pre determined by the SES States as referred to in Article 15(2)(a) of [Regulation
-(EC) No 550/2004](http://eurlex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2004R0550:20091204:EN:PDF)  
-for providing air navigation services. These include amounts for interests on 
-debt, return on equity, depreciation of assets, as well as staff costs and non 
-staff operating costs for maintenance, operations, management and administration. 
-These costs are determined on a national level and comprise the costs of several 
-entities (the National Supervisory Authority, Air Navigation Service Provider/s,
-the MET service provider and the State’s contribution to EUROCONTROL’s budget).
 
 ## Other sources
 
@@ -180,5 +183,6 @@ separately in chapter 6 of the EUROCONTROL Performance Review Report[@ectrlprr20
 
 ## Related inputs
 
-* @sec-distance-flown-by-charging-zone [Distance flown by charging zone](#sec-distance-flown-by-charging-zone)
+@sec-distance-flown-by-charging-zone [Distance flown by charging zone](#sec-distance-flown-by-charging-zone)
 
+## References

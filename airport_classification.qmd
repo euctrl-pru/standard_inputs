@@ -1,3 +1,116 @@
 # Airport classification {#sec-airport-classification}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+library(tibble)
+```
+
+## EUROCONTROL recommended values
+
+This input represents the number of airports per bracket of number of annual IFR movements.
+
+```{r}
+#| label: tbl-apt-classification
+#| tbl-cap: Airport classification - 2019
+
+tribble(
+  ~movements, ~category, ~airports,
+  ">250,000",             "Very large",   "14",
+  "[250,000 - 150,000]",  "Large",        "18",
+  "[149,999 - 40,000]",   "Medium",       "76",
+  "[39,999 - 15,000]",    "Small",        "92",
+  "<15,000",              "Other",        "957"
+) %>% 
+  gt() %>%
+  cols_label(
+    movements = "Annual IFR movements",
+    category = "Airport category",
+    airports = "Number of airports"
+    ) %>% 
+  cols_align(
+    align = "right",
+    columns = c(airports)
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = c(movements:category)
+  ) %>% 
+  tab_footnote(
+    footnote = "A movement is either a take off or a landing at an airport",
+    locations = cells_column_labels(
+      columns = movements
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: Data compiled by SESAR 2020 experts on the basis of data provided by the EUROCONTROL Performance Review Unit (PRU), ECAC States*")
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(33),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  )
+```
+
+## Description
+
+An airport can be classified in several ways. Here we focus on categorisation of
+airports according to the number of IFR movements.
+
+The list of airports used for this classification was developed using a two-step 
+procedure: 
+
+**Step 1:** The initial worldwide airport list provided by the EUROCONTROL 
+Performance Review Unit (PRU) was restricted to airports located in ECAC Member 
+States and having both ICAO and IATA codes, in order to focus on airports providing 
+commercial air transport services (1 079 airports). 
+
+**Step 2:** Seventy-seven airports located in ECAC Member States were added to
+the airport list in order to scope all airports for which the EUROCONTROL PRU
+provided operational data.
+
+:::{.callout-note}
+Statistics on individual airport movements and operations at Airports can be 
+downloaded from the [Aviation Intelligence Unit Dashboard](https://ansperformance.eu/data/).
+:::
+
+## Other possible sources
+
+Information on airports that have implemented a collaborative decision-making (A-CDM) 
+can be found [via this link](https://www.eurocontrol.int/concept/airport-collaborative-decision-making). 
+
+Airport CDM (A-CDM) aims to improve the overall efficiency of airport operations
+by optimising the use of resources and improving the predictability of events. 
+It focuses especially on aircraft turnaround and pre-departure sequencing processes.
+
+The A-CDM concept has been globally recognised. A-CDM is fully implemented in 30 
+airports across Europe (status: December 2020), including Amsterdam, Barcelona,
+Bergamo, Berlin Brandenburg "Willy Brandt", Brussels, Copenhagen, Düsseldorf, 
+Frankfurt, Geneva, Hamburg, Helsinki, Lisbon, London Gatwick, London Heathrow, 
+Lyon, Madrid, Milan Malpensa, Milan Linate, Munich, Naples, Nice, Paris CDG, 
+Paris Orly, Oslo, Palma de Mallorca, Prague, Rome Fiumicino, Stockholm Arlanda, 
+Stuttgart, Venice, Warsaw and Zurich.
+
+More details for a selected airport are available in the [EUROCONTROL Public Airport Corner](https://www.eurocontrol.int/tool/airport-corner)
+
+## Comment
+
+The mapping of airports to categories in the recommended value is purely indicative
+and is based on the situation in 2018. The mapping of airports will most probably 
+change significantly as a result of COVID from 2020 onwards. The local situation
+of many airports may not be known or be interpreted differently. Final applicability 
+of the assigning of airports to categories needs to be checked and confirmed by 
+the appropriate airport or authority.
+
+## Related inputs
+
+@sec-turnaround-time [Turnaround time](#sec-turnaround-time)
+
+
+

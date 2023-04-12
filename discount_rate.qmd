@@ -51,7 +51,7 @@ and combines them with a check on the maximum exposure due to the traffic-risk
 sharing mechanism.^[Please refer to the source document for further details]  The cost of capital is assessed according to four options^[See table 2 of the source document]  
 that are summarised as follows:
 
-* **Option 1** should be used when the WACC of an ANSP is based on an actual capital 8/27 structure that is not aligned to the optimal capital structure
+* **Option 1** should be used when the WACC of an ANSP is based on an actual capital structure that is not aligned to the optimal capital structure
 
 * **Option 2** should be used if it is lower than Option 1 for an ANSP that is subject 
 to a government-specified equity return

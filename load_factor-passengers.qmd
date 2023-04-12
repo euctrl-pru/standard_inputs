@@ -1,3 +1,125 @@
 # Load factor – passengers {#sec-load-factor-passengers}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended values
+
+The load factor represents the percentage of seats filled by fare paying passengers
+on a flight.
+
+@tbl-load-pax-statfor shows the estimated passenger load factor according to EUROCONTROL
+STATFOR values. These values were obtained by dividing the total number of 
+passengers by the total number of available seats on the flights. This information 
+is based on the data produced by Eurostat and covers the EU27+UK, and four EFTA
+states.^[European Free Trade Association: Iceland, Liechtenstein, Norway and Switzerland]
+
+```{r}
+#| label: tbl-load-pax-statfor
+#| tbl-cap: Passenger load factor – EUROCONTROL values
+
+read_xlsx("data/load_factor_pax.xlsx",
+          sheet = "statfor",
+          range = "A1:B6") %>% 
+  gt() %>% 
+  cols_label(
+    year = "Year",
+    factor = "Load factor"
+  ) %>% 
+   cols_align(
+    align = "center",
+    columns = factor
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(year)
+  ) %>% 
+  fmt_percent(
+    columns = factor,
+    decimals = 2
+  ) %>% 
+  tab_options(
+    table.width = pct(70)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: [EUROCONTROL STATFOR Interactive Dashboard (PAX+)](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
+  )
+```
+
+@tbl-load-pax-iata presents the evolution in the passenger load factor according to IATA data.
+These values represent the ratio of revenue passenger km to available seat km.
+The difference from values in Table 1 is the geographical coverage: IATA’s Europe
+area is larger than EU Europe statistical area, it also covers countries such as 
+Russia, Tajikistan, Turkmenistan and Uzbekistan. 
+
+```{r}
+#| label: tbl-load-pax-iata
+#| tbl-cap: Passenger load factor – IATA values
+
+read_xlsx("data/load_factor_pax.xlsx",
+          sheet = "iata") %>% 
+  gt() %>% 
+  cols_label(
+    year = "Year",
+    factor = "Load factor"
+  ) %>% 
+   cols_align(
+    align = "center",
+    columns = factor
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(year)
+  ) %>% 
+  fmt_percent(
+    columns = factor,
+    decimals = 2
+  ) %>% 
+  tab_options(
+    table.width = pct(70)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "The values used in this table come from IATA monthly Air Passenger Market Analysis reports for the month of December of each year. The data is extracted from the table “Air passenger market detail”, looking at Total market in Europe, column PLF(level) for calendar year.",
+    locations = cells_column_labels(
+      columns = factor
+    )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: IATA – Economics, Air Passenger Market Analysis for December 2017-2022. Available at [IATA - Economics](https://www.iata.org/en/publications/economics/?page=14&Search=Air%20Passenger%20Market%20Analysis%20-%20December%20&Year=2023&Year=2022&Year=2021&Year=2020&Ordering=DateDesc)*")
+  )
+```
+
+A wide range of economic reports from IATA can be accessed on [IATA website](https://www.iata.org/en/publications/economics)

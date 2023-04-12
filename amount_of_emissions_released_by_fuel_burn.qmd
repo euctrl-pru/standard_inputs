@@ -52,37 +52,49 @@ tribble(
   #   1:2
   # ) %>% 
   tab_footnote(
-    footnote = "Source (1)",
+    footnote = "Source 1",
     locations = cells_body(columns = emissions, rows = 1:2),
     placement = "right"
   ) %>% 
   tab_footnote(
-    footnote = "assuming 440 ppm, Source (2)",
+    footnote = "assuming 440 ppm, Source 2",
     locations = cells_body(columns = emissions, rows = 3),
       placement = "right"
   ) %>% 
   tab_footnote(
-    footnote = "assuming 600 ppm, Source (2)",
+    footnote = "assuming 600 ppm, Source 2",
     locations = cells_body(columns = emissions, rows = 4),
       placement = "right"
   ) %>% 
   tab_footnote(
-    footnote = "Source (3)",
+    footnote = "Source 3",
     locations = cells_body(columns = emissions, rows = 5:8),
     placement = "right"
   ) %>% 
   tab_options(
     table.width = pct(70),
     footnotes.marks = c(letters[1:10])
-   )
+   ) %>% 
+  tab_source_note(
+    source_note = md("*Source 1: [EUROCONTROL (2018) European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency](https://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment)*")
+  ) %>% 
+tab_source_note(
+    source_note = md("*Source 2: [MIT (2010) Laboratory for aviation and the environment – Guidance on the use of AEDT for gridded aircraft emissions in atmospheric models](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.719.2090&rep=rep1&type=pdf)*")
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source 3: [EUROCONTROL, EASA, EU (2022) European Aviation Environmental Report, EU27+FTA aviation emissions for year 2021](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)*")
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  )
 ```
-*Sources:*
-
-*(1) - EUROCONTROL, "European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency ", 2018[@EuropeanAviationFuel2018]*
-
-*(2) - MIT, "Laboratory for aviation and the environment – Guidance on the use of AEDT for gridded aircraft emissions in atmospheric models", 2010[@LaboratoryAviationEnvironment2010]*
-
-*(3) - EUROCONTROL, EASA, EU, "European Aviation Environmental Report, EU27+FTA aviation emissions for year 2021", 2022[@eaer2022]*
 
 ## When to use the input? 
 
