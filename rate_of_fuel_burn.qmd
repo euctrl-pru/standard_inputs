@@ -5,67 +5,6 @@
 This section provides the average number of kilogrammes per minute of fuel burn by operator segments in different flight phases.
 
 ```{r}
-# #| label: tbl-rate-fuel-burn
-# #| tbl-cap: Average fuel burn rates (kg/minute)
-# 
-# #Import aircraft performance data
-# library(dplyr)
-# library(gt)
-# 
-# # Create column labels, merging cells
-# spanners <- function(gt_tbl) {
-#   gt_tbl |> 
-#   tab_spanner(
-#     label = md('**Flight phase**'), columns = 1
-#     ) %>%  
-#   tab_spanner(
-#     label = md('**Taxi**'), columns = 2
-#   ) %>%
-#   tab_spanner(
-#     label = md('**En route**'), columns = 3:4
-#   ) %>%  
-#   tab_spanner(
-#     label = md('**Arrival management**'), columns = 5:6
-#   )
-# }
-# 
-# # Create the table
-# read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>% 
-#   gt() %>% 
-#   # Change column tags
-#   cols_label(
-#     A = "Weight (% of max useful load)",
-#     B = "N/A",
-#     C = "65%",
-#     D = "80%",
-#     E = "50%",
-#     G = "65%",
-#   ) %>%
-#   # Create column labels, merging cells
-#   spanners() %>%
-#   # Align columns
-#   cols_align(
-#     align = "left",
-#     columns = c(1)
-#   ) %>%
-#     cols_align(
-#     align = "center",
-#     columns = c(2:6)
-#   ) %>%
-#   # Colour rows
-#   tab_style(
-#     style = list(cell_text(weight = "bold")),
-#     locations = cells_column_labels(columns = everything())
-#   )%>%
-#   tab_style(
-#     style = list(cell_text(indent = pct(10)), cell_text(weight = "lighter")),
-#     locations = cells_body(row=c(2:4))
-#   )%>%
-#   # Adding caption
-#   tab_caption(caption = md("Average fuel burn rates (kg/minute)"))
-```
-
-```{r}
 #| label: tbl-rate-fuel-burn
 #| tbl-cap: Average fuel burn rates (kg/minute)
 
@@ -96,16 +35,8 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
   ) %>%
   # Colour rows
   tab_style(
-    style = list(cell_text(weight = "bold")),
-    locations = cells_column_labels(columns = everything())
-  )%>%
-  tab_style(
-    style = list(cell_text(indent = pct(10)), cell_text(weight = "lighter")),
+    style = list(cell_text(indent = pct(10))),
     locations = cells_body(row=c(2:4), column=1)
-  )%>%
-  tab_style(
-    style = list(cell_text(weight = "lighter")),
-    locations = cells_body(row=c(2:4), column=2:6)
   )%>%
   # Adding caption
   tab_caption(caption = md("Average fuel burn rates (kg/minute)")
@@ -113,7 +44,24 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
   # Hiding columns
   cols_hide(columns = c(C, G)
   ) %>%
-  tab_source_note(source_note = "Based on EUROCONTROL BADA and PRISME data")
+  tab_source_note(
+    source_note = md("Based on EUROCONTROL [BADA](https://www.eurocontrol.int/model/bada) and [PRISME](https://ansperformance.eu/acronym/prisme/) data")
+  ) %>%
+# Columns width
+  tab_options(
+    table.width = pct(100),
+  ) %>%
+  cols_width(
+    A ~ pct(100/4),
+    B ~ pct(100/4),
+    D ~ pct(100/4),
+    E ~ pct(100/4),
+  ) %>%
+# Label row
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  ) 
 ```
 
 ## Description
