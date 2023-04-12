@@ -1,3 +1,180 @@
 # Aircraft Operating Costs {#sec-aircraft-operating-costs}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+@tbl-aircraft-operating-cost presents the flight and ground costs linked to the operation of an aircraft, such as fuel and oil, flight deck crew, flight equipment depreciation and amortisation, aircraft rentals, landing fees, ground handling, aircraft parking, air bridges and maintenance.
+
+```{r}
+#| label: tbl-aircraft-operating-cost
+#| tbl-cap: Aircraft Operating Costs in USD 2019 prices
+
+library(dplyr)
+library(gt)
+
+read.delim(file = "data/aircraft_operating_costs.csv",header = TRUE,sep = ";") %>% 
+  # format the table
+  gt() %>%
+  # Table source
+  tab_source_note(source_note = md("Values provided by [IATA Airline Cost Management Group (ACMG)](https://www.iata.org/en/services/finance/airline-cost-mgmt/)")
+  ) %>%
+  # Change column tags
+  cols_label(
+    Aircraft.type = "Aircraft type",
+    per.aircraft.per.year..USD.million. = "per aircraft per year ($M)",
+    per.flight.hour	= "per flight hour",
+    per.flight.cycle = "per flight cycle",
+    per.available.seat.Km..US.cents.= "per available seat km (¢)",
+    per.available.ton.km..US.cents.. = "per available ton km (¢)",
+  ) %>%
+  # Align columns
+  cols_align(
+    align = "left",
+    columns = c(1)
+  ) %>%
+    cols_align(
+    align = "center",
+    columns = c(2:6)
+  ) %>%
+# Columns width
+  tab_options(
+    table.width = pct(100),
+  ) %>%
+  cols_width(
+    Aircraft.type ~ pct(100/6),
+    per.aircraft.per.year..USD.million. ~ pct(100/6),
+    per.flight.hour ~ pct(100/6),
+    per.flight.cycle ~ pct(100/6),
+    per.available.seat.Km..US.cents.~ pct(100/6),
+    per.available.ton.km..US.cents.. ~ pct(100/6),
+  ) %>%
+# Label row
+  tab_style(
+    style = cell_text(v_align = "middle"),
+    locations = cells_column_labels(columns = c(1:6))
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold",
+    column_labels.background.color = "#003366"
+  )
+```
+
+@fig-airline-costs-structure shows the average airline cost structure for 2019 (considering that jet kerosene price is $66.9 per barrel).
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+df <- read.delim(file = "data/AirlineCostStructure.csv",header = TRUE,sep = ";")
+p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) + 
+     geom_col(aes(fill=Category), width = 0.9) + 
+     geom_text(aes(label = scales::percent(Value)), vjust = 0.5, hjust = -0.1, size = 3) +
+     expand_limits( y = c(0,0.3))+ 
+     coord_flip() + 
+     scale_fill_brewer(palette="Blues") +
+     theme(axis.ticks = element_blank(), 
+           axis.text.x=element_blank(), 
+           axis.text.y=element_text(size=7), 
+           panel.grid.minor=element_blank(), 
+           panel.grid.major=element_blank(),
+           panel.border = element_blank(),
+           panel.background = element_blank(),
+           legend.position = "top",
+           legend.text=element_text(size=7)
+           ) + 
+     scale_x_discrete(name="") + 
+     scale_y_continuous(name="") +
+     labs(fill = "")
+ggsave(path = "figures" , filename = "Airline_cost_structure.png")
+```
+
+![Airline Cost Structure (2019). Source [IATA ACMG](https://www.iata.org/en/services/finance/airline-cost-mgmt/))](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
+ 
+## Description 
+
+The above values, provided by IATA, refer to the 2020 ACMG data collection (fiscal year 2019) and provide an overview of the operating costs for 10 types of aircraft (B737 NG, A320 family, B737 Classic, B777, A330, B757, B767, B787, EMB-190 and Dash 8). The IATA Airline Cost Management Group (ACMG) collects operating costs classified into three categories, which are defined as follows:
+
+* **Flight operating expenses** are direct operating expenses. They are directly related to the aircraft and the flight activities of an airline, such as flight crews, fuel, flight equipment and navigation. The biggest component of flight operating expenses is fuel and oil at 48%.
+
+* **Ground operating expenses** are also direct operating expenses. They are directly related to the ground activities of an airline, such as maintenance and overhaul, airport charges, station and ground. Maintenance and overhaul is the biggest cost component at 46%. 
+
+* **System operating expenses** are overheads and indirect operating expenses. They are not directly related to flight or ground operating expenses. They include costs for cabin attendants, passenger service, load insurance, reservations, ticketing, sales and promotion, IT and communications, and general and administrative costs, with the latter representing 34% of total system operating expenses. 
+
+Below, the airline cost structure for each category of expenses (2019):
+
+```{r}
+library(ggplot2)
+library(dplyr)
+#| label: fig-operating-costs-split
+
+df <- read.delim(file = "data/AirlineCostStructure.csv",header = TRUE,sep = ";") 
+
+width <- 12
+height <- 12
+
+df1 <- df %>%
+       group_by(Category) %>%
+       summarise(Value=sum(Value))
+pie1 <- ggplot(df1, aes (x="", y=Value, fill=Category, label = scales::percent(Value))) + 
+        geom_bar(width = 1, stat = "identity") + 
+        coord_polar("y", start=0) + 
+        scale_fill_brewer(palette="Blues") +
+        theme_void() + 
+        theme(legend.position="bottom", legend.title=element_blank()) +
+        geom_text(position = position_stack(vjust = 0.5), size=4) +
+        ggtitle("Total Operating Costs Structure (2019)")  +
+        guides(fill=guide_legend(nrow=3,byrow=TRUE))
+ggsave(path = "figures" , filename = "Pie1.png", width = width, height = height, units = "cm")
+
+df2 <- filter(df, Category == "Flight Operating Costs")
+pie2 <- ggplot(df2, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) + 
+        geom_bar(width = 1, stat = "identity") + 
+        coord_polar("y", start=0) + 
+        scale_fill_brewer(palette="Blues") +
+        theme_void() + 
+        theme(legend.position="bottom", legend.title=element_blank()) +
+        geom_text(position = position_stack(vjust = 0.5), size=4) +
+        ggtitle("Ground Operating Costs Structure (2019)")  +
+        guides(fill=guide_legend(nrow=3,byrow=TRUE))
+ggsave(path = "figures" , filename = "Pie2.png", width = width, height = height, units = "cm")
+
+df3 <- filter(df, Category == "Ground Operating Costs")
+pie3 <- ggplot(df3, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) +  
+        geom_bar(width = 1, stat = "identity") + 
+        coord_polar("y", start=0) + 
+        scale_fill_brewer(palette="Blues") +
+        theme_void() + 
+        theme(legend.position="bottom", legend.title=element_blank()) +
+        geom_text(position = position_stack(vjust = 0.5), size=4) +
+        ggtitle("Flight Operating Costs Structure (2019)") +
+        guides(fill=guide_legend(nrow=3,byrow=TRUE))
+ggsave(path = "figures" , filename = "Pie3.png", width = width, height = height, units = "cm")
+
+df4 <- filter(df, Category == "System Operating Costs")
+pie4 <- ggplot(df4, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) + 
+        geom_bar(width = 1, stat = "identity") + 
+        coord_polar("y", start=0) + 
+        scale_fill_brewer(palette="Blues") +
+        theme_void() + 
+        theme(legend.position="bottom", legend.title=element_blank()) +
+        geom_text(position = position_stack(vjust = 0.5), size=4) +
+        ggtitle("System Operating Costs Structure (2019)") +
+        guides(fill=guide_legend(nrow=3,byrow=TRUE))
+ggsave(path = "figures" , filename = "Pie4.png", width = width, height = height, units = "cm")
+```
+::: {layout-nrow=2}
+![](figures/pie1.png)
+
+![](figures/pie2.png)
+
+![](figures/pie3.png)
+
+![](figures/pie4.png)
+:::
+
+## Data scope
+
+The values used for analysis are the result of aggregating the cost data provided by 51 airlines worldwide ($26.5 billion expenditure), covering over 35% of the industry in terms of revenue passenger kilometres (RPKs), with European airlines representing 16% of the share and 12% in terms of passengers carried. 
+
+## Data limitations
+
+In a number of jurisdictions, airport charges and taxes that are levied on a per-passenger basis are not accounted for in airline profit and loss accounts. As a result, the share of airport charges is likely to be significantly understated, as airports may levy more on (i) a per-passenger or (ii) per-aircraft in some jurisdictions. To give an order of magnitude, in some regions the ACI (Airports Council International) estimates that over 50% of airport charges are collected on a per-passenger basis, reaching as much as 80% in some regions worldwide.
