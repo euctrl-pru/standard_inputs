@@ -1,15 +1,15 @@
-﻿Category;Subcategory;Value;;
-Ground Operating Costs;Maintenance and Overhaul;0.101;;
-Ground Operating Costs;Airport Charges;0.043;;
-Ground Operating Costs;Station and Ground;0.074;;
-Flight Operating Costs;Flight Deck Crew;0.107;;
-Flight Operating Costs;Fuel and Oil;0.247;;
-Flight Operating Costs;Flight Equipment Insurance;0.001;;
-Flight Operating Costs;Flight Equipment Depreciation and Amortization;0.073;;
-Flight Operating Costs;Aircraft Rentals;0.044;;
-Flight Operating Costs;Navigation Charges;0.045;;
-System Operating Costs;Cabin Crew;0.060;;
-System Operating Costs;Passenger Services;0.042;;
-System Operating Costs;Reservation, Ticketing, Sales and Promotion;0.065;;
-System Operating Costs;IT and Comunications;0.007;;
-System Operating Costs;General and Administrative;0.090;;
+Category;Subcategory;Value
+"Ground Operating Costs";"Maintenance and Overhaul";0.101
+"Ground Operating Costs";"Airport Charges";0.043
+"Ground Operating Costs";"Station and Ground";0.074
+"Flight Operating Costs";"Flight Deck Crew";0.107
+"Flight Operating Costs";"Fuel and Oil";0.247
+"Flight Operating Costs";"Flight Equipment Insurance";0.001
+"Flight Operating Costs";"Flight Equipment Depreciation and Amortization";0.073
+"Flight Operating Costs";"Aircraft Rentals";0.044
+"Flight Operating Costs";"Navigation Charges";0.045
+"System Operating Costs";"Cabin Crew";0.060
+"System Operating Costs";"Passenger Services";0.042
+"System Operating Costs";"Reservation, Ticketing, Sales and Promotion";0.065
+"System Operating Costs";"IT and Comunications";0.007
+"System Operating Costs";"General and Administrative";0.090
