@@ -1,3 +1,146 @@
-# Taxiing times {#sec-taxiing-times}
+# Taxiing time {#sec-taxiing-time}
 
-{{< include _under_work.qmd >}}
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+## EUROCONTROL recommended value
+
+@tbl-taxi-time shows the mean duration, in minutes, of taxi times at airports,
+based on flights in ECAC area.
+
+```{r}
+#| label: tbl-taxi-time
+#| tbl-cap: Average taxi time duration
+
+read_xlsx("data/taxi_time.xlsx",
+          sheet = "total") %>% 
+  gt() %>% 
+  cols_label(
+    year = "Year",
+    all_in = "Taxi-in",
+    large_in = "Taxi-in",
+    medium_in = "Taxi-in",
+    all_out = "Taxi-out",
+    large_out = "Taxi-out",
+    medium_out = "Taxi-out"
+  ) %>% 
+  tab_spanner(
+    "All airports",
+    columns = c(all_in, all_out)
+  ) %>% 
+  tab_spanner(
+    "Large to very large airports",
+    columns = c(large_in, large_out)
+  ) %>% 
+   tab_spanner(
+    "Medium to small airports",
+    columns = c(medium_in, medium_out)
+  ) %>% 
+   tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    all_in:medium_out ~ pct(15),
+    year ~ pct(10)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = year
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "Large to very large airports: >150,000 movements",
+    locations = cells_column_spanners(
+      spanners = "Large to very large airports"
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "Medium to small airports: 149,999 to 15,000 movements",
+    locations = cells_column_spanners(
+      spanners = "Medium to small airports"
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: EUROCONTROL Central Office for Delay Analysis (CODA)*")
+  )
+```
+
+Data in @tbl-taxi-time is based on actual data from CODA. The taxi-out time is 
+defined as the time spent by a flight between its actual off-block time (AOBT) 
+and actual take-off time (ATOT). The taxi-in time is defined as the time spent
+between its actual landing time (ALDT) and actual in-block time (AIBT). The 
+taxi-in and taxi-out durations are calculated on the basis of data sent 
+by airlines to CODA.
+
+The table below shows the average additional taxi out time per departure in top 
+30 airports in terms of movements, excluding Turkish airports.
+
+```{r}
+#| label: tbl-taxi-time-additional
+#| tbl-cap: Average additional taxi time per departure
+
+read_xlsx("data/taxi_time.xlsx",
+          sheet = "additional") %>% 
+  gt() %>% 
+   tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(10),
+    Year ~ pct(20)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL (2022) Performance Review Report (PRR 2021)](https://www.eurocontrol.int/publication/performance-review-report-prr-2021)*")
+  )
+```
+
+Values in @tbl-taxi-time-additional are based on actual data from airports. The 
+additional taxi-out time is a proxy for the average departure runway queuing 
+time on the outbound traffic flow during congestion periods at airports. It is 
+the difference between the actual taxi-out time of a flight and a statistically 
+determined unimpeded taxi-out time^[The unimpeded taxi-out time is the taxi-out time in non-congested conditions at airports]
+based on taxi-out times in periods of low traffic demand. There is one 
+unimpeded time per stand runway combination at each airport.
+
+## Other possible sources
+
+[EUROCONTROL CODA Taxi times - Summer and Winter reports](https://www.eurocontrol.int/search?keywords=Taxi+times&sort_by=search_api_relevance)
+This source shows, by airport, seasonal taxi time statistics for the IATA 
+winter season and the IATA summer season:
+
+* Taxi-in times
+
+* Taxi-out times
+
+* Taxi-out times by wake turbulence category
+
+These taxi times are calculated using the airline reported actual off-block time,
+actual take-off time, actual landing time and actual in-block time, providing 
+the aviation community with seasonal benchmark values.
+
+Furthermore for additional granularity, taxi-out times by wake turbulence 
+category are also offered for a number of airports.
+
+## Related inputs
+
+@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](#sec-if-average-flight-distance-and-flight-duration)
+
+@sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
+
+

@@ -1,5 +1,74 @@
 # Accident/Incident Statistics {#sec-accident-incident-statistics}
 
-## EUROCONTROL recommended values
+## EUROCONTROL recommended sources
 
-{{< include _under_work.qmd >}}
+Hereafter are presented some sources that are recommended to be consulted to 
+obtain latest statistics on accidents and incidents occurring in the aviation 
+domain, as well as the related fatalities and injuries.
+
+According to **ICAO Annex 13:**
+
+An **accident** is an occurrence associated with the operation of an aircraft …,
+in which (a) a person is fatally or seriously injured… or (b) the aircraft 
+sustains damage or structural failure …or (c) the aircraft is missing or 
+completely inaccessible . 
+
+An **incident** is an occurrence, other than an accident, associated with the
+operation of an aircraft which affects or could affect the safety of operations.
+
+**The key sources are:**
+
+* [EASA Annual Safety Review](https://www.easa.europa.eu/en/document-library/general-publications?publication_type%5b144%5d=144&page=1)
+    provides both, a statistical summary of aviation safety in the EASA Member States 
+    and identifies the most important safety challenges faced by European aviation today.
+    The key statistics on accidents and serious incidents in the different aviation 
+    domains can be found at the start of each chapter in the Annual Safety Review.
+
+* [EUROCONTROL (n.a.) EUROCONTROL voluntary ATM incident reporting (EVAIR) safety bulletin](https://www.eurocontrol.int/service/eurocontrol-voluntary-atm-incident-reporting)
+    collects low-severity ATM incidents which involve pilots and controllers. The 
+    established process and kinds of data provided by airlines and ANSP SMS allow 
+    day to day analysis and, in this regard, identification of the causes of incidents.
+    The data are collected from the entire ECAC region and from neighbouring airspace,
+    such as the Eastern part of the ICAO EUR region, the Middle East, Africa, etc.
+
+
+* [IATA (n.a.) Safety Report](https://www.iata.org/en[/publications/safety-report/)
+    provides the industry with critical information derived from the analysis of 
+    aviation accidents to enable to understand safety risks in the industry and to
+    propose mitigation strategies.
+
+## When to use the input?
+
+This input is recommended to be used in the instances where the safety is an 
+important factor, namely in terms of accident reduction.
+
+## Further reading
+
+The sources listed hereafter are those recommended to consult for further information.
+
+* [EU (2010), Regulation (EU) No 996/2010 on the investigation and prevention of accidents and incidents in civil aviation and repealing Directive 94/56/EC](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:295:0035:0050:EN:PDF) 
+    contains a definition of accidents and incidents
+
+* [EU (2014), Regulation (EU) No 376/2014 on the reporting, analysis and follow-up of occurrences in civil aviation, amending Regulation (EU) No 996/2010 of the European Parliament and of the Council and repealing Directive 2003/42/EC of the European Parliament and of the Council and Commission Regulations (EC) No 1321/2007 and (EC) No 1330/2007](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R0376&from=EN)
+    contains information on the regulatory requirements reporting, analysis and 
+    follow-up of occurrences, which include accidents and incidents in civil aviation
+
+* [EU Single Sky Performance Review Body, Annual Monitoring Report](http://www.eusinglesky.eu/prb-report-library.html)
+    The Annual Monitoring Reports are prepared by the Performance Review Body (PRB) of the Single European Sky (SES)
+
+* [ICAO safety reports](https://www.icao.int/safety/Pages/Safety-Report.aspx)
+    reports on worldwide aviation safety performance and collaborative efforts 
+    by international air transport stakeholders to further improve safety in 
+    light of the sustained growth of the sector
+    
+* [Performance Review Commission, “Draft Performance Review Report (PRR) 2022 for consultation”, 2022](https://www.eurocontrol.int/publication/draft-performance-review-report-prr-2022-consultation)
+    Annual Performance Review Reports issued by the Performance Review Commission
+    provide an annual review of Europe’s ATM safety performance
+
+* [SKYbrary](https://www.skybrary.aero/)
+    An electronic repository of safety knowledge related to ATM and aviation 
+    safety in general. It contains information about accidents and serious incidents
+    by aircraft type and is also a portal which gives users access to the safety
+    data made available on the websites of various aviation organisations 
+    (regulators, service providers, industry)
+

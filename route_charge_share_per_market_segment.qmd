@@ -1,3 +1,98 @@
 # Route charge share per market segment {#sec-route-charge-share-per-market-segment}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+This input presents the proportion of route charges^[There are different sorts of air navigation charges, namely route charges, terminal navigation charges and communication charges. The above distribution relates to route charges only]
+from air traffic management (ATM) services in Europe (infrastructure, staff and
+other operational costs) per market segment.^[[Rules for EUROCONTROL classification of low-cost, all-cargo and business aviation types of flights](https://www.eurocontrol.int/publication/market-segment-rules)] 
+This value is presented for year 2019.
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+
+#| label: tbl-route-charge
+#| tbl-cap: Prportion of route charges per market segment in ECAC
+
+read_xlsx("data/route_charges_share.xlsx") %>% 
+  gt() %>% 
+  cols_label(
+    segment = "Market segment",
+    share_flights2016 = "2016",
+    share_flights2019 = "2019",
+    share_km2016 = "2016",
+    share_km2019 = "2019",
+    share_charges = "2016"
+  ) %>% 
+  fmt_percent(
+    columns = share_flights2016:share_charges,
+    decimals = 1
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = share_flights2016:share_charges
+  ) %>% 
+  tab_spanner(
+    "% of flights",
+    columns = share_flights2016:share_flights2019
+  ) %>% 
+  tab_spanner(
+    "% of km flown",
+    columns = share_km2016:share_km2019
+  ) %>% 
+  tab_spanner(
+    "% of total charges collected",
+    columns = share_charges
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    share_flights2016:share_charges ~ pct(15),
+    segment ~ pct(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = everything(),
+      rows = 6
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: EUROCONTROL STATFOR and EUROCONTROL Central Route Charges Office*")
+  )
+```
+
+## Description
+
+On behalf of EUROCONTROL Member States, CRCO bills and collects route charges, 
+which fund air navigation facilities and services and support air traffic 
+management developments. It also bills and collects, on a bilateral basis, 
+terminal charges and air navigation charges on behalf of non-Member States, 
+as well as communication charges in the Shanwick area.
+
+Each aircraft operator receives a single bill per month in euros, no matter how 
+many EUROCONTROL Member States were overflown. The billing and recovery of air 
+navigation charges ensure that air navigation facilities and services are steadily
+financed and safely operated, paving the way for the future evolution of the 
+pan-European air traffic management (ATM) system in the context of the Single 
+European Sky and the European ATM Master Plan (SESAR).
+
+Information on the various different charges levied by the CRCO, in particular 
+the charge calculation methods, the basic billing documents, the methods of 
+payment and the submission of claims, is contained in the [Customer Guide to Charges](https://www.eurocontrol.int/publication/customer-guide-route-charges).
+
+## Related inputs
+
+@sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
+
+@sec-distance-flown-by-charging-zone [Distance flown by charging zone](#sec-distance-flown-by-charging-zone)
+
+@sec-en-route-ans-costs [En-route ANS cost](#sec-en-route-ans-costs)
+

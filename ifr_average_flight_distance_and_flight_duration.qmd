@@ -77,4 +77,4 @@ area (excl. overflights) are less than 1,000NM long.
 
 @sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
 
-@sec-taxiing-times [Taxiing times](#sec-taxiing-times)
+@sec-taxiing-time [Taxiing time](#sec-taxiing-time)
