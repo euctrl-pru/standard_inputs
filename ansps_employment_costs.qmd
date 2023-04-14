@@ -58,8 +58,7 @@ read_xlsx("data/ansp_employment.xlsx",
     everything() ~ pct(33),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -141,7 +140,8 @@ costs) and are expressed in 2020 prices.
 :::
 
 ## Related inputs
-* @sec-atm-cost-effectiveness-indicators [ATM cost-effectiveness indicators](#sec-atm-cost-effectiveness-indicators)
+
+@sec-atm-cost-effectiveness-indicators [ATM cost-effectiveness indicators](#sec-atm-cost-effectiveness-indicators)
 
 ## References
 

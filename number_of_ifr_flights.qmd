@@ -230,9 +230,12 @@ This input is recommended to be used in situations where an overview of the hist
 
 ## Related inputs
 
-* @sec-ifr-flight-information-per-market-segment [IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
-* @sec-fleet-age [Fleet age](#sec-fleet-age)
-* @sec-fleet-size [Fleet size](#sec-fleet-size)
-* @sec-fleet-cns-capability [Fleet CNS capability](#sec-fleet-cns-capability)
+@sec-ifr-flight-information-per-market-segment [IFR flight information per operator segment](#sec-ifr-flight-information-per-market-segment)
+
+@sec-fleet-age [Fleet age](#sec-fleet-age)
+
+@sec-fleet-size [Fleet size](#sec-fleet-size)
+
+@sec-fleet-cns-capability [Fleet CNS capability](#sec-fleet-cns-capability)
 
 ## References

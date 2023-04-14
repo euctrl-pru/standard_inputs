@@ -32,7 +32,27 @@ readxl::read_xlsx("data/Shadow_Cost_of_Carbon_v10.xlsx",
   fmt_number(
     columns = vars(Cost),
     decimals = 0
-   
+   ) %>% 
+  tab_options(
+    table.width = pct(50)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = Year
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "Year"
+    )
   )
 ```
 

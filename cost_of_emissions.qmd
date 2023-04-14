@@ -81,8 +81,7 @@ read_xlsx("data/emissions_cost.xlsx",
     everything() ~ pct(15),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -132,8 +131,7 @@ read_xlsx("data/emissions_cost.xlsx",
     high ~ px(150)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -188,8 +186,7 @@ read_xlsx("data/emissions_cost.xlsx",
      pax ~ pct(20)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -225,8 +222,7 @@ read_xlsx("data/emissions_cost.xlsx",
     everything() ~ px(140)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
@@ -245,8 +241,8 @@ Below are listed some sources that may be interesting to consult in the frame of
 
 ## Related inputs
 
-@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
-
 @sec-rate-of-fuel-burn [Rate of fuel burn](#ec-rate-of-fuel-burn)
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
 
 ## References

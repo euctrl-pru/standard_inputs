@@ -23,9 +23,9 @@ solution focuses on safety improvement.
 
 ## Related inputs
 
-* @sec-value-of-statistical-injury [Value of a statistical injury](#sec-value-of-statistical-injury)
+@sec-accident-incident-statistics [Accident/incident statistics](#sec-accident-incident-statistics)
 
-* @sec-accident-incident-statistics [Accident/incident statistics](#sec-accident-incident-statistics)
+@sec-value-of-statistical-injury [Value of a statistical injury](#sec-value-of-statistical-injury)
 
 ## References
 

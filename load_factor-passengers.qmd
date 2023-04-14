@@ -48,8 +48,7 @@ read_xlsx("data/load_factor_pax.xlsx",
     everything() ~ pct(50),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_style(
     style = list(
@@ -100,8 +99,7 @@ read_xlsx("data/load_factor_pax.xlsx",
     everything() ~ pct(50),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_style(
     style = list(

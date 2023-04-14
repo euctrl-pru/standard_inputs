@@ -23,9 +23,12 @@ Shadow costs are inexact by definition, as they are based on assumptions, but th
 
 ## Related inputs
 
-* @sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
-* @sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
-* @sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
-* @sec-proportion-of-saf [Proportion of SAF](#sec-proportion-of-saf)
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+
+@sec-proportion-of-saf [Proportion of SAF](#sec-proportion-of-saf)
 
 ## References

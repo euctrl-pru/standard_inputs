@@ -60,8 +60,7 @@ read_xlsx("data/cost_delay.xlsx",
     everything() ~ pct(33),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
    tab_source_note(
     source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
@@ -107,8 +106,7 @@ read_xlsx("data/cost_delay.xlsx",
     everything() ~ pct(50),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
    tab_source_note(
     source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay) and 2011 iterations*")
@@ -262,8 +260,7 @@ read_xlsx("data/cost_delay.xlsx",
     everything() ~ pct(8),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
    tab_style(
     style = list(
@@ -303,8 +300,7 @@ read_xlsx("data/cost_delay.xlsx",
     everything() ~ pct(25),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
    tab_style(
     style = list(
@@ -321,7 +317,6 @@ read_xlsx("data/cost_delay.xlsx",
 
 ## Related inputs
 
-@sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
-
 @sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecasts](#sec-air-traffic-statistics-and-forecasts)
 
+@sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)

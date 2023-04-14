@@ -243,10 +243,11 @@ of the total fleet forecast.
 
 ## Related inputs
 
-@sec-fleet-age [Fleet age](#sec-fleet-age)
+
+@sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
 
 @sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
 
-@sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
+@sec-fleet-age [Fleet age](#sec-fleet-age)
 
 ## References

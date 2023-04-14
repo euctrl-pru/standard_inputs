@@ -89,8 +89,7 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
     column_labels.font.weight = "bold"
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
     ```
 

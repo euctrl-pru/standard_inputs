@@ -74,7 +74,8 @@ previous editions of CODA Digest, available in EUROCONTROL library [@ectllibrary
 
 ## Related inputs
 
-* @sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
-* @sec-cost-of-delay [Cost of delay](#sec-cost-of-delay)
+@sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
+
+@sec-cost-of-delay [Cost of delay](#sec-cost-of-delay)
 
 ## References

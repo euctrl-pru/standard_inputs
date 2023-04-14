@@ -58,8 +58,7 @@ read_xlsx("data/cancellation_cost.xlsx") %>%
     s50:s400 ~ pct(12)
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_style(
     style = cell_text(style = "italic"),

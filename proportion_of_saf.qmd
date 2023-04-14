@@ -96,9 +96,12 @@ For further research, please visit the work of the EUROCONTROL Aviation Sustaina
 
 ## Related inputs
 
-* @sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
-* @sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
-* @sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
-* @sec-shadow-cost-of-carbon [Shadow cost of carbon](#sec-shadow-cost-of-carbon)
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+
+@sec-shadow-cost-of-carbon [Shadow cost of carbon](#sec-shadow-cost-of-carbon)
 
 ## References

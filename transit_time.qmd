@@ -22,7 +22,7 @@ read_xlsx("data/transit_time.xlsx") %>%
   cols_label(
     ansp = "ANSP",
     country = "State",
-    minutes = "Transit time (minutes)"
+    minutes = "Transit time (min)"
   ) %>%
   cols_align(
     align = "right",
@@ -85,6 +85,6 @@ in IFR airport movements for training flights.
 
 ## Related inputs
 
-* @sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning)
+@sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning)
 
 ## References

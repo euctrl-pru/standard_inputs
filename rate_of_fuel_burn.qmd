@@ -30,7 +30,7 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
     columns = c(1)
   ) %>%
     cols_align(
-    align = "center",
+    align = "right",
     columns = c(2:6)
   ) %>%
   # Colour rows
@@ -59,8 +59,7 @@ read.delim(file = "data/fuel_burn_rate.csv",header = TRUE,sep = ";") %>%
   ) %>%
 # Label row
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   ) 
 ```
 
@@ -94,7 +93,7 @@ iii) the performance data do not consider the impact of specific flight conditio
 
 Organisations interested in more aircraft types can request access to the full BADA model.
 
-## Other sources
+## Other possible sources
 
 Below, a list of other applicable sources that consider fuel burn rates:
 
@@ -106,6 +105,6 @@ Below, a list of other applicable sources that consider fuel burn rates:
 
 ## Related inputs
 
--   @sec-fleet-size [Fleet size](#sec-fleet-size)
+@sec-fleet-size [Fleet size](#sec-fleet-size)
 
 ## References

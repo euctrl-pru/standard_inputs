@@ -53,8 +53,7 @@ tribble(
     everything() ~ pct(33),
   ) %>% 
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
   )
 ```
 

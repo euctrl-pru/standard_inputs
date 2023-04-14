@@ -77,9 +77,11 @@ read_xlsx("data/cost_noise.xlsx",
     locations = cells_column_labels(
       columns = noise
     )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission, Directorate-General for Mobility and Transport, Essen, H., Fiorello, D., El Beyrouty, K., et al., Handbook on the external costs of transport: version 2019 – 1.1, Publications Office, 2020](https://op.europa.eu/en/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1)*")
   )
 ```
-*Source: European Commission, Directorate-General for Mobility and Transport, Essen, H., Fiorello, D., El Beyrouty, K., et al., Handbook on the external costs of transport : version 2019 – 1.1, Publications Office, 2020[@ecdgmove2019]*
 
 @tbl-total-noise-cost presents an assessment of the costs of noise for short, 
 medium and long-haul flights based on an analysis of 33 EU airports.
@@ -132,9 +134,11 @@ read_xlsx("data/cost_noise.xlsx",
     locations = cells_column_labels(
       columns = total:km
     )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission, Directorate-General for Mobility and Transport, Essen, H., Fiorello, D., El Beyrouty, K., et al., Handbook on the external costs of transport: version 2019 – 1.1, Publications Office, 2020](https://op.europa.eu/en/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1)*")
   )
 ```
-*Source: European Commission, Directorate-General for Mobility and Transport, Essen, H., Fiorello, D., El Beyrouty, K., et al., Handbook on the external costs of transport : version 2019 – 1.1, Publications Office, 2020[@ecdgmove2019]*
 
 ## Other possible values
 
@@ -179,9 +183,11 @@ read_xlsx("data/cost_noise.xlsx",
     locations = cells_column_labels(
       columns = marginal_cost:sleep
     )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [UK Department for Environment, Food and Rural Affairs (2014) Environmental Noise: Valuing impacts on: sleep disturbance, annoyance, hypertension, productivity and quiet](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/380852/environmental-noise-valuing-imapcts-PB14227.pdf)*")
   )
 ```
-*Source: UK Department for Environment, Food and Rural Affairs, "Environmental Noise: Valuing impacts on: sleep disturbance, annoyance, hypertension, productivity and quiet", 2014[@EnvironmentalNoiseValuing2014]*
 
 ## References
 
