@@ -101,74 +101,148 @@ The above values, provided by IATA, refer to the 2020 ACMG data collection (fisc
 
 Below, the airline cost structure for each category of expenses (2019):
 
+::: {#fig-operating-costs-split layout-nrow=2}
+
+
 ```{r}
+#| label: fig-total-operating-costs
+#| fig-cap: Total Operating Costs Structure (2019)
+
 library(ggplot2)
 library(dplyr)
-#| label: fig-operating-costs-split
+library(readr)
+library(here)
+library(magrittr)
+library(ggrepel)
 
-df <- read.delim(file = "data/AirlineCostStructure.csv",header = TRUE,sep = ";") 
+library(ggpubr)
+library(forcats)
+
+
+df <- read_delim(file = here("data", "AirlineCostStructure.csv"),
+                 delim = ";",
+                 col_types = "ccd")
 
 width <- 12
 height <- 12
 
+# sort by decreasing values: better slices ordering
 df1 <- df %>%
-       group_by(Category) %>%
-       summarise(Value=sum(Value))
-pie1 <- ggplot(df1, aes (x="", y=Value, fill=Category, label = scales::percent(Value))) + 
-        geom_bar(width = 1, stat = "identity") + 
-        coord_polar("y", start=0) + 
-        scale_fill_brewer(palette="Blues") +
-        theme_void() + 
-        theme(legend.position="bottom", legend.title=element_blank()) +
-        geom_text(position = position_stack(vjust = 0.5), size=4) +
-        ggtitle("Total Operating Costs Structure (2019)")  +
-        guides(fill=guide_legend(nrow=3,byrow=TRUE))
-ggsave(path = "figures" , filename = "Pie1.png", width = width, height = height, units = "cm")
+  group_by(Category) %>%
+  summarise(Value = 100 * sum(Value)) %>%
+  arrange(Value) |> 
+  mutate(
+    Category = fct_reorder(Category, Value),
+    label = paste0(Value, "%")
+)
 
-df2 <- filter(df, Category == "Flight Operating Costs")
-pie2 <- ggplot(df2, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) + 
-        geom_bar(width = 1, stat = "identity") + 
-        coord_polar("y", start=0) + 
-        scale_fill_brewer(palette="Blues") +
-        theme_void() + 
-        theme(legend.position="bottom", legend.title=element_blank()) +
-        geom_text(position = position_stack(vjust = 0.5), size=4) +
-        ggtitle("Ground Operating Costs Structure (2019)")  +
-        guides(fill=guide_legend(nrow=3,byrow=TRUE))
-ggsave(path = "figures" , filename = "Pie2.png", width = width, height = height, units = "cm")
-
-df3 <- filter(df, Category == "Ground Operating Costs")
-pie3 <- ggplot(df3, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) +  
-        geom_bar(width = 1, stat = "identity") + 
-        coord_polar("y", start=0) + 
-        scale_fill_brewer(palette="Blues") +
-        theme_void() + 
-        theme(legend.position="bottom", legend.title=element_blank()) +
-        geom_text(position = position_stack(vjust = 0.5), size=4) +
-        ggtitle("Flight Operating Costs Structure (2019)") +
-        guides(fill=guide_legend(nrow=3,byrow=TRUE))
-ggsave(path = "figures" , filename = "Pie3.png", width = width, height = height, units = "cm")
-
-df4 <- filter(df, Category == "System Operating Costs")
-pie4 <- ggplot(df4, aes (x="", y=Value, fill=Subcategory, label = scales::percent(Value))) + 
-        geom_bar(width = 1, stat = "identity") + 
-        coord_polar("y", start=0) + 
-        scale_fill_brewer(palette="Blues") +
-        theme_void() + 
-        theme(legend.position="bottom", legend.title=element_blank()) +
-        geom_text(position = position_stack(vjust = 0.5), size=4) +
-        ggtitle("System Operating Costs Structure (2019)") +
-        guides(fill=guide_legend(nrow=3,byrow=TRUE))
-ggsave(path = "figures" , filename = "Pie4.png", width = width, height = height, units = "cm")
+ggdonutchart(
+  df1,
+  x = "Value",
+  label = "label",
+  lab.font = c(5, "bold", "black"),
+  fill = "Category",
+  palette = "Blues",
+  size = 0.2,
+  color = "white") +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 13))
 ```
-::: {layout-nrow=2}
-![](figures/pie1.png)
 
-![](figures/pie2.png)
+```{r}
+#| label: fig-flight-operating-costs
+#| fig-cap: Flight Operating Costs Structure (2019)
 
-![](figures/pie3.png)
+# sort by decreasing values: better slices ordering
+df2 <- df %>%
+  filter(Category == "Flight Operating Costs") %>%
+  mutate(Value = 100 * Value) %>%
+  arrange(desc(Value)) |> 
+  mutate(
+    Subcategory = fct_reorder(Subcategory, Value),
+    label = paste0(Value, "%"))
 
-![](figures/pie4.png)
+ggdonutchart(
+  df2,
+  x = "Value",
+  label = "label",
+  lab.font = c(5, "bold", "black"),
+  fill = "Subcategory",
+  palette = "Blues",
+  size = 0.2,
+  color = "white") +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 13))
+```
+
+```{r}
+#| label: fig-ground-operating-costs
+#| fig-cap: Ground Operating Costs Structure (2019)
+
+# sort by decreasing values: better slices ordering
+df3 <- df %>%
+  filter(Category == "Ground Operating Costs") %>%
+  mutate(Value = 100 * Value) %>%
+  arrange(desc(Value)) |> 
+  mutate(
+    Subcategory = fct_reorder(Subcategory, Value),
+    label = paste0(Value, "%"))
+
+ggdonutchart(
+  df3,
+  x = "Value",
+  label = "label",
+  lab.font = c(5, "bold", "black"),
+  fill = "Subcategory",
+  palette = "Blues",
+  size = 0.2,
+  color = "white") +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 13))
+
+```
+
+```{r}
+#| label: fig-system-operating-costs
+#| fig-cap: System Operating Costs Structure (2019)
+
+# sort by decreasing values: better slices ordering
+df4 <- df %>%
+  filter(Category == "System Operating Costs") %>%
+  mutate(Value = 100 * Value) %>%
+  arrange(desc(Value)) |> 
+  mutate(
+    Subcategory = fct_reorder(Subcategory, Value),
+    label = paste0(Value, "%"))
+
+ggdonutchart(
+  df4,
+  x = "Value",
+  label = "label",
+  lab.font = c(5, "bold", "black"),
+  fill = "Subcategory",
+  palette = "Blues",
+  size = 0.2,
+  color = "white") +
+  guides(fill = guide_legend(nrow = 3, byrow = TRUE)) +
+  theme(
+    legend.position = "bottom",
+    legend.title = element_blank(),
+    legend.text = element_text(size = 13))
+```
+
+
+Airline cost structure
+
 :::
 
 ## Data scope
