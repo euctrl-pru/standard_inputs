@@ -1,4 +1,4 @@
-# Operational Cancellation Rate {#sec-operational-cancellation-rate}
+# Operational cancellation rate {#sec-operational-cancellation-rate}
 
 ## EUROCONTROL recommended values
 

@@ -12,7 +12,7 @@
 
 This input is suitable to be used in any analysis that requires historical data on the number of passengers per flight and/or per movement.
 
-## Comment
+## Comments
 
 The Eurostat air transport domain contains national and international intra- and extra-EU data. This provides air transport data for passengers (in numbers of passengers) and for freight and mail (in thousands of tonnes), as well as air traffic data for airports, airlines and aircraft. Data are transmitted to Eurostat by the Member States of the European Union as well as the candidate countries Iceland, Norway and Switzerland. The air transport data have been calculated using data collected at airports.
 

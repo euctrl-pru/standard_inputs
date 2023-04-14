@@ -1,4 +1,4 @@
-# Cancellation Cost {#sec-cancellation-cost}
+# Cancellation cost {#sec-cancellation-cost}
 
 ## EUROCONTROL recommended values
 
@@ -101,7 +101,7 @@ The values presented above refer to cancellation on the day of operation and inc
 
 Ground handling costs (e.g. ramp services, passenger services and field operation services) are not included in the estimation.
 
-## Comment
+## Comments
 
 When a flight is carried out, the airline incurs out-of-pocket expenses (i.e. variable costs) but receives revenues which are 60 100% greater than the out-of-pocket expenses. Cancelling a flight means that the airline forgoes a substantial operating profit. Also, in addition to the loss, costs are incurred for the care and compensation of passengers. 
 

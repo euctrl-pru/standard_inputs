@@ -1,4 +1,4 @@
-# Aircraft Operating Costs {#sec-aircraft-operating-costs}
+# Aircraft operating costs {#sec-aircraft-operating-costs}
 
 ## EUROCONTROL recommended values
 

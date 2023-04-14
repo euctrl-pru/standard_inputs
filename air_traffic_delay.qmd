@@ -53,7 +53,7 @@ projects aiming at improving flow management.
 Furthermore, since primary delay shows the delay that is due to direct triggers,
 it is recommended to be used when analysing updates that would impact the non-reactionary delays.
 
-## Comment
+## Comments
 
 Looking at both figures above, it can be observed that the ATFM delay,
 both at the airport and en-route, is higher when looking at the numbers

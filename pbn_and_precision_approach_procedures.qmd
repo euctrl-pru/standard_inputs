@@ -125,7 +125,7 @@ In September 2020 (on the basis of the AIRAC cycle), 1,576 runway ends were
 equipped with instrument approach procedures and 763 airports had instrument 
 approach procedures.
 
-## Comment
+## Comments
 
 The PBN Approach Map tool is updated in accordance with publications with every 
 AIRAC cycle. It therefore provides up-to-date information on the current deployment status.

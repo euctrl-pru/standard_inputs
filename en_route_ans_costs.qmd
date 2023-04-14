@@ -176,7 +176,7 @@ available via the EUROCONTROL Network Management Directorate (NMD). The CRCO
 bills aircraft operators on a monthly basis, collects charges and disburses the 
 amounts collected to the States every week. 
 
-## Comment
+## Comments
 
 Terminal ANS costs and ANSP gate to gate economic performance are described 
 separately in chapter 6 of the EUROCONTROL Performance Review Report[@ectrlprr2022].

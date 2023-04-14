@@ -98,7 +98,7 @@ Stuttgart, Venice, Warsaw and Zurich.
 
 More details for a selected airport are available in the [EUROCONTROL Public Airport Corner](https://www.eurocontrol.int/tool/airport-corner)
 
-## Comment
+## Comments
 
 The mapping of airports to categories in the recommended value is purely indicative
 and is based on the situation in 2018. The mapping of airports will most probably 

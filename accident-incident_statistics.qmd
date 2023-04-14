@@ -1,4 +1,4 @@
-# Accident/Incident Statistics {#sec-accident-incident-statistics}
+# Accident/incident statistics {#sec-accident-incident-statistics}
 
 ## EUROCONTROL recommended sources
 

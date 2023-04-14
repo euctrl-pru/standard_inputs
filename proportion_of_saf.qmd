@@ -1,4 +1,4 @@
-# Proportion of Sustainable Aviation Fuel {#sec-proportion-of-saf}
+# Proportion of sustainable aviation fuel {#sec-proportion-of-saf}
 
 ## EUROCONTROL recommended values
 
