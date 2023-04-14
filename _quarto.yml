@@ -49,7 +49,7 @@ book:
   title: "EUROCONTROL Standard Inputs for Economic Analyses"
   author:
     - "EUROCONTROL Business Cases team"
-  date: "2023-03-17"
+  date: "2023-04-17"
   description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search:
     location: sidebar
@@ -140,9 +140,9 @@ book:
         - "discount_rate.qmd"
         - "exchange_rate.qmd"
      
-    - part: "General information"
-      chapters:
-       - "abbreviations.qmd"
+   # - part: "General information"
+     # chapters:
+     #  - "abbreviations.qmd"
         # - "references.qmd"
     # - "annexes.qmd"
     # - "data.qmd"
