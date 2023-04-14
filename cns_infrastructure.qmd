@@ -262,7 +262,7 @@ read_xlsx("data/cns_infrastructure.xlsx",
     )
   ) %>% 
   tab_source_note (
-    source = md("*[EUROCONTROL Ground-based Navigation Infrastructure Map Tool](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)*")
+    source = md("*Source: [EUROCONTROL Ground-based Navigation Infrastructure Map Tool](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)*")
   )
 ```
 

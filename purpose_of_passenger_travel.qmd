@@ -1,3 +1,36 @@
 # Purpose of passenger travel {#sec-purpose-of-passenger-travel}
 
-{{< include _under_work.qmd >}}
+## EUROCONTROL recommended values
+
+@fig-travel-purpose shows the distribution of aircraft according to the purpose of travel.
+
+![Purpose of air passenger travel at selected UK airports @AviationStatistics2022](figures/travel_purpose.svg){#fig-travel-purpose}
+
+The results are based on the UK CAA departing passenger survey, which is carried 
+out at selected airports (Gatwick, Heathrow, Luton, Stansted and Manchester), 
+usually every year but interrupted from March 2020 onwards due to the COVID-19 pandemic.
+
+The scope of the statistics is travel to, from and within the UK. Over a five-year 
+period (2015 – 2019). 
+
+The Holidays purpose of travel increased by 4 percentage points (p.p.) and Visiting
+friends and relatives was up 2 p.p. On the other hand, Business travel went down 
+by 2 p.p. and Miscellaneous decreased by 5 p.p.
+
+## Further reading
+
+Below are listed some sources recommended to consult in the frame of this topic:
+
+* [EUROCONTROL public airport corner tool](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022) 
+provides access to non-confidential information relating to the purpose of travel from a specific airport
+
+* [UK Department for Transport in its table TSGB0114b](https://www.gov.uk/government/statistical-data-sets/tsgb01-modal-comparisons)
+publishes overseas travel by air: visits to and from the UK by area and purpose 
+– all modes for years 2011-2019 and 2021. This data does not include domestic travel by air
+
+* [UK Civil Aviation Authority Passenger Survey Reports](https://www.caa.co.uk/Data-and-analysis/UK-aviation-market/Consumer-research/Departing-passenger-survey/Survey-reports/)
+
+* In its [Yearly Compendium of Tourism Statistics](https://www.e-unwto.org/doi/epdf/10.18111/9789284423583), UN World Tourism 
+Organisation publishes arrivals by main purpose (personal, business and professional)
+
+## References
