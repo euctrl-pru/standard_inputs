@@ -15,7 +15,7 @@ read.delim(file = "data/aircraft_operating_costs.csv",header = TRUE,sep = ";") %
   # format the table
   gt() %>%
   # Table source
-  tab_source_note(source_note = md("Values provided by [IATA Airline Cost Management Group (ACMG)](https://www.iata.org/en/services/finance/airline-cost-mgmt/)")
+  tab_source_note(source_note = md("*Source: Values provided by [IATA Airline Cost Management Group (ACMG)](https://www.iata.org/en/services/finance/airline-cost-mgmt/)*")
   ) %>%
   # Change column tags
   cols_label(
@@ -32,7 +32,7 @@ read.delim(file = "data/aircraft_operating_costs.csv",header = TRUE,sep = ";") %
     columns = c(1)
   ) %>%
     cols_align(
-    align = "center",
+    align = "right",
     columns = c(2:6)
   ) %>%
 # Columns width
@@ -53,8 +53,12 @@ read.delim(file = "data/aircraft_operating_costs.csv",header = TRUE,sep = ";") %
     locations = cells_column_labels(columns = c(1:6))
   ) %>%
   tab_options(
-    column_labels.font.weight = "bold",
-    column_labels.background.color = "#003366"
+    column_labels.font.weight = "bold"
+  ) %>% 
+  #Format numbers
+  fmt_number(
+    columns = c(per.flight.hour, per.flight.cycle),
+    decimals = 0
   )
 ```
 
