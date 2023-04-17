@@ -185,7 +185,7 @@ shall not be considered as a commitment by a State / ANSP.
 
 ### Surveillance units
 
-The Table below shows the number of Surveillance units in ECAC as per September 2020. 
+The Table below shows the number of Surveillance units in ECAC as per 2022. 
 Please note work is in progress to get more recent figures.
 
 ```{r}
@@ -224,74 +224,37 @@ read_xlsx("data/cns_infrastructure.xlsx",
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
-    tab_style(
-    style = list(
-      cell_text(weight = "bold")
-    ),
-    locations = cells_body(
-      columns = everything(),
-      rows = 45
-    )
-  ) %>% 
   tab_footnote(
-    footnote = "Considered in Serbia as service is provided by SMATSA",
-    locations = cells_body(
-      columns = State,
-      rows = 28
+    footnote = "The WAM/ADS-B column lists the number of sensors. The configurations and system boundaries for several WAM/ADS-B implementations are complex and site specific. It is therefore not possible to consistently identify the corresponding number of systems",
+    locations = cells_column_labels(
+      column = 5
     )
-  ) %>% 
-   tab_footnote(
-    footnote = "Including Azores and Madeira",
-    locations = cells_body(
-      columns = State,
-      rows = 33
-    )
-  ) %>% 
-  tab_footnote(
-    footnote = "Considering jointly the State of Serbia and the State of Montenegro",
-    locations = cells_body(
-      columns = State,
-      rows = 36
-    )
-  ) %>% 
-  tab_footnote(
-    footnote = "Including Canary Islands; Ceuta and Melilla and Spain Continental",
-    locations = cells_body(
-      columns = State,
-      rows = 39
-    )
-  ) %>% 
+    )%>% 
   tab_source_note (
-    source = md("*Source: [EUROCONTROL Ground-based Navigation Infrastructure Map Tool](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)*")
+    source = md("*Source: EUROCONTROL Surveillance Unit Surveillance Database; LSSIP+ Cycle 2022 – SUR Questionnaire*")
   )
 ```
 
-The Mode S, PSR (primary surveillance radar) and SSR (secondary surveillance radar)
+The Mode-S PSR (primary surveillance radar) and SSR (secondary surveillance radar) 
 numbers are extracted from the surveillance database of the EUROCONTROL CNS unit.
 
-The data depicted in @tbl-cns-ecac-surv above shows the status as per September 2020. As
-the allocation and implementation of Mode S interrogator codes (ICs) require a 
-coordinated approach, every installation of a Mode S radar is officially registered.
-The numbers of PSRs and SSRs reported above are not necessarily accurate, as 
-they are based on voluntary reports by the Member States on updates and changes 
-to their surveillance infrastructure. Work on the collection of MLAT/ADS-B 
-stations is still in progress.
+According to the most recent figures, there are in Europe  526 Mode-S radars, 142 
+PSRs and 139 SSRs, either combined or standalone. As the allocation and 
+implementation of Mode-S interrogator codes (ICs) require a coordinated approach,
+every installation of a Mode-S radar is officially registered. The numbers of 
+PSRs and SSRs reported above are not necessarily accurate, as they are based on
+voluntary reports by the Member States on updates and changes to their surveillance
+infrastructure. Work on the collection of MLAT/ADS-B stations is still in progress.
 
-The WAM/ADS B (wide-area multilateration/automatic dependent surveillance-broadcast)
-and ADS B data originate from the database, which is maintained by the EUROCONTROL
+The WAM/ADS-B (wide-area multilateration/automatic dependent surveillance-broadcast)
+and ADS-B data originate from the database, which is maintained by the EUROCONTROL
 Surveillance and Code Coordination Unit and is based on inputs from stakeholders.
+The ADS-B and WAM Section coordinates the deployment of initial ADS-B applications 
+and WAM in Europe. 
 
-The ADS B and WAM Section coordinates the deployment of initial ADS B applications 
-and WAM in Europe. The WAM/ADS-B sensor count only includes sensors mainly used 
-for surveillance of airborne aircraft (e.g. in TMAs or en route). It does not 
-include sensors mainly used for airport surface surveillance (e.g. airport MLAT 
-used for A-SMGCS). 
-
-:::{.callout-note}
-Please note that the above data were provided by States and may slightly differ 
-from the values in the table “PBN and precision approach procedures” as they are
-valid for different reference periods.
-:::
+The WAM/ADS-B sensor count only includes sensors mainly used for surveillance of
+airborne aircraft (e.g. in TMAs or en route). It does not include sensors mainly 
+used for airport surface surveillance (e.g. airport MLAT used for A-SMGCS).
 
 ## Related inputs
 

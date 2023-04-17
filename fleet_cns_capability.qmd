@@ -417,7 +417,7 @@ read_xlsx("data/cns_capability.xlsx",
 ### Surveillance (SUR) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight and represent
-the values for 2019.
+the values for 2022.
 
 ```{r}
 #| label: tbl-sur-flight
