@@ -91,7 +91,7 @@ read_xlsx("data/atm_operational_units.xlsx")%>%
   tab_options(
     column_labels.font.weight = "bold"
   )
-    ```
+```
 
 ## When to use this input?
 
