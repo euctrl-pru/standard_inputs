@@ -1,0 +1,108 @@
+# Proportion of sustainable aviation fuel {#sec-proportion-of-saf}
+
+## EUROCONTROL recommended values
+
+This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and 2050. The evolution is estimated according to three scenarios:
+
+* **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with _ReFuelEU Aviation_ [@easa:Fit55ReFuelEU] obligations .
+
+* **High scenario**, assumed that the high availability of SAF will foster the quicker adoption of these fuels than outlined in the current regulatory requirements.
+
+* **Low scenario**, which assumes an uptake of SAF slower that outlined by existing regulation.
+
+```{r}
+#| label: tbl-saf-blend
+#| tbl-cap: Forecast evolution of SAF blend 2023-2050
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx(here::here("data", "saf_blend.xlsx")) %>%
+  gt() %>%
+  cols_label(
+    year      = "Year",
+    high    = "High scenario",
+    base  = "Base scenario",
+    low   = "Low scenario"
+  ) %>%
+  fmt_percent(
+    columns = c(high, base, low),
+    decimals = 1
+  ) %>%
+  cols_align(
+    align = "center",
+    columns = high:low
+  ) %>% 
+  cols_align(
+    align = "left",
+    columns = year
+  ) %>% 
+  fmt_number(
+    columns = c(year),
+    use_seps = FALSE,
+    decimals = 0
+  ) %>%
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "year"
+    )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+   tab_source_note(
+     source_note = md("*Source: [EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone](https://www.eurocontrol.int/publication/objective-skygreen-2022-2030)*"))
+```
+
+## Description
+
+@tbl-saf-blend shows the forecast SAF blending percentage over total jet fuel for years 2023 to 2050. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook[@aviation:outlook2022].
+
+The percentages of SAF are based on:
+
+* The series starting with a projection of the 2022 actual SAF blending.
+* A linear interpolation, until in 2030 the required 5% of the ReFuelEU Aviation proposal is met, followed by the same linear growth until 2050.
+
+Other underlying assumptions worth mentioning are:
+
+* The regulation imposes obligations only on the fuel suppliers, not on the airlines.
+* Objective Skygreen 2022-2030[@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
+
+The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
+
+![Forecast evolution of SAF proportion 2023-2050[@skygreen2022]](figures/saf_blend.png){#fig-saf-blend}
+
+## When to use the input?
+
+This input is recommended to be used when dealing with environmentally related assessments. This data has previously been used for the traffic forecast in EUROCONTROL Aviation Outlook 2050 [@aviation:outlook2022] and for the Objective Skygreen study [@skygreen2022], guiding on long-term aviation sustainability.
+
+## Comments
+
+Non-conventional fuels – SAF are non-fossil derived – can be used in aviation if blended with conventional kerosene. Many experts agree that this is the most promising option to reduce aviation emissions in the short to medium term.
+
+The ReFuelEU Aviation initiative – put forward by the European Commission in the Fit for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel available in EU airports.
+The proposal defines a series of percentages of SAF blending that will have to be met at specific years. 
+
+For further research, please visit the work of the EUROCONTROL Aviation Sustainability Unit[@ectl:asu].
+
+## Related inputs
+
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+
+@sec-shadow-cost-of-carbon [Shadow cost of carbon](#sec-shadow-cost-of-carbon)
+
+## References
