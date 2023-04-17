@@ -3,7 +3,7 @@
 ## EUROCONTROL recommended values
 
 @tbl-ifr-info shows the mean distance, fuel consumption and flight duration of 
-an IFR flight, per market segment,^[Rules for the EUROCONTROL classification of low-cost, all-cargo and business aviation types of flights:   https://www.eurocontrol.int/publication/market-segment-rules] in ECAC region.
+an IFR flight, per market segment,^[[Rules for the EUROCONTROL classification of low-cost, all-cargo and business aviation types of flights](https://www.eurocontrol.int/publication/market-segment-rules)] in ECAC region.
 These values refer to year 2019.
 
 ```{r}
@@ -80,7 +80,7 @@ The calculations were made on the basis of:
 
 * the EUROCONTROL Small Emitters Tool (SET) approved by the European Commission by Commission Regulation (EU) No 606/2010
 
-* use of the latest version of the BADA  tabulated model 4 and AEM (Advanced Emission Model)
+* use of the latest version of the BADA [@ectl:bada] tabulated model 4 and AEM (Advanced Emission Model)
 
 * fuel burn figures, not taking into account the reduction in the aircraft's weight in fuel during the flight
 
@@ -100,3 +100,4 @@ The calculations were made on the basis of:
 
 @sec-taxiing-time [Taxiing time](#sec-taxiing-time)
 
+## References

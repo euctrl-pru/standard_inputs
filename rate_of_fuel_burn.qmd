@@ -97,11 +97,11 @@ Organisations interested in more aircraft types can request access to the full B
 
 Below, a list of other applicable sources that consider fuel burn rates:
 
--   [ICAO Carbon Emissions Calculator](https://www.icao.int/environmental-protection/Carbonoffset/Pages/default.aspx): ICAO has developed a methodology to calculate the carbon dioxide emissions from air travel for use in offset programmes. The methodology applies the best publicly available industry data to account for various factors such as aircraft types, route-specific data, passenger load factors and cargo carried.
+-   *ICAO Carbon Emissions Calculator:* [@emissionscalc] ICAO has developed a methodology to calculate the carbon dioxide emissions from air travel for use in offset programmes. The methodology applies the best publicly available industry data to account for various factors such as aircraft types, route-specific data, passenger load factors and cargo carried.
 
--   [EUROCONTROL Advanced Emission Model (AEM)](https://www.eurocontrol.int/model/advanced-emission-model): Standalone application, developed and maintained by the EUROCONTROL Innovation Hub, which estimates aircraft emissions and fuel burn. The AEM can estimate (i) the mass of fuel burned by the main engines of a specified type of aircraft with a specified type of engine flying a specified 4D trajectory; and (ii) the corresponding masses of certain gaseous and particulate emissions which are produced by the burning of that fuel. Access to the tool requires an AEM user license.
+-   *EUROCONTROL Advanced Emission Model (AEM):* [@ectrl:em:model] Standalone application, developed and maintained by the EUROCONTROL Innovation Hub, which estimates aircraft emissions and fuel burn. The AEM can estimate (i) the mass of fuel burned by the main engines of a specified type of aircraft with a specified type of engine flying a specified 4D trajectory; and (ii) the corresponding masses of certain gaseous and particulate emissions which are produced by the burning of that fuel. Access to the tool requires an AEM user license.
 
--   [ICAO Engine Emissions Databank](https://www.easa.europa.eu/en/domains/environment/icao-aircraft-engine-emissions-databank): Manufacturer's datasheets that may contain the rates of fuel burn for different flight phases and individual engine types.
+-   *ICAO Engine Emissions Databank:* [@icao:databank] Manufacturer's datasheets that may contain the rates of fuel burn for different flight phases and individual engine types.
 
 ## Related inputs
 

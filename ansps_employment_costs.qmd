@@ -9,7 +9,7 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-In this section are considered ANSPs’ average annual employment costs for one Full Time Equivalent (FTE) in euros by category of staff. The table below shows the recommended values in 2020.
+In this section are considered ANSPs’ average annual employment costs for one Full Time Equivalent (FTE) in euros by category of staff. @tbl-ansp-employment-cost-general shows the recommended values in 2020.
 
 ```{r}
 #| label: tbl-ansp-employment-cost-general

@@ -70,7 +70,7 @@ fleet, while 69% of flights are operated by the 300 most used aircraft types.
 
 @tbl-military-aircraft shows the number of military aircraft by category in 2023 vs 2019 
 in Europe, USA, and Commonwealth of Independent States (CIS) countries (Armenia,
-Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan and Uzbekistan).
+Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan and Uzbekistan).[@flightglobal2023]
 
 ```{r}
 #| label: tbl-military-aircraft

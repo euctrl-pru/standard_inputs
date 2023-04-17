@@ -7,7 +7,7 @@ the control of States/ANSPs.
 
 @tbl-ans-costs shows the real en-route ANS cost per and the Total en-route 
 Service Units (TSU) for the EUROCONTROL Area in total and split into the SES 
-States and the Other 10 States. The monetary values are presented in 2020 prices.
+States and the Other 10 States.[@ectrlprr2022] The monetary values are presented in 2020 prices.
 
 ```{r}
 #| label: tbl-ans-costs
@@ -147,7 +147,7 @@ The **Total en-route ANS costs** values in @tbl-ans-costs are actual values.
 Often these can also be presented as ‘determined’ (a projection in the future) 
 costs. This is typically the case when en-route ANS costs are forecasted for 
 a reference period of five years are costs pre determined by the SES States as
-referred to in [Article 15(2)(a) of Regulation (EC) No 550/2004](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CONSLEG:2004R0550:20091204:EN:PDF) 
+referred to in Article 15(2)(a) of Regulation (EC) No 550/2004[@eureg:5502004]
 for providing air navigation services.
 
 The **Total en-route Service Units**, which are used for the calculation of route 
@@ -165,8 +165,8 @@ Further information on calculating unit rates can be found on [customer guide to
 ## Other possible sources
 
 Other source could be the EUROCONTROL Central Route Charges Office. At the time 
-of writing, the most recent published version is the [2021 Report on the Operation of the
-Route Charges System](https://www.eurocontrol.int/publication/report-operation-route-charges-system-2021).
+of writing, the most recent published version is the 2021 Report on the Operation of the
+Route Charges System.[@ReportOperationRoute2022]
 Please, check regularly the [CRCO full list of reports on the operation of the route charges system](https://www.eurocontrol.int/library/search?f%5B0%5D=activity%3A768&f%5B1%5D=topic%3A1159&f%5B2%5D=activity%3A768&f%5B3%5D=topic%3A1159) 
 for the latest information.
 

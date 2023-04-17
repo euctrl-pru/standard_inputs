@@ -11,7 +11,7 @@ library(gt)
 
 The values hereafter present the proportion and list of airports and runway ends 
 in ECAC with published Performance-Based Navigation (PBN) instrument approach 
-procedures.
+procedures.[@pbn:tool]
 
 ```{r}
 #| label: tbl-pbn-deployment
@@ -143,6 +143,6 @@ materialise depends on a number of factors including:
 
 Implementation plans should consequently not be considered to be a State’s commitment.
 
-
+## References
 
 

@@ -85,7 +85,7 @@ read_xlsx("data/ifr_flights.xlsx") %>%
   )
 ```
 
-Please note that the comparison between 2021 and 2019 in @tbl-ifr-flights-month is due to the fact that 2019 is the last year where the traffic levels were not affected by the COVID-19 pandemic, allowing for a more realistic comparison of the flight levels.
+Please note that the comparison between 2021 and 2019 in @tbl-ifr-flights-month is due to the fact that 2019 is the last year where the traffic levels were not affected by the COVID-19 pandemic, allowing for a more realistic comparison of the flight levels.[@ectrl:statfor:sid]
 
 ### Flights by market segment in Europe (ECAC) in 2021 compared to 2019
 

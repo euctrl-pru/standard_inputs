@@ -8,7 +8,7 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-@tbl-distance-flown below shows the million of kilometers flown by charging zone.
+@tbl-distance-flown below shows the million of kilometers flown by charging zone.[@ace2020]
 
 ```{r}
 #| label: tbl-distance-flown
@@ -91,7 +91,7 @@ The Report on the Operation of the Route Charges System is published by the CRCO
 on an annual basis and provides data on traffic volumes and ATM costs for the 
 States for which the CRCO collects en route and terminal charges.
 
-The table above sets out the number of millions of kilometres recorded in the 
+@tbl-distance-flown sets out the number of millions of kilometres recorded in the 
 airspace of the Contracting States from 2014 to 2022 for the calculation of route 
 charges (great circle distance after deduction of 20 km for departing and arriving
 flights) .
@@ -107,3 +107,5 @@ payment and the submission of claims is described in [“Customer Guide to Charg
 @sec-en-route-ans-costs [En-route ANS costs](#sec-en-route-ans-costs)
 
 @sec-route-charge-share-per-market-segment [Route charge share per market segment](sec-route-charge-share-per-market-segment)
+
+## References

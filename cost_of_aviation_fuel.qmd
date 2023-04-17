@@ -16,7 +16,8 @@ The ‘spread’ between the aviation fuel price and the underlying oil price co
 
 Other sources that may be interesting to consult to estimate the price of jet fuel include:
 
-* [IATA Airline Industry Economic Performance Report and Tables](https://www.iata.org/en/publications/economics/?Search=&EconomicsL1=149&EconomicsL2=150#searchForm)
+* *IATA Airline Industry Economic Performance Report and Tables*[@iataeconperf]
 
-* [US Energy Information Administration (2022), Annual Energy Outlook 2022](http://www.eia.gov/forecasts/aeo/)
+* *US Energy Information Administration (2022), Annual Energy Outlook 2023*[@eia2023]
 
+## References

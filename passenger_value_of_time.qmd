@@ -24,7 +24,7 @@ In tables hereafter is presented a collection of the different values that can b
 for this purpose. It is to be noted that, in this section, the value of
 time is not cited as a function of delay duration. This is an important
 consideration when using the value. In this case, the longer the delay
-duration, the higher the value.
+duration, the higher the value. [@heatco2006] [@frminecotra2019] [@aptcom2014]
 
 ```{r}
 #| label: tbl-pas-time-value-eu
@@ -57,7 +57,7 @@ locations = cells_column_labels(
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: [European Commission,  “HEATCO, Developing Harmonised European Approaches for Transport Costing and Project Assessment – Deliverable 5 Proposal for Harmonised Guidelines”, 2006](https://trimis.ec.europa.eu/sites/default/files/project/documents/20130122_113653_88902_HEATCO_D5_summary.pdf)*")
+    source_note = md("*Source: [European Commission (2006), HEATCO, Developing Harmonised European Approaches for Transport Costing and Project Assessment – Deliverable 5 Proposal for Harmonised Guidelines](https://trimis.ec.europa.eu/sites/default/files/project/documents/20130122_113653_88902_HEATCO_D5_summary.pdf)*")
   )
 ```
 
@@ -93,7 +93,7 @@ locations = cells_column_labels(
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: [French Ministry of Ecological Transition, Gouvernement Français, “Recommended values for calculating average long-distance travel”, 2019](https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf)*")
+    source_note = md("*Source: [French Ministry of Ecological Transition (2019), Recommended values for calculating average long-distance travel](https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf)*")
   )
   
 ```
@@ -130,7 +130,7 @@ locations = cells_column_labels(
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: [Airports Commission, “Values of time used to estimate passenger delay costs in the UK airport system”, 2014](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf)*")
+    source_note = md("*Source: [Airports Commission (2014), Values of time used to estimate passenger delay costs in the UK airport system](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf)*")
   )
   
 ```

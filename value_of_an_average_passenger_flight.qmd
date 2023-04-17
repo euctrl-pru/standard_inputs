@@ -49,7 +49,7 @@ locations = cells_body(
 ```
 There is no commonly accepted standard for the value of a flight. The value will vary over time and between routes and whether it is an additional frequency on an existing route or a new connection. The COVID-19 pandemic will most probably change the overall picture. This should be taken into account when the above values are used.
 
-The values quoted above are the result of a study on the benefits in monetary value of an average passenger flight in the EU27. 
+The values quoted above are the result of a study on the benefits in monetary value of an average passenger flight in the EU27.[@IATAEconomicBriefing]
 
 IATA, in its briefing note, assesses the economic benefits of an average scheduled passenger flight from the perspective of the consumer, producers and the economy as a whole. Its approach to the various benefits is outlined below.
 
@@ -63,7 +63,7 @@ On the basis of these figures, the share of producer net benefits accrued in the
 
 On top of this, there are also some **wider economic benefits**, which are the benefits to the wider economy, which go beyond the direct users of air transport. They may include spill over impacts in and across economies as a result of increased competition and more efficient movement of capital and labour.
 
-One of the largest economic benefits of increased connectivity comes from its impact on the long term productivity of the wider economy. There are several approaches which may be used to quantify this benefit. One conservative approach which has been developed, on the basis of the statistical relationship between air connectivity and labour productivity, yields an estimate that **a 10% rise in connectivity, relative to a country’s GDP, will boost labour productivity levels by 0.07%.** The methodology for the analysis is detailed in [IATA’s 2007 “Aviation Economic Benefits” study](https://www.iata.org/en/iata-repository/publications/economic-reports/aviation-economic-benefits/).
+One of the largest economic benefits of increased connectivity comes from its impact on the long term productivity of the wider economy. There are several approaches which may be used to quantify this benefit. One conservative approach which has been developed, on the basis of the statistical relationship between air connectivity and labour productivity, yields an estimate that **a 10% rise in connectivity, relative to a country’s GDP, will boost labour productivity levels by 0.07%.** The methodology for the analysis is detailed in IATA’s 2007 Aviation Economic Benefits study. [@iata:eco:benefit]
 
 ## When to use the input?
 
@@ -71,3 +71,4 @@ The use of these values depends on the scope and the viewpoint of the analysis. 
 
 Note also that these values reflect the market conditions and the passenger demand at the time of the study. For example, changes in passengers’ income, changes in their preferences for air transport or changes in airlines’ market structure can affect these values.
 
+## References

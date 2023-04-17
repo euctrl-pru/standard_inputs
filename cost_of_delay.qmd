@@ -9,9 +9,9 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-The tables below present an overview of the **average cost per minute to the airline of ground or airborne delay of a commercial passenger flight**. Please note that all
-the numbers are based on studies performed by the University of Westminster and 
-are adjusted to 2022 prices based on [inflation](#tbl-inflation-table).
+The tables below present an overview of the **average cost per minute to the airline of ground or airborne delay of a commercial passenger flight**. Please note that all the numbers are based on studies performed by the 
+University of Westminster [@uow:2004] [@uow:2015] and are adjusted to 2022 prices based on
+[inflation](#tbl-inflation-table).
 
 The figures presented in this section constitute high-level averages and are
 valid as indicative estimates. **It is strongly recommended that they are used as indicators or for general insights into delay costs and not for specific analyses or operational planning.** 
@@ -320,3 +320,5 @@ read_xlsx("data/cost_delay.xlsx",
 @sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecasts](#sec-air-traffic-statistics-and-forecasts)
 
 @sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
+
+## References

@@ -14,7 +14,7 @@ library(gt)
 ### Navigation (NAV) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight and represent
-the values for 2019.
+the values for 2019.[@cns:dashboard]
 
 ```{r}
 #| label: tbl-nav-flight
@@ -200,7 +200,7 @@ read_xlsx("data/cns_capability.xlsx",
 ### Communication (COM) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight and represent
-values for year 2019.
+values for year 2019.[@cns:dashboard]
 
 ```{r}
 #| label: tbl-com-flight
@@ -417,7 +417,7 @@ read_xlsx("data/cns_capability.xlsx",
 ### Surveillance (SUR) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight and represent
-the values for 2022.
+the values for 2022.[@cns:dashboard]
 
 ```{r}
 #| label: tbl-sur-flight
@@ -665,3 +665,4 @@ reliable as declared. For detailed analysis, additional local assessment is reco
 
 @sec-pbn-and-precision-approach-procedures [PBN and precision approach procedure](#sec-pbn-and-precision-approach-procedures)
 
+## References

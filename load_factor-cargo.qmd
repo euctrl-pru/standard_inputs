@@ -62,3 +62,4 @@ read_xlsx("data/load_factor_cargo.xlsx",
 Cargo flights can be defined here as either freight carriers or passenger/cargo carriers. 
 Note that geographical coverage of IATA Europe covers ECAC States and other 
 countries, including Russia, Tajikistan, Turkmenistan and Uzbekistan. 
+

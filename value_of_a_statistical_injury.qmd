@@ -4,7 +4,7 @@ The value of a statistical injury represents the **monetary value of an improvem
 It can be used as a proxy to monetise the impact of an injury resulting from 
 transport accidents.
 
-[@tbl-value-of-injury] shows the estimation of the value of an injury as a fraction of
+@tbl-value-of-injury shows the estimation of the value of an injury as a fraction of
 the [value of statistical life](#sec-value-of-a-statistical-life), following the approach and numbers presented in 
 the Handbook on the external costs of transport.[@ecdgmove2019] This approach assumes six
 levels of injury, where Maximum Abbreviated Injury Scale (MAIS) 1 and MAIS 2 represent slight injury, MAIS 3 through MAIS 5 represent serious injury and MAIS 6 represents fatality.
@@ -65,7 +65,7 @@ The above data should be treated with caution as there may be legal implications
 
 Below are presented some sources recommended to be consulted in the frame of this input:
 
-[European Commission DG REGIO, Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020](https://ec.europa.eu/regional_policy/en/information/publications/guides/2014/guide-to-cost-benefit-analysis-of-investment-projects-for-cohesion-policy-2014-2020)
+*European Commission DG REGIO, Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020*[@ecdgregio2014]
 
 ## Related inputs
 

@@ -176,16 +176,16 @@ read_xlsx("data/cns_infrastructure.xlsx",
   )
 ```
 
-The [EUROCONTROL Ground-based Navigation Infrastructure Map Tool](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)
+The EUROCONTROL Ground-based Navigation Infrastructure Map Tool[@gbnimap]
 illustrates the current status and the evolution plans for the Ground-based 
 Navigation Infrastructure in ECAC. The navaids database is updated based on the 
-information published in the [European AIS Database (EAD)](https://www.eurocontrol.int/service/european-ais-database) and the planning 
+information published in the European AIS Database (EAD)[@ectrlead] and the planning 
 provided by Air Navigation Service Providers. Please note the evolution plans 
 shall not be considered as a commitment by a State / ANSP.
 
 ### Surveillance units
 
-The Table below shows the number of Surveillance units in ECAC as per 2022. 
+@tbl-cns-ecac-surv shows the number of Surveillance units in ECAC as per 2022. 
 Please note work is in progress to get more recent figures.
 
 ```{r}
@@ -261,3 +261,5 @@ used for airport surface surveillance (e.g. airport MLAT used for A-SMGCS).
 @sec-fleet-cns-capability [Fleet CNS capability](#sec-fleet-cns-capability)
 
 @sec-pbn-and-precision-approach-procedures [PBN and precision approach procedures](#sec-pbn-and-precision-approach-procedures)
+
+## References

@@ -233,11 +233,11 @@ read_xlsx("data/emissions_cost.xlsx",
 
 Below are listed some sources that may be interesting to consult in the frame of this topic:
 
-* [EUROCONTROL (2022), European Environmental Report](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)
+* *EUROCONTROL (2022), European Environmental Report* [@eaer2022]
 
-* [European Commission Climate Action](https://ec.europa.eu/clima/policies/ets/auctioning_en)
+* *European Commission Climate Action* [@ecc:limateaction]
 
-* [UK Department for Environment, Food and Rural Affairs (DEFRA) (2020), Air quality damage cost update 2020](https://uk-air.defra.gov.uk/library/reports?report_id=1006)
+* *UK Department for Environment, Food and Rural Affairs (DEFRA) (2020), Air quality damage cost update 2020* [@defra:2020]
 
 ## Related inputs
 

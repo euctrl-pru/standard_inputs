@@ -6,8 +6,7 @@ The transit time in an ANSP represents the **average time flown by aircraft cont
 @tbl-transit-time provides an overview of the average transit 
 time (expressed in minutes) per ANSP in 2019.
 
-The data that was used to build this table can be accessed on [AIU portal](https://ansperformance.eu/data/).
-You can find there data for more recent years.
+The data that was used to build this table, as well as more recent data, can be accessed on AIU portal.[@aiuportal]
 
 ```{r}
 #| label: tbl-transit-time

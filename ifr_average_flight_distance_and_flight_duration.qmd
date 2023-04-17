@@ -8,12 +8,12 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-The table below presents an overview of the average flight distance in ECAC region,
+@tbl-flight-distance presents an overview of the average flight distance in ECAC region,
 as well as the average flight time in the same region for the period 2017-2021.
 
-The data below was obtained by dividing the total distance actually flown and 
+The data in @tbl-flight-distance was obtained by dividing the total distance actually flown and 
 the total yearly IFR flight hours respectively by the yearly number of IFR
-flights in the ECAC airspace.
+flights in the ECAC airspace.[@ectrlprr2021] [@ectrlprr2022] [@ectrl:statfor:sid]
 
 Please note that the numbers for 2020 and 2021 are considerably lower 
 due to the effect of pandemic.
@@ -78,3 +78,5 @@ area (excl. overflights) are less than 1,000NM long.
 @sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
 
 @sec-taxiing-time [Taxiing time](#sec-taxiing-time)
+
+## References

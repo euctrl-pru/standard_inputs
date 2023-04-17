@@ -17,7 +17,7 @@ with more than double cancellation rate then in 2019.
 
 ## Description
 
-According to [Annex IV of Commission Implementing Regulation EU No 390/2013](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R0390#:~:text=Commission%20Implementing%20Regulation%20%28EU%29%20No%20390%2F2013%20of%203,services%20and%20network%20functions%20Text%20with%20EEA%20relevance.), 
+According to Annex IV of Commission Implementing Regulation EU No 390/2013, [@eureg:3902013] 
 an ‘operational cancellation’ means an arrival or departure of a scheduled flight 
 to which the following conditions apply: 
 
@@ -28,3 +28,5 @@ it featured in the daily list of flight schedules produced by the airport operat
 the day before of operations; but 
 
 * the actual landing or take-off did not occur.
+
+## References

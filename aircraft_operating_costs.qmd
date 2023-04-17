@@ -91,7 +91,7 @@ p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) +
 ggsave(path = "figures" , filename = "Airline_cost_structure.png")
 ```
 
-![Airline Cost Structure (2019). Source [IATA ACMG](https://www.iata.org/en/services/finance/airline-cost-mgmt/)](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
+![Airline Cost Structure (2019) @iata:cmg](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
  
 ## Description 
 
@@ -259,3 +259,6 @@ The values used for analysis are the result of aggregating the cost data provide
 ## Data limitations
 
 In a number of jurisdictions, airport charges and taxes that are levied on a per-passenger basis are not accounted for in airline profit and loss accounts. As a result, the share of airport charges is likely to be significantly understated, as airports may levy more on (i) a per-passenger or (ii) per-aircraft in some jurisdictions. To give an order of magnitude, in some regions the ACI (Airports Council International) estimates that over 50% of airport charges are collected on a per-passenger basis, reaching as much as 80% in some regions worldwide.
+
+## References
+

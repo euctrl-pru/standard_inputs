@@ -10,9 +10,9 @@ network use, capacity forecasts, etc.
 Given this, below are presented the sources that are recommended to consult in 
 order to obtain relevant up to date information on capacity planning.
 
-* [EUROCONTROL NMD (2022) European Network Operations Plan 2022-2026](https://www.eurocontrol.int/publication/european-network-operations-plan-2022-2026)
-    The European Network Operations Plan (NOP) provides a short- to medium-term 
-    outlook of the expected ATM network operations and performance at network 
+* *EUROCONTROL NMD (2022), European Network Operations Plan 2022-2026* [@ectrl:nop:2022]
+    provides a short- to medium-term outlook of the expected ATM network 
+    operations and performance at network 
     and local level.
 
     It provides a detailed overview of capacity and flight efficiency enhancement
@@ -23,7 +23,7 @@ order to obtain relevant up to date information on capacity planning.
     respond to the performance targets. Furthermore, it provides an assessment 
     of the expected impact from these measures on the network.
 
-* [EUROCONTROL NMD (2023) European Network Operations Plan (NOP) – Rolling Seasonal Plan](https://www.eurocontrol.int/publication/european-network-operations-plan-2022-rolling-seasonal-plan)
+* *EUROCONTROL NMD (2023), European Network Operations Plan (NOP) – Rolling Seasonal Plan* [@ectrl:nop:rsp]
 
     The European NOP Rolling Seasonal Plan is updated every Friday, focusing on 
     the planning of the next six weeks and on the management of the execution and 
@@ -34,7 +34,7 @@ order to obtain relevant up to date information on capacity planning.
     More information about network performance (and access to dashboards and the 
     archive) can be found at the [Network Performance page](https://www.eurocontrol.int/network-performance).
 
-* [European ATM Master Plan - implementation plan – level 3](https://www.eurocontrol.int/network-performance) and [European ATM Master Plan – implementation report – level 3](https://www.eurocontrol.int/publication/european-atm-master-plan-implementation-report-level-3)
+* *European ATM Master Plan - implementation plan – level 3* [@ectrl:mp:ip] and *European ATM Master Plan – implementation report – level 3* [@ectrl:mp:ir]
 
     The **European ATM Master Plan Level 3 (MPL3) Implementation Plan** brings 
     together the framework for the commonly agreed actions that ECAC+ Stakeholders
@@ -64,7 +64,7 @@ order to obtain relevant up to date information on capacity planning.
     Programme (SDP) for what concerns the IR (EU) 2021/116 on the Common Project 1 (CP1). 
     It covers 97 Solutions from SESAR1, SESAR2020 W1 and W2 and 97 Implementation Objectives.
 
-* [Local Single Sky ImPlementation (LSSIP) documents](https://www.eurocontrol.int/service/local-single-sky-implementation-monitoring)
+* *Local Single Sky ImPlementation (LSSIP) documents* [@ectrl:lssip]
 
     The Local Single Sky ImPlementation (LSSIP) documents give a comprehensive
     overview of all ATM information for each of the ECAC Member States. They 
@@ -81,3 +81,4 @@ order to obtain relevant up to date information on capacity planning.
 
 @sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
 
+## References

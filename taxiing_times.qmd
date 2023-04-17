@@ -85,8 +85,8 @@ between its actual landing time (ALDT) and actual in-block time (AIBT). The
 taxi-in and taxi-out durations are calculated on the basis of data sent 
 by airlines to CODA.
 
-The table below shows the average additional taxi out time per departure in top 
-30 airports in terms of movements, excluding Turkish airports.
+@tbl-taxi-time-additional shows the average additional taxi out time per departure in top 
+30 airports in terms of movements, excluding Turkish airports.[@ectrlprr2022]
 
 ```{r}
 #| label: tbl-taxi-time-additional
@@ -120,8 +120,7 @@ unimpeded time per stand runway combination at each airport.
 
 ## Other possible sources
 
-[EUROCONTROL CODA Taxi times - Summer and Winter reports](https://www.eurocontrol.int/search?keywords=Taxi+times&sort_by=search_api_relevance)
-This source shows, by airport, seasonal taxi time statistics for the IATA 
+*EUROCONTROL CODA Taxi times - Summer and Winter reports* [@taxi:time] show, by airport, seasonal taxi time statistics for the IATA 
 winter season and the IATA summer season:
 
 * Taxi-in times
@@ -143,4 +142,4 @@ category are also offered for a number of airports.
 
 @sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
 
-
+## References

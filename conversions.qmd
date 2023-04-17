@@ -54,7 +54,7 @@ readxl::read_xlsx("data/values_2022.xlsx",
 
 ## Exchange Rate Conversion {#exchange-rates .unnumbered}
 
-The currency exchange rates provided below are based on the European Central Bank (ECB) rates that are published daily [@ECB:exchange_rates]. The rates shown in the table below correspond to the average rate for the year 2021 as published by ECB.
+The currency exchange rates provided in @tbl-eurostat-exchange-rates are based on the European Central Bank (ECB) rates that are published daily [@ECB:exchange_rates]. The rates shown in @tbl-eurostat-exchange-rates correspond to the average rate for the year 2021 as published by ECB.
 
 ```{r }
 #| label: tbl-eurostat-exchange-rates

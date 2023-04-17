@@ -5,7 +5,7 @@
 This section considers some key performance indicators of cost-effectiveness and 
 productivity for the Air Navigation Services Providers (ANSP) in the EUROCONTROL area.
 
-The table below shows the trends in European system averages for the years 2015 through 2020.
+@tbl-atm-cost-effectiveness shows the trends in European system averages for the years 2015 through 2020.
 
 ```{r}
 #| label: tbl-atm-cost-effectiveness
@@ -100,7 +100,7 @@ drivers of cost-effectiveness are:
 operating costs, exceptional costs, depreciation and capital-related costs
 
 The 2020 key performance drivers of financial cost-effectiveness for each ANSP 
-are summarised in Figure 0.4 of the source document [@ace2020]. There is a wide variation
+are summarised in Figure 0.4 of the source document.[@ace2020] There is a wide variation
 in each of the components:
 
 * ATCO productivity ranges from 0.08 to 1.29 (figure 2.8 of the source document)

@@ -76,7 +76,7 @@ provided operational data.
 
 :::{.callout-note}
 Statistics on individual airport movements and operations at Airports can be 
-downloaded from the [Aviation Intelligence Unit Dashboard](https://ansperformance.eu/data/).
+downloaded from the Aviation Intelligence Unit Dashboard.[@aiuportal]
 :::
 
 ## Other possible sources
@@ -96,7 +96,7 @@ Lyon, Madrid, Milan Malpensa, Milan Linate, Munich, Naples, Nice, Paris CDG,
 Paris Orly, Oslo, Palma de Mallorca, Prague, Rome Fiumicino, Stockholm Arlanda, 
 Stuttgart, Venice, Warsaw and Zurich.
 
-More details for a selected airport are available in the [EUROCONTROL Public Airport Corner](https://www.eurocontrol.int/tool/airport-corner)
+More details for a selected airport are available in the EUROCONTROL Public Airport Corner.[@apt:corner]
 
 ## Comments
 
@@ -111,5 +111,5 @@ the appropriate airport or authority.
 
 @sec-turnaround-time [Turnaround time](#sec-turnaround-time)
 
-
+## References
 

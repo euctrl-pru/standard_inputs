@@ -93,7 +93,7 @@ The values presented above refer to cancellation on the day of operation and inc
 
 * Crew and catering costs
 
-* Passenger compensation for denied boarding and missed connections (estimated on the application of the [Regulation (EC) No 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261#:~:text=Regulation%20%28EC%29%20No%20261%2F2004%20of%20the%20European%20Parliament,of%20flights%2C%20and%20repealing%20Regulation%20%28EEC%29%20No%20295%2F91))
+* Passenger compensation for denied boarding and missed connections, estimated based on the application of the Regulation (EC) No 261/2004.[@eureg2612004]
 
 * Luggage delivery costs
 
@@ -112,3 +112,5 @@ Timely cancellation will enable the airline to take the necessary measures to mi
 ## Related inputs
 
 @sec-operational-cancellation-rate [Operational cancellation rate](#sec-operational-cancellation-rate)
+
+## References

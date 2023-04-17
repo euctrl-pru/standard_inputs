@@ -17,7 +17,7 @@ flow management (ATFM) delay.
 @tbl-turnaround-time presents the evolution of mean scheduled and mean actual 
 turnaround time, in minutes, for medium and heavy aircraft. Please note that this
 data was provided by EUROCONTROL Central Office for Delay Analysis (CODA) and 
-can be accessed, together with a number of additional information, on the [MIRROR tool](https://www.eurocontrol.int/tool/mirror).
+can be accessed, together with a number of additional information, on the [MIRROR tool](https://www.eurocontrol.int/tool/mirror).[@coda:mirror]
 
 ```{r}
 #| label: tbl-turnaround-time
@@ -97,7 +97,7 @@ the scheduled time of arrival (STA) of the same aircraft on the previous inbound
 
 ## Other possible values
 
-The table below presents, for 2019, an overview of turnaround time ranges for the
+@tbl-turnaround-time-range presents, for 2019, an overview of turnaround time ranges for the
 10th (Low), 50th (Base) and 90th (High) percentiles.
 
 ```{r}
@@ -162,3 +162,5 @@ including ground handling time.^[An exhaustive definition and list of the ground
 ## Related inputs
 
 @sec-airport-classification [Airport classification](#sec-airport-classification)
+
+## References

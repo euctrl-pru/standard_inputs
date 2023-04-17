@@ -12,7 +12,7 @@ The figures hereafter provide values recommended to be used to estimate the cost
 of noise per person affected, taking into account the cost of annoyance as well
 as the health costs due to exposure to air traffic noise.
 
-@tbl-yearly-noise-cost provides an **estimation of the average cost of annoyance for the population, health-related costs, as well as a total (i.e. annoyance and health) from aviation traffic noise for EU27+UK.**
+@tbl-yearly-noise-cost provides an **estimation of the average cost of annoyance for the population, health-related costs, as well as a total (i.e. annoyance and health) from aviation traffic noise for EU27+UK.**[@ecdgmove2019]
 
 Annoyance refers to the disturbance which individuals experience when they are 
 exposed to noise (e.g. discomfort, inconvenience, etc.).

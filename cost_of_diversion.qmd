@@ -98,3 +98,4 @@ The estimated cost for business aviation assumes that for each diverted flight t
 :::
 
 In 2022, out of the total number of flights (9.3 million) with a destination in EUROCONTROL Network Manager area, 28,738 flights (0.3%) landed at an airport other than the one initially planned.
+

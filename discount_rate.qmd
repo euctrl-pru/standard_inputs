@@ -37,12 +37,12 @@ of local and individual conditions which affect the requisite risk premium.
 ## Other recommended values
 
 Another way to calculate the discount rate is by using the Weighted Cost of Capital (WACC)
-metric. According to [Implementing Regulation 2019/317 art. 22 (4)](https://eur-lex.europa.eu/legal-content/EN/TXT/?toc=OJ%3AL%3A2019%3A056%3ATOC&uri=uriserv%3AOJ.L_.2019.056.01.0001.01.ENG), WACC is defined as
+metric. According to Implementing Regulation 2019/317 art. 22 (4),[@ir2019317] WACC is defined as
 the average of the return on equity and the interest rate on debt, weighted by 
 the capital structure. According to the same source, the WACC relevant for the 
 assessment of performance plans is the cost of capital pre-tax rate.
 
-In their [Study on cost of capital. Methodology review and update](Performance Review Body, “Study on cost of capital. Methodology review and update”, 2021) report,  the
+In their Study on cost of capital, methodology review and update report, [@prb2021]  the
 Performance Review Body (PRB) of the Single European Sky performed an assessment 
 of the cost of capital for the ANSPs of the Single European Sky Member States.
 
@@ -79,17 +79,14 @@ lower (Option 4).
 
 The sources listed below are those recommended to consult for further information about discount rate:
 
-* [European Commission, “Better regulation toolbox”, 2021](https://commission.europa.eu/law/law-making-process/planning-and-proposing-law/better-regulation/better-regulation-guidelines-and-toolbox_en)
-The better regulation guidelines have been created to support designing EU policies and laws so that they achieve their objectives at minimum cost. The Guidelines explain what better regulation is and how it should be applied in the day-to-day practices of Commission officials preparing new initiatives and proposals or managing existing policies and legislation
+* *European Commission (2021), Better regulation toolbox*[@ecbr2021] has been created to support designing EU policies and laws so that they achieve their objectives at minimum cost. The Guidelines explain what better regulation is and how it should be applied in the day-to-day practices of Commission officials preparing new initiatives and proposals or managing existing policies and legislation
 
-* [European Commission, “Guide to Cost-Benefit Analysis of Investment projects, Economic appraisal tool for Cohesion policy 2014-2020”, 2014](https://ec.europa.eu/regional_policy/en/information/publications/guides/2014/guide-to-cost-benefit-analysis-of-investment-projects-for-cohesion-policy-2014-2020)
-Practical guidance on major project appraisals, as embodied in the cohesion policy legislation for 2014-2020 and takes into account the specific requirements for the European Commission
+* *European Commission (2014), Guide to Cost-Benefit Analysis of Investment projects, Economic appraisal tool for Cohesion policy 2014-2020* [@ecdgregio2014] offers practical guidance on major project appraisals, as embodied in the cohesion policy legislation for 2014-2020 and takes into account the specific requirements for the European Commission
 
-* [European Commission, “Economic Appraisal Vademecum 2021-2027 – General principles and sector applications”, 2021](https://ec.europa.eu/regional_policy/en/information/publications/guides/2021/economic-appraisal-vademecum-2021-2027-general-principles-and-sector-applications)
+* *European Commission (2021), Economic Appraisal Vademecum 2021-2027 – General principles and sector applications* [@ecdgregiovademecum2022]
 Further promotes and simplifies the voluntary use of Economic Appraisal for EU co-financed investments in the 2021-2027 programming period
 
-* [GOV.UK, HM Treasury, “The Green Book: Central Government Guidance on Appraisal and Evaluation”, 2018](https://www.financeministersforclimate.org/knowledge-center/green-book-central-government-guidance-appraisal-and-evaluation#:~:text=The%20Green%20Book%3A%20Central%20Government%20Guidance%20on%20Appraisal,monitoring%20and%20evaluation%20before%2C%20during%20and%20after%20implementation.)
-The EUROCONTROL recommended value of 4% is not suitable for discounting intergenerational projects, especially the projects dealing with environmental matters. A declining long-term discount rate approach may be used following the example on p.104 of this document
+* *GOV.UK, HM Treasury (2018), The Green Book: Central Government Guidance on Appraisal and Evaluation* [@greenbook:2018] The EUROCONTROL recommended value of 4% is not suitable for discounting intergenerational projects, especially the projects dealing with environmental matters. A declining long-term discount rate approach may be used following the example on p.104 of this document
 
 ## Comments
 
@@ -98,3 +95,5 @@ Different approaches to determining discount rates can be used (social rate of t
 The choice of an appropriate social discount rate for the cost-benefit analysis of public projects has long been a contentious issue and subject to intense debate by economists.
 
 Since the choice of discount rate is a matter of judgment, it is recommended that in project appraisals the sensitivity analysis should include a consideration of the effect of differing discount rates. Note that the Internal Rate of Return (IRR) is the discount rate which will give an NPV of zero and thus gives the effective overall return on an investment over the period under consideration.
+
+## References
