@@ -162,8 +162,9 @@ ggdonutchart(
 
 # sort by decreasing values: better slices ordering
 df2 <- df %>%
-  filter(Category == "Flight Operating Costs") %>%
-  mutate(Value = 100 * Value) %>%
+  filter(Category == "Flight Operating Costs") %>% 
+  mutate(Value = 100 * Value / sum(Value),
+         Value = round(Value, digits = 1)) %>%
   arrange(desc(Value)) |> 
   mutate(
     Subcategory = fct_reorder(Subcategory, Value),
@@ -192,7 +193,8 @@ ggdonutchart(
 # sort by decreasing values: better slices ordering
 df3 <- df %>%
   filter(Category == "Ground Operating Costs") %>%
-  mutate(Value = 100 * Value) %>%
+  mutate(Value = 100 * Value / sum(Value),
+         Value = round(Value, digits = 1)) %>%
   arrange(desc(Value)) |> 
   mutate(
     Subcategory = fct_reorder(Subcategory, Value),
@@ -222,7 +224,8 @@ ggdonutchart(
 # sort by decreasing values: better slices ordering
 df4 <- df %>%
   filter(Category == "System Operating Costs") %>%
-  mutate(Value = 100 * Value) %>%
+  mutate(Value = 100 * Value / sum(Value),
+         Value = round(Value, digits = 1)) %>%
   arrange(desc(Value)) |> 
   mutate(
     Subcategory = fct_reorder(Subcategory, Value),
