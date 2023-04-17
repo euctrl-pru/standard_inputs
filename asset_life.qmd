@@ -6,12 +6,13 @@
 to derive the amortisation of investment expenditure.
 
 ```{r}
+#| label: tbl-asset-life
+#| tbl-cap: Estimated asset life
+
 library(readxl)
 library(dplyr)
 library(gt)
 
-#| label: tbl-asset-life
-#| tbl-cap: Estimated asset life
 
 read_xlsx("data/asset_life.xlsx") %>% 
   gt() %>% 
