@@ -1,0 +1,23 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Geographical areas {#sec-geographical-areas .unnumbered}
+
+## Member States and geographical areas covered {.unnumbered}
+
+Single European Sky initiative and the European Civil Aviation Conference (ECAC) are the different scopes that are covered in Standard Inputs document.
+
+![State grouping](figures/eu_orgs.png){#fig-member-states-set-diagram}
+
+## EUROCONTROL Member States {.unnumbered}
+
+![EUROCONTROL Member States (status: November 2020)](figures/eurocontrol_ms.png){#fig-eurocontrol-member-states}
+
+## Airspace of the ECAC Member States {.unnumbered}
+
+ECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states.
+
+![Airspace controlled by ECAC Member States](figures/ecac_airspace_fir.png){#fig-ecac-airspace-fir}

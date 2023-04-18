@@ -1,0 +1,148 @@
+# ANSP employment costs {#sec-ansp-employment-cost}
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+library(here)
+```
+
+
+## EUROCONTROL recommended values
+
+In this section are considered ANSPs’ average annual employment costs for one Full Time Equivalent (FTE) in euros by category of staff. @tbl-ansp-employment-cost-general shows the recommended values in 2020.
+
+```{r}
+#| label: tbl-ansp-employment-cost-general
+#| tbl-cap: Average yearly ANSPs employment costs
+
+read_xlsx(here("data", "ansp_employment.xlsx"),
+          sheet = "general") %>%
+  gt()%>%
+  cols_label(
+    funct = "Staff function",
+    ectrl_area = "EUROCONTROL area",
+    ses_area = "SES area"
+  )%>%
+  fmt_currency(
+    currency = "EUR",
+    columns = ectrl_area:ses_area,
+    decimals = 0
+  )%>%
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = funct:ses_area,
+      rows = 3
+    )
+   )%>%
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    funct ~ px(50),
+    ectrl_area ~ px(25),
+    ses_area ~ px(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL (2022), ATM cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(33),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  )
+```
+
+## Description
+
+One full-time equivalent (FTE) is the equivalent of a single person carrying out
+a particular job or activity working on a full-time basis during a year. 
+A part-time employee working half-time would be counted as 0.5 FTEs. A full-time 
+ATCO working two thirds of her time on duty in ops and one third of her time on
+teaching at a training academy would be counted as a 0.67 FTE ATCO in ops and a 
+0.33 FTE ATCO on other duties.
+
+Employment costs comprise gross wages and salaries, payment for overtime, employer
+contributions to social security schemes and taxes, pension contributions and other 
+benefits. For a study on employment costs, the categories of staff working in an 
+ANSP have been divided into two:
+
+* **ATCOs in ops:** ATCOs participating in an activity which is either directly 
+related to the control of traffic or where there is a necessary requirement for 
+ATCOs to be able to control traffic
+
+* **Support staff or non-ATCO in ops:** this category includes all other staff. 
+It includes ATCOs on other duties (participating in an activity outside ops, 
+such as special projects, teaching at a training academy, providing instruction 
+in a simulator, working in a full-time management position, etc.), trainees, ATC
+assistants, technical and operational support staff, administration staff, and others
+
+The following table gives an overview of individual ANSPs and average European 
+system FTE costs for the two categories. The values were calculated based on 
+information extracted from EUROCONTROL ACE Report.[@ace2020]
+
+```{r}
+#| label: tbl-ansp-empl-cost
+#| tbl-cap: Individual ANSP and average European system FTE costs
+
+read_xlsx(here::here("data", "ansp_employment.xlsx"),
+          sheet = "all") %>%
+  gt()%>%
+  cols_label(
+    ansp = "ANSP",
+    atco_ops = "ATCO in ops",
+    support = "Support staff",
+    all = "All staff"
+  )%>%
+  fmt_currency(
+    currency = "EUR",
+    columns = atco_ops:all,
+    decimals = 0
+  )%>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = ansp:all,
+      rows = 39
+    )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(25)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL PRU (2022), Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+  )
+```
+
+The values in @tbl-ansp-empl-cost were calculated using values provided in 
+Annex 5, Tables 0.3 and 0.5 of the source document.[@ace2020]
+
+:::{.callout-note}
+The employment costs above refer to gate-to-gate cost (i.e. en route and terminal 
+costs) and are expressed in 2020 prices.
+:::
+
+## Related inputs
+
+@sec-atm-cost-effectiveness-indicators [ATM cost-effectiveness indicators](#sec-atm-cost-effectiveness-indicators)
+
+## References
+

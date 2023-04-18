@@ -1,0 +1,18 @@
+# Investment in U-space {#sec-investment-in-u-space}
+
+## EUROCONTROL recommended sources
+
+U-space^[U-space is a set of new services and specific procedures designed to support safe, efficient and secure access to airspace for large numbers of drones. Source: [SJU U-Space Blueprint](https://www.sesarju.eu/sites/default/files/documents/reports/U-space Blueprint brochure final.PDF)]-related investments required to allow access to airspace for large numbers of drones.^[Drones, UAS, RPAS? In line with the [Drones Outlook Study](https://www.sesarju.eu/node/2951) and the U-space blueprint document, the term “drones” is used as a generic term to cover all types of unmanned aircraft systems (UAS), whether remotely piloted (RPAS – remotely piloted aircraft system) or automated.] 
+Below are presented some **key sources that are recommended to be consulted** in the frame of this value.
+
+* *SESAR Joint Undertaking (SJU) (2020), European ATM Master Plan Edition 2020. Digitalising Europe’s Aviation Infrastructure[@ectrl:mp] highlights the growing importance in a time of new entrants. In particular, the Business View includes a section (6.2) on the “Holistic View of SESAR Net benefits for Drones” from which further U-space-related information can be retrieved.
+
+* *SESAR Joint Undertaking (SJU) (2018), European ATM Master Plan: Roadmap for the safe integration of drones into all classes of airspace[@sju:drones:2018] The investment level considered is that necessary to support the safe and efficient deployment of drones in Europe as described in the European ATM Master Plan 2020. The values consider the civil side of the investments. Military investments are not taken into account. There are three categories of investments considered, namely infrastructure and services, airborne investments, and human resources. Further details of sub-categories and examples are to be found in Annex 3.
+
+* *SESAR Joint Undertaking (SJU) (2016), European Drones Outlook Study. Unlocking the value for Europe[@sju:drones2016] describes the growing potential of the European market for drones. The development of the drone fleet is dependent on the ability of the industry to operate various areas of airspace. The document analyses the likely evolution of the fleet, linking it with the expected use, whether for military, government and commercial, or leisure purposes.
+
+::: {.callout-note}
+As drones are an emerging and dynamic business, the estimates and assumptions made for the sources referenced could already be outdated and should be treated with caution.
+:::
+
+## References

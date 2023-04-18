@@ -1,0 +1,103 @@
+# IFR flight information per market segment {#sec-ifr-flight-information-per-market-segment}
+
+## EUROCONTROL recommended values
+
+@tbl-ifr-info shows the mean distance, fuel consumption and flight duration of 
+an IFR flight, per market segment,^[[Rules for the EUROCONTROL classification of low-cost, all-cargo and business aviation types of flights](https://www.eurocontrol.int/publication/market-segment-rules)] in ECAC region.
+These values refer to year 2019.
+
+```{r}
+#| label: tbl-ifr-info
+#| tbl-cap: Average IFR flight values per market segment
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx(here::here("data", "ifr_flight_info.xlsx")) %>% 
+  gt() %>% 
+  cols_label(
+    segment = "Market segment",
+    number_flights = "Number of IFR flights",
+    avg_distance = "Average flight distance (NM)",
+    avg_duration = "Average flight duration (min)",
+    avg_fuel_burn = "Average fuel burn (kg)"
+  ) %>% 
+  fmt_number(
+    columns = number_flights:avg_fuel_burn,
+    decimals = 0
+  ) %>% 
+  tab_row_group(
+    label = "International flights entering and leaving ECAC",
+    rows = 8:14
+  ) %>% 
+  tab_row_group(
+    label = "Flights within ECAC",
+    rows = 1:7
+  ) %>% 
+  tab_options(
+    row_group.background.color = "#F5F7F9",
+    row_group.font.weight = "bold"
+  ) %>% 
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = everything(),
+      rows = 7
+    )
+  ) %>% 
+   tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = everything(),
+      rows = 14
+    )
+  ) %>% 
+   tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    segment ~ pct(32),
+    number_flights:avg_fuel_burn ~ pct(17)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: EUROCONTROL – derived from an analysis of 2019 IFR flights carried out in Europe (excluding overflights) and calculated by AEM, BADA tabulated*")
+  )
+```
+
+## Description
+
+The calculations were made on the basis of:
+
+* 2019 full year total distance and ECAC distance flown, extracted from data collected by the Network Manager, not including overflights
+
+* the EUROCONTROL Small Emitters Tool (SET) approved by the European Commission by Commission Regulation (EU) No 606/2010
+
+* use of the latest version of the BADA [@ectl:bada] tabulated model 4 and AEM (Advanced Emission Model)
+
+* fuel burn figures, not taking into account the reduction in the aircraft's weight in fuel during the flight
+
+## Related inputs
+
+@sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
+
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+
+@sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+
+@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](#sec-if-average-flight-distance-and-flight-duration)
+
+@sec-fleet-size [Fleet size](#sec-fleet-size)
+
+@sec-taxiing-time [Taxiing time](#sec-taxiing-time)
+
+## References

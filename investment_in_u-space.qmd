@@ -1,3 +1,0 @@
-# Investment in U-space {#sec-investment-in-u-space}
-
-{{< include _under_work.qmd >}}

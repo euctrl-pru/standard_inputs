@@ -1,3 +1,0 @@
-# Distance flown by charging zone {#sec-distance-flown-by-charging-zone}
-
-{{< include _under_work.qmd >}}

@@ -1,0 +1,89 @@
+# Transit time {#sec-transit-time}
+
+## EUROCONTROL Recommended Values
+
+The transit time in an ANSP represents the **average time flown by aircraft controlled in this airspace over a year**. 
+@tbl-transit-time provides an overview of the average transit 
+time (expressed in minutes) per ANSP in 2019.
+
+The data that was used to build this table, as well as more recent data, can be accessed on AIU portal.[@aiuportal]
+
+```{r}
+#| label: tbl-transit-time
+#| tbl-cap: Average transit time per country
+
+library(readxl)
+library(dplyr)
+library(gt)
+
+read_xlsx(here::here("data", "transit_time.xlsx")) %>%
+  gt() %>%
+  cols_label(
+    ansp = "ANSP",
+    country = "State",
+    minutes = "Transit time (min)"
+  ) %>%
+  cols_align(
+    align = "right",
+    columns = minutes
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    ansp ~ pct(60),
+    country ~ pct(20),
+    minutes ~ pct(20)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>%
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL Aviation Intelligence Unit](https://ansperformance.eu/data/)*")
+  )
+```
+
+## Description
+
+This metric is the ratio between the total flight hours controlled and the IFR 
+flights controlled, where: 
+
+* Total IFR flight-hours controlled is the sum of the flight-hours controlled 
+over the year by the ANSP. For a given flight the flight-hours controlled are 
+computed using information available in the Network Manager database as the 
+difference between the exit time and the entry time in the controlled airspace
+
+* •	IFR movements controlled is the number of flights that have been controlled
+over the year by the ANSP
+
+In @fig-transit-time, the range of transit time values for the vast majority of 
+ANSPs in Europe can be observed (Note: the scope is limited to the 38 ANSPs 
+reporting to the [Performance Review Commission](https://ansperformance.eu/about/prc/)).
+The European average in terms 
+of flight time is 31 minutes per ANSP. A difference of 49 minutes between the 
+highest (DHMI Türkiye) and the lowest (M-NAV North Macedonia) transit time can
+also be observed – this represents a ratio of almost 6 or a Standard Deviation 
+of around 12.
+
+![Average transit time per country in 2019. *Source: EUROCONTROL*](figures/transit_time.svg){#fig-transit-time fig-align=center}
+
+## When to use the input?
+
+This input is recommended for those projects where the flying time in a giver
+country or a set of countries is key to the assessment. As an example, it has 
+previously been used for several CNS related studies, in particular when studying 
+the cost of communication services that depend on connection times.
+
+## Comments
+
+The data was recorded by the Network Manager (NM) for the 38 ANSPs that were part
+of the ACE Report in 2019 [@ace2019]. For a few ANSPs, the data reported show 
+slight differences with the NM records, as ANSPs tend to communicate their own 
+traffic data. The differences are explained by the different counting methodology 
+in IFR airport movements for training flights.
+
+## Related inputs
+
+@sec-medium-term-capacity-planning [Medium-term capacity planning](#sec-medium-term-capacity-planning)
+
+## References

@@ -1,3 +1,0 @@
-# Aircraft Operating Costs {#sec-aircraft-operating-costs}
-
-{{< include _under_work.qmd >}}

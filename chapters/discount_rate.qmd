@@ -1,0 +1,99 @@
+# Discount rate {#sec-discount-rate}
+
+## EUROCONTROL recommended value
+
+Discount rate is the annual rate used to discount a stream of cashflows in order to calculate their Net Present Value (NPV).
+
+The **discount rate recommended to be used for the EU is 4%.**^[[European Commission (2014), Commission Delegated Regulation (EU) No 480/2014, Article 19 (Discounting of Cash Flow)](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.138.01.0005.01.ENG )]
+
+## Description
+
+A nominal discount rate has three components:
+
+* a basic, risk-free, time value of money (TVM) – traditionally of the order of 2.5%
+
+* compensation for the erosion of the principal by inflation
+
+* a premium for risk
+
+The inflation element should only be included if the cash flows are expressed in 
+'money of the day' and should be excluded if the cash flows are expressed at
+constant price levels. The recommended value is inflation-free and only takes 
+into account TVM and the risk premium.
+
+The assessment of the risk premium depends on the judgment of the investor and 
+can only be analysed over a portfolio of investments. In the case of investment
+in an air traffic management system, the risk being evaluated is the risk that 
+the system will operate successfully and generate the benefits expected. It is 
+not related to the commercial viability of aircraft operators using the system.
+
+The value is used as an indicative benchmark in (EUROCONTROL) business cases for
+ATM investments and is applied to costs incurred and benefits achieved by air 
+navigation service providers, aircraft operators and any other parties involved.
+
+Values differing from the 4% benchmark can, however, be justified on the grounds
+of local and individual conditions which affect the requisite risk premium.
+
+## Other recommended values
+
+Another way to calculate the discount rate is by using the Weighted Cost of Capital (WACC)
+metric. According to Implementing Regulation 2019/317 art. 22 (4),[@ir2019317] WACC is defined as
+the average of the return on equity and the interest rate on debt, weighted by 
+the capital structure. According to the same source, the WACC relevant for the 
+assessment of performance plans is the cost of capital pre-tax rate.
+
+In their Study on cost of capital, methodology review and update report, [@prb2021]  the
+Performance Review Body (PRB) of the Single European Sky performed an assessment 
+of the cost of capital for the ANSPs of the Single European Sky Member States.
+
+The methodological approach taken by PRB calculates efficient costs of capital 
+and combines them with a check on the maximum exposure due to the traffic-risk 
+sharing mechanism.^[Please refer to the source document for further details]  The cost of capital is assessed according to four options^[See table 2 of the source document]  
+that are summarised as follows:
+
+* **Option 1** should be used when the WACC of an ANSP is based on an actual capital structure that is not aligned to the optimal capital structure
+
+* **Option 2** should be used if it is lower than Option 1 for an ANSP that is subject 
+to a government-specified equity return
+
+* **Option 3** should be used if it is lower than Option 1 for an ANSP that has access
+to loan finance on favourable terms but is not subject to a government-specified
+equity return 
+
+* **Option 4** is an additional sense check of the cost of capital (the WACC times
+the asset base) and the maximum risk exposure of the ANSP (4.4% of revenues)
+
+Option 1 is used as a reference here because it constitutes the baseline value 
+in the study, while the remaining three options are subject to specific 
+circumstances described above.
+
+As a result of this assessment, the **average estimated pre-tax WACC in 2022 for all Member States’ ANSPs for option 1 amounts 4.6%.**
+
+According to PRB, Options 2-4 of the methodological framework may result in lower
+numbers than Option 1 if the ANSP is subject to a lower government-specified
+return on equity (Option 2), if the ANSP obtains loan finance on more favourable
+terms (Option 3), or if the WACC implied by the maximum exposure of the ANSP is 
+lower (Option 4).
+
+## Further reading
+
+The sources listed below are those recommended to consult for further information about discount rate:
+
+* *European Commission (2021), Better regulation toolbox*[@ecbr2021] has been created to support designing EU policies and laws so that they achieve their objectives at minimum cost. The Guidelines explain what better regulation is and how it should be applied in the day-to-day practices of Commission officials preparing new initiatives and proposals or managing existing policies and legislation
+
+* *European Commission (2014), Guide to Cost-Benefit Analysis of Investment projects, Economic appraisal tool for Cohesion policy 2014-2020* [@ecdgregio2014] offers practical guidance on major project appraisals, as embodied in the cohesion policy legislation for 2014-2020 and takes into account the specific requirements for the European Commission
+
+* *European Commission (2021), Economic Appraisal Vademecum 2021-2027 – General principles and sector applications* [@ecdgregiovademecum2022]
+Further promotes and simplifies the voluntary use of Economic Appraisal for EU co-financed investments in the 2021-2027 programming period
+
+* *GOV.UK, HM Treasury (2018), The Green Book: Central Government Guidance on Appraisal and Evaluation* [@greenbook:2018] The EUROCONTROL recommended value of 4% is not suitable for discounting intergenerational projects, especially the projects dealing with environmental matters. A declining long-term discount rate approach may be used following the example on p.104 of this document
+
+## Comments
+
+Different approaches to determining discount rates can be used (social rate of time preference, marginal social opportunity cost of capital, weighted average cost of capital, shadow price of capital). A description of these approaches goes beyond the limits of this document.
+
+The choice of an appropriate social discount rate for the cost-benefit analysis of public projects has long been a contentious issue and subject to intense debate by economists.
+
+Since the choice of discount rate is a matter of judgment, it is recommended that in project appraisals the sensitivity analysis should include a consideration of the effect of differing discount rates. Note that the Internal Rate of Return (IRR) is the discount rate which will give an NPV of zero and thus gives the effective overall return on an investment over the period under consideration.
+
+## References

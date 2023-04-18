@@ -1,3 +1,0 @@
-# Cancellation Cost {#sec-cancellation-cost}
-
-{{< include _under_work.qmd >}}
