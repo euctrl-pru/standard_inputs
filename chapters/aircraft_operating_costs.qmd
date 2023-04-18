@@ -1,3 +1,11 @@
+```{r setup}
+library(ggplot2)
+library(dplyr)
+library(here)
+library(gt)
+library(readxl)
+```
+
 # Aircraft operating costs {#sec-aircraft-operating-costs}
 
 ## EUROCONTROL recommended values
@@ -7,9 +15,6 @@
 ```{r}
 #| label: tbl-aircraft-operating-cost
 #| tbl-cap: Aircraft Operating Costs in USD 2019 prices
-
-library(dplyr)
-library(gt)
 
 read_xlsx(here("data", "aircraft_operating_costs.xlsx")) %>% 
   # format the table
@@ -65,8 +70,6 @@ read_xlsx(here("data", "aircraft_operating_costs.xlsx")) %>%
 @fig-airline-costs-structure shows the average airline cost structure for 2019 (considering that jet kerosene price is $66.9 per barrel).
 
 ```{r}
-library(ggplot2)
-library(dplyr)
 
 df <- read_xlsx(here("data", "AirlineCostStructure.xlsx"))
 p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) + 
@@ -112,21 +115,12 @@ Below, the airline cost structure for each category of expenses (2019):
 #| label: fig-total-operating-costs
 #| fig-cap: Total Operating Costs Structure (2019)
 
-library(ggplot2)
-library(dplyr)
-library(readr)
-library(here)
-library(magrittr)
 library(ggrepel)
-
 library(ggpubr)
 library(forcats)
 
 
 df <- read_xlsx(here("data", "AirlineCostStructure.xlsx"))
-
-width <- 12
-height <- 12
 
 # sort by decreasing values: better slices ordering
 df1 <- df %>%

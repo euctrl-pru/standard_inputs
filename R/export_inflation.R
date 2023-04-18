@@ -3,6 +3,7 @@ library(tidyr)
 library(lubridate)
 library(readr)
 library(dplyr)
+library(here)
 
 get_eurostat('prc_hicp_aind') %>% 
   filter(geo == "EU", coicop == "CP00") %>% 

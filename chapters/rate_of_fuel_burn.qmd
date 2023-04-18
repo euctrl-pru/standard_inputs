@@ -11,6 +11,8 @@ This section provides the average number of kilogrames per minute of fuel burn b
 #Import aircraft performance data
 library(dplyr)
 library(gt)
+library(here)
+library(readxl)
 
 # Create the table
 read_xlsx(here("data","fuel_burn_rate.xlsx")) %>% 
