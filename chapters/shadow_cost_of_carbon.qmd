@@ -6,7 +6,7 @@ The shadow cost of carbon is the cost of carbon required to drive the economy to
 
 The input is an adjustment of the EIB recommended values to reflect the most realistic cost of meeting the [UN Paris agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) to limit global warming well below 2 degrees Celsius, ideally 1.5 -- compared to pre-industrial levels [@ipcc2018]. Please note this input does not refer to the traditional _market price_ but to the _shadow cost of carbon_, i.e. considering externalities and future policies. The original EIB proposed inputs are expressed in 2016 prices [@eib2020] and have been adjusted to 2021 price levels using the values provided in @tbl-inflation-table.
 
-![Forecast shadow cost of carbon for EU27 in 2021 prices](figures/cost_of_carbon.png){#fig-cost-of-carbon}
+![Forecast shadow cost of carbon for EU27 in 2021 prices](../figures/cost_of_carbon.png){#fig-cost-of-carbon}
 
 ## When to use the input?
 

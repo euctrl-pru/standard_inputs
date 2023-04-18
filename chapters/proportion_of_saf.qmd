@@ -80,7 +80,7 @@ Other underlying assumptions worth mentioning are:
 
 The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
 
-![Forecast evolution of SAF proportion 2023-2050[@skygreen2022]](figures/saf_blend.png){#fig-saf-blend}
+![Forecast evolution of SAF proportion 2023-2050[@skygreen2022]](../figures/saf_blend.png){#fig-saf-blend}
 
 ## When to use the input?
 

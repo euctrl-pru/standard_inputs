@@ -143,7 +143,7 @@ presented as such. They are extracted from the UoW 2004 and 2011 reports.
 A description of the flight phases, types of delay costs and the calculation 
 method used in the study are given hereafter.
 
-![Overview of the different flight phases](figures/flight_phases.svg){#fig-flight-phases}
+![Overview of the different flight phases](../figures/flight_phases.svg){#fig-flight-phases}
 
 ***Types of delay costs***
 

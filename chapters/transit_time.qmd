@@ -65,7 +65,7 @@ highest (DHMI Türkiye) and the lowest (M-NAV North Macedonia) transit time can
 also be observed – this represents a ratio of almost 6 or a Standard Deviation 
 of around 12.
 
-![Average transit time per country in 2019. *Source: EUROCONTROL*](figures/transit_time.svg){#fig-transit-time fig-align=center}
+![Average transit time per country in 2019. *Source: EUROCONTROL*](../figures/transit_time.svg){#fig-transit-time fig-align=center}
 
 ## When to use the input?
 

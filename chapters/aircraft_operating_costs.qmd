@@ -4,6 +4,7 @@ library(dplyr)
 library(here)
 library(gt)
 library(readxl)
+library(readr)
 ```
 
 # Aircraft operating costs {#sec-aircraft-operating-costs}
@@ -71,6 +72,8 @@ read_xlsx(here("data", "aircraft_operating_costs.xlsx")) %>%
 
 ```{r}
 
+df <- read_csv(here("data", "AirlineCostStructure.csv"))
+
 df <- read_xlsx(here("data", "AirlineCostStructure.xlsx"))
 p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) + 
      geom_col(aes(fill=Category), width = 0.9) + 
@@ -94,7 +97,7 @@ p <- ggplot(df, aes(x = reorder(Subcategory, Value), y = Value)) +
 ggsave(path = "figures" , filename = "Airline_cost_structure.png")
 ```
 
-![Airline Cost Structure (2019) @iata:cmg](figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
+![Airline Cost Structure (2019) @iata:cmg](../figures/Airline_cost_structure.png){#fig-airline-costs-structure fig-align=center}
  
 ## Description 
 

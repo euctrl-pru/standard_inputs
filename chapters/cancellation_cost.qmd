@@ -105,7 +105,7 @@ Ground handling costs (e.g. ramp services, passenger services and field operatio
 
 When a flight is carried out, the airline incurs out-of-pocket expenses (i.e. variable costs) but receives revenues which are 60 100% greater than the out-of-pocket expenses. Cancelling a flight means that the airline forgoes a substantial operating profit. Also, in addition to the loss, costs are incurred for the care and compensation of passengers. 
 
-![Cancellation costs as a function of time](figures/cancellation_function.svg){#fig-cancel-function}
+![Cancellation costs as a function of time](../figures/cancellation_function.svg){#fig-cancel-function}
 
 Timely cancellation will enable the airline to take the necessary measures to mitigate the cost impact, for example by rebooking passengers on another flight and allocating crew and aircraft to a different destination. The cancellation costs will thus be minimal and more in the region of the incurred opportunity cost and passenger value of time. If the cancellation is nearer the flight time (i.e. on the day of operation (D)), the cost of cancellation increases, to cover expenses such as fuel, maintenance, and crew and catering.
 

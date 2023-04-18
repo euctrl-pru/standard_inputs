@@ -222,7 +222,7 @@ aircraft types listed in @tbl-flights-per-aircraft-type. Please note that the va
 @fig-average-daily-ifr-flights-plot shows the daily average number of IFR flights **EU-wide**
 between 2016 and 2021.
 
-![Daily average numbers of IFR flights @prb:dashboard:2022](figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
+![Daily average numbers of IFR flights @prb:dashboard:2022](../figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
 
 ## When to use the input?
 
