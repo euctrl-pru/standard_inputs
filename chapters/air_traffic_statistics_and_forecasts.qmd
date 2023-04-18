@@ -15,7 +15,7 @@ for growth, to help planners manage risks.
 They are published biannually, in spring and autumn, covering flights,
 en route and terminal service units.
   
-![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @statfor:7year_forecast:2022-2028](../figures/forecast_2022-2028.png) {#fig-forecast-2022-2028-plot}
+![EUROCONTROL 7-year forecast 2022-2028 (October 2022 release) @statfor:7year_forecast:2022-2028](../figures/forecast_2022-2028.png){#fig-forecast-2022-2028-plot}
 
 The above graph shows the traffic forecast taking account of the impact of the COVID-19 pandemic. In the base scenario, IFR flights are expected to get back to 2019 levels by 2025.
 
