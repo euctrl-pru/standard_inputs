@@ -1,3 +1,0 @@
-# Asset life {#sec-asset-life}
-
-{{< include _under_work.qmd >}}

@@ -1,0 +1,24 @@
+# Drone fleet {#sec-drone-fleet}
+
+## EUROCONTROL recommended sources
+
+Drone fleet represents an estimate of the size of the future Drone fleet 
+operating in Europe. Below are presented some **key sources that can be consulted in order to obtain information about the drone fleet in Europe.**
+
+* *SESAR Joint Undertaking (SJU) (2016), European Drones Outlook Study. Unlocking the value for Europe* [@sju:drones2016] describes the growing potential of the European market for drones. 
+The development of the drone fleet is dependent on the ability of the industry 
+to operate various areas of airspace. The document analyses the likely evolution
+of the fleet, linking it with the expected use, whether for military, government
+and commercial, or leisure purposes.
+
+* *SJU (2018), European ATM Master Plan: Roadmap for the safe integration of drones into all classes of airspace* [@sju:drones:2018] outlines which drone related-research and development (R&D) activities should be prioritised in order to support the expansion of the drone market and achieve the smooth, safe and fair integration of these new aircraft systems into the European airspace. It also provides an ambitious rollout plan for these technological developments. The document concentrates on the link with the Master Plan 2020 Business View and brings in the topic of urban air mobility.
+
+::: {.callout-note}
+In view of the rapid evolution in recent years, the role of drones is likely to 
+expand more than the source documents consider. The fleet is rapidly growing,
+making outlook analyses unstable. The data provided in the source documents should 
+be seen as an estimate and will be reviewed in future editions of the standard
+inputs as additional data become available.
+:::
+
+## References

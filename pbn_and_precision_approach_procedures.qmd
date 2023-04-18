@@ -1,3 +1,0 @@
-# PBN and precision approach procedures {#sec-pbn-and-precision-approach-procedures}
-
-{{< include _under_work.qmd >}}

@@ -1,0 +1,143 @@
+# Amount of emissions released by fuel burn {#sec-amount-of-emissions-released-by-fuel-burn}
+
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+library(tidyverse)
+```
+
+## EUROCONTROL recommended values
+
+This input represents the amount of emissions produced by combustion of aviation
+fuel, focusing on the main types of pollutants.
+
+```{r}
+#| label: tbl-emissions-per-kg-fuel
+#| tbl-cap: Estimated amount of emissions released per kg of fuel burnt
+
+tribble(
+  ~type, ~emissions,
+  "CO2"        , "3.15 kg",
+  "H2O"        , "1.237 kg",
+  "SOx"        , "0.00084 kg",
+  ""           , "0.000114 kg",
+  "NOx"        , "0.0148 kg",
+  "HC"         , "0.00032 kg",
+  "CO"         , "0.00325 kg",
+  "PM volatile", "0.000092 kg"
+) %>% 
+  gt() %>% 
+  tab_header(title = "Emissions per kg of fuel burnt",
+             subtitle = "fuel = Kerosene") %>%
+  cols_align(
+    align = "right",
+    columns = "emissions"
+  ) %>% 
+  cols_label(
+    type = md("**Emission type**"),
+    emissions = md("**Emission**")
+  ) %>%
+  # tab_style(
+  #   style = list(
+  #     cell_text(weight = "bold")
+  #   ),
+  #   locations = cells_body(
+  #     columns = "type"
+  #   )
+  # ) %>% 
+  # tab_spanner(
+  #   "Emissions per kg of fuel burnt",
+  #   1:2
+  # ) %>% 
+  tab_footnote(
+    footnote = "Source 1",
+    locations = cells_body(columns = emissions, rows = 1:2),
+    placement = "right"
+  ) %>% 
+  tab_footnote(
+    footnote = "assuming 440 ppm, Source 2",
+    locations = cells_body(columns = emissions, rows = 3),
+      placement = "right"
+  ) %>% 
+  tab_footnote(
+    footnote = "assuming 600 ppm, Source 2",
+    locations = cells_body(columns = emissions, rows = 4),
+      placement = "right"
+  ) %>% 
+  tab_footnote(
+    footnote = "Source 3",
+    locations = cells_body(columns = emissions, rows = 5:8),
+    placement = "right"
+  ) %>% 
+  tab_options(
+    table.width = pct(70),
+    footnotes.marks = c(letters[1:10])
+   ) %>% 
+  tab_source_note(
+    source_note = md("*Source 1: [EUROCONTROL (2018) European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency](https://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment)*")
+  ) %>% 
+tab_source_note(
+    source_note = md("*Source 2: [MIT (2010) Laboratory for aviation and the environment – Guidance on the use of AEDT for gridded aircraft emissions in atmospheric models](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.719.2090&rep=rep1&type=pdf)*")
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source 3: [EUROCONTROL, EASA, EU (2022) European Aviation Environmental Report, EU27+FTA aviation emissions for year 2021](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)*")
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(50),
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  )
+```
+
+## When to use the input? 
+
+This input is recommended for a wide use in assessments that focus on the 
+assessment of environmental impact from the burning of fuel at any stage of the 
+flight.
+
+## Comments
+
+The Committee on Aviation Environmental Protection (CAEP), a technical committee 
+of the ICAO Council, recommends the use a conversion factor of **3.16 g of CO~2~ per gram of Jet A.** 
+The 3.16 value can be found in ICAO Doc 9889, 1st edition, 2011, 
+and other documents. 
+
+However, in Europe, as early as 2009, Commission Decision 2009/339/EC indicated 
+an emission **factor of 3.15 for the mass conversion from Jet A to CO~2~** for the
+period after January 2021.
+
+In view of the above, emission factor 3.15 should continue to be used in SESAR 
+2020, for the sake of internal consistency within the programme, unless the EU 
+ETS decides to move to 3.16. 
+Factor 3.16 should be used when the evaluation concerns comparisons with studies
+carried out within the ICAO framework or using the factor recommended by ICAO, 
+in order to ensure external consistency.[@SESAR2020Environment]
+
+## Other possible sources
+
+* *European Aviation Environmental Report Series*[@eaer2022] in its latest 2022 edition shows the aviation sector has taken steps to address 
+    environmental challenges but also that more decisive actions are needed. In particular the latest trends in aircraft engine emissions can be checked in section 3.2. of the document.
+
+* *European Environment Agency (2019), EMEP/EEA air pollutant emission inventory guidebook 2019*[@eea:2019] provides values for emission factors and fuel consumption in different phases of flight – including taxiing – for different aircraft types, using three different levels of accuracy and complexity, in section 1.A.3.a of the document.
+
+* **ICAO Aircraft Engine Emissions Databank**, available at [EASA website](https://www.easa.europa.eu/en/domains/environment/icao-aircraft-engine-emissions-databank) contains information on exhaust emissions of production aircraft engines, covering engine types which emissions are regulated, namely turbojet and turbofan engines with a static thrust greater than 26.7 kilonewtons.
+
+* *Swiss Federal Office of Civil Aviation, Aircraft Engine Emissions*[@foca:aee] presents a measurement and calculation methodology for aircraft piston engine emissions in order to improve aviation emission inventories, as developed by FOCA.
+
+* *Swedish Defence Research Agency*[@envimpact] holds a database of emission indices of NOx, HC and CO, with corresponding fuel flows for turboprop engines.
+
+## Related inputs
+
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
+
+@sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
+
+## References

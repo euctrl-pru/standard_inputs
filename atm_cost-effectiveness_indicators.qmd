@@ -1,3 +1,0 @@
-# ATM cost-effectiveness indicators {#sec-atm-cost-effectiveness-indicators}
-
-{{< include _under_work.qmd >}}

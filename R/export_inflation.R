@@ -3,6 +3,7 @@ library(tidyr)
 library(lubridate)
 library(readr)
 library(dplyr)
+library(here)
 
 get_eurostat('prc_hicp_aind') %>% 
   filter(geo == "EU", coicop == "CP00") %>% 
@@ -10,4 +11,4 @@ get_eurostat('prc_hicp_aind') %>%
   select(unit, year, values) %>% 
   pivot_wider(names_from = unit, values_from = values) %>% 
   rename(index = INX_A_AVG, rate = RCH_A_AVG) %>% 
-  write_csv("data/inflation.csv")
+  write_csv(here::here("data", "inflation.csv")

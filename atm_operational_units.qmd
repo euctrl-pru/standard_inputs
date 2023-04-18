@@ -1,3 +1,0 @@
-# ATM operational units {#sec-atm-operational-units}
-
-{{< include _under_work.qmd >}}

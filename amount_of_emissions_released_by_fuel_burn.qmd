@@ -1,3 +1,0 @@
-# Amount of emissions released by fuel burn {#sec-amount-of-emissions-released-by-fuel-burn}
-
-{{< include _under_work.qmd >}}

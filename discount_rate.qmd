@@ -1,3 +1,0 @@
-# Discount rate {#sec-discount-rate}
-
-{{< include _under_work.qmd >}}

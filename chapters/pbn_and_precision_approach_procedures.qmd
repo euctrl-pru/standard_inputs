@@ -1,0 +1,148 @@
+# PBN and precision approach procedures {#sec-pbn-and-precision-approach-procedures}
+
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
+
+## EUROCONTROL recommended values
+
+The values hereafter present the proportion and list of airports and runway ends 
+in ECAC with published Performance-Based Navigation (PBN) instrument approach 
+procedures.[@pbn:tool]
+
+```{r}
+#| label: tbl-pbn-deployment
+#| tbl-cap: PBN approach deployment status - September 2020
+
+read_xlsx(here::here("data", "pbn_procedures.xlsx"),
+          sheet = "pbn_deployment") %>% 
+  gt() %>% 
+  cols_label(
+    approach = "Approach type",
+    runway_nb = "Runway ends covered (Nb)",
+    runway_share = "Runway ends covered (%)",
+    apt_nb = "Airports covered (Nb)",
+    apt_share = "Airports covered (%)"
+  ) %>% 
+  fmt_percent(
+    columns = c(runway_share, apt_share),
+    decimals = 1
+  ) %>% 
+  fmt_number(
+    columns = c(runway_nb, apt_nb),
+    decimals = 0
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = c(runway_share, apt_share)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    runway_nb:apt_share ~ pct(15),
+    approach ~ pct(40)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+tab_source_note(
+  source_note = md("*Source: [EUROCONTROL PBN Approach Map Tool](https://www.eurocontrol.int/platform/performance-based-navigation-map-tool)*")
+)
+```
+
+```{r}
+#| label: tbl-ils-deployment
+#| tbl-cap: ILS Cat I, Cat II/III deployment status - September 2020
+
+read_xlsx(here::here("data", "pbn_procedures.xlsx"),
+          sheet = "ils_deployment") %>% 
+  gt() %>% 
+  cols_label(
+    approach = "Approach type",
+    runway_nb = "Runway ends covered (Nb)",
+    runway_share = "Runway ends covered (%)",
+    apt_nb = "Airports covered (Nb)",
+    apt_share = "Airports covered (%)"
+  ) %>% 
+  fmt_percent(
+    columns = c(runway_share, apt_share),
+    decimals = 1
+  ) %>% 
+  fmt_number(
+    columns = c(runway_nb, apt_nb),
+    decimals = 0
+  ) %>% 
+  cols_align(
+    align = "center",
+    columns = c(runway_share, apt_share)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    runway_nb:apt_share ~ pct(15),
+    approach ~ pct(40)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+tab_source_note(
+  source_note = md("*Source: [EUROCONTROL PBN Approach Map Tool](https://www.eurocontrol.int/platform/performance-based-navigation-map-tool)*")
+)
+```
+
+## Description
+
+The EUROCONTROL PBN Approach Map tool illustrates the deployment of PBN 
+instrument approach procedures against objectives set in ICAO Assembly Resolution 
+37-11 and the European Regulation on PBN 
+(in particular Commission Implementing Regulation (EU) 2018/1048 of 18 July 2018). 
+
+PBN approaches include instrument approach procedures compliant with the following
+navigation specifications of the PBN Manual (ICAO Doc 9613):
+
+* RNP APCH
+
+* RNP AR APCH
+
+The PBN Approach Map tool provides a list of current and planned airports and 
+runway ends covered by each type of approach. The tool gives information about:
+
+* deployment progress since 2012, on the basis actual publications
+
+* future deployment trends based on publication plans communicated to EUROCONTROL and ICAO
+
+* the availability of PBN approaches with vertical guidance (APV) on all runway 
+ends or on runway ends without precision landing (e.g. ILS, MLS or GBAS)
+
+* the deployment status for ECAC, individual countries, PCP airports and individual airports
+
+In September 2020 (on the basis of the AIRAC cycle), 1,576 runway ends were 
+equipped with instrument approach procedures and 763 airports had instrument 
+approach procedures.
+
+## Comments
+
+The PBN Approach Map tool is updated in accordance with publications with every 
+AIRAC cycle. It therefore provides up-to-date information on the current deployment status.
+
+Information about publication plans captured in the map is collected from 
+individual countries and coordinated with the ICAO EUR/NAT regional office and
+other implementation-funded programmes. If and when these publication plans 
+materialise depends on a number of factors including:
+
+* difficulties collecting obstacle data for procedure design
+
+* unforeseen problems in the procedure design phase
+
+* delays in approval for publication by the supervisory authority
+
+Implementation plans should consequently not be considered to be a State’s commitment.
+
+## References
+
+

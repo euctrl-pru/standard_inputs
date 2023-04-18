@@ -1,0 +1,11 @@
+﻿Aircraft type;per aircraft per year (USD million);per flight hour;per flight cycle;per available seat Km (US cents);per available ton km (US cents) 
+B737 NG;14.11;4337;9231;3.76;33.11 
+A320 Family;12.84;4829;8851;3.6;36.92 
+B737 Classic;8.26;2683;5366;2.96;25.28 
+B777;40.01;9507;60367;3.53;22.07 
+A330;29.87;7827;35857;3.61;24.48 
+B757;18.21;5357;18508;3.73;30.51 
+B767;26;6675;40899;3.61;22.18 
+B787;30.58;7184;50827;3.11;19.86 
+EMB-190;10.87;4097;5770;6.35;54.00 
+Dash 8;4.03;1921;1921;6.12;58.08 

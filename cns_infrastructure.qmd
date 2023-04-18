@@ -1,3 +1,0 @@
-# CNS infrastructure {#sec-cns-infrastructure}
-
-{{< include _under_work.qmd >}}

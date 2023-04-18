@@ -1,0 +1,81 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+# Air traffic delay {#sec-air-traffic-delay}
+
+## EUROCONTROL recommended values
+
+The sections below present the evolution in reported delays taking two perspectives:
+
+1.  The view of airlines and passengers considering all causes of delay
+
+2.  A zoom-in to the view of the Network Manager focusing on Air Traffic Flow Management (ATFM) delays
+
+### All causes of delay
+
+@fig-all-causes-delay presents an **overview of all causes of delay reported by the airlines** in 2020 and 2021. 
+The figures presented are estimated by the EUROCONTROL 
+[Central Office of Delay Analysis (CODA)](https://www.eurocontrol.int/network-performance), and
+are calculated based on the comparison of the scheduled and actual flight timings [@coda2021].
+They can be used in studies that look into the different causes of flight delay experienced by passengers and airlines.
+
+![Breakdown of the network average delay per flight on departure: 2021 vs 2020 @coda2021](figures/delay_causes.png){#fig-all-causes-delay}
+
+
+The ATFM delay constitutes only a fraction of primary delay
+from all causes, and around half of all delay is reactionary (i.e.,
+delay caused by late arrival of aircraft, crew, passengers or baggage
+from previous journeys) rather than primary (i.e., delay other than
+reactionary).
+
+### ATFM delay
+
+Looking specifically into **ATFM delay**, @fig-atfm-delay shows the
+daily traffic and traffic flow delay per flight (en-route and at
+airport) for the period 2012-2021. The figures presented are calculated by the
+Network Manager based on the flight plans and include the planned ATFM
+delays due to the restrictions that may be applied in the airspace [@nm2022].
+
+![Average daily traffic and ATFM delay per flight 2012-2022 @nm2022](figures/atfm_delay.png){#fig-atfm-delay}
+
+
+## When to use the input?
+
+We recommend using all causes of delay provided by CODA when analysing
+the impacts on airlines or on passengers/society (e.g., an airline
+upgrading the avionics in their aircraft; airport expansion, etc.). On
+the other hand, ATFM delay is recommended to be used when analysing
+projects aiming at improving flow management.
+
+Furthermore, since primary delay shows the delay that is due to direct triggers,
+it is recommended to be used when analysing updates that would impact the non-reactionary delays.
+
+## Comments
+
+Looking at both figures above, it can be observed that the ATFM delay,
+both at the airport and en-route, is higher when looking at the numbers
+provided by the airlines rather than that observed by the Network Manager.
+This occurs because the delay numbers provided by the Network Manager account for
+the so-called planned delay due to restrictions in the airspace,
+while the numbers provided by the airlines cover the total delay they attribute to ATFM,
+whether they come from the restrictions or any other planned ATFM delays
+
+Another important point to take into consideration
+when analysing the recommended values is the impact of COVID-19
+pandemic. Both, the all-causes delay and the ATFM delay were impacted by
+the significant reduction in air traffic in 2020 and 2021, resulting
+in a strong drop in the total delay duration. Thus, when looking into
+these numbers it is equally important to consider the situation prior to
+2020. For the All-causes delay this information can be found in the
+previous editions of CODA Digest, available in EUROCONTROL library [@ectllibrary].
+
+## Related inputs
+
+@sec-air-traffic-statistics-and-forecasts [Air traffic statistics and forecast](#sec-air-traffic-statistics-and-forecasts)
+
+@sec-cost-of-delay [Cost of delay](#sec-cost-of-delay)
+
+## References

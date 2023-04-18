@@ -1,3 +1,0 @@
-# Rate of fuel burn {#sec-rate-of-fuel-burn}
-
-{{< include _under_work.qmd >}}

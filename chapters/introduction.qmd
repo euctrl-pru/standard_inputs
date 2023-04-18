@@ -1,0 +1,36 @@
+# Introduction {.unnumbered}
+
+This document provides a set of data commonly used in economic and financial 
+analyses and appraisals, particulary in the field of ATM.
+
+The aim of this document is to standardise the data used in the different 
+ATM-related assessments, facilitate the data access for the different stakeholders
+involved and contribute to the comparability of different analyses through relying on the same data.
+
+In this edition ({{< meta release-version >}}) the values have been updated 
+according to the latest available information, either by adding new data or by
+adjusting existing data to inflation, where relevant.
+
+Please note that the standard inputs have been compiled from EUROCONTROL data 
+and intelligence, from values provided by airspace users, ANSPs, airports, IATA,
+EASA and other organisations, and from other relevant documents which are publicly available.
+
+They are average values and may not be appropriate in all circumstances. 
+The document also gives details of the sources of information, and discusses 
+the applicability and use of the values.
+
+This document will remain a living document, and so comments and suggestions
+are welcome. Readers are invited to send these to [{{< var email.aiu >}}](mailto:{{< var email.aiu >}}).
+
+## Details per data item {.unlisted .unnumbered}
+
+For each standard input, the following information is provided, where relevant.
+
+| Section                        | Description                                                                                                                                                                 |
+|:-----------------------|:-----------------------------------------------|
+| EUROCONTROL recommended values | One or a set of recommended values put forward by EUROCONTROL for the specific indicator.                                                                                   |
+| Description                    | Any relevant information or details regarding the recommended value (e.g. information on how the value was computed, the limitations on using the value, or other remarks). |
+| When to use the input?         | A recommendation on when and where the specific input can be beneficial is provided here.                                                                                   |
+| Comments                       | Any questions or further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited.                    |
+| Related inputs                 | A link to other related standard inputs included in the document.                                                                                                           |
+| References                     | A list of sources used for the specific input.                                                                                                                              |

@@ -1,3 +1,0 @@
-# Value of a statistical injury {#sec-value-of-statistical-injury}
-
-{{< include _under_work.qmd >}}
