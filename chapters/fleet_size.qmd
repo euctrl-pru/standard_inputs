@@ -222,7 +222,7 @@ demographic and economic growth, tourism trends, oil prices, the development of
 new and existing routes, and ultimately highlighting demand for aircraft covering 
 the spectrum of sizes from 100 seats to the very largest aircraft of over 500 seats.
 
-![Airbus commercial aircraft demand 2022-2041 @airbusGMF2022](../figures/airbus_demand.svg){#fig-airbus-demand}
+![Airbus commercial aircraft demand 2022-2041 @airbusGMF2022](../figures/airbus_demand.png){#fig-airbus-demand}
 
 As shown in @fig-airbus-demand, for the years 2022-2041, Airbus forecasts a 
 demand for 39,490 new or replacement commercial aircraft worldwide, of which 
@@ -233,7 +233,7 @@ aircraft dominate the demand (>80%).
 @fig-boeing-demand shows the Boeing forecast demand for new aircraft by category 
 and world regions with a focus on single-aisle aircraft which leads the market growth.
 
-![Boeing commercial aircraft demand 2022-2041 @boeingcmf2022](../figures/boeing_demand.svg){#fig-boeing-demand}
+![Boeing commercial aircraft demand 2022-2041 @boeingcmf2022](../figures/boeing_demand.png){#fig-boeing-demand}
 
 For the same period (2022-2041), **Boeing forecasts** a global demand for 40,170
 new or replacement commercial aircraft of which 8,550 units (21%) are for Europe.

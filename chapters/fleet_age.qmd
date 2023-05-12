@@ -70,7 +70,7 @@ Since the numbers are based on flight plans, they exclude aircraft which do not 
 
 @fig-average-aircraft-age shows the average aircraft age in years by EUROCONTROL market segment[@ectl:market:seg:2022] for the aircraft operating in 2022.
  
-![Average aircraft age per flight in EU27 + EFTA[@ectrl:statfor:sid]](../figures/aircraft_age_per_flight.svg){#fig-average-aircraft-age}
+![Average aircraft age per flight in EU27 + EFTA[@ectrl:statfor:sid]](../figures/aircraft_age.png){#fig-average-aircraft-age}
 
 
 :::{.callout-note}
@@ -83,7 +83,7 @@ Low-cost carriers have the youngest fleet on average, at 9.1 years in 2022, whil
 
 @fig-com-aircraft-fleet shows the commercial aircraft fleet size by age of aircraft.
 
-![Average aircraft age per flight  (EU27+EFTA+UK)[@eurostataircraftfleet]](../figures/aircraft-fleet-by-age.svg){#fig-com-aircraft-fleet}
+![Average aircraft age per flight  (EU27+EFTA+UK)[@eurostataircraftfleet]](../figures/aircraft_fleet_age.png){#fig-com-aircraft-fleet}
 
 
 EUROSTAT publishes annual statistics on commercial aircraft fleet by age of aircraft and country of operator/country of registration.
