@@ -40,7 +40,7 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
-    documentclass: book
+    documentclass: scrbook
     papersize: a4
     fontsize: 11pt
     links-as-notes: true
