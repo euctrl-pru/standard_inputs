@@ -2,15 +2,16 @@
 nocite: |
   @*
 ---
-`r if (knitr:::is_html_output()) '
+::: {.content-visible when-format="html"}
+
 # References {-}
 <div id="refs"></div>
 
-'`
+:::
 
-`r if (knitr:::is_latex_output()) '
+::: {.content-visible when-format="pdf"}
 # References
 
 <div id="refs"></div>
 
-'`
+:::
