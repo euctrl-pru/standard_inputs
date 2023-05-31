@@ -4,7 +4,7 @@
 
 Below is presented the rate of IFR flight cancellations in Europe.
 
-![Operational cancellation rate in Europe](../figures/cancellation_rate.svg){#fig-cancellation-rate}
+![Operational cancellation rate in Europe](../figures/cancellation_rate.png){#fig-cancellation-rate}
 
 *Source: EUROCONTROL data. Detailed data are available upon request*
 

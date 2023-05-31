@@ -69,7 +69,7 @@ With regard to flight distance, @fig-traffic-demand-distribution illustrates tha
 IFR flight distances for flights arriving or departing within the Network Manager 
 area (excl. overflights) are less than 1,000NM long.
 
-![Distribution of traffic demand per distance band in 2022 within the EUROCONTROL Network Manager area](../figures/traffic_demand_distribution.svg){#fig-traffic-demand-distribution}
+![Distribution of traffic demand per distance band in 2022 within the EUROCONTROL Network Manager area](../figures/traffic_demand_distribution.png){#fig-traffic-demand-distribution}
 
 ## Related inputs
 

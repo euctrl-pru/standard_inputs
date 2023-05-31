@@ -4,7 +4,7 @@
 
 @fig-travel-purpose shows the distribution of aircraft according to the purpose of travel.
 
-![Purpose of air passenger travel at selected UK airports @AviationStatistics2022](../figures/travel_purpose.svg){#fig-travel-purpose}
+![Purpose of air passenger travel at selected UK airports @AviationStatistics2022](../figures/travel_purpose.png){#fig-travel-purpose}
 
 The results are based on the UK CAA departing passenger survey, which is carried 
 out at selected airports (Gatwick, Heathrow, Luton, Stansted and Manchester), 

@@ -157,7 +157,7 @@ will have longer ground time to cover for example for the time it needs for
 maintenance. The diagram below shows the scope of the various activities, 
 including ground handling time.^[An exhaustive definition and list of the ground handling services is given in [Council Directive 96/67/EC of 15 October 1996](http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A31996L0067) on access to the ground handling market at Community airports] 
 
-![Overview of activities involved in turnaround process](../figures/turnaround_activities.svg){#fig-turnaround-activities}
+![Overview of activities involved in turnaround process](../figures/turnaround_activities.png){#fig-turnaround-activities}
 
 ## Related inputs
 
