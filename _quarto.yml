@@ -57,7 +57,7 @@ book:
   downloads: [pdf]
   sharing: [twitter]
   output-file: "standard_inputs"
-  site-url: "https://eurocontrol.int/"
+  site-url: "https://ansperformance.eu/economics/cba/standard-inputs/"
   chapters:
     - "index.qmd"
  
