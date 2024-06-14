@@ -3,12 +3,11 @@
 ## EUROCONTROL recommended values
 
 @tbl-ifr-info shows the mean distance, fuel consumption and flight duration of 
-an IFR flight, per market segment,^[[Rules for the EUROCONTROL classification of low-cost, all-cargo and business aviation types of flights](https://www.eurocontrol.int/publication/market-segment-rules)] in ECAC region.
-These values refer to year 2019.
+an IFR flight, per market segment, in the ECAC region. These values refer to year 2021.
 
 ```{r}
 #| label: tbl-ifr-info
-#| tbl-cap: Average IFR flight values per market segment
+#| tbl-cap: Average IFR flight values per market segment, year 2021
 
 library(readxl)
 library(dplyr)
@@ -68,21 +67,22 @@ read_xlsx(here::here("data", "ifr_flight_info.xlsx")) %>%
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: EUROCONTROL – derived from an analysis of 2019 IFR flights carried out in Europe (excluding overflights) and calculated by AEM, BADA tabulated*")
+    source_note = md("*Source: EUROCONTROL – calculated by AEM, BADA tabulated*")
   )
 ```
 
-## Description
-
 The calculations were made on the basis of:
 
-* 2019 full year total distance and ECAC distance flown, extracted from data collected by the Network Manager, not including overflights
+* Full year total distance and ECAC distance flown, extracted from data collected 
+  by the Network Manager, not including overflights
+  
+* The EUROCONTROL Small Emitters Tool (SET) approved by the European Commission 
+  by Commission Regulation (EU) No 606/2010
+  
+* Use of the latest version of the BADA  tabulated model 4 and AEM (Advanced Emission Model)
 
-* the EUROCONTROL Small Emitters Tool (SET) approved by the European Commission by Commission Regulation (EU) No 606/2010
+* Fuel burn figures, not taking into account the reduction in the aircraft’s weight in fuel during the flight 
 
-* use of the latest version of the BADA [@ectl:bada] tabulated model 4 and AEM (Advanced Emission Model)
-
-* fuel burn figures, not taking into account the reduction in the aircraft's weight in fuel during the flight
 
 ## Related inputs
 
@@ -94,10 +94,9 @@ The calculations were made on the basis of:
 
 @sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)
 
-@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](#sec-if-average-flight-distance-and-flight-duration)
+@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and duration](#sec-if-average-flight-distance-and-flight-duration)
 
 @sec-fleet-size [Fleet size](#sec-fleet-size)
 
-@sec-taxiing-time [Taxiing time](#sec-taxiing-time)
+@sec-taxiing-time [Taxi time](#sec-taxiing-time)
 
-## References

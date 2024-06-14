@@ -6,22 +6,22 @@ library(dplyr)
 library(gt)
 ```
 
-
 ## EUROCONTROL recommended values
 
 Turnaround time represents the time taken for unloading and ground handling 
 preparation for the return journey of an aircraft. This corresponds to the time 
-during which the aircraft must remain parked at the gate, including air traffic 
+during which the aircraft must remain parked at the gate, including air traffic
 flow management (ATFM) delay.
 
-@tbl-turnaround-time presents the evolution of mean scheduled and mean actual 
-turnaround time, in minutes, for medium and heavy aircraft. Please note that this
-data was provided by EUROCONTROL Central Office for Delay Analysis (CODA) and 
-can be accessed, together with a number of additional information, on the [MIRROR tool](https://www.eurocontrol.int/tool/mirror).[@coda:mirror]
+@tbl-turnaround-time presents the evolution of mean scheduled and mean actual
+turnaround time, in minutes, for medium and heavy aircraft. Please note that 
+this data was provided by EUROCONTROL Central Office for Delay Analysis (CODA) 
+and can be accessed, upon registration, together with a number of additional 
+information, on the [MIRROR tool](https://www.eurocontrol.int/tool/mirror).
 
 ```{r}
 #| label: tbl-turnaround-time
-#| tbl-cap: Scheduled vs. actual turnaround time in ECAC
+#| tbl-cap: Scheduled vs. actual turnaround time in ECAC, in minutes
 
 read_xlsx(here::here("data", "turnaround_time.xlsx"),
           sheet = "time") %>% 
@@ -58,11 +58,15 @@ read_xlsx(here::here("data", "turnaround_time.xlsx"),
      columns = 4:5
    ) %>% 
    tab_footnote(
-    footnote = "The heavy, medium and light aircraft categories relate to ICAO wake vortex categories based on the maximum certificated take-off mass: Heavy aircraft types of 136 000 kg (300 000 lb) or more; Medium aircraft types less than 136 000 kg (300 000 lb) and more than 7 000 kg (15 500 lb); Light aircraft types of 7 000 kg (15 500 lb) or less",
+    footnote = "Heavy, medium, and light (not included here) relate to ICAO wake vortex aircraft categories based on the maximum certified take-off mass: Heavy aircraft types of 136,000 kg (300,000 lb) or more; Medium aircraft types less than 136,000 kg (300,000 lb) and more than 7,000 kg (15,500 lb); Light aircraft types of 7,000 kg (15,500 lb) or less",
     locations = cells_column_spanners(
       spanners = everything()
     )
     ) %>% 
+  fmt_number(
+    columns = 2:5,
+    decimals = 0
+   ) %>%
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -78,15 +82,12 @@ tab_source_note(
   
 ```
 
-## Description
-
-The values presented in @tbl-turnaround-time are computed from data supplied by airlines to EUROCONTROL 
-CODA. It includes the data on the following market segments: traditional scheduled, 
-low-cost and charter.
+The values presented in @tbl-turnaround-time include the data on the following 
+market segments: traditional scheduled, low-cost and charter.
 
 The total ground time of an aircraft includes overnight stops, maintenance slots,
 fire breaks, etc., so specific cut-off values are applied to obtain the turnaround
-time. The turnaround cut-off time for wake turbulence category H (Heavy) is 180
+time. The turnaround cut-off time for wake turbulence category H (Heavy) is 180 
 minutes, and for M (Medium) 150 minutes.
 
 The actual turnaround time represents the difference between the actual off-block
@@ -97,8 +98,8 @@ the scheduled time of arrival (STA) of the same aircraft on the previous inbound
 
 ## Other possible values
 
-@tbl-turnaround-time-range presents, for 2019, an overview of turnaround time ranges for the
-10th (Low), 50th (Base) and 90th (High) percentiles.
+@tbl-turnaround-time-range presents, for 2022, an overview of turnaround time 
+ranges for the 10th (Low), 50th (Base) and 90th (High) percentiles.
 
 ```{r}
 #| label: tbl-turnaround-time-range
@@ -142,25 +143,15 @@ Turnaround time and ground time typically vary as a function of:
 
 * the airport
 
-* the type of flight (short, medium or long-haul)
-
 * the market segment (traditional scheduled airline, low-cost, business aviation, etc.)
+
+* the type of service/segment (charter, scheduled, positioning, etc.)
+
+* the type of flight (short, medium, or long-haul)
 
 * the type of aircraft (B738, A320, etc.)
 
-* the type of service (charter, scheduled, positioning, etc.)
+The turnaround process involves activities related to the handling of tasks to ensure the cleanliness, safety, and efficiency of the next flight. The difference between a turnaround and ground time is that an aircraft at its home base airport will have longer ground time to cover, for example, the time it needs for maintenance. @fig-turnaround-activities shows the scope of the various activities, 
+including ground handling time.^[An exhaustive definition and list of ground handling services is given in [Council Directive 96/67/EC of 15 October 1996](http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A31996L0067)] 
 
-The turnaround process involves activities related to the handling of tasks to 
-ensure the cleanliness, safety and efficiency of the next flight. The difference 
-between a turnaround and ground time is that an aircraft at its home base airport
-will have longer ground time to cover for example for the time it needs for
-maintenance. The diagram below shows the scope of the various activities, 
-including ground handling time.^[An exhaustive definition and list of the ground handling services is given in [Council Directive 96/67/EC of 15 October 1996](http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A31996L0067) on access to the ground handling market at Community airports] 
-
-![Overview of activities involved in turnaround process](../figures/turnaround_activities.png){#fig-turnaround-activities}
-
-## Related inputs
-
-@sec-airport-classification [Airport classification](#sec-airport-classification)
-
-## References
+![Overview of activities involved in turnaround process](../figures/turnaround_activities.svg){#fig-turnaround-activities}

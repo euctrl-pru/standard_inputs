@@ -8,10 +8,9 @@ library(dplyr)
 library(gt)
 ```
 
-@tbl-diversion-comm and @tbl-diversion-bus present the estimated cost of diversion of a flight to an airport
-other than the one initially planned. The values are split between commercial and business 
-aviation, and, where available, represent a range of values as estimated by the 
-airline members consulted.
+@tbl-diversion-comm and @tbl-diversion-bus present the estimated **average cost of the diversion of a flight to an airport other than the one initially planned.** The values are split between commercial and business aviation,
+and, where available, represent a range of values as estimated by the airline 
+members consulted.
 
 ```{r}
 #| label: tbl-diversion-comm
@@ -53,7 +52,8 @@ locations = cells_column_labels(
 ```
 
 :::{.callout-note}
-The penalties associated with the late delivery of cargo are not considered in the estimation, as this type of data is not yet readily available.
+The penalties associated with the late delivery of cargo are not considered in 
+the estimation, as this type of data is not yet readily available.
 :::
 
 ```{r}
@@ -94,8 +94,11 @@ locations = cells_column_labels(
 ```
 
 :::{.callout-note}
-The estimated cost for business aviation assumes that for each diverted flight there is one additional positioning flight.
+The estimated cost for business aviation assumes that for each diverted flight 
+there is one additional positioning flight.
 :::
 
-In 2022, out of the total number of flights (9.3 million) with a destination in EUROCONTROL Network Manager area, 28,738 flights (0.3%) landed at an airport other than the one initially planned.
+In 2022, out of the total number of flights (9.3 million) with a destination in
+the EUROCONTROL Network Manager area, 28,738 flights (0.3%) landed at an airport 
+other than the one initially planned.
 

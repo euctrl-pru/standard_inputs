@@ -8,10 +8,10 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-This value represents the number of ATC units (air traffic centers) providing 
-ATC services across Europe for the purpose of preventing collisions between 
-aircraft and on the maneuvering area between aircraft and obstructions, and 
-expediting and maintaining an orderly flow of air traffic.[@ace2020]
+This value represents the number of ATC units (air traffic centres) providing ATC
+services across Europe for the purpose of preventing collisions between aircraft,
+and on the manoeuvring area between aircraft and obstructions, and expediting and 
+maintaining an orderly flow of air traffic.
 
 ```{r}
 #| label: tbl-atm-op-units
@@ -82,6 +82,20 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
       column = atc
     )
   ) %>% 
+  tab_footnote(
+    footnote = "Sakaeronavigatsia was added to the analysis in 2015",
+    locations = cells_body(
+      column = year,
+      row = 11
+    )
+  ) %>% 
+  tab_footnote(
+    footnote = "In 2021, UkSATSE was not included in the analysis of operational units, while BHANSA was added to the list, impacting the numbers presented in the table",
+    locations = cells_body(
+      column = year,
+      row = 5
+    )
+  ) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -96,19 +110,21 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
   )
 ```
 
+## Comment
+
+Please note that the analysis presented in ACE Benchmarking reports, on which this
+input was based, excludes elements related to services provided to military
+operational air traffic (OAT), oceanic ANS, and landside airport management 
+operations. It presents a review and comparison of ATM cost effectiveness for
+the 38 ANSPs in Europe, which provide coverage for EUROCONTROL’s 41 Member States. 
+
 ## When to use this input?
 
 The values presented above can be used in analyses where the level of granularity
-of information per type of provider or per provider is important. This is typically 
+of information per type of provider or per provider is important. This is typically
 interesting for studies looking into costs or benefits per ANSP/ACC/Tower/other.
 
-## Comments
+## Related inputs
 
-Please note that the analysis presented in ACE Benchmarking reports, based on
-which this input was elaborated, excludes elements related to services provided
-to military operational air traffic (OAT), oceanic ANS, and landside airport 
-management operations. It presents a review and comparison of ATM cost effectiveness
-for the 38 air navigation service providers (ANSPs) in Europe, which provide 
-coverage for EUROCONTROL 41 Member States and 2 Comprehensive Agreement States.
+@sec-atm-cost-effectiveness-indicators [ATM cost-effectiveness indicators](#sec-atm-cost-effectiveness-indicators)
 
-## Refrences

@@ -10,8 +10,9 @@ library(tibble)
 
 This input presents the number of aircraft, per type, operating in Europe.
 
-@tbl-fleet-size shows the top 30 civil aircraft operating in 2022 in the airspace controlled
-by the EUROCONTROL Network Manager, by aircraft type and number of aircraft.
+This input presents the number of aircraft, per type, operating in Europe. 
+@tbl-fleet-size shows the top 30 civil aircraft operating in 2022 in the airspace 
+controlled by the EUROCONTROL Network Manager.
 
 ```{r}
 #| label: tbl-fleet-size
@@ -61,16 +62,22 @@ read_xlsx(here::here("data", "fleet_size.xlsx"),
   ) %>% 
   tab_source_note(
     source_note = md("*Source: EUROCONTROL Network Manager flight plans, 2022*")
-  )
+  ) %>%
+  tab_footnote(
+    footnote = "This value may vary from the total number of flights reported earlier in this document due to a slight difference in scope of data available",
+    locations = cells_body(
+      columns = flights_2022,
+      rows = 32
+    )
+    ) 
 ```
 
 The 22,948 civil aircraft in @tbl-fleet-size include 500 unique aircraft types. 
-The top 30 aircraft types listed above represent approximately 62% of the total 
-fleet, while 69% of flights are operated by the 300 most used aircraft types.
+The top 30 aircraft types listed above represent approximately 62% of the total
+fleet and 69% of flights.
 
-@tbl-military-aircraft shows the number of military aircraft by category in 2023 vs 2019 
-in Europe, USA, and Commonwealth of Independent States (CIS) countries (Armenia,
-Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan and Uzbekistan).[@flightglobal2023]
+@tbl-military-aircraft shows the number of military aircraft by category in 2019
+vs 2023 in Europe, USA, and Commonwealth of Independent States (CIS) countries^[Armenia, Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan, and Uzbekistan.[@flightglobal2023]
 
 ```{r}
 #| label: tbl-military-aircraft
@@ -140,109 +147,32 @@ read_xlsx(here::here("data", "fleet_size.xlsx"),
   )
 ```
 
-@tbl-ifr-helicopter shows the fleet size of IFR helicopters in Europe for years 2011/2012.
-
-```{r}
-#| label: tbl-ifr-helicopter
-#| tbl-cap: IFR helicopter fleet
-
-tribble(
- ~Region, ~Units,
-  "Europe and Eastern Europe",  "2,208",
-  "CIS countries",              "1,312",
-  "Total",                      "3,520"
-) %>% 
-  gt() %>% 
-  tab_style(
-    style = list(
-      cell_text(weight = "bold")
-    ),
-    locations = cells_body(
-      columns = everything(),
-      rows = 3
-    )
-  ) %>% 
-  tab_options(
-    table.width = pct(60)
-   ) %>% 
-   cols_width(
-    everything() ~ pct(50)
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
-  ) %>% 
-   tab_source_note (
-    source = md("*Source:  FlightGlobal HELICAS 2011/2012 data analysed by the [European Helicopter Association](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)*")
-  )
-```
-
-@tbl-airframes estimates the number of airframes operating under Visual Flight Rules (VFR) in ECAC region.
-
-```{r}
-#| label: tbl-airframes
-#| tbl-cap: Number of VFR airframes in ECAC
-
-tribble(
- ~Aircraft, ~Units,
-  "Aeroplanes",  "20,329",
-  "Helicopters", "3,532",
-  "Gliders", "18,555",
-  "Balloons", "6,623",
-  "Total", "49,039"
-) %>% 
-  gt() %>% 
-  tab_style(
-    style = list(
-      cell_text(weight = "bold")
-    ),
-    locations = cells_body(
-      columns = everything(),
-      rows = 5
-    )
-  ) %>% 
-  tab_options(
-    table.width = pct(60)
-   ) %>% 
-   cols_width(
-    everything() ~ pct(50)
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
-  ) %>% 
-   tab_source_note (
-    source = md("*Source: [International Registry of Civil Aircraft (IRCA), 2014](https://www.icao.int/secretariat/legal/Pages/Intl_registry.aspx) and [Aircraft Owners and Pilot Association (AOPA) (2015)](https://www.aopa.org/)*")
-  )
-```
+![Number of helicopters and VFR airframers in Europe @airbusGMF2022 @ehf2013](../figures/heli_airframe_fleet.png){#fig-heli-airframe-fleet}
 
 ## Other possible sources - forward-looking
 
-The **Airbus Global Market Forecast for 2022-2041** presents a forward-looking view
-of the evolution of the air transport sector, accounting for factors such as 
-demographic and economic growth, tourism trends, oil prices, the development of 
-new and existing routes, and ultimately highlighting demand for aircraft covering 
-the spectrum of sizes from 100 seats to the very largest aircraft of over 500 seats.
+The **Airbus Global Market Forecast for 2022-2041** presents a forward-looking 
+view of the evolution of the air transport sector, accounting for factors such 
+as demographic and economic growth, tourism trends, oil prices, the development 
+of new and existing routes, and ultimately highlighting demand for aircraft 
+covering the spectrum of sizes from 100 seats to the very largest aircraft of over 500 seats.
 
-![Airbus commercial aircraft demand 2022-2041 @airbusGMF2022](../figures/airbus_demand.png){#fig-airbus-demand}
+![Airbus commercial aircraft demand 2022-2041 @airbusGMF2022](../figures/airbus_demand.svg){#fig-airbus-demand}
 
-As shown in @fig-airbus-demand, for the years 2022-2041, Airbus forecasts a 
-demand for 39,490 new or replacement commercial aircraft worldwide, of which 
-8,140 units (21%) are for Europe/CIS regions. 
-Asia-Pacific, China and the US are driving the growth, while single-aisle
-aircraft dominate the demand (>80%).
+As shown in @fig-airbus-demand, **for the years 2022-2041, Airbus forecasts a demand for 39,490 new commercial aircraft worldwide,**
+of which 8,140 units (21%) are for Europe/CIS regions. Asia-Pacific, China and 
+the US are driving the growth, while single-aisle aircraft dominate the demand (>80%).
 
-@fig-boeing-demand shows the Boeing forecast demand for new aircraft by category 
-and world regions with a focus on single-aisle aircraft which leads the market growth.
+**For the same period (2022-2041), Boeing forecasts a global demand for 40,170 new commercial aircraft**
+of which 8,550 units (21%) are for Europe. Europe, Asia-Pacific, US, and China 
+are the drivers for growth owing to the demand for single-aisle aircraft which 
+represents between 69% (in US) and 82% (in Europe) of the total fleet forecast.
+@fig-boeing-demand shows the Boeing forecast demand for new aircraft by category
+and world regions with a focus on single-aisle aircraft which lead the market growth.
 
-![Boeing commercial aircraft demand 2022-2041 @boeingcmf2022](../figures/boeing_demand.png){#fig-boeing-demand}
-
-For the same period (2022-2041), **Boeing forecasts** a global demand for 40,170
-new or replacement commercial aircraft of which 8,550 units (21%) are for Europe.
-Europe, Asia-Pacific, US and China are the drivers for growth owing to the demand
-for single-aisle aircraft which represents between 69% (in US) and 82% (in Europe)
-of the total fleet forecast.
+![Boeing commercial aircraft demand 2022-2041 @boeingcmf2022](../figures/boeing_demand.svg){#fig-boeing-demand}
 
 ## Related inputs
-
 
 @sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
 

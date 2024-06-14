@@ -1,3 +1,41 @@
-# Abbreviations {-}
+# Acronyms and definitions {#sec-abbreviations .unnumbered}
 
-{{< include _under_work.qmd >}}
+```{r}
+#| label: tbl-acronyms
+#| tbl-cap: Acronyms abbreviations used in this document
+
+library(readxl)
+library(dplyr, quietly = TRUE)
+library(gt)
+library(here)
+
+read_xlsx(here("data", "acronyms.xlsx")) %>% 
+  gt() %>%
+  cols_label(
+    acronym = " ",
+    definition = " "
+  ) %>% 
+  cols_align(
+    align = "right",
+    columns = c(1)
+  ) %>%
+    cols_align(
+    align = "left",
+    columns = c(2)
+  ) %>%
+  tab_options(
+    table.width = pct(100),
+  ) %>%
+  cols_width(
+    acronym ~ pct(30),
+    definition ~ pct(70)
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = "acronym"
+    )
+  )
+```

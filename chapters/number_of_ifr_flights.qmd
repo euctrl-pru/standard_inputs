@@ -8,14 +8,14 @@ editor_options:
 
 ## EUROCONTROL recommended values
 
-This section presents the evolution of flight movements in Europe (ECAC
-area) by flight flow, market segment and aircraft type.
+This section presents the evolution of flight movements in Europe (ECAC area) 
+by flight flow, market segment^[The market segments are defined according to [EUROCONTROL STATFOR Market Segment Rules](https://www.eurocontrol.int/publication/market-segment-rules). Please refer to the 2022 document for further details on what each segment comprises.]  and aircraft type.
 
-### Evolution of flights per flow in 2021 compared to 2019
+### Evolution of flights per flow in Europe (ECAC) in 2022 compared to 2019
 
 ```{r}
 #| label: tbl-ifr-flights-month
-#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019 vs 2021
+#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019 vs 2022
 library(readxl)
 library(dplyr)
 library(gt)
@@ -29,9 +29,9 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
     departure  = "Departure",
     internal   = "Internal",
     overflight = "Overflight",
-    total_2021 = "2021",
+    total_2022 = "2022",
     total_2019 = "2019",
-    vs_2019_flight_level = "2021 traffic as % of 2019"
+    vs_2019_flight_level = "2022 traffic as % of 2019"
   ) %>%
   tab_spanner(
     label = "DAIO",
@@ -39,14 +39,14 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
   ) %>%
   tab_spanner(
     label = "Total",
-    columns = c(total_2021, total_2019)
+    columns = c(total_2022, total_2019)
   ) %>%
   fmt_percent(
     columns = c(vs_2019_flight_level),
     decimals = 0
   ) %>%
   fmt_number(
-    columns = c(arrival, departure, internal, overflight, total_2021, total_2019),
+    columns = c(arrival, departure, internal, overflight, total_2022, total_2019),
     use_seps = TRUE,
     decimals = 0
   ) %>%
@@ -55,7 +55,7 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
   ) %>%
   cols_align(
     align = "left",
-    columns = c(month, arrival, departure, internal, overflight, total_2021)
+    columns = c(month, arrival, departure, internal, overflight, total_2022)
   ) %>%
   cols_align(
     align = "right",
@@ -82,16 +82,32 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
       columns = month:vs_2019_flight_level,
       rows = 13
     )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>%  
+   cols_width(
+    month ~ pct(15),
+    departure ~ pct(12),
+    arrival ~ pct(12),
+    internal ~ pct(12),
+    overflight ~ pct(12),
+    total_2022 ~ pct(12),
+    total_2019 ~ pct(12),
+    vs_2019_flight_level ~ pct(12)
   )
 ```
 
-Please note that the comparison between 2021 and 2019 in @tbl-ifr-flights-month is due to the fact that 2019 is the last year where the traffic levels were not affected by the COVID-19 pandemic, allowing for a more realistic comparison of the flight levels.[@ectrl:statfor:sid]
+Please note that the comparison between 2022 and 2019 in @tbl-ifr-flights-month 
+is due to the fact that 2019 is the last year where the traffic levels were not
+affected by the COVID-19 pandemic, allowing for a more realistic comparison of 
+the flight levels.
 
-### Flights by market segment in Europe (ECAC) in 2021 compared to 2019
+### Flights by market segment in Europe (ECAC) in 2022 compared to 2019
 
 ```{r}
 #| label: tbl-flights-per-market-segment
-#| tbl-cap: Flights by market segment in Europe (ECAC) 2019-2021
+#| tbl-cap: Flights by market segment in Europe (ECAC) - years 2019, 2021 and 2022
 library(readxl)
 library(dplyr)
 library(gt)
@@ -101,18 +117,18 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
   cols_label(
     segment = "Market segment",
     share_of_total_2019 = "Share of Total 2019",
-    share_of_total_2020 = "Share of Total 2020",
     share_of_total_2021 = "Share of Total 2021",
+    share_of_total_2022 = "Share of Total 2022",
     y2019 = "2019",
-    y2020 = "2020",
-    y2021 = "2021"
+    y2021 = "2021",
+    y2022 = "2022"
   ) %>%
   fmt_percent(
-    columns = c(share_of_total_2019, share_of_total_2020, share_of_total_2021),
+    columns = c(share_of_total_2019, share_of_total_2021, share_of_total_2022),
     decimals = 0
   ) %>%
   fmt_number(
-    columns = c(y2019, y2020, y2021),
+    columns = c(y2019, y2021, y2022),
     use_seps = TRUE,
     decimals = 0
   ) %>%
@@ -121,11 +137,11 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
   ) %>%
   cols_align(
     align = "right",
-    columns = c(y2019, y2020, y2021)
+    columns = c(y2019, y2021, y2022)
   ) %>%
   cols_align(
     align = "center",
-    columns = c(share_of_total_2019, share_of_total_2020, share_of_total_2021)
+    columns = c(share_of_total_2019, share_of_total_2021, share_of_total_2022)
   ) %>% 
   tab_options(
     table.width = pct(100)
@@ -141,29 +157,43 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
       cell_text(weight = "bold")
     ),
     locations = cells_body(
-      columns = segment:y2021,
+      columns = segment:y2022,
       rows = 9
     )
+  ) %>% 
+  tab_footnote(
+    footnote = "The “Other” market segment contains flights that do not fall in any of the remaining segments mentioned in the table, such as helicopter flights, etc.",
+    locations = cells_body(
+      columns = segment,
+      rows = 6
+    )
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>%  
+   cols_width(
+    segment ~ pct(20),
+    share_of_total_2019 ~ pct(13),
+    share_of_total_2021 ~ pct(13),
+    share_of_total_2022 ~ pct(13),
+    y2019 ~ pct(13),
+    y2021 ~ pct(13),
+    y2022 ~ pct(13)
   )
 
 ```
 
-EUROCONTROL market segments were updated in 2022 and saw the
-"Traditional Scheduled" segment split into "Mainline" and "Regional" according to
-EUROCONTROL Market Segment Rules [@ectl:market:seg:2022].
+In 2022 the total number of flights went up by 48% compared to 2021 but was at 
+83% of 2019 flight levels (pre-COVID-19). Compared with 2019, two segments 
+increased in 2022, All-Cargo (+6%) and Business Aviation (+16%). The Mainline 
+(-25%), Low-Cost (-15%) and Regional (-26%) segments were the most affected, 
+along with the Charter segment which went down by -15% in 2022 (vs 2019).
 
-In 2021 the total number of flights went up 25.1% compared to 2020, but
-was at 56.2% of 2019 flight levels (pre-COVID-19). Compared with 2019,
-only two segments increased in 2021 and they were All-Cargo (+13.9%) and
-Business Aviation (+3.8%). The Mainline (-54.5%), Low-Cost (-53.9%) and
-Regional (-47.6%) segments were the most affected, along with the Charter
-segment which went down by -20.6% in 2021 (vs 2019).
-
-### Top 20 number of flights by civil aviation aircraft in Europe (ECAC) in 2021
+### Top 20 number of flights by civil aviation aircraft in Europe (ECAC) in 2022
 
 ```{r}
 #| label: tbl-flights-per-aircraft-type
-#| tbl-cap: Top 20 flights by aircraft type in Europe (ECAC) in 2021
+#| tbl-cap: Top 20 flights by aircraft type in Europe (ECAC) in 2022
 library(readxl)
 library(dplyr)
 library(gt)
@@ -210,23 +240,33 @@ read_xlsx(here::here("data", "flights_per_aircraft_type.xlsx")) %>%
     locations = cells_body(
        rows = 22
     )
-  )
+  ) %>% 
+  tab_footnote(
+    footnote = "Please note that the percentages in “Proportion” column are rounded, which results in cumulative values that may differ from the expectations.",
+    locations = cells_column_labels(
+      column = "Cumulative"
+    )
+  ) 
 ```
 
-In 2021 there were 301 different civil aircraft types operating IFR
-flights in Europe. About 70% of the flights were carried out by the 20
-aircraft types listed in @tbl-flights-per-aircraft-type. Please note that the values presented in @tbl-flights-per-aircraft-type focuses on the civil aviation flights (i.e. excluding the military and other categories), resulting in a difference in the total flights as compared with @tbl-flights-per-market-segment and @tbl-ifr-flights-month.
+In 2022, about 76% of all IFR flights in Europe were carried out by the 20 
+aircraft types listed in @tbl-flights-per-aircraft-type. Please note that the 
+values presented in @tbl-flights-per-aircraft-type focus on the civil aviation 
+flights (i.e. excluding the military and other categories), resulting in a difference
+in the total flights as compared with @tbl-flights-per-market-segment and @tbl-ifr-flights-month.
 
-### Daily average of IFR flights, 2016 to 2021
+### Daily average of IFR flights, 2016 to 2022
 
 @fig-average-daily-ifr-flights-plot shows the daily average number of IFR flights **EU-wide**
-between 2016 and 2021.
+between 2016 and 2022.
 
-![Daily average numbers of IFR flights @prb:dashboard:2022](../figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
+![Daily average number of IFR flights @prb:dashboard:2022](../figures/average_daily_flights.png){#fig-average-daily-ifr-flights-plot}
 
 ## When to use the input?
 
-This input is recommended to be used in situations where an overview of the historical evolution in the number of flights is required, namely grouped according to different criteria.
+This input is recommended to be used in situations where an overview of the 
+historical evolution in the number of flights is required, namely grouped 
+according to different criteria.
 
 ## Related inputs
 

@@ -8,11 +8,11 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-@tbl-distance-flown below shows the million of kilometers flown by charging zone.[@ace2020]
+@tbl-distance-flown shows the million kilometres flown by charging zone.
 
 ```{r}
 #| label: tbl-distance-flown
-#| tbl-cap: Distance flown by charging zone in M km
+#| tbl-cap: Distance flown by charging zone in million km
 
 read_xlsx(here::here("data", "distance_by_charging_zone.xlsx")) %>% 
   gt() %>% 
@@ -65,7 +65,7 @@ read_xlsx(here::here("data", "distance_by_charging_zone.xlsx")) %>%
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source = md("*Source: [EUROCONTROL PRU (2022), Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook](https://ansperformance.eu/publications/prc/ace/)*")
+    source = md("*Source: [EUROCONTROL PRU (n.d), ATM Cost Effectiveness (ACE) Reports](https://ansperformance.eu/publications/prc/ace/)*")
   ) %>% 
   tab_footnote(
     footnote = "Estonia integrated as of April 2017",
@@ -85,27 +85,29 @@ read_xlsx(here::here("data", "distance_by_charging_zone.xlsx")) %>%
 
 For the most updated information, please refer to the [Aviation Intelligence En-Route Dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html).
 
-## Description
-
-The Report on the Operation of the Route Charges System is published by the CRCO
+The Report on the Operation of the Route Charges System is published by the CRCO 
 on an annual basis and provides data on traffic volumes and ATM costs for the 
-States for which the CRCO collects en route and terminal charges.
+States for which the CRCO collects en-route and terminal charges.
 
-@tbl-distance-flown sets out the number of millions of kilometres recorded in the 
-airspace of the Contracting States from 2014 to 2022 for the calculation of route 
-charges (great circle distance after deduction of 20 km for departing and arriving
-flights) .
+@tbl-distance-flown sets out the number of millions of kilometres recorded in 
+the airspace of the Contracting States from 2014 to 2022 for the calculation of
+route charges (great circle distance after deduction of 20 km for departing and 
+arriving flights).
 
-Information on the various different charges levied by the CRCO, in particular 
-the charge calculation methods, the basic billing documents, the methods of 
-payment and the submission of claims is described in [“Customer Guide to Charges”](https://www.eurocontrol.int/publication/customer-guide-route-charges).
+Information on the various charges levied by the CRCO, in particular the charge 
+calculation methods, the basic billing documents, the methods of payment and the
+submission of claims is described in  [customer guide to charges](https://www.eurocontrol.int/publication/customer-guide-route-charges).
+
+## When to use the input?
+
+This input is suitable for use in assessments aiming at estimating the airspace 
+users’ operating costs, namely when it comes to the route charges.
 
 ## Related inputs
 
-@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and flight duration](#sec-if-average-flight-distance-and-flight-duration)
+@sec-if-average-flight-distance-and-flight-duration [IFR average flight distance and duration](#sec-if-average-flight-distance-and-flight-duration)
 
 @sec-en-route-ans-costs [En-route ANS costs](#sec-en-route-ans-costs)
 
 @sec-route-charge-share-per-market-segment [Route charge share per market segment](sec-route-charge-share-per-market-segment)
 
-## References

@@ -5,28 +5,29 @@
 Below is presented the rate of IFR flight cancellations in Europe.
 
 ![Operational cancellation rate in Europe](../figures/cancellation_rate.png){#fig-cancellation-rate}
-
 *Source: EUROCONTROL data. Detailed data are available upon request*
 
-Reports about all causes of delay (and cancellation up 2019) are available in the [EUROCONTROL library](https://www.eurocontrol.int/library).
+According to [EUROCONTROL Specification for Operational ANS Performance Monitoring - Air Transport Operator Data Flow](https://www.eurocontrol.int/publication/eurocontrol-specification-aodf), 
+which is referenced in [Commission Implementing Regulation EU No 2019/317](https://eur-lex.europa.eu/legal-content/EN/TXT/?toc=OJ%3AL%3A2019%3A056%3ATOC&uri=uriserv%3AOJ.L_.2019.056.01.0001.01.ENG) 
+as a document containing the provisions for information that needs to be provided
+by the airlines, an ‘operational cancellation’ refers to a scheduled arrival or
+departure flight to which the following conditions apply:
+
+* the flight received an airport slot (if the airport is subject to slot coordination), and
+
+* the flight was confirmed by the air carrier the day before operations and/or 
+  it was contained in the daily list of flight schedules produced by the airport 
+  operator the day before operations, but
+  
+* the actual landing or take-off never occurred.
+
+Reports about all causes of delay (and cancellation up to 2019) are available in the [EUROCONTROL library](https://www.eurocontrol.int/library).
 
 :::{.callout-note}
 In 2020 the COVID-19 pandemic strongly influenced the entire aviation industry 
-with more than double cancellation rate then in 2019.
+with more than double the cancellation rate seen in 2019.
 :::
 
-## Description
+## Related inputs
 
-According to Annex IV of Commission Implementing Regulation EU No 390/2013, [@eureg:3902013] 
-an ‘operational cancellation’ means an arrival or departure of a scheduled flight 
-to which the following conditions apply: 
-
-* the flight received an airport slot; and
-
-* the flight was confirmed by the air carrier the day before operations and/or 
-it featured in the daily list of flight schedules produced by the airport operator
-the day before of operations; but 
-
-* the actual landing or take-off did not occur.
-
-## References
+@sec-cancellation-cost [Cancellation cost](#sec-cancellation-cost)

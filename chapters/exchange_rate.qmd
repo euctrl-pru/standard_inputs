@@ -2,16 +2,16 @@
 
 ## EUROCONTROL recommended source
 
-Exchange rate represents the price or rate at which the currency of a country 
-can be exchanged for another country’s currency. 
+An exchange rate represents the price or rate at which the currency of one State 
+can be exchanged for another State’s currency.
 
 In order to obtain the latest exchange rate information it is recommended to 
 vist the website of the [European Central Bank](http://sdw.ecb.europa.eu/).
 
-The website contains information on the yearly, half-yearly, quarterly, monthly
+The website contains information on the yearly, half-yearly, quarterly, monthly, 
 and daily exchange rates of 40 currencies.
 
-As an alternative, the European Commission [InforEuro](https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en) Exchange rate provides the European Commission official monthly accounting rates
-for the euro, the corresponding conversion rates for other currencies, and historic
-conversion rates from 1994.
+As an alternative, the European Commission [InforEuro](https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en) Exchange rate provides the European Commission official 
+monthly accounting rates for the euro, the corresponding conversion rates for other
+currencies, and historic conversion rates from 1994.
 

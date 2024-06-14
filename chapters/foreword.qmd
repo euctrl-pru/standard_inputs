@@ -6,20 +6,33 @@ editor_options:
 
 # Foreword {.unnumbered}
 
-The first version of the Standard Inputs for EUROCONTROL Economic Analyses series
-was launched in 2002 and has been kept alive for 20 years now, with the dedication 
-of several colleagues, in particular Paula and Desirée who put a lot of effort to
-this document. Now we took a new step and launched the latest edition on an online
-platform to allow for timely and continuous updates of the values, following the
-pace of change in the aviation world.
+The first version of the EUROCONTROL Standard Inputs for Economic Analyses series
+was launched in 2002 and has been kept alive for more than twenty years. This 
+latest edition is a continuation of the work developed over all these years and 
+aims to update the inputs that have been previously published, but also to add new
+inputs that are believed to be of interest for our stakeholders. In comparison 
+with Standard Inputs for Economic Analyses Ed. 9.0, the following new values have 
+been added in this version:
 
-We would like to show our gratitude to the many different colleagues that have 
-contributed to this endeavor by helping us develop the values and bring them online.
-Trying to name them would be impossible.
+* Transit time, which shows the average time flown by aircraft controlled in a 
+specific airspace over a year.
 
-We have received valuable remarks and suggestions from all stakeholders
-in the aviation value chain. In particular we have benefited from
-stakeholders involved in the entire development life cycle, from ideas to
-a working system. We strongly believe that this collaboration makes the EUROCONTROL
-Standard Inputs for Economic Analyses a robust and
-authoritative product.
+* Shadow cost of carbon, which is the cost of carbon required to drive the economy 
+to meet the 1.5°C global temperature target set by the [Intergovernmental Panel on Climate Change](https://www.ipcc.ch/).
+
+* Proportion of sustainable aviation fuel, showing the evolution of sustainable 
+fuel in the total aviation fuel blend.
+
+The previous editions of the Standard Inputs for Economic Analyses can be found in [EUROCONTROL Library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses).
+
+We, the EUROCONTROL Business Cases Team, would like to show our gratitude to the
+many different colleagues that have contributed to this endeavour by providing us
+data and helping develop the values. Trying to name them all would be impossible.
+
+We have received valuable remarks and suggestions from all stakeholders in the 
+aviation value chain. In particular, we have benefited from stakeholders involved 
+in the entire development life cycle, from ideas to a working system. We strongly 
+believe that this collaboration makes the EUROCONTROL Standard Inputs for Economic
+Analyses a robust product.
+
+Readers are invited to send comments and suggestions for improvement to [{{< var email.info >}}](mailto:{{< var email.info >}})

@@ -2,17 +2,23 @@
 
 ## EUROCONTROL recommended values
 
-This input represents the expected evolution in the proportion of Sustainable Aviation Fuel (SAF) in the total fuel blend between 2023 and 2050. The evolution is estimated according to three scenarios:
+This input represents the expected evolution in the proportion of Sustainable 
+Aviation Fuel in the total fuel blend between 2023 and 2050. The evolution is 
+estimated according to three scenarios:
 
-* **Base scenario**, where a moderate traffic growth and uptake of SAF is assumed, in line with _ReFuelEU Aviation_ [@easa:Fit55ReFuelEU] obligations .
+* **Base scenario**, where a moderate traffic growth and uptake of sustainable 
+  aviation fuel is assumed, in line with _ReFuelEU Aviation_[@easa:Fit55ReFuelEU] obligations.
 
-* **High scenario**, assumed that the high availability of SAF will foster the quicker adoption of these fuels than outlined in the current regulatory requirements.
+* **High scenario**, assumed that the high availability of sustainable aviation
+  fuel will foster the quicker adoption of these fuels than outlined in the 
+  current regulatory requirements.
 
-* **Low scenario**, which assumes an uptake of SAF slower that outlined by existing regulation.
+* **Low scenario**, which assumes an uptake of sustainable aviation fuel slower
+  that outlined by existing regulation.
 
 ```{r}
 #| label: tbl-saf-blend
-#| tbl-cap: Forecast evolution of SAF blend 2023-2050
+#| tbl-cap: Forecast evolution of sustainable aviation fuel blend 2023-2050
 
 library(readxl)
 library(dplyr)
@@ -64,36 +70,45 @@ read_xlsx(here::here("data", "saf_blend.xlsx")) %>%
      source_note = md("*Source: [EUROCONTROL (2022), Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards the 2030 Green Deal milestone](https://www.eurocontrol.int/publication/objective-skygreen-2022-2030)*"))
 ```
 
-## Description
+@tbl-saf-blend shows the forecast sustainable aviation fuel blending percentage 
+over total jet fuel for years 2023 to 2050. The values are provided based on the
+3 forecast scenarios proposed by the EUROCONTROL Aviation Outlook[@aviation:outlook2022].
+The percentages of sustainable aviation fuel are based on:
 
-@tbl-saf-blend shows the forecast SAF blending percentage over total jet fuel for years 2023 to 2050. The values are provided based on the 3 forecast scenarios proposed by EUROCONTROL Aviation Outlook[@aviation:outlook2022].
-
-The percentages of SAF are based on:
-
-* The series starting with a projection of the 2022 actual SAF blending.
-* A linear interpolation, until in 2030 the required 5% of the ReFuelEU Aviation proposal is met, followed by the same linear growth until 2050.
+* The series starting with a projection of the 2022 actual sustainable aviation 
+  fuel blending.
+  
+* A linear interpolation, until in 2030 the required 5% of the [ReFuelEU](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R2405&qid=1699634788830) Aviation
+  proposal is met, followed by the same linear growth until 2050.
 
 Other underlying assumptions worth mentioning are:
 
 * The regulation imposes obligations only on the fuel suppliers, not on the airlines.
-* Objective Skygreen 2022-2030[@skygreen2022] assumes that the SAF blending percentages apply to all the airports within the Network Manager area (see @fig-ecac-airspace-fir).
 
-The figure below depicts the expected SAF blending percentages. Points are the yearly percentages expected and the dotted line is a trend line adjustment.
+* Objective Skygreen 2022-2030 assumes that the SAF blending percentages apply 
+  to all the airports within the [Network Manager area](https://www.nm.eurocontrol.int/STATIC/NM_AREA/imports/ATFM_AREAS.JPG).
 
-![Forecast evolution of SAF proportion 2023-2050[@skygreen2022]](../figures/saf_blend.png){#fig-saf-blend}
+@fig-saf-blend depicts the expected SAF blending percentages. Points are the 
+yearly percentages expected and the dotted line is a trend line adjustment.
+
+![Forecast evolution of sustainable aviation fuel proportion 2023-2050[@skygreen2022]](../figures/saf_blend.png){#fig-saf-blend}
+
+## Comment
+
+Non-conventional fuels – SAF are non-fossil derived – can be used in aviation if
+blended with conventional kerosene. Many experts agree that this is the most 
+promising option to reduce aviation emissions in the short to medium term. The 
+ReFuelEU Aviation initiative – put forward by the European Commission in the Fit 
+for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel 
+available in EU airports. The proposal defines a series of percentages of SAF 
+blending that will have to be met at specific years. For further research, 
+please visit the [EUROCONTROL Aviation Sustainability Unit](https://www.eurocontrol.int/aviation-sustainability).
 
 ## When to use the input?
 
-This input is recommended to be used when dealing with environmentally related assessments. This data has previously been used for the traffic forecast in EUROCONTROL Aviation Outlook 2050 [@aviation:outlook2022] and for the Objective Skygreen study [@skygreen2022], guiding on long-term aviation sustainability.
-
-## Comments
-
-Non-conventional fuels – SAF are non-fossil derived – can be used in aviation if blended with conventional kerosene. Many experts agree that this is the most promising option to reduce aviation emissions in the short to medium term.
-
-The ReFuelEU Aviation initiative – put forward by the European Commission in the Fit for 55 package – imposes a mandate on fuel suppliers to provide SAF in jet fuel available in EU airports.
-The proposal defines a series of percentages of SAF blending that will have to be met at specific years. 
-
-For further research, please visit the work of the EUROCONTROL Aviation Sustainability Unit[@ectl:asu].
+This input is recommended to be used when dealing with environment-related 
+assessments, such as to estimate the environmental impact from an initiative 
+taking into consideration the possible change in the fuel mix.
 
 ## Related inputs
 

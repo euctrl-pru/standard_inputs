@@ -6,143 +6,121 @@ library(dplyr)
 library(gt)
 ```
 
-
 ## EUROCONTROL recommended values
 
-The values hereafter present the proportion and list of airports and runway ends 
-in ECAC with published Performance-Based Navigation (PBN) instrument approach 
-procedures.[@pbn:tool]
+The values hereafter present the proportion of runway ends in ECAC with published 
+Performance-Based Navigation (PBN) instrument approach procedures fully implemented.
+The data presented in the tables comes from [EUROCONTROL Performance Based Navigation Map Tool](https://www.eurocontrol.int/platform/performance-based-navigation-map-tool). 
+Please refer to this source for any further information.
 
 ```{r}
 #| label: tbl-pbn-deployment
-#| tbl-cap: PBN approach deployment status - September 2020
+#| tbl-cap: PBN approach deployment status, March 2023
 
 read_xlsx(here::here("data", "pbn_procedures.xlsx"),
           sheet = "pbn_deployment") %>% 
   gt() %>% 
   cols_label(
     approach = "Approach type",
-    runway_nb = "Runway ends covered (Nb)",
-    runway_share = "Runway ends covered (%)",
-    apt_nb = "Airports covered (Nb)",
-    apt_share = "Airports covered (%)"
+    runway_nb = "Runway ends covered",
+    runway_share = "% of runway ends covered"
   ) %>% 
   fmt_percent(
-    columns = c(runway_share, apt_share),
-    decimals = 1
+    columns = runway_share,
+    decimals = 0
   ) %>% 
   fmt_number(
-    columns = c(runway_nb, apt_nb),
+    columns = runway_nb,
     decimals = 0
   ) %>% 
   cols_align(
     align = "center",
-    columns = c(runway_share, apt_share)
+    columns = runway_share
   ) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
    cols_width(
-    runway_nb:apt_share ~ pct(15),
-    approach ~ pct(40)
+    runway_nb:runway_share ~ pct(25),
+    approach ~ pct(50)
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-tab_source_note(
-  source_note = md("*Source: [EUROCONTROL PBN Approach Map Tool](https://www.eurocontrol.int/platform/performance-based-navigation-map-tool)*")
-)
+  ) %>%
+  tab_footnote(
+    footnote = "’GLS’ does not include instrument approach procedures based on GBAS proprietary precursor systems",
+    locations = cells_body(
+      columns = approach,
+      rows = 7
+    )
+    )  
 ```
 
 ```{r}
 #| label: tbl-ils-deployment
-#| tbl-cap: ILS Cat I, Cat II/III deployment status - September 2020
+#| tbl-cap: ILS Cat I, Cat II/III deployment status, March 2023
 
 read_xlsx(here::here("data", "pbn_procedures.xlsx"),
           sheet = "ils_deployment") %>% 
   gt() %>% 
   cols_label(
     approach = "Approach type",
-    runway_nb = "Runway ends covered (Nb)",
-    runway_share = "Runway ends covered (%)",
-    apt_nb = "Airports covered (Nb)",
-    apt_share = "Airports covered (%)"
+    runway_nb = "Runway ends covered",
+    runway_share = "% of runway ends covered"
   ) %>% 
   fmt_percent(
-    columns = c(runway_share, apt_share),
-    decimals = 1
+    columns = runway_share,
+    decimals = 0
   ) %>% 
   fmt_number(
-    columns = c(runway_nb, apt_nb),
+    columns = runway_nb,
     decimals = 0
   ) %>% 
   cols_align(
     align = "center",
-    columns = c(runway_share, apt_share)
+    columns = runway_share
   ) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
    cols_width(
-    runway_nb:apt_share ~ pct(15),
-    approach ~ pct(40)
+    runway_nb:runway_share ~ pct(25),
+    approach ~ pct(50)
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-tab_source_note(
-  source_note = md("*Source: [EUROCONTROL PBN Approach Map Tool](https://www.eurocontrol.int/platform/performance-based-navigation-map-tool)*")
-)
+  )
 ```
 
-## Description
+The EUROCONTROL PBN Map Tool illustrates the deployment of PBN instrument 
+approach procedures against objectives set in ICAO Assembly Resolution 37-11 
+and the European Regulation on PBN (in particular Commission Implementing 
+Regulation (EU) 2018/1048 of 18 July 2018). 
 
-The EUROCONTROL PBN Approach Map tool illustrates the deployment of PBN 
-instrument approach procedures against objectives set in ICAO Assembly Resolution 
-37-11 and the European Regulation on PBN 
-(in particular Commission Implementing Regulation (EU) 2018/1048 of 18 July 2018). 
-
-PBN approaches include instrument approach procedures compliant with the following
-navigation specifications of the PBN Manual (ICAO Doc 9613):
+PBN approaches include instrument approach procedures compliant with the 
+following navigation specifications of the PBN Manual (ICAO Doc 9613):
 
 * RNP APCH
 
 * RNP AR APCH
 
-The PBN Approach Map tool provides a list of current and planned airports and 
-runway ends covered by each type of approach. The tool gives information about:
+The PBN Map tool provides a list of the current and planned airports and runway 
+ends covered by each type of approach. The tool gives information about:
 
-* deployment progress since 2012, on the basis actual publications
+* deployment progress since 2012, on the basis of actual publications
 
-* future deployment trends based on publication plans communicated to EUROCONTROL and ICAO
+* future deployment trends based on the draft PBN Transition plans submitted to EUROCONTROL Network Manager for consultation
 
-* the availability of PBN approaches with vertical guidance (APV) on all runway 
-ends or on runway ends without precision landing (e.g. ILS, MLS or GBAS)
+* the availability of PBN approaches with vertical guidance (APV) on all runway ends or on runway ends without precision landing (e.g. ILS, MLS or GBAS)
 
-* the deployment status for ECAC, individual countries, PCP airports and individual airports
+* the deployment status for ECAC, individual countries, Pilot Common Project (PCP) airports and individual airports
 
-In September 2020 (on the basis of the AIRAC cycle), 1,576 runway ends were 
-equipped with instrument approach procedures and 763 airports had instrument 
-approach procedures.
+In March 2023 (on the basis of the AIRAC cycle, see comments), 1,676 runways ends
+were equipped with instrument approach procedures.
 
-## Comments
+## Comment
 
-The PBN Approach Map tool is updated in accordance with publications with every 
-AIRAC cycle. It therefore provides up-to-date information on the current deployment status.
-
-Information about publication plans captured in the map is collected from 
-individual countries and coordinated with the ICAO EUR/NAT regional office and
-other implementation-funded programmes. If and when these publication plans 
-materialise depends on a number of factors including:
-
-* difficulties collecting obstacle data for procedure design
-
-* unforeseen problems in the procedure design phase
-
-* delays in approval for publication by the supervisory authority
-
-Implementation plans should consequently not be considered to be a State’s commitment.
-
-## References
+The PBN Map Tool is updated in accordance with publications for every AIRAC cycle^[For more details about the AIRAC cycles and the corresponding dates, please refer to the corresponding [EUROCONTROL page](https://www.eurocontrol.int/publication/aeronautical-information-regulation-and-control-airac-dates)].
+It therefore provides up-to-date information on the current deployment status.
 
 
