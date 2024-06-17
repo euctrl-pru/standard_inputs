@@ -1,4 +1,4 @@
-# Taxiing time {#sec-taxiing-time}
+# Taxi time {#sec-taxiing-time}
 
 ```{r}
 library(readxl)
@@ -8,12 +8,12 @@ library(gt)
 
 ## EUROCONTROL recommended value
 
-@tbl-taxi-time shows the mean duration, in minutes, of taxi times at airports,
-based on flights in ECAC area.
+@tbl-taxi-time shows the mean duration, in minutes, of taxi times at airports, 
+based on flights in the ECAC area.
 
 ```{r}
 #| label: tbl-taxi-time
-#| tbl-cap: Average taxi time duration
+#| tbl-cap: Average taxi-in and taxi-out time (minutes)
 
 read_xlsx(here::here("data", "taxi_time.xlsx"),
           sheet = "total") %>% 
@@ -74,23 +74,22 @@ read_xlsx(here::here("data", "taxi_time.xlsx"),
     )
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: EUROCONTROL Central Office for Delay Analysis (CODA)*")
+    source_note = md("*Source: Computed from actual data provided by the EUROCONTROL Central Office for Delay Analysis (CODA)*")
   )
 ```
 
 Data in @tbl-taxi-time is based on actual data from CODA. The taxi-out time is 
 defined as the time spent by a flight between its actual off-block time (AOBT) 
-and actual take-off time (ATOT). The taxi-in time is defined as the time spent
+and actual take-off time (ATOT). The taxi-in time is defined as the time spent 
 between its actual landing time (ALDT) and actual in-block time (AIBT). The 
-taxi-in and taxi-out durations are calculated on the basis of data sent 
-by airlines to CODA.
+taxi-in and taxi-out durations are calculated on the basis of data sent by airlines to CODA.
 
-@tbl-taxi-time-additional shows the average additional taxi out time per departure in top 
-30 airports in terms of movements, excluding Turkish airports.[@ectrlprr2022]
+@tbl-taxi-time-additional shows the average additional taxi out time per 
+departure in the top 30 airports in terms of movements.
 
 ```{r}
 #| label: tbl-taxi-time-additional
-#| tbl-cap: Average additional taxi time per departure
+#| tbl-cap: Average additional taxi-out time per departure
 
 read_xlsx(here::here("data", "taxi_time.xlsx"),
           sheet = "additional") %>% 
@@ -106,22 +105,22 @@ read_xlsx(here::here("data", "taxi_time.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: [EUROCONTROL (2022) Performance Review Report (PRR 2021)](https://www.eurocontrol.int/publication/performance-review-report-prr-2021)*")
+    source_note = md("*Source: [EUROCONTROL (2022), Performance Review Report (PRR) 2021](https://www.eurocontrol.int/publication/performance-review-report-prr-2021)*")
   )
 ```
 
-Values in @tbl-taxi-time-additional are based on actual data from airports. The 
-additional taxi-out time is a proxy for the average departure runway queuing 
-time on the outbound traffic flow during congestion periods at airports. It is 
+Values in @tbl-taxi-time-additional are based on actual data from airports. 
+The additional taxi-out time is a proxy for the average departure runway queuing
+time on the outbound traffic flow during congested periods at airports. It is 
 the difference between the actual taxi-out time of a flight and a statistically 
-determined unimpeded taxi-out time^[The unimpeded taxi-out time is the taxi-out time in non-congested conditions at airports]
-based on taxi-out times in periods of low traffic demand. There is one 
-unimpeded time per stand runway combination at each airport.
+determined unimpeded taxi-out time^[The unimpeded taxi-out time is the taxi-out time in non-congested conditions at airports.] 
+based on taxi-out times in periods of low traffic demand. There is one unimpeded 
+time per stand/runway combination at each airport.
 
 ## Other possible sources
 
-*EUROCONTROL CODA Taxi times - Summer and Winter reports* [@taxi:time] show, by airport, seasonal taxi time statistics for the IATA 
-winter season and the IATA summer season:
+*EUROCONTROL CODA Taxi times - Summer and Winter reports* [@taxi:time] show, by 
+airport, seasonal taxi time statistics for the IATA winter season and the IATA summer season:
 
 * Taxi-in times
 
@@ -133,8 +132,9 @@ These taxi times are calculated using the airline reported actual off-block time
 actual take-off time, actual landing time and actual in-block time, providing 
 the aviation community with seasonal benchmark values.
 
-Furthermore for additional granularity, taxi-out times by wake turbulence 
-category are also offered for a number of airports.
+For additional granularity, taxi-out times by wake turbulence category are also 
+offered for a number of airports.
+
 
 ## Related inputs
 

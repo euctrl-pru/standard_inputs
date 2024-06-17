@@ -6,13 +6,14 @@ editor_options:
 
 # General parameters {#sec-conversions .unnumbered}
 
-Below are presented some key values used in the Standard Inputs and that can serve as a reference for other uses.
+The sections hereafter present some key values used in the Standard Inputs that 
+can also serve as a reference for other uses.
 
 ## Inflation {#inflation .unnumbered}
 
-The inflation levels have been calculated based on the Harmonised Index
-of Consumer Prices (HICP) [@eurostat:HICP], as the yearly difference in the HICP. The
-HICP data was extracted from [Eurostat](http://ec.europa.eu/eurostat)
+The inflation levels have been calculated based on the Eurostat European Union 
+region Harmonised Index of Consumer Prices (HICP)[@eurostat:HICP], as the yearly 
+difference in the HICP. The HICP data was extracted from [Eurostat](http://ec.europa.eu/eurostat)
 HICP - annual data (average index and rate of change) database
 (prc_hicp_aind).The annual change in the index is shown in @tbl-inflation-table.
 
@@ -28,9 +29,9 @@ library(here)
 # read from CSV (exported directly from Eurostat, see R/export_inflation.R)
 readxl::read_xlsx(here("data","values_2022.xlsx"),
                   sheet = "basic assumptions",
-                  range = "C6:E33" 
+                  range = "C6:E34" 
                   ) %>%
-  filter(2000 <= Year, Year <= 2022) %>%
+  filter(2000 <= Year, Year <= 2023) %>%
   arrange(desc(Year)) %>% 
   # format the table
   gt() %>%
@@ -41,25 +42,45 @@ readxl::read_xlsx(here("data","values_2022.xlsx"),
   ) %>%
   fmt_percent(
     columns = c(Rate),
-    decimals = 2
+    decimals = 1
   ) %>%
   fmt_number(
     columns = c(Index),
-    decimals = 2
+    decimals = 1
   ) %>%
   cols_align(
     align = "center",
     columns = c(Year, Index, Rate)
+  ) %>%
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+     Year:Rate ~ pct(30)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = Year
+    )
   )
 ```
 
 ## Exchange Rate Conversion {#exchange-rates .unnumbered}
 
-The currency exchange rates provided in @tbl-eurostat-exchange-rates are based on the European Central Bank (ECB) rates that are published daily [@ECB:exchange_rates]. The rates shown in @tbl-eurostat-exchange-rates correspond to the average rate for the year 2021 as published by ECB.
+The currency exchange rates provided in @tbl-eurostat-exchange-rates are based 
+on the European Central Bank (ECB) rates that are published daily. [@ECB:exchange_rates]. 
+The rates correspond to the average rate for the year 2022 and are used across 
+this document for the purpose of currency conversion.
 
 ```{r }
 #| label: tbl-eurostat-exchange-rates
-#| tbl-cap: Average euro foreign exchange rate (2021)
+#| tbl-cap: Average euro foreign exchange rate in 2022
 library(readr)
 library(dplyr)
 library(gt)
@@ -68,31 +89,42 @@ read_csv(here("data", "exchange_rate.csv"), show_col_types = FALSE) %>%
   gt() %>%
   cols_label(
     currency  = "Currency",
-    to_eur    = "Currency-€",
-    from_eur  = "€-Currency"
+    to_eur    = "EUR/currency",
+    from_eur  = "Currency/EUR"
   ) %>%
   cols_align(
     align = "center",
     columns = c(to_eur, from_eur)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+     currency ~ pct(40),
+     to_eur ~ pct(30),
+     from_eur ~ pct(30)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
   )
 ```
 
 ## Cost of fuel {.unnumbered}
 
-The cost of fuel used in this document is based on the 2021 average jet
-fuel price handled by IATA [@iata:JetFuelPrice], unless otherwise specified.
+The cost of fuel used in this document is based on the 2022 average jet fuel
+price provided by IATA,[@iata:JetFuelPrice], unless otherwise specified.
 All conversions are done using the values specified on this page.
 
 ```{r}
 #| label: tbl-cost-of-fuel
-#| tbl-cap: Average jet fuel price
+#| tbl-cap: Average jet fuel price in 2022
 library(dplyr)
 library(gt)
 
 tribble(
   ~currency, ~price_barrel, ~price_gallon, ~price_kg,
-  "USD", 141.7, 3.8, 1.1,
-  "EUR", 138.9, 3.3, 1.1,
+  "USD", 136, 3.2, 1.1,
+  "EUR", 129, 3.1, 1.0,
 ) %>%
   gt() %>%
   cols_label(
@@ -104,6 +136,18 @@ tribble(
   cols_align(
     align = "center",
     columns = c(price_barrel, price_gallon, price_kg)
+  ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+     currency ~ pct(40),
+     price_barrel ~ pct(20),
+     price_gallon ~ pct(20),
+     price_kg ~ pct(20)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -111,7 +155,7 @@ tribble(
 
 ```{r}
 #| label: tbl-conversion-values
-#| tbl-cap: Units conversion values
+#| tbl-cap: Unit conversion values
 tribble(
   ~from, ~to,
   "1 nautical mile (NM)", "1.852 km",
@@ -124,17 +168,28 @@ tribble(
   ""                          , "0.1291 tonne = 129.10 kg",
   "1 US gallon of jet fuel (US gal)", "3.7854 litres",
   ""                                , "3.073 kg",
-  "", "6.7764 lb",
+  ""                                , "6.7764 lb",
   "Density of kerosene", "0.812 kg/litre",
   "1 litre of fuel (l)", "0.26417 US gallons",
   "1 kilogramme of fuel (kg)", "2.2046 lb",
-  "1 pound of fuel (lb)", "0.45359 kg"
+  "1 pound of fuel (lb)", "0.45359 kg",
+  "1 US ton", "1.01605 tonne"
 ) %>% 
   gt() %>%
   cols_label(
     from = "From",
     to = "To",
-    )
+    ) %>% 
+  tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+     from ~ pct(50),
+     to ~ pct(50)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
+  )
 ```
 
 ## References

@@ -13,19 +13,6 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-This input provides an estimation of the average value of passenger time
-spent travelling, which might alternatively be spent on other activities
-(e.g. working or leisure). It is essentially the **opportunity cost which corresponds to the monetary value associated with a passenger during a journey.** It shows how much a passenger would be willing to pay in order
-to save time during a journey (e.g. by travelling on a quicker service
-or using a faster transport mode), or how much 'compensation' they would
-accept, directly or indirectly, for lost time lost.
-
-In tables hereafter is presented a collection of the different values that can be used
-for this purpose. It is to be noted that, in this section, the value of
-time is not cited as a function of delay duration. This is an important
-consideration when using the value. In this case, the longer the delay
-duration, the higher the value. [@heatco2006] [@frminecotra2019] [@aptcom2014]
-
 ```{r}
 #| label: tbl-pas-time-value-eu
 #| tbl-cap: Estimated value of travel time - EU25
@@ -42,12 +29,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  tab_footnote(
-  footnote = "Please note that the values above are adjusted to 2022 prices from 2002 based on inflation",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -57,6 +38,12 @@ locations = cells_column_labels(
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+  tab_footnote(
+  footnote = "Values adjusted from 2002 to 2022 prices based on inflation",
+locations = cells_column_labels(
+  columns = value
+)
+) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2006), HEATCO, Developing Harmonised European Approaches for Transport Costing and Project Assessment – Deliverable 5 Proposal for Harmonised Guidelines](https://trimis.ec.europa.eu/sites/default/files/project/documents/20130122_113653_88902_HEATCO_D5_summary.pdf)*")
   )
@@ -77,13 +64,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  
-tab_footnote(
-  footnote = "Please note that the values above are adjusted to 2022 prices from 2015 based on inflation",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -95,7 +75,13 @@ locations = cells_column_labels(
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [French Ministry of Ecological Transition (2019), Recommended values for calculating average long-distance travel](https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf)*")
-  )
+  ) %>%
+  tab_footnote(
+  footnote = "Values adjusted from 2015 to 2022 prices based on inflation",
+locations = cells_column_labels(
+  columns = value
+)
+)
   
 ```
 
@@ -114,13 +100,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  
-tab_footnote(
-  footnote = "Please note that the values above are adjusted to 2022 prices from 2014 based on inflation and using the exchange rate shown in general parameters",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -132,44 +111,53 @@ locations = cells_column_labels(
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [Airports Commission (2014), Values of time used to estimate passenger delay costs in the UK airport system](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf)*")
-  )
+  ) %>% 
+  tab_footnote(
+  footnote = "Values adjusted from 2014 to 2022 prices based on inflation and using the exchange rate in general parameters",
+locations = cells_column_labels(
+  columns = value
+)
+) 
   
 ```
 
-## When to use the input?
+This input provides an estimation of the average value of passenger time spent 
+travelling, which might alternatively be spent on other activities (e.g. working
+or leisure). It is essentially the opportunity cost which corresponds to the monetary
+value associated with a passenger during a journey. It shows how much a passenger 
+would be willing to pay in order to save time during a journey (e.g. by travelling 
+on a quicker service or using a faster transport mode), or how much ‘compensation’
+they would accept, directly or indirectly, for time lost. @tbl-pas-time-value-eu,
+@tbl-pas-time-value-fr and @tbl-pas-time-value-uk present a collection of different 
+values that can be used for this purpose. It is to be noted that, in this section, 
+the value of time is not cited as a function of delay duration. This is an important 
+consideration when using the value, since the longer the delay duration, the higher the value.
 
-This input is expected to become useful in any study that looks at the 
-opportunity cost of the use of air transport, delays, cancellations, etc. 
-It provides a perspective on the impact that a change in the air transport
-can have on the passenger.
-
-## Comments
+## Comment
 
 When looking into the values in the table, a few points regarding the sources 
 should be taken into consideration:
 
-* The source used for the UK values sets out a methodology for analysis which 
-has been undertaken to estimate benefits from reduced delay time to airlines 
-and passengers from changes in aviation capacity constraints in the UK for 11 
-airports. 
-
-* The values for France rely on a working paper on recommended values for
-calculating the components of a socio-economic net present value, which include 
-travel time. The assessment therefore covers social, environmental and economic 
-effects.
+* The source used for the UK values sets out a methodology for analysis which has
+  been undertaken to estimate benefits from reduced delay time to airlines and 
+  passengers from changes in aviation capacity constraints in the UK for 11 airports.
+  
+* The values for France rely on a working paper on recommended values for 
+  calculating the components of a socio-economic net present value, which include 
+  travel time. The assessment therefore covers social, environmental, and economic 
+  effects.
 
 * Regarding the numbers for EU25, they remain a reference if a European value is
-sought. The objective of the study from which they were derived is to propose 
-harmonised guidelines for project assessment for transnational projects in
-Europe. It provides monetary estimates for the values of time saved for 
-employer’s business and for passenger non-work trips (e.g. commuting, shopping
-and leisure).
+  sought. The objective of the study from which they were derived is to propose 
+  harmonised guidelines for project assessment for transnational projects in Europe.
+  It provides monetary estimates for the values of time saved for an employer’s
+  business and for passenger non-work trips (e.g. commuting, shopping and leisure).
 
-## Other values to consider
+## Other possible values
 
-Some additional values are available to EUROCONTROL, which, although not 
-constituting the perceived key inputs, may be useful for specific purposes of 
-the user of these inputs. These values are presented below.
+Some additional values, which, although not constituting the perceived key inputs, 
+may be useful for specific purposes of the user of these inputs. These values are 
+presented below.
 
 ***Value of time of a business aviation passenger***
 
@@ -178,20 +166,57 @@ the SESAR CBA team in 2012 and is, therefore, adjusted from 2011 prices.
 
 ***Value of passenger time in the US for high-speed rail passengers***
 
-Based on US DOT guidance on passenger value of time for air and high-speed rail 
-travel by purpose of trip. The numbers are adjusted to inflation from 2015 prices
-and using the exchange rate presented in @tbl-eurostat-exchange-rates.
+```{r}
+#| label: tbl-pas-time-value-us
+#| tbl-cap: Passenger value of time for air and high-speed rail travel
+read_xlsx(here::here("data", "passenger_time_value.xlsx"),
+          sheet = "additional") %>% 
+  gt() %>% 
+  cols_label(
+    purpose = "Travel purpose",
+    value = "Time value (€/hour)"
+  ) %>% 
+  fmt_currency(
+   columns = c(value),
+   currency = "EUR",
+   decimals = 2
+  ) %>% 
+  
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ px(50)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: US Department of Transportation (2016), Revised Departmental Guidance on Valuation of Travel Time in Economic Analysis*")
+  )
+  
+```
+
+Based on US Department of Transport (DOT) guidance on passenger value of time 
+for air and high-speed rail travel by purpose of trip. The numbers are adjusted 
+to inflation from 2015 to 2022 prices and using the exchange rate presented in @tbl-eurostat-exchange-rates.
 
 ## Further reading
 
 Below are listed some additional sources recommended for consultation:
 
-* International Transport Forum (ITF), “What is the Value of Saving Travel Time?” Feb. 2019[@itf:2019]
+* *International Transport Forum (ITF), “What is the Value of Saving Travel Time?” Feb. 2019[@itf:2019]*
 
-* Economic Development Research Group Inc., “Passenger Value of Time, Benefit-Cost Analysis and Airport Capital Investment Decisions,” 2015[@passtimevalue2015]
+* *Economic Development Research Group Inc., “Passenger Value of Time, Benefit-Cost Analysis and Airport Capital Investment Decisions,” 2015[@passtimevalue2015]*
 
-* University of Leeds, “Values of travel time in Europe: Review and meta-analysis,” 2016[@leedsuniversity2016]
+* *University of Leeds, “Values of travel time in Europe: Review and meta-analysis,” 2016[@leedsuniversity2016]*
 
-* University of Leeds, “European Wide-Meta Analysis of Values of Travel Time,” May 2012[@leedsuniversity2012]
+* *University of Leeds, “European Wide-Meta Analysis of Values of Travel Time,” May 2012[@leedsuniversity2012]*
+
+## When to use the input?
+
+This input is expected to become useful in any study that looks at the opportunity 
+cost of the use of air transport, delays, cancellations, etc. It provides a
+perspective on the impact that a change in the air transport can have on the passenger.
 
 ## References

@@ -2,8 +2,8 @@
 
 ## EUROCONTROL recommended values
 
-@tbl-asset-life presents the accounting period, in years, for a given asset used
-to derive the amortisation of investment expenditure.
+@tbl-asset-life presents the accounting period, in years, for a given asset used 
+to derive the depreciation of investment expenditure.
 
 ```{r}
 #| label: tbl-asset-life
@@ -40,14 +40,14 @@ read_xlsx(here::here("data", "asset_life.xlsx")) %>%
   )
 ```
 
-Asset life as used in cost-benefit analyses reflects the expected operating life 
-of the specific equipment concerned, which is also the basis for calculating 
+Asset life as used in cost-benefit analyses reflects the expected operating 
+life of the specific equipment concerned, which is also the basis for calculating
 depreciation costs which are taken into account to determine route charges.
 
-The above data provide indicative parameters for classes of equipment for 
-economic analyses. The actual percentages to be applied in calculating the 
-depreciation of fixed assets must be determined in accordance with the expected
-operating life and the pertinent [International Financial Reporting Standards](https://www.ifrs.org/) 
+The above data provide indicative parameters for classes of equipment for economic
+analyses. The actual percentages to be applied in calculating the depreciation 
+of fixed assets must be determined in accordance with the expected operating 
+life and the pertinent [International Financial Reporting Standards](https://www.ifrs.org/) 
 issued by the [International Accounting Standards Board](https://www.ifrs.org/groups/international-accounting-standards-board/).
 
 ## Other possible sources

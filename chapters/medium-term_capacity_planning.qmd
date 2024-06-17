@@ -2,78 +2,86 @@
 
 ## EUROCONTROL recommended sources
 
-In this document, capacity planning represents the systematic determination of
-resource requirements for the projected output over a specific period of time. 
-It is a dynamic activity that relies on constantly changing data on the ATM 
-network use, capacity forecasts, etc. 
+Capacity planning represents the systematic determination of resource requirements 
+for the projected output over a specific period of time. It is a dynamic activity 
+that relies on constantly changing data on the ATM network use, capacity forecasts, etc.
 
-Given this, below are presented the sources that are recommended to consult in 
-order to obtain relevant up to date information on capacity planning.
+Given this, it is recommended to consult the sources below to obtain relevant 
+up-to-date information on capacity planning.
 
-* *EUROCONTROL NMD (2022), European Network Operations Plan 2022-2026* [@ectrl:nop:2022]
-    provides a short- to medium-term outlook of the expected ATM network 
-    operations and performance at network 
-    and local level.
 
-    It provides a detailed overview of capacity and flight efficiency enhancement
-    measures planned at network level and by each Area Control Centre (ACC), a 
-    description of the airport performance assessment and improvement measures
-    planned at airports generating a high level of delay, operational actions 
-    planned to be taken by the Network Manager and other stakeholders that would 
-    respond to the performance targets. Furthermore, it provides an assessment 
-    of the expected impact from these measures on the network.
+* *EUROCONTROL NMD (2023), European Network Operations Plan 2023-2027*[@ectrl:nop:2023]
 
-* *EUROCONTROL NMD (2023), European Network Operations Plan (NOP) – Rolling Seasonal Plan* [@ectrl:nop:rsp]
+    The document constitutes a short- to medium-term outlook of the expected ATM
+    network operations and performance at network and local level. It provides a
+    detailed overview of capacity and flight efficiency enhancement measures 
+    planned at network level and by each Area Control Centre (ACC), a description 
+    of the airport performance assessment and improvement measures planned at 
+    airports generating a high level of delay. It also describes operational 
+    actions planned to be taken by the Network Manager (NM) and other stakeholders
+    that would respond to the performance targets. Furthermore, it provides an 
+    assessment of the expected impact from these measures on the network.
 
-    The European NOP Rolling Seasonal Plan is updated every Friday, focusing on 
-    the planning of the next six weeks and on the management of the execution and 
-    implementation of the 5-years NOP. Its aim is to facilitate ANSPs and 
-    airports planning to match traffic demand in a safe, efficient and coordinated 
-    manner by providing them with a consolidated European network view of the
-    evolution of air traffic.
-    More information about network performance (and access to dashboards and the 
-    archive) can be found at the [Network Performance page](https://www.eurocontrol.int/network-performance).
+* *EUROCONTROL NMD (2024), European Network Operations Plan (NOP) – 2024 Rolling Seasonal Plan* [@ectrl:nop:rsp]
+
+    The The European NOP Rolling Seasonal Plan focuses on the planning of the next
+    six weeks and on the management of the execution and implementation of the 
+    5-year NOP. Its aim is to facilitate ANSP and airport planning to match traffic
+    demand in a safe, efficient, and coordinated manner by providing them with a 
+    consolidated European network view of the evolution of air traffic. More 
+    information about network performance (and access to dashboards and the archive)
+      can be found on the [Network Performance page](https://www.eurocontrol.int/network-performance).
 
 * *European ATM Master Plan - implementation plan – level 3* [@ectrl:mp:ip] and *European ATM Master Plan – implementation report – level 3* [@ectrl:mp:ir]
 
-    The **European ATM Master Plan Level 3 (MPL3) Implementation Plan** brings 
-    together the framework for the commonly agreed actions that ECAC+ Stakeholders
-    should take in the context of the implementation of SESAR. These actions 
-    are consolidated in implementation objectives addressing elements in SESAR
-    which have reached the necessary operational and technical maturity and for 
-    which stakeholders have expressed an interest in their operational introduction. 
-    They provide all civil and military implementing parties (ANSPs, Airport
-    Operators, Airspace Users and Regulators) with a basis for short- to
-    medium-term implementation planning.
-    In this respect, it addresses:
+    The European ATM Master Plan Level 3 (MPL3) implementation plan brings together 
+    the framework for the commonly agreed actions that ECAC Stakeholders should 
+    take in the context of the implementation of SESAR. In this respect, it addresses:
+    
     * V3 validated SESAR Solutions
     
-    * CP1 ATM Functionalities (AFs), based on Commission IR (EU) 2021/116 on Common Project One
+    * Common Project 1 (CP1) ATM Functionalities (AF), based on Commission IR (EU) 2021/116 on Common Project One
     
     * SESAR Baseline elements, validated or under deployment at the beginning of the SESAR Deployment phase
     
     * SES and ICAO requirements
     
     Updated yearly, the Plan covers a short to medium-term horizon of around 5 
-    years ahead. It is based on the ATM MP L1 and L2, the SESAR Deployment
-    Programme (SDP), the Network Strategy Plan (NSP), and the SES Interoperability 
-    Regulations. In turn, the MPL3 Implementation Plan feeds the LSSIP+
-    monitoring mechanism as well as the reporting process through the yearly 
-    elaboration of the MPL3 Implementation Report.
-    The MPL3 Plan 2022 edition mirrors the content of the SESAR Deployment 
-    Programme (SDP) for what concerns the IR (EU) 2021/116 on the Common Project 1 (CP1). 
-    It covers 97 Solutions from SESAR1, SESAR2020 W1 and W2 and 97 Implementation Objectives.
+    years. It is based on the ATM MP L1 and L2,^[There are three levels of the ATM Master Plan 2020: Level 1 - Executive view; Level 2 - Planning and architecture view; Level 3 - Implementation view.] the SESAR Deployment Programme 
+    (SDP), the Network Strategy Plan (NSP), and the SES Interoperability Regulations. 
+    The MPL3 Implementation Plan feeds the LSSIP+ monitoring mechanism as well 
+    as the reporting process through the yearly elaboration of the MPL3
+    Implementation Report, which provides a holistic view of the implementation
+    of commonly agreed actions to be taken by ECAC States, in the context of the
+    implementation of SESAR. These actions are consolidated in the form of 
+    “Implementation Objectives” that set out the operational, technical, and 
+    institutional improvements that have to be applied to the European ATM network
+    to meet the performance requirements for the key ATM performance areas defined 
+    in the MP Level 1 – safety, capacity, operational efficiency, cost efficiency,
+    environment, and security.
+    
+    The MPL3 Plan 2023 edition mirrors the content of the SESAR Deployment
+    Programme (SDP) edition 2022 for what concerns the IR (EU) 2021/116 on the
+    Common Project 1 (CP1). It also features the following changes in the
+    Implementation Objectives: Implementation Objectives changed in status, from
+    Initial to Active (Local); Implementation Objectives changed in status, from
+    Active to Achieved. They are both linked to the CP1 Regulation.
+    
+    The Implementation Report 2023 maps the evolution of the Master Plan 
+    implementation on the four progressive Phases of the SESAR vision (Phase A to D),
+    as defined in the 2020 edition of the Executive view of the Master Plan, for
+    the delivery of a Digital European Sky (DES).
+
 
 * *Local Single Sky ImPlementation (LSSIP) documents* [@ectrl:lssip]
 
-    The Local Single Sky ImPlementation (LSSIP) documents give a comprehensive
-    overview of all ATM information for each of the ECAC Member States. They 
-    also show the ATM capacity forecasts and planning targets from NOP. The 
-    documents reflect progress made and detail the plans for each State for 
-    the next five to seven years.
-    LSSIP documents, one for each State, are derived from the European Single 
-    Sky Implementation (ESSIP) (also known as Master Plan Level 3) objectives,
-    and stakeholder lines of action cascade down into the States. 
+    The Local Single Sky ImPlementation (LSSIP) documents give a comprehensive 
+    overview of all ATM information for each of the ECAC Member States. They also
+    show the ATM capacity forecasts and planning targets from the NOP. The documents
+    reflect progress made and detail the plans for each State for the next five 
+    to seven years. LSSIP documents, one for each State, are derived from the
+    Master Plan Level 3 (previously known as European Single Sky Implementation
+    (ESSIP)) objectives, and stakeholder lines of action cascade down to the States. 
 
 ## Related inputs
 

@@ -8,9 +8,14 @@ editor_options:
 
 ## Member States and geographical areas covered {.unnumbered}
 
-Single European Sky initiative and the European Civil Aviation Conference (ECAC) are the different scopes that are covered in Standard Inputs document.
+The Single European Sky initiative, the European Civil Aviation Conference (ECAC)
+and the European Union (EU) are the different scopes that are covered in this 
+Standard Inputs document.
 
-![State grouping](../figures/eu_orgs.png){#fig-member-states-set-diagram}
+@fig-member-states-set-diagram shows a summary of the States that are included 
+in the different groupings relevant to the aviation domain, while @fig-eurocontrol-member-states shows a map of the EUROCONTROL states.
+
+![State groupings](../figures/eu_orgs.png){#fig-member-states-set-diagram}
 
 ## EUROCONTROL Member States {.unnumbered}
 
@@ -18,6 +23,11 @@ Single European Sky initiative and the European Civil Aviation Conference (ECAC)
 
 ## Airspace of the ECAC Member States {.unnumbered}
 
-ECAC is an intergovernmental organisation that was established by ICAO and the Council of Europe. ECAC now has 44 Member States, including all 27 EU Member States, 31 of the 32 European Aviation Safety Agency Member States, and all 41 EUROCONTROL Member States. The figure below is a graphical representation of the airspace belonging to the ECAC states.
+ECAC is an intergovernmental organisation that was established by ICAO and the 
+Council of Europe. ECAC now has 44 Member States, including all 27 EU Member 
+States, 31 of the 32 European Union Aviation Safety Agency Member States, and 
+all 41 EUROCONTROL Member States. 
 
-![Airspace controlled by ECAC Member States](../figures/ecac_airspace_fir.png){#fig-ecac-airspace-fir}
+@fig-ecac-airspace-fir is a graphical representation of the airspace belonging to the ECAC states.
+
+![State flight information region for ECAC](../figures/ecac_airspace_fir.png){#fig-ecac-airspace-fir}

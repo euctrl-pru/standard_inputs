@@ -2,9 +2,9 @@
 
 ## EUROCONTROL recommended values
 
-In @tbl-cancel-cost is presented the average cost of cancellation of a commercial
-flight on the day of operation, adjusted from 2014 to 2022 prices. The values 
-are provided for different types of aircraft, based on the number of seats.
+@tbl-cancel-cost presents the average cost of cancellation of a commercial flight
+on the day of operation, adjusted from 2014 to 2022 prices. The values are 
+provided for different types of aircraft, based on the number of seats.
 
 ```{r}
 #| label: tbl-cancel-cost
@@ -72,18 +72,13 @@ read_xlsx(here::here("data", "cancellation_cost.xlsx")) %>%
 ```
 
 :::{.callout-note}
-Traditional carrier estimates can be used for regional carriers
+Traditional carrier estimates can be used for regional carriers.
 :::
 
-An **alternative value** encompassing the **system-wide average cancellation cost**
-was also estimated by the experts, amounting approximately **€20,930**
-(adjusted from 2014 to 2022 prices).
+The values presented above refer to cancellation on the day of operation and 
+include the following:
 
-## Description
-
-The values presented above refer to cancellation on the day of operation and include the following:
-
-* Service recovery costs (i.e. passenger care and compensation costs (passenger vouchers, drinks, telephone calls, hotels))
+* Service recovery costs (i.e. passenger care), and passenger compensation for denied boarding and missed connections, estimated based on the application of the [Regulation (EC) No 261/2004](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32004R0261#:~:text=Regulation%20%28EC%29%20No%20261%2F2004%20of%20the%20European%20Parliament,of%20flights%2C%20and%20repealing%20Regulation%20%28EEC%29%20No%20295%2F91)
 
 * Loss of revenue
 
@@ -93,24 +88,35 @@ The values presented above refer to cancellation on the day of operation and inc
 
 * Crew and catering costs
 
-* Passenger compensation for denied boarding and missed connections, estimated based on the application of the Regulation (EC) No 261/2004.[@eureg2612004]
-
 * Luggage delivery costs
 
 * Operational savings (e.g. fuel, airport and navigation fees, maintenance, handling outstations, lounge outstations)
 
 Ground handling costs (e.g. ramp services, passenger services and field operation services) are not included in the estimation.
 
-## Comments
+An **alternative value** encompassing the **system-wide average cancellation cost**
+was also estimated by the experts, amounting approximately **€20,930**
+(adjusted from 2014 to 2022 prices).
 
-When a flight is carried out, the airline incurs out-of-pocket expenses (i.e. variable costs) but receives revenues which are 60 100% greater than the out-of-pocket expenses. Cancelling a flight means that the airline forgoes a substantial operating profit. Also, in addition to the loss, costs are incurred for the care and compensation of passengers. 
+## Comment
 
-![Cancellation costs as a function of time](../figures/cancellation_function.svg){#fig-cancel-function}
+When a flight is carried out, the airline incurs out-of-pocket expenses 
+(i.e. variable costs) but receives revenues which are 60-100% greater than the 
+out-of-pocket expenses. Cancelling a flight means that the airline forgoes a 
+substantial operating profit. Also, in addition to the loss, costs are incurred
+for the care and compensation of passengers.
 
-Timely cancellation will enable the airline to take the necessary measures to mitigate the cost impact, for example by rebooking passengers on another flight and allocating crew and aircraft to a different destination. The cancellation costs will thus be minimal and more in the region of the incurred opportunity cost and passenger value of time. If the cancellation is nearer the flight time (i.e. on the day of operation (D)), the cost of cancellation increases, to cover expenses such as fuel, maintenance, and crew and catering.
+![Cancellation costs as a function of time](../figures/cancellation_function.png){#fig-cancel-function}
+
+Timely cancellation will enable the airline to take the necessary measures to 
+mitigate the cost impact, for example by rebooking passengers on another flight
+and allocating crew and aircraft to a different destination. The cancellation 
+costs will thus be minimal and more in the region of the incurred opportunity cost
+and passenger value of time. If the cancellation is nearer the flight time 
+(i.e. on the day of operation (D)), the cost of cancellation increases, to cover
+expenses such as fuel, maintenance, and crew and catering.
 
 ## Related inputs
 
 @sec-operational-cancellation-rate [Operational cancellation rate](#sec-operational-cancellation-rate)
 
-## References

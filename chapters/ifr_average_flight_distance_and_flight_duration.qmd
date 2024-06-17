@@ -1,4 +1,4 @@
-# IFR average flight distance and flight duration {#sec-if-average-flight-distance-and-flight-duration}
+# IFR average flight distance and duration {#sec-if-average-flight-distance-and-flight-duration}
 
 ```{r}
 library(readxl)
@@ -8,15 +8,15 @@ library(gt)
 
 ## EUROCONTROL recommended values
 
-@tbl-flight-distance presents an overview of the average flight distance in ECAC region,
-as well as the average flight time in the same region for the period 2017-2021.
+@tbl-flight-distance presents an overview of the average flight distance flown 
+in the ECAC region, as well as the average flight time in the same region for 
+the period 2017-2022.
 
-The data in @tbl-flight-distance was obtained by dividing the total distance actually flown and 
-the total yearly IFR flight hours respectively by the yearly number of IFR
-flights in the ECAC airspace.[@ectrlprr2021] [@ectrlprr2022] [@ectrl:statfor:sid]
+The data was obtained by dividing the total distance actually flown and the total
+yearly IFR flight hours, respectively, by the yearly number of IFR flights in the 
+ECAC airspace. Please note that the numbers for 2020 and 2021 are considerably 
+lower due to the effect of the COVID-19 pandemic.
 
-Please note that the numbers for 2020 and 2021 are considerably lower 
-due to the effect of pandemic.
 
 ```{r}
 #| label: tbl-flight-distance
@@ -26,9 +26,9 @@ read_xlsx(here::here("data", "flight_distance_duration.xlsx")) %>%
   gt() %>% 
   cols_label(
     year = "Year",
-    distancekm = "Distance in km",
-    distancenm = "Distance in NM",
-    time = "Flight time in min"
+    distancekm = "Distance (km)",
+    distancenm = "Distance (NM)",
+    time = "Flight time (min)"
   ) %>% 
   cols_align(
     align = "left",
@@ -43,8 +43,8 @@ read_xlsx(here::here("data", "flight_distance_duration.xlsx")) %>%
     )
   ) %>% 
   fmt_number(
-    columns = distancekm:time,
-    decimals = 2
+    columns = time,
+    decimals = 1
   ) %>% 
   tab_options(
     table.width = pct(100)
@@ -65,9 +65,9 @@ read_xlsx(here::here("data", "flight_distance_duration.xlsx")) %>%
   )
 ```
 
-With regard to flight distance, @fig-traffic-demand-distribution illustrates that nearly 90% of
-IFR flight distances for flights arriving or departing within the Network Manager 
-area (excl. overflights) are less than 1,000NM long.
+With regard to flight distance, @fig-traffic-demand-distribution illustrates 
+that nearly 90% of IFR flight distances for flights arriving or departing within
+the Network Manager area (excl. overflights) are less than 1,000NM long.
 
 ![Distribution of traffic demand per distance band in 2022 within the EUROCONTROL Network Manager area](../figures/traffic_demand_distribution.svg){#fig-traffic-demand-distribution}
 
@@ -76,7 +76,3 @@ area (excl. overflights) are less than 1,000NM long.
 @sec-ifr-flight-information-per-market-segment [IFR flight information per market segment](#sec-ifr-flight-information-per-market-segment)
 
 @sec-distance-flown-by-charging-zone [DIstance flown by charging zone](#sec-distance-flown-by-charging-zone)
-
-@sec-taxiing-time [Taxiing time](#sec-taxiing-time)
-
-## References

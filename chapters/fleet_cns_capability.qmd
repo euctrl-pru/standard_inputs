@@ -1,3 +1,9 @@
+```{r}
+library(readxl)
+library(dplyr)
+library(gt)
+```
+
 # Fleet CNS capability {#sec-fleet-cns-capability}
 
 ## EUROCONTROL recommended values
@@ -5,20 +11,37 @@
 The subsections below provide statistics on flights and aircraft with certain 
 Communication, Navigation and Surveillance (CNS) equipment and capabilities.
 
-```{r}
-library(readxl)
-library(dplyr)
-library(gt)
-```
+The [EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)
+provides information for monitoring fleet capabilities and preparing performance-based
+navigation (PBN) deployment plans. It does so by analysing CNS and PBN information
+contained in ICAO flight plans and generates reports on aircraft or flight 
+characteristics. Note that the capabilities of aircraft which do not submit flight
+plans are not covered in the dashboard figures. The missing information is to a 
+large extent for general aviation (GA) flights. 
+
+The dashboard provides statistics on equipment and capabilities such as:
+
+* Communication: FMC WPR ACARS, HF RTF; CPDLC FANS 1/A HFDL; etc.
+
+* Navigation: RNAV 5, RNAV 1, RNP 1, RNP APCH (including LPV capability), GBAS, etc.
+
+* Surveillance: ADS-B, ADS-C, Mode S transponder, etc.
+
+Different periods of time, airports, airlines, or aircraft types 
+(depending on the user profile) can be analysed. 
+
+To access the dashboard, you first need to register on the OneSky Online portal
+using the link in the source above.
 
 ### Navigation (NAV) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight and represent
-the values for 2019.[@cns:dashboard]
+the values for 2022. All values come from [EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard).
+Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-nav-flight
-#| tbl-cap: NAV flight capabilities as a % of total flights
+#| tbl-cap: NAV flight capabilities as a % of total flights in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_total") %>% 
@@ -34,7 +57,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = share_flights,
-    decimals = 1
+    decimals = 2
   ) %>% 
   cols_align(
     align = "right",
@@ -54,19 +77,16 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The number of flights is number of arrivals or departures, or arrivals and departures in line with the selection criteria in the CNS dashboard",
+    footnote = "The number of flights is the number of arrivals or departures, or arrivals and departures in line with the selection criteria in the CNS dashboard",
     locations = cells_column_labels(
       columns = flights
     )
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-nav-flight_top10
-#| tbl-cap: NAV flight capabilities as a % at the top 10 European Airports
+#| tbl-cap: NAV flight capabilities as a % at the top 10 European Airports in Q4 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_top10") %>% 
@@ -81,7 +101,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = gbas:rnp_apch,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -102,15 +122,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
     locations = cells_column_labels(
       columns = gbas
     )
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-nav-flight_month
-#| tbl-cap: NAV aircraft capability over a one-month period, July 2019
+#| tbl-cap: NAV aircraft capability at the top-10 European airports over a one-month period in Q4 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_month") %>% 
@@ -125,7 +142,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = gbas:rnp_apch,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -140,15 +157,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
 ```{r}
 #| label: tbl-nav-flight_aircraft
-#| tbl-cap: NAV flight capability by main aircraft model
+#| tbl-cap: NAV flight capability by main aircraft model, December 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_aircraft") %>% 
@@ -163,7 +177,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = gbas:rnp_apch,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -178,33 +192,19 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_footnote(
-    footnote = "The values for A319, A320, A330 and B737 aircraft (0.00%) are corrected values, as no such capability exist for these aircraft",
-    locations = cells_column_labels(
-      columns = lpv
-    )
-  ) %>% 
-  tab_footnote(
-    footnote = "This percentage represent the equipage rate of a GBAS precursor system called S-CATI",
-    locations = cells_body(
-      columns = gbas,
-      rows = 5
-    )
-    ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ### Communication (COM) flight capabilities
 
-The values presented in the tables hereafter are weighted by flight and represent
-values for year 2019.[@cns:dashboard]
+The values presented in the tables hereafter are weighted by flight. Values are 
+based on flights arriving at ECAC Airports and the data is originated from
+[EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard). 
+Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-com-flight
-#| tbl-cap: COM flight capabilities as a % of total flights
+#| tbl-cap: COM flight capabilities as a % of total flights in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_total") %>% 
@@ -232,7 +232,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = share_flights,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -251,15 +251,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
 ```{r}
 #| label: tbl-com-flight_top10
-#| tbl-cap: COM datalink flight capabilities as a % at the top 10 European airports
+#| tbl-cap: COM datalink flight capabilities as a % at the Pilot Common Project airports in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_top10") %>% 
@@ -290,15 +287,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-com-voice-top10
-#| tbl-cap: COM voice flight capabilities as a % at the top 10 European airports
+#| tbl-cap: COM voice flight capabilities as a % at the Pilot Common Project Airports in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_voice_top10") %>% 
@@ -330,15 +324,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
  
 ```{r}
 #| label: tbl-com-aircraft
-#| tbl-cap: COM datalink flight capabilities for main aircraft models
+#| tbl-cap: COM datalink flight capabilities for main aircraft models in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_datalink_aircraft") %>% 
@@ -354,7 +345,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = fis_acars:iridium,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -368,21 +359,18 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
  
 ```{r}
 #| label: tbl-com-voice-aircraft
-#| tbl-cap: COM voice flight capabilities for main aircraft models
+#| tbl-cap: COM voice flight capabilities for main aircraft models in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_voice_aircraft") %>% 
   gt() %>% 
   cols_label(
-    airport = "Airport",
+    aircraft = "Aircraft type",
     hf_rtf = "H – HF RTF",
     inmarsat = "M1 – ATC RTF SATCOM (INMARSAT)",
     mtsat = "M2 – ATC RTF (MTSAT)",
@@ -393,7 +381,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   fmt_percent(
     columns = hf_rtf:vhf_spacing,
-    decimals = 1
+    decimals = 2
   ) %>%
   cols_align(
     align = "center",
@@ -404,24 +392,24 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
    ) %>% 
    cols_width(
     everything() ~ pct(9),
-    airport ~ pct(37)
+    aircraft ~ pct(37)
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
 ### Surveillance (SUR) flight capabilities
 
-The values presented in the tables hereafter are weighted by flight and represent
-the values for 2022.[@cns:dashboard]
+The values presented in the tables hereafter refer to the level of flight capabilities
+in terms of surveillance equipment. All values are weighted by flight and represent
+the situation for 2022. The data used is originated from
+[EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard). 
+Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-sur-flight
-#| tbl-cap: SUR flight capabilities as a % of total flights
+#| tbl-cap: SUR flight capabilities as a % of total flights in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "sur_total") %>% 
@@ -475,15 +463,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
     locations = cells_column_labels(
       columns = flights
     )
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
 ```{r}
 #| label: tbl-ssr-top10
-#| tbl-cap: SSR/Mode S declared capabilities in flight plans at the top 10 European airports
+#| tbl-cap: SSR/Mode S declared capabilities in flight plans at the top 10 European airports in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "ssr_top10") %>% 
@@ -509,15 +494,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
 ```{r}
 #| label: tbl-adsb-top10
-#| tbl-cap: ADS-B declared capabilities in flight plans at the top 10 European airports
+#| tbl-cap: ADS-B declared capabilities in flight plans at the top 10 European airports in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "adsb_top10") %>% 
@@ -543,15 +525,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-ssr-aircraft
-#| tbl-cap: SSR/Mode S declared capabilities in flight plans for main aircraft models
+#| tbl-cap: SSR/Mode S declared capabilities in flight plans for main aircraft models in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "ssr_aircraft") %>% 
@@ -580,15 +559,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-adsb-aircraft
-#| tbl-cap: ADS-B declared capabilities in flight plans for main aircraft models
+#| tbl-cap: ADS-B declared capabilities in flight plans for main aircraft models in 2022
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "adsb_aircraft") %>% 
@@ -617,52 +593,24 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL Communication, Navigation & Surveillance (CNS) Dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard)*")
   )
 ```
 
-## Description
+## Comment
 
-The CNS dashboard provides information for monitoring fleet capabilities and 
-preparing performance-based navigation (PBN) deployment plans. It does so by 
-analysing CNS and PBN information contained in ICAO flight plans, and generates
-reports on aircraft or flight characteristics. Note that the capability of 
-aircraft which do not submit flight plans is not covered in the above figures. 
-The missing information to a large extent for general aviation (GA) flights.
-
-The tool provides statistics on equipment and capability such as:
-
-* Communication: FMC WPR ACARS, HF RTF; CPDLC FANS 1/A HFDL; etc.
-
-* Navigation: RNAV 5, RNAV 1, RNP 1, RNP APCH (including LPV capability), GBAS, etc.
-
-* Surveillance: ADS-B, ADS-C, Mode S transponder, etc.
-
-Different periods of time, airports, airlines or aircraft types (depending on 
-the user profile) can be analysed. 
-
-To access the dashboard, you first need to register on the OneSky Online portal
-using the link in the source above.
-
-## Comments
-
-The numbers of flights and aircraft provided by the CNS dashboard are derived 
-from flight plans submitted to the EUROCONTROL Network Manager (NM). Consequently,
-the statistics do not include the capability of aircraft flying in uncontrolled 
-airspace or under VFR and thus do not submit flight plans to the NM.
-
-On-board capability and equipment data made available via the CNS dashboard are
-those declared in ICAO FPLs by operators. The information is therefore only as 
-reliable as declared. For detailed analysis, additional local assessment is recommended. 
+The numbers of flights and aircraft provided by the CNS dashboard are derived from 
+flight plans submitted to the EUROCONTROL Network Manager. Consequently, the 
+statistics do not include the capability of aircraft flying in uncontrolled 
+airspace or under VFR and thus do not submit flight plans to the NM. On-board 
+capability and equipment data made available via the CNS dashboard are those 
+declared in ICAO FPLs by operators. The information is therefore only as reliable
+as declared. For detailed analysis, additional local assessment is recommended.
 
 ## Related inputs
 
 @sec-number-of-ifr-flights [Number of IFR flights](#sec-number-of-ifr-flights)
 
-@sec-cns-infrastructure [CNS infrastructure](#sec-cns-infrastructure)
+ @sec-cns-infrastructure [CNS infrastructure](#sec-cns-infrastructure)
 
 @sec-pbn-and-precision-approach-procedures [PBN and precision approach procedure](#sec-pbn-and-precision-approach-procedures)
 
-## References
