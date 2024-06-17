@@ -107,8 +107,7 @@ The above values, provided by IATA, refer to the 2020 Airline Cost Management
 Group (ACMG) data collection (fiscal year 2019) and provide an overview of the
 operating costs for 10 types of aircraft (B737 NG, A320 family, B737 Classic, 
 B777, A330, B757, B767, B787, EMB-190 and Dash 8). The IATA ACMG collects 
-operating costs classified into three categories. These categories are shown in 
-@fig-total-operating-costs and are defined as follows:
+operating costs classified into three categories. These categories are defined as follows:
 
 * **Flight operating expenses** are direct operating expenses. They are directly
   related to the aircraft and the flight activities of an airline, such as flight 
