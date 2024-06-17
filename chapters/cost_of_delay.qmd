@@ -343,4 +343,3 @@ This input is suitable for calculation of the cost of a delayed flight on airspa
 
 @sec-air-traffic-delay [Air traffic delay](#sec-air-traffic-delay)
 
-## References

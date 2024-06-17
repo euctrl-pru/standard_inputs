@@ -77,7 +77,7 @@ The top 30 aircraft types listed above represent approximately 62% of the total
 fleet and 69% of flights.
 
 @tbl-military-aircraft shows the number of military aircraft by category in 2019
-vs 2023 in Europe, USA, and Commonwealth of Independent States (CIS) countries^[Armenia, Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan, and Uzbekistan.[@flightglobal2023]
+vs 2023 in Europe, USA, and Commonwealth of Independent States (CIS) countries^[Armenia, Azerbaijan, Belarus, Kazakhstan, Kyrgyzstan, Moldova, Russia, Tajikistan, and Uzbekistan.][@flightglobal2023]
 
 ```{r}
 #| label: tbl-military-aircraft

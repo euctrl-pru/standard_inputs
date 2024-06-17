@@ -40,9 +40,6 @@ read_xlsx(here("data","fuel_burn_rate.xlsx")) %>%
   tab_style(
     style = list(cell_text(indent = pct(10))),
     locations = cells_body(row=c(2:4), column=1)
-  )%>%
-  # Adding caption
-  tab_caption(caption = md("Average fuel burn rates (kg/minute)")
   ) %>% 
   # Hiding columns
   cols_hide(columns = c(C, G)
@@ -102,13 +99,17 @@ and provide flight plans locally.
 
 Below, a list of other applicable sources that consider fuel burn rates:
 
--   *ICAO Carbon Emissions Calculator:* [@emissionscalc] ICAO has developed a 
+-   *ICAO Carbon Emissions Calculator* [@emissionscalc] 
+    
+    ICAO has developed a 
     methodology to calculate the carbon dioxide emissions from air travel for use 
     in offset programmes. The methodology applies the best publicly available 
     industry data to account for various factors such as aircraft types, 
     route-specific data, passenger load factors and cargo carried.
 
--   *EUROCONTROL Advanced Emission Model (AEM):* [@ectrl:em:model] Standalone 
+-   *EUROCONTROL Advanced Emission Model (AEM)* [@ectrl:em:model] 
+    
+    Standalone 
     application, developed and maintained by the EUROCONTROL Innovation Hub, which
     estimates aircraft emissions and fuel burn. The AEM can estimate (i) the mass
     of fuel burned by the main engines of a specified type of aircraft with a 
@@ -117,7 +118,9 @@ Below, a list of other applicable sources that consider fuel burn rates:
     produced by the burning of that fuel. Access to the tool requires an AEM user 
     license.
 
--   *ICAO Engine Emissions Databank:* [@icao:databank] Manufacturer’s datasheets 
+-   *ICAO Engine Emissions Databank* [@icao:databank] 
+
+    Manufacturer’s datasheets 
     that may contain the rates of fuel burn for different flight phases and
     individual engine types.
 

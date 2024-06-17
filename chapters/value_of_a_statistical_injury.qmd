@@ -68,7 +68,7 @@ The above data should be treated with caution as there may be legal implications
 
 Below are presented some sources recommended to be consulted in the frame of this input:
 
-* *European Commission DG REGIO, Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020[@ecdgregio2014]*
+* *European Commission DG REGIO, Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020* [@ecdgregio2014]
 
 ## Related inputs
 

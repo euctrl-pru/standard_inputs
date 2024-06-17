@@ -86,14 +86,14 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
     footnote = "Sakaeronavigatsia was added to the analysis in 2015",
     locations = cells_body(
       column = year,
-      row = 11
+      row = 5
     )
   ) %>% 
   tab_footnote(
     footnote = "In 2021, UkSATSE was not included in the analysis of operational units, while BHANSA was added to the list, impacting the numbers presented in the table",
     locations = cells_body(
       column = year,
-      row = 5
+      row = 11
     )
   ) %>% 
   tab_options(

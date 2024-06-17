@@ -80,25 +80,25 @@ terms (Option 3), or if the WACC implied by the maximum exposure of the ANSP is 
 The sources listed below are those recommended to consult for further information
 about discount rate:
 
-* *European Commission (2021), Better regulation toolbox[@ecbr2023]*
+* *European Commission (2021), Better regulation toolbox* [@ecbr2023]
 
   Has been created to support designing EU policies and laws so that they achieve 
   their objectives at minimum cost. The Guidelines explain what better regulation 
   is and how it should be applied in the day-to-day practices of Commission officials
   preparing new initiatives and proposals or managing existing policies and legislation.
 
-* *European Commission (2014), Guide to Cost-Benefit Analysis of Investment projects, Economic appraisal tool for Cohesion policy 2014-2020[@ecdgregio2014]* 
+* *European Commission (2014), Guide to Cost-Benefit Analysis of Investment projects, Economic appraisal tool for Cohesion policy 2014-2020* [@ecdgregio2014]
 
   Offers practical guidance on major project appraisals, as embodied in the 
   cohesion policy legislation for 2014-2020 and takes into account the specific
   requirements for the European Commission.
 
-* *European Commission (2022), Economic Appraisal Vademecum 2021-2027 – General principles and sector applications[@ecdgregiovademecum2022]*
+* *European Commission (2022), Economic Appraisal Vademecum 2021-2027 – General principles and sector applications* [@ecdgregiovademecum2022]
 
   Further promotes and simplifies the voluntary use of Economic Appraisal for EU
   co-financed investments in the 2021-2027 programming period.
 
-* *GOV.UK, HM Treasury (2018), The Green Book: Central Government Guidance on Appraisal and Evaluation[@greenbook:2018]* 
+* *GOV.UK, HM Treasury (2018), The Green Book: Central Government Guidance on Appraisal and Evaluation* [@greenbook:2018]
 
   The EUROCONTROL recommended value of 3% is not necessarily suitable for
   discounting intergenerational projects, especially the projects dealing with

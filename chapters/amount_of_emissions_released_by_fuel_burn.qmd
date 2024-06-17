@@ -111,14 +111,14 @@ or using the factor recommended by ICAO, in order to ensure external consistency
 
 ## Other possible sources
 
-* *European Aviation Environmental Report Series*[@eaer2022]
+* *European Aviation Environmental Report Series* [@eaer2022]
   
   The 2022 edition shows the aviation sector has taken steps to address 
   environmental challenges but also that more decisive actions are needed. 
   In particular, the latest trends in aircraft engine emissions are shown in 
   section 3.2. of the document.
 
-* *European Environment Agency (2023), EMEP^[EMEP is a cooperative programme for monitoring and evaluation of the long-range transmission of air pollutants in Europe]/EEA air pollutant emission inventory guidebook 2023*[@eea:2019]
+* *European Environment Agency (2023), EMEP^[EMEP is a cooperative programme for monitoring and evaluation of the long-range transmission of air pollutants in Europe]/EEA air pollutant emission inventory guidebook 2023* [@eea:2019]
 
   Provides values for emission factors and fuel consumption in different phases 
   of flight – including taxiing – for different aircraft types, using three 
@@ -131,12 +131,12 @@ or using the factor recommended by ICAO, in order to ensure external consistency
   covering engine types whose emissions are regulated, namely turbojet and turbofan 
   engines with a static thrust greater than 26.7 kilonewtons.
 
-* *Swiss Federal Office of Civil Aviation, Aircraft Engine Emissions*[@foca:aee]
+* *Swiss Federal Office of Civil Aviation, Aircraft Engine Emissions* [@foca:aee]
    
    Presents a measurement and calculation methodology for aircraft piston engine
    emissions in order to improve aviation emission inventories, as developed by FOCA.
 
-* *Swedish Defence Research Agency*[@envimpact]
+* *Swedish Defence Research Agency* [@envimpact]
 
   Holds a database of emission indices of NOx, HC, and CO, with corresponding 
   fuel flows for turboprop engines.

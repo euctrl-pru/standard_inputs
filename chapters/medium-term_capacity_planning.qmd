@@ -73,7 +73,7 @@ up-to-date information on capacity planning.
     the delivery of a Digital European Sky (DES).
 
 
-* ***Local Single Sky ImPlementation (LSSIP) documents*** [@ectrl:lssip]
+* *Local Single Sky ImPlementation (LSSIP) documents* [@ectrl:lssip]
 
     The Local Single Sky ImPlementation (LSSIP) documents give a comprehensive 
     overview of all ATM information for each of the ECAC Member States. They also

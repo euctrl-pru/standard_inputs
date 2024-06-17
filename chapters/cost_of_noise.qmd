@@ -195,6 +195,5 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
   )
 ```
 
-## References
 
 

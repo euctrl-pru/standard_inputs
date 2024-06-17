@@ -32,7 +32,7 @@ cols_align(
   fmt_currency(
     currency = "EUR",
     columns = empl_cost,
-    decimals = 2
+    decimals = 0
   ) %>% 
   fmt_number(
     columns = ratio,
