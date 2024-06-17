@@ -74,16 +74,7 @@ tribble(
   tab_options(
     table.width = pct(70),
     footnotes.marks = c(letters[1:10])
-   ) %>% 
-  tab_source_note(
-    source_note = md("*Source 1: [EUROCONTROL (2018) European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency](https://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment)*")
-  ) %>% 
-tab_source_note(
-    source_note = md("*Source 2: [MIT (2010) Laboratory for aviation and the environment – Guidance on the use of AEDT for gridded aircraft emissions in atmospheric models](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.719.2090&rep=rep1&type=pdf)*")
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source 3: [EUROCONTROL, EASA, EU (2022) European Aviation Environmental Report, EU27+FTA aviation emissions for year 2021](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)*")
-  ) %>% 
+   )  %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -92,6 +83,15 @@ tab_source_note(
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source 1: [EUROCONTROL (2018) European Aviation Fuel Burn and Emissions Inventory System for the European Environment Agency](https://www.eurocontrol.int/publication/european-aviation-fuel-burn-and-emissions-inventory-system-feis-european-environment)*")
+  ) %>% 
+tab_source_note(
+    source_note = md("*Source 2: [MIT (2010) Laboratory for aviation and the environment – Guidance on the use of AEDT for gridded aircraft emissions in atmospheric models](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.719.2090&rep=rep1&type=pdf)*")
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source 3: [EUROCONTROL, EASA, EU (2022) European Aviation Environmental Report, EU27+FTA aviation emissions for year 2021](https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022)*")
   )
 ```
 

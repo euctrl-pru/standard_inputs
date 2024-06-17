@@ -63,15 +63,15 @@ read_xlsx(here::here("data", "cost_delay.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-   tab_source_note(
-    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
   ) %>%
   tab_footnote(
     footnote = "The monetary values are adjusted to 2022 prices based on inflation",
     locations = cells_column_labels(
       columns = all:short
     )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
   )
 ```
 
@@ -115,15 +115,15 @@ read_xlsx(here::here("data", "cost_delay.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-   tab_source_note(
-    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
   ) %>%
   tab_footnote(
     footnote = "The monetary values are adjusted to 2022 prices based on inflation",
     locations = cells_column_labels(
       columns = 2
     )
+  ) %>% 
+   tab_source_note(
+    source_note = md("*Source: calculated based on [University of Westminster (2015), European airline delay cost reference values - version 4.1](https://www.eurocontrol.int/publication/european-airline-delay-cost-reference-values). Also available in [2004 iteration](https://www.eurocontrol.int/publication/evaluating-true-cost-airlines-one-minute-airborne-or-ground-delay)*")
   )
 ```
 

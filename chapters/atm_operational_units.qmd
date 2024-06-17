@@ -28,8 +28,6 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
     afis = "AFIS units",
     atc = "ATC sectors"
   ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) %>% 
   cols_align(
     align = "left",
     columns = c(year)
@@ -70,6 +68,18 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
       column = twr
     )
   ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(14)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
   tab_footnote(
     footnote = "AFIS - Airport/Aerodrome Flight Information Service",
     locations = cells_column_labels(
@@ -96,18 +106,8 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
       row = 11
     )
   ) %>% 
-  tab_options(
-    table.width = pct(100)
-   ) %>% 
-   cols_width(
-    everything() ~ pct(14)
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
-  )
+  tab_source_note(
+    source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) 
 ```
 
 ## Comment

@@ -59,9 +59,6 @@ read_xlsx(here::here("data", "fleet_size.xlsx"),
       columns = everything(),
       rows = 32
     )
-  ) %>% 
-  tab_source_note(
-    source_note = md("*Source: EUROCONTROL Network Manager flight plans, 2022*")
   ) %>%
   tab_footnote(
     footnote = "This value may vary from the total number of flights reported earlier in this document due to a slight difference in scope of data available",
@@ -69,7 +66,10 @@ read_xlsx(here::here("data", "fleet_size.xlsx"),
       columns = flights_2022,
       rows = 32
     )
-    ) 
+    ) %>% 
+  tab_source_note(
+    source_note = md("*Source: EUROCONTROL Network Manager flight plans, 2022*")
+  ) 
 ```
 
 The 22,948 civil aircraft in @tbl-fleet-size include 500 unique aircraft types. 

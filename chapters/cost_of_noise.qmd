@@ -49,12 +49,6 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     align = "right",
     columns = annoyance:total
   ) %>% 
-  tab_footnote(
-    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2022 prices",
-    locations = cells_column_labels(
-      columns = annoyance:total
-    )
-  ) %>% 
    tab_options(
     table.width = pct(100)
    ) %>% 
@@ -67,6 +61,12 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+  tab_footnote(
+    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2022 prices",
+    locations = cells_column_labels(
+      columns = annoyance:total
+    )
+  ) %>%
   tab_footnote(
     footnote = "Lden is the common EU indicator which corresponds to the weighted average noise level throughout the day, evening, and night to which a citizen is exposed over a year. One fundamental feature of Lden is that it assumes that evening and night-time noise is more of a nuisance than daytime noise. (Evening noise is given a penalty of 5 dB(A). Night-time noise is given a penalty of 10 dB(A).)",
     locations = cells_column_labels(

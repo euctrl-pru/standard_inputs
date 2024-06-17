@@ -71,9 +71,15 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
   tab_options(
     row_group.background.color = "#F5F7F9",
     row_group.font.weight = "bold"
+  )   %>% 
+   tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    everything() ~ pct(15),
   ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
+  tab_options(
+    column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
     footnote = "LTO stands for Landing and Take-Off Cycle",
@@ -87,14 +93,8 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
       columns = lto_cost:pax_cost
     )
   ) %>% 
-   tab_options(
-    table.width = pct(100)
-   ) %>% 
-   cols_width(
-    everything() ~ pct(15),
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
   )
 ```
 
@@ -126,15 +126,6 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     decimals = 0,
     columns = low:high
   ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
-  ) %>% 
-  tab_footnote(
-    footnote = "The values originate from Table 23 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
-    locations = cells_column_labels(
-      columns = low:high
-    )
-  ) %>% 
   tab_options(
     table.width = pct(100)
     ) %>% 
@@ -146,6 +137,15 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
+  ) %>% 
+  tab_footnote(
+    footnote = "The values originate from Table 23 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
+    locations = cells_column_labels(
+      columns = low:high
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
   )
 ```
 
@@ -181,15 +181,6 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     align = "right",
     columns = c(total, km, pax)
   ) %>% 
-  tab_source_note(
-    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
-  ) %>% 
-  tab_footnote(
-    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
-    locations = cells_column_labels(
-      columns = total:pax
-    )
-  )  %>% 
   tab_options(
     table.width = pct(100)
     ) %>% 
@@ -201,6 +192,15 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
+  ) %>% 
+  tab_footnote(
+    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
+    locations = cells_column_labels(
+      columns = total:pax
+    )
+  ) %>% 
+  tab_source_note(
+    source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
   )
 ```
 
@@ -229,12 +229,6 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     currency = "EUR",
     columns = no:pm,
     decimals = 1
-  ) %>% 
-  tab_footnote(
-    footnote = "The values originate from Table 14 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2022 prices according to inflation",
-    locations = cells_column_labels(
-      columns = no:pm
-    )
   ) %>%
    tab_options(
     table.width = pct(100)
@@ -247,6 +241,12 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
+  ) %>% 
+  tab_footnote(
+    footnote = "The values originate from Table 14 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2022 prices according to inflation",
+    locations = cells_column_labels(
+      columns = no:pm
+    )
   )
 ```
 

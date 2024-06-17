@@ -29,12 +29,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  tab_footnote(
-  footnote = "Values adjusted from 2002 to 2022 prices based on inflation",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -44,6 +38,12 @@ locations = cells_column_labels(
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+  tab_footnote(
+  footnote = "Values adjusted from 2002 to 2022 prices based on inflation",
+locations = cells_column_labels(
+  columns = value
+)
+) %>% 
   tab_source_note(
     source_note = md("*Source: [European Commission (2006), HEATCO, Developing Harmonised European Approaches for Transport Costing and Project Assessment – Deliverable 5 Proposal for Harmonised Guidelines](https://trimis.ec.europa.eu/sites/default/files/project/documents/20130122_113653_88902_HEATCO_D5_summary.pdf)*")
   )
@@ -64,13 +64,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  
-tab_footnote(
-  footnote = "Values adjusted from 2015 to 2022 prices based on inflation",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -82,7 +75,13 @@ locations = cells_column_labels(
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [French Ministry of Ecological Transition (2019), Recommended values for calculating average long-distance travel](https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf)*")
-  )
+  ) %>%
+  tab_footnote(
+  footnote = "Values adjusted from 2015 to 2022 prices based on inflation",
+locations = cells_column_labels(
+  columns = value
+)
+)
   
 ```
 
@@ -101,13 +100,6 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
    currency = "EUR",
    decimals = 2
   ) %>% 
-  
-tab_footnote(
-  footnote = "Values adjusted from 2014 to 2022 prices based on inflation and using the exchange rate in general parameters",
-locations = cells_column_labels(
-  columns = value
-)
-) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
@@ -119,7 +111,13 @@ locations = cells_column_labels(
   ) %>% 
   tab_source_note(
     source_note = md("*Source: [Airports Commission (2014), Values of time used to estimate passenger delay costs in the UK airport system](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf)*")
-  )
+  ) %>% 
+  tab_footnote(
+  footnote = "Values adjusted from 2014 to 2022 prices based on inflation and using the exchange rate in general parameters",
+locations = cells_column_labels(
+  columns = value
+)
+) 
   
 ```
 

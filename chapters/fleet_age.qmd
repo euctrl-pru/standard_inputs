@@ -56,9 +56,6 @@ read_xlsx(here::here("data", "fleet_age_build_year.xlsx")) %>%
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_source_note (
-    source = md("*Source: EUROCONTROL Network Manager flight plans and PRISME fleet data, March 2023*")
   ) %>%  
   tab_footnote(
     footnote = "This value may vary from the total number of flights reported earlier in this document due to a slight difference in scope of data available",
@@ -66,7 +63,10 @@ read_xlsx(here::here("data", "fleet_age_build_year.xlsx")) %>%
       columns = flights,
       rows = 44
     )
-    ) 
+    ) %>% 
+  tab_source_note (
+    source = md("*Source: EUROCONTROL Network Manager flight plans and PRISME fleet data, March 2023*")
+  )
 ```
 
 The information presented in @tbl-fleet-age is derived from flight plans submitted to 

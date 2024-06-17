@@ -50,9 +50,6 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
     use_seps = TRUE,
     decimals = 0
   ) %>%
-  tab_source_note(
-    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
-  ) %>%
   cols_align(
     align = "left",
     columns = c(month, arrival, departure, internal, overflight, total_2022)
@@ -95,6 +92,9 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
     total_2022 ~ pct(12),
     total_2019 ~ pct(12),
     vs_2019_flight_level ~ pct(12)
+  ) %>%
+  tab_source_note(
+    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   )
 ```
 
@@ -131,9 +131,6 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
     columns = c(y2019, y2021, y2022),
     use_seps = TRUE,
     decimals = 0
-  ) %>%
-  tab_source_note(
-    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   ) %>%
   cols_align(
     align = "right",
@@ -179,6 +176,9 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
     y2019 ~ pct(13),
     y2021 ~ pct(13),
     y2022 ~ pct(13)
+  ) %>%
+  tab_source_note(
+    source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")
   )
 
 ```

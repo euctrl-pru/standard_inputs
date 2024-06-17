@@ -57,12 +57,6 @@ read_xlsx(here::here("data", "turnaround_time.xlsx"),
      "Medium",
      columns = 4:5
    ) %>% 
-   tab_footnote(
-    footnote = "Heavy, medium, and light (not included here) relate to ICAO wake vortex aircraft categories based on the maximum certified take-off mass: Heavy aircraft types of 136,000 kg (300,000 lb) or more; Medium aircraft types less than 136,000 kg (300,000 lb) and more than 7,000 kg (15,500 lb); Light aircraft types of 7,000 kg (15,500 lb) or less",
-    locations = cells_column_spanners(
-      spanners = everything()
-    )
-    ) %>% 
   fmt_number(
     columns = 2:5,
     decimals = 0
@@ -76,6 +70,12 @@ read_xlsx(here::here("data", "turnaround_time.xlsx"),
    tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
+   tab_footnote(
+    footnote = "Heavy, medium, and light (not included here) relate to ICAO wake vortex aircraft categories based on the maximum certified take-off mass: Heavy aircraft types of 136,000 kg (300,000 lb) or more; Medium aircraft types less than 136,000 kg (300,000 lb) and more than 7,000 kg (15,500 lb); Light aircraft types of 7,000 kg (15,500 lb) or less",
+    locations = cells_column_spanners(
+      spanners = everything()
+    )
+    ) %>% 
 tab_source_note(
   source_note = md("*Source: EUROCONTROL – Computed from data supplied by the airline members to CODA*")
 )

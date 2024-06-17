@@ -64,9 +64,6 @@ read_xlsx(here::here("data", "distance_by_charging_zone.xlsx")) %>%
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
-  tab_source_note(
-    source = md("*Source: [EUROCONTROL PRU (n.d), ATM Cost Effectiveness (ACE) Reports](https://ansperformance.eu/publications/prc/ace/)*")
-  ) %>% 
   tab_footnote(
     footnote = "Estonia integrated as of April 2017",
     locations = cells_body(
@@ -80,7 +77,10 @@ read_xlsx(here::here("data", "distance_by_charging_zone.xlsx")) %>%
       columns = State,
       rows = 41
     )
-    ) 
+    ) %>% 
+  tab_source_note(
+    source = md("*Source: [EUROCONTROL PRU (n.d), ATM Cost Effectiveness (ACE) Reports](https://ansperformance.eu/publications/prc/ace/)*")
+  )
 ```
 
 For the most updated information, please refer to the [Aviation Intelligence En-Route Dashboard](https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html).

@@ -46,6 +46,21 @@ cols_align(
       columns = "year"
     )
   ) %>% 
+  tab_options(
+    table.width = pct(100)
+   ) %>% 
+   cols_width(
+    year ~ px(40),
+    productivity ~ px(120),
+    empl_cost ~ px(120),
+    ratio ~ px(120)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
    tab_footnote(
     footnote = "Unit: composite flight-hours per ATCO-hour",
     locations = cells_column_labels(
@@ -63,21 +78,6 @@ cols_align(
     locations = cells_column_labels(
       column = ratio
     )
-  ) %>% 
-  tab_options(
-    table.width = pct(100)
-   ) %>% 
-   cols_width(
-    year ~ px(40),
-    productivity ~ px(120),
-    empl_cost ~ px(120),
-    ratio ~ px(120)
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
-  ) %>% 
-  tab_options(
-    column_labels.font.weight = "bold"
   ) %>% 
 tab_source_note(
   source_note = md("*Source: [EUROCONTROL PRU, ATM Cost-Effectiveness (ACE) Benchmarking Report (2023 Edition)](https://ansperformance.eu/publications/prc/ace/)*")
