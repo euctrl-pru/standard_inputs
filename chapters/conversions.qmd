@@ -57,6 +57,17 @@ readxl::read_xlsx(here("data","values_2022.xlsx"),
     ) %>% 
    cols_width(
      Year:Rate ~ pct(30)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>%
+  tab_style(
+    style = list(
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(
+      columns = Year
+    )
   )
 ```
 
@@ -92,7 +103,10 @@ read_csv(here("data", "exchange_rate.csv"), show_col_types = FALSE) %>%
      currency ~ pct(40),
      to_eur ~ pct(30),
      from_eur ~ pct(30)
-  ) 
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
+  )
 ```
 
 ## Cost of fuel {.unnumbered}
@@ -131,6 +145,9 @@ tribble(
      price_barrel ~ pct(20),
      price_gallon ~ pct(20),
      price_kg ~ pct(20)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
   )
 ```
 
@@ -169,6 +186,9 @@ tribble(
    cols_width(
      from ~ pct(50),
      to ~ pct(50)
+  ) %>%
+  tab_options(
+    column_labels.font.weight = "bold"
   )
 ```
 

@@ -31,7 +31,8 @@ For each standard input, the following information is provided, where relevant.
 |:-----------------------|:-----------------------------------------------|
 | EUROCONTROL recommended values | One or a set of recommended values put forward by EUROCONTROL for the specific indicator, including a description containing relevant information or details regarding the values                                                                                   |
 | Comment                        | Any further comments regarding the source or derivation of the value, for example the degree of confidence in the values and sources cited |                                                                                |
-| Related inputs                 | A link to other related standard inputs included in the document.                                                                                                           |
-| References                     | A list of sources used for the specific input                                                                                                                              |
+| When to use the input?         | A recommendation on when the input can be used.     |
+| Related inputs                 | A link to other related standard inputs included in the document.     |
+| References                     | A list of sources used for the specific input.                        |
 
 When necessary, please refer to [EUROCONTROL Air Navigation Inter-Site Acronym List](https://was.eurocontrol.int/airial/definitionList.do;jsessionid=SrpcxSrEHlNoj1c31_dTNR6ajilMCDLfREYBQxP9.drjbossl01?skipLogon=true) (AIRIAL) for more information about specific terminology.
