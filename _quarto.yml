@@ -339,9 +339,9 @@ book:
       - text: "Version"
         menu:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1"
-            href: "/economics/cba/standard-inputs/v10.0.1/"
+            href: "/v10.0.1/"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.2"
-            href: "/economics/cba/standard-inputs/v10.0.2/"
+            href: "/v10.0.2/"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.3"
-            href: "/economics/cba/standard-inputs/v10.0.3/"
+            href: "/v10.0.3/"
 
