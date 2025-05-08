@@ -332,4 +332,13 @@ book:
         menu:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Single European Sky (SES) Portal"
             href: "https://www.eurocontrol.int/prudata/dashboard/"
+      
+      - text: "Previous Versions"
+        menu:
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (Dec 2022)"
+            href: "/v10.0.1/"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.2 (Mar 2023)"
+            href: "/v10.0.2/"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
+            href: "/"
 
