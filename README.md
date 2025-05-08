@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/87881163-e7ca-4a8c-8fd3-56b3531cb445/deploy-status)](https://app.netlify.com/sites/standard-inputs/deploys)
 
-
+Permanent branch: permanent-release-v10.0.1
 
 This is a prototype for *Standard Inputs for EUROCONTROL Cost-Benefit Analyses*.
 It is based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown).
