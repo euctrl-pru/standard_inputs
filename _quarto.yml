@@ -326,6 +326,12 @@ book:
         menu:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (Dec 2022)"
             href: "../v10.0.1/"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.2 (Mar 2023)"
+            href: "../v10.0.2/"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.3 (April 2023)"
+            href: "../v10.0.3/"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.4 (June 2024)"
+            href: "../latest/"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
             href: "../latest/"
 
