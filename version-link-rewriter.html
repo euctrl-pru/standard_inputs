@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
   // Try to extract the version from the pathname first
   let versionMatch = path.match(/\/(v\d+\.\d+\.\d+|latest)\//);
   
+  console.log("versionMatch: ",  versionMatch);
+  
   // Fallback to hash if no version in path
   if (!versionMatch && hash.startsWith('#VERSION:')) {
     versionMatch = [null, hash.replace('#VERSION:', '')];
@@ -24,12 +26,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentVersion = versionMatch[1]; // "v10.0.3" or "latest"
   const currentPage = path === '/' ? '/index.html' : path;
   const base = ''; // Assume root, since path is just `/`
-
+  
+  console.log("currentVersion: ",  currentVersion);
+  console.log("currentPage: ",  currentPage);
+  console.log("base: ",  base);
+  
   document.querySelectorAll('a[href^="#VERSION:"]').forEach(link => {
     const targetVersion = link.getAttribute("href").replace("#VERSION:", "");
     const newHref = `${base}/${targetVersion}${currentPage}`;
     console.log(`🔗 Rewriting link to ${newHref}`);
     link.setAttribute("href", newHref);
+    console.log("targetVersion: ",  targetVersion);
+    console.log("newHref: ",  newHref);
   });
 });
 </script>
