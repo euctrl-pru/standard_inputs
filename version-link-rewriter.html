@@ -1,6 +1,5 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("🔁 Rewriting version links...");
   const path = window.location.pathname;
 
   // Match /v10.0.3/ or /latest/
@@ -17,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function rewriteLinks() {
     const links = document.querySelectorAll('a[href*="#VERSION:"]');
     if (links.length === 0) {
-      console.log("⏳ Still waiting for version links...");
       return;
     }
 
@@ -28,10 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       const targetVersion = targetVersionMatch[1];
       const newHref = `${base}/${targetVersion}/${currentPage}`;
-      console.log(`🔗 Rewriting link to ${newHref}`);
       link.setAttribute("href", newHref);
-      console.log("targetVersion: ", targetVersion);
-      console.log("newHref: ", newHref);
     });
   }
 
