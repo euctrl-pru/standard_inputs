@@ -1,43 +1,41 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   console.log("🔁 Rewriting version links...");
-
   const path = window.location.pathname;
-  const hash = window.location.hash;
-  
-  console.log("path: ",  path);
-  console.log("hash: ",  hash);
-  
-  // Try to extract the version from the pathname first
-  let versionMatch = path.match(/\/(v\d+\.\d+\.\d+|latest)\//);
-  
-  console.log("versionMatch: ",  versionMatch);
-  
-  // Fallback to hash if no version in path
-  if (!versionMatch && hash.startsWith('#VERSION:')) {
-    versionMatch = [null, hash.replace('#VERSION:', '')];
-  }
 
+  // Match `/v10.0.3/` or `/latest/`
+  const versionMatch = path.match(/\/(v\d+\.\d+\.\d+|latest)\//);
   if (!versionMatch) {
-    console.warn("⚠️ No version match found in path or hash.");
+    console.warn("⚠️ Could not find version in path:", path);
     return;
   }
 
-  const currentVersion = versionMatch[1]; // "v10.0.3" or "latest"
-  const currentPage = path === '/' ? '/index.html' : path;
-  const base = ''; // Assume root, since path is just `/`
-  
-  console.log("currentVersion: ",  currentVersion);
-  console.log("currentPage: ",  currentPage);
-  console.log("base: ",  base);
-  
-  document.querySelectorAll('a[href^="#VERSION:"]').forEach(link => {
-    const targetVersion = link.getAttribute("href").replace("#VERSION:", "");
-    const newHref = `${base}/${targetVersion}${currentPage}`;
-    console.log(`🔗 Rewriting link to ${newHref}`);
-    link.setAttribute("href", newHref);
-    console.log("targetVersion: ",  targetVersion);
-    console.log("newHref: ",  newHref);
-  });
+  const currentVersion = versionMatch[1]; // "v10.0.3", "latest"
+  const currentPage = path.split(`/${currentVersion}/`)[1] || '/index.html';
+  const base = path.split(`/${currentVersion}/`)[0];
+
+  let tries = 0;
+  const maxTries = 10;
+
+  function tryRewriteLinks() {
+    const links = document.querySelectorAll('a[href^="#VERSION:"]');
+    if (links.length === 0 && tries < maxTries) {
+      tries++;
+      console.log(`⏳ Attempt ${tries}: No matching links found yet. Retrying...`);
+      setTimeout(tryRewriteLinks, 100);
+      return;
+    }
+
+    links.forEach(link => {
+      const targetVersion = link.getAttribute("href").replace("#VERSION:", "");
+      const newHref = `${base}/${targetVersion}${currentPage}`;
+      console.log(`🔗 Rewriting link to ${newHref}`);
+      link.setAttribute("href", newHref);
+      console.log("targetVersion: ", targetVersion);
+      console.log("newHref: ", newHref);
+    });
+  }
+
+  tryRewriteLinks();
 });
 </script>
