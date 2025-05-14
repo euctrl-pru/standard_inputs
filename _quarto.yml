@@ -335,14 +335,10 @@ book:
             href: "https://www.eurocontrol.int/prudata/dashboard/"
       - text: "Previous Versions"
         menu:
-          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (Dec 2022)"
-            href: "#VERSION:v10.0.1"
-          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.2 (Mar 2023)"
-            href: "#VERSION:v10.0.2"
-          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.3 (April 2023)"
-            href: "#VERSION:v10.0.3"
-          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.4 (June 2024)"
-            href: "#VERSION:v10.0.4"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v9.0.3 (April 2023)"
+            href: "#VERSION:v9.0.3"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.0 (June 2024)"
+            href: "#VERSION:v10.0.0"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
             href: "#VERSION:latest"
 
