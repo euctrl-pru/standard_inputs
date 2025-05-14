@@ -1,4 +1,4 @@
-release-version: 10.0
+release-version: 10.0.0
 
 
 project:
@@ -35,6 +35,7 @@ format:
     template-partials: 
       # - media/title-block.html
       - media/title-metadata.html
+    include-after-body: version-link-rewriter.html
 
   pdf:
     toc: true
@@ -215,7 +216,7 @@ book:
             icon: "arrow-return-right"
             href: "https://ansperformance.eu/economics/finance/"
 
-          - text: "CBA"
+          - text: "Economic Analyses"
             icon: "arrow-return-right"
             href: "https://ansperformance.eu/economics/cba/"
 
@@ -336,4 +337,11 @@ book:
         menu:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Single European Sky (SES) Portal"
             href: "https://www.eurocontrol.int/prudata/dashboard/"
-
+      - text: "Previous Versions"
+        menu:
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v9.0.3 (April 2023)"
+            href: "#VERSION:v9.0.3"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.0 (June 2024)"
+            href: "#VERSION:v10.0.0"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
+            href: "#VERSION:latest"
