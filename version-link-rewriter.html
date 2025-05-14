@@ -3,31 +3,30 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("🔁 Rewriting version links...");
   const path = window.location.pathname;
 
-  // Match `/v10.0.3/` or `/latest/`
+  // Match /v10.0.3/ or /latest/
   const versionMatch = path.match(/\/(v\d+\.\d+\.\d+|latest)\//);
   if (!versionMatch) {
     console.warn("⚠️ Could not find version in path:", path);
     return;
   }
 
-  const currentVersion = versionMatch[1]; // "v10.0.3", "latest"
+  const currentVersion = versionMatch[1];
   const currentPage = path.split(`/${currentVersion}/`)[1] || '/index.html';
   const base = path.split(`/${currentVersion}/`)[0];
 
-  let tries = 0;
-  const maxTries = 10;
-
-  function tryRewriteLinks() {
-    const links = document.querySelectorAll('a[href^="#VERSION:"]');
-    if (links.length === 0 && tries < maxTries) {
-      tries++;
-      console.log(`⏳ Attempt ${tries}: No matching links found yet. Retrying...`);
-      setTimeout(tryRewriteLinks, 100);
+  function rewriteLinks() {
+    const links = document.querySelectorAll('a[href*="#VERSION:"]');
+    if (links.length === 0) {
+      console.log("⏳ Still waiting for version links...");
       return;
     }
 
     links.forEach(link => {
-      const targetVersion = link.getAttribute("href").replace("#VERSION:", "");
+      const href = link.getAttribute("href");
+      const targetVersionMatch = href.match(/#VERSION:(v\d+\.\d+\.\d+|latest)/);
+      if (!targetVersionMatch) return;
+
+      const targetVersion = targetVersionMatch[1];
       const newHref = `${base}/${targetVersion}${currentPage}`;
       console.log(`🔗 Rewriting link to ${newHref}`);
       link.setAttribute("href", newHref);
@@ -36,6 +35,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  tryRewriteLinks();
+  const observer = new MutationObserver((mutationsList, observer) => {
+    if (document.querySelectorAll('a[href*="#VERSION:"]').length > 0) {
+      rewriteLinks();
+      observer.disconnect();
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+
+  // Try immediately in case links are already present
+  rewriteLinks();
 });
 </script>
