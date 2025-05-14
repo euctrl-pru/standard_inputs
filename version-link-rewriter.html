@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!targetVersionMatch) return;
 
       const targetVersion = targetVersionMatch[1];
-      const newHref = `${base}/${targetVersion}${currentPage}`;
+      const newHref = `${base}/${targetVersion}/${currentPage}`;
       console.log(`🔗 Rewriting link to ${newHref}`);
       link.setAttribute("href", newHref);
       console.log("targetVersion: ", targetVersion);
