@@ -10,20 +10,9 @@ The first version of the EUROCONTROL Standard Inputs for Economic Analyses serie
 was launched in 2002 and has been kept alive for more than twenty years. This 
 latest edition is a continuation of the work developed over all these years and 
 aims to update the inputs that have been previously published, but also to add new
-inputs that are believed to be of interest for our stakeholders. In comparison 
-with Standard Inputs for Economic Analyses Ed. 9.0, the following new values have 
-been added in this version:
+inputs that are believed to be of interest for our stakeholders.
 
-* Transit time, which shows the average time flown by aircraft controlled in a 
-specific airspace over a year.
-
-* Shadow cost of carbon, which is the cost of carbon required to drive the economy 
-to meet the 1.5°C global temperature target set by the [Intergovernmental Panel on Climate Change](https://www.ipcc.ch/).
-
-* Proportion of sustainable aviation fuel, showing the evolution of sustainable 
-fuel in the total aviation fuel blend.
-
-The previous editions of the Standard Inputs for Economic Analyses can be found in [EUROCONTROL Library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses).
+The previous editions of the Standard Inputs for Economic Analyses can be found in the "Previous Versions" tab on top of the page or in [EUROCONTROL Library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses).
 
 We, the EUROCONTROL Business Cases Team, would like to show our gratitude to the
 many different colleagues that have contributed to this endeavour by providing us

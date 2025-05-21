@@ -6,6 +6,6 @@ presents the percentage of cargo space in flights filled by paid cargo.
 
 Cargo flights can be defined here as either freight carriers or passenger/cargo 
 carriers. Note that geographical coverage of IATA Europe covers ECAC States and
-other countries, including Russia, Tajikistan, Turkmenistan, and Uzbekistan.^[The values used in this figure were extracted from IATA monthly Air Freight Market Analysis reports for the month of December of each year. The data is extracted from the table “Air freight market detail”, looking at Total market in Europe, column CLF (level) for calendar year.]
+other countries, including Russia, Tajikistan, Turkmenistan, and Uzbekistan.^[The values used in this figure were extracted from IATA monthly Air Freight Market Analysis reports for the month of December of each year. The data is extracted from the table “Air freight market in detail”, looking at Total market in Europe, column CLF (level) for calendar year.]
 
-![Cargo load factor - IATA values ^[Source: IATA – Economics, Air Freight Market Analysis for December 2017-2022. Available at [IATA Economics](https://www.iata.org/en/publications/economics/)]](../figures/load_factor_cargo_iata.svg){#fig-load-factor-cargo-iata}
+![Cargo load factor - IATA values ^[Source: IATA – Economics, Air Freight Market Analysis for December 2017-2023. Available at [IATA Economics](https://www.iata.org/en/publications/economics/)]](../figures/load_factor_cargo_iata.svg){#fig-load-factor-cargo-iata}

@@ -24,6 +24,6 @@ Other sources that may be interesting to consult to estimate the price of jet fu
 
 * *IATA Airline Industry Economic Performance Report and Tables*[@iataeconperf]
 
-* *US Energy Information Administration (2022), Annual Energy Outlook 2023*[@eia2023]
+* *US Energy Information Administration, Annual Energy Outlook*[@eia2023]
 
 ## References

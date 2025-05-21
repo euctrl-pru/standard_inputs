@@ -9,13 +9,13 @@ editor_options:
 ## EUROCONTROL recommended values
 
 This section presents the evolution of flight movements in Europe (ECAC area) 
-by flight flow, market segment^[The market segments are defined according to [EUROCONTROL STATFOR Market Segment Rules](https://www.eurocontrol.int/publication/market-segment-rules). Please refer to the 2022 document for further details on what each segment comprises.]  and aircraft type.
+by flight flow, market segment^[The market segments are defined according to [EUROCONTROL STATFOR Market Segment Rules](https://www.eurocontrol.int/publication/market-segment-rules). Please refer to the 2022 document for further details on what each segment comprises.] and aircraft type.
 
-### Evolution of flights per flow in Europe (ECAC) in 2022 compared to 2019
+### Evolution of flights per flow in Europe (ECAC) in 2024 compared to 2019
 
 ```{r}
 #| label: tbl-ifr-flights-month
-#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019 vs 2022
+#| tbl-cap: Evolution of IFR flights in Europe (ECAC) 2019 vs 2024
 library(readxl)
 library(dplyr)
 library(gt)
@@ -29,9 +29,9 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
     departure  = "Departure",
     internal   = "Internal",
     overflight = "Overflight",
-    total_2022 = "2022",
+    total_2024 = "2024",
     total_2019 = "2019",
-    vs_2019_flight_level = "2022 traffic as % of 2019"
+    vs_2019_flight_level = "2024 traffic as % of 2019"
   ) %>%
   tab_spanner(
     label = "DAIO",
@@ -39,20 +39,20 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
   ) %>%
   tab_spanner(
     label = "Total",
-    columns = c(total_2022, total_2019)
+    columns = c(total_2024, total_2019)
   ) %>%
   fmt_percent(
     columns = c(vs_2019_flight_level),
     decimals = 0
   ) %>%
   fmt_number(
-    columns = c(arrival, departure, internal, overflight, total_2022, total_2019),
+    columns = c(arrival, departure, internal, overflight, total_2024, total_2019),
     use_seps = TRUE,
     decimals = 0
   ) %>%
   cols_align(
     align = "left",
-    columns = c(month, arrival, departure, internal, overflight, total_2022)
+    columns = c(month, arrival, departure, internal, overflight, total_2024)
   ) %>%
   cols_align(
     align = "right",
@@ -89,7 +89,7 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
     arrival ~ pct(12),
     internal ~ pct(12),
     overflight ~ pct(12),
-    total_2022 ~ pct(12),
+    total_2024 ~ pct(12),
     total_2019 ~ pct(12),
     vs_2019_flight_level ~ pct(12)
   ) %>%
@@ -98,12 +98,12 @@ read_xlsx(here::here("data", "ifr_flights.xlsx")) %>%
   )
 ```
 
-Please note that the comparison between 2022 and 2019 in @tbl-ifr-flights-month 
+Please note that the comparison between 2024 and 2019 in @tbl-ifr-flights-month 
 is due to the fact that 2019 is the last year where the traffic levels were not
 affected by the COVID-19 pandemic, allowing for a more realistic comparison of 
 the flight levels.
 
-### Flights by market segment in Europe (ECAC) in 2022 compared to 2019
+### Flights by market segment in Europe (ECAC) in 2024 compared to 2019
 
 ```{r}
 #| label: tbl-flights-per-market-segment

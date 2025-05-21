@@ -1,4 +1,4 @@
-release-version: 10.0.0
+release-version: 10.0.1
 
 
 project:
@@ -50,7 +50,7 @@ book:
   title: "EUROCONTROL Standard Inputs for Economic Analyses"
   author:
     - "EUROCONTROL Business Cases"
-  date: "2024-06-18"
+  date: "2025-05-21"
   description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search:
     location: sidebar
@@ -64,6 +64,7 @@ book:
  
     - "chapters/foreword.qmd"  
     - "chapters/introduction.qmd"
+    - "chapters/change_log.qmd"
     - "chapters/conversions.qmd"
     - "chapters/geographical_areas.qmd"
 
@@ -145,7 +146,7 @@ book:
     - part: "General information"
       chapters:
         - "chapters/abbreviations.qmd"
-        - "chapters/change_log.qmd"
+        
     
     # - "references.qmd"
     # - "annexes.qmd"

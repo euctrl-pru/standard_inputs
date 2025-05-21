@@ -6,7 +6,7 @@
 of passengers per flight in ECAC.
 
 
-![Number of passengers per flights in ECAC 2012-2022 @ectrl:statfor:sid](../figures/number_passengers.svg){#fig-number-of-passengers}
+![Number of passengers per flights in ECAC 2013-2023 @ectrl:statfor:sid](../figures/number_passengers.png){#fig-number-of-passengers}
 
 ## Comment
 

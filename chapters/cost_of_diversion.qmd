@@ -8,26 +8,27 @@ library(dplyr)
 library(gt)
 ```
 
-@tbl-diversion-comm and @tbl-diversion-bus present the estimated **average cost of the diversion of a flight to an airport other than the one initially planned.** The values are split between commercial and business aviation,
-and, where available, represent a range of values as estimated by the airline 
-members consulted.
+@tbl-diversion-comm presents the estimated **average cost of the diversion of a flight to an airport other than the one initially planned.** 
+These values have been estimated through an extensive consultation process with the Airline members.
 
 ```{r}
 #| label: tbl-diversion-comm
-#| tbl-cap: Estimated cost of diversion for commercial aviation
+#| tbl-cap: Estimated average cost of a diversion for scheduled aviation
 
 read_xlsx(here::here("data", "cost_diversion.xlsx"),
           sheet = "commercial"
           ) %>% 
   gt() %>% 
   cols_label(
-    type = "Type of flight",
-    min = "Cost of diverted flight",
-    max = "Cost of diverted flight"
-  ) %>% 
+    flight = "Type of flight",
+    min = "Cost per diverted flight",
+    max = "Cost per diverted flight",
+    recommended = "Recommended value...",
+    pax_compensation = "...of which passenger compensation"
+  ) %>%
   fmt_currency(
     currency = "EUR",
-    columns = min:max,
+    columns = min:pax_compensation,
     decimals = 0
   ) %>% 
   cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
@@ -35,26 +36,85 @@ read_xlsx(here::here("data", "cost_diversion.xlsx"),
     table.width = pct(100)
     ) %>% 
    cols_width(
-    everything() ~ pct(50)
+     flight ~ pct(30),
+     min:pax_compensation ~ pct(23)
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-  footnote = "Monetary values were adjusted from 2006 to 2022 prices according to inflation",
+  footnote = "Passenger compensation refers solely to the passenger compensation claimed under Regulation (EC) 261/2004",
 locations = cells_column_labels(
-  columns = min
+  columns = pax_compensation
 )
 ) %>% 
+  tab_footnote(
+    footnote = "LCC stands for Low-Cost Carrier",
+    locations = cells_body(columns = flight, rows = 2),
+    placement = "right"
+  ) %>% 
   tab_source_note(
-    source = md("*Source: Data supplied by the airline members of the SESAR evaluation team, derived from an analysis of 2006 ECAC data*")
+    source = md("*Source: Values estimated in consultation with Airlines*")
   )
 ```
 
-:::{.callout-note}
-The penalties associated with the late delivery of cargo are not considered in 
-the estimation, as this type of data is not yet readily available.
-:::
+The values in @tbl-diversion-comm are presented for three different flight types,
+which also correspond to different aircraft types, typically flown on such routes:
+
+* **Regional flights** refer to short-haul flights (< 1,500 km) and that are 
+typically operated by small aircraft (80-120 seats), such as regional jets and turboprop
+
+* **Continental flights** refer to medium-haul flights (1,500 – 3,000 km) and that
+are typically operated by narrow-body aircraft (130 – 189 seats). The continental
+flights are split between those operated by Mainline carriers and Low-Cost carriers 
+(LCC), in order to better reflect the respective cost differences
+
+* **Intercontinental flights** refer to long-haul flights (> 3,000 km) and that 
+are typically operated by wide-body aircraft (200 – 500 seats). These are most 
+often flights departing outside of ECAC area and the focus of the analysis is on
+flights that are diverted within the ECAC territory for simplicity
+
+Furthermore, three categories of values are provided:
+
+* **Cost per diverted flight**, in the first column, represents a cost interval per
+diverted flight. Within this cost interval the following assumptions are made:
+
+  + *For the lower end of the interval:* the flight is diverted to an airport 
+  where the Airline has assistance contracts in place; the additional flight 
+  time to divert is short; there are few passengers in connection on board and 
+  there is no need for passenger compensation, only a meal voucher is provided
+  
+  + *For the upper end of the interval:* the flight is diverted to an airport
+  where the Airline has no assistance contracts in place; additional flight time
+  is longer and more expensive; there are several passengers in connection on board;
+  the delay caused is long, triggering [Regulation (EC) 261/2004](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng);
+  both a meal voucher   and a bus or taxi transfer, or a night at a hotel is
+  provided to the passengers;  the diversion causes a delay for the following 
+  flight, requiring passenger care to be provided to the passengers on the next 
+  flight; and a ferry flight is required in order to reposition the aircraft for further operations
+  
+* **Recommended value** presents an estimated most likely cost of diversion per
+type of flight, weighted by the likelihood of occurrence of the drivers impacting
+the cost per flight. This value includes the cost of passenger compensation as per
+[Regulation (EC) 261/2004](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng),
+and aims at guiding the user towards a most likely cost per flight within the 
+interval provided in column “Cost per diverted flight”
+
+* **Of which passenger compensation** presents the amount corresponding to
+passenger compensation within the value provided in the column “Recommended value”,
+per [Regulation (EC) 261/2004](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng). 
+This metric is separated as this is a differentiating factor between the different
+uses of the cost of diversion (i.e. those due to Airline internal reasons, where 
+the regulation is applicable, and those due to reasons external to the Airline,
+where the regulation is not applicable)
+
+In 2024, out of the total number of flights (9.4 million) with a destination in
+the EUROCONTROL Network Manager area, over 30 thousand flights (0.32%) landed at
+an airport other than the one initially planned.
+
+The **cost of diversion for business aviation**, as presented below, has not been
+recalculated due to lack of available information. Therefore, the value reflects
+the initial estimation from 2012 adjusted to inflation.
 
 ```{r}
 #| label: tbl-diversion-bus
@@ -83,7 +143,7 @@ read_xlsx(here::here("data", "cost_diversion.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-  footnote = "Monetary values were adjusted from 2012 to 2022 prices according to inflation",
+  footnote = "Monetary values were adjusted from 2012 to 2024 prices according to inflation",
 locations = cells_column_labels(
   columns = cost
 )
@@ -98,7 +158,67 @@ The estimated cost for business aviation assumes that for each diverted flight
 there is one additional positioning flight.
 :::
 
-In 2022, out of the total number of flights (9.3 million) with a destination in
-the EUROCONTROL Network Manager area, 28,738 flights (0.3%) landed at an airport 
-other than the one initially planned.
+## Other possible values
 
+**Cost of diversion due to curfew** represents the estimated cost per flight when
+a diversion occurs in order to avoid a curfew at the airport of destination.
+
+```{r}
+#| label: tbl-diversion-curfew
+#| tbl-cap: Estimated average cost of a diversion due to curfew for scheduled aviation
+
+read_xlsx(here::here("data", "cost_diversion.xlsx"),
+          sheet = "curfew"
+          ) %>% 
+  gt() %>% 
+  cols_label(
+    flight = "Type of flight",
+    min = "Cost per diverted flight",
+    max = "Cost per diverted flight",
+    recommended = "Recommended value...",
+    pax_compensation = "...of which passenger compensation"
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = min:pax_compensation,
+    decimals = 0
+  ) %>% 
+  cols_merge_range(min, max, sep = "--", autohide = TRUE) %>% 
+   tab_options(
+    table.width = pct(100)
+    ) %>% 
+   cols_width(
+     flight ~ pct(30),
+     min:pax_compensation ~ pct(23)
+  ) %>% 
+  tab_options(
+    column_labels.font.weight = "bold"
+  ) %>% 
+  tab_footnote(
+  footnote = "Passenger compensation refers solely to the passenger compensation claimed under Regulation (EC) 261/2004",
+locations = cells_column_labels(
+  columns = pax_compensation
+)
+) %>% 
+  tab_footnote(
+    footnote = "LCC stands for Low-Cost Carrier",
+    locations = cells_body(columns = flight, rows = 2),
+    placement = "right"
+  ) %>% 
+  tab_source_note(
+    source = md("*Source: Values estimated in consultation with Airlines*")
+  )
+```
+
+The logic behind the estimation of ‘cost of diversion due to curfew’ is identical 
+to the one described for the cost of diversion above. However, diversions
+due to a curfew have some differences from other en-route diversions in that 
+they presume that the diversion happens late in the evening, which entails a set
+of costs not necessarily faced under other causes of diversion. Therefore, the
+main difference in cost estimation is the assumption that there would be a need 
+for bus/taxi transfer and/or hotel accommodation for the passengers; there will 
+be reactionary delay the following day due to the positioning of the aircraft at
+an airport other than that initially planned, leading to costs for passenger care
+for passengers on the next day’s flight; and that the passengers would claim 
+compensation in any scenario (i.e. in the lower end of the cost interval and in 
+the higher end), provided that the diversion falls under [Regulation (EC) 261/2004](https://eur-lex.europa.eu/eli/reg/2004/261/oj/eng).

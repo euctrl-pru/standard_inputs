@@ -39,7 +39,7 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-  footnote = "Values adjusted from 2002 to 2022 prices based on inflation",
+  footnote = "Values adjusted from 2002 to 2024 prices based on inflation",
 locations = cells_column_labels(
   columns = value
 )
@@ -77,7 +77,7 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
     source_note = md("*Source: [French Ministry of Ecological Transition (2019), Recommended values for calculating average long-distance travel](https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf)*")
   ) %>%
   tab_footnote(
-  footnote = "Values adjusted from 2015 to 2022 prices based on inflation",
+  footnote = "Values adjusted from 2015 to 2024 prices based on inflation",
 locations = cells_column_labels(
   columns = value
 )
@@ -113,7 +113,7 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
     source_note = md("*Source: [Airports Commission (2014), Values of time used to estimate passenger delay costs in the UK airport system](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf)*")
   ) %>% 
   tab_footnote(
-  footnote = "Values adjusted from 2014 to 2022 prices based on inflation and using the exchange rate in general parameters",
+  footnote = "Values adjusted from 2014 to 2024 prices based on inflation and using the exchange rate in general parameters",
 locations = cells_column_labels(
   columns = value
 )
@@ -193,13 +193,19 @@ read_xlsx(here::here("data", "passenger_time_value.xlsx"),
   ) %>% 
   tab_source_note(
     source_note = md("*Source: US Department of Transportation (2016), Revised Departmental Guidance on Valuation of Travel Time in Economic Analysis*")
-  )
+  ) %>%
+  tab_footnote(
+  footnote = "Values adjusted from 2015 to 2024 prices based on inflation and using the exchange rate in general parameters",
+locations = cells_column_labels(
+  columns = value
+)
+) 
   
 ```
 
 Based on US Department of Transport (DOT) guidance on passenger value of time 
 for air and high-speed rail travel by purpose of trip. The numbers are adjusted 
-to inflation from 2015 to 2022 prices and using the exchange rate presented in @tbl-eurostat-exchange-rates.
+to inflation from 2015 to 2024 prices.
 
 ## Further reading
 
