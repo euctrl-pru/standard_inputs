@@ -7,9 +7,13 @@ The aim of this document is to standardise the data used in different ATM-relate
 assessments, to facilitate data access for the different stakeholders involved 
 and contribute to the comparability of different analyses through relying on the same data.
 
-In this edition (10.0) the values have been updated according to the latest 
+In this edition (10.0.1) several values have been updated according to the latest 
 available information, either by adding new data or by adjusting existing data 
-for inflation, where relevant.
+for inflation, where relevant. The [Cost of diversion](#sec-cost-of-diversions)
+has been fully updated and now contains a set of new numbers that have been estimated
+in collaboration with the Airlines.
+
+For an overview of values that have been updated, please refer to [Version changes](#sec-change-log).
 
 Please note that the inputs have been compiled from EUROCONTROL data and intelligence,
 from values provided by airspace users, ANSPs, airports, IATA, EASA, and other 

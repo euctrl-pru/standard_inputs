@@ -7,8 +7,8 @@ a lower risk of instantaneous premature death. It is often used as a proxy to
 monetise the value of a fatality occurring from transport accidents.
 
 In Europe, based on a study published by the European Commission[@ecdgmove2019]
-the **average statistical value of life for EU27+UK is estimated at € 4.3 million.** 
-This value is adjusted to 2022 prices from 2016, based on inflation.
+the **average statistical value of life for EU27+UK is estimated at € 4.7 million.** 
+This value is adjusted to 2024 prices from 2016, based on inflation.
 
 Please note that the value of life differs based on the State, circumstances, 
 age, profession, education, and a number of other parameters. It also differs 

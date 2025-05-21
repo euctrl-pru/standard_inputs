@@ -88,7 +88,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     )
   ) %>%
   tab_footnote(
-    footnote = "The monetary values are adjusted to 2022 prices according to inflation",
+    footnote = "The monetary values are adjusted to 2024 prices according to inflation",
     locations = cells_column_labels(
       columns = lto_cost:pax_cost
     )
@@ -139,7 +139,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 23 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
+    footnote = "The values originate from Table 23 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2024 prices according to inflation",
     locations = cells_column_labels(
       columns = low:high
     )
@@ -194,7 +194,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2022 prices according to inflation",
+    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2024 prices according to inflation",
     locations = cells_column_labels(
       columns = total:pax
     )
@@ -243,7 +243,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 14 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2022 prices according to inflation",
+    footnote = "The values originate from Table 14 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2024 prices according to inflation",
     locations = cells_column_labels(
       columns = no:pm
     )
@@ -268,7 +268,7 @@ of the emissions released in aviation.
 
 ## Related inputs
 
-@sec-rate-of-fuel-burn [Rate of fuel burn](#ec-rate-of-fuel-burn)
+@sec-rate-of-fuel-burn [Rate of fuel burn](#sec-rate-of-fuel-burn)
 
 @sec-amount-of-emissions-released-by-fuel-burn [Amount of emissions released by fuel burn](#sec-amount-of-emissions-released-by-fuel-burn)
 

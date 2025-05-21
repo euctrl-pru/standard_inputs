@@ -43,7 +43,7 @@ locations = cells_body(
 )
 ) %>% 
   tab_footnote(
-  footnote = "The values were adjusted to 2022 prices based on inflation",
+  footnote = "The values were adjusted to 2024 prices based on inflation",
 locations = cells_column_labels(
   columns = international:domestic
 )

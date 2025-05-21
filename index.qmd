@@ -2,7 +2,7 @@
 
 This is the website for __"{{< meta title  >}}"__.
 
-The present edition is a reflection of *{{< meta title  >}} Edition 10.0*, published in May 2024 and available for download in [EUROCONTROL library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses). 
+The present edition presents an update of some values with relation to *{{< meta title  >}} Edition 10.0*, published in May 2024 and available for download in [EUROCONTROL library](https://www.eurocontrol.int/publication/eurocontrol-standard-inputs-economic-analyses). 
 
 The EUROCONTROL Business Cases team regularly refreshes the content on this website
 and the underlying data.

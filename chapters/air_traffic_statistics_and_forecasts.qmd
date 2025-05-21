@@ -2,21 +2,23 @@
 
 ## EUROCONTROL recommended values
 
-The EUROCONTROL Statistics and Forecast (STATFOR) service produces flight and
+The [EUROCONTROL Statistics and Forecast (STATFOR)](https://www.eurocontrol.int/forecasting#tools) service produces flight and
 service unit forecasts of future network traffic with a view to help planners
 understand and manage risks, identify bottlenecks, and anticipate the needs of 
 airspace users.
 
 ### Medium-term forecast (7-year timespan)
 
-The medium-term forecasts give a comprehensive picture of **anticipated air traffic development in Europe (i.e. ECAC) for the next seven years.** These forecasts combine
-flight statistics with economic growth and models of other industry drivers, 
+The medium-term forecasts give a comprehensive picture of **anticipated air traffic development in Europe (i.e. ECAC) for the next seven years.** These forecasts combine flight statistics with economic growth and models of other industry drivers, 
 including costs, airport capacity, passenger numbers, load factors and aircraft 
 size. Using high and low growth scenarios, they present a likely range for growth,
-to help planners manage risks. These forecasts are published biannually, in spring
-and autumn, covering flights, en-route and terminal service units.
+to help planners manage risks.
+
+These forecasts are published biannually, in spring and autumn, covering flights,
+en-route and terminal service units and the latest forecast can always be found
+on the [STATFOR page](https://www.eurocontrol.int/forecasting#tools).
   
-![EUROCONTROL 7-year forecast 2024-2030 (Spring 2024 release) @EUROCONTROLForecastUpdate2024](../figures/forecast_2024-2030.png){#fig-forecast-2024-2030-plot}
+![EUROCONTROL Seven-year forecast 2025-2031 (Spring 2025 release) @EUROCONTROLForecastUpdate2025](../figures/forecast_2025-2031.png){#fig-forecast-2025-2031-plot}
 
 The above graph shows the traffic forecast taking account of the impact of the 
 COVID-19 pandemic. In the base scenario, IFR flights are expected to be back to 
@@ -39,16 +41,16 @@ a future number of flights and CO~2~ emissions per scenario, in line with aviati
 objective of achieving net-zero CO~2~ emissions by that date.
 
 
-![Flight forecast for Europe, with total growth between 2019 and 2050](../figures/eao_2050_flights_base_scenario.png){#fig-Forecast-2050-plot}
+![Flight forecast for Europe, with total growth between 2024 and 2050](../figures/eao_2050_flights_base_scenario.png){#fig-Forecast-2050-plot}
 
-**In the most-likely Base scenario, the forecast is for 16 million flights in Europe in 2050, 44% more than in 2019 – average growth of 1.2% per year.**
+**In the most-likely Base scenario, the forecast is for 15.4 million flights in Europe in 2050, 39% more than in 2019 – average growth of 1.1% per year.**
 
 Furthermore, @fig-co2-emissions-plot shows the estimated evolution of CO~2~ emissions
 between 2005 and 2050. According to this data, by 2050, CO~2~ emissions, net of 
 sustainable aviation fuel (SAF), fleet and operational improvements, will be 
-reduced by about 41% compared to 2005 in the Base scenario.
+reduced by about 63% compared to the baseline in the Base scenario.
 
-![Estimated CO~2~ emissions between 2005 and 2050 [@aviation:outlook2022]](../figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
+![Estimated CO~2~ emissions between 2005 and 2050 - ECAC IFR departure flights [@aviation:outlook2024]](../figures/eao_2050_base_scenario.png){#fig-co2-emissions-plot}
 
 ### Service units forecasts
 
@@ -72,7 +74,7 @@ the European Commission to assess the financial aspects of the performance plans
 of the states that are bound by the Performance and Charging Schemes according 
 to EU regulations (EU) N°2019/317.
 
-![En-route Service Units 7-year Forecast 2024-2030 (Spring 2024 release) [@EUROCONTROLForecastUpdate2024]](../figures/forecast_service_units.png){#fig-forecast-service-units-plot}
+![En-route Service Units Seven-year Forecast 2025-2031 (Spring 2025 release) [@EUROCONTROLForecastUpdate2025]](../figures/forecast_service_units.png){#fig-forecast-service-units-plot}
 
 The above graph shows the en-route service units forecast taking account of the impact of COVID-19.
 

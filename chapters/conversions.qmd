@@ -29,9 +29,9 @@ library(here)
 # read from CSV (exported directly from Eurostat, see R/export_inflation.R)
 readxl::read_xlsx(here("data","values_2022.xlsx"),
                   sheet = "basic assumptions",
-                  range = "C6:E34" 
+                  range = "C6:E35" 
                   ) %>%
-  filter(2000 <= Year, Year <= 2023) %>%
+  filter(2000 <= Year, Year <= 2024) %>%
   arrange(desc(Year)) %>% 
   # format the table
   gt() %>%
@@ -75,12 +75,12 @@ readxl::read_xlsx(here("data","values_2022.xlsx"),
 
 The currency exchange rates provided in @tbl-eurostat-exchange-rates are based 
 on the European Central Bank (ECB) rates that are published daily. [@ECB:exchange_rates]. 
-The rates correspond to the average rate for the year 2022 and are used across 
+The rates correspond to the average rate for the year 2024 and are used across 
 this document for the purpose of currency conversion.
 
 ```{r }
 #| label: tbl-eurostat-exchange-rates
-#| tbl-cap: Average euro foreign exchange rate in 2022
+#| tbl-cap: Average euro foreign exchange rate in 2024
 library(readr)
 library(dplyr)
 library(gt)
@@ -111,20 +111,20 @@ read_csv(here("data", "exchange_rate.csv"), show_col_types = FALSE) %>%
 
 ## Cost of fuel {.unnumbered}
 
-The cost of fuel used in this document is based on the 2022 average jet fuel
+The cost of fuel used in this document is based on the 2024 average jet fuel
 price provided by IATA,[@iata:JetFuelPrice], unless otherwise specified.
 All conversions are done using the values specified on this page.
 
 ```{r}
 #| label: tbl-cost-of-fuel
-#| tbl-cap: Average jet fuel price in 2022
+#| tbl-cap: Average jet fuel price in 2024
 library(dplyr)
 library(gt)
 
 tribble(
   ~currency, ~price_barrel, ~price_gallon, ~price_kg,
-  "USD", 136, 3.2, 1.1,
-  "EUR", 129, 3.1, 1.0,
+  "USD", 113.80, 2.71, 0.88,
+  "EUR", 108.11, 2.57, 0.84,
 ) %>%
   gt() %>%
   cols_label(

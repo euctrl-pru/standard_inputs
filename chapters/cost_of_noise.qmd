@@ -62,7 +62,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2022 prices",
+    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2024 prices",
     locations = cells_column_labels(
       columns = annoyance:total
     )
@@ -136,7 +136,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     )
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values originate from Table 36 of the source document and are adjusted from 2016 to 2022 prices",
+    footnote = "The monetary values originate from Table 36 of the source document and are adjusted from 2016 to 2024 prices",
     locations = cells_column_labels(
       columns = total:km
     )
@@ -185,7 +185,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values are adjusted from 2014 to 2022 prices",
+    footnote = "The monetary values are adjusted from 2014 to 2024 prices",
     locations = cells_column_labels(
       columns = marginal_cost:sleep
     )
