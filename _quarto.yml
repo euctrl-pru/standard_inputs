@@ -27,6 +27,13 @@ format:
     link-external-icon: true
     link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*standard-inputs\.netlify\.app\/'
     include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+          <style>
+            .navbar-logo {
+              max-height: 60px;
+            }
+          </style>
       - media/fontawesome.html
       # UNCOMMENT for activating GA
       - media/analytics.html
