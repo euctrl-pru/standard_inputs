@@ -47,9 +47,7 @@ book:
   date: "2022-12-13"
   description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
   search: true
-  repo-url: https://github.com/euctrl-pru/standard_inputs
   downloads: [pdf]
-  sharing: [twitter]
   output-file: "standard_inputs"
   site-url: "https://eurocontrol.int/"
   chapters:
@@ -267,6 +265,8 @@ book:
             href: "#VERSION:v9.0.3"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.0 (June 2024)"
             href: "#VERSION:v10.0.0"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (May 2025)"
+            href: "#VERSION:v10.0.1"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
             href: "#VERSION:latest"
 
