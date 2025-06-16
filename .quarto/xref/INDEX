@@ -1,0 +1,320 @@
+{
+  "index.qmd": {
+    "index.html": "514c5299"
+  },
+  "chapters/foreword.qmd": {
+    "foreword.html": "32b4666a"
+  },
+  "chapters/introduction.qmd": {
+    "introduction.html": "84e2caf0"
+  },
+  "chapters/conversions.qmd": {
+    "conversions.html": "35310a4c"
+  },
+  "chapters/geographical_areas.qmd": {
+    "geographical_areas.html": "af9038d2"
+  },
+  "chapters/air_traffic_statistics_and_forecasts.qmd": {
+    "air_traffic_statistics_and_forecasts.html": "6e8ea261"
+  },
+  "chapters/medium-term_capacity_planning.qmd": {
+    "medium-term_capacity_planning.html": "83c5b3c8"
+  },
+  "chapters/number_of_ifr_flights.qmd": {
+    "number_of_ifr_flights.html": "db170e7d"
+  },
+  "chapters/air_traffic_delay.qmd": {
+    "air_traffic_delay.html": "9f04f4e4"
+  },
+  "chapters/transit_time.qmd": {
+    "transit_time.html": "2ad3fe99"
+  },
+  "chapters/rate_of_fuel_burn.qmd": {
+    "rate_of_fuel_burn.html": "b98df7ab"
+  },
+  "chapters/amount_of_emissions_released_by_fuel_burn.qmd": {
+    "amount_of_emissions_released_by_fuel_burn.html": "ecbfcde7"
+  },
+  "chapters/cost_of_emissions.qmd": {
+    "cost_of_emissions.html": "4f5e6b22"
+  },
+  "chapters/cost_of_noise.qmd": {
+    "cost_of_noise.html": "af1be9a4"
+  },
+  "chapters/shadow_cost_of_carbon.qmd": {
+    "shadow_cost_of_carbon.html": "fcfb3fab"
+  },
+  "chapters/proportion_of_saf.qmd": {
+    "proportion_of_saf.html": "7805201d"
+  },
+  "chapters/aircraft_operating_costs.qmd": {
+    "aircraft_operating_costs.html": "36b6da14"
+  },
+  "chapters/average_number_of_passengers.qmd": {
+    "average_number_of_passengers.html": "6dfc6082"
+  },
+  "chapters/cancellation_cost.qmd": {
+    "cancellation_cost.html": "daea3daa"
+  },
+  "chapters/operational_cancellation_rate.qmd": {
+    "operational_cancellation_rate.html": "e4c1d7fe"
+  },
+  "chapters/cost_of_delay.qmd": {
+    "cost_of_delay.html": "e38bb7ea"
+  },
+  "chapters/cost_of_diversion.qmd": {
+    "cost_of_diversion.html": "e00851e7"
+  },
+  "chapters/turnaround_time.qmd": {
+    "turnaround_time.html": "67b9e759"
+  },
+  "chapters/ifr_average_flight_distance_and_flight_duration.qmd": {
+    "ifr_average_flight_distance_and_flight_duration.html": "e483598f"
+  },
+  "chapters/ifr_flight_information_per_market_segment.qmd": {
+    "ifr_flight_information_per_market_segment.html": "c82f8195"
+  },
+  "chapters/distance_flown_by_charging_zone.qmd": {
+    "distance_flown_by_charging_zone.html": "237b523e"
+  },
+  "chapters/load_factor-cargo.qmd": {
+    "load_factor-cargo.html": "7e0bcfe5"
+  },
+  "chapters/load_factor-passengers.qmd": {
+    "load_factor-passengers.html": "373ed864"
+  },
+  "chapters/cost_of_aviation_fuel.qmd": {
+    "cost_of_aviation_fuel.html": "511a2287"
+  },
+  "chapters/value_of_an_average_passenger_flight.qmd": {
+    "value_of_an_average_passenger_flight.html": "1c0d0289"
+  },
+  "chapters/fleet_age.qmd": {
+    "fleet_age.html": "62e523a9"
+  },
+  "chapters/fleet_size.qmd": {
+    "fleet_size.html": "f92b409f"
+  },
+  "chapters/fleet_cns_capability.qmd": {
+    "fleet_cns_capability.html": "8a4e1765"
+  },
+  "chapters/en_route_ans_costs.qmd": {
+    "en_route_ans_costs.html": "65c3fc8f"
+  },
+  "chapters/route_charge_share_per_market_segment.qmd": {
+    "route_charge_share_per_market_segment.html": "9333dd28"
+  },
+  "chapters/ansps_employment_costs.qmd": {
+    "ansps_employment_costs.html": "1db612d3"
+  },
+  "chapters/asset_life.qmd": {
+    "asset_life.html": "bae593d7"
+  },
+  "chapters/atm_cost-effectiveness_indicators.qmd": {
+    "atm_cost-effectiveness_indicators.html": "59bf2592"
+  },
+  "chapters/atm_operational_units.qmd": {
+    "atm_operational_units.html": "158b1161"
+  },
+  "chapters/cns_infrastructure.qmd": {
+    "cns_infrastructure.html": "1ff3f39a"
+  },
+  "chapters/pbn_and_precision_approach_procedures.qmd": {
+    "pbn_and_precision_approach_procedures.html": "5476ecfb"
+  },
+  "chapters/airport_classification.qmd": {
+    "airport_classification.html": "b6b2e7a3"
+  },
+  "chapters/taxiing_times.qmd": {
+    "taxiing_times.html": "a5ca53bf"
+  },
+  "chapters/investment_in_u-space.qmd": {
+    "investment_in_u-space.html": "2c553dba"
+  },
+  "chapters/drone_fleet.qmd": {
+    "drone_fleet.html": "5cafb767"
+  },
+  "chapters/purpose_of_passenger_travel.qmd": {
+    "purpose_of_passenger_travel.html": "516553bd"
+  },
+  "chapters/passenger_value_of_time.qmd": {
+    "passenger_value_of_time.html": "3d490707"
+  },
+  "chapters/accident-incident_statistics.qmd": {
+    "accident-incident_statistics.html": "44841479"
+  },
+  "chapters/value_of_a_statistical_life-vsl.qmd": {
+    "value_of_a_statistical_life-vsl.html": "be9419b4"
+  },
+  "chapters/value_of_a_statistical_injury.qmd": {
+    "value_of_a_statistical_injury.html": "1af16a7a"
+  },
+  "chapters/discount_rate.qmd": {
+    "discount_rate.html": "2a77974d"
+  },
+  "chapters/exchange_rate.qmd": {
+    "exchange_rate.html": "f5c0a2c2"
+  },
+  "chapters/abbreviations.qmd": {
+    "abbreviations.html": "ffe150a1"
+  },
+  "chapters/change_log.qmd": {
+    "change_log.html": "6154f8a6"
+  },
+  "foreword.qmd": {
+    "foreword.html": "99c851c7"
+  },
+  "introduction.qmd": {
+    "introduction.html": "1f0eb23e"
+  },
+  "conversions.qmd": {
+    "conversions.html": "bd3c965a"
+  },
+  "geographical_areas.qmd": {
+    "geographical_areas.html": "9579aa3c"
+  },
+  "air_traffic_statistics_and_forecasts.qmd": {
+    "air_traffic_statistics_and_forecasts.html": "dee92e1a"
+  },
+  "medium-term_capacity_planning.qmd": {
+    "medium-term_capacity_planning.html": "9010dea7"
+  },
+  "number_of_ifr_flights.qmd": {
+    "number_of_ifr_flights.html": "65c5ad26"
+  },
+  "air_traffic_delay.qmd": {
+    "air_traffic_delay.html": "cb4b57b0"
+  },
+  "rate_of_fuel_burn.qmd": {
+    "rate_of_fuel_burn.html": "df1fb5b7"
+  },
+  "amount_of_emissions_released_by_fuel_burn.qmd": {
+    "amount_of_emissions_released_by_fuel_burn.html": "d2bbfa7f"
+  },
+  "cost_of_emissions.qmd": {
+    "cost_of_emissions.html": "0a5f9b69"
+  },
+  "cost_of_noise.qmd": {
+    "cost_of_noise.html": "64d9b6be"
+  },
+  "shadow_cost_of_carbon.qmd": {
+    "shadow_cost_of_carbon.html": "52567cb8"
+  },
+  "proportion_of_saf.qmd": {
+    "proportion_of_saf.html": "d10435ec"
+  },
+  "aircraft_operating_costs.qmd": {
+    "aircraft_operating_costs.html": "ab7ac9fa"
+  },
+  "average_number_of_passengers.qmd": {
+    "average_number_of_passengers.html": "4162edae"
+  },
+  "cancellation_cost.qmd": {
+    "cancellation_cost.html": "3565b304"
+  },
+  "operational_cancellation_rate.qmd": {
+    "operational_cancellation_rate.html": "659302fb"
+  },
+  "cost_of_delay.qmd": {
+    "cost_of_delay.html": "63ff4e64"
+  },
+  "cost_of_diversion.qmd": {
+    "cost_of_diversion.html": "aeb6f1ff"
+  },
+  "turnaround_time.qmd": {
+    "turnaround_time.html": "3f7f3908"
+  },
+  "ifr_average_flight_distance_and_flight_duration.qmd": {
+    "ifr_average_flight_distance_and_flight_duration.html": "d202f879"
+  },
+  "ifr_flight_information_per_market_segment.qmd": {
+    "ifr_flight_information_per_market_segment.html": "3397c7f6"
+  },
+  "distance_flown_by_charging_zone.qmd": {
+    "distance_flown_by_charging_zone.html": "c03d250d"
+  },
+  "load_factor-cargo.qmd": {
+    "load_factor-cargo.html": "b706ce6e"
+  },
+  "load_factor-passengers.qmd": {
+    "load_factor-passengers.html": "c0ee3e7a"
+  },
+  "cost_of_aviation_fuel.qmd": {
+    "cost_of_aviation_fuel.html": "22786385"
+  },
+  "value_of_an_average_passenger_flight.qmd": {
+    "value_of_an_average_passenger_flight.html": "739371cc"
+  },
+  "fleet_age.qmd": {
+    "fleet_age.html": "5f093ce1"
+  },
+  "fleet_size.qmd": {
+    "fleet_size.html": "fb657da7"
+  },
+  "fleet_cns_capability.qmd": {
+    "fleet_cns_capability.html": "e4fe2dc3"
+  },
+  "en_route_ans_costs.qmd": {
+    "en_route_ans_costs.html": "7ee796c6"
+  },
+  "route_charge_share_per_market_segment.qmd": {
+    "route_charge_share_per_market_segment.html": "349c35c9"
+  },
+  "ansps_employment_costs.qmd": {
+    "ansps_employment_costs.html": "09abdec7"
+  },
+  "asset_life.qmd": {
+    "asset_life.html": "8a67d114"
+  },
+  "atm_cost-effectiveness_indicators.qmd": {
+    "atm_cost-effectiveness_indicators.html": "e148e79f"
+  },
+  "atm_operational_units.qmd": {
+    "atm_operational_units.html": "693acb80"
+  },
+  "cns_infrastructure.qmd": {
+    "cns_infrastructure.html": "6506dd45"
+  },
+  "pbn_and_precision_approach_procedures.qmd": {
+    "pbn_and_precision_approach_procedures.html": "dfab632d"
+  },
+  "airport_classification.qmd": {
+    "airport_classification.html": "3c8b8a3a"
+  },
+  "taxiing_times.qmd": {
+    "taxiing_times.html": "cc5c19d8"
+  },
+  "investment_in_u-space.qmd": {
+    "investment_in_u-space.html": "25e39d77"
+  },
+  "drone_fleet.qmd": {
+    "drone_fleet.html": "457ced9a"
+  },
+  "purpose_of_passenger_travel.qmd": {
+    "purpose_of_passenger_travel.html": "e4d393ba"
+  },
+  "passenger_value_of_time.qmd": {
+    "passenger_value_of_time.html": "8781b26f"
+  },
+  "accident-incident_statistics.qmd": {
+    "accident-incident_statistics.html": "cf3b7840"
+  },
+  "value_of_a_statistical_life-vsl.qmd": {
+    "value_of_a_statistical_life-vsl.html": "afb580bc"
+  },
+  "value_of_a_statistical_injury.qmd": {
+    "value_of_a_statistical_injury.html": "abaf040d"
+  },
+  "discount_rate.qmd": {
+    "discount_rate.html": "42e804f0"
+  },
+  "exchange_rate.qmd": {
+    "exchange_rate.html": "487c5dfc"
+  },
+  "abbreviations.qmd": {
+    "abbreviations.html": "b38cd5bd"
+  },
+  "transit_time.qmd": {
+    "transit_time.html": "57ab73ae"
+  }
+}

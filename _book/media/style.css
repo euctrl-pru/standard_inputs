@@ -1,0 +1,10 @@
+/* thin border around cover image */
+.quarto-cover-image {
+  border: 1px solid #000
+}
+
+
+#title-block-header.quarto-title-block.default .quarto-title-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

@@ -1,0 +1,287 @@
+release-version: 9.0.2
+
+
+project:
+  type: book
+  output-dir: _book
+
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+
+
+bibliography: "bibliography.bib"
+csl: media/ieee-with-url.csl
+link-citations: true
+cover-image: cover.png
+
+format:
+  html:
+    css:
+      - media/style.css
+    theme:
+      - default
+    #   - custom.scss
+    code-link: true
+    cover-image: media/cover.png
+    link-external-newwindow: true
+    link-external-icon: true
+    link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*standard-inputs\.netlify\.app\/'
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+          <style>
+            .navbar-logo {
+              max-height: 60px;
+            }
+          </style>
+      - media/fontawesome.html
+      # UNCOMMENT for activating GA
+      - media/analytics.html
+    template-partials: 
+      # - media/title-block.html
+      - media/title-metadata.html
+    include-after-body: version-link-rewriter.html
+
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+    documentclass: book
+    papersize: a4
+    fontsize: 11pt
+    links-as-notes: true
+
+book:
+  title: "EUROCONTROL Standard Inputs for Economic Analyses"
+  author:
+    - "EUROCONTROL Business Cases team"
+  date: "2023-03-17"
+  description: "This document provides values for data items commonly used in economic analyses, especially cost-benefit analyses. Each standard input is presented together with details of the sources and a discussion of the applicability and use of the values. The values have been compiled from publicly available documents. They are often average values and may not be appropriate in all circumstances."
+  search:
+    location: sidebar
+  downloads: [pdf]
+  output-file: "standard_inputs"
+  site-url: "https://eurocontrol.int/"
+  chapters:
+    - "index.qmd"
+ 
+    - "foreword.qmd"  
+    - "introduction.qmd"
+    - "conversions.qmd"
+    - "geographical_areas.qmd"
+    
+    - part: "Traffic and capacity"
+      chapters:
+        - "air_traffic_statistics_and_forecasts.qmd"
+        - "medium-term_capacity_planning.qmd"
+        - "number_of_ifr_flights.qmd"
+        - "air_traffic_delay.qmd"
+        - "transit_time.qmd"
+    
+    - part: "Environment"
+      chapters:
+        - "rate_of_fuel_burn.qmd"
+        - "amount_of_emissions_released_by_fuel_burn.qmd"
+        - "cost_of_emissions.qmd"
+        - "cost_of_noise.qmd"
+        - "shadow_cost_of_carbon.qmd"
+        - "proportion_of_saf.qmd"
+    
+    - part: "Airspace Users"
+      chapters:
+        - "aircraft_operating_costs.qmd"
+        - "average_number_of_passengers.qmd"  
+        - "cancellation_cost.qmd"
+        - "operational_cancellation_rate.qmd"
+        - "cost_of_delay.qmd"
+        - "cost_of_diversion.qmd"
+        - "turnaround_time.qmd"
+        - "ifr_average_flight_distance_and_flight_duration.qmd"
+        - "ifr_flight_information_per_market_segment.qmd"
+        - "distance_flown_by_charging_zone.qmd"
+        - "load_factor-cargo.qmd"
+        - "load_factor-passengers.qmd"
+        - "cost_of_aviation_fuel.qmd"
+        - "value_of_an_average_passenger_flight.qmd"
+        - "fleet_age.qmd"
+        - "fleet_size.qmd"
+        - "fleet_cns_capability.qmd"
+    
+    - part: "ATM"
+      chapters:
+        - "en_route_ans_costs.qmd"
+        - "route_charge_share_per_market_segment.qmd"
+        - "ansps_employment_costs.qmd"
+        - "asset_life.qmd"
+        - "atm_cost-effectiveness_indicators.qmd"
+        - "atm_operational_units.qmd"
+        - "cns_infrastructure.qmd"
+        - "pbn_and_precision_approach_procedures.qmd"
+    
+    - part: "Airports"
+      chapters:
+        - "airport_classification.qmd"
+        - "taxiing_times.qmd"
+     
+    - part: "Drones"
+      chapters:
+        - "investment_in_u-space.qmd"
+        - "drone_fleet.qmd"
+     
+    - part: "Passengers"
+      chapters:
+        - "purpose_of_passenger_travel.qmd"
+        - "passenger_value_of_time.qmd"
+     
+    - part: "Safety"
+      chapters:
+        - "accident-incident_statistics.qmd"
+        - "value_of_a_statistical_life-vsl.qmd"
+        - "value_of_a_statistical_injury.qmd"
+     
+    - part: "Financial values"
+      chapters:
+        - "discount_rate.qmd"
+        - "exchange_rate.qmd"
+     
+    - part: "General information"
+      chapters:
+        - "abbreviations.qmd"
+        # - "references.qmd"
+    # - "annexes.qmd"
+    # - "data.qmd"
+
+  navbar:
+  # Note: You need to install: ```quarto install extension mcanouil/quarto-iconify```
+  # For the icons to work.
+    background: dark
+    search: true
+    title: '      Standard Inputs for Economic Analyses'
+    logo: "media/EUROCONTROL-logo-standard-rgb.png"
+    right:
+      - text: "Home"
+        href: https://ansperformance.eu/
+      - text: "Performance areas"
+        menu:
+          - text: "{{< iconify fa6-solid th >}}&nbsp;Balanced scorecard"
+            href: "https://www.eurocontrol.int/Economics/BalancedScorecard.html"
+          - text: "{{< iconify fa6-solid plane-departure >}}&nbsp;Traffic"
+            href: https://ansperformance.eu/traffic/
+          - text: "&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Daily traffic dashboard</span>"
+            href: "https://www.eurocontrol.int/Economics/DailyTrafficVariation-States.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Service units</span>"
+            href: "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Traffic forecast</span>"
+            href: https://ansperformance.eu/traffic/statfor/
+          - text: "{{< iconify fa6-solid calendar >}}&nbsp;Punctuality"
+            href: https://ansperformance.eu/traffic/punctuality/
+          - text: "&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Daily punctuality dashboard</span>"
+            href: "https://www.eurocontrol.int/Economics/DailyPunctuality-States.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Network punctuality</span>"
+            href: https://ansperformance.eu/traffic/punctuality/#eurocontrol-area-network-view-1
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>State & airport punctuality</span>"
+            href: https://ansperformance.eu/traffic/punctuality/#state-view-1
+          - text: "{{< iconify fa6-solid clock >}}&nbsp;En-route & airport delays"
+            href: https://ansperformance.eu/capacity/
+          - text: "&nbsp;&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Daily ATFM delays dashboard</span>"
+            href: "https://www.eurocontrol.int/Economics/DailyDelay-States.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>En-route ATFM delays</span>"
+            href: https://ansperformance.eu/capacity/atfm_ert/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Airport ATFM delays</span>"
+            href: https://ansperformance.eu/capacity/atfm_apt/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>All-causes delays</span>"
+            href: https://ansperformance.eu/capacity/tot_dly
+          - text: "{{< iconify fa6-solid leaf >}}&nbsp;Efficiency & environment"
+            href: https://ansperformance.eu/efficiency/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>CO<sub>2</sub> emissions</span>"
+            href: https://ansperformance.eu/efficiency/emissions/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Horizontal flight efficiency</span>"
+            href: https://ansperformance.eu/efficiency/hfe/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Vertical flight efficiency</span>"
+            href: https://ansperformance.eu/efficiency/vfe/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Terminal holdings</span>"
+            href: https://ansperformance.eu/efficiency/asma/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Taxi-out</span>"
+            href: https://ansperformance.eu/efficiency/taxiout/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Taxi-in</span>"
+            href: https://ansperformance.eu/efficiency/taxiin/
+          - text: "{{< iconify fa6-solid euro-sign >}}&nbsp;Economics"
+            href: https://ansperformance.eu/economics/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>ATM cost-effectiveness (ACE)</span>"
+            href: https://ansperformance.eu/economics/ace-overview/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Unit rates and costs</span>"
+            href: "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteUnitRates.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Service units</span>"
+            href: "https://www.eurocontrol.int/ServiceUnits/Dashboard/EnRouteMainDashboard.html"
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>ANSPs financial dashboard</span>"
+            href: https://ansperformance.eu/economics/finance/
+          - text: "&nbsp;&nbsp;&nbsp;<span style='font-weight: normal'>Standard Inputs for Economic Analyses</span>"
+            href: https://ansperformance.eu/economics/cba/
+
+      - text: "Stakeholder views"
+        menu:
+          - text: "{{< iconify fa6-solid plane-arrival >}}&nbsp;Airports"
+            href: https://ansperformance.eu/dashboard/stakeholder/airport/
+          - text: "{{< iconify fa6-solid compass >}}&nbsp;Air navigation service provider"
+            href: https://ansperformance.eu/dashboard/stakeholder/ansp/
+          - text: "{{< iconify fa6-solid globe >}}&nbsp;States"
+            href: https://ansperformance.eu/dashboard/stakeholder/state/
+
+      - text: "Data"
+        href: https://ansperformance.eu/data/
+
+      - text: "Publications"
+        href: https://ansperformance.eu/publications/
+
+      - text: "Reference"
+        menu:
+          - text: "{{< iconify fa6-solid marker >}}&nbsp;Definitions"
+            href: https://ansperformance.eu/definition/
+          - text: "{{< iconify fa6-solid wrench >}}&nbsp;Methodology"
+            href: https://ansperformance.eu/methodology/
+          - text: "{{< iconify fa6-solid quote-left >}}&nbsp;Acronyms"
+            href: https://ansperformance.eu/acronym/
+          - text: "{{< iconify fa6-solid book >}}&nbsp;Bibliography"
+            href: https://ansperformance.eu/bibliography/
+
+      - text: "Links"
+        menu:
+          - text: "EUROCONTROL <i class='fas fa-xs fa-external-link-alt'></i>"
+            href: "https://www.eurocontrol.int/"
+          - text: "Single European Sky (SES) portal <i class='fas fa-xs fa-external-link-alt'></i>"
+            href: "https://www.eurocontrol.int/prudata/dashboard/"
+          - text: "ICAO GANP <i class='fas fa-xs fa-external-link-alt'></i>"
+            href: "https://www4.icao.int/ganpportal/"
+          - text: "Connectivity dashboard <i class='fas fa-xs fa-external-link-alt'></i>"
+            href: "https://ext.eurocontrol.int/connectivity_web/from"
+          - text: "PRC Transformation Strategy"
+            href: https://ansperformance.eu/transformation/
+          - text: "PRC Open Performance Data Initiative"
+            href: "https://opdi.aero"
+
+      - text: "About"
+        menu:
+          - text: "About the PRC"
+            href: https://ansperformance.eu/about/prc/
+          - text: "About the AIU"
+            href: https://ansperformance.eu/about/aiu/
+          - text: "About the PRU"
+            href: https://ansperformance.eu/about/us/
+          - text: "Release notes"
+            href: https://ansperformance.eu/post/
+          - text: "Disclaimer"
+            href: https://ansperformance.eu/about/disclaimer/
+      
+      - text: "Online Versions"
+        menu:
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v9.0.3 (April 2023)"
+            href: "#VERSION:v9.0.3"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.0 (June 2024)"
+            href: "#VERSION:v10.0.0"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (May 2025)"
+            href: "#VERSION:v10.0.1"
+          - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
+            href: "#VERSION:latest"
+

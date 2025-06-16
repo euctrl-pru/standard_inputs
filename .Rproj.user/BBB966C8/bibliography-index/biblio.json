@@ -1,0 +1,1204 @@
+{
+    "sources": [
+        {
+            "URL": "https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2019",
+            "author": [
+                {
+                    "literal": "EUROCONTROL PRU"
+                }
+            ],
+            "id": "ace2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        5
+                    ]
+                ]
+            },
+            "publisher": "EUROCONTROL",
+            "title": "Air traffic management cost-effectiveness (ACE) benchmarking report for 2019",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2020",
+            "author": [
+                {
+                    "literal": "EUROCONTROL PRU"
+                }
+            ],
+            "id": "ace2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Air traffic management cost-effectiveness (ACE) benchmarking report for 2020 with 2021-2024 outlook",
+            "type": "report"
+        },
+        {
+            "URL": "https://ansperformance.eu/publications/prc/ace/",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "acereports",
+            "title": "ATM Cost-Effectiveness (ACE) Benchmarking Reports  Annex 5",
+            "type": "book"
+        },
+        {
+            "URL": "https://ansperformance.eu/data/",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "EUROCONTROL AIU"
+                }
+            ],
+            "id": "aiuportal",
+            "title": "AIU portal",
+            "type": ""
+        },
+        {
+            "URL": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/372606/AC08a_tagged.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        24
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "Airports Commission"
+                }
+            ],
+            "id": "aptcom2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        11
+                    ]
+                ]
+            },
+            "title": "Delay Impacts Assessment Methodology Paper",
+            "type": "report"
+        },
+        {
+            "URL": "https://ec.europa.eu/eurostat/web/transport/data/database",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        1
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "Eurostat"
+                }
+            ],
+            "id": "avia:paoc",
+            "title": "Air passenger transport by reporting country (avia_paoc)",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/eurocontrol-aviation-outlook-2050",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "aviation:outlook2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        4
+                    ]
+                ]
+            },
+            "title": "EUROCONTROL Aviation Outlook 2050",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/aviation-economic-benefits/",
+            "author": [
+                {
+                    "literal": "IATA"
+                }
+            ],
+            "id": "aviationbenefits2007",
+            "issued": {
+                "date-parts": [
+                    [
+                        2007
+                    ]
+                ]
+            },
+            "title": "Aviation Economic Benefits",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/sites/default/files/2020-04/eurocontrol-coda-digest-annual-report-2019.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        11,
+                        26
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "C. Walker"
+                }
+            ],
+            "genre": "{{CODA Digest}}",
+            "id": "coda2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        4
+                    ]
+                ]
+            },
+            "publisher": "EUROCONTROL CODA",
+            "title": "All-causes delay and cancellations to air transport in Europe – Annual report for 2019",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/sites/default/files/2022-04/eurocontrol-coda-digest-annual-report-2021.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        11,
+                        26
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "C. Walker"
+                }
+            ],
+            "id": "coda2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        3
+                    ]
+                ]
+            },
+            "publisher": "EUROCONTROL CODA",
+            "title": "All-causes delay and cancellations to air transport in Europe – Annual report for 2021",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/european-aviation-environmental-report-2022",
+            "author": [
+                {
+                    "literal": "EASA, EEA, EUROCONTROL"
+                }
+            ],
+            "id": "eaer2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        9
+                    ]
+                ]
+            },
+            "title": "European Aviation Environmental Report 2022",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.easa.europa.eu/en/light/topics/fit-55-and-refueleu-aviation",
+            "abstract": "The EU has set ambitious targets to reduce net emissions with the aim of becoming the first climate neutral continent by 2050.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "container-title": "EASA",
+            "id": "easa:Fit55ReFuelEU",
+            "language": "en-US",
+            "title": "Fit for 55 and ReFuelEU Aviation",
+            "type": ""
+        },
+        {
+            "URL": "https://www.easa.europa.eu/sites/default/files/dfu/NPA%202013-20.pdf",
+            "author": [
+                {
+                    "literal": "EASA"
+                }
+            ],
+            "id": "easa2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "title": "Notice of Proposed Amendment 2013-20. Seat crashworthiness improvement on large aeroplanes - Dynamic testing 16g",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.easa.europa.eu/en/domains/environment/icao-aircraft-engine-emissions-databank",
+            "author": [
+                {
+                    "literal": "EASA"
+                }
+            ],
+            "id": "easaICAOAircraftEngine",
+            "title": "ICAO Aircraft Engine Emissions Databank",
+            "type": ""
+        },
+        {
+            "URL": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+            "abstract": "The euro foreign exchange reference rates (also known as the ECB reference rates) are published by the ECB at around 16:00 CET. Reference rates for all the official currencies of non-euro area Member States of the European Union and world currencies with the most liquid active spot FX markets are set and published. The ECB aims to ensure that the exchange rates published reflect the market conditions prevailing at 14:15 CET. Reference rates are not intended to be used in any market transactions, whether directly or indirectly (as an underlying benchmark), but for information purposes only.",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "European Central Bank"
+                }
+            ],
+            "container-title": "European Central Bank",
+            "id": "ECB:exchange_rates",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        3
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "title": "Euro foreign exchange reference rates",
+            "type": ""
+        },
+        {
+            "URL": "https://commission.europa.eu/system/files/2023-02/br_toolbox-nov_2021_en.pdf",
+            "author": [
+                {
+                    "literal": "European Commission"
+                }
+            ],
+            "id": "ecbr2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "“Better regulation” toolbox  2021 edition",
+            "type": "report"
+        },
+        {
+            "URL": "https://op.europa.eu/en/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1",
+            "author": [
+                {
+                    "literal": "European Commission DG MOVE"
+                }
+            ],
+            "id": "ecdgmove2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "Handbook on the external costs of transport",
+            "type": "report"
+        },
+        {
+            "URL": "https://ec.europa.eu/regional_policy/en/information/publications/guides/2014/guide-to-cost-benefit-analysis-of-investment-projects-for-cohesion-policy-2014-2020",
+            "author": [
+                {
+                    "literal": "European Commission DG REGIO"
+                }
+            ],
+            "id": "ecdgregio2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014
+                    ]
+                ]
+            },
+            "title": "Guide to Cost-Benefit Analysis of Investment Projects for Cohesion Policy 2014-2020",
+            "type": "report"
+        },
+        {
+            "URL": "https://op.europa.eu/en/publication-detail/-/publication/cf2c28fe-484e-11ed-92ed-01aa75ed71a1/language-en",
+            "author": [
+                {
+                    "literal": "European Commission DG REGIO"
+                }
+            ],
+            "id": "ecdgregiovademecum2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Economic appraisal vademecum 2021-2027 General principles and sector applications",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/service/eurocontrol-voluntary-atm-incident-reporting",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ecrtl:incident:report",
+            "issued": {
+                "date-parts": []
+            },
+            "title": "EUROCONTROL voluntary ATM incident reporting",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/aviation-sustainability",
+            "author": [
+                {
+                    "literal": "EUROCONTROL ASU"
+                }
+            ],
+            "container-title": "Aviation sustainability",
+            "id": "ectl:asu",
+            "title": "Aviation sustainability",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/market-segment-rules",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectl:market:seg:2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        5
+                    ]
+                ]
+            },
+            "title": "EUROCONTROL Market Segment Update 2022",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/forecasting",
+            "id": "ectl:statfor",
+            "title": "EUROCONTROL Forecasting",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/library",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectllibrary",
+            "title": "EUROCONTROL Library",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/service/local-single-sky-implementation-monitoring",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectrl:lssip",
+            "title": "Local Single Sky implementation monitoring",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/european-atm-master-plan-implementation-plan-level-3",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectrl:mp:ip",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        12
+                    ]
+                ]
+            },
+            "title": "European ATM Master Plan - implementation plan - level 3",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/european-atm-master-plan-implementation-report-level-3",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectrl:mp:ir",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        8
+                    ]
+                ]
+            },
+            "title": "European ATM Master Plan - implementation report- level 3",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/european-network-operations-plan-2022-2026",
+            "author": [
+                {
+                    "literal": "EUROCONTROL NMD"
+                }
+            ],
+            "id": "ectrl:nop:2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        7
+                    ]
+                ]
+            },
+            "title": "European Network Operations Plan 2022-2026",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/european-network-operations-plan-2022-rolling-seasonal-plan",
+            "author": [
+                {
+                    "literal": "EUROCONTROL NMD"
+                }
+            ],
+            "id": "ectrl:nop:rsp",
+            "title": "European Network Operations Plan 2023 Rolling Seasonal Plan",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard",
+            "author": [
+                {
+                    "literal": "EUROCONTROL STATFOR"
+                }
+            ],
+            "id": "ectrl:statfor:sid",
+            "title": "STATFOR Interactive Dashboard",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/seven-year-forecast-flight-movements-and-service-units-autumn-2019",
+            "author": [
+                {
+                    "literal": "STATFOR"
+                }
+            ],
+            "id": "ectrl:statfor19",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        10
+                    ]
+                ]
+            },
+            "number": "2019-2025",
+            "publisher": "STATFOR, EUROCONTROL",
+            "publisher-place": "Brussels, Belgium",
+            "title": "Seven-year Forecast of Flight Movements and Service Units - Autumn 2019",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/performance-review-report-prr-2021",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        9,
+                        3
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectrlprr2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "title": "Performance Review Report (PRR) 2020",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/performance-review-report-prr-2021",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        9,
+                        3
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "ectrlprr2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Performance Review Report (PRR) 2021",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eea.europa.eu/publications/emep-eea-guidebook-2019",
+            "author": [
+                {
+                    "literal": "European Environment Agency"
+                }
+            ],
+            "id": "eea:2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "title": "ISSN 1977-8449EMEP/EEA air pollutant emission inventory guidebook 2019",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eib.org/en/publications/the-eib-group-climate-bank-roadmap",
+            "author": [
+                {
+                    "literal": "European Investment Bank"
+                }
+            ],
+            "id": "eib2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        11
+                    ]
+                ]
+            },
+            "title": "EIB Group Climate Bank Roadmap 2021-2025",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/report-operation-route-charges-system-2021",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "eurocontrolReportOperationRoute2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Report on the operation of the route charges system in 2021",
+            "type": "report"
+        },
+        {
+            "URL": "https://ec.europa.eu/eurostat/web/hicp",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "Eurostat"
+                }
+            ],
+            "id": "eurostat:HICP",
+            "title": "Harmonised Indices of Consumer Prices (HICP)",
+            "type": ""
+        },
+        {
+            "URL": "https://ec.europa.eu/eurostat/databrowser/view/AVIA_EQ_ARC_AGE/default/table?lang=en&category=avia.avia_eq",
+            "author": [
+                {
+                    "family": "EUROSTAT"
+                }
+            ],
+            "id": "eurostataircraftfleet",
+            "issued": {
+                "date-parts": [
+                    [
+                        2023,
+                        1
+                    ]
+                ]
+            },
+            "title": "Commercial aircraft fleet by age of aircraft and country of operator",
+            "type": ""
+        },
+        {
+            "URL": "https://www.ecologie.gouv.fr/sites/default/files/V.3.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        24
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "French Ministry of Ecological Transition"
+                }
+            ],
+            "id": "frminecotra2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        5
+                    ]
+                ]
+            },
+            "title": "Recommended values for calculating average long-distance travel",
+            "type": "report"
+        },
+        {
+            "URL": "https://trimis.ec.europa.eu/sites/default/files/project/documents/20130122_113653_88902_HEATCO_D5_summary.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        24
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "European Commission"
+                }
+            ],
+            "id": "heatco2006",
+            "issued": {
+                "date-parts": [
+                    [
+                        2006,
+                        2
+                    ]
+                ]
+            },
+            "title": "HEATCO - Developing Harmonised European Approaches for Transport Costing and Project Assessment",
+            "type": "book"
+        },
+        {
+            "URL": "http://www.iata.org/whatwedo/workgroups/Documents/acc-2013-gva/0930-1015_ AOCTF_FY2012_Report_FERJAN.pdf",
+            "author": [
+                {
+                    "literal": "Airline Operational Cost Task Force"
+                }
+            ],
+            "id": "iata:aoctf",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        8
+                    ]
+                ]
+            },
+            "publisher-place": "Geneva, Switzerland",
+            "title": "Airline cost conference",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.iata.org/en/publications/economics/fuel-monitor/",
+            "abstract": "The Jet Fuel prince index provides weekly updates of the jet fuel price, price index, yearly price average and the impact on the fuel bill of the global airline industry",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "IATA"
+                }
+            ],
+            "id": "iata:JetFuelPrice",
+            "language": "en-US",
+            "title": "Jet Fuel Price Monitor",
+            "type": ""
+        },
+        {
+            "URL": "https://www.iata.org/en/publications/safety-report/",
+            "author": [
+                {
+                    "literal": "IATA"
+                }
+            ],
+            "id": "iata:safety:report",
+            "issued": {
+                "date-parts": []
+            },
+            "title": "IATA Safety Report",
+            "type": ""
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publ ications/economic-reports/profitability-and-the-air-transport-value-chain/",
+            "author": [
+                {
+                    "literal": "IATA"
+                }
+            ],
+            "id": "iata2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "title": "Profitability and the Air Transport Value Chain",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/air-freight-monthly-analysis---dec-2017/",
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2017",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2018",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/air-freight-monthly-analysis---dec-2019/",
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2019",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/air-freight-monthly-analysis---december-2020/",
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2020",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/air-freight-monthly-analysis---december-2021/",
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2021",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/air-cargo-market-analysis---december-2022/",
+            "author": [
+                {
+                    "family": "IATA"
+                }
+            ],
+            "id": "iataclf2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        12
+                    ]
+                ]
+            },
+            "title": "IATA Air Cargo Market Analysis  December 2022",
+            "type": "book"
+        },
+        {
+            "URL": "https://www.iata.org/en/iata-repository/publications/economic-reports/value-of-an-average-passenger-flight-in-eu-27/",
+            "author": [
+                {
+                    "literal": "IATA"
+                }
+            ],
+            "id": "iataIATAEconomicBriefing",
+            "title": "IATA economic briefing. The value of an average passenger flight in the EU27",
+            "type": "report"
+        },
+        {
+            "URL": "https://data.icao.int/icads/Product/View/120",
+            "author": [
+                {
+                    "literal": "ICAO"
+                }
+            ],
+            "id": "icao2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013
+                    ]
+                ]
+            },
+            "title": "Manual on Air Navigation Services Economics (Doc 9161)",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.ipcc.ch/sr15/",
+            "author": [
+                {
+                    "literal": "IPCC"
+                }
+            ],
+            "id": "ipcc2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018
+                    ]
+                ]
+            },
+            "title": "Global Warming of 1.5 C",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.itf-oecd.org/what-value-saving-travel-time",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        27
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "International Transport Forum (ITF)"
+                }
+            ],
+            "id": "itf:2019",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019,
+                        2
+                    ]
+                ]
+            },
+            "title": "What is the Value of Saving Travel Time?",
+            "type": "report"
+        },
+        {
+            "URL": "https://significance.nl/wp-content/uploads/2019/03/2012-GDJ-European-wide-meta-analysis-of-values-of-travel-time.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        27
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "University of Leeds"
+                }
+            ],
+            "id": "leedsuniversity2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        5
+                    ]
+                ]
+            },
+            "title": "European Wide-Meta Analysis of Values of Travel Time",
+            "type": "report"
+        },
+        {
+            "URL": "http://eprints.whiterose.ac.uk/104595/1/European meta paper final accepted for publication.pdf",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        27
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "University of Leeds"
+                }
+            ],
+            "id": "leedsuniversity2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "title": "Values of travel time in Europe: Review and meta-analysis",
+            "title-short": "Values of travel time in Europe",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/sites/default/files/2022-05/eurocontrol-annual-nor-2021-main-report.pdf",
+            "id": "nm2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        5
+                    ]
+                ]
+            },
+            "publisher": "EUROCONTROL",
+            "title": "Network operations report 2021",
+            "type": "report"
+        },
+        {
+            "URL": "http://www.oecd.org/env/tools-evaluation/mortalityriskvaluationinenvironmenthealthandtransportpolicies.htm",
+            "author": [
+                {
+                    "literal": "OECD Environment Directorate"
+                }
+            ],
+            "id": "oecd2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "title": "Mortality Risk Valuation in Environment, Health and Transport",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.ebp-us.com/en/projects/passenger-value-time-benefit-cost-analysis-and-airport-capital-investment-decisions",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2023,
+                        2,
+                        27
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "Economic Development Research Group Inc."
+                }
+            ],
+            "id": "passtimevalue2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "title": "Passenger Value of Time, Benefit-Cost Analysis and Airport Capital Investment Decisions",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/prudata/dashboard/vis/2021/",
+            "id": "prb:dashboard:2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022
+                    ]
+                ]
+            },
+            "title": "Reporting Period 3 - 2021 dashboard",
+            "type": ""
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/objective-skygreen-2022-2030",
+            "author": [
+                {
+                    "literal": "EUROCONTROL"
+                }
+            ],
+            "id": "skygreen2022",
+            "issued": {
+                "date-parts": [
+                    [
+                        2022,
+                        5
+                    ]
+                ]
+            },
+            "title": "Objective Skygreen 2022-2030. The economics of aviation decarbonisation towards te 2030 Green Deal milestone",
+            "type": "report"
+        },
+        {
+            "URL": "https://www.eurocontrol.int/publication/eurocontrol-forecast-update-2022-2028",
+            "abstract": "European Flight Movements and Service Units - Three Scenarios for Recovery from COVID-19",
+            "accessed": {
+                "date-parts": [
+                    [
+                        2022,
+                        12,
+                        12
+                    ]
+                ]
+            },
+            "author": [
+                {
+                    "literal": "STATFOR"
+                }
+            ],
+            "id": "statfor:7year_forecast:2022-2028",
+            "language": "en-US",
+            "title": "EUROCONTROL Forecast Update 2022-2028",
+            "type": ""
+        },
+        {
+            "genre": "Book",
+            "id": "zotero-985",
+            "type": "book"
+        }
+    ],
+    "project_biblios": [
+        "bibliography.bib"
+    ]
+}
