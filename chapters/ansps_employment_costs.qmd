@@ -12,11 +12,11 @@ library(here)
 
 This section considers ANSPs’ average annual employment costs for one Full Time 
 Equivalent (FTE) in euros by category of staff. @tbl-ansp-employment-cost-general 
-shows the recommended values.
+shows the recommended values in 2024.
 
 ```{r}
 #| label: tbl-ansp-employment-cost-general
-#| tbl-cap: Average yearly ANSP employment costs (2021 prices)
+#| tbl-cap: Average yearly ANSP employment costs (2023 prices)
 
 read_xlsx(here("data", "ansp_employment.xlsx"),
           sheet = "general") %>%
@@ -52,7 +52,7 @@ read_xlsx(here("data", "ansp_employment.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source = md("*Source: [EUROCONTROL PRU, ‘ATM Cost-Effectiveness (ACE) Benchmarking Report (2023 Edition)’](https://ansperformance.eu/publications/prc/ace/)*")
+    source = md("*Source: [EUROCONTROL PRU, ‘ATM Cost-Effectiveness (ACE) Benchmarking Report (2025 Edition)’](https://ansperformance.eu/publications/prc/ace/)*")
   ) %>% 
   tab_options(
     table.width = pct(100)
@@ -94,7 +94,7 @@ information extracted from EUROCONTROL ACE Report.
 
 ```{r}
 #| label: tbl-ansp-empl-cost
-#| tbl-cap: Individual ANSP and average European system FTE costs in thousand euros (2021 prices)
+#| tbl-cap: Individual ANSP and average European system FTE costs in thousand euros (2023 prices)
 
 read_xlsx(here::here("data", "ansp_employment.xlsx"),
           sheet = "all") %>%
@@ -130,13 +130,13 @@ read_xlsx(here::here("data", "ansp_employment.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_source_note(
-    source = md("*Source: [EUROCONTROL PRU, ‘ATM Cost-Effectiveness (ACE) Benchmarking Report (2023 Edition)’](https://ansperformance.eu/publications/prc/ace/)*")
+    source = md("*Source: [EUROCONTROL PRU, ‘ATM Cost-Effectiveness (ACE) Benchmarking Report (2025 Edition)’](https://ansperformance.eu/publications/prc/ace/)*")
   )
 ```
 
 The values in @tbl-ansp-empl-cost were calculated using values provided in 
 Annex 5, Tables 0.3 and 0.5 of the source document. The employment costs refer
-to gate-to-gate cost (i.e. en-route and terminal costs) and are expressed in 2021 prices.
+to gate-to-gate cost (i.e. en-route and terminal costs) and are expressed in 2023 prices.
 
 ## Related inputs
 

@@ -4,7 +4,7 @@
 
 The transit time per ANSP represents the average time flown by aircraft controlled 
 in its airspace over a year.@tbl-transit-time provides the average transit time 
-(expressed in minutes) per ANSP in 2022. The data that was used to build this table,
+(expressed in minutes) per ANSP in 2023. The data that was used to build this table,
 as well as the most recent data, can be accessed on the data section of the [Aviation Intelligence Portal](https://ansperformance.eu/dashboard/stakeholder/ansp/ansp_db/) (which also contains data at ACC level).
 
 ```{r}

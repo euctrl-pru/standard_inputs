@@ -8,14 +8,14 @@ editor_options:
 
 ## Member States and geographical areas covered {.unnumbered}
 
-The Single European Sky initiative, the European Civil Aviation Conference (ECAC)
-and the European Union (EU) are the different scopes that are covered in this 
-Standard Inputs document.
+Single European Sky, the European Civil Aviation Conference (ECAC), the European 
+Union (EU) and EUROCONTROL are the different scopes covered in this document.
 
 @fig-member-states-set-diagram shows a summary of the States that are included 
-in the different groupings relevant to the aviation domain, while @fig-eurocontrol-member-states shows a map of the EUROCONTROL states.
+in the different groupings relevant to the aviation domain, while @fig-eurocontrol-member-states 
+shows a map of the EUROCONTROL Member and Comprehensive Agreement States.
 
-![State groupings](../figures/eu_orgs.svg){#fig-member-states-set-diagram}
+![State groupings (2025)](../figures/eu_orgs.svg){#fig-member-states-set-diagram}
 
 ## EUROCONTROL Member States {.unnumbered}
 
