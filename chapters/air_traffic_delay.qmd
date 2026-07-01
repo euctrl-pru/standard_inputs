@@ -6,7 +6,7 @@ editor_options:
 
 # Air traffic delay {#sec-air-traffic-delay}
 
-## EUROCONTROL recommended values
+## EUROCONTROL recommended values 
 
 The sections below present the evolution in reported delays taking two perspectives:
 
