@@ -21,7 +21,7 @@ airlines in 2021 and 2022. The figures presented are estimated by the EUROCONTRO
 [Central Office of Delay Analysis (CODA)](https://www.eurocontrol.int/network-performance) and 
 are calculated based on the comparison of the scheduled and actual flight timings. They 
 can be used in studies that look into the different causes of flight delay experienced 
-by passengers and airlines.
+by passengers and airlines. 
 
 More information can be accessed via [CODA Interactive Dashboard]()
 
