@@ -29,6 +29,21 @@ format:
     link-external-icon: true
     link-external-filter: '^(?:http:|https:)\/\/ansperformance\.eu\/|^(?:http:|https:)\/\/.*standard-inputs\.netlify\.app\/'
     include-in-header:
+      - text: |
+          <!-- Matomo -->
+          <script>
+            var _paq = window._paq = window._paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="//stats.eurocontrol.int/";
+              _paq.push(["setTrackerUrl", u+"matomo.php"]);
+              _paq.push(["setSiteId", "26"]);
+              var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+              g.async=true; g.src=u+"matomo.js"; s.parentNode.insertBefore(g,s);
+            })();
+          </script>
+          <!-- End Matomo Code -->
       - media/fontawesome.html
       # UNCOMMENT for activating GA
       - media/analytics.html
