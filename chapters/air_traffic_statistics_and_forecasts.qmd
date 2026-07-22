@@ -18,10 +18,9 @@ These forecasts are published biannually, in spring and autumn, covering flights
 en-route and terminal service units and the latest forecast can always be found
 on the [STATFOR page](https://www.eurocontrol.int/forecasting#tools).
   
-![EUROCONTROL Seven-year forecast 2025-2031 (Spring 2025 release) @EUROCONTROLForecastUpdate2025](../figures/forecast_2025-2031.png){#fig-forecast-2025-2031-plot}
+![EUROCONTROL Seven-year forecast 2026-2032 (Spring 2026 release) @EUROCONTROLForecastUpdate2025](../figures/forecast_2026-2032.png){#fig-forecast-2025-2031-plot}
 
-The above graph shows the traffic forecast taking account of the impact of the 
-COVID-19 pandemic. In the base scenario, IFR flights are expected to be back to 
+The above graph shows the traffic forecast from 2019 to 2032. In the base scenario, IFR flights are expected to be back to 
 2019 levels by 2026. Traffic statistics and forecasts can be obtained directly 
 from the STATFOR Interactive Dashboard (SID)[@ectrl:statfor:sid].
 
@@ -74,9 +73,9 @@ the European Commission to assess the financial aspects of the performance plans
 of the states that are bound by the Performance and Charging Schemes according 
 to EU regulations (EU) N°2019/317.
 
-![En-route Service Units Seven-year Forecast 2025-2031 (Spring 2025 release) [@EUROCONTROLForecastUpdate2025]](../figures/forecast_service_units.png){#fig-forecast-service-units-plot}
+![En-route Service Units Seven-year Forecast 2026-2032 (Spring 2026 release) [@EUROCONTROLForecastUpdate2025]](../figures/forecast_service_units.png){#fig-forecast-service-units-plot}
 
-The above graph shows the en-route service units forecast taking account of the impact of COVID-19.
+The above graph shows the en-route service units forecast from 2019 to 2032.
 
 ## When to use the inputs?
 
