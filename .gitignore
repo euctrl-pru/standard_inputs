@@ -410,3 +410,5 @@ TSWLatexianTemp*
 #*Notes.bib
 
 .positai
+
+**/*.quarto_ipynb
