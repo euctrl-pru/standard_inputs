@@ -4,7 +4,7 @@
 
 The transit time per ANSP represents the average time flown by aircraft controlled 
 in its airspace over a year.@tbl-transit-time provides the average transit time 
-(expressed in minutes) per ANSP in 2023. The data that was used to build this table,
+(expressed in minutes) per ANSP in 2024. The data that was used to build this table,
 as well as the most recent data, can be accessed on the data section of the [Aviation Intelligence Portal](https://ansperformance.eu/dashboard/stakeholder/ansp/ansp_db/) (which also contains data at ACC level).
 
 ```{r}
@@ -55,7 +55,7 @@ is 26 minutes per ANSP. A difference of 51 minutes between the highest (DHMI Tü
 and the lowest (M-NAV North Macedonia and Slovenia Control) transit time can also be observed.
 
 
-![Average transit time per ANSP in 2022 (continental only)](../figures/transit_time.png){#fig-transit-time fig-align=center}
+![Average transit time per ANSP in 2024 (continental only)](../figures/transit_time.png){#fig-transit-time fig-align=center}
 
 ## When to use the input?
 

@@ -2,7 +2,7 @@
 
 ```{r}
 library(readxl)
-library(dplyr)
+library(dplyr) 
 library(gt)
 library(here)
 ```
