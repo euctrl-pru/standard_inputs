@@ -291,7 +291,7 @@ book:
             href: https://ansperformance.eu/post/
           - text: "Disclaimer"
             href: https://ansperformance.eu/about/disclaimer/
-            
+
       - text: "Previous Versions"
         menu:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v9.0.3 (April 2023)"
