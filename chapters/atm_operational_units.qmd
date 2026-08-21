@@ -107,7 +107,7 @@ read_xlsx(here::here("data", "atm_operational_units.xlsx"))%>%
     )
   ) %>% 
   tab_source_note(
-    source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://www.eurocontrol.int/ACE/ACE-Home.html)*")) 
+    source_note = md("*Source: [EUROCONTROL ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://ansperformance.eu/publications/prc/ace/)*")) 
 ```
 
 ## Comment
@@ -116,7 +116,7 @@ Please note that the analysis presented in ACE Benchmarking reports, on which th
 input was based, excludes elements related to services provided to military
 operational air traffic (OAT), oceanic ANS, and landside airport management 
 operations. It presents a review and comparison of ATM cost effectiveness for
-the 38 ANSPs in Europe, which provide coverage for EUROCONTROL’s 41 Member States. 
+the 38 ANSPs in Europe, which provide coverage for EUROCONTROL Member States. 
 
 ## When to use this input?
 

@@ -19,7 +19,7 @@ shows a map of the EUROCONTROL Member and Comprehensive Agreement States.
 
 ## EUROCONTROL Member States {.unnumbered}
 
-![EUROCONTROL Member States (2025)](../figures/eurocontrol_ms.png){#fig-eurocontrol-member-states}
+![EUROCONTROL Member States (2025)](../figures/eurocontrol_ms.svg){#fig-eurocontrol-member-states}
 
 ## Airspace of the ECAC Member States {.unnumbered}
 

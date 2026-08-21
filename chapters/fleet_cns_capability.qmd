@@ -41,7 +41,7 @@ Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-nav-flight
-#| tbl-cap: NAV flight capabilities as a % of total flights in 2022
+#| tbl-cap: NAV flight capabilities as a % of total flights in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_total") %>% 
@@ -86,7 +86,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-nav-flight_top10
-#| tbl-cap: NAV flight capabilities as a % at the top 10 European Airports in Q4 2022
+#| tbl-cap: NAV flight capabilities as a % at the top 10 European airports in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_top10") %>% 
@@ -95,9 +95,9 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
     airport = "Airport",
     gbas = "A - GBAS landing system",
     lpv = "B - LPV (APV with SBAS)",
-    rnav = "D - RNAV 1",
-    rnp = "O - Basic RNP 1",
-    rnp_apch = "S - RNP APCH"
+    rnav = "RNAV 1 - Any means (any Dx)",
+    rnp = "RNP 1 (any Ox)",
+    rnp_apch = "RNP APCH (S1 or S2)"
   ) %>% 
   fmt_percent(
     columns = gbas:rnp_apch,
@@ -127,7 +127,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-nav-flight_month
-#| tbl-cap: NAV aircraft capability at the top-10 European airports over a one-month period in Q4 2022
+#| tbl-cap: NAV aircraft capability at the top-10 European airports over a one-month period, July 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_month") %>% 
@@ -157,12 +157,18 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  )
+  ) %>% 
+tab_footnote(
+    footnote = "Please note that the list of airports is different from Table 28.2 representing the most busy airports in the month of July (i.e. the month of analysis)",
+    locations = cells_column_labels(
+      columns = airport
+    )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-nav-flight_aircraft
-#| tbl-cap: NAV flight capability by main aircraft model, December 2022
+#| tbl-cap: NAV flight capability by main aircraft model, December 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "nav_aircraft") %>% 
@@ -198,13 +204,13 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 ### Communication (COM) flight capabilities
 
 The values presented in the tables hereafter are weighted by flight. Values are 
-based on flights arriving at ECAC Airports and the data is originated from
+based on flights arriving at or departing from ECAC Airports and the data is originated from
 [EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard). 
 Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-com-flight
-#| tbl-cap: COM flight capabilities as a % of total flights in 2022
+#| tbl-cap: COM flight capabilities as a % of total flights in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_total") %>% 
@@ -256,7 +262,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-com-flight_top10
-#| tbl-cap: COM datalink flight capabilities as a % at the Pilot Common Project airports in 2022
+#| tbl-cap: COM datalink flight capabilities as a % at the Common Project 1 airports in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_top10") %>% 
@@ -292,7 +298,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-com-voice-top10
-#| tbl-cap: COM voice flight capabilities as a % at the Pilot Common Project Airports in 2022
+#| tbl-cap: COM voice flight capabilities as a % at the Common Project 1 airports in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_voice_top10") %>% 
@@ -305,7 +311,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
     iridium = "M3 – ATC RTF (IRIDIUM)",
     uhf_rtf = "U – UHF RTF",
     vhf_rtf = "V – VHF RTF",
-    vhf_spacing = "Y – VHF with 8.33 kHz channel spacing"
+    vhf_spacing = "Y - VHF with 8.33 kHz channel spacing"
   ) %>% 
   fmt_percent(
     columns = hf_rtf:vhf_spacing,
@@ -329,7 +335,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
  
 ```{r}
 #| label: tbl-com-aircraft
-#| tbl-cap: COM datalink flight capabilities for main aircraft models in 2022
+#| tbl-cap: COM datalink flight capabilities for main aircraft models, December 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_datalink_aircraft") %>% 
@@ -364,7 +370,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
  
 ```{r}
 #| label: tbl-com-voice-aircraft
-#| tbl-cap: COM voice flight capabilities for main aircraft models in 2022
+#| tbl-cap: COM voice flight capabilities for main aircraft models, December 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "com_voice_aircraft") %>% 
@@ -403,13 +409,13 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 The values presented in the tables hereafter refer to the level of flight capabilities
 in terms of surveillance equipment. All values are weighted by flight and represent
-the situation for 2022. The data used is originated from
+the situation for 2025. The data used is originated from
 [EUROCONTROL Aircraft communication, navigation & surveillance (CNS) dashboard](https://www.eurocontrol.int/dashboard/communication-navigation-and-surveillance-dashboard). 
 Please refer to this source for more detailed information and further data.
 
 ```{r}
 #| label: tbl-sur-flight
-#| tbl-cap: SUR flight capabilities as a % of total flights in 2022
+#| tbl-cap: SUR flight capabilities as a % of total flights in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "sur_total") %>% 
@@ -457,18 +463,12 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
-  ) %>% 
-  tab_footnote(
-    footnote = "Figures in this value are per flight from departure to destination, while values per airport are per flight but also include any flight departing from or arriving at that airport",
-    locations = cells_column_labels(
-      columns = flights
-    )
-  )
+  ) 
 ```
 
 ```{r}
 #| label: tbl-ssr-top10
-#| tbl-cap: SSR/Mode S declared capabilities in flight plans at the top 10 European airports in 2022
+#| tbl-cap: SSR/Mode S declared capabilities in flight plans at the top 10 European airports in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "ssr_top10") %>% 
@@ -499,7 +499,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-adsb-top10
-#| tbl-cap: ADS-B declared capabilities in flight plans at the top 10 European airports in 2022
+#| tbl-cap: ADS-B declared capabilities in flight plans at the top 10 European airports in 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "adsb_top10") %>% 
@@ -530,7 +530,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-ssr-aircraft
-#| tbl-cap: SSR/Mode S declared capabilities in flight plans for main aircraft models in 2022
+#| tbl-cap: SSR/Mode S declared capabilities in flight plans for main aircraft models, December 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "ssr_aircraft") %>% 
@@ -564,7 +564,7 @@ read_xlsx(here::here("data", "cns_capability.xlsx"),
 
 ```{r}
 #| label: tbl-adsb-aircraft
-#| tbl-cap: ADS-B declared capabilities in flight plans for main aircraft models in 2022
+#| tbl-cap: ADS-B declared capabilities in flight plans for main aircraft models, December 2025
 
 read_xlsx(here::here("data", "cns_capability.xlsx"),
           sheet = "adsb_aircraft") %>% 

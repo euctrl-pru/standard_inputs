@@ -43,7 +43,7 @@ locations = cells_body(
 )
 ) %>% 
   tab_footnote(
-  footnote = "The values were adjusted to 2024 prices based on inflation",
+  footnote = "The values were adjusted to 2025 prices based on inflation",
 locations = cells_column_labels(
   columns = international:domestic
 )
@@ -97,7 +97,7 @@ which has been developed, on the basis of the statistical relationship between
 air connectivity and labour productivity, yields an estimate that **a 10% rise in connectivity, relative to a State’s GDP, will boost labour productivity levels by 0.07%.** The methodology for the analysis is detailed in 
 IATA’s 2007 Aviation Economic Benefits study. [@iata:eco:benefit]
 
-## When to use the input?
+## When to use the input? 
 
 The use of these values depends on the scope and the viewpoint of the analysis.
 For example, an assessment from the point of view of airlines will focus on the

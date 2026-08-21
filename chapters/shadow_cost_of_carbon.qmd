@@ -5,18 +5,18 @@
 The shadow cost of carbon is the cost of carbon required to drive the economy to
 meet the 1.5°C global temperature target set by the Intergovernmental Panel on 
 Climate Change (IPCC). The values have been estimated based on the data provided 
-by the European Investment Bank (EIB) in their 2021-2025 roadmap[@eib2020] and represent
+by the European Investment Bank (EIB) in their 2021-2025 roadmap [@eib:2020] and represent
 the cost in euros per tonne of CO~2~ equivalent.
 
 The input is an adjustment of the EIB recommended values to reflect the most
 realistic cost of meeting the [Paris Climate Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement) 
-to limit global warming well below 2 degrees Celsius, ideally 1.5 – compared to pre-industrial levels[@ipcc2018. 
+to limit global warming well below 2 degrees Celsius, ideally 1.5 – compared to pre-industrial levels [@ipcc:2018]. 
 Please note that this input does not refer to the traditional market price but 
 to the shadow cost of carbon (i.e. considering externalities and future policies).
 The original EIB proposed inputs are expressed in 2016 prices  and have been 
-adjusted to 2022 price levels using the values provided in @tbl-inflation-table.
+adjusted to 2025 price levels using the values provided in @tbl-inflation-table.
 
-![Forecast shadow cost of carbon for EU27 in 2022 prices](../figures/cost_of_carbon.png){#fig-cost-of-carbon}
+![Forecast shadow cost of carbon for EU27 in 2025 prices](../figures/cost_of_carbon.svg){#fig-cost-of-carbon}
 
 ## Comment
 
@@ -31,6 +31,15 @@ Shadow costs are inexact by definition, as they are based on assumptions, but
 their usefulness resides in that they help to understand the full socio-economic
 merits of a project. Please note that the shadow cost of carbon does not 
 constitute in any way an optimal value for any policy instrument.
+
+## Other possible sources
+
+-   *Climate Bank Roadmap Phase 2* [@eib:2025] 
+    
+    This report is a follow-up to the EIB Group  Climate Bank Roadmap  2021-2025
+    published in 2020 and that contains the values presented in this chapter.
+    Its objective is to provide an update to some of the data contained in the
+    initial report.
 
 ## When to use the input?
 

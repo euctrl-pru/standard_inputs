@@ -10,10 +10,10 @@ editor_options:
 
 The sections below present the evolution in reported delays taking two perspectives:
 
-1.  The view of airlines and passengers considering all causes of delay
+1.  The view of airlines and passengers considering all causes of delay 
 
 2.  A zoom-in to the view of the Network Manager focusing on Air Traffic Flow Management (ATFM) delays
-
+ 
 ### All causes of delay
 
 @fig-all-causes-delay presents an overview of all causes of delay reported by the 
@@ -25,8 +25,7 @@ by passengers and airlines.
 
 More information can be accessed via [CODA Interactive Dashboard](https://www.eurocontrol.int/dashboard/all-causes-delay-analysis-interactive-dashboard)
 
-![Breakdown of the network average delay per flight on departure: 2024 vs 2025[@codadashboard]](../figures/delay_causes.png){#fig-all-causes-delay}
-
+![Breakdown of the network average delay per flight on departure: 2025 vs 2024 [@codadashboard]](../figures/delay_causes.svg){#fig-all-causes-delay}
 
 **The ATFM delay (en-route, airport and weather) constitutes only a fraction of primary delay from all causes, and around half of all delay is reactionary** 
 (i.e. delay caused by late arrival of aircraft, crew, passengers, or baggage 
@@ -36,12 +35,12 @@ from previous journeys) rather than primary (i.e. delay other than reactionary).
 
 Looking specifically into ATFM delay, @fig-atfm-delay shows the average daily 
 traffic and average ATFM delay per flight (en-route and at airport) for the 
-period 2012-2025. The figures presented are calculated by the Network Manager 
+period 2014-2025. The figures presented are calculated by the Network Manager 
 based on the flight plans and include the planned ATFM delays due to restrictions 
-that may be applied in the airspace.
+that may be applied in the airspace. 
 
-![Average daily traffic and ATFM delay per flight 2012-2025 @NetworkOperationsReport2025](../figures/atfm_delay.png){#fig-atfm-delay}
-
+![Average daily traffic and ATFM delay per flight: 2014-2025 @ectrl:nop:2025](../figures/atfm_delay.svg){#fig-atfm-delay}
+ 
 ## Comment
 Another important point to take into consideration when analysing the recommended 
 values is the impact of COVID-19 pandemic. Both, the all-causes delay and the 
@@ -56,7 +55,6 @@ to restrictions in the airspace, while the numbers provided by the airlines cove
 the total delay, they attribute to ATFM, whether they come from the restrictions
 or any other planned ATFM delays, such as ATM system upgrades, training activities, etc.
 
-20.
 For the All-causes delay this information can be found in the previous editions 
 of CODA Digest, available in [EUROCONTROL library](https://www.eurocontrol.int/library).
 

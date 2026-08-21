@@ -15,7 +15,7 @@ The following documents are key sources of the latest statistics on accidents
 and incidents occurring in the aviation domain, as well as the related fatalities 
 and injuries.
 
-* *EASA Annual Safety Review* [@AnnualSafetyReview]
+* *EASA Annual Safety Review* [@easaAnnualSafetyReview]
 
     Provides both, a statistical summary of aviation safety in the EASA Member 
     States and identifies the most important safety challenges faced by European
@@ -61,12 +61,12 @@ The sources listed hereafter are those recommended to consult for further inform
     efforts by international air transport stakeholders to further improve safety
     in light of the sustained growth of the sector
     
-* *Performance Review Commission (2023) Draft Performance Review Report (PRR) 2023* [@ectrlprr2023]
+* *Performance Review Commission (PRC) Performance Review Reports* [@prr:yearly]
     
     Annual Performance Review Reports issued by the Performance Review Commission
     provide an annual review of Europe’s ATM safety performance
 
-* *SKYbrary* [@SkyBrary]
+* *SKYbrary* [@skybrary]
     
     An electronic repository of safety knowledge related to ATM and aviation 
     safety in general. It contains information about accidents and serious 

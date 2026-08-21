@@ -3,13 +3,13 @@
 ## EUROCONTROL Recommended Values
 
 The transit time per ANSP represents the average time flown by aircraft controlled 
-in its airspace over a year.@tbl-transit-time provides the average transit time 
+in its airspace over a year. @tbl-transit-time provides the average transit time 
 (expressed in minutes) per ANSP in 2024. The data that was used to build this table,
 as well as the most recent data, can be accessed on the data section of the [Aviation Intelligence Portal](https://ansperformance.eu/dashboard/stakeholder/ansp/ansp_db/) (which also contains data at ACC level).
 
 ```{r}
 #| label: tbl-transit-time
-#| tbl-cap: Average transit time per country
+#| tbl-cap: Average transit time per country in 2024
 
 library(readxl)
 library(dplyr)
@@ -20,6 +20,10 @@ read_xlsx(here::here("data", "transit_time.xlsx")) %>%
   cols_label(
     ansp = "ANSP",
     minutes = "Transit time (min)"
+  ) %>%
+  fmt_number(
+    columns = c(minutes),
+    decimals = 0
   ) %>%
   cols_align(
     align = "center",
@@ -34,11 +38,14 @@ read_xlsx(here::here("data", "transit_time.xlsx")) %>%
   ) %>% 
   tab_options(
     column_labels.font.weight = "bold"
+  ) %>%
+   tab_source_note(
+    source_note = md("*Source: [ACE Benchmarking Report 2026](https://www.eurocontrol.int/publication/air-traffic-management-cost-effectiveness-ace-benchmarking-report-2026-edition)*")
   )
 ```
 
-
-This metric is the ratio between the total flight hours controlled and the IFR flights controlled, where:
+This metric is the ratio between the total flight hours controlled and the number
+of IFR movements controlled, where:
 
 * Total IFR flight-hours controlled is the sum of the flight-hours controlled 
   over the year by the ANSP. For a given flight, the flight-hours controlled are 
@@ -48,14 +55,12 @@ This metric is the ratio between the total flight hours controlled and the IFR f
 * IFR movements controlled is the number of flights that have been controlled 
   ver the year by the ANSP as reported by EUROCONROL Performance Review Unit (PRU).
   
-The data was recorded by the Network Manager for the 39 main ANSPs operating in
+The data was recorded by the Network Manager for the 38 main ANSPs operating in
 Europe. In @fig-transit-time, the range of transit time values for the ANSPs 
 considered above can be observed. The European average in terms of flight time 
-is 26 minutes per ANSP. A difference of 51 minutes between the highest (DHMI Türkiye)
-and the lowest (M-NAV North Macedonia and Slovenia Control) transit time can also be observed.
+is 25 minutes per ANSP.
 
-
-![Average transit time per ANSP in 2024 (continental only)](../figures/transit_time.png){#fig-transit-time fig-align=center}
+![Average transit time per ANSP in 2024 (continental only) [@ace:2026]](../figures/transit_time.svg){#fig-transit-time fig-align=center}
 
 ## When to use the input?
 

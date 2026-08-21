@@ -1,0 +1,12 @@
+---
+title: test
+bibliography: ../bibliography.bib
+format: 
+  html:
+    link-citations: true
+---
+
+
+Test citation [@ectrlforecastupdate2026]
+
+#References

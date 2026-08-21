@@ -17,6 +17,6 @@ km. **The difference from values in @fig-load-factor-pax-ectrl is the geographic
 Europe area is larger than EU Europe statistical area used by STATFOR, it also 
 covers countries such as Russia, Tajikistan, Turkmenistan, and Uzbekistan.
 
-![Passenger load factor - IATA values^[The values used in this figure come from IATA monthly Air Passenger Market Analysis reports for the month of December of each year. The data is extracted from the table “Air passenger market detail”, looking at Total market in Europe, column PLF (level) for the calendar year.]](../figures/load-factor-pax-iata.svg){#fig-load-factor-pax-iata}
+![Passenger load factor - IATA values [@iata:pax]^[The values used in this figure come from IATA monthly Air Passenger Market Analysis reports for the month of December of each year. The data is extracted from the table “Air passenger market detail”, looking at Total market in Europe, column PLF (level) for the calendar year.]](../figures/load-factor-pax-iata.svg){#fig-load-factor-pax-iata} 
 
 ## References

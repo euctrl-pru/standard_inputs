@@ -7,71 +7,44 @@ for the projected output over a specific period of time. It is a dynamic activit
 that relies on constantly changing data on the ATM network use, capacity forecasts, etc.
 
 Given this, it is recommended to consult the sources below to obtain relevant 
-up-to-date information on capacity planning.
+up-to-date information on capacity planning. 
 
 
-* *EUROCONTROL NMD (2023), European Network Operations Plan 2023-2027*[@ectrl:nop:2023]
+* *EUROCONTROL NMD (2026), European Network Operations Plan 2026/2027-2030* [@ectrl:nop:2026]
 
     The document constitutes a short- to medium-term outlook of the expected ATM
     network operations and performance at network and local level. It provides a
     detailed overview of capacity and flight efficiency enhancement measures 
     planned at network level and by each Area Control Centre (ACC), a description 
-    of the airport performance assessment and improvement measures planned at 
-    airports generating a high level of delay. It also describes operational 
+    of the airport performance assessment and improvement measures planned.
+    It also describes operational 
     actions planned to be taken by the Network Manager (NM) and other stakeholders
-    that would respond to the performance targets. Furthermore, it provides an 
+    that would respond to the performance targets set by the Performance Framework 
+    of the Single European Sky (SESII) package. Furthermore, it provides an 
     assessment of the expected impact from these measures on the network.
 
-* *EUROCONTROL NMD (2024), European Network Operations Plan (NOP) – 2024 Rolling Seasonal Plan* [@ectrl:nop:rsp]
+* *EUROCONTROL NMD (2026), European Network Operations Plan 2026 Rolling Seasonal Plan* [@ectrl:nop:rsp]
 
     The The European NOP Rolling Seasonal Plan focuses on the planning of the next
-    six weeks and on the management of the execution and implementation of the 
+    eight weeks and on the management of the execution and implementation of the 
     5-year NOP. Its aim is to facilitate ANSP and airport planning to match traffic
     demand in a safe, efficient, and coordinated manner by providing them with a 
-    consolidated European network view of the evolution of air traffic. More 
-    information about network performance (and access to dashboards and the archive)
-      can be found on the [Network Performance page](https://www.eurocontrol.int/network-performance).
+    consolidated European network view of the evolution of air traffic. 
+    An updated version of the Plan is published every Friday, covering a rolling
+    eight-week period and consolidating data from 350 airlines, 68 area control 
+    centres (ACCs), 55 airports and 43 States.
+    More information about network performance (and access to dashboards and the archive) 
+    can be found on the [Network Performance page](https://www.eurocontrol.int/network-performance).
 
-* *European ATM Master Plan - implementation plan – level 3* [@ectrl:mp:ip] and *European ATM Master Plan – implementation report – level 3* [@ectrl:mp:ir]
+* *European ATM Master Plan* [@ectrl:mp]
 
-    The European ATM Master Plan Level 3 (MPL3) implementation plan brings together 
-    the framework for the commonly agreed actions that ECAC Stakeholders should 
-    take in the context of the implementation of SESAR. In this respect, it addresses:
-    
-    * V3 validated SESAR Solutions
-    
-    * Common Project 1 (CP1) ATM Functionalities (AF), based on Commission IR (EU) 2021/116 on Common Project One
-    
-    * SESAR Baseline elements, validated or under deployment at the beginning of the SESAR Deployment phase
-    
-    * SES and ICAO requirements
-    
-    Updated yearly, the Plan covers a short to medium-term horizon of around 5 
-    years. It is based on the ATM MP L1 and L2,^[There are three levels of the ATM Master Plan 2020: Level 1 - Executive view; Level 2 - Planning and architecture view; Level 3 - Implementation view.] the SESAR Deployment Programme 
-    (SDP), the Network Strategy Plan (NSP), and the SES Interoperability Regulations. 
-    The MPL3 Implementation Plan feeds the LSSIP+ monitoring mechanism as well 
-    as the reporting process through the yearly elaboration of the MPL3
-    Implementation Report, which provides a holistic view of the implementation
-    of commonly agreed actions to be taken by ECAC States, in the context of the
-    implementation of SESAR. These actions are consolidated in the form of 
-    “Implementation Objectives” that set out the operational, technical, and 
-    institutional improvements that have to be applied to the European ATM network
-    to meet the performance requirements for the key ATM performance areas defined 
-    in the MP Level 1 – safety, capacity, operational efficiency, cost efficiency,
-    environment, and security.
-    
-    The MPL3 Plan 2023 edition mirrors the content of the SESAR Deployment
-    Programme (SDP) edition 2022 for what concerns the IR (EU) 2021/116 on the
-    Common Project 1 (CP1). It also features the following changes in the
-    Implementation Objectives: Implementation Objectives changed in status, from
-    Initial to Active (Local); Implementation Objectives changed in status, from
-    Active to Achieved. They are both linked to the CP1 Regulation.
-    
-    The Implementation Report 2023 maps the evolution of the Master Plan 
-    implementation on the four progressive Phases of the SESAR vision (Phase A to D),
-    as defined in the 2020 edition of the Executive view of the Master Plan, for
-    the delivery of a Digital European Sky (DES).
-
+    As part of the Single European Sky (SES), the European ATM Master Plan is 
+    the planning tool for ATM modernisation across Europe. It sets out the vision
+    and priorities for the Digital European Sky, and for making Europe the most
+    efficient and environmentally friendly sky to fly in the world by 2045. 
+    It provides a strategic roadmap to the ATM community with the view to modernise
+    Europe's air traffic management system, among other things, in a context of 
+    a growing complexity and congestion of the European airspace.
 
 * *Local Single Sky ImPlementation (LSSIP) documents* [@ectrl:lssip]
 
