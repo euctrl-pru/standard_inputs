@@ -15,7 +15,7 @@ Please refer to this source for any further information.
 
 ```{r}
 #| label: tbl-pbn-deployment
-#| tbl-cap: PBN approach deployment status, March 2023
+#| tbl-cap: PBN approach deployment status, July 2025
 
 read_xlsx(here::here("data", "pbn_procedures.xlsx"),
           sheet = "pbn_deployment") %>% 
@@ -58,7 +58,7 @@ read_xlsx(here::here("data", "pbn_procedures.xlsx"),
 
 ```{r}
 #| label: tbl-ils-deployment
-#| tbl-cap: ILS Cat I, Cat II/III deployment status, March 2023
+#| tbl-cap: ILS Cat I, Cat II/III deployment status, July 2025
 
 read_xlsx(here::here("data", "pbn_procedures.xlsx"),
           sheet = "ils_deployment") %>% 
@@ -115,7 +115,7 @@ ends covered by each type of approach. The tool gives information about:
 
 * the deployment status for ECAC, individual countries, Pilot Common Project (PCP) airports and individual airports
 
-In March 2023 (on the basis of the AIRAC cycle, see comments), 1,676 runways ends
+In July 2025 (on the basis of the AIRAC 2507, see comments), 1,670 runways ends 
 were equipped with instrument approach procedures.
 
 ## Comment

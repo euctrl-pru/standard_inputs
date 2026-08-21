@@ -4,3 +4,5 @@
 ^LICENSE\.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.positai$
+^\.claude$

@@ -111,12 +111,14 @@ or using the factor recommended by ICAO, in order to ensure external consistency
 
 ## Other possible sources
 
-* *European Aviation Environmental Report Series* [@eaer2022]
+* *European Aviation Environmental Report* [@eaer:2025]
   
-  The 2022 edition shows the aviation sector has taken steps to address 
-  environmental challenges but also that more decisive actions are needed. 
-  In particular, the latest trends in aircraft engine emissions are shown in 
-  section 3.2. of the document.
+  The 2025 edition shows that the aviation sector is continuously taking steps 
+  to address its impacts on the environment and climate. The report offers a 
+  comprehensive overview on the past and forecasted environmental performance of 
+  the aviation sector at the European level. It has been compiled by the European 
+  Union Aviation Safety Agency (EASA) with support from a Steering Group comprising
+  the European Commission, European Environment Agency (EEA) and EUROCONTROL.
 
 * *European Environment Agency (2023), EMEP^[EMEP is a cooperative programme for monitoring and evaluation of the long-range transmission of air pollutants in Europe]/EEA air pollutant emission inventory guidebook 2023* [@eea:2019]
 

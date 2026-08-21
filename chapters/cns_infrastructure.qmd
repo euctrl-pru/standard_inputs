@@ -6,7 +6,6 @@ library(dplyr)
 library(gt)
 ```
 
-
 ## EUROCONTROL recommended values
 
 The values below show the number of civil-owned systems installed which are 
@@ -15,7 +14,7 @@ devoted to carrying out navigation and surveillance functions in ECAC.
 ### Navigation aids
 
 @tbl-cns-ecac1 and @tbl-cns-ecac2 shows the number of Navigation aids in ECAC at 
-the end of 2022. Please note there might be some marginal differences with the
+the end of 2024. Please note there might be some marginal differences with the
 latest available picture in the [EUROCONTROL Ground-based Navigation Infrastructure Map Tool](https://ext.eurocontrol.int/ground_navigation_infrastructure/homepage/welcome)
 (GNI tool) depending on the date of extraction.
 
@@ -185,11 +184,11 @@ plans shall not be considered as a commitment by a State or ANSP.
 
 ### Surveillance units
 
-@tbl-cns-ecac-surv shows the number of Surveillance units in ECAC at the end of 2022.
+@tbl-cns-ecac-surv shows the number of Surveillance units in ECAC at the end of 2024.
 
 ```{r}
 #| label: tbl-cns-ecac-surv
-#| tbl-cap: Surveillance units in EUROCONTROL Member States in 2022
+#| tbl-cap: Surveillance units in EUROCONTROL Member States in 2024
 
 read_xlsx(here::here("data", "cns_infrastructure.xlsx"),
           sheet = "surveillance") %>% 
@@ -224,13 +223,20 @@ read_xlsx(here::here("data", "cns_infrastructure.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
+    footnote = "Please note that the values marked with an asterisk represent confidential information. For possible disclosure of this information, please contact the state POC in LSSIP",
+    locations = cells_body(
+      columns = 1,
+      rows = c(3,4,7,8,10,11,12,15,17,20,21,25,28,29,31,32,35,36,37,40)
+    )
+    )%>% 
+   tab_footnote(
     footnote = "The WAM/ADS-B column lists the number of sensors. The configurations and system boundaries for several WAM/ADS-B implementations are complex and site specific. It is therefore not possible to consistently identify the corresponding number of systems",
     locations = cells_column_labels(
       column = 5
     )
     )%>% 
   tab_source_note (
-    source = md("*Source: EUROCONTROL Surveillance Unit Surveillance Database; LSSIP+ Cycle 2022 – SUR Questionnaire*")
+    source = md("*Source: EUROCONTROL Surveillance Unit Surveillance Database; LSSIP+ Cycle 2024 – SUR Questionnaire*")
   )
 ```
 
@@ -238,8 +244,8 @@ The Mode-S, Primary Surveillance Radar (PSR) and Secondary Surveillance Radar
 (SSR) (i.e. Mode A/C) numbers are extracted from the surveillance database of 
 the EUROCONTROL CNS unit.
 
-According to the most recent figures, in Europe there are 526 Mode-S radars, 142
-PSRs and 139 SSRs, either combined or standalone. As the allocation and 
+According to the most recent figures, in Europe there are 581 Mode-S radars, 
+148 PSRs and 117 SSRs, either combined or standalone. As the allocation and 
 implementation of Mode-S interrogator codes (ICs) require a coordinated approach,
 every installation of a Mode-S radar is officially registered. The numbers of
 PSRs and SSRs reported above are not necessarily accurate, as they are based on 

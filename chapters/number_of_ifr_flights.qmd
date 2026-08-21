@@ -117,28 +117,26 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
   cols_label(
     segment = "Market segment",
     share_of_total_2019 = "Share of Total 2019",
-    share_of_total_2021 = "Share of Total 2021",
-    share_of_total_2022 = "Share of Total 2022",
+    share_of_total_2024 = "Share of Total 2024",
     y2019 = "2019",
-    y2021 = "2021",
-    y2022 = "2022"
+    y2024 = "2024"
   ) %>%
   fmt_percent(
-    columns = c(share_of_total_2019, share_of_total_2021, share_of_total_2022),
+    columns = c(share_of_total_2019, share_of_total_2024),
     decimals = 0
   ) %>%
   fmt_number(
-    columns = c(y2019, y2021, y2022),
+    columns = c(y2019, y2024),
     use_seps = TRUE,
     decimals = 0
   ) %>%
   cols_align(
     align = "right",
-    columns = c(y2019, y2021, y2022)
+    columns = c(y2019, y2024)
   ) %>%
   cols_align(
     align = "center",
-    columns = c(share_of_total_2019, share_of_total_2021, share_of_total_2022)
+    columns = c(share_of_total_2019, share_of_total_2024)
   ) %>% 
   tab_options(
     table.width = pct(100)
@@ -154,7 +152,7 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
       cell_text(weight = "bold")
     ),
     locations = cells_body(
-      columns = segment:y2022,
+      columns = segment:y2024,
       rows = 9
     )
   ) %>% 
@@ -171,11 +169,9 @@ read_xlsx(here::here("data", "flight_per_market_segment.xlsx")) %>%
    cols_width(
     segment ~ pct(20),
     share_of_total_2019 ~ pct(13),
-    share_of_total_2021 ~ pct(13),
-    share_of_total_2022 ~ pct(13),
+    share_of_total_2024 ~ pct(13),
     y2019 ~ pct(13),
-    y2021 ~ pct(13),
-    y2022 ~ pct(13)
+    y2024 ~ pct(13)
   ) %>%
   tab_source_note(
     source_note = md("*Source: [STATFOR Interactive Dashboard](https://www.eurocontrol.int/dashboard/statfor-interactive-dashboard)*")

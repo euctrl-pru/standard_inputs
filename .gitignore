@@ -409,5 +409,9 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
+<<<<<<< HEAD
+.positai
+=======
+>>>>>>> 3567c7462798c1b0e2a6fd95a2575d5a06ffcb7e
 
 **/*.quarto_ipynb

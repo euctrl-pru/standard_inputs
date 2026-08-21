@@ -27,7 +27,6 @@ double-counting with the costs of annoyance.
 The data is presented for different noise levels and the values in euros represent 
 the annual cost per person and dB.
 
-
 ```{r}
 #| label: tbl-yearly-noise-cost
 #| tbl-cap: Yearly environmental cost of aviation traffic noise for the EU27+UK
@@ -62,7 +61,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2024 prices",
+    footnote = "The monetary values originate from Table 33 of the source document and are adjusted from 2016 to 2025 prices",
     locations = cells_column_labels(
       columns = annoyance:total
     )
@@ -136,7 +135,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     )
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values originate from Table 36 of the source document and are adjusted from 2016 to 2024 prices",
+    footnote = "The monetary values originate from Table 36 of the source document and are adjusted from 2016 to 2025 prices",
     locations = cells_column_labels(
       columns = total:km
     )
@@ -185,7 +184,7 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The monetary values are adjusted from 2014 to 2024 prices",
+    footnote = "The monetary values originate from Tables A1.3 and A1.4 of the source document and are adjusted from 2014 to 2025 prices",
     locations = cells_column_labels(
       columns = marginal_cost:sleep
     )
@@ -195,5 +194,11 @@ read_xlsx(here::here("data", "cost_noise.xlsx"),
   )
 ```
 
+## When to use the input?
 
+This input is recommended for use in environmental assessments, and specifically 
+when assessing the noise impacts from aviation activity.
 
+## Related inputs
+
+@sec-cost-of-emissions [Cost of emissions](#sec-cost-of-emissions)

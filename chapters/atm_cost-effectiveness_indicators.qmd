@@ -80,28 +80,29 @@ cols_align(
     )
   ) %>% 
 tab_source_note(
-  source_note = md("*Source: [EUROCONTROL PRU, ATM Cost-Effectiveness (ACE) Benchmarking Report (2023 Edition)](https://ansperformance.eu/publications/prc/ace/)*")
+  source_note = md("*Source: [EUROCONTROL PRU, ATM Cost-Effectiveness (ACE) Benchmarking Reports](https://ansperformance.eu/publications/prc/ace/)*")
 )
 ```
 
-@tbl-atm-cost-effectiveness shows the trends in European system averages for the 
-years 2015 through 2021. The ACE benchmarking reports comprise data about and 
+@tbl-atm-cost-effectiveness shows the **average** values for the European system for the 
+years 2015 through 2024. On top of these values, 2024 key performance drivers of financial
+cost-effectiveness for ANSPs are summarised in Figure 3.14 of ACE Benchmarking Report 2026 Edition. [@ATMCostEffectiveness]
+
+Furthermore, **a wide variation per ANSP can be observed** in ACE Benchmarking 
+Report 2026 Edition. [@ATMCostEffectiveness]
+
+* ATCO productivity ranges from 0.22 to 2.23 (Figure 3.18)
+
+* ATCO in OPS employment costs vary from a minimum of €32 to a maximum of €375 per ATCO-hour (Figure 3.22)
+
+* Support cost ratio varies from 0.36 to 1.33 in 2024 (Annex 3, Table 0.1)
+
+The ACE benchmarking reports [@ATMCostEffectiveness] comprise data about and 
 analysis of cost-effectiveness and productivity for the ANSPs in EUROCONTROL’s
 Member States. The key performance drivers of cost-effectiveness are (i) productivity,
 (ii) employment costs and (iii) support costs, comprising costs for non-ATCOs 
 in OPS employment, non-staff operating costs, exceptional costs, depreciation,
 and capital-related costs
-
-On top of the above values, 2021 key performance drivers of financial
-cost-effectiveness for ANSPs are summarised in Figure 2.7 of the source document.[@ATMCostEffectivenessACE2023]
-**A wide variation per ANSP can be observed:**
-
-* ATCO productivity ranges from 0.14 to 1.52 (Figure 2.8 of the source document)
-
-* Employment costs per ATCO-hour vary from a minimum of €17 to a maximum of €358 per ATCO-hour (Figure 2.10 of the source document)
-
-* Support cost ratio varies from 0.22 to 1.48 in 2021 (Annex 3, Table 0.1 of the source document)
-
 
 :::{.callout-note}
 The employment costs above refer to gate-to-gate cost (i.e. en-route and terminal 

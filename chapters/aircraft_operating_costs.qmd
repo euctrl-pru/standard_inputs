@@ -14,11 +14,12 @@ library(readr)
 @tbl-aircraft-operating-cost presents the flight and ground costs linked to the 
 operation of an aircraft, such as fuel and oil, flight deck crew, flight equipment
 depreciation and amortisation, aircraft rentals, landing fees, ground handling,
-aircraft parking, air bridges and maintenance.
+aircraft parking, air bridges and maintenance. The costs were originally estimated
+in 2022 prices and were adjusted to 2025 based on inflation.
 
 ```{r}
 #| label: tbl-aircraft-operating-cost
-#| tbl-cap: Aircraft Operating Costs in USD 2022 prices
+#| tbl-cap: Aircraft Operating Costs in USD 2025 prices
 
 read_xlsx(here("data", "aircraft_operating_costs.xlsx")) %>% 
   # format the table
@@ -67,12 +68,17 @@ read_xlsx(here("data", "aircraft_operating_costs.xlsx")) %>%
   ) %>% 
   #Format numbers
   fmt_number(
-    columns = c(per_flt_hr, per_flt_cycle),
+    columns = c(per_aircraft,per_seats,per_ton_km),
+    decimals = 2
+  )%>% 
+  fmt_number(
+    columns = c(per_flt_hr,per_flt_cycle),
     decimals = 0
   )
 ```
 
-@fig-airline-costs-structure shows the average airline cost structure for 2019 (considering that jet kerosene price is $66.9 per barrel).
+@fig-airline-costs-structure shows the average airline cost structure for 2019 
+(considering that jet kerosene price is $66.9 per barrel).
 
 ```{r}
 

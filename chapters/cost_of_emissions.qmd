@@ -11,7 +11,7 @@ library(gt)
 The data provided in the following sub-sections show estimations of the cost of
 CO~2~ and other aircraft pollutants released by the combustion of aviation fuel. 
 The data in the tables below comes from the EC DG MOVE Handbook on the external 
-costs of transport.[@ecdgmove2019]
+costs of transport.[@ecdgmove:2019]
 
 ### Air pollution
 
@@ -23,6 +23,7 @@ pollutants and health effects are nearly linear.
 ```{r}
 #| label: tbl-marginal-pollution-cost
 #| tbl-cap: Marginal air pollution costs of aviation
+
 read_xlsx(here::here("data", "emissions_cost.xlsx"),
           sheet = "marginal") %>% 
   gt() %>% 
@@ -88,7 +89,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     )
   ) %>%
   tab_footnote(
-    footnote = "The monetary values are adjusted to 2024 prices according to inflation",
+    footnote = "The values originate from Table 23 of the Handbook on the external costs of transport and are adjusted to 2025 prices according to inflation",
     locations = cells_column_labels(
       columns = lto_cost:pax_cost
     )
@@ -139,7 +140,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 23 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2024 prices according to inflation",
+    footnote = "The values originate from Table 82 of the Handbook on the external costs of transport and are adjusted from 2016 to 2025 prices according to inflation",
     locations = cells_column_labels(
       columns = low:high
     )
@@ -174,8 +175,13 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
   ) %>% 
   fmt_currency(
     currency = "EUR",
-    columns = c(total, km, pax),
+    columns = c(total, km),
     decimals = 1
+  ) %>% 
+  fmt_currency(
+    currency = "EUR",
+    columns = c(pax),
+    decimals = 0
   ) %>% 
   cols_align(
     align = "right",
@@ -194,7 +200,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     column_labels.font.weight = "bold"
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2019 to 2024 prices according to inflation",
+    footnote = "The values originate from Table 51 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2025 prices according to inflation",
     locations = cells_column_labels(
       columns = total:pax
     )
@@ -243,7 +249,7 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
     source_note = md("*Source: [European Commission (2019), Handbook on the external costs of transport](https://data.europa.eu/doi/10.2832/51388)*")
   ) %>% 
   tab_footnote(
-    footnote = "The values originate from Table 14 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2024 prices according to inflation",
+    footnote = "The values originate from Table 49 of the Handbook on the external costs of carbon and are adjusted from 2016 to 2025 prices according to inflation",
     locations = cells_column_labels(
       columns = no:pm
     )
@@ -255,16 +261,16 @@ read_xlsx(here::here("data", "emissions_cost.xlsx"),
 Below are listed some sources that may be interesting to consult in the frame of 
 this topic:
 
-* *EUROCONTROL (2022), European Environmental Report* [@eaer2022]
+* *EASA (2025), European Environmental Report* [@eaer:2025]
 
 * *European Commission Climate Action* [@ecc:limateaction]
 
-* *UK Department for Environment, Food and Rural Affairs (DEFRA) (2020), Air quality damage cost update 2020* [@defra:2020]
+* *UK Department for Environment, Food and Rural Affairs (DEFRA) (2025), Air quality damage cost update 2025* [@defra:2025]
 
 ## When to use the input?
 
-This input is recommended for use in assessments focussing on the wider cost/impact
-of the emissions released in aviation.
+This input is recommended for use in assessments focusing on the wider cost/impact
+of the emissions released in aviation. 
 
 ## Related inputs
 

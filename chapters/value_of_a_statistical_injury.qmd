@@ -49,6 +49,12 @@ read_xlsx(here::here("data", "value_statistical_injury.xlsx"),
   tab_source_note(
     source = md("*[Source: European Commission DG MOVE (2019), Handbook on the external costs of transport](https://op.europa.eu/en/publication-detail/-/publication/9781f65f-8448-11ea-bf12-01aa75ed71a1)*")
   ) %>% 
+  tab_footnote(
+    footnote = "The monetary values are adjusted to 2025 prices based on inflation",
+    locations = cells_column_labels(
+      columns = 3
+    )
+  ) %>% 
   tab_options(
     table.width = pct(100)
    ) %>% 
