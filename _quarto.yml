@@ -346,6 +346,6 @@ book:
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.1 (May 2025)"
             href: "#VERSION:v10.0.1"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Version v10.0.2 (August 2026)"
-            href: "#VERSION:v10.0.1"
+            href: "#VERSION:v10.0.2"
           - text: "<i class='fas fa-xs fa-external-link-alt'></i> Latest Version"
             href: "#VERSION:latest"
